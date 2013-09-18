@@ -400,6 +400,7 @@
 				GCC_PREFIX_HEADER = "Tiny Tastes/Tiny Tastes-Prefix.pch";
 				INFOPLIST_FILE = "Tiny Tastes/Tiny Tastes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,6 +412,7 @@
 				GCC_PREFIX_HEADER = "Tiny Tastes/Tiny Tastes-Prefix.pch";
 				INFOPLIST_FILE = "Tiny Tastes/Tiny Tastes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
