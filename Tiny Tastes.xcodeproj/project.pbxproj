@@ -24,6 +24,7 @@
 		EC6FD1DE17EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
 		EC6FD1E617EA746000EB05E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1E417EA746000EB05E9 /* InfoPlist.strings */; };
 		EC6FD1E917EA746000EB05E9 /* Tiny_TastesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */; };
+		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		EC6FD1E517EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC6FD1E717EA746000EB05E9 /* Tiny_TastesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiny_TastesTests.h; sourceTree = "<group>"; };
 		EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tiny_TastesTests.m; sourceTree = "<group>"; };
+		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
+				FDB582FB17EA778F004C6FA3 /* README */,
 				EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */,
 				EC6FD1E117EA746000EB05E9 /* Tiny TastesTests */,
 				EC6FD1B317EA746000EB05E9 /* Frameworks */,
@@ -241,6 +244,7 @@
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
 				EC6FD1CE17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
+				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +474,7 @@
 				EC6FD1EE17EA746000EB05E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC6FD1EF17EA746000EB05E9 /* Build configuration list for PBXNativeTarget "Tiny TastesTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +483,7 @@
 				EC6FD1F117EA746000EB05E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
