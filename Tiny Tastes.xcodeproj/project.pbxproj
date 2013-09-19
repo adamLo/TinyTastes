@@ -27,6 +27,9 @@
 		FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */; };
 		FDB5830717EA7F58004C6FA3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830617EA7F58004C6FA3 /* SecondViewController.m */; };
 		FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */; };
+		FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830D17EA8CF6004C6FA3 /* TinyShopViewController.m */; };
+		FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5831017EA8DD9004C6FA3 /* EatViewController.m */; };
+		FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5831317EA8DE3004C6FA3 /* DrinkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,12 @@
 		FDB5830617EA7F58004C6FA3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
 		FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		FDB5830C17EA8CF6004C6FA3 /* TinyShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyShopViewController.h; sourceTree = "<group>"; };
+		FDB5830D17EA8CF6004C6FA3 /* TinyShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinyShopViewController.m; sourceTree = "<group>"; };
+		FDB5830F17EA8DD9004C6FA3 /* EatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatViewController.h; sourceTree = "<group>"; };
+		FDB5831017EA8DD9004C6FA3 /* EatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatViewController.m; sourceTree = "<group>"; };
+		FDB5831217EA8DE3004C6FA3 /* DrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkViewController.h; sourceTree = "<group>"; };
+		FDB5831317EA8DE3004C6FA3 /* DrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +191,12 @@
 		FDB5830B17EA8B5D004C6FA3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FDB5830F17EA8DD9004C6FA3 /* EatViewController.h */,
+				FDB5831017EA8DD9004C6FA3 /* EatViewController.m */,
+				FDB5831217EA8DE3004C6FA3 /* DrinkViewController.h */,
+				FDB5831317EA8DE3004C6FA3 /* DrinkViewController.m */,
+				FDB5830C17EA8CF6004C6FA3 /* TinyShopViewController.h */,
+				FDB5830D17EA8CF6004C6FA3 /* TinyShopViewController.m */,
 				FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */,
 				FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */,
 				FDB5830517EA7F58004C6FA3 /* SecondViewController.h */,
@@ -310,6 +325,9 @@
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
 				FDB5830717EA7F58004C6FA3 /* SecondViewController.m in Sources */,
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
+				FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */,
+				FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */,
+				FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
