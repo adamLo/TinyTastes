@@ -16,7 +16,6 @@
 		EC6FD1C717EA746000EB05E9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1C617EA746000EB05E9 /* Default.png */; };
 		EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1C817EA746000EB05E9 /* Default@2x.png */; };
 		EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1CA17EA746000EB05E9 /* Default-568h@2x.png */; };
-		EC6FD1CE17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1CC17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard */; };
 		EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */; };
 		EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1D317EA746000EB05E9 /* HomeViewController.m */; };
 		EC6FD1DC17EA746000EB05E9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1DB17EA746000EB05E9 /* SenTestingKit.framework */; };
@@ -25,6 +24,8 @@
 		EC6FD1E617EA746000EB05E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1E417EA746000EB05E9 /* InfoPlist.strings */; };
 		EC6FD1E917EA746000EB05E9 /* Tiny_TastesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
+		FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */; };
+		FDB5830717EA7F58004C6FA3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830617EA7F58004C6FA3 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 		EC6FD1C617EA746000EB05E9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EC6FD1C817EA746000EB05E9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EC6FD1CA17EA746000EB05E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		EC6FD1CD17EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		EC6FD1D017EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		EC6FD1D217EA746000EB05E9 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		EC6FD1D317EA746000EB05E9 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -62,6 +62,9 @@
 		EC6FD1E717EA746000EB05E9 /* Tiny_TastesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiny_TastesTests.h; sourceTree = "<group>"; };
 		EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tiny_TastesTests.m; sourceTree = "<group>"; };
 		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cutecritter.jpg; path = "Tiny Tastes/cutecritter.jpg"; sourceTree = "<group>"; };
+		FDB5830517EA7F58004C6FA3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FDB5830617EA7F58004C6FA3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,9 @@
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
+				FDB5830517EA7F58004C6FA3 /* SecondViewController.h */,
+				FDB5830617EA7F58004C6FA3 /* SecondViewController.m */,
+				FDB582FF17EA7BD0004C6FA3 /* Images */,
 				FDB582FB17EA778F004C6FA3 /* README */,
 				EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */,
 				EC6FD1E117EA746000EB05E9 /* Tiny TastesTests */,
@@ -124,7 +130,6 @@
 			children = (
 				EC6FD1C317EA746000EB05E9 /* HomeAppDelegate.h */,
 				EC6FD1C417EA746000EB05E9 /* HomeAppDelegate.m */,
-				EC6FD1CC17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard */,
 				EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */,
 				EC6FD1D217EA746000EB05E9 /* HomeViewController.h */,
 				EC6FD1D317EA746000EB05E9 /* HomeViewController.m */,
@@ -164,6 +169,14 @@
 				EC6FD1E417EA746000EB05E9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,9 +255,9 @@
 				EC6FD1C717EA746000EB05E9 /* Default.png in Resources */,
 				EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
-				EC6FD1CE17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
+				FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +295,7 @@
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
+				FDB5830717EA7F58004C6FA3 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,14 +324,6 @@
 				EC6FD1BE17EA746000EB05E9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		EC6FD1CC17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC6FD1CD17EA746000EB05E9 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */ = {
