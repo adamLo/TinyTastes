@@ -12,13 +12,13 @@
 		EC6FD1B917EA746000EB05E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B817EA746000EB05E9 /* CoreGraphics.framework */; };
 		EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1BD17EA746000EB05E9 /* InfoPlist.strings */; };
 		EC6FD1C117EA746000EB05E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1C017EA746000EB05E9 /* main.m */; };
-		EC6FD1C517EA746000EB05E9 /* lelabsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1C417EA746000EB05E9 /* lelabsAppDelegate.m */; };
+		EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1C417EA746000EB05E9 /* HomeAppDelegate.m */; };
 		EC6FD1C717EA746000EB05E9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1C617EA746000EB05E9 /* Default.png */; };
 		EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1C817EA746000EB05E9 /* Default@2x.png */; };
 		EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1CA17EA746000EB05E9 /* Default-568h@2x.png */; };
 		EC6FD1CE17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1CC17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard */; };
 		EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */; };
-		EC6FD1D417EA746000EB05E9 /* lelabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1D317EA746000EB05E9 /* lelabsViewController.m */; };
+		EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1D317EA746000EB05E9 /* HomeViewController.m */; };
 		EC6FD1DC17EA746000EB05E9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1DB17EA746000EB05E9 /* SenTestingKit.framework */; };
 		EC6FD1DD17EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1DE17EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
@@ -46,15 +46,15 @@
 		EC6FD1BE17EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC6FD1C017EA746000EB05E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC6FD1C217EA746000EB05E9 /* Tiny Tastes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiny Tastes-Prefix.pch"; sourceTree = "<group>"; };
-		EC6FD1C317EA746000EB05E9 /* lelabsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lelabsAppDelegate.h; sourceTree = "<group>"; };
-		EC6FD1C417EA746000EB05E9 /* lelabsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lelabsAppDelegate.m; sourceTree = "<group>"; };
+		EC6FD1C317EA746000EB05E9 /* HomeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeAppDelegate.h; sourceTree = "<group>"; };
+		EC6FD1C417EA746000EB05E9 /* HomeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeAppDelegate.m; sourceTree = "<group>"; };
 		EC6FD1C617EA746000EB05E9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EC6FD1C817EA746000EB05E9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EC6FD1CA17EA746000EB05E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC6FD1CD17EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		EC6FD1D017EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		EC6FD1D217EA746000EB05E9 /* lelabsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lelabsViewController.h; sourceTree = "<group>"; };
-		EC6FD1D317EA746000EB05E9 /* lelabsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lelabsViewController.m; sourceTree = "<group>"; };
+		EC6FD1D217EA746000EB05E9 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EC6FD1D317EA746000EB05E9 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EC6FD1DA17EA746000EB05E9 /* Tiny TastesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiny TastesTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6FD1DB17EA746000EB05E9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		EC6FD1E317EA746000EB05E9 /* Tiny TastesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiny TastesTests-Info.plist"; sourceTree = "<group>"; };
@@ -122,12 +122,12 @@
 		EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */ = {
 			isa = PBXGroup;
 			children = (
-				EC6FD1C317EA746000EB05E9 /* lelabsAppDelegate.h */,
-				EC6FD1C417EA746000EB05E9 /* lelabsAppDelegate.m */,
+				EC6FD1C317EA746000EB05E9 /* HomeAppDelegate.h */,
+				EC6FD1C417EA746000EB05E9 /* HomeAppDelegate.m */,
 				EC6FD1CC17EA746000EB05E9 /* MainStoryboard_iPhone.storyboard */,
 				EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */,
-				EC6FD1D217EA746000EB05E9 /* lelabsViewController.h */,
-				EC6FD1D317EA746000EB05E9 /* lelabsViewController.m */,
+				EC6FD1D217EA746000EB05E9 /* HomeViewController.h */,
+				EC6FD1D317EA746000EB05E9 /* HomeViewController.m */,
 				EC6FD1BB17EA746000EB05E9 /* Supporting Files */,
 			);
 			path = "Tiny Tastes";
@@ -280,8 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
-				EC6FD1C517EA746000EB05E9 /* lelabsAppDelegate.m in Sources */,
-				EC6FD1D417EA746000EB05E9 /* lelabsViewController.m in Sources */,
+				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
+				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

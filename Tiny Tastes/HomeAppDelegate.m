@@ -1,14 +1,14 @@
 //
-//  lelabsAppDelegate.m
+//  HomeAppDelegate.m
 //  Tiny Tastes
 //
 //  Created by davile2 on 9/18/13.
 //  Copyright (c) 2013 Le Labs. All rights reserved.
 //
 
-#import "lelabsAppDelegate.h"
+#import "HomeAppDelegate.h"
 
-@implementation lelabsAppDelegate
+@implementation HomeAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

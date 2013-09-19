@@ -1,5 +1,5 @@
 //
-//  lelabsAppDelegate.h
+//  HomeViewController.h
 //  Tiny Tastes
 //
 //  Created by davile2 on 9/18/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface lelabsAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface HomeViewController : UIViewController
 
 @end
