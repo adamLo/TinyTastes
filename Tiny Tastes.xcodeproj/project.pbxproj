@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31EC9EED17F223B1001DBCFE /* frame.jpg */; };
+		EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4020EB17FDC15100FC24B1 /* book_cover.jpg */; };
 		EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
 		EC6FD1B917EA746000EB05E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B817EA746000EB05E9 /* CoreGraphics.framework */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		31EC9EED17F223B1001DBCFE /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
+		EC4020EB17FDC15100FC24B1 /* book_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = book_cover.jpg; path = "Tiny Tastes/book_cover.jpg"; sourceTree = "<group>"; };
 		EC6FD1B117EA746000EB05E9 /* Tiny Tastes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tastes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6FD1B417EA746000EB05E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC6FD1B617EA746000EB05E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -185,6 +187,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EC4020EB17FDC15100FC24B1 /* book_cover.jpg */,
 				FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */,
 				31EC9EED17F223B1001DBCFE /* frame.jpg */,
 			);
@@ -290,6 +293,7 @@
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */,
 				31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */,
+				EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
