@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31EC9EED17F223B1001DBCFE /* frame.jpg */; };
+		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
 		EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4020EB17FDC15100FC24B1 /* book_cover.jpg */; };
 		EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
@@ -27,7 +28,6 @@
 		EC6FD1E917EA746000EB05E9 /* Tiny_TastesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
 		FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */; };
-		FDB5830717EA7F58004C6FA3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830617EA7F58004C6FA3 /* SecondViewController.m */; };
 		FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */; };
 		FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830D17EA8CF6004C6FA3 /* TinyShopViewController.m */; };
 		FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5831017EA8DD9004C6FA3 /* EatViewController.m */; };
@@ -46,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		31EC9EED17F223B1001DBCFE /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
+		31FD15CE1804B91C00142A5F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		31FD15CF1804B91C00142A5F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		EC4020EB17FDC15100FC24B1 /* book_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = book_cover.jpg; path = "Tiny Tastes/book_cover.jpg"; sourceTree = "<group>"; };
 		EC6FD1B117EA746000EB05E9 /* Tiny Tastes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tastes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6FD1B417EA746000EB05E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -71,8 +73,6 @@
 		EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tiny_TastesTests.m; sourceTree = "<group>"; };
 		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cutecritter.jpg; path = "Tiny Tastes/cutecritter.jpg"; sourceTree = "<group>"; };
-		FDB5830517EA7F58004C6FA3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../SecondViewController.h; sourceTree = "<group>"; };
-		FDB5830617EA7F58004C6FA3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
 		FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		FDB5830C17EA8CF6004C6FA3 /* TinyShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyShopViewController.h; sourceTree = "<group>"; };
@@ -197,6 +197,8 @@
 		FDB5830B17EA8B5D004C6FA3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				31FD15CE1804B91C00142A5F /* PhotoViewController.h */,
+				31FD15CF1804B91C00142A5F /* PhotoViewController.m */,
 				FDB5830F17EA8DD9004C6FA3 /* EatViewController.h */,
 				FDB5831017EA8DD9004C6FA3 /* EatViewController.m */,
 				FDB5831217EA8DE3004C6FA3 /* DrinkViewController.h */,
@@ -205,8 +207,6 @@
 				FDB5830D17EA8CF6004C6FA3 /* TinyShopViewController.m */,
 				FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */,
 				FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */,
-				FDB5830517EA7F58004C6FA3 /* SecondViewController.h */,
-				FDB5830617EA7F58004C6FA3 /* SecondViewController.m */,
 				EC6FD1D217EA746000EB05E9 /* HomeViewController.h */,
 				EC6FD1D317EA746000EB05E9 /* HomeViewController.m */,
 			);
@@ -331,11 +331,11 @@
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
-				FDB5830717EA7F58004C6FA3 /* SecondViewController.m in Sources */,
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
 				FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */,
 				FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */,
 				FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */,
+				31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
