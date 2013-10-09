@@ -140,9 +140,9 @@
                                     <segue destination="yZk-YG-ftA" kind="modal" id="sia-zK-uiL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3I-3E-YYy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj4-y3-GFO">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Photo">
+                                <state key="normal" title="Button">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -150,7 +150,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="t2j-Jj-fJN" kind="modal" id="zqr-s5-5Wb"/>
+                                    <segue destination="t2j-Jj-fJN" kind="modal" id="IhV-0I-Wth"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,19 +160,17 @@
                             <constraint firstItem="cC5-gq-GXB" firstAttribute="trailing" secondItem="XQu-bk-n57" secondAttribute="trailing" type="default" id="28e-6F-Stw"/>
                             <constraint firstItem="5f4-kS-Ieb" firstAttribute="trailing" secondItem="1sB-LS-WWY" secondAttribute="trailing" type="default" id="3Dw-w4-6VN"/>
                             <constraint firstItem="5f4-kS-Ieb" firstAttribute="leading" secondItem="2Lq-oI-Q5U" secondAttribute="leading" type="default" id="3dz-Lx-BlE"/>
-                            <constraint firstAttribute="trailing" secondItem="w3I-3E-YYy" secondAttribute="trailing" constant="332" id="3hk-ud-jB1"/>
                             <constraint firstItem="Xfb-gp-PDh" firstAttribute="top" secondItem="oBR-AY-wH5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="40W-GE-t6R"/>
-                            <constraint firstAttribute="bottom" secondItem="opW-xZ-wJ2" secondAttribute="bottom" constant="55" id="6bG-W7-via"/>
                             <constraint firstItem="Ksr-zW-WjZ" firstAttribute="top" secondItem="5f4-kS-Ieb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7ZR-E9-e2b"/>
                             <constraint firstItem="FF6-VI-6zG" firstAttribute="top" secondItem="tH3-nb-B8Q" secondAttribute="top" type="default" id="8Br-kz-Sx0"/>
                             <constraint firstItem="2Lq-oI-Q5U" firstAttribute="top" secondItem="nra-hb-Ncb" secondAttribute="top" type="default" id="8b0-LC-On4"/>
+                            <constraint firstAttribute="trailing" secondItem="Vj4-y3-GFO" secondAttribute="trailing" constant="328" id="8dG-IL-Bxi"/>
                             <constraint firstItem="IPH-me-ezf" firstAttribute="leading" secondItem="oBR-AY-wH5" secondAttribute="leading" type="default" id="9Nz-KD-M2z"/>
+                            <constraint firstAttribute="bottom" secondItem="Vj4-y3-GFO" secondAttribute="bottom" constant="33" id="ADb-MQ-n2n"/>
                             <constraint firstItem="5f4-kS-Ieb" firstAttribute="trailing" secondItem="nra-hb-Ncb" secondAttribute="trailing" type="default" id="DEv-RK-IoX"/>
                             <constraint firstItem="Xfb-gp-PDh" firstAttribute="top" secondItem="IPH-me-ezf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GL8-Ki-NVE"/>
-                            <constraint firstAttribute="bottom" secondItem="w3I-3E-YYy" secondAttribute="bottom" constant="9" id="J1j-by-34P"/>
                             <constraint firstItem="7KC-yn-xeV" firstAttribute="top" secondItem="FF6-VI-6zG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="JAz-PA-Oij"/>
                             <constraint firstItem="opW-xZ-wJ2" firstAttribute="top" secondItem="nra-hb-Ncb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KXd-zc-Lf4"/>
-                            <constraint firstItem="opW-xZ-wJ2" firstAttribute="top" secondItem="Xfb-gp-PDh" secondAttribute="top" type="default" id="LFN-RW-4iW"/>
                             <constraint firstItem="nra-hb-Ncb" firstAttribute="trailing" secondItem="2Lq-oI-Q5U" secondAttribute="trailing" type="default" id="LHi-zy-cOW"/>
                             <constraint firstItem="Xfb-gp-PDh" firstAttribute="leading" secondItem="7KC-yn-xeV" secondAttribute="leading" type="default" id="M1e-eu-r3F"/>
                             <constraint firstItem="opW-xZ-wJ2" firstAttribute="top" secondItem="2Lq-oI-Q5U" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MX5-Zm-unj"/>
@@ -200,6 +198,8 @@
                             <constraint firstItem="XQu-bk-n57" firstAttribute="top" secondItem="5" secondAttribute="top" constant="176" id="tKY-HA-4Il"/>
                             <constraint firstItem="5f4-kS-Ieb" firstAttribute="leading" secondItem="1sB-LS-WWY" secondAttribute="leading" type="default" id="u7c-Sa-hTJ"/>
                             <constraint firstItem="2Lq-oI-Q5U" firstAttribute="leading" secondItem="nra-hb-Ncb" secondAttribute="leading" type="default" id="wa3-5R-AeA"/>
+                            <constraint firstItem="Vj4-y3-GFO" firstAttribute="top" secondItem="opW-xZ-wJ2" secondAttribute="top" type="default" id="woG-x1-WEC"/>
+                            <constraint firstItem="Vj4-y3-GFO" firstAttribute="top" secondItem="Xfb-gp-PDh" secondAttribute="top" type="default" id="xR3-3e-8OP"/>
                             <constraint firstItem="FF6-VI-6zG" firstAttribute="centerX" secondItem="Xfb-gp-PDh" secondAttribute="centerX" type="default" id="y48-IA-UdO"/>
                             <constraint firstItem="Ksr-zW-WjZ" firstAttribute="top" secondItem="1sB-LS-WWY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yiT-2c-Ovx"/>
                         </constraints>
@@ -486,19 +486,6 @@
                                     <constraint firstAttribute="height" constant="606" id="nR6-Sn-mBO"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Take Photo">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePhoto:" destination="t2j-Jj-fJN" eventType="touchUpInside" id="rzV-TP-gnF"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQ1-en-2uY">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1036" id="iWj-qg-HTY"/>
@@ -513,13 +500,26 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpq-jj-zZE">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="t2j-Jj-fJN" eventType="touchUpInside" id="zwj-rn-X4f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qtL-r8-iUw" secondAttribute="bottom" constant="31" id="77H-B2-oWN"/>
-                            <constraint firstItem="bkx-xy-jV5" firstAttribute="centerX" secondItem="EFf-Hb-yNG" secondAttribute="centerX" type="default" id="BdS-uo-GN0"/>
+                            <constraint firstItem="gpq-jj-zZE" firstAttribute="centerX" secondItem="bkx-xy-jV5" secondAttribute="centerX" type="default" id="59W-IV-53s"/>
                             <constraint firstItem="JQ1-en-2uY" firstAttribute="top" secondItem="EFf-Hb-yNG" secondAttribute="top" type="default" id="JWa-Mm-Ihf"/>
-                            <constraint firstItem="JQ1-en-2uY" firstAttribute="centerX" secondItem="qtL-r8-iUw" secondAttribute="centerX" type="default" id="TSS-GX-a3M"/>
+                            <constraint firstAttribute="bottom" secondItem="gpq-jj-zZE" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Sl6-1R-K6A"/>
+                            <constraint firstItem="gpq-jj-zZE" firstAttribute="centerX" secondItem="EFf-Hb-yNG" secondAttribute="centerX" type="default" id="hkm-KK-jWH"/>
                             <constraint firstItem="bkx-xy-jV5" firstAttribute="top" secondItem="EFf-Hb-yNG" secondAttribute="top" constant="53" id="it8-rw-ut2"/>
                             <constraint firstItem="JQ1-en-2uY" firstAttribute="leading" secondItem="EFf-Hb-yNG" secondAttribute="leading" type="default" id="qn1-Gg-RKf"/>
                         </constraints>
@@ -528,7 +528,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="imageView" destination="bkx-xy-jV5" id="ofD-o7-5KC"/>
-                        <outlet property="photoButton" destination="qtL-r8-iUw" id="Exh-An-H6j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02E-bE-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -677,7 +676,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jzH-4f-Kz6"/>
         <segue reference="7fZ-w8-WXP"/>
+        <segue reference="jzH-4f-Kz6"/>
     </inferredMetricsTieBreakers>
 </document>
