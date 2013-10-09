@@ -26,6 +26,8 @@
 		EC6FD1DE17EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
 		EC6FD1E617EA746000EB05E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1E417EA746000EB05E9 /* InfoPlist.strings */; };
 		EC6FD1E917EA746000EB05E9 /* Tiny_TastesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */; };
+		FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DE71804E02800F15964 /* MealNotificationViewController.m */; };
+		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
 		FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */; };
 		FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */; };
@@ -71,6 +73,10 @@
 		EC6FD1E517EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC6FD1E717EA746000EB05E9 /* Tiny_TastesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiny_TastesTests.h; sourceTree = "<group>"; };
 		EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tiny_TastesTests.m; sourceTree = "<group>"; };
+		FDB11DE61804E02800F15964 /* MealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealNotificationViewController.h; sourceTree = "<group>"; };
+		FDB11DE71804E02800F15964 /* MealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealNotificationViewController.m; sourceTree = "<group>"; };
+		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
+		FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cutecritter.jpg; path = "Tiny Tastes/cutecritter.jpg"; sourceTree = "<group>"; };
 		FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -197,6 +203,10 @@
 		FDB5830B17EA8B5D004C6FA3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FDB11DE61804E02800F15964 /* MealNotificationViewController.h */,
+				FDB11DE71804E02800F15964 /* MealNotificationViewController.m */,
+				FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */,
+				FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */,
 				31FD15CE1804B91C00142A5F /* PhotoViewController.h */,
 				31FD15CF1804B91C00142A5F /* PhotoViewController.m */,
 				FDB5830F17EA8DD9004C6FA3 /* EatViewController.h */,
@@ -328,6 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */,
+				FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
