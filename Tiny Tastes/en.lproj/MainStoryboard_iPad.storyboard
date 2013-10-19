@@ -50,7 +50,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tbm-Rb-Doo" kind="modal" id="2WH-bC-o2N"/>
+                                    <segue destination="kwG-KM-rAz" kind="modal" id="LzC-Ft-xl3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f4-kS-Ieb">
@@ -137,6 +137,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kwG-KM-rAz" kind="modal" id="fkR-CJ-Y3j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -389,6 +392,45 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="-3433" y="-1684"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="FY7-mN-hzO">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="kwG-KM-rAz" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yT8-ZL-dLJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1lo-tu-MkB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JLP-1L-9MR">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9E-ui-gl5">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <items>
+                                    <navigationItem title="Story Sequence" id="Pmt-ko-vS8">
+                                        <barButtonItem key="rightBarButtonItem" title="Next" id="umt-fS-MO2">
+                                            <connections>
+                                                <segue destination="uue-W2-mCd" kind="modal" id="jzH-4f-Kz6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q9E-ui-gl5" firstAttribute="top" secondItem="JLP-1L-9MR" secondAttribute="top" id="YBU-uc-oS0"/>
+                            <constraint firstItem="q9E-ui-gl5" firstAttribute="trailing" secondItem="JLP-1L-9MR" secondAttribute="trailing" id="oNP-aC-7BW"/>
+                            <constraint firstItem="q9E-ui-gl5" firstAttribute="leading" secondItem="JLP-1L-9MR" secondAttribute="leading" id="yqa-7N-9DF"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WL0-WH-hZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1677" y="-2626"/>
+        </scene>
         <!--Photo View Controller-->
         <scene sceneID="ppO-NU-SHz">
             <objects>
@@ -464,74 +506,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02E-bE-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-389" y="-4450"/>
-        </scene>
-        <!--Story View Controller-->
-        <scene sceneID="IlI-pc-Vhg">
-            <objects>
-                <viewController id="tbm-Rb-Doo" customClass="StoryViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="B6R-uL-mYT"/>
-                        <viewControllerLayoutGuide type="bottom" id="cl3-rG-HZ3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FyU-Yb-cMu">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6up-un-0U3">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Story Time" id="DeR-kA-9c8">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RjP-vL-6NU">
-                                            <connections>
-                                                <segue destination="2" kind="modal" id="eah-b9-6Id"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Next" id="Xge-MG-xlb">
-                                            <connections>
-                                                <segue destination="uue-W2-mCd" kind="modal" id="TSp-2M-bpF"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0mf-5h-1DX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1715" y="-2726"/>
-        </scene>
-        <!--Story Data View Controller-->
-        <scene sceneID="pqG-Xh-LQ0">
-            <objects>
-                <viewController storyboardIdentifier="StoryDataViewController" id="tjW-4J-6oC" customClass="StoryDataViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ezg-wl-t1B"/>
-                        <viewControllerLayoutGuide type="bottom" id="bCP-Ee-F0g"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PVd-6K-Lfd">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ire-BM-6az">
-                                <rect key="frame" x="134" y="229" width="756" height="519"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9tQ-M0-Hjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-613" y="-3501"/>
+            <point key="canvasLocation" x="-529" y="-4200"/>
         </scene>
         <!--Eat View Controller-->
         <scene sceneID="G7I-S7-He1">
@@ -650,6 +625,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="-1643" y="-1562"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ALc-cP-cqc">
+            <objects>
+                <viewController id="pqo-h6-K1e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ltc-Kz-PWd"/>
+                        <viewControllerLayoutGuide type="bottom" id="23u-ui-L9S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VaT-O9-AEe">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7D-3Z-Ipi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
@@ -668,8 +660,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="0YE-f0-TYR"/>
+        <segue reference="fkR-CJ-Y3j"/>
         <segue reference="Dnw-WE-x5v"/>
-        <segue reference="eah-b9-6Id"/>
         <segue reference="VDL-IZ-dOD"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31EC9EED17F223B1001DBCFE /* frame.jpg */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
-		EC2CA13818133002009D5D3C /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA13718133002009D5D3C /* StoryViewController.m */; };
-		EC2CA13B18133285009D5D3C /* StoryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA13A18133285009D5D3C /* StoryDataViewController.m */; };
-		EC2CA13E181332B4009D5D3C /* StoryModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA13D181332B4009D5D3C /* StoryModelController.m */; };
 		EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4020EB17FDC15100FC24B1 /* book_cover.jpg */; };
 		EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
@@ -61,12 +58,6 @@
 		31EC9EED17F223B1001DBCFE /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
 		31FD15CE1804B91C00142A5F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		31FD15CF1804B91C00142A5F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
-		EC2CA13618133002009D5D3C /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
-		EC2CA13718133002009D5D3C /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
-		EC2CA13918133285009D5D3C /* StoryDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataViewController.h; sourceTree = "<group>"; };
-		EC2CA13A18133285009D5D3C /* StoryDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataViewController.m; sourceTree = "<group>"; };
-		EC2CA13C181332B4009D5D3C /* StoryModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryModelController.h; sourceTree = "<group>"; };
-		EC2CA13D181332B4009D5D3C /* StoryModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModelController.m; sourceTree = "<group>"; };
 		EC4020EB17FDC15100FC24B1 /* book_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = book_cover.jpg; path = "Tiny Tastes/book_cover.jpg"; sourceTree = "<group>"; };
 		EC6FD1B117EA746000EB05E9 /* Tiny Tastes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tastes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6FD1B417EA746000EB05E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -252,12 +243,6 @@
 				FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */,
 				EC6FD1D217EA746000EB05E9 /* HomeViewController.h */,
 				EC6FD1D317EA746000EB05E9 /* HomeViewController.m */,
-				EC2CA13618133002009D5D3C /* StoryViewController.h */,
-				EC2CA13718133002009D5D3C /* StoryViewController.m */,
-				EC2CA13918133285009D5D3C /* StoryDataViewController.h */,
-				EC2CA13A18133285009D5D3C /* StoryDataViewController.m */,
-				EC2CA13C181332B4009D5D3C /* StoryModelController.h */,
-				EC2CA13D181332B4009D5D3C /* StoryModelController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -385,14 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2CA13818133002009D5D3C /* StoryViewController.m in Sources */,
 				FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */,
 				FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
-				EC2CA13E181332B4009D5D3C /* StoryModelController.m in Sources */,
-				EC2CA13B18133285009D5D3C /* StoryDataViewController.m in Sources */,
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
 				FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */,
 				FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */,
