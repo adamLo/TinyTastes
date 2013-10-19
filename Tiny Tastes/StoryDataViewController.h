@@ -1,0 +1,16 @@
+//
+//  StoryDataViewController.h
+//  Tiny Tastes
+//
+//  Created by davile2 on 10/19/13.
+//  Copyright (c) 2013 Le Labs. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface StoryDataViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *dataLabel;
+@property (strong, nonatomic) id dataObject;
+
+@end

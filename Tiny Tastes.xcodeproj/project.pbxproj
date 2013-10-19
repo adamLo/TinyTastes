@@ -26,6 +26,9 @@
 		EC6FD1DE17EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
 		EC6FD1E617EA746000EB05E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1E417EA746000EB05E9 /* InfoPlist.strings */; };
 		EC6FD1E917EA746000EB05E9 /* Tiny_TastesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */; };
+		EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B51813430E007319C5 /* StoryDataViewController.m */; };
+		EC7124B918134358007319C5 /* StoryModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B818134358007319C5 /* StoryModelController.m */; };
+		EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124BB181343A2007319C5 /* StoryViewController.m */; };
 		FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DE71804E02800F15964 /* MealNotificationViewController.m */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
@@ -89,6 +92,12 @@
 		EC6FD1E517EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC6FD1E717EA746000EB05E9 /* Tiny_TastesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiny_TastesTests.h; sourceTree = "<group>"; };
 		EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tiny_TastesTests.m; sourceTree = "<group>"; };
+		EC7124B41813430E007319C5 /* StoryDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataViewController.h; sourceTree = "<group>"; };
+		EC7124B51813430E007319C5 /* StoryDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataViewController.m; sourceTree = "<group>"; };
+		EC7124B718134358007319C5 /* StoryModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryModelController.h; sourceTree = "<group>"; };
+		EC7124B818134358007319C5 /* StoryModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModelController.m; sourceTree = "<group>"; };
+		EC7124BA181343A2007319C5 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		EC7124BB181343A2007319C5 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		FDB11DE61804E02800F15964 /* MealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DE71804E02800F15964 /* MealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
@@ -267,6 +276,12 @@
 				FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */,
 				EC6FD1D217EA746000EB05E9 /* HomeViewController.h */,
 				EC6FD1D317EA746000EB05E9 /* HomeViewController.m */,
+				EC7124B41813430E007319C5 /* StoryDataViewController.h */,
+				EC7124B51813430E007319C5 /* StoryDataViewController.m */,
+				EC7124B718134358007319C5 /* StoryModelController.h */,
+				EC7124B818134358007319C5 /* StoryModelController.m */,
+				EC7124BA181343A2007319C5 /* StoryViewController.h */,
+				EC7124BB181343A2007319C5 /* StoryViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -403,11 +418,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */,
+				EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */,
+				EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */,
 				FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
+				EC7124B918134358007319C5 /* StoryModelController.m in Sources */,
 				FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */,
 				FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */,
 				FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */,
