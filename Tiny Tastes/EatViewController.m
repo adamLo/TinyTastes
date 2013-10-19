@@ -71,6 +71,8 @@
 }
 
 - (IBAction)doneButtonClicked {
+    [countdownTimer invalidate];
+    countdownTimer = nil;
     allFinishedButton.hidden = NO;
     partiallyFinishedButton.hidden = NO;
     notFinishedButton.hidden = NO;
