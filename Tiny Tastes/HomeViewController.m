@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"book_cover.jpg"]];
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"book_cover.jpg"]];
 }
 
 - (void)didReceiveMemoryWarning
