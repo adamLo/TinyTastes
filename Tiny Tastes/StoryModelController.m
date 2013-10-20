@@ -10,7 +10,7 @@
 
 #import "StoryDataViewController.h"
 
-#import "XMLParser.h"
+#import "SceneFactory.h"
 
 /*
  A controller object that manages a simple model -- a collection of month names.
@@ -30,27 +30,11 @@
 - (id)init
 {
     self = [super init];
-    //Testing
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"story" ofType:@"xml"];
-    NSData *xmlData = [[NSMutableData alloc] initWithContentsOfFile:xmlPath];
-    NSXMLParser *nsXmlParser = [[NSXMLParser alloc] initWithData: xmlData ];
-    XMLParser *parser = [[XMLParser alloc] initXMLParser];
-    [nsXmlParser setDelegate:parser];
-    BOOL success = [nsXmlParser parse];
-    if (success) {
-        NSLog(@"No errors");
-        // get array of users here
-        //  NSMutableArray *users = [parser users];
-    } else {
-        NSLog(@"Error parsing document!");
-        NSError* error = [nsXmlParser parserError];
-        NSLog(@"Error: %@ ", error);
-    }
-    
-    
     if (self) {
         // Create the data model.
         _pageData = [[NSMutableArray alloc] init];
+        SceneFactory *sceneFactory = [[SceneFactory alloc] init];
+        [sceneFactory populateScenes];
         for (int i = 1; i < 5; i++) {
             [_pageData addObject:([[NSBundle mainBundle] localizedStringForKey:([NSString stringWithFormat:@"Story%d", i ]) value:@"No Translation" table:@"Story"])];
         };

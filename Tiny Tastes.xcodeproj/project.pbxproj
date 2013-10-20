@@ -32,8 +32,8 @@
 		EC7124BE181354EB007319C5 /* Story.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC7124BD181354EB007319C5 /* Story.strings */; };
 		EC7124C018145E25007319C5 /* story.xml in Resources */ = {isa = PBXBuildFile; fileRef = EC7124BF18145E25007319C5 /* story.xml */; };
 		EC7124C31814603F007319C5 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C21814603F007319C5 /* Scene.m */; };
-		EC7124C618146152007319C5 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLParser.m */; };
-		EC7124C818146FF7007319C5 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = EC7124C718146FF7007319C5 /* test.xml */; };
+		EC7124C618146152007319C5 /* XMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLDelegate.m */; };
+		EC7124CB18147519007319C5 /* SceneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124CA18147519007319C5 /* SceneFactory.m */; };
 		FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DE71804E02800F15964 /* MealNotificationViewController.m */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
@@ -107,9 +107,10 @@
 		EC7124BF18145E25007319C5 /* story.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = story.xml; sourceTree = "<group>"; };
 		EC7124C11814603F007319C5 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		EC7124C21814603F007319C5 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
-		EC7124C418146152007319C5 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
-		EC7124C518146152007319C5 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
-		EC7124C718146FF7007319C5 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		EC7124C418146152007319C5 /* XMLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDelegate.h; sourceTree = "<group>"; };
+		EC7124C518146152007319C5 /* XMLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDelegate.m; sourceTree = "<group>"; };
+		EC7124C918147519007319C5 /* SceneFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFactory.h; sourceTree = "<group>"; };
+		EC7124CA18147519007319C5 /* SceneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneFactory.m; sourceTree = "<group>"; };
 		FDB11DE61804E02800F15964 /* MealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DE71804E02800F15964 /* MealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
@@ -207,8 +208,10 @@
 				EC6FD1C417EA746000EB05E9 /* HomeAppDelegate.m */,
 				EC7124C11814603F007319C5 /* Scene.h */,
 				EC7124C21814603F007319C5 /* Scene.m */,
-				EC7124C418146152007319C5 /* XMLParser.h */,
-				EC7124C518146152007319C5 /* XMLParser.m */,
+				EC7124C918147519007319C5 /* SceneFactory.h */,
+				EC7124CA18147519007319C5 /* SceneFactory.m */,
+				EC7124C418146152007319C5 /* XMLDelegate.h */,
+				EC7124C518146152007319C5 /* XMLDelegate.m */,
 				EC6FD1BB17EA746000EB05E9 /* Supporting Files */,
 			);
 			path = "Tiny Tastes";
@@ -226,7 +229,6 @@
 				EC6FD1C817EA746000EB05E9 /* Default@2x.png */,
 				EC6FD1CA17EA746000EB05E9 /* Default-568h@2x.png */,
 				EC7124BF18145E25007319C5 /* story.xml */,
-				EC7124C718146FF7007319C5 /* test.xml */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,7 +394,6 @@
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				FDBC9C8C18131A5100861C75 /* eating_critter_1.jpg in Resources */,
-				EC7124C818146FF7007319C5 /* test.xml in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FDBC9C82181301F300861C75 /* settings_logo.png in Resources */,
 				FDBC9C981813343D00861C75 /* none_this_time_label.png in Resources */,
@@ -443,7 +444,7 @@
 				EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */,
 				EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */,
 				FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */,
-				EC7124C618146152007319C5 /* XMLParser.m in Sources */,
+				EC7124C618146152007319C5 /* XMLDelegate.m in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
@@ -454,6 +455,7 @@
 				FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */,
 				EC7124C31814603F007319C5 /* Scene.m in Sources */,
 				31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */,
+				EC7124CB18147519007319C5 /* SceneFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

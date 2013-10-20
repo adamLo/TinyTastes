@@ -1,5 +1,5 @@
 //
-//  XMLParser.h
+//  XMLDelegate.h
 //  Tiny Tastes
 //
 //  Created by davile2 on 10/20/13.
@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Scene.h"
 
-@interface XMLParser : NSObject <NSXMLParserDelegate> {
-    
+@interface XMLDelegate : NSObject <NSXMLParserDelegate> {
+    Scene * currentScene;
 }
 
-- (XMLParser *) initXMLParser;
+- (XMLDelegate *) initXMLDelegate;
 //- (Scene *) getScene:(NSString *) sceneID;
 
 @end
