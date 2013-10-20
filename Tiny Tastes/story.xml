@@ -1,0 +1,27 @@
+<scene id:"opening" >
+    <images>
+        <image path="cutecritter.jpg" x=0 y=0 w=200 h=200 />
+    </images>
+    <text string="Hello world 1!" />
+    <links>
+        <link id="opening2" x=0 y=0 w=200 h= 200 />
+    </links>
+</scene>
+<scene id:"opening2" >
+    <images>
+        <image path="cutecritter.jpg" x=50 y=0 w=200 h=200 />
+    </images>
+    <text string="Hello world 2!" />
+    <links>
+        <link id="opening3" x=50 y=0 w=200 h= 200 />
+    </links>
+</scene>
+<scene id:"opening3" >
+    <images>
+        <image path="cutecritter.jpg" x=100 y=0 w=200 h=200 />
+    </images>
+    <text string="Hello world 3!" />
+    <links>
+        <link id="opening" x=100 y=0 w=200 h= 200 />
+    </links>
+</scene>

@@ -29,8 +29,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
     self.dataLabel.text = [self.dataObject description];
-    [self.dataLabel sizeToFit];
 }
 
 @end
