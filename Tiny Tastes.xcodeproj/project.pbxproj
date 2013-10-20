@@ -33,6 +33,7 @@
 		EC7124C018145E25007319C5 /* story.xml in Resources */ = {isa = PBXBuildFile; fileRef = EC7124BF18145E25007319C5 /* story.xml */; };
 		EC7124C31814603F007319C5 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C21814603F007319C5 /* Scene.m */; };
 		EC7124C618146152007319C5 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLParser.m */; };
+		EC7124C818146FF7007319C5 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = EC7124C718146FF7007319C5 /* test.xml */; };
 		FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DE71804E02800F15964 /* MealNotificationViewController.m */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
@@ -108,6 +109,7 @@
 		EC7124C21814603F007319C5 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 		EC7124C418146152007319C5 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		EC7124C518146152007319C5 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		EC7124C718146FF7007319C5 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 		FDB11DE61804E02800F15964 /* MealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DE71804E02800F15964 /* MealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				EC6FD1C817EA746000EB05E9 /* Default@2x.png */,
 				EC6FD1CA17EA746000EB05E9 /* Default-568h@2x.png */,
 				EC7124BF18145E25007319C5 /* story.xml */,
+				EC7124C718146FF7007319C5 /* test.xml */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				FDBC9C8C18131A5100861C75 /* eating_critter_1.jpg in Resources */,
+				EC7124C818146FF7007319C5 /* test.xml in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FDBC9C82181301F300861C75 /* settings_logo.png in Resources */,
 				FDBC9C981813343D00861C75 /* none_this_time_label.png in Resources */,
