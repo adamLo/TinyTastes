@@ -20,7 +20,7 @@
  */
 
 @interface StoryModelController()
-@property (readonly, strong, nonatomic) NSArray *pageData;
+@property (readonly, strong, nonatomic) NSMutableArray *pageData;
 @end
 
 @implementation StoryModelController
@@ -30,8 +30,11 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+        _pageData = [[NSMutableArray alloc] init];
+        for (int i = 1; i < 5; i++) {
+            [_pageData addObject:([[NSBundle mainBundle] localizedStringForKey:([NSString stringWithFormat:@"Story%d", i ]) value:@"No Translation" table:@"Story"])];
+        };
+        //_pageData = @[@"Dollar", @"Euro", @"Pound"];
     }
     return self;
 }

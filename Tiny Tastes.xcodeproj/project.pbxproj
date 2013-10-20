@@ -29,6 +29,7 @@
 		EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B51813430E007319C5 /* StoryDataViewController.m */; };
 		EC7124B918134358007319C5 /* StoryModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B818134358007319C5 /* StoryModelController.m */; };
 		EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124BB181343A2007319C5 /* StoryViewController.m */; };
+		EC7124BE181354EB007319C5 /* Story.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC7124BD181354EB007319C5 /* Story.strings */; };
 		FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DE71804E02800F15964 /* MealNotificationViewController.m */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
@@ -98,6 +99,7 @@
 		EC7124B818134358007319C5 /* StoryModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModelController.m; sourceTree = "<group>"; };
 		EC7124BA181343A2007319C5 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		EC7124BB181343A2007319C5 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		EC7124BD181354EB007319C5 /* Story.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Story.strings; sourceTree = "<group>"; };
 		FDB11DE61804E02800F15964 /* MealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DE71804E02800F15964 /* MealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		EC6FD1BB17EA746000EB05E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC7124BD181354EB007319C5 /* Story.strings */,
 				EC6FD1BC17EA746000EB05E9 /* Tiny Tastes-Info.plist */,
 				EC6FD1BD17EA746000EB05E9 /* InfoPlist.strings */,
 				EC6FD1C017EA746000EB05E9 /* main.m */,
@@ -370,6 +373,7 @@
 				EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */,
 				FDBC9C86181301FD00861C75 /* story_time_logo.png in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
+				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				FDBC9C8C18131A5100861C75 /* eating_critter_1.jpg in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
