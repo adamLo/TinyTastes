@@ -29,11 +29,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
     allFinishedButton.hidden = YES;
-    allFinishedButtonImage.alpha = 0;
     partiallyFinishedButton.hidden = YES;
-    partiallyFinishedButtonImage.alpha = 0;
     notFinishedButton.hidden = YES;
-    notFinishedButtonImage.alpha = 0;
     
     drinkingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"drinking_critter_1.jpg"],
                                      [UIImage imageNamed:@"drinking_critter_2.jpg"], nil];
@@ -98,11 +95,7 @@
     allFinishedButton.hidden = NO;
     partiallyFinishedButton.hidden = NO;
     notFinishedButton.hidden = NO;
-    doneButton.hidden = 0;
-    allFinishedButtonImage.alpha = 1;
-    partiallyFinishedButtonImage.alpha = 1;
-    notFinishedButtonImage.alpha = 1;
-    doneButtonImage.alpha = 0;
+    doneButton.hidden = YES;
     [drinkingCritter stopAnimating];
 }
 

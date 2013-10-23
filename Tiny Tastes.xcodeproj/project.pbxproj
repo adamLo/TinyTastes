@@ -42,8 +42,6 @@
 		FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830D17EA8CF6004C6FA3 /* TinyShopViewController.m */; };
 		FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5831017EA8DD9004C6FA3 /* EatViewController.m */; };
 		FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5831317EA8DE3004C6FA3 /* DrinkViewController.m */; };
-		FDBC9CAC181621D800861C75 /* settings_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CAB181621D800861C75 /* settings_logo.png */; };
-		FDBC9CB21816227C00861C75 /* tiny_shop_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CB11816227C00861C75 /* tiny_shop_logo.png */; };
 		FDBC9CC818162B3700861C75 /* time_to_finish_label.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CC718162B3700861C75 /* time_to_finish_label.png */; };
 		FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */; };
 		FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9CD218163E2700861C75 /* FeedbackViewController.m */; };
@@ -128,8 +126,6 @@
 		FDB5831017EA8DD9004C6FA3 /* EatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatViewController.m; sourceTree = "<group>"; };
 		FDB5831217EA8DE3004C6FA3 /* DrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkViewController.h; sourceTree = "<group>"; };
 		FDB5831317EA8DE3004C6FA3 /* DrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkViewController.m; sourceTree = "<group>"; };
-		FDBC9CAB181621D800861C75 /* settings_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_logo.png; sourceTree = "<group>"; };
-		FDBC9CB11816227C00861C75 /* tiny_shop_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_shop_logo.png; sourceTree = "<group>"; };
 		FDBC9CC718162B3700861C75 /* time_to_finish_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time_to_finish_label.png; sourceTree = "<group>"; };
 		FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KBZipaDeeDooDah.ttf; sourceTree = "<group>"; };
 		FDBC9CD118163E2700861C75 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
@@ -278,8 +274,6 @@
 				FDBC9CE91817484700861C75 /* tried_some_label.png */,
 				FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */,
 				FDBC9CC718162B3700861C75 /* time_to_finish_label.png */,
-				FDBC9CB11816227C00861C75 /* tiny_shop_logo.png */,
-				FDBC9CAB181621D800861C75 /* settings_logo.png */,
 				EC4020EB17FDC15100FC24B1 /* book_cover.jpg */,
 				FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */,
 				31EC9EED17F223B1001DBCFE /* frame.jpg */,
@@ -403,7 +397,6 @@
 				FDBC9CC818162B3700861C75 /* time_to_finish_label.png in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
-				FDBC9CB21816227C00861C75 /* tiny_shop_logo.png in Resources */,
 				FDBC9CF31817484700861C75 /* story_mode.png in Resources */,
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
@@ -418,7 +411,6 @@
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */,
 				EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */,
-				FDBC9CAC181621D800861C75 /* settings_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
