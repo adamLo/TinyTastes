@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     self.coinsNotifLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"coinsKey"];
     self.coinsNotifLabel.text = [NSString stringWithFormat:@"You have %d coins", myNumCoins];

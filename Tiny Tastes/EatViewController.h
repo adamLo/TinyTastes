@@ -10,8 +10,13 @@
 
 @interface EatViewController : UIViewController {
     IBOutlet UILabel *countdownLabel;
+    IBOutlet UILabel *backLabel;
+    IBOutlet UILabel *chooseLabel;
+
     NSTimer *countdownTimer;
     int secondsCount;
+    bool blinkStatus;
+    
     IBOutlet UIImageView *eatingCritter;
         
     IBOutlet UIButton *doneButton;

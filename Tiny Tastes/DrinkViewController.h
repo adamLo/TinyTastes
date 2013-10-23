@@ -10,6 +10,8 @@
 
 @interface DrinkViewController : UIViewController {
     IBOutlet UILabel *countdownLabel;
+    IBOutlet UILabel *backLabel;
+
     NSTimer *countdownTimer;
     int secondsCount;
     IBOutlet UIImageView *drinkingCritter;

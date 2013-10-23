@@ -61,6 +61,7 @@
 		FDBC9CFD18174AE700861C75 /* big_critter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CFC18174AE700861C75 /* big_critter.jpg */; };
 		FDBC9D01181761EE00861C75 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D00181761EE00861C75 /* arrow.png */; };
 		FDBC9D031817632600861C75 /* moneybag.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D021817632600861C75 /* moneybag.png */; };
+		FDBC9D051817656E00861C75 /* back_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D041817656E00861C75 /* back_arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		FDBC9CFC18174AE700861C75 /* big_critter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_critter.jpg; sourceTree = "<group>"; };
 		FDBC9D00181761EE00861C75 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		FDBC9D021817632600861C75 /* moneybag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneybag.png; sourceTree = "<group>"; };
+		FDBC9D041817656E00861C75 /* back_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDBC9D041817656E00861C75 /* back_arrow.png */,
 				FDBC9D021817632600861C75 /* moneybag.png */,
 				FDBC9D00181761EE00861C75 /* arrow.png */,
 				FDBC9CF61817494300861C75 /* drinking_critter_1.jpg */,
@@ -412,6 +415,7 @@
 				FDBC9CF11817484700861C75 /* lets_drink.jpg in Resources */,
 				FDBC9D01181761EE00861C75 /* arrow.png in Resources */,
 				FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */,
+				FDBC9D051817656E00861C75 /* back_arrow.png in Resources */,
 				FDBC9CFB1817494B00861C75 /* none_this_time_label.png in Resources */,
 				FDBC9CF01817484700861C75 /* im_done_label.jpg in Resources */,
 				FDBC9CF41817484700861C75 /* tiny_shop.jpg in Resources */,

@@ -31,6 +31,7 @@
     allFinishedButton.hidden = YES;
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
+    backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     
     drinkingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"drinking_critter_1.jpg"],
                                      [UIImage imageNamed:@"drinking_critter_2.jpg"], nil];

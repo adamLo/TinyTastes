@@ -30,6 +30,10 @@
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
     
+    backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
+    chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
+    chooseLabel.hidden = YES;
+    
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"frame.jpg"]];
  
     eatingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"eating_critter_1.jpg"],
@@ -87,6 +91,16 @@
     }
 }
 
+- (void)blink{
+    if(blinkStatus == FALSE){
+        chooseLabel.hidden = NO;
+        blinkStatus = TRUE;
+    }else {
+        chooseLabel.hidden = YES;
+        blinkStatus = FALSE;
+    }
+}
+
 - (IBAction)doneButtonClicked {
     [countdownTimer invalidate];
     countdownTimer = nil;
@@ -95,6 +109,9 @@
     notFinishedButton.hidden = NO;
     doneButton.hidden = YES;
     [eatingCritter stopAnimating];
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
+    blinkStatus = FALSE;
 }
 
 @end
