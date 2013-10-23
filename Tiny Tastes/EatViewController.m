@@ -65,7 +65,7 @@
     
 }
 - (void)setTimer {
-    secondsCount = 100; //hard-coded value, change this
+    secondsCount = 300; //hard-coded value, change this
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 

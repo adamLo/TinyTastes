@@ -59,6 +59,8 @@
 		FDBC9CF91817494700861C75 /* drinking_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CF81817494700861C75 /* drinking_critter_2.jpg */; };
 		FDBC9CFB1817494B00861C75 /* none_this_time_label.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CFA1817494B00861C75 /* none_this_time_label.png */; };
 		FDBC9CFD18174AE700861C75 /* big_critter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CFC18174AE700861C75 /* big_critter.jpg */; };
+		FDBC9D01181761EE00861C75 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D00181761EE00861C75 /* arrow.png */; };
+		FDBC9D031817632600861C75 /* moneybag.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D021817632600861C75 /* moneybag.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +146,8 @@
 		FDBC9CF81817494700861C75 /* drinking_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_critter_2.jpg; sourceTree = "<group>"; };
 		FDBC9CFA1817494B00861C75 /* none_this_time_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = none_this_time_label.png; sourceTree = "<group>"; };
 		FDBC9CFC18174AE700861C75 /* big_critter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_critter.jpg; sourceTree = "<group>"; };
+		FDBC9D00181761EE00861C75 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		FDBC9D021817632600861C75 /* moneybag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneybag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,8 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDBC9D021817632600861C75 /* moneybag.png */,
+				FDBC9D00181761EE00861C75 /* arrow.png */,
 				FDBC9CF61817494300861C75 /* drinking_critter_1.jpg */,
 				FDBC9CFC18174AE700861C75 /* big_critter.jpg */,
 				FDBC9CFA1817494B00861C75 /* none_this_time_label.png */,
@@ -385,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBC9CEB1817484700861C75 /* clock_settings.jpg in Resources */,
+				FDBC9D031817632600861C75 /* moneybag.png in Resources */,
 				FDBC9CF51817484700861C75 /* tried_some_label.png in Resources */,
 				EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */,
 				FDBC9CF71817494300861C75 /* drinking_critter_1.jpg in Resources */,
@@ -403,6 +410,7 @@
 				FDBC9CEA1817484700861C75 /* all_finished_label.png in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FDBC9CF11817484700861C75 /* lets_drink.jpg in Resources */,
+				FDBC9D01181761EE00861C75 /* arrow.png in Resources */,
 				FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */,
 				FDBC9CFB1817494B00861C75 /* none_this_time_label.png in Resources */,
 				FDBC9CF01817484700861C75 /* im_done_label.jpg in Resources */,
