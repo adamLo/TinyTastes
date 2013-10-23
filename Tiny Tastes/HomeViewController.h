@@ -10,4 +10,10 @@
 
 @interface HomeViewController : UIViewController
 
+@property(nonatomic) IBOutlet UILabel *storyModeLabel;
+@property(nonatomic) IBOutlet UILabel *letsDrinkLabel;
+@property(nonatomic) IBOutlet UILabel *letsEatLabel;
+@property(nonatomic) IBOutlet UILabel *tinyShopLabel;
+@property(nonatomic) IBOutlet UILabel *settingsLabel;
+
 @end

@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DrinkViewController : UIViewController
+@interface DrinkViewController : UIViewController {
+    IBOutlet UILabel *countdownLabel;
+    NSTimer *countdownTimer;
+    int secondsCount;
+    IBOutlet UIImageView *drinkingCritter;
+    
+    IBOutlet UIImageView *doneButtonImage;
+    IBOutlet UIImageView *allFinishedButtonImage;
+    IBOutlet UIImageView *partiallyFinishedButtonImage;
+    IBOutlet UIImageView *notFinishedButtonImage;
+    
+    IBOutlet UIButton *doneButton;
+    IBOutlet UIButton *allFinishedButton;
+    IBOutlet UIButton *partiallyFinishedButton;
+    IBOutlet UIButton *notFinishedButton;
+}
 
 @end

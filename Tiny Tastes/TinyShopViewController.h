@@ -10,4 +10,6 @@
 
 @interface TinyShopViewController : UIViewController
 
+@property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
+
 @end
