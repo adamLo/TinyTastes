@@ -11,11 +11,15 @@
 @interface DrinkViewController : UIViewController {
     IBOutlet UILabel *countdownLabel;
     IBOutlet UILabel *backLabel;
+    IBOutlet UILabel *chooseLabel;
 
     NSTimer *countdownTimer;
     int secondsCount;
+    bool blinkStatus;
+
     IBOutlet UIImageView *drinkingCritter;
-        
+    IBOutlet UIImageView *redLine;
+
     IBOutlet UIButton *doneButton;
     IBOutlet UIButton *allFinishedButton;
     IBOutlet UIButton *partiallyFinishedButton;

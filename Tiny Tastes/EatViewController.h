@@ -18,7 +18,8 @@
     bool blinkStatus;
     
     IBOutlet UIImageView *eatingCritter;
-        
+    IBOutlet UIImageView *redLine;
+    
     IBOutlet UIButton *doneButton;
     IBOutlet UIButton *allFinishedButton;
     IBOutlet UIButton *partiallyFinishedButton;

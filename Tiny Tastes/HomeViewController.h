@@ -15,5 +15,6 @@
 @property(nonatomic) IBOutlet UILabel *letsEatLabel;
 @property(nonatomic) IBOutlet UILabel *tinyShopLabel;
 @property(nonatomic) IBOutlet UILabel *settingsLabel;
+@property(nonatomic) IBOutlet UILabel *numCoinsLabel;
 
 @end

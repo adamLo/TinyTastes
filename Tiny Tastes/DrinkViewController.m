@@ -31,7 +31,11 @@
     allFinishedButton.hidden = YES;
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
+    
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
+    chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
+    chooseLabel.hidden = YES;
+    redLine.hidden = YES;
     
     drinkingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"drinking_critter_1.jpg"],
                                      [UIImage imageNamed:@"drinking_critter_2.jpg"], nil];
@@ -90,6 +94,18 @@
     }
 }
 
+- (void)blink{
+    if(blinkStatus == FALSE){
+        chooseLabel.hidden = NO;
+        redLine.hidden = NO;
+        blinkStatus = TRUE;
+    }else {
+        chooseLabel.hidden = YES;
+        redLine.hidden = YES;
+        blinkStatus = FALSE;
+    }
+}
+
 - (IBAction)doneButtonClicked {
     [countdownTimer invalidate];
     countdownTimer = nil;
@@ -98,6 +114,9 @@
     notFinishedButton.hidden = NO;
     doneButton.hidden = YES;
     [drinkingCritter stopAnimating];
+    
+    [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
+    blinkStatus = FALSE;
 }
 
 @end

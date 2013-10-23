@@ -33,6 +33,7 @@
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     chooseLabel.hidden = YES;
+    redLine.hidden = YES;
     
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"frame.jpg"]];
  
@@ -94,9 +95,11 @@
 - (void)blink{
     if(blinkStatus == FALSE){
         chooseLabel.hidden = NO;
+        redLine.hidden = NO;
         blinkStatus = TRUE;
     }else {
         chooseLabel.hidden = YES;
+        redLine.hidden = YES;
         blinkStatus = FALSE;
     }
 }
@@ -107,10 +110,12 @@
     allFinishedButton.hidden = NO;
     partiallyFinishedButton.hidden = NO;
     notFinishedButton.hidden = NO;
+    chooseLabel.hidden = NO;
+    redLine.hidden = NO;
     doneButton.hidden = YES;
     [eatingCritter stopAnimating];
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
+    [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
     blinkStatus = FALSE;
 }
 

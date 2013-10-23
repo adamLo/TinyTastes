@@ -48,7 +48,6 @@
 		FDBC9CEA1817484700861C75 /* all_finished_label.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CDE1817484700861C75 /* all_finished_label.png */; };
 		FDBC9CEB1817484700861C75 /* clock_settings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CDF1817484700861C75 /* clock_settings.jpg */; };
 		FDBC9CEE1817484700861C75 /* eating_critter_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE21817484700861C75 /* eating_critter_1.jpg */; };
-		FDBC9CEF1817484700861C75 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE31817484700861C75 /* eating_critter_2.jpg */; };
 		FDBC9CF01817484700861C75 /* im_done_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE41817484700861C75 /* im_done_label.jpg */; };
 		FDBC9CF11817484700861C75 /* lets_drink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE51817484700861C75 /* lets_drink.jpg */; };
 		FDBC9CF21817484700861C75 /* lets_eat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE61817484700861C75 /* lets_eat.jpg */; };
@@ -62,6 +61,9 @@
 		FDBC9D01181761EE00861C75 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D00181761EE00861C75 /* arrow.png */; };
 		FDBC9D031817632600861C75 /* moneybag.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D021817632600861C75 /* moneybag.png */; };
 		FDBC9D051817656E00861C75 /* back_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D041817656E00861C75 /* back_arrow.png */; };
+		FDBC9D071817832B00861C75 /* coin_pouch.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D061817832B00861C75 /* coin_pouch.png */; };
+		FDBC9D0B1817904A00861C75 /* redline.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0A1817904A00861C75 /* redline.png */; };
+		FDBC9D0D181852F400861C75 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,7 +138,6 @@
 		FDBC9CDE1817484700861C75 /* all_finished_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all_finished_label.png; sourceTree = "<group>"; };
 		FDBC9CDF1817484700861C75 /* clock_settings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clock_settings.jpg; sourceTree = "<group>"; };
 		FDBC9CE21817484700861C75 /* eating_critter_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_1.jpg; sourceTree = "<group>"; };
-		FDBC9CE31817484700861C75 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
 		FDBC9CE41817484700861C75 /* im_done_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_done_label.jpg; sourceTree = "<group>"; };
 		FDBC9CE51817484700861C75 /* lets_drink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lets_drink.jpg; sourceTree = "<group>"; };
 		FDBC9CE61817484700861C75 /* lets_eat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lets_eat.jpg; sourceTree = "<group>"; };
@@ -150,6 +151,9 @@
 		FDBC9D00181761EE00861C75 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		FDBC9D021817632600861C75 /* moneybag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneybag.png; sourceTree = "<group>"; };
 		FDBC9D041817656E00861C75 /* back_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow.png; sourceTree = "<group>"; };
+		FDBC9D061817832B00861C75 /* coin_pouch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin_pouch.png; sourceTree = "<group>"; };
+		FDBC9D0A1817904A00861C75 /* redline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redline.png; sourceTree = "<group>"; };
+		FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +268,9 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */,
+				FDBC9D0A1817904A00861C75 /* redline.png */,
+				FDBC9D061817832B00861C75 /* coin_pouch.png */,
 				FDBC9D041817656E00861C75 /* back_arrow.png */,
 				FDBC9D021817632600861C75 /* moneybag.png */,
 				FDBC9D00181761EE00861C75 /* arrow.png */,
@@ -274,7 +281,6 @@
 				FDBC9CDE1817484700861C75 /* all_finished_label.png */,
 				FDBC9CDF1817484700861C75 /* clock_settings.jpg */,
 				FDBC9CE21817484700861C75 /* eating_critter_1.jpg */,
-				FDBC9CE31817484700861C75 /* eating_critter_2.jpg */,
 				FDBC9CE41817484700861C75 /* im_done_label.jpg */,
 				FDBC9CE51817484700861C75 /* lets_drink.jpg */,
 				FDBC9CE61817484700861C75 /* lets_eat.jpg */,
@@ -394,13 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBC9CEB1817484700861C75 /* clock_settings.jpg in Resources */,
+				FDBC9D0B1817904A00861C75 /* redline.png in Resources */,
 				FDBC9D031817632600861C75 /* moneybag.png in Resources */,
 				FDBC9CF51817484700861C75 /* tried_some_label.png in Resources */,
 				EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */,
 				FDBC9CF71817494300861C75 /* drinking_critter_1.jpg in Resources */,
 				EC6FD1C717EA746000EB05E9 /* Default.png in Resources */,
-				FDBC9CEF1817484700861C75 /* eating_critter_2.jpg in Resources */,
 				FDBC9CFD18174AE700861C75 /* big_critter.jpg in Resources */,
+				FDBC9D0D181852F400861C75 /* eating_critter_2.jpg in Resources */,
 				FDBC9CEE1817484700861C75 /* eating_critter_1.jpg in Resources */,
 				EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */,
 				FDBC9CF91817494700861C75 /* drinking_critter_2.jpg in Resources */,
@@ -413,6 +420,7 @@
 				FDBC9CEA1817484700861C75 /* all_finished_label.png in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FDBC9CF11817484700861C75 /* lets_drink.jpg in Resources */,
+				FDBC9D071817832B00861C75 /* coin_pouch.png in Resources */,
 				FDBC9D01181761EE00861C75 /* arrow.png in Resources */,
 				FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */,
 				FDBC9D051817656E00861C75 /* back_arrow.png in Resources */,
