@@ -31,6 +31,7 @@
     [super viewWillAppear:animated];
     
     self.dataLabel.text = [self.dataObject description];
+    self.dataLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:45];
 }
 
 @end

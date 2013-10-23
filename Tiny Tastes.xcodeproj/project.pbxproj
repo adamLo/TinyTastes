@@ -46,7 +46,6 @@
 		FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */; };
 		FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9CD218163E2700861C75 /* FeedbackViewController.m */; };
 		FDBC9CEA1817484700861C75 /* all_finished_label.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CDE1817484700861C75 /* all_finished_label.png */; };
-		FDBC9CEB1817484700861C75 /* clock_settings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CDF1817484700861C75 /* clock_settings.jpg */; };
 		FDBC9CEE1817484700861C75 /* eating_critter_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE21817484700861C75 /* eating_critter_1.jpg */; };
 		FDBC9CF01817484700861C75 /* im_done_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE41817484700861C75 /* im_done_label.jpg */; };
 		FDBC9CF11817484700861C75 /* lets_drink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CE51817484700861C75 /* lets_drink.jpg */; };
@@ -64,6 +63,8 @@
 		FDBC9D071817832B00861C75 /* coin_pouch.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D061817832B00861C75 /* coin_pouch.png */; };
 		FDBC9D0B1817904A00861C75 /* redline.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0A1817904A00861C75 /* redline.png */; };
 		FDBC9D0D181852F400861C75 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */; };
+		FDBC9D0F1818654F00861C75 /* clock_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0E1818654F00861C75 /* clock_settings.png */; };
+		FDBC9D11181880DE00861C75 /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D10181880DE00861C75 /* camera_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,7 +137,6 @@
 		FDBC9CD118163E2700861C75 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		FDBC9CD218163E2700861C75 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		FDBC9CDE1817484700861C75 /* all_finished_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all_finished_label.png; sourceTree = "<group>"; };
-		FDBC9CDF1817484700861C75 /* clock_settings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clock_settings.jpg; sourceTree = "<group>"; };
 		FDBC9CE21817484700861C75 /* eating_critter_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_1.jpg; sourceTree = "<group>"; };
 		FDBC9CE41817484700861C75 /* im_done_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_done_label.jpg; sourceTree = "<group>"; };
 		FDBC9CE51817484700861C75 /* lets_drink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lets_drink.jpg; sourceTree = "<group>"; };
@@ -154,6 +154,8 @@
 		FDBC9D061817832B00861C75 /* coin_pouch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin_pouch.png; sourceTree = "<group>"; };
 		FDBC9D0A1817904A00861C75 /* redline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redline.png; sourceTree = "<group>"; };
 		FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
+		FDBC9D0E1818654F00861C75 /* clock_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_settings.png; sourceTree = "<group>"; };
+		FDBC9D10181880DE00861C75 /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,8 +270,10 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDBC9D0E1818654F00861C75 /* clock_settings.png */,
 				FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */,
 				FDBC9D0A1817904A00861C75 /* redline.png */,
+				FDBC9D10181880DE00861C75 /* camera_icon.png */,
 				FDBC9D061817832B00861C75 /* coin_pouch.png */,
 				FDBC9D041817656E00861C75 /* back_arrow.png */,
 				FDBC9D021817632600861C75 /* moneybag.png */,
@@ -279,7 +283,6 @@
 				FDBC9CFA1817494B00861C75 /* none_this_time_label.png */,
 				FDBC9CF81817494700861C75 /* drinking_critter_2.jpg */,
 				FDBC9CDE1817484700861C75 /* all_finished_label.png */,
-				FDBC9CDF1817484700861C75 /* clock_settings.jpg */,
 				FDBC9CE21817484700861C75 /* eating_critter_1.jpg */,
 				FDBC9CE41817484700861C75 /* im_done_label.jpg */,
 				FDBC9CE51817484700861C75 /* lets_drink.jpg */,
@@ -399,8 +402,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDBC9CEB1817484700861C75 /* clock_settings.jpg in Resources */,
 				FDBC9D0B1817904A00861C75 /* redline.png in Resources */,
+				FDBC9D0F1818654F00861C75 /* clock_settings.png in Resources */,
 				FDBC9D031817632600861C75 /* moneybag.png in Resources */,
 				FDBC9CF51817484700861C75 /* tried_some_label.png in Resources */,
 				EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */,
@@ -418,6 +421,7 @@
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				FDBC9CEA1817484700861C75 /* all_finished_label.png in Resources */,
+				FDBC9D11181880DE00861C75 /* camera_icon.png in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FDBC9CF11817484700861C75 /* lets_drink.jpg in Resources */,
 				FDBC9D071817832B00861C75 /* coin_pouch.png in Resources */,
