@@ -9,9 +9,11 @@
 #import "XMLDelegate.h"
 
 @implementation XMLDelegate
+@synthesize currentScene, scenes;
 
 - (XMLDelegate *) initXMLDelegate {
     self = [super init];
+    scenes = [[NSMutableArray alloc] init];
     return self;
 }
 
@@ -20,25 +22,47 @@ didStartElement:(NSString *)elementName
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qualifiedName
     attributes:(NSDictionary *)attributeDict {
-	
-    NSLog(@"Called parse");
-    
+	   
     if ([elementName isEqualToString:@"scene"]) {
-        NSLog(@"user element found – create a new instance of Scene class...");
-        Scene * scene = [[Scene alloc] init];
-        scene.sceneID = [attributeDict objectForKey:@"id"];
-        NSLog(@"SceneID is %@",scene.sceneID);
+        //NSLog(@"Creating a new instance of Scene class...");
+        currentScene = [[Scene alloc] init];
+        currentScene.images = [[NSMutableArray alloc] init];
+        currentScene.links = [[NSMutableArray alloc] init];
+        currentScene.sceneID = [attributeDict objectForKey:@"id"];
+        //NSLog(@"SceneID is %@",currentScene.sceneID);
+    }
+    
+    if ([elementName isEqualToString:@"image"]) {
+        //NSLog(@"Adding image to scene...");
+        [currentScene.images addObject:[UIImage imageNamed:([attributeDict objectForKey:@"path"])]];
+        //NSLog(@"Image is %d",currentScene.images.count);
+    }
+    
+    if ([elementName isEqualToString:@"text"]) {
+        //NSLog(@"Adding text to scene...");
+        currentScene.text = [attributeDict objectForKey:@"string"];
+        //NSLog(@"Text is %@",currentScene.text);
+    }
+    
+    if ([elementName isEqualToString:@"link"]) {
+        //NSLog(@"Adding link to scene...");
+        [currentScene.links addObject:[attributeDict objectForKey:@"id"]];
+        //NSLog(@"Link is %@",currentScene.links.lastObject);
     }
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    NSLog(@"Processing value for : %@", string);
 }
 
 - (void)parser:(NSXMLParser *)parser
  didEndElement:(NSString *)elementName
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName {
+    if ([elementName isEqualToString:@"scene"]) {
+        [scenes addObject:currentScene];
+        // release user object
+        currentScene = nil;
+    }
 }
 
 
