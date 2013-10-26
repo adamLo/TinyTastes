@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,9 +58,10 @@
     
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
     self.imageView.image = chosenImage;
+    self.cameraIcon.hidden = YES;
+    self.instructionLabel.hidden = YES;
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
-    
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {

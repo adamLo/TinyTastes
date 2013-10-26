@@ -65,6 +65,11 @@
 		FDBC9D0D181852F400861C75 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */; };
 		FDBC9D0F1818654F00861C75 /* clock_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0E1818654F00861C75 /* clock_settings.png */; };
 		FDBC9D11181880DE00861C75 /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D10181880DE00861C75 /* camera_icon.png */; };
+		FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */; };
+		FDE28380181C543300534A6C /* juicebox.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE2837F181C543300534A6C /* juicebox.png */; };
+		FDE28382181C543B00534A6C /* glass.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE28381181C543B00534A6C /* glass.png */; };
+		FDE28384181C544000534A6C /* sippy.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE28383181C544000534A6C /* sippy.png */; };
+		FDE28386181C544900534A6C /* bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE28385181C544900534A6C /* bottle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +161,12 @@
 		FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
 		FDBC9D0E1818654F00861C75 /* clock_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_settings.png; sourceTree = "<group>"; };
 		FDBC9D10181880DE00861C75 /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
+		FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDrinkViewController.h; sourceTree = "<group>"; };
+		FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDrinkViewController.m; sourceTree = "<group>"; };
+		FDE2837F181C543300534A6C /* juicebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juicebox.png; sourceTree = "<group>"; };
+		FDE28381181C543B00534A6C /* glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glass.png; sourceTree = "<group>"; };
+		FDE28383181C544000534A6C /* sippy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sippy.png; sourceTree = "<group>"; };
+		FDE28385181C544900534A6C /* bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +281,10 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDE28385181C544900534A6C /* bottle.png */,
+				FDE28383181C544000534A6C /* sippy.png */,
+				FDE2837F181C543300534A6C /* juicebox.png */,
+				FDE28381181C543B00534A6C /* glass.png */,
 				FDBC9D0E1818654F00861C75 /* clock_settings.png */,
 				FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */,
 				FDBC9D0A1817904A00861C75 /* redline.png */,
@@ -302,6 +317,8 @@
 		FDB5830B17EA8B5D004C6FA3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */,
+				FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */,
 				FDBC9CD118163E2700861C75 /* FeedbackViewController.h */,
 				FDBC9CD218163E2700861C75 /* FeedbackViewController.m */,
 				FDB11DE61804E02800F15964 /* MealNotificationViewController.h */,
@@ -403,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBC9D0B1817904A00861C75 /* redline.png in Resources */,
+				FDE28384181C544000534A6C /* sippy.png in Resources */,
 				FDBC9D0F1818654F00861C75 /* clock_settings.png in Resources */,
 				FDBC9D031817632600861C75 /* moneybag.png in Resources */,
 				FDBC9CF51817484700861C75 /* tried_some_label.png in Resources */,
@@ -413,6 +431,7 @@
 				FDBC9D0D181852F400861C75 /* eating_critter_2.jpg in Resources */,
 				FDBC9CEE1817484700861C75 /* eating_critter_1.jpg in Resources */,
 				EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */,
+				FDE28386181C544900534A6C /* bottle.png in Resources */,
 				FDBC9CF91817494700861C75 /* drinking_critter_2.jpg in Resources */,
 				FDBC9CC818162B3700861C75 /* time_to_finish_label.png in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
@@ -432,7 +451,9 @@
 				FDBC9CF01817484700861C75 /* im_done_label.jpg in Resources */,
 				FDBC9CF41817484700861C75 /* tiny_shop.jpg in Resources */,
 				FDBC9CF21817484700861C75 /* lets_eat.jpg in Resources */,
+				FDE28380181C543300534A6C /* juicebox.png in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
+				FDE28382181C543B00534A6C /* glass.png in Resources */,
 				31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */,
 				EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */,
 			);
@@ -477,6 +498,7 @@
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
+				FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */,
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
 				EC7124B918134358007319C5 /* StoryModelController.m in Sources */,
 				FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */,

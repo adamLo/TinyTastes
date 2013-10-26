@@ -132,6 +132,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN6-rR-1lC">
+                                <rect key="frame" x="311" y="680" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pqo-h6-K1e" kind="modal" id="q4D-yx-DDe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -415,8 +425,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkx-xy-jV5">
-                                <rect key="frame" x="317" y="493" width="391" height="226"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkx-xy-jV5">
+                                <rect key="frame" x="98" y="68" width="840" height="491"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw">
                                 <rect key="frame" x="278" y="80" width="468" height="379"/>
@@ -453,13 +463,25 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <action selector="takePhoto:" destination="t2j-Jj-fJN" eventType="touchUpInside" id="zwj-rn-X4f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVl-Zf-Kiz">
+                                <rect key="frame" x="201" y="461" width="635" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take A Photo Of Your Plate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="t2j-Jj-fJN" eventType="touchUpInside" id="7Ea-aV-OzX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="cameraIcon" destination="qtL-r8-iUw" id="KJc-Kc-4Yt"/>
                         <outlet property="imageView" destination="bkx-xy-jV5" id="ofD-o7-5KC"/>
+                        <outlet property="instructionLabel" destination="lVl-Zf-Kiz" id="Nre-nf-6BZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02E-bE-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -875,22 +897,25 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="-2129" y="-1512"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose Drink View Controller-->
         <scene sceneID="ALc-cP-cqc">
             <objects>
-                <viewController id="pqo-h6-K1e" sceneMemberID="viewController">
+                <viewController id="pqo-h6-K1e" customClass="ChooseDrinkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l3y-9a-INE"/>
                         <viewControllerLayoutGuide type="bottom" id="yD2-Yf-wqB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VaT-O9-AEe">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7D-3Z-Ipi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-799" y="-748"/>
         </scene>
     </scenes>
     <resources>
@@ -929,11 +954,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="P60-4d-HuF"/>
-        <segue reference="Nk1-Jc-8V3"/>
+        <segue reference="VDL-IZ-dOD"/>
+        <segue reference="2gV-ig-Aad"/>
         <segue reference="7fZ-w8-WXP"/>
         <segue reference="qg2-we-N1h"/>
-        <segue reference="Dnw-WE-x5v"/>
-        <segue reference="VDL-IZ-dOD"/>
+        <segue reference="Nk1-Jc-8V3"/>
+        <segue reference="Acc-TB-wKP"/>
     </inferredMetricsTieBreakers>
 </document>
