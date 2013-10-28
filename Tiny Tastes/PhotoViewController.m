@@ -8,6 +8,7 @@
 //
 
 #import "PhotoViewController.h"
+#import "OverlayView.h"
 
 @interface PhotoViewController ()
 
@@ -28,6 +29,38 @@
 {
     [super viewDidLoad];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+
+    	OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+	// Create a new image picker instance:
+	UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+	
+	// Set the image picker source:
+	picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+	
+	// Hide the controls:
+	picker.showsCameraControls = NO;
+	picker.navigationBarHidden = YES;
+	
+	// Insert the overlay:
+    picker.cameraOverlayView = overlay;
+	// Show the picker:
+    [self presentViewController:picker animated:YES completion:nil];
+
+    [super viewDidAppear:YES];
+            
+        } else {
+            UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                  message:@"This device has no camera"
+                                                                 delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles: nil];
+                    [myAlertView show];
+        }
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,6 +86,8 @@
         [myAlertView show];
     }
 }
+
+
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
