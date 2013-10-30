@@ -4,9 +4,11 @@
 //
 //  Created by Jei Min Yoo on 10/8/13.
 //  Reference: http://www.appcoda.com/ios-programming-camera-iphone-app/
+//  http://www.pushplay.net/2010/03/one-tap-uiimagepickercontroller-iphone-camera/
 //  Copyright (c) 2013 Le Labs. All rights reserved.
 //
 
+#import <AVFoundation/AVFoundation.h>
 #import "PhotoViewController.h"
 #import "OverlayView.h"
 
@@ -33,9 +35,9 @@
 
 - (void) viewDidAppear:(BOOL)animated {
 
-    	OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
-        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 	// Create a new image picker instance:
 	UIImagePickerController *picker = [[UIImagePickerController alloc] init];
 	
@@ -70,6 +72,7 @@
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {
+    
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
@@ -85,6 +88,7 @@
                                                         otherButtonTitles: nil];
         [myAlertView show];
     }
+    
 }
 
 

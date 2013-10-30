@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311252DA18206BB1008D5C75 /* camera_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 311252D918206BB1008D5C75 /* camera_overlay.png */; };
+		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31EC9EED17F223B1001DBCFE /* frame.jpg */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
@@ -84,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		311252D918206BB1008D5C75 /* camera_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_overlay.png; sourceTree = "<group>"; };
+		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		31EC9EED17F223B1001DBCFE /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */,
 				EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */,
 				EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */,
 				EC6FD1B917EA746000EB05E9 /* CoreGraphics.framework in Frameworks */,
@@ -220,6 +225,7 @@
 		EC6FD1B317EA746000EB05E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				311252DD1820A935008D5C75 /* AVFoundation.framework */,
 				EC6FD1B417EA746000EB05E9 /* UIKit.framework */,
 				EC6FD1B617EA746000EB05E9 /* Foundation.framework */,
 				EC6FD1B817EA746000EB05E9 /* CoreGraphics.framework */,
@@ -286,6 +292,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				311252D918206BB1008D5C75 /* camera_overlay.png */,
 				FDE28385181C544900534A6C /* bottle.png */,
 				FDE28383181C544000534A6C /* sippy.png */,
 				FDE2837F181C543300534A6C /* juicebox.png */,
@@ -400,6 +407,11 @@
 				CLASSPREFIX = lelabs;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Le Labs";
+				TargetAttributes = {
+					EC6FD1B017EA746000EB05E9 = {
+						DevelopmentTeam = HNACG3848H;
+					};
+				};
 			};
 			buildConfigurationList = EC6FD1AC17EA746000EB05E9 /* Build configuration list for PBXProject "Tiny Tastes" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -441,6 +453,7 @@
 				FDBC9CC818162B3700861C75 /* time_to_finish_label.png in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
+				311252DA18206BB1008D5C75 /* camera_overlay.png in Resources */,
 				FDBC9CF31817484700861C75 /* story_mode.png in Resources */,
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
@@ -624,10 +637,13 @@
 		EC6FD1ED17EA746000EB05E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tiny Tastes/Tiny Tastes-Prefix.pch";
 				INFOPLIST_FILE = "Tiny Tastes/Tiny Tastes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -636,10 +652,13 @@
 		EC6FD1EE17EA746000EB05E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tiny Tastes/Tiny Tastes-Prefix.pch";
 				INFOPLIST_FILE = "Tiny Tastes/Tiny Tastes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};

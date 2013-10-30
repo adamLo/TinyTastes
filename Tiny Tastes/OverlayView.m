@@ -18,9 +18,9 @@
 		self.backgroundColor = [UIColor clearColor];
 		
 		// Load the image to show in the overlay:
-		UIImage *overlayGraphic = [UIImage imageNamed:@"moneybag.png"];
+		UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.png"];
 		UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];
-		overlayGraphicView.frame = CGRectMake(30, 100, 260, 200);
+		overlayGraphicView.frame = CGRectMake(0, 0, overlayGraphic.size.width, overlayGraphic.size.height);
 		[self addSubview:overlayGraphicView];
 
 
