@@ -50,6 +50,7 @@
 	
 	// Insert the overlay:
     picker.cameraOverlayView = overlay;
+        
 	// Show the picker:
     [self presentViewController:picker animated:YES completion:nil];
 
