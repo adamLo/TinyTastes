@@ -72,7 +72,8 @@
     
 }
 - (void)setTimer {
-    secondsCount = 300; //hard-coded value, change this
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    secondsCount = 60 * [prefs integerForKey:@"drinkTimer"];
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 

@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController {
+    IBOutlet UILabel *settingsLabel;
+    IBOutlet UILabel *soundLabel;
+    IBOutlet UILabel *mealTimer;
+    IBOutlet UILabel *mealAlerts;
+    IBOutlet UILabel *backLabel;
+    
+    IBOutlet UIButton *setTimerButton;
+    IBOutlet UIButton *setAlertsButton;
+}
 
 @end

@@ -37,6 +37,8 @@
 		EC7124C31814603F007319C5 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C21814603F007319C5 /* Scene.m */; };
 		EC7124C618146152007319C5 /* XMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLDelegate.m */; };
 		EC7124CB18147519007319C5 /* SceneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124CA18147519007319C5 /* SceneFactory.m */; };
+		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
+		FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */; };
 		FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DE71804E02800F15964 /* MealNotificationViewController.m */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
@@ -130,6 +132,10 @@
 		EC7124C518146152007319C5 /* XMLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDelegate.m; sourceTree = "<group>"; };
 		EC7124C918147519007319C5 /* SceneFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFactory.h; sourceTree = "<group>"; };
 		EC7124CA18147519007319C5 /* SceneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneFactory.m; sourceTree = "<group>"; };
+		FDA12066182452EC00877E20 /* CustomTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTimerViewController.h; sourceTree = "<group>"; };
+		FDA12067182452EC00877E20 /* CustomTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTimerViewController.m; sourceTree = "<group>"; };
+		FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetReminderAlertsViewController.h; sourceTree = "<group>"; };
+		FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetReminderAlertsViewController.m; sourceTree = "<group>"; };
 		FDB11DE61804E02800F15964 /* MealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DE71804E02800F15964 /* MealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
@@ -329,9 +335,13 @@
 		FDB5830B17EA8B5D004C6FA3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FDA12066182452EC00877E20 /* CustomTimerViewController.h */,
+				FDA12067182452EC00877E20 /* CustomTimerViewController.m */,
 				FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */,
 				FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */,
 				FDBC9CD118163E2700861C75 /* FeedbackViewController.h */,
+				FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */,
+				FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */,
 				FDBC9CD218163E2700861C75 /* FeedbackViewController.m */,
 				FDB11DE61804E02800F15964 /* MealNotificationViewController.h */,
 				FDB11DE71804E02800F15964 /* MealNotificationViewController.m */,
@@ -517,6 +527,8 @@
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
+				FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */,
+				FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */,
 				FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */,
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
 				EC7124B918134358007319C5 /* StoryModelController.m in Sources */,
