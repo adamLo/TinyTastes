@@ -11,6 +11,7 @@
 @interface PhotoViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIView *cameraView;
 @property (strong, nonatomic) IBOutlet UIButton *instructionLabel;
 @property (strong, nonatomic) IBOutlet UIButton *cameraIcon;
 
