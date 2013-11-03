@@ -7,6 +7,7 @@
 //
 
 #import "SetReminderAlertsViewController.h"
+#import "AddMealNotificationViewController.h"
 
 @interface SetReminderAlertsViewController ()
 
@@ -36,32 +37,88 @@
     }
     
     [self displayCurrentSettings];
+    //[self printCurrentNotifs];
+    NSLog(@"view did load was called successfully");
+}
+
+- (void)printCurrentNotifs
+{
+    for(UILocalNotification *aNotif in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
+        NSDate *date = [aNotif fireDate];
+        NSLog(@"%@",date);
+    }
 }
 
 - (void)displayCurrentSettings
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"hh:mm a"];
-    //NSLog(@"Current Date: %@", [formatter stringFromDate:[NSDate date]]);
+    [formatter setDateFormat:@"h:mm a"];
 
     NSDate *time = [self getNotificationFireDate:@"breakfast"];
     if(time != NULL) {
-        [breakfastLabel setText:[formatter stringFromDate:[NSDate date]]];
+        [breakfastTime setText:[formatter stringFromDate:time]];
     } else {
-        //[breakfastSwitch is];
+        [breakfastSwitch setOn:NO animated:YES];
         [breakfastLabel setTextColor:[UIColor grayColor]];
         [breakfastTime setTextColor:[UIColor grayColor]];
         [breakfastEdit setEnabled:NO];
     }
     
+    time = [self getNotificationFireDate:@"morning snack"];
+    if(time != NULL) {
+        [morningSnackTime setText:[formatter stringFromDate:time]];
+    } else {
+        [morningSnackSwitch setOn:NO animated:YES];
+        [morningSnackLabel setTextColor:[UIColor grayColor]];
+        [morningSnackTime setTextColor:[UIColor grayColor]];
+        [morningSnackEdit setEnabled:NO];
+    }
+
+    time = [self getNotificationFireDate:@"lunch"];
+    if(time != NULL) {
+        [lunchTime setText:[formatter stringFromDate:time]];
+    } else {
+        [lunchSwitch setOn:NO animated:YES];
+        [lunchLabel setTextColor:[UIColor grayColor]];
+        [lunchTime setTextColor:[UIColor grayColor]];
+        [lunchEdit setEnabled:NO];
+    }
     
+    time = [self getNotificationFireDate:@"afternoon snack"];
+    if(time != NULL) {
+        [afternoonSnackTime setText:[formatter stringFromDate:time]];
+    } else {
+        [afternoonSnackSwitch setOn:NO animated:YES];
+        [afternoonSnackLabel setTextColor:[UIColor grayColor]];
+        [afternoonSnackTime setTextColor:[UIColor grayColor]];
+        [afternoonSnackEdit setEnabled:NO];
+    }
     
+    time = [self getNotificationFireDate:@"dinner"];
+    if(time != NULL) {
+        [dinnerTime setText:[formatter stringFromDate:time]];
+    } else {
+        [dinnerSwitch setOn:NO animated:YES];
+        [dinnerLabel setTextColor:[UIColor grayColor]];
+        [dinnerTime setTextColor:[UIColor grayColor]];
+        [dinnerEdit setEnabled:NO];
+    }
+    
+    time = [self getNotificationFireDate:@"evening snack"];
+    if(time != NULL) {
+        [eveningSnackTime setText:[formatter stringFromDate:time]];
+    } else {
+        [eveningSnackSwitch setOn:NO animated:YES];
+        [eveningSnackLabel setTextColor:[UIColor grayColor]];
+        [eveningSnackTime setTextColor:[UIColor grayColor]];
+        [eveningSnackEdit setEnabled:NO];
+    }
 }
 
 - (NSDate *)getNotificationFireDate:(NSString *)mealName
 {
     for(UILocalNotification *aNotif in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
-        if([[aNotif.userInfo objectForKey:@"ID"] isEqualToString:mealName]) {
+        if([aNotif.userInfo objectForKey:mealName]) {
             return aNotif.fireDate;
         }
     }
@@ -130,7 +187,7 @@
     UILocalNotification *notification = [[UILocalNotification alloc] init] ;
     notification.fireDate = fireDateOfNotification ;
     notification.timeZone = [NSTimeZone localTimeZone] ;
-    notification.alertBody = [NSString stringWithFormat: @"It's time for %@!", mealName] ;
+    notification.alertBody = [NSString stringWithFormat: @"It's time for your %@!", mealName] ;
     notification.alertAction = @"Show me the item";
     notification.userInfo= [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"Some information"]
                                                                forKey:mealName];
@@ -144,11 +201,13 @@
 
 - (void)cancelDailyNotification:(NSString *)mealName
 {
+    NSLog(@"inside cancelDailyNotif");
     UILocalNotification *notificationToCancel = nil;
     for(UILocalNotification *aNotif in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
-        if([[aNotif.userInfo objectForKey:@"ID"] isEqualToString:mealName]) {
+        if([aNotif.userInfo objectForKey:mealName]) {
             notificationToCancel = aNotif;
             [[UIApplication sharedApplication] cancelLocalNotification:notificationToCancel];
+            NSLog(@"canceled %@",mealName);
             break;
         }
     }
@@ -241,6 +300,34 @@
         [eveningSnackLabel setTextColor:[UIColor blackColor]];
         [eveningSnackTime setTextColor:[UIColor blackColor]];
         [eveningSnackEdit setEnabled:YES];
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    AddMealNotificationViewController *controller = (AddMealNotificationViewController *)segue.destinationViewController;
+    if([segue.identifier isEqualToString:@"breakfastSegue"]){
+        controller.currentMeal = @"breakfast";
+        controller.currentNotificationTime = [self getNotificationFireDate:@"breakfast"];
+    }
+    if([segue.identifier isEqualToString:@"morningSnackSegue"]){
+        controller.currentMeal = @"morning snack";
+        controller.currentNotificationTime = [self getNotificationFireDate:@"morning snack"];
+    }
+    if([segue.identifier isEqualToString:@"lunchSegue"]){
+        controller.currentMeal = @"lunch";
+        controller.currentNotificationTime = [self getNotificationFireDate:@"lunch"];
+    }
+    if([segue.identifier isEqualToString:@"afternoonSnackSegue"]){
+        controller.currentMeal = @"afternoon snack";
+        controller.currentNotificationTime = [self getNotificationFireDate:@"afternoon snack"];
+    }
+    if([segue.identifier isEqualToString:@"dinnerSegue"]){
+        controller.currentMeal = @"dinner";
+        controller.currentNotificationTime = [self getNotificationFireDate:@"dinner"];
+    }
+    if([segue.identifier isEqualToString:@"eveningSnackSegue"]){
+        controller.currentMeal = @"evening snack";
+        controller.currentNotificationTime = [self getNotificationFireDate:@"evening snack"];
     }
 }
 

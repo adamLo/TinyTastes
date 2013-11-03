@@ -39,7 +39,7 @@
 		EC7124CB18147519007319C5 /* SceneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124CA18147519007319C5 /* SceneFactory.m */; };
 		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
 		FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */; };
-		FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DE71804E02800F15964 /* MealNotificationViewController.m */; };
+		FDA1206D1826E58500877E20 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1206C1826E58500877E20 /* checkmark.png */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
 		FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */; };
@@ -136,8 +136,7 @@
 		FDA12067182452EC00877E20 /* CustomTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTimerViewController.m; sourceTree = "<group>"; };
 		FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetReminderAlertsViewController.h; sourceTree = "<group>"; };
 		FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetReminderAlertsViewController.m; sourceTree = "<group>"; };
-		FDB11DE61804E02800F15964 /* MealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealNotificationViewController.h; sourceTree = "<group>"; };
-		FDB11DE71804E02800F15964 /* MealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealNotificationViewController.m; sourceTree = "<group>"; };
+		FDA1206C1826E58500877E20 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -298,6 +297,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDA1206C1826E58500877E20 /* checkmark.png */,
 				311252D918206BB1008D5C75 /* camera_overlay.png */,
 				FDE28385181C544900534A6C /* bottle.png */,
 				FDE28383181C544000534A6C /* sippy.png */,
@@ -340,11 +340,9 @@
 				FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */,
 				FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */,
 				FDBC9CD118163E2700861C75 /* FeedbackViewController.h */,
+				FDBC9CD218163E2700861C75 /* FeedbackViewController.m */,
 				FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */,
 				FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */,
-				FDBC9CD218163E2700861C75 /* FeedbackViewController.m */,
-				FDB11DE61804E02800F15964 /* MealNotificationViewController.h */,
-				FDB11DE71804E02800F15964 /* MealNotificationViewController.m */,
 				FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */,
 				FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */,
 				31FD15CE1804B91C00142A5F /* PhotoViewController.h */,
@@ -481,6 +479,7 @@
 				FDBC9CF21817484700861C75 /* lets_eat.jpg in Resources */,
 				FDE28380181C543300534A6C /* juicebox.png in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
+				FDA1206D1826E58500877E20 /* checkmark.png in Resources */,
 				FDE28382181C543B00534A6C /* glass.png in Resources */,
 				31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */,
 				EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */,
@@ -521,7 +520,6 @@
 				FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */,
 				EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */,
 				EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */,
-				FDB11DE81804E02800F15964 /* MealNotificationViewController.m in Sources */,
 				EC7124C618146152007319C5 /* XMLDelegate.m in Sources */,
 				31544D40181DAF41006C9D94 /* OverlayView.m in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
