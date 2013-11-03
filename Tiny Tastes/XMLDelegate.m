@@ -34,7 +34,10 @@ didStartElement:(NSString *)elementName
     
     if ([elementName isEqualToString:@"image"]) {
         //NSLog(@"Adding image to scene...");
-        [currentScene.images addObject:[UIImage imageNamed:([attributeDict objectForKey:@"path"])]];
+        UIImageView *currentImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:([attributeDict objectForKey:@"path"])]];
+        CGRect currentImageRect = CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue]);
+        [currentImage setFrame:currentImageRect];
+        [currentScene.images addObject: currentImage];
         //NSLog(@"Image is %d",currentScene.images.count);
     }
     
@@ -46,6 +49,8 @@ didStartElement:(NSString *)elementName
     
     if ([elementName isEqualToString:@"link"]) {
         //NSLog(@"Adding link to scene...");
+        CGRect currentImageRect = CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue]);
+        UIButton *currentLink = [[UIButton alloc] initWithFrame:currentImageRect];
         [currentScene.links addObject:[attributeDict objectForKey:@"id"]];
         //NSLog(@"Link is %@",currentScene.links.lastObject);
     }
