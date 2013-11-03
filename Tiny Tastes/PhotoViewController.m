@@ -33,38 +33,6 @@
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
 }
 
-- (void) viewDidAppear:(BOOL)animated {
-
-    OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-	// Create a new image picker instance:
-	UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-	
-	// Set the image picker source:
-	picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-	
-	// Hide the controls:
-	picker.showsCameraControls = NO;
-	picker.navigationBarHidden = YES;
-	
-	// Insert the overlay:
-    picker.cameraOverlayView = overlay;
-	// Show the picker:
-    [self presentViewController:picker animated:YES completion:nil];
-
-    [super viewDidAppear:YES];
-            
-        } else {
-            UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                  message:@"This device has no camera"
-                                                                 delegate:nil
-                                                        cancelButtonTitle:@"OK"
-                                                        otherButtonTitles: nil];
-                    [myAlertView show];
-        }
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -74,12 +42,27 @@
 - (IBAction)takePhoto:(UIButton *)sender {
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        // Create a new image picker instance:
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
-        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         picker.allowsEditing = YES;
         
-        [self presentViewController:picker animated:YES completion:NULL];
+        // Set the image picker source:
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+        // Hide the controls:
+        picker.showsCameraControls = YES;
+        picker.navigationBarHidden = YES;
+        picker.toolbarHidden = YES;
+        
+        // Insert the overlay:
+        OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        overlay.picker = picker;
+        picker.cameraOverlayView = overlay;
+        
+        // Show the picker:
+        [self presentViewController:picker animated:YES completion:nil];
+        
     } else {
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:@"This device has no camera"
@@ -92,15 +75,23 @@
 }
 
 
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    if (info == NULL) {
+        NSLog(@"info null");
+    }
+    
+    if (info[UIImagePickerControllerEditedImage] == NULL) {
+        NSLog(@"image null");
+    }
+        
+        UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+        self.imageView.image = chosenImage;
+        self.cameraIcon.hidden = YES;
+        self.instructionLabel.hidden = YES;
+        
+        [picker dismissViewControllerAnimated:YES completion:NULL];
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    self.imageView.image = chosenImage;
-    self.cameraIcon.hidden = YES;
-    self.instructionLabel.hidden = YES;
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
