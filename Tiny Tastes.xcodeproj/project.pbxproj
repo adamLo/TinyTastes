@@ -10,6 +10,7 @@
 		311252DA18206BB1008D5C75 /* camera_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 311252D918206BB1008D5C75 /* camera_overlay.png */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
+		319031EC1826FB3200F3D40C /* cutout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 319031EB1826FB3200F3D40C /* cutout.jpg */; };
 		31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31EC9EED17F223B1001DBCFE /* frame.jpg */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
 		EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4020EB17FDC15100FC24B1 /* book_cover.jpg */; };
@@ -92,6 +93,7 @@
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		319031EB1826FB3200F3D40C /* cutout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cutout.jpg; sourceTree = "<group>"; };
 		31EC9EED17F223B1001DBCFE /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
 		31FD15CE1804B91C00142A5F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		31FD15CF1804B91C00142A5F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				319031EB1826FB3200F3D40C /* cutout.jpg */,
 				311252D918206BB1008D5C75 /* camera_overlay.png */,
 				FDE28385181C544900534A6C /* bottle.png */,
 				FDE28383181C544000534A6C /* sippy.png */,
@@ -477,6 +480,7 @@
 				FDBC9D051817656E00861C75 /* back_arrow.png in Resources */,
 				FDBC9CFB1817494B00861C75 /* none_this_time_label.png in Resources */,
 				FDBC9CF01817484700861C75 /* im_done_label.jpg in Resources */,
+				319031EC1826FB3200F3D40C /* cutout.jpg in Resources */,
 				FDBC9CF41817484700861C75 /* tiny_shop.jpg in Resources */,
 				FDBC9CF21817484700861C75 /* lets_eat.jpg in Resources */,
 				FDE28380181C543300534A6C /* juicebox.png in Resources */,
