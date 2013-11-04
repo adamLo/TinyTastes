@@ -37,15 +37,12 @@
     }
     
     [self displayCurrentSettings];
-    //[self printCurrentNotifs];
-    NSLog(@"view did load was called successfully");
 }
 
 - (void)printCurrentNotifs
 {
     for(UILocalNotification *aNotif in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
         NSDate *date = [aNotif fireDate];
-        NSLog(@"%@",date);
     }
 }
 
@@ -201,13 +198,11 @@
 
 - (void)cancelDailyNotification:(NSString *)mealName
 {
-    NSLog(@"inside cancelDailyNotif");
     UILocalNotification *notificationToCancel = nil;
     for(UILocalNotification *aNotif in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
         if([aNotif.userInfo objectForKey:mealName]) {
             notificationToCancel = aNotif;
             [[UIApplication sharedApplication] cancelLocalNotification:notificationToCancel];
-            NSLog(@"canceled %@",mealName);
             break;
         }
     }

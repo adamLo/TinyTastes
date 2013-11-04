@@ -28,6 +28,12 @@
     
     NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"coinsKey"];
     self.numCoinsLabel.text = [NSString stringWithFormat:@"%d", myNumCoins];
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
+        [prefs setBool:YES forKey:@"sound"];
+    }
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 }
 
 - (void)didReceiveMemoryWarning

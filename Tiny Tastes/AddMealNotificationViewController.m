@@ -58,7 +58,6 @@
     // Cancel the current notification for that meal
     BOOL canceled = [self cancelDailyNotification:_currentMeal];
     if (canceled) {
-        NSLog(@"canceled the current notif, now about to schedule new one");
         [self scheduleDailyNotification:_currentMeal setHour:[dateComps hour] setMinute:[dateComps minute]];
     }
 }
@@ -90,7 +89,7 @@
     UILocalNotification *notification = [[UILocalNotification alloc] init] ;
     notification.fireDate = fireDateOfNotification ;
     notification.timeZone = [NSTimeZone localTimeZone] ;
-    notification.alertBody = [NSString stringWithFormat: @"It's time for %@!", mealName] ;
+    notification.alertBody = [NSString stringWithFormat: @"It's time for your %@!", mealName] ;
     notification.alertAction = @"Show me the item";
     notification.userInfo= [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"Some information"]
                                                        forKey:mealName];
@@ -100,22 +99,25 @@
     
     // Schedule the notification
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-    NSLog(@"scheduled new notif");
 }
 
 - (BOOL)cancelDailyNotification:(NSString *)mealName
 {
-    NSLog(@"inside cancelDailyNotif for %@", _currentMeal);
     UILocalNotification *notificationToCancel = nil;
     for(UILocalNotification *aNotif in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
         if([aNotif.userInfo valueForKey:_currentMeal] != nil) {
             notificationToCancel = aNotif;
             [[UIApplication sharedApplication] cancelLocalNotification:notificationToCancel];
-            NSLog(@"canceled %@",_currentMeal);
             return TRUE;
         }
     }
     return FALSE;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"saveEditedNotif"]){
+        [self save:sender];
+    }
 }
 
 

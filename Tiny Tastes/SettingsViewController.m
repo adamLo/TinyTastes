@@ -43,6 +43,17 @@
 
 }
 
+- (IBAction)soundButtonClicked:(UIButton *)sender
+{
+    if (soundSwitch.on) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"sound"];
+    }
+    else {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"sound"];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
