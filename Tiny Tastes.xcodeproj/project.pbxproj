@@ -54,8 +54,8 @@
 		FD2E03A81829A22C00953D4E /* full_bowl.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2E03931829A22C00953D4E /* full_bowl.png */; };
 		FD2E03A91829A22C00953D4E /* page_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2E03941829A22C00953D4E /* page_5.png */; };
 		FD2E03AA1829A22C00953D4E /* pages_1_and_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2E03951829A22C00953D4E /* pages_1_and_2.png */; };
-		FD2E03AB1829A22C00953D4E /* pages_3_and_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2E03961829A22C00953D4E /* pages_3_and_4.png */; };
 		FD2E03AC1829A22C00953D4E /* pediasure.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2E03971829A22C00953D4E /* pediasure.png */; };
+		FD2E03B21829A50500953D4E /* pages_3_and_4 17-11-16-545.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2E03B11829A50500953D4E /* pages_3_and_4 17-11-16-545.png */; };
 		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
 		FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
@@ -163,8 +163,8 @@
 		FD2E03931829A22C00953D4E /* full_bowl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = full_bowl.png; path = ../../../../Desktop/add/full_bowl.png; sourceTree = "<group>"; };
 		FD2E03941829A22C00953D4E /* page_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page_5.png; path = ../../../../Desktop/add/page_5.png; sourceTree = "<group>"; };
 		FD2E03951829A22C00953D4E /* pages_1_and_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pages_1_and_2.png; path = ../../../../Desktop/add/pages_1_and_2.png; sourceTree = "<group>"; };
-		FD2E03961829A22C00953D4E /* pages_3_and_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pages_3_and_4.png; path = ../../../../Desktop/add/pages_3_and_4.png; sourceTree = "<group>"; };
 		FD2E03971829A22C00953D4E /* pediasure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pediasure.png; path = ../../../../Desktop/add/pediasure.png; sourceTree = "<group>"; };
+		FD2E03B11829A50500953D4E /* pages_3_and_4 17-11-16-545.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pages_3_and_4 17-11-16-545.png"; sourceTree = "<group>"; };
 		FDA12066182452EC00877E20 /* CustomTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTimerViewController.h; sourceTree = "<group>"; };
 		FDA12067182452EC00877E20 /* CustomTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTimerViewController.m; sourceTree = "<group>"; };
 		FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetReminderAlertsViewController.h; sourceTree = "<group>"; };
@@ -237,6 +237,7 @@
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
+				FD2E03B11829A50500953D4E /* pages_3_and_4 17-11-16-545.png */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
 				FDB582FB17EA778F004C6FA3 /* README */,
 				EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */,
@@ -362,7 +363,6 @@
 				FDBC9CFA1817494B00861C75 /* none_this_time_label.png */,
 				FD2E03941829A22C00953D4E /* page_5.png */,
 				FD2E03951829A22C00953D4E /* pages_1_and_2.png */,
-				FD2E03961829A22C00953D4E /* pages_3_and_4.png */,
 				FD2E03971829A22C00953D4E /* pediasure.png */,
 				FDBC9D0A1817904A00861C75 /* redline.png */,
 				FDE28383181C544000534A6C /* sippy.png */,
@@ -493,10 +493,10 @@
 				FD2E039F1829A22C00953D4E /* drinking_bottle_2.png in Resources */,
 				FDBC9D031817632600861C75 /* moneybag.png in Resources */,
 				FDBC9CF51817484700861C75 /* tried_some_label.png in Resources */,
+				FD2E03B21829A50500953D4E /* pages_3_and_4 17-11-16-545.png in Resources */,
 				EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */,
 				FD2E03A11829A22C00953D4E /* drinking_glass_2.png in Resources */,
 				EC6FD1C717EA746000EB05E9 /* Default.png in Resources */,
-				FD2E03AB1829A22C00953D4E /* pages_3_and_4.png in Resources */,
 				FD2E039E1829A22C00953D4E /* drinking_bottle_1.png in Resources */,
 				FDBC9CFD18174AE700861C75 /* big_critter.jpg in Resources */,
 				FD2E03A41829A22C00953D4E /* drinking_pediasure_1.png in Resources */,
