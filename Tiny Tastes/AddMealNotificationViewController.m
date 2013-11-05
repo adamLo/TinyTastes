@@ -27,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
+    UIColor *backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
+    self.view.backgroundColor = backgroundColor;
 	[self setFonts];
     [mealLabel setText:[NSString stringWithFormat:@"Meal:   %@", _currentMeal]];
     _datePicker.date = _currentNotificationTime;

@@ -37,9 +37,11 @@
     
     chooseDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     chooseDrinkLabel.numberOfLines = 0;
-    customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
+    [backLabel setTextColor:[UIColor whiteColor]];
     nextLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
+    [nextLabel setTextColor:[UIColor whiteColor]];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
     drinkStepper.minimumValue = 5;
