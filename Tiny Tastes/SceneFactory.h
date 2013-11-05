@@ -17,5 +17,5 @@
 }
 
 -(SceneFactory *) init;
--(Scene *) populateScenes;
+-(NSMutableDictionary *) populateScenes;
 @end

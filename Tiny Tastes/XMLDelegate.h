@@ -11,10 +11,10 @@
 
 @interface XMLDelegate : NSObject <NSXMLParserDelegate> {
     Scene * currentScene;
-    NSMutableArray * scenes;
+    NSMutableDictionary * scenes;
 }
 
-@property (nonatomic, retain) NSMutableArray *scenes;
+@property (nonatomic, retain) NSMutableDictionary *scenes;
 @property (nonatomic, retain) Scene *currentScene;
 
 - (XMLDelegate *) initXMLDelegate;

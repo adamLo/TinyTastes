@@ -13,7 +13,7 @@
 
 - (XMLDelegate *) initXMLDelegate {
     self = [super init];
-    scenes = [[NSMutableArray alloc] init];
+    scenes = [[NSMutableDictionary alloc] init];
     return self;
 }
 
@@ -51,7 +51,8 @@ didStartElement:(NSString *)elementName
         //NSLog(@"Adding link to scene...");
         CGRect currentImageRect = CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue]);
         UIButton *currentLink = [[UIButton alloc] initWithFrame:currentImageRect];
-        [currentScene.links addObject:[attributeDict objectForKey:@"id"]];
+        [currentLink setTitle:[attributeDict objectForKey:@"id"] forState:UIControlStateNormal];
+        [currentScene.links addObject:currentLink];
         //NSLog(@"Link is %@",currentScene.links.lastObject);
     }
 }
@@ -64,7 +65,7 @@ didStartElement:(NSString *)elementName
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName {
     if ([elementName isEqualToString:@"scene"]) {
-        [scenes addObject:currentScene];
+        [scenes setObject:currentScene forKey:currentScene.sceneID];
         // release user object
         currentScene = nil;
     }

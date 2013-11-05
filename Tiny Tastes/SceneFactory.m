@@ -21,8 +21,9 @@
     return self;
 }
 
--(Scene *) populateScenes {
+-(NSMutableDictionary *) populateScenes {
     [nsXmlParser parse];
-    return NULL;
+    sceneDictionary = xmlDelegate.scenes;
+    return sceneDictionary;
 }
 @end

@@ -30,8 +30,20 @@
 {
     [super viewWillAppear:animated];
     
-    self.dataLabel.text = [self.dataObject description];
+    self.dataLabel.text = [self.dataObject sceneID];
+    for (UIImageView *image in self.dataObject.images) {
+        [self.view addSubview:image];
+    }
+    for (UIButton *button in self.dataObject.links) {
+        [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
+    }
     self.dataLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:45];
+}
+
+- (void) buttonPressed:(NSString *) label
+{
+    
 }
 
 @end

@@ -28,7 +28,7 @@
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
     
-    StoryDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+    StoryDataViewController *startingViewController = [self.modelController viewControllerAtKey:@"opening1" storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
@@ -47,7 +47,7 @@
     [self.pageViewController didMoveToParentViewController:self];
     
     // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
-    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+    //self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
 }
 
 - (void)didReceiveMemoryWarning

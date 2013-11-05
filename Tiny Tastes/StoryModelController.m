@@ -22,7 +22,7 @@
  */
 
 @interface StoryModelController()
-@property (readonly, strong, nonatomic) NSMutableArray *pageData;
+@property (readonly, strong, nonatomic) NSMutableDictionary *pageData;
 @end
 
 @implementation StoryModelController
@@ -32,53 +32,43 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        _pageData = [[NSMutableArray alloc] init];
         SceneFactory *sceneFactory = [[SceneFactory alloc] init];
-        [sceneFactory populateScenes];
-        for (int i = 1; i < 5; i++) {
-            [_pageData addObject:([[NSBundle mainBundle] localizedStringForKey:([NSString stringWithFormat:@"Story%d", i ]) value:@"No Translation" table:@"Story"])];
-        };
-        
+        _pageData = [sceneFactory populateScenes];
     }
     return self;
 }
 
-- (StoryDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
+- (StoryDataViewController *)viewControllerAtKey:(NSString *)key storyboard:(UIStoryboard *)storyboard
 {
-    // Return the data view controller for the given index.
-    if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
-        return nil;
-    }
-    
     // Create a new view controller and pass suitable data.
     StoryDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"StoryDataViewController"];
-    dataViewController.dataObject = self.pageData[index];
+    dataViewController.dataObject = self.pageData[key];
     return dataViewController;
 }
 
-- (NSUInteger)indexOfViewController:(StoryDataViewController *)viewController
+- (NSString *) keyOfViewController:(StoryDataViewController *)viewController
 {
-    // Return the index of the given data view controller.
-    // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-    return [self.pageData indexOfObject:viewController.dataObject];
+    NSString * dummyString = @"opening1";
+    return dummyString;
 }
 
 #pragma mark - Page View Controller Data Source
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
-    if ((index == 0) || (index == NSNotFound)) {
+    //NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
+    NSString * dummyString = @"opening1";
+    /*if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
     
-    index--;
-    return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
+    index--;*/
+    return [self viewControllerAtKey:dummyString storyboard:viewController.storyboard];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
+    /*NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
     if (index == NSNotFound) {
         return nil;
     }
@@ -86,8 +76,9 @@
     index++;
     if (index == [self.pageData count]) {
         return nil;
-    }
-    return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
+    }*/
+    NSString * dummyString = @"opening1";
+    return [self viewControllerAtKey:dummyString storyboard:viewController.storyboard];
 }
 
 @end

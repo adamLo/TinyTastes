@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Scene.h"
 
 @interface StoryDataViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
-@property (strong, nonatomic) id dataObject;
+@property (strong, nonatomic) Scene * dataObject;
 
 @end
