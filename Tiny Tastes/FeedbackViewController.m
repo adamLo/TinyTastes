@@ -29,12 +29,10 @@
     self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
     
 	self.feedbackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
-    self.coinsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:65];
     self.goShoppingLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     self.mainMenuLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
 
     self.feedbackLabel.text = self.feedbackText;
-    self.coinsLabel.text = [NSString stringWithFormat:@"+%d coins", self.numCoins];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (![prefs boolForKey:@"HasLaunchedOnce"]) { //first time the app was launched
@@ -46,6 +44,16 @@
     // Add earned number of coins to user's total
     NSInteger myNumCoins = [prefs integerForKey:@"coinsKey"] + self.numCoins;
     [prefs setInteger:myNumCoins forKey:@"coinsKey"];
+    
+    if (self.numCoins == 1) {
+        UIImage *image = [UIImage imageNamed:@"coin_icon.png"];
+        [self.coinView2 setImage:image];
+    } else if (self.numCoins == 3) {
+        UIImage *image = [UIImage imageNamed:@"coin_icon.png"];
+        [self.coinView1 setImage:image];
+        [self.coinView2 setImage:image];
+        [self.coinView3 setImage:image];
+    }
 }
 
 - (void)didReceiveMemoryWarning

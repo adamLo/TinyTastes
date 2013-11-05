@@ -10,4 +10,6 @@
 
 @interface OverlayView : UIView
 
+@property (weak, nonatomic) IBOutlet UIImagePickerController *picker;
+
 @end

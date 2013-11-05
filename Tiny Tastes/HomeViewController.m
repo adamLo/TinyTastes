@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface HomeViewController ()
 
@@ -17,17 +18,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor colorWithRed:183/255.0f green:239/255.0f blue:243/255.0f alpha:1.0f];
-    self.storyModeLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+
+    UIImage *image = [UIImage imageNamed:@"book_cover.png"];
+    UIImage *thumbnail = [self resizedImageWithSize:image setSize:CGSizeMake(1024,768)];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:thumbnail];
+
+    self.bookTitleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
     self.letsEatLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.letsDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.tinyShopLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.settingsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.numCoinsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    [self.bookTitleLabel setTextColor:[UIColor whiteColor]];
+    [self.letsEatLabel setTextColor:[UIColor whiteColor]];
+    [self.letsDrinkLabel setTextColor:[UIColor whiteColor]];
+    [self.tinyShopLabel setTextColor:[UIColor whiteColor]];
+    [self.settingsLabel setTextColor:[UIColor whiteColor]];
     
     NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"coinsKey"];
     self.numCoinsLabel.text = [NSString stringWithFormat:@"%d", myNumCoins];
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
+        [prefs setBool:YES forKey:@"sound"];
+    }
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,6 +55,15 @@
 {
     return (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft
             || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+
+- (UIImage *)resizedImageWithSize:(UIImage *)image setSize:(CGSize)size
+{
+	UIGraphicsBeginImageContext(size);
+	[image drawInRect:CGRectMake(0.0f, 0.0f, size.width, size.height)];
+	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return newImage;
 }
 
 @end

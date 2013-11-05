@@ -15,8 +15,12 @@
     IBOutlet UILabel *mealAlerts;
     IBOutlet UILabel *backLabel;
     
+    IBOutlet UISwitch *soundSwitch;
+    
     IBOutlet UIButton *setTimerButton;
     IBOutlet UIButton *setAlertsButton;
 }
+
+- (IBAction)soundButtonClicked:(UIButton *)sender;
 
 @end

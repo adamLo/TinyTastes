@@ -38,9 +38,17 @@
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     setTimerButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     setAlertsButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    
+}
 
-
+- (IBAction)soundButtonClicked:(UIButton *)sender
+{
+    if (soundSwitch.on) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"sound"];
+    }
+    else {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"sound"];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
 @property (strong, nonatomic) IBOutlet UIButton *instructionLabel;
 @property (strong, nonatomic) IBOutlet UIButton *cameraIcon;
+@property (strong, nonatomic) IBOutlet UILabel *backLabel;
+
 
 - (IBAction)takePhoto:(UIButton *)sender;
 
