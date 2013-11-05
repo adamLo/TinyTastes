@@ -11,9 +11,13 @@
 @interface FeedbackViewController : UIViewController
 
 @property(nonatomic) IBOutlet UILabel *feedbackLabel;
-@property(nonatomic) IBOutlet UILabel *coinsLabel;
 @property(nonatomic) IBOutlet UILabel *goShoppingLabel;
 @property(nonatomic) IBOutlet UILabel *mainMenuLabel;
+
+@property(nonatomic) IBOutlet UIImageView *coinView1;
+@property(nonatomic) IBOutlet UIImageView *coinView2;
+@property(nonatomic) IBOutlet UIImageView *coinView3;
+
 @property(nonatomic) NSString *feedbackText;
 @property(nonatomic) int numCoins;
 

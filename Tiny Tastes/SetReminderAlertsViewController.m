@@ -39,13 +39,6 @@
     [self displayCurrentSettings];
 }
 
-- (void)printCurrentNotifs
-{
-    for(UILocalNotification *aNotif in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
-        NSDate *date = [aNotif fireDate];
-    }
-}
-
 - (void)displayCurrentSettings
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

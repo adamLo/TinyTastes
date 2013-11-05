@@ -30,7 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
+    [self.backLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
 }
 
 - (void) viewDidAppear:(BOOL)animated {

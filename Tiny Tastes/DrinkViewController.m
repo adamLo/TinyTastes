@@ -15,6 +15,9 @@
 
 @implementation DrinkViewController
 
+@synthesize drinkingImage1;
+@synthesize drinkingImage2;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -37,10 +40,7 @@
     chooseLabel.hidden = YES;
     redLine.hidden = YES;
     
-    drinkingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"drinking_critter_1.jpg"],
-                                     [UIImage imageNamed:@"drinking_critter_2.jpg"], nil];
-    //drinkingCritter.contentMode = UIViewContentModeLeft;    
-
+    drinkingCritter.animationImages = [NSArray arrayWithObjects:drinkingImage1, drinkingImage2, nil];
     drinkingCritter.animationDuration = 4;
     [self.view addSubview:drinkingCritter];
     [drinkingCritter startAnimating];
@@ -115,6 +115,7 @@
     notFinishedButton.hidden = NO;
     doneButton.hidden = YES;
     [drinkingCritter stopAnimating];
+    [drinkingCritter setImage:drinkingImage1];
     
     [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
     blinkStatus = FALSE;

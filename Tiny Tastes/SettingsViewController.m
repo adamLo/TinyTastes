@@ -38,9 +38,6 @@
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     setTimerButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     setAlertsButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    
-
-
 }
 
 - (IBAction)soundButtonClicked:(UIButton *)sender

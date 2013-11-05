@@ -19,11 +19,13 @@
 
     IBOutlet UIImageView *drinkingCritter;
     IBOutlet UIImageView *redLine;
-
+    
     IBOutlet UIButton *doneButton;
     IBOutlet UIButton *allFinishedButton;
     IBOutlet UIButton *partiallyFinishedButton;
     IBOutlet UIButton *notFinishedButton;
 }
+@property (weak, nonatomic) IBOutlet UIImage *drinkingImage1;
+@property (weak, nonatomic) IBOutlet UIImage *drinkingImage2;
 
 @end

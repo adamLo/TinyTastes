@@ -40,6 +40,24 @@
 		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
 		FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */; };
 		FDA1206D1826E58500877E20 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1206C1826E58500877E20 /* checkmark.png */; };
+		FDA1206F1827627400877E20 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1206E1827627400877E20 /* camera.png */; };
+		FDA12071182763AC00877E20 /* coin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA12070182763AC00877E20 /* coin_icon.png */; };
+		FDA120741828274500877E20 /* drinking_bottle_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120721828274500877E20 /* drinking_bottle_1.png */; };
+		FDA120751828274500877E20 /* drinking_bottle_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120731828274500877E20 /* drinking_bottle_2.png */; };
+		FDA1207D1828275900877E20 /* drinking_glass_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120761828275900877E20 /* drinking_glass_1.png */; };
+		FDA1207E1828275900877E20 /* drinking_glass_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120771828275900877E20 /* drinking_glass_2.png */; };
+		FDA1207F1828275900877E20 /* drinking_juice_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120781828275900877E20 /* drinking_juice_1.png */; };
+		FDA120801828275900877E20 /* drinking_juice_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120791828275900877E20 /* drinking_juice_2.png */; };
+		FDA120811828275900877E20 /* drinking_pediasure_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1207A1828275900877E20 /* drinking_pediasure_1.png */; };
+		FDA120821828275900877E20 /* drinking_pediasure_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1207B1828275900877E20 /* drinking_pediasure_2.png */; };
+		FDA120831828275900877E20 /* drinking_sippy_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1207C1828275900877E20 /* drinking_sippy_1.png */; };
+		FDA120851828275F00877E20 /* drinking_sippy_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120841828275F00877E20 /* drinking_sippy_2.png */; };
+		FDA120871828285F00877E20 /* pediasure.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120861828285F00877E20 /* pediasure.png */; };
+		FDA120891828454000877E20 /* book_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA120881828454000877E20 /* book_cover.png */; };
+		FDA1208B18284C6400877E20 /* full_bowl.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1208A18284C6400877E20 /* full_bowl.png */; };
+		FDA1208F1828726200877E20 /* page_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1208C1828726200877E20 /* page_5.png */; };
+		FDA120901828726200877E20 /* pages_1_and_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1208D1828726200877E20 /* pages_1_and_2.png */; };
+		FDA120911828726200877E20 /* pages_3_and_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FDA1208E1828726200877E20 /* pages_3_and_4.png */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
 		FDB582FE17EA7BBB004C6FA3 /* cutecritter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FD17EA7BBB004C6FA3 /* cutecritter.jpg */; };
@@ -69,7 +87,6 @@
 		FDBC9D0B1817904A00861C75 /* redline.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0A1817904A00861C75 /* redline.png */; };
 		FDBC9D0D181852F400861C75 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */; };
 		FDBC9D0F1818654F00861C75 /* clock_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D0E1818654F00861C75 /* clock_settings.png */; };
-		FDBC9D11181880DE00861C75 /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9D10181880DE00861C75 /* camera_icon.png */; };
 		FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */; };
 		FDE28380181C543300534A6C /* juicebox.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE2837F181C543300534A6C /* juicebox.png */; };
 		FDE28382181C543B00534A6C /* glass.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE28381181C543B00534A6C /* glass.png */; };
@@ -137,6 +154,24 @@
 		FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetReminderAlertsViewController.h; sourceTree = "<group>"; };
 		FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetReminderAlertsViewController.m; sourceTree = "<group>"; };
 		FDA1206C1826E58500877E20 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		FDA1206E1827627400877E20 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		FDA12070182763AC00877E20 /* coin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin_icon.png; sourceTree = "<group>"; };
+		FDA120721828274500877E20 /* drinking_bottle_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_bottle_1.png; sourceTree = "<group>"; };
+		FDA120731828274500877E20 /* drinking_bottle_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_bottle_2.png; sourceTree = "<group>"; };
+		FDA120761828275900877E20 /* drinking_glass_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_glass_1.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_glass_1.png"; sourceTree = "<group>"; };
+		FDA120771828275900877E20 /* drinking_glass_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_glass_2.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_glass_2.png"; sourceTree = "<group>"; };
+		FDA120781828275900877E20 /* drinking_juice_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_juice_1.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_juice_1.png"; sourceTree = "<group>"; };
+		FDA120791828275900877E20 /* drinking_juice_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_juice_2.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_juice_2.png"; sourceTree = "<group>"; };
+		FDA1207A1828275900877E20 /* drinking_pediasure_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_pediasure_1.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_pediasure_1.png"; sourceTree = "<group>"; };
+		FDA1207B1828275900877E20 /* drinking_pediasure_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_pediasure_2.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_pediasure_2.png"; sourceTree = "<group>"; };
+		FDA1207C1828275900877E20 /* drinking_sippy_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_sippy_1.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_sippy_1.png"; sourceTree = "<group>"; };
+		FDA120841828275F00877E20 /* drinking_sippy_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking_sippy_2.png; path = "../../../../Desktop/Transparent Backgrounds/drinking_sippy_2.png"; sourceTree = "<group>"; };
+		FDA120861828285F00877E20 /* pediasure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pediasure.png; path = "../../../../Desktop/Transparent Backgrounds/pediasure.png"; sourceTree = "<group>"; };
+		FDA120881828454000877E20 /* book_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book_cover.png; path = "../../../../Desktop/Transparent Backgrounds/book_cover.png"; sourceTree = "<group>"; };
+		FDA1208A18284C6400877E20 /* full_bowl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = full_bowl.png; path = "../../../../Desktop/Transparent Backgrounds/full_bowl.png"; sourceTree = "<group>"; };
+		FDA1208C1828726200877E20 /* page_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page_5.png; path = "../../../../Desktop/Transparent Backgrounds/page_5.png"; sourceTree = "<group>"; };
+		FDA1208D1828726200877E20 /* pages_1_and_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pages_1_and_2.png; path = "../../../../Desktop/Transparent Backgrounds/pages_1_and_2.png"; sourceTree = "<group>"; };
+		FDA1208E1828726200877E20 /* pages_3_and_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pages_3_and_4.png; path = "../../../../Desktop/Transparent Backgrounds/pages_3_and_4.png"; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -172,7 +207,6 @@
 		FDBC9D0A1817904A00861C75 /* redline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redline.png; sourceTree = "<group>"; };
 		FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
 		FDBC9D0E1818654F00861C75 /* clock_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_settings.png; sourceTree = "<group>"; };
-		FDBC9D10181880DE00861C75 /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
 		FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDrinkViewController.h; sourceTree = "<group>"; };
 		FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDrinkViewController.m; sourceTree = "<group>"; };
 		FDE2837F181C543300534A6C /* juicebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juicebox.png; sourceTree = "<group>"; };
@@ -297,7 +331,25 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDA1208C1828726200877E20 /* page_5.png */,
+				FDA1208D1828726200877E20 /* pages_1_and_2.png */,
+				FDA1208E1828726200877E20 /* pages_3_and_4.png */,
+				FDA1208A18284C6400877E20 /* full_bowl.png */,
+				FDA120881828454000877E20 /* book_cover.png */,
+				FDA120861828285F00877E20 /* pediasure.png */,
+				FDA120841828275F00877E20 /* drinking_sippy_2.png */,
+				FDA120761828275900877E20 /* drinking_glass_1.png */,
+				FDA120771828275900877E20 /* drinking_glass_2.png */,
+				FDA120781828275900877E20 /* drinking_juice_1.png */,
+				FDA120791828275900877E20 /* drinking_juice_2.png */,
+				FDA1207A1828275900877E20 /* drinking_pediasure_1.png */,
+				FDA1207B1828275900877E20 /* drinking_pediasure_2.png */,
+				FDA1207C1828275900877E20 /* drinking_sippy_1.png */,
+				FDA12070182763AC00877E20 /* coin_icon.png */,
+				FDA120721828274500877E20 /* drinking_bottle_1.png */,
+				FDA120731828274500877E20 /* drinking_bottle_2.png */,
 				FDA1206C1826E58500877E20 /* checkmark.png */,
+				FDA1206E1827627400877E20 /* camera.png */,
 				311252D918206BB1008D5C75 /* camera_overlay.png */,
 				FDE28385181C544900534A6C /* bottle.png */,
 				FDE28383181C544000534A6C /* sippy.png */,
@@ -306,7 +358,6 @@
 				FDBC9D0E1818654F00861C75 /* clock_settings.png */,
 				FDBC9D0C181852F400861C75 /* eating_critter_2.jpg */,
 				FDBC9D0A1817904A00861C75 /* redline.png */,
-				FDBC9D10181880DE00861C75 /* camera_icon.png */,
 				FDBC9D061817832B00861C75 /* coin_pouch.png */,
 				FDBC9D041817656E00861C75 /* back_arrow.png */,
 				FDBC9D021817632600861C75 /* moneybag.png */,
@@ -451,22 +502,34 @@
 				FDBC9CF51817484700861C75 /* tried_some_label.png in Resources */,
 				EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */,
 				FDBC9CF71817494300861C75 /* drinking_critter_1.jpg in Resources */,
+				FDA1207E1828275900877E20 /* drinking_glass_2.png in Resources */,
 				EC6FD1C717EA746000EB05E9 /* Default.png in Resources */,
 				FDBC9CFD18174AE700861C75 /* big_critter.jpg in Resources */,
 				FDBC9D0D181852F400861C75 /* eating_critter_2.jpg in Resources */,
+				FDA120911828726200877E20 /* pages_3_and_4.png in Resources */,
+				FDA120741828274500877E20 /* drinking_bottle_1.png in Resources */,
 				FDBC9CEE1817484700861C75 /* eating_critter_1.jpg in Resources */,
 				EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */,
 				FDE28386181C544900534A6C /* bottle.png in Resources */,
 				FDBC9CF91817494700861C75 /* drinking_critter_2.jpg in Resources */,
 				FDBC9CC818162B3700861C75 /* time_to_finish_label.png in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
+				FDA120891828454000877E20 /* book_cover.png in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
+				FDA120871828285F00877E20 /* pediasure.png in Resources */,
+				FDA120821828275900877E20 /* drinking_pediasure_2.png in Resources */,
 				311252DA18206BB1008D5C75 /* camera_overlay.png in Resources */,
 				FDBC9CF31817484700861C75 /* story_mode.png in Resources */,
+				FDA1206F1827627400877E20 /* camera.png in Resources */,
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
+				FDA1208F1828726200877E20 /* page_5.png in Resources */,
+				FDA120901828726200877E20 /* pages_1_and_2.png in Resources */,
+				FDA120811828275900877E20 /* drinking_pediasure_1.png in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
+				FDA1208B18284C6400877E20 /* full_bowl.png in Resources */,
+				FDA120831828275900877E20 /* drinking_sippy_1.png in Resources */,
+				FDA1207D1828275900877E20 /* drinking_glass_1.png in Resources */,
 				FDBC9CEA1817484700861C75 /* all_finished_label.png in Resources */,
-				FDBC9D11181880DE00861C75 /* camera_icon.png in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FDBC9CF11817484700861C75 /* lets_drink.jpg in Resources */,
 				FDBC9D071817832B00861C75 /* coin_pouch.png in Resources */,
@@ -477,11 +540,16 @@
 				FDBC9CF01817484700861C75 /* im_done_label.jpg in Resources */,
 				FDBC9CF41817484700861C75 /* tiny_shop.jpg in Resources */,
 				FDBC9CF21817484700861C75 /* lets_eat.jpg in Resources */,
+				FDA120751828274500877E20 /* drinking_bottle_2.png in Resources */,
+				FDA120801828275900877E20 /* drinking_juice_2.png in Resources */,
+				FDA12071182763AC00877E20 /* coin_icon.png in Resources */,
 				FDE28380181C543300534A6C /* juicebox.png in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				FDA1206D1826E58500877E20 /* checkmark.png in Resources */,
+				FDA1207F1828275900877E20 /* drinking_juice_1.png in Resources */,
 				FDE28382181C543B00534A6C /* glass.png in Resources */,
 				31EC9EEE17F223B1001DBCFE /* frame.jpg in Resources */,
+				FDA120851828275F00877E20 /* drinking_sippy_2.png in Resources */,
 				EC4020EC17FDC15100FC24B1 /* book_cover.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
