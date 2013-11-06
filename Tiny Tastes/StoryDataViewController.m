@@ -10,15 +10,19 @@
 #import "StoryViewController.h"
 
 @interface StoryDataViewController ()
-@property (strong, nonatomic) StoryViewController *viewController;
+@property (weak, nonatomic) StoryViewController *viewController;
+@property (nonatomic, assign) BOOL loaded;
 @end
 
 @implementation StoryDataViewController
 @synthesize viewController = _viewController;
+@synthesize loaded = _loaded;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setLoaded:YES];
+    _loaded = [self loaded];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -42,15 +46,16 @@
         tagCount++;
     }
     for (UILabel *text in self.dataObject.text) {
-        NSLog(@"Text is: %@", text.text);
         [self.view addSubview:text];
     }
 }
 
 - (void) changeViewController:(UIButton*)button
 {
-    NSInteger buttonId = [button tag];
-    [_viewController changeViewController:[self.dataObject.linkDestinations objectAtIndex:buttonId]];
+    if(_loaded) {
+        NSInteger buttonId = [button tag];
+        [_viewController changeViewController:[self.dataObject.linkDestinations objectAtIndex:buttonId]];
+    }
 }
 
 - (void) addButtons:(id) vc
