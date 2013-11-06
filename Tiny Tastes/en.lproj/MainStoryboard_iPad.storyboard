@@ -1448,17 +1448,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <resources>
         <image name="Default.png" width="320" height="480"/>
         <image name="all_finished_label.png" width="769" height="384"/>
-        <image name="all_finished_label.png" width="769" height="384"/>
         <image name="arrow.png" width="600" height="430"/>
-        <image name="arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
-        <image name="back_arrow.png" width="600" height="430"/>
         <image name="back_arrow.png" width="600" height="430"/>
         <image name="big_critter.jpg" width="960" height="875"/>
         <image name="bottle.png" width="665" height="1500"/>
@@ -1471,23 +1461,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="full_bowl.png" width="5112" height="3977"/>
         <image name="glass.png" width="489" height="966"/>
         <image name="im_done_label.jpg" width="769" height="384"/>
-        <image name="im_done_label.jpg" width="769" height="384"/>
         <image name="juicebox.png" width="794" height="1401"/>
         <image name="lets_drink.jpg" width="198" height="350"/>
         <image name="moneybag.png" width="297" height="298"/>
         <image name="none_this_time_label.png" width="769" height="384"/>
-        <image name="none_this_time_label.png" width="769" height="384"/>
         <image name="pediasure.png" width="463" height="917"/>
         <image name="redline.png" width="270" height="62"/>
-        <image name="redline.png" width="270" height="62"/>
-        <image name="sippy.png" width="231" height="207"/>
         <image name="sippy.png" width="231" height="207"/>
         <image name="story_mode.png" width="240" height="311"/>
         <image name="time_to_finish_label.png" width="794" height="156"/>
-        <image name="time_to_finish_label.png" width="794" height="156"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
-        <image name="tiny_shop.jpg" width="1276" height="954"/>
-        <image name="tried_some_label.png" width="769" height="384"/>
         <image name="tried_some_label.png" width="769" height="384"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1497,10 +1480,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="brf-LG-yVR"/>
-        <segue reference="h2A-7l-Kmo"/>
-        <segue reference="Nk1-Jc-8V3"/>
+        <segue reference="zzv-zI-dHN"/>
         <segue reference="P60-4d-HuF"/>
-        <segue reference="qg2-we-N1h"/>
+        <segue reference="Nk1-Jc-8V3"/>
+        <segue reference="zmz-FB-Dv9"/>
         <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>

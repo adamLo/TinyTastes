@@ -87,6 +87,7 @@
 		FDE4AA79182AEA0400BBDF71 /* lets_eat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDE4AA77182AEA0400BBDF71 /* lets_eat.jpg */; };
 		FDE4AA81182AEDE000BBDF71 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDE4AA80182AEDE000BBDF71 /* eating_critter_2.jpg */; };
 		FDE4AA83182AEDED00BBDF71 /* eating_critter_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDE4AA82182AEDED00BBDF71 /* eating_critter_1.jpg */; };
+		FDE4AA85182AF6C600BBDF71 /* coin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE4AA84182AF6C600BBDF71 /* coin_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +204,7 @@
 		FDE4AA77182AEA0400BBDF71 /* lets_eat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lets_eat.jpg; sourceTree = "<group>"; };
 		FDE4AA80182AEDE000BBDF71 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
 		FDE4AA82182AEDED00BBDF71 /* eating_critter_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_1.jpg; sourceTree = "<group>"; };
+		FDE4AA84182AF6C600BBDF71 /* coin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +323,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDE4AA84182AF6C600BBDF71 /* coin_icon.png */,
 				FDE4AA82182AEDED00BBDF71 /* eating_critter_1.jpg */,
 				FDE4AA80182AEDE000BBDF71 /* eating_critter_2.jpg */,
 				FDBC9CDE1817484700861C75 /* all_finished_label.png */,
@@ -497,6 +500,7 @@
 				FDBC9CC818162B3700861C75 /* time_to_finish_label.png in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
+				FDE4AA85182AF6C600BBDF71 /* coin_icon.png in Resources */,
 				FDBC9CF31817484700861C75 /* story_mode.png in Resources */,
 				FDE4AA711829A82200BBDF71 /* pediasure.png in Resources */,
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
