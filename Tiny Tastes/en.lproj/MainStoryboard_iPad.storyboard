@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -65,7 +65,7 @@
                                 <rect key="frame" x="349" y="151" width="327" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" image="story_mode.png">
+                                <state key="normal" image="story_mode.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1471,12 +1471,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EPJ-LP-1lu"/>
-        <segue reference="qg2-we-N1h"/>
-        <segue reference="DeI-Lp-fYS"/>
-        <segue reference="Acc-TB-wKP"/>
-        <segue reference="Vx6-Mt-HbU"/>
         <segue reference="zvZ-Al-NL1"/>
+        <segue reference="brf-LG-yVR"/>
+        <segue reference="EPJ-LP-1lu"/>
+        <segue reference="Acc-TB-wKP"/>
+        <segue reference="Nk1-Jc-8V3"/>
+        <segue reference="qg2-we-N1h"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
 </document>
