@@ -11,11 +11,13 @@
 
 @interface StoryViewController ()
 @property (readonly, strong, nonatomic) StoryModelController *modelController;
+@property (weak, nonatomic) NSString *lastKey;
 @end
 
 @implementation StoryViewController
 
 @synthesize modelController = _modelController;
+@synthesize lastKey = _lastKey;
 
 - (void)viewDidLoad
 {
@@ -87,10 +89,12 @@
 
 -(void) changeViewController:(NSString *) key
 {
-    StoryDataViewController *startingViewController = [self.modelController viewControllerAtKey:key storyboard:self.storyboard];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
-
+    if (_lastKey != key) {
+        StoryDataViewController *startingViewController = [self.modelController viewControllerAtKey:key storyboard:self.storyboard];
+        NSArray *viewControllers = @[startingViewController];
+        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    }
+    _lastKey = key;
 }
 
 
