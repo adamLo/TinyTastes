@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -1444,23 +1444,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="back_arrow.png" width="600" height="430"/>
         <image name="big_critter.jpg" width="960" height="875"/>
         <image name="bottle.png" width="665" height="1500"/>
-        <image name="camera.png" width="4197" height="3229"/>
+        <image name="camera.png" width="1049" height="807"/>
         <image name="checkmark.png" width="300" height="278"/>
-        <image name="clock_settings.png" width="908" height="845"/>
+        <image name="clock_settings.png" width="227" height="211"/>
         <image name="coin_pouch.png" width="297" height="298"/>
-        <image name="drinking_pediasure_1.png" width="1714" height="2447"/>
-        <image name="eating_critter_1.jpg" width="1207" height="1301"/>
+        <image name="drinking_pediasure_1.png" width="428" height="611"/>
+        <image name="eating_critter_1.jpg" width="301" height="325"/>
         <image name="full_bowl.png" width="5112" height="3977"/>
         <image name="glass.png" width="489" height="966"/>
         <image name="im_done_label.jpg" width="769" height="384"/>
         <image name="juicebox.png" width="794" height="1401"/>
-        <image name="lets_drink.jpg" width="794" height="1401"/>
+        <image name="lets_drink.jpg" width="198" height="350"/>
         <image name="moneybag.png" width="297" height="298"/>
         <image name="none_this_time_label.png" width="769" height="384"/>
-        <image name="pediasure.png" width="2472" height="4894"/>
+        <image name="pediasure.png" width="463" height="917"/>
         <image name="redline.png" width="270" height="62"/>
-        <image name="sippy.png" width="924" height="829"/>
-        <image name="story_mode.png" width="960" height="1245"/>
+        <image name="sippy.png" width="231" height="207"/>
+        <image name="story_mode.png" width="240" height="311"/>
         <image name="time_to_finish_label.png" width="794" height="156"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
         <image name="tried_some_label.png" width="769" height="384"/>
@@ -1471,12 +1471,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DeI-Lp-fYS"/>
-        <segue reference="we2-Vo-dXK"/>
+        <segue reference="EPJ-LP-1lu"/>
         <segue reference="qg2-we-N1h"/>
+        <segue reference="DeI-Lp-fYS"/>
         <segue reference="Acc-TB-wKP"/>
-        <segue reference="iI4-Xm-D66"/>
-        <segue reference="zvZ-Al-NL1"/>
         <segue reference="Vx6-Mt-HbU"/>
+        <segue reference="zvZ-Al-NL1"/>
+        <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
 </document>
