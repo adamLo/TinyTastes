@@ -7,10 +7,7 @@
 //
 
 #import "StoryViewController.h"
-
 #import "StoryModelController.h"
-
-#import "StoryDataViewController.h"
 
 @interface StoryViewController ()
 @property (readonly, strong, nonatomic) StoryModelController *modelController;
@@ -27,6 +24,8 @@
     // Configure the page view controller and add it as a child view controller.
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
+    
+    [self.modelController setStoryViewController:self];
     
     StoryDataViewController *startingViewController = [self.modelController viewControllerAtKey:@"opening1" storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
@@ -48,6 +47,9 @@
     
     // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
     //self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+    for (UIGestureRecognizer* recognizer in self.pageViewController.gestureRecognizers) {
+        [self.pageViewController.view removeGestureRecognizer:recognizer];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,5 +79,20 @@
         self.pageViewController.doubleSided = NO;
         return UIPageViewControllerSpineLocationMin;
 }
+
+- (void) setStoryViewController:(StoryDataViewController *) key
+{
+    [key addButtons:self];
+}
+
+-(void) changeViewController:(NSString *) key
+{
+    StoryDataViewController *startingViewController = [self.modelController viewControllerAtKey:key storyboard:self.storyboard];
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+
+}
+
+
 
 @end

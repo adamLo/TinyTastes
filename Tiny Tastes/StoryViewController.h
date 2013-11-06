@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoryDataViewController.h"
+
+@class StoryViewController;
 
 @interface StoryViewController : UIViewController <UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
+
+- (void) setStoryViewController:(StoryDataViewController *) key;
+- (void) changeViewController:(NSString *) key;
 
 @end

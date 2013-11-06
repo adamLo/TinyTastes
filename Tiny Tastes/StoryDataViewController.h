@@ -14,4 +14,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) Scene * dataObject;
 
+-(void) addButtons:(id) vc;
+
 @end

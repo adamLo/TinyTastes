@@ -28,6 +28,8 @@ didStartElement:(NSString *)elementName
         currentScene = [[Scene alloc] init];
         currentScene.images = [[NSMutableArray alloc] init];
         currentScene.links = [[NSMutableArray alloc] init];
+        currentScene.linkDestinations = [[NSMutableArray alloc] init];
+        currentScene.text = [[NSMutableArray alloc] init];
         currentScene.sceneID = [attributeDict objectForKey:@"id"];
         //NSLog(@"SceneID is %@",currentScene.sceneID);
     }
@@ -43,7 +45,12 @@ didStartElement:(NSString *)elementName
     
     if ([elementName isEqualToString:@"text"]) {
         //NSLog(@"Adding text to scene...");
-        currentScene.text = [attributeDict objectForKey:@"string"];
+        CGRect currentImageRect = CGRectMake(120, 450, 800, 200);
+        UILabel *text = [[UILabel alloc] initWithFrame:currentImageRect];
+        text.text = (NSString *) [attributeDict objectForKey:@"string"];
+        [text setNumberOfLines:4];
+        [text setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:45]];
+        [currentScene.text addObject:text];
         //NSLog(@"Text is %@",currentScene.text);
     }
     
@@ -51,9 +58,9 @@ didStartElement:(NSString *)elementName
         //NSLog(@"Adding link to scene...");
         CGRect currentImageRect = CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue]);
         UIButton *currentLink = [[UIButton alloc] initWithFrame:currentImageRect];
-        [currentLink setTitle:[attributeDict objectForKey:@"id"] forState:UIControlStateNormal];
+        NSString *linkDestination = (NSString *) [attributeDict objectForKey:@"id"];
         [currentScene.links addObject:currentLink];
-        //NSLog(@"Link is %@",currentScene.links.lastObject);
+        [currentScene.linkDestinations addObject:linkDestination];
     }
 }
 

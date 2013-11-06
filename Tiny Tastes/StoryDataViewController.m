@@ -7,12 +7,14 @@
 //
 
 #import "StoryDataViewController.h"
+#import "StoryViewController.h"
 
 @interface StoryDataViewController ()
-
+@property (strong, nonatomic) StoryViewController *viewController;
 @end
 
 @implementation StoryDataViewController
+@synthesize viewController = _viewController;
 
 - (void)viewDidLoad
 {
@@ -29,21 +31,32 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    self.dataLabel.text = [self.dataObject sceneID];
     for (UIImageView *image in self.dataObject.images) {
         [self.view addSubview:image];
     }
+    NSInteger tagCount = 0;
     for (UIButton *button in self.dataObject.links) {
-        [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
+        [button setTag:tagCount];
         [self.view addSubview:button];
+        tagCount++;
     }
-    self.dataLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:45];
+    for (UILabel *text in self.dataObject.text) {
+        NSLog(@"Text is: %@", text.text);
+        [self.view addSubview:text];
+    }
 }
 
-- (void) buttonPressed:(NSString *) label
+- (void) changeViewController:(UIButton*)button
 {
-    
+    NSInteger buttonId = [button tag];
+    [_viewController changeViewController:[self.dataObject.linkDestinations objectAtIndex:buttonId]];
+}
+
+- (void) addButtons:(id) vc
+{
+    StoryViewController *vcontroller = (StoryViewController *) vc;
+    _viewController = vcontroller;
 }
 
 @end

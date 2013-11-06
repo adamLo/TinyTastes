@@ -7,9 +7,6 @@
 //
 
 #import "StoryModelController.h"
-
-#import "StoryDataViewController.h"
-
 #import "SceneFactory.h"
 
 /*
@@ -26,6 +23,7 @@
 @end
 
 @implementation StoryModelController
+@synthesize viewController = _viewController;
 
 - (id)init
 {
@@ -38,11 +36,17 @@
     return self;
 }
 
+- (void) setStoryViewController:(StoryViewController *) viewController;
+{
+    _viewController = viewController;
+}
+
 - (StoryDataViewController *)viewControllerAtKey:(NSString *)key storyboard:(UIStoryboard *)storyboard
 {
     // Create a new view controller and pass suitable data.
     StoryDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"StoryDataViewController"];
     dataViewController.dataObject = self.pageData[key];
+    [_viewController setStoryViewController:dataViewController];
     return dataViewController;
 }
 
@@ -56,27 +60,12 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    //NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
     NSString * dummyString = @"opening1";
-    /*if ((index == 0) || (index == NSNotFound)) {
-        return nil;
-    }
-    
-    index--;*/
     return [self viewControllerAtKey:dummyString storyboard:viewController.storyboard];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    /*NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
-    if (index == NSNotFound) {
-        return nil;
-    }
-    
-    index++;
-    if (index == [self.pageData count]) {
-        return nil;
-    }*/
     NSString * dummyString = @"opening1";
     return [self viewControllerAtKey:dummyString storyboard:viewController.storyboard];
 }
