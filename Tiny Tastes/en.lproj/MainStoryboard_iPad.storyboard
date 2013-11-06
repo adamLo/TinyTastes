@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Eo-IMH">
-                                <rect key="frame" x="349" y="151" width="327" height="413"/>
+                                <rect key="frame" x="349" y="131" width="327" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="story_mode.png">
@@ -121,6 +121,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YT-i1-2RI">
+                                <rect key="frame" x="403" y="502" width="285" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -134,6 +141,7 @@
                         <outlet property="letsEatLabel" destination="n4Q-gR-JmZ" id="QRL-LR-jOP"/>
                         <outlet property="numCoinsLabel" destination="vAi-Nf-bIo" id="fil-I9-Nbb"/>
                         <outlet property="settingsLabel" destination="JCj-x3-o64" id="JV1-cP-6bV"/>
+                        <outlet property="storyModeLabel" destination="0YT-i1-2RI" id="pNO-Mx-RyN"/>
                         <outlet property="tinyShopLabel" destination="dJC-F0-1CX" id="gAn-rx-A1O"/>
                     </connections>
                 </viewController>
@@ -1440,7 +1448,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <resources>
         <image name="Default.png" width="320" height="480"/>
         <image name="all_finished_label.png" width="769" height="384"/>
+        <image name="all_finished_label.png" width="769" height="384"/>
         <image name="arrow.png" width="600" height="430"/>
+        <image name="arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
+        <image name="back_arrow.png" width="600" height="430"/>
         <image name="back_arrow.png" width="600" height="430"/>
         <image name="big_critter.jpg" width="960" height="875"/>
         <image name="bottle.png" width="665" height="1500"/>
@@ -1449,20 +1467,27 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="clock_settings.png" width="227" height="211"/>
         <image name="coin_pouch.png" width="297" height="298"/>
         <image name="drinking_pediasure_1.png" width="428" height="611"/>
-        <image name="eating_critter_1.jpg" width="301" height="325"/>
+        <image name="eating_critter_1.jpg" width="1207" height="1301"/>
         <image name="full_bowl.png" width="5112" height="3977"/>
         <image name="glass.png" width="489" height="966"/>
+        <image name="im_done_label.jpg" width="769" height="384"/>
         <image name="im_done_label.jpg" width="769" height="384"/>
         <image name="juicebox.png" width="794" height="1401"/>
         <image name="lets_drink.jpg" width="198" height="350"/>
         <image name="moneybag.png" width="297" height="298"/>
         <image name="none_this_time_label.png" width="769" height="384"/>
+        <image name="none_this_time_label.png" width="769" height="384"/>
         <image name="pediasure.png" width="463" height="917"/>
         <image name="redline.png" width="270" height="62"/>
+        <image name="redline.png" width="270" height="62"/>
+        <image name="sippy.png" width="231" height="207"/>
         <image name="sippy.png" width="231" height="207"/>
         <image name="story_mode.png" width="240" height="311"/>
         <image name="time_to_finish_label.png" width="794" height="156"/>
+        <image name="time_to_finish_label.png" width="794" height="156"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
+        <image name="tiny_shop.jpg" width="1276" height="954"/>
+        <image name="tried_some_label.png" width="769" height="384"/>
         <image name="tried_some_label.png" width="769" height="384"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1471,12 +1496,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zvZ-Al-NL1"/>
         <segue reference="brf-LG-yVR"/>
-        <segue reference="EPJ-LP-1lu"/>
-        <segue reference="Acc-TB-wKP"/>
+        <segue reference="h2A-7l-Kmo"/>
         <segue reference="Nk1-Jc-8V3"/>
+        <segue reference="P60-4d-HuF"/>
         <segue reference="qg2-we-N1h"/>
+        <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
 </document>

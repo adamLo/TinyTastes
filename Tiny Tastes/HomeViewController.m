@@ -22,14 +22,16 @@
     UIImage *image = [UIImage imageNamed:@"book_cover.png"];
     UIImage *thumbnail = [self resizedImageWithSize:image setSize:CGSizeMake(1024,768)];
     self.view.backgroundColor = [UIColor colorWithPatternImage:thumbnail];
-
+    
     self.bookTitleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
+    self.storyModeLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.letsEatLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.letsDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.tinyShopLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.settingsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.numCoinsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     [self.bookTitleLabel setTextColor:[UIColor whiteColor]];
+    [self.storyModeLabel setTextColor:[UIColor whiteColor]];
     [self.letsEatLabel setTextColor:[UIColor whiteColor]];
     [self.letsDrinkLabel setTextColor:[UIColor whiteColor]];
     [self.tinyShopLabel setTextColor:[UIColor whiteColor]];
