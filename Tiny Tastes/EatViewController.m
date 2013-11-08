@@ -37,6 +37,15 @@
     
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"frame.jpg"]];
  
+    // Load image taken by the user on the bowl
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSData* encodedImageData = [prefs objectForKey:@"foodImage"];
+    UIImage* image = [UIImage imageWithData:encodedImageData];
+    UIImageView *foodImageView = [[UIImageView alloc] initWithImage:image];
+    foodImageView.frame = CGRectMake(0, 0, foodImageView.image.size.width, foodImageView.image.size.height);
+    [self.view addSubview:foodImageView];
+    NSLog(@"Loading cropped food image");
+    
     eatingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"eating_critter_1.jpg"],
                                      [UIImage imageNamed:@"eating_critter_2.jpg"], nil];
     eatingCritter.animationDuration = 3;

@@ -7,6 +7,7 @@
 //  http://www.pushplay.net/2010/03/one-tap-uiimagepickercontroller-iphone-camera/
 //  Cropping & Masking: http://iosdevelopertips.com/cocoa/how-to-mask-an-image.html#comment-58842
 //  More on image masking: https://developer.apple.com/library/mac/documentation/graphicsimaging/conceptual/drawingwithquartz2d/dq_images/dq_images.html#//apple_ref/doc/uid/TP30001066-CH212-CJBJCJCE
+//  storing image using NSUserDefaults: http://stackoverflow.com/questions/7620165/iphonehow-can-i-store-uiimage-using-nsuserdefaults
 //  Copyright (c) 2013 Le Labs. All rights reserved.
 //
 
@@ -88,7 +89,15 @@
     
         // Crop the image with an image mask
         self.imageView.image = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
-        
+    
+    // User Defaults storage doesn't allow image storage, so convert image to NSData format
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    NSData* imageData = UIImagePNGRepresentation(chosenImage);
+    NSData* encodedImageData = [NSKeyedArchiver archivedDataWithRootObject:imageData];
+    
+    [prefs setObject:encodedImageData forKey:@"foodImage"];
+    
         [picker dismissViewControllerAnimated:YES completion:NULL];
 
 }
