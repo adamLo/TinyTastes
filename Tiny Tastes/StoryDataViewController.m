@@ -17,6 +17,7 @@
 @implementation StoryDataViewController
 @synthesize viewController = _viewController;
 @synthesize loaded = _loaded;
+@synthesize backButton = _backButton;
 
 - (void)viewDidLoad
 {
@@ -38,6 +39,8 @@
     for (UIImageView *image in self.dataObject.images) {
         [self.view addSubview:image];
     }
+    //Buttons to change story screen
+    /*
     NSInteger tagCount = 0;
     for (UIButton *button in self.dataObject.links) {
         [button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
@@ -45,16 +48,19 @@
         [self.view addSubview:button];
         tagCount++;
     }
+    */
     for (UILabel *text in self.dataObject.text) {
         [self.view addSubview:text];
     }
+    [self.view bringSubviewToFront:_backButton];
+    
 }
 
 - (void) changeViewController:(UIButton*)button
 {
     if(_loaded) {
-        NSInteger buttonId = [button tag];
-        [_viewController changeViewController:[self.dataObject.linkDestinations objectAtIndex:buttonId]];
+        //NSInteger buttonId = [button tag];
+        //[_viewController changeViewController:[self.dataObject.linkDestinations objectAtIndex:buttonId]];
     }
 }
 

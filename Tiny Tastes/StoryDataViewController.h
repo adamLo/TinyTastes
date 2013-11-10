@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) Scene * dataObject;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 -(void) addButtons:(id) vc;
 

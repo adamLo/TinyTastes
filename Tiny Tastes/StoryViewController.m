@@ -29,7 +29,7 @@
     
     [self.modelController setStoryViewController:self];
     
-    StoryDataViewController *startingViewController = [self.modelController viewControllerAtKey:@"opening1" storyboard:self.storyboard];
+    StoryDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
@@ -40,18 +40,18 @@
     
     // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
     CGRect pageViewRect = self.view.bounds;
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+    /*if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         pageViewRect = CGRectInset(pageViewRect, 0, 40);
-    }
+    }*/
     self.pageViewController.view.frame = pageViewRect;
     
     [self.pageViewController didMoveToParentViewController:self];
     
     // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
-    //self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
-    for (UIGestureRecognizer* recognizer in self.pageViewController.gestureRecognizers) {
+    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+    /*for (UIGestureRecognizer* recognizer in self.pageViewController.gestureRecognizers) {
         [self.pageViewController.view removeGestureRecognizer:recognizer];
-    }
+    }*/
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,6 +87,7 @@
     [key addButtons:self];
 }
 
+/*
 -(void) changeViewController:(NSString *) key
 {
     if (_lastKey != key) {
@@ -95,7 +96,7 @@
         [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     }
     _lastKey = key;
-}
+}*/
 
 
 @end

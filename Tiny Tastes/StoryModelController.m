@@ -19,11 +19,15 @@
  */
 
 @interface StoryModelController()
-@property (readonly, strong, nonatomic) NSMutableDictionary *pageData;
+@property (readonly, strong, nonatomic) NSMutableArray *pageData;
+@property (strong, nonatomic) NSMutableArray *sceneStack;
+@property (assign, nonatomic) int currentIndex;
 @end
 
 @implementation StoryModelController
 @synthesize viewController = _viewController;
+@synthesize sceneStack = _sceneStack;
+@synthesize currentIndex = _currentIndex;
 
 - (id)init
 {
@@ -33,6 +37,8 @@
         SceneFactory *sceneFactory = [[SceneFactory alloc] init];
         _pageData = [sceneFactory populateScenes];
     }
+    _sceneStack = [[NSMutableArray alloc] init];
+    _currentIndex = 0;
     return self;
 }
 
@@ -41,11 +47,13 @@
     _viewController = viewController;
 }
 
+/*
 - (StoryDataViewController *)viewControllerAtKey:(NSString *)key storyboard:(UIStoryboard *)storyboard
 {
     // Create a new view controller and pass suitable data.
     StoryDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"StoryDataViewController"];
     dataViewController.dataObject = self.pageData[key];
+    [_sceneStack insertObject:dataViewController.dataObject atIndex:_currentIndex];
     [_viewController setStoryViewController:dataViewController];
     return dataViewController;
 }
@@ -54,20 +62,53 @@
 {
     NSString * dummyString = @"opening1";
     return dummyString;
+}*/
+
+- (StoryDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
+{
+    // Return the data view controller for the given index.
+    if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
+        return nil;
+    }
+    
+    // Create a new view controller and pass suitable data.
+    StoryDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"StoryDataViewController"];
+    dataViewController.dataObject = self.pageData[index];
+    return dataViewController;
+}
+
+- (NSUInteger)indexOfViewController:(StoryDataViewController *)viewController
+{
+    // Return the index of the given data view controller.
+    // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
+    return [self.pageData indexOfObject:viewController.dataObject];
 }
 
 #pragma mark - Page View Controller Data Source
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSString * dummyString = @"opening1";
-    return [self viewControllerAtKey:dummyString storyboard:viewController.storyboard];
+    NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
+    if ((index == 0) || (index == NSNotFound)) {
+        return nil;
+    }
+    
+    index--;
+    return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSString * dummyString = @"opening1";
-    return [self viewControllerAtKey:dummyString storyboard:viewController.storyboard];
+    NSUInteger index = [self indexOfViewController:(StoryDataViewController *)viewController];
+    if (index == NSNotFound) {
+        return nil;
+    }
+    
+    index++;
+    if (index == [self.pageData count]) {
+        return nil;
+    }
+    return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
 @end

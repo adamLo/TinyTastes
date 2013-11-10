@@ -1,43 +1,43 @@
 <scenes>
 <scene id="opening1">
     <images>
-        <image path="pages_1_and_2.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_1_and_2.png" x="0" y="0" w="1067" h="780" />
     </images>
     <text string="Tiny loves her tiny bed. It's so warm and soft!" />
     <links>
-        <link id="opening2" x="0" y="0" w="1060" h="730" />
+        <link id="opening2" x="0" y="0" w="1067" h="800" />
     </links>
 </scene>
 <scene id="opening2">
     <images>
-        <image path="pages_1_and_2.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_1_and_2.png" x="0" y="0" w="1067" h="780" />
     </images>
     <text string="She loves spending all morning there resting in the sun." />
     <links>
-        <link id="opening3" x="0" y="0" w="1060" h="730" />
+        <link id="opening3" x="0" y="0" w="1067" h="780" />
     </links>
 </scene>
 <scene id="opening3">
     <images>
-        <image path="pages_3_and_4.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_3_and_4.png" x="0" y="0" w="1067" h="780" />
     </images>
     <text string="One morning when she woke up, she felt a burst of energy! A new feeling started growing..." />
     <links>
-        <link id="opening4" x="0" y="0" w="1060" h="730" />
+        <link id="opening4" x="0" y="0" w="1067" h="780" />
     </links>
 </scene>
 <scene id="opening4">
     <images>
-        <image path="pages_3_and_4.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_3_and_4.png" x="0" y="0" w="1067" h="780" />
     </images>
     <text string="Tiny wanted to go for a walk. She had never been outside before!" />
     <links>
-        <link id="opening5" x="0" y="0" w="1060" h="730" />
+        <link id="opening5" x="0" y="0" w="1067" h="780" />
     </links>
 </scene>
 <scene id="opening5">
     <images>
-        <image path="page_5.png" x="0" y="0" w="1060" h="730" />
+        <image path="page_5.png" x="0" y="0" w="1067" h="780" />
     </images>
     <text string="So Tiny peeked her little head out the door and took a sniff." />
     <links>
