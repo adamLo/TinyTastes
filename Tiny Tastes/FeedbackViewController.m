@@ -46,10 +46,10 @@
     [prefs setInteger:myNumCoins forKey:@"coinsKey"];
     
     if (self.numCoins == 1) {
-        UIImage *image = [UIImage imageNamed:@"coin_icon.png"];
+        UIImage *image = [UIImage imageNamed:@"coin_icon.jpg"];
         [self.coinView2 setImage:image];
     } else if (self.numCoins == 3) {
-        UIImage *image = [UIImage imageNamed:@"coin_icon.png"];
+        UIImage *image = [UIImage imageNamed:@"coin_icon.jpg"];
         [self.coinView1 setImage:image];
         [self.coinView2 setImage:image];
         [self.coinView3 setImage:image];
