@@ -58,7 +58,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uue-W2-mCd" kind="modal" id="Nk1-Jc-8V3"/>
+                                    <segue destination="t2j-Jj-fJN" kind="modal" id="lOn-zd-onO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Eo-IMH">
@@ -719,6 +719,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPA-sM-0gR">
+                                <rect key="frame" x="796" y="683" width="136" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Let's Eat!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uue-W2-mCd" kind="modal" identifier="letsEatSegue" id="q5w-Pn-Xd7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -733,7 +743,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02E-bE-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1033" y="-3395"/>
+            <point key="canvasLocation" x="-1009" y="-3395"/>
         </scene>
         <!--Story Data View Controller-->
         <scene sceneID="0wC-ax-qQz">
@@ -873,6 +883,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="101" y="157" width="153" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmT-kv-JNx">
+                                <rect key="frame" x="362" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -885,6 +899,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="countdownLabel" destination="wKD-Vh-RXi" id="0MU-gA-jVc"/>
                         <outlet property="doneButton" destination="x6y-LA-z8d" id="q9l-lc-E2x"/>
                         <outlet property="eatingCritter" destination="MzP-Di-1Qo" id="LLF-04-1Zj"/>
+                        <outlet property="foodImageView" destination="qmT-kv-JNx" id="4Uf-B3-1ct"/>
                         <outlet property="notFinishedButton" destination="jFZ-Ge-JMl" id="b54-SZ-Fv4"/>
                         <outlet property="partiallyFinishedButton" destination="KRH-jI-bq5" id="I5r-hP-hhE"/>
                         <outlet property="redLine" destination="aqH-5T-okb" id="r0t-ff-LsH"/>
@@ -892,7 +907,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSY-ro-p5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3316" y="-2435"/>
+            <point key="canvasLocation" x="-3345" y="-2435"/>
         </scene>
         <!--Drink View Controller-->
         <scene sceneID="Owt-g8-qD4">
@@ -1474,12 +1489,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nop-3F-7cX"/>
-        <segue reference="Nk1-Jc-8V3"/>
-        <segue reference="brf-LG-yVR"/>
-        <segue reference="P60-4d-HuF"/>
-        <segue reference="zmz-FB-Dv9"/>
-        <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
+        <segue reference="zvZ-Al-NL1"/>
+        <segue reference="brf-LG-yVR"/>
+        <segue reference="h2A-7l-Kmo"/>
+        <segue reference="q5w-Pn-Xd7"/>
+        <segue reference="zqr-s5-5Wb"/>
+        <segue reference="P60-4d-HuF"/>
+        <segue reference="qg2-we-N1h"/>
     </inferredMetricsTieBreakers>
 </document>

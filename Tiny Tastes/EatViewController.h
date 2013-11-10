@@ -18,6 +18,7 @@
     bool blinkStatus;
     
     IBOutlet UIImageView *eatingCritter;
+    IBOutlet UIImageView *foodImageView;
     IBOutlet UIImageView *redLine;
     
     IBOutlet UIButton *doneButton;
@@ -25,5 +26,7 @@
     IBOutlet UIButton *partiallyFinishedButton;
     IBOutlet UIButton *notFinishedButton;
 }
+
+@property (weak, nonatomic) IBOutlet UIImage *foodImage;
 
 @end
