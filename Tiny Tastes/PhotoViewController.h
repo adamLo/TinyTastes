@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface PhotoViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
+    
+    UIImage *chosenImage;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UIButton *instructionLabel;

@@ -53,9 +53,9 @@
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", drinkStepper.value];
     
     //by default, set chosen drink to the sippy cup
-    [chosenDrink setImage:[UIImage imageNamed:@"sippy.png"]];
-    choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.png"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.png"];
+    [chosenDrink setImage:[UIImage imageNamed:@"sippy.jpg"]];
+    choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
 }
 
 - (IBAction)drinkStepperValueChanged:(id)sender
@@ -70,37 +70,37 @@
 
 - (IBAction)sippyClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"sippy.png"]];
-    choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.png"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.png"];
+    [chosenDrink setImage:[UIImage imageNamed:@"sippy.jpg"]];
+    choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
 }
 
 - (IBAction)pediasureClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"pediasure.png"]];
-    choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.png"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.png"];
+    [chosenDrink setImage:[UIImage imageNamed:@"pediasure.jpg"]];
+    choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
 }
 
 - (IBAction)juiceBoxClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"juicebox.png"]];
-    choiceDrink1 = [UIImage imageNamed:@"drinking_juice_1.png"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_juice_2.png"];
+    [chosenDrink setImage:[UIImage imageNamed:@"juicebox.jpg"]];
+    choiceDrink1 = [UIImage imageNamed:@"drinking_juice_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_juice_2.jpg"];
 }
 
 - (IBAction)glassClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"glass.png"]];
-    choiceDrink1 = [UIImage imageNamed:@"drinking_glass_1.png"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_glass_2.png"];
+    [chosenDrink setImage:[UIImage imageNamed:@"glass.jpg"]];
+    choiceDrink1 = [UIImage imageNamed:@"drinking_glass_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_glass_2.jpg"];
 }
 
 - (IBAction)bottleClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"bottle.png"]];
-    choiceDrink1 = [UIImage imageNamed:@"drinking_bottle_1.png"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_bottle_2.png"];
+    [chosenDrink setImage:[UIImage imageNamed:@"bottle.jpg"]];
+    choiceDrink1 = [UIImage imageNamed:@"drinking_bottle_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_bottle_2.jpg"];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

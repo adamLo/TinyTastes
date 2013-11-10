@@ -14,6 +14,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "PhotoViewController.h"
 #import "OverlayView.h"
+#import "EatViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface PhotoViewController ()
@@ -83,20 +84,13 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-        UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+        chosenImage = info[UIImagePickerControllerEditedImage];
         self.cameraIcon.hidden = YES;
         self.instructionLabel.hidden = YES;
     
         // Crop the image with an image mask
-        self.imageView.image = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
-    
-    // User Defaults storage doesn't allow image storage, so convert image to NSData format
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    
-    NSData* imageData = UIImagePNGRepresentation(chosenImage);
-    NSData* encodedImageData = [NSKeyedArchiver archivedDataWithRootObject:imageData];
-    
-    [prefs setObject:encodedImageData forKey:@"foodImage"];
+        chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
+    self.imageView.image = chosenImage;
     
         [picker dismissViewControllerAnimated:YES completion:NULL];
 
@@ -161,6 +155,13 @@
     CGImageRelease(masked);
     
     return retImage;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"letsEatSegue"]){
+        EatViewController *controller = (EatViewController *)segue.destinationViewController;
+        controller.foodImage = chosenImage;
+    }
 }
 
 @end
