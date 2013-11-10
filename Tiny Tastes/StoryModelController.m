@@ -106,6 +106,7 @@
     
     index++;
     if (index == [self.pageData count]) {
+        [_viewController performSegueWithIdentifier:@"toPhotoView" sender:_viewController];
         return nil;
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];

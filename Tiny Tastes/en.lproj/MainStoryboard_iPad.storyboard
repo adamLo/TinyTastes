@@ -164,6 +164,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="t2j-Jj-fJN" kind="modal" identifier="toPhotoView" id="fZK-si-7Zi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZpT-V1-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1467,12 +1470,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Vx6-Mt-HbU"/>
-        <segue reference="zvZ-Al-NL1"/>
-        <segue reference="iI4-Xm-D66"/>
-        <segue reference="zqr-s5-5Wb"/>
-        <segue reference="h2A-7l-Kmo"/>
+        <segue reference="8CT-h7-e3r"/>
+        <segue reference="fZK-si-7Zi"/>
         <segue reference="P60-4d-HuF"/>
         <segue reference="zmz-FB-Dv9"/>
+        <segue reference="iI4-Xm-D66"/>
+        <segue reference="zvZ-Al-NL1"/>
+        <segue reference="Vx6-Mt-HbU"/>
     </inferredMetricsTieBreakers>
 </document>
