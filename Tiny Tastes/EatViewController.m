@@ -41,7 +41,7 @@
     
     // display picture of the food
     if (self.foodImage == NULL) {
-       // put default food image here
+        self.foodImage = [UIImage imageNamed:@"default_food.png"];
     }
     foodImageView.image = self.foodImage;
     [self.view addSubview:foodImageView];
@@ -70,7 +70,6 @@
     eatingCritter.animationDuration = 3;
     [self.view addSubview:eatingCritter];
     [eatingCritter startAnimating];
-    
 
 }
 
@@ -141,6 +140,9 @@
     redLine.hidden = NO;
     doneButton.hidden = YES;
     [eatingCritter stopAnimating];
+    [disappearingFood stopAnimating];
+    disappearingFood.image = [UIImage imageNamed:@"bowl12.png"];
+    foodImageView.hidden = YES;
     
     [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
     blinkStatus = FALSE;

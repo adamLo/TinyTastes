@@ -21,6 +21,7 @@
 		316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB401831973A00FE3A83 /* bowl10.png */; };
 		316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB411831973A00FE3A83 /* bowl11.png */; };
 		316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB421831973A00FE3A83 /* bowl12.png */; };
+		316ACB501831A15A00FE3A83 /* default_food.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB4F1831A15A00FE3A83 /* default_food.png */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
 		EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
@@ -126,6 +127,7 @@
 		316ACB401831973A00FE3A83 /* bowl10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl10.png; sourceTree = "<group>"; };
 		316ACB411831973A00FE3A83 /* bowl11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl11.png; sourceTree = "<group>"; };
 		316ACB421831973A00FE3A83 /* bowl12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl12.png; sourceTree = "<group>"; };
+		316ACB4F1831A15A00FE3A83 /* default_food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_food.png; sourceTree = "<group>"; };
 		31FD15CE1804B91C00142A5F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		31FD15CF1804B91C00142A5F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		EC6FD1B117EA746000EB05E9 /* Tiny Tastes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tastes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,6 +370,7 @@
 				FD70731F18303865003BFC29 /* coin_icon.jpg */,
 				FD70731D18303865003BFC29 /* coin_pouch.jpg */,
 				FD70731E18303865003BFC29 /* cutout.jpg */,
+				316ACB4F1831A15A00FE3A83 /* default_food.png */,
 				FD70730F18303865003BFC29 /* drinking_bottle_1.jpg */,
 				FD70730E18303865003BFC29 /* drinking_bottle_2.jpg */,
 				FD70730D18303865003BFC29 /* drinking_glass_1.jpg */,
@@ -564,6 +567,7 @@
 				FD70732D18303865003BFC29 /* page_5.jpg in Resources */,
 				316ACB481831973A00FE3A83 /* bowl6.png in Resources */,
 				316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */,
+				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
 				FD70734318303865003BFC29 /* glass.jpg in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
