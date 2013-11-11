@@ -37,7 +37,7 @@
 </scene>
 <scene id="opening5">
     <images>
-        <image path="page_5.png" x="0" y="0" w="1060" h="730" />
+        <image path="page_5.jpg" x="0" y="0" w="1060" h="730" />
     </images>
     <text string="So Tiny peeked her little head out the door and took a sniff." />
     <links>

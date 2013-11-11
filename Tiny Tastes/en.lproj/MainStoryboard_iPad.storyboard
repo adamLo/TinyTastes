@@ -1458,7 +1458,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <resources>
         <image name="Default.png" width="320" height="480"/>
         <image name="all_finished_label.jpg" width="284" height="142"/>
+        <image name="all_finished_label.jpg" width="284" height="142"/>
         <image name="arrow.jpg" width="150" height="108"/>
+        <image name="arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
         <image name="back_arrow.jpg" width="150" height="108"/>
         <image name="bottle.jpg" width="105" height="236"/>
         <image name="camera.jpg" width="473" height="364"/>
@@ -1471,15 +1481,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="full_bowl.jpg" width="199" height="155"/>
         <image name="glass.jpg" width="118" height="232"/>
         <image name="im_done_label.jpg" width="231" height="115"/>
+        <image name="im_done_label.jpg" width="231" height="115"/>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
         <image name="main_tiny.jpg" width="337" height="456"/>
         <image name="moneybag.jpg" width="150" height="151"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
+        <image name="none_this_time_label.jpg" width="286" height="142"/>
         <image name="pediasure.jpg" width="116" height="230"/>
         <image name="redline.jpg" width="153" height="35"/>
+        <image name="redline.jpg" width="153" height="35"/>
+        <image name="sippy.jpg" width="206" height="184"/>
         <image name="sippy.jpg" width="206" height="184"/>
         <image name="tiny_shop_thumbnail.jpg" width="230" height="172"/>
+        <image name="tiny_shop_thumbnail.jpg" width="230" height="172"/>
+        <image name="tried_some_label.jpg" width="286" height="143"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
