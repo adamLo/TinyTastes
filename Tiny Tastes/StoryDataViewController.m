@@ -18,6 +18,7 @@
 @synthesize viewController = _viewController;
 @synthesize loaded = _loaded;
 @synthesize backButton = _backButton;
+@synthesize skipButton = _skipButton;
 
 - (void)viewDidLoad
 {
@@ -53,6 +54,7 @@
         [self.view addSubview:text];
     }
     [self.view bringSubviewToFront:_backButton];
+    [self.view bringSubviewToFront:_skipButton];
     
 }
 
