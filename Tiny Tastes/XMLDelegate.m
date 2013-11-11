@@ -13,7 +13,7 @@
 
 - (XMLDelegate *) initXMLDelegate {
     self = [super init];
-    scenes = [[NSMutableDictionary alloc] init];
+    scenes = [[NSMutableArray alloc] init];
     return self;
 }
 
@@ -45,7 +45,7 @@ didStartElement:(NSString *)elementName
     
     if ([elementName isEqualToString:@"text"]) {
         //NSLog(@"Adding text to scene...");
-        CGRect currentImageRect = CGRectMake(120, 450, 800, 200);
+        CGRect currentImageRect = CGRectMake(120, 500, 800, 200);
         UILabel *text = [[UILabel alloc] initWithFrame:currentImageRect];
         text.text = (NSString *) [attributeDict objectForKey:@"string"];
         [text setNumberOfLines:4];
@@ -72,7 +72,7 @@ didStartElement:(NSString *)elementName
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName {
     if ([elementName isEqualToString:@"scene"]) {
-        [scenes setObject:currentScene forKey:currentScene.sceneID];
+        [scenes addObject:currentScene];
         // release user object
         currentScene = nil;
     }

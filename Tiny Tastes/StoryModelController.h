@@ -17,7 +17,9 @@
 @property (strong, nonatomic) StoryViewController *viewController;
 
 - (void) setStoryViewController:(StoryViewController *) controller;
-- (StoryDataViewController *)viewControllerAtKey:(NSString *)key storyboard:(UIStoryboard *)storyboard;
-- (NSString *)keyOfViewController:(StoryDataViewController *)viewController;
+- (StoryDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
+- (NSUInteger)indexOfViewController:(StoryDataViewController *)viewController;
+//- (StoryDataViewController *)viewControllerAtKey:(NSString *)key storyboard:(UIStoryboard *)storyboard;
+//- (NSString *)keyOfViewController:(StoryDataViewController *)viewController;
 
 @end

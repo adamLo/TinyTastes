@@ -16,6 +16,6 @@
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
 - (void) setStoryViewController:(StoryDataViewController *) key;
-- (void) changeViewController:(NSString *) key;
+//- (void) changeViewController:(NSString *) key;
 
 @end
