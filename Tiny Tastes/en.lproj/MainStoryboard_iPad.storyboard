@@ -924,8 +924,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drinking_pediasure_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-1r-vNU">
-                                <rect key="frame" x="-177" y="-4" width="892" height="833"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drinking_bottle_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-1r-vNU">
+                                <rect key="frame" x="-177" y="10" width="892" height="833"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnV-bd-EiS">
@@ -1465,7 +1465,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="checkmark.jpg" width="81" height="75"/>
         <image name="clock_settings.jpg" width="183" height="170"/>
         <image name="coin_pouch.jpg" width="138" height="138"/>
-        <image name="drinking_pediasure_1.jpg" width="581" height="829"/>
+        <image name="drinking_bottle_2.jpg" width="581" height="829"/>
         <image name="eating_critter_1.jpg" width="657" height="708"/>
         <image name="feedback_tiny.jpg" width="659" height="655"/>
         <image name="full_bowl.jpg" width="199" height="155"/>

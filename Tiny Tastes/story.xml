@@ -1,7 +1,7 @@
 <scenes>
 <scene id="opening1">
     <images>
-        <image path="pages_1_and_2.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_1_and_2.jpg" x="0" y="0" w="1060" h="730" />
     </images>
     <text string="Tiny loves her tiny bed. It's so warm and soft!" />
     <links>
@@ -10,7 +10,7 @@
 </scene>
 <scene id="opening2">
     <images>
-        <image path="pages_1_and_2.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_1_and_2.jpg" x="0" y="0" w="1060" h="730" />
     </images>
     <text string="She loves spending all morning there resting in the sun." />
     <links>
@@ -19,7 +19,7 @@
 </scene>
 <scene id="opening3">
     <images>
-        <image path="pages_3_and_4.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_3_and_4.jpg" x="0" y="0" w="1060" h="730" />
     </images>
     <text string="One morning when she woke up, she felt a burst of energy! A new feeling started growing..." />
     <links>
@@ -28,7 +28,7 @@
 </scene>
 <scene id="opening4">
     <images>
-        <image path="pages_3_and_4.png" x="0" y="0" w="1060" h="730" />
+        <image path="pages_3_and_4.jpg" x="0" y="0" w="1060" h="730" />
     </images>
     <text string="Tiny wanted to go for a walk. She had never been outside before!" />
     <links>

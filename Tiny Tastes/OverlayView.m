@@ -18,7 +18,7 @@
 		self.backgroundColor = [UIColor clearColor];
 		
 		// Load the image to show in the overlay:
-		UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.png"];
+		UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.jpg"];
 		UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];
 		overlayGraphicView.frame = CGRectMake(280, 180, overlayGraphic.size.width, overlayGraphic.size.height);
 		[self addSubview:overlayGraphicView];
