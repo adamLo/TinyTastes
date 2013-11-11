@@ -36,18 +36,42 @@
     chooseLabel.hidden = YES;
     redLine.hidden = YES;
     
-    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"frame.jpg"]];
+    // set timer
+    [self setTimer];
     
+    // display picture of the food
+    if (self.foodImage == NULL) {
+       // put default food image here
+    }
+    foodImageView.image = self.foodImage;
+    [self.view addSubview:foodImageView];
+    
+    // display disappearing food
+    disappearingFood.animationImages = [NSArray arrayWithObjects:
+                                        [UIImage imageNamed:@"bowl1.png"],
+                                        [UIImage imageNamed:@"bowl2.png"],
+                                        [UIImage imageNamed:@"bowl3.png"],
+                                        [UIImage imageNamed:@"bowl4.png"],
+                                        [UIImage imageNamed:@"bowl5.png"],
+                                        [UIImage imageNamed:@"bowl6.png"],
+                                        [UIImage imageNamed:@"bowl7.png"],
+                                        [UIImage imageNamed:@"bowl8.png"],
+                                        [UIImage imageNamed:@"bowl9.png"],
+                                        [UIImage imageNamed:@"bowl10.png"],
+                                        [UIImage imageNamed:@"bowl11.png"],
+                                        [UIImage imageNamed:@"bowl12.png"], nil];
+    disappearingFood.animationDuration = secondsCount;
+    [self.view addSubview:disappearingFood];
+    [disappearingFood startAnimating];
+    
+    // display critter animation
     eatingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"eating_critter_1.jpg"],
                                      [UIImage imageNamed:@"eating_critter_2.jpg"], nil];
     eatingCritter.animationDuration = 3;
     [self.view addSubview:eatingCritter];
     [eatingCritter startAnimating];
     
-    foodImageView.image = self.foodImage;
-    [self.view addSubview:foodImageView];
-    
-    [self setTimer];
+
 }
 
 - (void)didReceiveMemoryWarning

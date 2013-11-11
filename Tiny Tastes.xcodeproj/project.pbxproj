@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
+		316ACB431831973A00FE3A83 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB371831973A00FE3A83 /* bowl1.png */; };
+		316ACB441831973A00FE3A83 /* bowl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB381831973A00FE3A83 /* bowl2.png */; };
+		316ACB451831973A00FE3A83 /* bowl3.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB391831973A00FE3A83 /* bowl3.png */; };
+		316ACB461831973A00FE3A83 /* bowl4.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3A1831973A00FE3A83 /* bowl4.png */; };
+		316ACB471831973A00FE3A83 /* bowl5.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3B1831973A00FE3A83 /* bowl5.png */; };
+		316ACB481831973A00FE3A83 /* bowl6.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3C1831973A00FE3A83 /* bowl6.png */; };
+		316ACB491831973A00FE3A83 /* bowl7.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3D1831973A00FE3A83 /* bowl7.png */; };
+		316ACB4A1831973A00FE3A83 /* bowl8.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3E1831973A00FE3A83 /* bowl8.png */; };
+		316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3F1831973A00FE3A83 /* bowl9.png */; };
+		316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB401831973A00FE3A83 /* bowl10.png */; };
+		316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB411831973A00FE3A83 /* bowl11.png */; };
+		316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB421831973A00FE3A83 /* bowl12.png */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
 		EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
@@ -102,6 +114,18 @@
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		316ACB371831973A00FE3A83 /* bowl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl1.png; sourceTree = "<group>"; };
+		316ACB381831973A00FE3A83 /* bowl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl2.png; sourceTree = "<group>"; };
+		316ACB391831973A00FE3A83 /* bowl3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl3.png; sourceTree = "<group>"; };
+		316ACB3A1831973A00FE3A83 /* bowl4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl4.png; sourceTree = "<group>"; };
+		316ACB3B1831973A00FE3A83 /* bowl5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl5.png; sourceTree = "<group>"; };
+		316ACB3C1831973A00FE3A83 /* bowl6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl6.png; sourceTree = "<group>"; };
+		316ACB3D1831973A00FE3A83 /* bowl7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl7.png; sourceTree = "<group>"; };
+		316ACB3E1831973A00FE3A83 /* bowl8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl8.png; sourceTree = "<group>"; };
+		316ACB3F1831973A00FE3A83 /* bowl9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl9.png; sourceTree = "<group>"; };
+		316ACB401831973A00FE3A83 /* bowl10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl10.png; sourceTree = "<group>"; };
+		316ACB411831973A00FE3A83 /* bowl11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl11.png; sourceTree = "<group>"; };
+		316ACB421831973A00FE3A83 /* bowl12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl12.png; sourceTree = "<group>"; };
 		31FD15CE1804B91C00142A5F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		31FD15CF1804B91C00142A5F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		EC6FD1B117EA746000EB05E9 /* Tiny Tastes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tastes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,6 +345,18 @@
 			isa = PBXGroup;
 			children = (
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
+				316ACB371831973A00FE3A83 /* bowl1.png */,
+				316ACB381831973A00FE3A83 /* bowl2.png */,
+				316ACB391831973A00FE3A83 /* bowl3.png */,
+				316ACB3A1831973A00FE3A83 /* bowl4.png */,
+				316ACB3B1831973A00FE3A83 /* bowl5.png */,
+				316ACB3C1831973A00FE3A83 /* bowl6.png */,
+				316ACB3D1831973A00FE3A83 /* bowl7.png */,
+				316ACB3E1831973A00FE3A83 /* bowl8.png */,
+				316ACB3F1831973A00FE3A83 /* bowl9.png */,
+				316ACB401831973A00FE3A83 /* bowl10.png */,
+				316ACB411831973A00FE3A83 /* bowl11.png */,
+				316ACB421831973A00FE3A83 /* bowl12.png */,
 				FD70732618303865003BFC29 /* arrow.jpg */,
 				FD70732518303865003BFC29 /* back_arrow.jpg */,
 				FD70732418303865003BFC29 /* book_cover.jpg */,
@@ -494,38 +530,50 @@
 				FD70733618303865003BFC29 /* drinking_glass_1.jpg in Resources */,
 				FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */,
 				FD70732A18303865003BFC29 /* pages_3_and_4.jpg in Resources */,
+				316ACB471831973A00FE3A83 /* bowl5.png in Resources */,
 				FD70734B18303865003BFC29 /* bottle.jpg in Resources */,
 				FD70734A18303865003BFC29 /* checkmark.jpg in Resources */,
 				FD70734F18303865003BFC29 /* arrow.jpg in Resources */,
 				FD70734118303865003BFC29 /* im_done_label.jpg in Resources */,
 				FD70733B18303865003BFC29 /* sippy.jpg in Resources */,
 				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,
+				316ACB431831973A00FE3A83 /* bowl1.png in Resources */,
 				FD70734818303865003BFC29 /* coin_icon.jpg in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
 				FD70733418303865003BFC29 /* drinking_glass_2.jpg in Resources */,
+				316ACB4A1831973A00FE3A83 /* bowl8.png in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
 				FD70735118303865003BFC29 /* camera_overlay.jpg in Resources */,
 				FD70734718303865003BFC29 /* cutout.jpg in Resources */,
 				FD70733E18303865003BFC29 /* lets_drink.jpg in Resources */,
+				316ACB491831973A00FE3A83 /* bowl7.png in Resources */,
 				FD70733018303865003BFC29 /* drinking_sippy_1.jpg in Resources */,
 				FD70732C18303865003BFC29 /* moneybag.jpg in Resources */,
 				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				FD70734018303865003BFC29 /* juicebox.jpg in Resources */,
 				FD70733C18303865003BFC29 /* redline.jpg in Resources */,
+				316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */,
 				FD70732918303865003BFC29 /* pediasure.jpg in Resources */,
 				FD70734518303865003BFC29 /* eating_critter_2.jpg in Resources */,
+				316ACB461831973A00FE3A83 /* bowl4.png in Resources */,
 				FD70734918303865003BFC29 /* clock_settings.jpg in Resources */,
 				FD70734E18303865003BFC29 /* back_arrow.jpg in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FD70734618303865003BFC29 /* coin_pouch.jpg in Resources */,
 				FD70732D18303865003BFC29 /* page_5.jpg in Resources */,
+				316ACB481831973A00FE3A83 /* bowl6.png in Resources */,
+				316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */,
 				FD70734318303865003BFC29 /* glass.jpg in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
+				316ACB451831973A00FE3A83 /* bowl3.png in Resources */,
+				316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */,
 				FD70732F18303865003BFC29 /* drinking_sippy_2.jpg in Resources */,
 				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
 				FD70732E18303865003BFC29 /* full_bowl.jpg in Resources */,
+				316ACB441831973A00FE3A83 /* bowl2.png in Resources */,
+				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
 				FD70733D18303865003BFC29 /* none_this_time_label.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

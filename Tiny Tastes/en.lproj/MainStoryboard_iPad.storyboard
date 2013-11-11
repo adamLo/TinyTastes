@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -874,6 +874,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-tY-0op">
+                                <rect key="frame" x="362" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -884,6 +888,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="backLabel" destination="BfT-0c-RRU" id="Ome-n1-cI8"/>
                         <outlet property="chooseLabel" destination="E3E-fU-Nla" id="WHz-aI-09F"/>
                         <outlet property="countdownLabel" destination="wKD-Vh-RXi" id="0MU-gA-jVc"/>
+                        <outlet property="disappearingFood" destination="Onv-tY-0op" id="Jnf-WO-5Ue"/>
                         <outlet property="doneButton" destination="x6y-LA-z8d" id="q9l-lc-E2x"/>
                         <outlet property="eatingCritter" destination="MzP-Di-1Qo" id="LLF-04-1Zj"/>
                         <outlet property="foodImageView" destination="qmT-kv-JNx" id="4Uf-B3-1ct"/>
@@ -1480,12 +1485,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8CT-h7-e3r"/>
         <segue reference="h34-Ks-joT"/>
         <segue reference="P60-4d-HuF"/>
+        <segue reference="h2A-7l-Kmo"/>
         <segue reference="zmz-FB-Dv9"/>
-        <segue reference="zvZ-Al-NL1"/>
         <segue reference="Vx6-Mt-HbU"/>
+        <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
 </document>

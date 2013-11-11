@@ -20,6 +20,7 @@
     
     IBOutlet UIImageView *eatingCritter;
     IBOutlet UIImageView *foodImageView;
+    IBOutlet UIImageView *disappearingFood;
     IBOutlet UIImageView *redLine;
     
     IBOutlet UIButton *doneButton;
