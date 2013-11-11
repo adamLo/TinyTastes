@@ -7,6 +7,7 @@
 //
 
 #import "HomeAppDelegate.h"
+#import "SetReminderAlertsViewController.h"
 
 @implementation HomeAppDelegate
 
@@ -19,6 +20,13 @@
     if (locationNotification) {
         // Set icon badge number to zero
         application.applicationIconBadgeNumber = 0;
+    }
+    
+    SetReminderAlertsViewController *setReminderViewController = [[SetReminderAlertsViewController alloc] init];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
+        //first time the app was launched, schedule default notifications
+        [setReminderViewController scheduleDefaultNotifications];
     }
     
     return YES;

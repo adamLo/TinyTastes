@@ -37,6 +37,7 @@
     
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
+    timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
     chooseLabel.hidden = YES;
     redLine.hidden = YES;
     
@@ -59,7 +60,7 @@
     int minutes = secondsCount / 60;
     int seconds = secondsCount - (minutes * 60);
     
-    NSString *timerOutput = [NSString stringWithFormat:@"%2d:%.2d", minutes, seconds];
+    NSString *timerOutput = [NSString stringWithFormat:@"%2d:%.2d", (-1*minutes), (-1*seconds)];
     countdownLabel.text = timerOutput;
     countdownLabel.textAlignment = NSTextAlignmentCenter;
     countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
@@ -97,11 +98,9 @@
 
 - (void)blink{
     if(blinkStatus == FALSE){
-        chooseLabel.hidden = NO;
         redLine.hidden = NO;
         blinkStatus = TRUE;
     }else {
-        chooseLabel.hidden = YES;
         redLine.hidden = YES;
         blinkStatus = FALSE;
     }
@@ -113,6 +112,7 @@
     allFinishedButton.hidden = NO;
     partiallyFinishedButton.hidden = NO;
     notFinishedButton.hidden = NO;
+    chooseLabel.hidden = NO;
     doneButton.hidden = YES;
     [drinkingCritter stopAnimating];
     [drinkingCritter setImage:drinkingImage1];

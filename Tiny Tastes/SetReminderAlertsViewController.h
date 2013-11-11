@@ -41,6 +41,7 @@
     IBOutlet UISwitch *eveningSnackSwitch;
 }
 
+- (void)scheduleDefaultNotifications;
 - (void)scheduleDailyNotification:(NSString *)mealName setHour:(int)hour setMinute:(int)minute;
 - (void)cancelDailyNotification:(NSString *)mealName;
 - (NSDate *)getNotificationFireDate:(NSString *)mealName;

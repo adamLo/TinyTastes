@@ -30,12 +30,6 @@
     self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
     [self setFonts];
     
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
-        //first time the app was launched, schedule default notifications
-        [self scheduleDefaultNotifications];
-    }
-    
     [self displayCurrentSettings];
 }
 
