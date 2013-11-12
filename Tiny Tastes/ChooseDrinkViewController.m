@@ -62,10 +62,6 @@
 {
     double stepperValue = drinkStepper.value;
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", stepperValue];
-    
-    // Change drink timer value in user defaults
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setInteger:stepperValue forKey:@"drinkTimer"];
 }
 
 - (IBAction)sippyClicked:(UIButton *)sender
@@ -106,6 +102,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"choseDrinkSegue"]){
         DrinkViewController *controller = (DrinkViewController *)segue.destinationViewController;
+        controller.timeToDrink = drinkStepper.value;
         controller.drinkingImage1 = choiceDrink1;
         controller.drinkingImage2 = choiceDrink2;
     }

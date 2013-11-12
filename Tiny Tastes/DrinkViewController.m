@@ -17,6 +17,7 @@
 
 @synthesize drinkingImage1;
 @synthesize drinkingImage2;
+@synthesize timeToDrink;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -73,8 +74,7 @@
     
 }
 - (void)setTimer {
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    secondsCount = 60 * [prefs integerForKey:@"drinkTimer"];
+    secondsCount = 60 * timeToDrink;
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 

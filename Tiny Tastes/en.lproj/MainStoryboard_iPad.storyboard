@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Eo-IMH">
-                                <rect key="frame" x="349" y="131" width="327" height="413"/>
+                                <rect key="frame" x="349" y="125" width="327" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="main_tiny.jpg">
@@ -97,23 +97,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_pouch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Hbx-Hk-Klh">
-                                <rect key="frame" x="477" y="579" width="136" height="128"/>
+                                <rect key="frame" x="477" y="590" width="129" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAi-Nf-bIo">
-                                <rect key="frame" x="508" y="639" width="72" height="62"/>
+                                <rect key="frame" x="502" y="643" width="72" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiny's Adventures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhp-Dc-Suc">
-                                <rect key="frame" x="0.0" y="59" width="1024" height="80"/>
+                                <rect key="frame" x="0.0" y="55" width="1024" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YT-i1-2RI">
-                                <rect key="frame" x="403" y="525" width="285" height="53"/>
+                                <rect key="frame" x="403" y="537" width="285" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -909,7 +909,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnV-bd-EiS">
-                                <rect key="frame" x="668" y="331" width="354" height="197"/>
+                                <rect key="frame" x="702" y="330" width="286" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="im_done_label.jpg">
@@ -933,7 +933,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryI-0g-A7a">
-                                <rect key="frame" x="689" y="383" width="286" height="145"/>
+                                <rect key="frame" x="689" y="380" width="286" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="tried_some_label.jpg">
@@ -1450,6 +1450,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="back_arrow.jpg" width="150" height="108"/>
         <image name="back_arrow.jpg" width="150" height="108"/>
         <image name="back_arrow.jpg" width="150" height="108"/>
+        <image name="back_arrow.jpg" width="150" height="108"/>
         <image name="bottle.jpg" width="105" height="236"/>
         <image name="camera.jpg" width="473" height="364"/>
         <image name="checkmark.jpg" width="81" height="75"/>
@@ -1484,12 +1485,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8CT-h7-e3r"/>
-        <segue reference="fZK-si-7Zi"/>
-        <segue reference="P60-4d-HuF"/>
-        <segue reference="zmz-FB-Dv9"/>
-        <segue reference="iI4-Xm-D66"/>
+        <segue reference="brf-LG-yVR"/>
+        <segue reference="pcN-tE-SoU"/>
+        <segue reference="Acc-TB-wKP"/>
+        <segue reference="lOn-zd-onO"/>
+        <segue reference="qg2-we-N1h"/>
         <segue reference="zvZ-Al-NL1"/>
-        <segue reference="Vx6-Mt-HbU"/>
+        <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
 </document>

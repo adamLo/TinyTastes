@@ -28,5 +28,7 @@
 }
 @property (weak, nonatomic) IBOutlet UIImage *drinkingImage1;
 @property (weak, nonatomic) IBOutlet UIImage *drinkingImage2;
+@property int timeToDrink;
+
 
 @end

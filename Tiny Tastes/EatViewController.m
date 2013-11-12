@@ -61,7 +61,7 @@
     int minutes = secondsCount / 60;
     int seconds = secondsCount - (minutes * 60);
     
-    NSString *timerOutput = [NSString stringWithFormat:@"%2d:%.2d", (-1*minutes), (-1*seconds)];
+    NSString *timerOutput = [NSString stringWithFormat:@"%2d:%.2d", minutes, seconds];
     countdownLabel.text = timerOutput;
     countdownLabel.textAlignment = NSTextAlignmentCenter;
     countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
