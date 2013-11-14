@@ -15,7 +15,6 @@
     IBOutlet UILabel *nextLabel;
     IBOutlet UILabel *timeDisplayLabel;
     
-    IBOutlet UIImageView *chosenDrink;
     IBOutlet UIImage *choiceDrink1;
     IBOutlet UIImage *choiceDrink2;
     

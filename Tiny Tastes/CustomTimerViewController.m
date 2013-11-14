@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
+    self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
 
 	customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:70];
     mealTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];

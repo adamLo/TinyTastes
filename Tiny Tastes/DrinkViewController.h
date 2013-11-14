@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface DrinkViewController : UIViewController {
+    AVAudioPlayer *audioPlayer;
+    
     IBOutlet UILabel *countdownLabel;
     IBOutlet UILabel *backLabel;
     IBOutlet UILabel *chooseLabel;

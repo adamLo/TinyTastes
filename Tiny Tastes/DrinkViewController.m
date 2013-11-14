@@ -31,7 +31,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
+    
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"slurping" ofType:@"mp3"];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    
+    self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     allFinishedButton.hidden = YES;
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
@@ -43,7 +47,7 @@
     redLine.hidden = YES;
     
     drinkingCritter.animationImages = [NSArray arrayWithObjects:drinkingImage1, drinkingImage2, nil];
-    drinkingCritter.animationDuration = 4;
+    drinkingCritter.animationDuration = 10;
     [self.view addSubview:drinkingCritter];
     [drinkingCritter startAnimating];
     
@@ -65,6 +69,12 @@
     countdownLabel.text = timerOutput;
     countdownLabel.textAlignment = NSTextAlignmentCenter;
     countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"sound"] == YES) {
+        if (((secondsCount % 5) == 0) && ((secondsCount % 10) != 0)) {
+            [audioPlayer play];
+        }
+    }
     
     if (secondsCount == 0) {
         [countdownTimer invalidate];

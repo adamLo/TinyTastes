@@ -33,11 +33,11 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
+    self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     
     chooseDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     chooseDrinkLabel.numberOfLines = 0;
-    customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     [backLabel setTextColor:[UIColor whiteColor]];
     nextLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
@@ -53,7 +53,6 @@
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", drinkStepper.value];
     
     //by default, set chosen drink to the sippy cup
-    [chosenDrink setImage:[UIImage imageNamed:@"sippy.jpg"]];
     choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
 }
@@ -66,35 +65,30 @@
 
 - (IBAction)sippyClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"sippy.jpg"]];
     choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
 }
 
 - (IBAction)pediasureClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"pediasure.jpg"]];
     choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
 }
 
 - (IBAction)juiceBoxClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"juicebox.jpg"]];
     choiceDrink1 = [UIImage imageNamed:@"drinking_juice_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_juice_2.jpg"];
 }
 
 - (IBAction)glassClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"glass.jpg"]];
     choiceDrink1 = [UIImage imageNamed:@"drinking_glass_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_glass_2.jpg"];
 }
 
 - (IBAction)bottleClicked:(UIButton *)sender
 {
-    [chosenDrink setImage:[UIImage imageNamed:@"bottle.jpg"]];
     choiceDrink1 = [UIImage imageNamed:@"drinking_bottle_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_bottle_2.jpg"];
 }

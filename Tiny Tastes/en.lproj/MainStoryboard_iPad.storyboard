@@ -742,6 +742,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="2" kind="modal" id="8CT-h7-e3r"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-S2-had">
+                                <rect key="frame" x="852" y="20" width="152" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="arrow.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t2j-Jj-fJN" kind="modal" id="h34-Ks-joT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -749,6 +760,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="backButton" destination="3xp-ft-7vo" id="cGx-h7-xrT"/>
+                        <outlet property="skipButton" destination="Z3K-S2-had" id="lYk-yk-8ok"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xY6-aO-nc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -862,6 +874,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-tY-0op">
+                                <rect key="frame" x="362" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -872,6 +888,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="backLabel" destination="BfT-0c-RRU" id="Ome-n1-cI8"/>
                         <outlet property="chooseLabel" destination="E3E-fU-Nla" id="WHz-aI-09F"/>
                         <outlet property="countdownLabel" destination="wKD-Vh-RXi" id="0MU-gA-jVc"/>
+                        <outlet property="disappearingFood" destination="Onv-tY-0op" id="Jnf-WO-5Ue"/>
                         <outlet property="doneButton" destination="x6y-LA-z8d" id="q9l-lc-E2x"/>
                         <outlet property="eatingCritter" destination="MzP-Di-1Qo" id="LLF-04-1Zj"/>
                         <outlet property="foodImageView" destination="qmT-kv-JNx" id="4Uf-B3-1ct"/>
@@ -1296,24 +1313,22 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(1) Choose A Drink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-4z-yzq">
-                                <rect key="frame" x="198" y="244" width="231" height="221"/>
+                                <rect key="frame" x="253" y="24" width="519" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-pD-eIB">
-                                <rect key="frame" x="201" y="37" width="205" height="184"/>
+                                <rect key="frame" x="227" y="155" width="205" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="sippy.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="sippy.jpg"/>
                                 <connections>
                                     <action selector="sippyClicked:" destination="pqo-h6-K1e" eventType="touchUpInside" id="WsD-Gd-yMX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5en-Pq-rj5">
-                                <rect key="frame" x="47" y="235" width="119" height="215"/>
+                                <rect key="frame" x="56" y="317" width="119" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button" image="glass.jpg">
@@ -1324,7 +1339,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHM-V3-wMn">
-                                <rect key="frame" x="456" y="211" width="144" height="239"/>
+                                <rect key="frame" x="465" y="293" width="144" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button" image="juicebox.jpg">
@@ -1335,7 +1350,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRu-oh-kvr">
-                                <rect key="frame" x="143" y="489" width="111" height="231"/>
+                                <rect key="frame" x="862" y="301" width="111" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="bottle.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1345,7 +1360,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KN-Lw-TYN">
-                                <rect key="frame" x="361" y="489" width="120" height="230"/>
+                                <rect key="frame" x="662" y="132" width="120" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="pediasure.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1387,25 +1402,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sippy.jpg" highlightedImage="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="INK-vn-J98">
-                                <rect key="frame" x="638" y="118" width="363" height="332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2) Set the Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3Q-56-keA">
-                                <rect key="frame" x="592" y="506" width="409" height="88"/>
+                                <rect key="frame" x="86" y="602" width="451" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RCU-xb-3oD">
-                                <rect key="frame" x="617" y="637" width="94" height="29"/>
+                                <rect key="frame" x="589" y="631" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="drinkStepperValueChanged:" destination="pqo-h6-K1e" eventType="valueChanged" id="Fn9-wN-KH1"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmC-ak-JCO">
-                                <rect key="frame" x="748" y="620" width="265" height="63"/>
+                                <rect key="frame" x="718" y="614" width="265" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -1419,7 +1430,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="backLabel" destination="4A5-GO-2iP" id="v6Z-eM-3LH"/>
                         <outlet property="bottleButton" destination="fRu-oh-kvr" id="ewM-OD-LHJ"/>
                         <outlet property="chooseDrinkLabel" destination="0Ug-4z-yzq" id="yrj-Xv-eJM"/>
-                        <outlet property="chosenDrink" destination="INK-vn-J98" id="QaY-KK-yFZ"/>
                         <outlet property="customizeTimerLabel" destination="n3Q-56-keA" id="28x-WF-Ghk"/>
                         <outlet property="drinkStepper" destination="RCU-xb-3oD" id="JS0-gR-uzf"/>
                         <outlet property="glassButton" destination="5en-Pq-rj5" id="csq-Tg-EyM"/>
@@ -1436,20 +1446,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
-        <image name="all_finished_label.jpg" width="284" height="142"/>
         <image name="all_finished_label.jpg" width="284" height="142"/>
         <image name="arrow.jpg" width="150" height="108"/>
-        <image name="arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
-        <image name="back_arrow.jpg" width="150" height="108"/>
         <image name="back_arrow.jpg" width="150" height="108"/>
         <image name="bottle.jpg" width="105" height="236"/>
         <image name="camera.jpg" width="473" height="364"/>
@@ -1462,21 +1460,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="full_bowl.jpg" width="199" height="155"/>
         <image name="glass.jpg" width="118" height="232"/>
         <image name="im_done_label.jpg" width="231" height="115"/>
-        <image name="im_done_label.jpg" width="231" height="115"/>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
         <image name="main_tiny.jpg" width="337" height="456"/>
         <image name="moneybag.jpg" width="150" height="151"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
-        <image name="none_this_time_label.jpg" width="286" height="142"/>
         <image name="pediasure.jpg" width="116" height="230"/>
         <image name="redline.jpg" width="153" height="35"/>
-        <image name="redline.jpg" width="153" height="35"/>
-        <image name="sippy.jpg" width="206" height="184"/>
         <image name="sippy.jpg" width="206" height="184"/>
         <image name="tiny_shop_thumbnail.jpg" width="230" height="172"/>
-        <image name="tiny_shop_thumbnail.jpg" width="230" height="172"/>
-        <image name="tried_some_label.jpg" width="286" height="143"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1485,12 +1477,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="zvZ-Al-NL1"/>
         <segue reference="brf-LG-yVR"/>
-        <segue reference="pcN-tE-SoU"/>
-        <segue reference="Acc-TB-wKP"/>
+        <segue reference="EPJ-LP-1lu"/>
         <segue reference="lOn-zd-onO"/>
         <segue reference="qg2-we-N1h"/>
-        <segue reference="zvZ-Al-NL1"/>
+        <segue reference="P60-4d-HuF"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
 </document>

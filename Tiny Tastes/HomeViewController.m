@@ -20,7 +20,6 @@
     [super viewDidLoad];
 
     UIImage *image = [UIImage imageNamed:@"book_cover.jpg"];
-    //UIImage *thumbnail = [self resizedImageWithSize:image setSize:CGSizeMake(1024,768)];
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
     self.bookTitleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];

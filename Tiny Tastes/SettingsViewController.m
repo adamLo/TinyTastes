@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:255/255.0f green:256/255.0f blue:179/255.0f alpha:1.0f];
+    self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     
     // Set customized font for labels
     settingsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:70];
@@ -38,6 +38,13 @@
     backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     setTimerButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     setAlertsButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    
+    // Set sound button state
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"sound"] == YES) {
+        [soundSwitch setOn:YES animated:YES];
+    } else {
+        [soundSwitch setOn:NO animated:YES];
+    }
 }
 
 - (IBAction)soundButtonClicked:(UIButton *)sender
