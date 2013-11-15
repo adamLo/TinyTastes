@@ -123,12 +123,16 @@
     partiallyFinishedButton.hidden = NO;
     notFinishedButton.hidden = NO;
     chooseLabel.hidden = NO;
+    redLine.hidden = NO;
     doneButton.hidden = YES;
     [drinkingCritter stopAnimating];
     [drinkingCritter setImage:drinkingImage1];
     
-    [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
-    blinkStatus = FALSE;
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
+        [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
+        blinkStatus = FALSE;
+    }
 }
 
 @end

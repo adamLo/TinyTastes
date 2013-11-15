@@ -1,18 +1,16 @@
 <scenes>
 <scene id="opening1">
     <images>
-        <image path="pages_1_and_2.jpg" x="0" y="0" w="1060" h="730" />
+        <image path="page_1.jpg" x="0" y="0" w="1060" h="730" />
     </images>
-    <text string="Tiny loves her tiny bed. It's so warm and soft!" />
     <links>
         <link id="opening2" x="0" y="0" w="1067" h="800" />
     </links>
 </scene>
 <scene id="opening2">
     <images>
-        <image path="pages_1_and_2.jpg" x="0" y="0" w="1060" h="730" />
+        <image path="page_2.jpg" x="0" y="0" w="1060" h="730" />
     </images>
-    <text string="She loves spending all morning there resting in the sun." />
     <links>
         <link id="opening3" x="0" y="0" w="1067" h="780" />
     </links>

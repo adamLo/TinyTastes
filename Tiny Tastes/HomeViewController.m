@@ -22,7 +22,6 @@
     UIImage *image = [UIImage imageNamed:@"book_cover.jpg"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
-    self.bookTitleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
     self.storyModeLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.letsEatLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.letsDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];

@@ -97,8 +97,7 @@
     
 }
 - (void)setTimer {
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    secondsCount = 60 * [prefs integerForKey:@"mealTimer"]; //what about snacks?
+    secondsCount = 60 * self.timeToEat; //what about snacks?
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 
@@ -144,8 +143,11 @@
     disappearingFood.image = [UIImage imageNamed:@"bowl12.png"];
     foodImageView.hidden = YES;
     
-    [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
-    blinkStatus = FALSE;
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
+        [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
+        blinkStatus = FALSE;
+    }
 }
 
 @end

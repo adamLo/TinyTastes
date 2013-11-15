@@ -49,7 +49,6 @@
 		EC7124CB18147519007319C5 /* SceneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124CA18147519007319C5 /* SceneFactory.m */; };
 		FD70732918303865003BFC29 /* pediasure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730018303865003BFC29 /* pediasure.jpg */; };
 		FD70732A18303865003BFC29 /* pages_3_and_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730118303865003BFC29 /* pages_3_and_4.jpg */; };
-		FD70732B18303865003BFC29 /* pages_1_and_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730218303865003BFC29 /* pages_1_and_2.jpg */; };
 		FD70732C18303865003BFC29 /* moneybag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730318303865003BFC29 /* moneybag.jpg */; };
 		FD70732D18303865003BFC29 /* page_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730418303865003BFC29 /* page_5.jpg */; };
 		FD70732E18303865003BFC29 /* full_bowl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730518303865003BFC29 /* full_bowl.jpg */; };
@@ -89,6 +88,8 @@
 		FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732718303865003BFC29 /* all_finished_label.jpg */; };
 		FD70735118303865003BFC29 /* camera_overlay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732818303865003BFC29 /* camera_overlay.jpg */; };
 		FD7073541833456C003BFC29 /* slurping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD7073531833456C003BFC29 /* slurping.mp3 */; };
+		FD9B72D31835CFCF000D76CD /* page_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD9B72D11835CFCF000D76CD /* page_2.jpg */; };
+		FD9B72D41835CFCF000D76CD /* page_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD9B72D21835CFCF000D76CD /* page_1.jpg */; };
 		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
 		FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
@@ -169,7 +170,6 @@
 		EC7124CA18147519007319C5 /* SceneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneFactory.m; sourceTree = "<group>"; };
 		FD70730018303865003BFC29 /* pediasure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pediasure.jpg; sourceTree = "<group>"; };
 		FD70730118303865003BFC29 /* pages_3_and_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pages_3_and_4.jpg; sourceTree = "<group>"; };
-		FD70730218303865003BFC29 /* pages_1_and_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pages_1_and_2.jpg; sourceTree = "<group>"; };
 		FD70730318303865003BFC29 /* moneybag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moneybag.jpg; sourceTree = "<group>"; };
 		FD70730418303865003BFC29 /* page_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_5.jpg; sourceTree = "<group>"; };
 		FD70730518303865003BFC29 /* full_bowl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = full_bowl.jpg; sourceTree = "<group>"; };
@@ -209,6 +209,8 @@
 		FD70732718303865003BFC29 /* all_finished_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_finished_label.jpg; sourceTree = "<group>"; };
 		FD70732818303865003BFC29 /* camera_overlay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera_overlay.jpg; sourceTree = "<group>"; };
 		FD7073531833456C003BFC29 /* slurping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slurping.mp3; sourceTree = "<group>"; };
+		FD9B72D11835CFCF000D76CD /* page_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_2.jpg; sourceTree = "<group>"; };
+		FD9B72D21835CFCF000D76CD /* page_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_1.jpg; sourceTree = "<group>"; };
 		FDA12066182452EC00877E20 /* CustomTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTimerViewController.h; sourceTree = "<group>"; };
 		FDA12067182452EC00877E20 /* CustomTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTimerViewController.m; sourceTree = "<group>"; };
 		FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetReminderAlertsViewController.h; sourceTree = "<group>"; };
@@ -357,6 +359,8 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FD9B72D11835CFCF000D76CD /* page_2.jpg */,
+				FD9B72D21835CFCF000D76CD /* page_1.jpg */,
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				316ACB371831973A00FE3A83 /* bowl1.png */,
 				316ACB381831973A00FE3A83 /* bowl2.png */,
@@ -404,7 +408,6 @@
 				FD70730318303865003BFC29 /* moneybag.jpg */,
 				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
 				FD70730418303865003BFC29 /* page_5.jpg */,
-				FD70730218303865003BFC29 /* pages_1_and_2.jpg */,
 				FD70730118303865003BFC29 /* pages_3_and_4.jpg */,
 				FD70730018303865003BFC29 /* pediasure.jpg */,
 				FD70731318303865003BFC29 /* redline.jpg */,
@@ -540,9 +543,9 @@
 				FD70733118303865003BFC29 /* drinking_pediasure_2.jpg in Resources */,
 				FD70733518303865003BFC29 /* drinking_juice_1.jpg in Resources */,
 				FD70734D18303865003BFC29 /* book_cover.jpg in Resources */,
-				FD70732B18303865003BFC29 /* pages_1_and_2.jpg in Resources */,
 				FD70733618303865003BFC29 /* drinking_glass_1.jpg in Resources */,
 				FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */,
+				FD9B72D41835CFCF000D76CD /* page_1.jpg in Resources */,
 				FD70732A18303865003BFC29 /* pages_3_and_4.jpg in Resources */,
 				316ACB471831973A00FE3A83 /* bowl5.png in Resources */,
 				FD70734B18303865003BFC29 /* bottle.jpg in Resources */,
@@ -567,6 +570,7 @@
 				FD70734018303865003BFC29 /* juicebox.jpg in Resources */,
 				FD70733C18303865003BFC29 /* redline.jpg in Resources */,
 				316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */,
+				FD9B72D31835CFCF000D76CD /* page_2.jpg in Resources */,
 				FD70732918303865003BFC29 /* pediasure.jpg in Resources */,
 				FD70734518303865003BFC29 /* eating_critter_2.jpg in Resources */,
 				316ACB461831973A00FE3A83 /* bowl4.png in Resources */,

@@ -30,5 +30,6 @@
 }
 
 @property (weak, nonatomic) IBOutlet UIImage *foodImage;
+@property int timeToEat;
 
 @end

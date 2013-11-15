@@ -36,14 +36,35 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
-    [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
+    [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
     [self.backLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
+    customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    
+    mealStepper.minimumValue = 5;
+    mealStepper.maximumValue = 60;
+    mealStepper.wraps = YES;
+    mealStepper.autorepeat = YES;
+    mealStepper.continuous = YES;
+    mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"mealTimer"];
+    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", mealStepper.value];
+    
+    customizeTimerLabel.hidden = YES;
+    timeDisplayLabel.hidden = YES;
+    mealStepper.hidden = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)mealStepperValueChanged:(id)sender
+{
+    double stepperValue = mealStepper.value;
+    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", stepperValue];
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {
@@ -83,17 +104,19 @@
 
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    customizeTimerLabel.hidden = NO;
+    timeDisplayLabel.hidden = NO;
+    mealStepper.hidden = NO;
     
-        chosenImage = info[UIImagePickerControllerEditedImage];
-        self.cameraIcon.hidden = YES;
-        self.instructionLabel.hidden = YES;
+    chosenImage = info[UIImagePickerControllerEditedImage];
+    self.cameraIcon.hidden = YES;
+    self.instructionLabel.hidden = YES;
     
-        // Crop the image with an image mask
-        chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
+    // Crop the image with an image mask
+    chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
     self.imageView.image = chosenImage;
     
-        [picker dismissViewControllerAnimated:YES completion:NULL];
-
+    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
@@ -161,6 +184,7 @@
     if([segue.identifier isEqualToString:@"letsEatSegue"]){
         EatViewController *controller = (EatViewController *)segue.destinationViewController;
         controller.foodImage = chosenImage;
+        controller.timeToEat = mealStepper.value;
     }
 }
 
