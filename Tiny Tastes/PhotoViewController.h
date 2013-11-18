@@ -14,6 +14,8 @@
     IBOutlet UILabel *customizeTimerLabel;
     IBOutlet UILabel *timeDisplayLabel;
     IBOutlet UIStepper *mealStepper;
+    IBOutlet UIButton *eatLabel;
+    IBOutlet UIButton *retakeLabel;
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
