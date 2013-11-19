@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AddMealNotificationViewController : UIViewController {
-    IBOutlet UILabel *cancelLabel;
-    IBOutlet UILabel *saveLabel;
     IBOutlet UILabel *mealLabel;
     IBOutlet UILabel *remindMeAtLabel;
     IBOutlet UILabel *editReminderLabel;

@@ -38,10 +38,6 @@
     chooseDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     chooseDrinkLabel.numberOfLines = 0;
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
-    [backLabel setTextColor:[UIColor whiteColor]];
-    nextLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
-    [nextLabel setTextColor:[UIColor whiteColor]];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
     drinkStepper.minimumValue = 5;
@@ -55,8 +51,25 @@
     //by default, set chosen drink to the sippy cup
     choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
+    
+    chosenDrinkView = juiceBoxGlow;
+    [self setAnimation:juiceBoxGlow];
 }
 
+- (void)setAnimation:(UIImageView *)animatedImageView
+{
+    if (chosenDrinkView != NULL) {
+        [chosenDrinkView stopAnimating];
+    }
+    
+    chosenDrinkView = animatedImageView;
+    animatedImageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"blue_circle.jpg"],
+                                         [UIImage imageNamed:@"blue_glow.jpg"],nil];
+    animatedImageView.animationDuration = 1;
+    [self.view addSubview:animatedImageView];
+    [animatedImageView startAnimating];
+}
+                                                                                                                    
 - (IBAction)drinkStepperValueChanged:(id)sender
 {
     double stepperValue = drinkStepper.value;
@@ -67,30 +80,35 @@
 {
     choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
+    [self setAnimation:sippyGlow];
 }
 
 - (IBAction)pediasureClicked:(UIButton *)sender
 {
     choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
+    [self setAnimation:pediasureGlow];
 }
 
 - (IBAction)juiceBoxClicked:(UIButton *)sender
 {
     choiceDrink1 = [UIImage imageNamed:@"drinking_juice_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_juice_2.jpg"];
+    [self setAnimation:juiceBoxGlow];
 }
 
 - (IBAction)glassClicked:(UIButton *)sender
 {
     choiceDrink1 = [UIImage imageNamed:@"drinking_glass_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_glass_2.jpg"];
+    [self setAnimation:glassGlow];
 }
 
 - (IBAction)bottleClicked:(UIButton *)sender
 {
     choiceDrink1 = [UIImage imageNamed:@"drinking_bottle_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_bottle_2.jpg"];
+    [self setAnimation:bottleGlow];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

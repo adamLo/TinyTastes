@@ -10,7 +10,6 @@
 
 @interface SetReminderAlertsViewController : UIViewController {
     IBOutlet UILabel *setRemindersHeadingLabel;
-    IBOutlet UILabel *backLabel;
     
     IBOutlet UILabel *breakfastLabel;
     IBOutlet UILabel *morningSnackLabel;

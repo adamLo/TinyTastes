@@ -30,7 +30,6 @@
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
     
-    backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
     chooseLabel.hidden = YES;
@@ -48,6 +47,7 @@
     
     // display disappearing food
     disappearingFood.animationImages = [NSArray arrayWithObjects:
+                                        self.foodImage,
                                         [UIImage imageNamed:@"bowl1.png"],
                                         [UIImage imageNamed:@"bowl2.png"],
                                         [UIImage imageNamed:@"bowl3.png"],
@@ -64,10 +64,11 @@
     [self.view addSubview:disappearingFood];
     [disappearingFood startAnimating];
     
-    // display critter animation
+    // display critter animation -- 3 seconds eating, 12 seconds with spoon back down on plate
     eatingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"eating_critter_1.jpg"],
-                                     [UIImage imageNamed:@"eating_critter_2.jpg"], nil];
-    eatingCritter.animationDuration = 10;
+                                     [UIImage imageNamed:@"eating_critter_2.jpg"],
+                                     [UIImage imageNamed:@"eating_critter_1.jpg"],nil];
+    eatingCritter.animationDuration = 15;
     [self.view addSubview:eatingCritter];
     [eatingCritter startAnimating];
 

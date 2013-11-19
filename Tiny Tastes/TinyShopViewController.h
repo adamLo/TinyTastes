@@ -11,7 +11,6 @@
 @interface TinyShopViewController : UIViewController
 
 @property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
-@property(nonatomic) IBOutlet UILabel *backLabel;
 
 
 @end

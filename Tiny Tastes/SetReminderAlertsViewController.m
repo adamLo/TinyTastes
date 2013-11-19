@@ -122,7 +122,6 @@
 - (void)setFonts
 {
     setRemindersHeadingLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
 	breakfastLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     morningSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     lunchLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];

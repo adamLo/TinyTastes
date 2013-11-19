@@ -19,7 +19,6 @@
     IBOutlet UILabel *minutesText1;
     IBOutlet UILabel *minutesText2;
     IBOutlet UILabel *minutesText3;
-    IBOutlet UILabel *backLabel;
     
     IBOutlet UIStepper *mealStepper;
     IBOutlet UIStepper *snackStepper;

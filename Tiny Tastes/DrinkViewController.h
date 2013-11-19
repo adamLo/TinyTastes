@@ -13,7 +13,6 @@
     AVAudioPlayer *audioPlayer;
     
     IBOutlet UILabel *countdownLabel;
-    IBOutlet UILabel *backLabel;
     IBOutlet UILabel *chooseLabel;
     IBOutlet UILabel *timeLeftLabel;
 

@@ -35,7 +35,6 @@
     soundLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     mealTimer.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     mealAlerts.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     setTimerButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     setAlertsButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     

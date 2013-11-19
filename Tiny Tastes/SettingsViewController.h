@@ -13,7 +13,6 @@
     IBOutlet UILabel *soundLabel;
     IBOutlet UILabel *mealTimer;
     IBOutlet UILabel *mealAlerts;
-    IBOutlet UILabel *backLabel;
     
     IBOutlet UISwitch *soundSwitch;
     

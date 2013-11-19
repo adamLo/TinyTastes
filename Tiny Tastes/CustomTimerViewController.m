@@ -38,7 +38,6 @@
     minutesText1.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     minutesText2.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     minutesText3.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    backLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
 
     mealStepper.minimumValue = 5;
     snackStepper.minimumValue = 5;

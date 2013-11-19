@@ -11,12 +11,19 @@
 @interface ChooseDrinkViewController : UIViewController {
     IBOutlet UILabel *chooseDrinkLabel;
     IBOutlet UILabel *customizeTimerLabel;
-    IBOutlet UILabel *backLabel;
-    IBOutlet UILabel *nextLabel;
     IBOutlet UILabel *timeDisplayLabel;
     
     IBOutlet UIImage *choiceDrink1;
     IBOutlet UIImage *choiceDrink2;
+    
+    IBOutlet UIImageView *sippyGlow;
+    IBOutlet UIImageView *pediasureGlow;
+    IBOutlet UIImageView *glassGlow;
+    IBOutlet UIImageView *bottleGlow;
+    IBOutlet UIImageView *juiceBoxGlow;
+    
+    IBOutlet UIImageView *chosenDrinkView;
+    IBOutlet NSString *chosenDrinkImage;
     
     IBOutlet UIButton *sippyCupButton;
     IBOutlet UIButton *pediasureButton;

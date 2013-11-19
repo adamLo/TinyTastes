@@ -13,6 +13,7 @@
 @property(nonatomic) IBOutlet UILabel *feedbackLabel;
 @property(nonatomic) IBOutlet UILabel *goShoppingLabel;
 @property(nonatomic) IBOutlet UILabel *mainMenuLabel;
+@property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
 
 @property(nonatomic) IBOutlet UIImageView *coinView1;
 @property(nonatomic) IBOutlet UIImageView *coinView2;

@@ -37,8 +37,6 @@
 - (void)setFonts
 {
     editReminderLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    cancelLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
-	saveLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     remindMeAtLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     mealLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
 }

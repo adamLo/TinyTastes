@@ -1,7 +1,7 @@
 <scenes>
 <scene id="opening1">
     <images>
-        <image path="page_1.jpg" x="0" y="0" w="1060" h="730" />
+        <image path="title_page.jpg" x="0" y="0" w="1060" h="730" />
     </images>
     <links>
         <link id="opening2" x="0" y="0" w="1067" h="800" />
@@ -9,35 +9,72 @@
 </scene>
 <scene id="opening2">
     <images>
-        <image path="page_2.jpg" x="0" y="0" w="1060" h="730" />
+        <image path="page_1.jpg" x="0" y="0" w="1060" h="730" />
     </images>
     <links>
-        <link id="opening3" x="0" y="0" w="1067" h="780" />
+        <link id="opening3" x="0" y="0" w="1067" h="800" />
     </links>
 </scene>
 <scene id="opening3">
     <images>
-        <image path="pages_3_and_4.jpg" x="0" y="0" w="1060" h="730" />
+        <image path="page_2.jpg" x="0" y="0" w="1060" h="730" />
     </images>
-    <text string="One morning when she woke up, she felt a burst of energy! A new feeling started growing..." />
     <links>
         <link id="opening4" x="0" y="0" w="1067" h="780" />
     </links>
 </scene>
 <scene id="opening4">
     <images>
-        <image path="pages_3_and_4.jpg" x="0" y="0" w="1060" h="730" />
+        <image path="page_3.jpg" x="0" y="0" w="1060" h="730" />
     </images>
-    <text string="Tiny wanted to go for a walk. She had never been outside before!" />
     <links>
         <link id="opening5" x="0" y="0" w="1067" h="780" />
     </links>
 </scene>
 <scene id="opening5">
     <images>
+        <image path="page_4.jpg" x="0" y="0" w="1060" h="730" />
+    </images>
+    <links>
+        <link id="opening6" x="0" y="0" w="1067" h="780" />
+    </links>
+</scene>
+<scene id="opening6">
+    <images>
         <image path="page_5.jpg" x="0" y="0" w="1060" h="730" />
     </images>
-    <text string="So Tiny peeked her little head out the door and took a sniff." />
+    <links>
+         <link id="opening7" x="0" y="0" w="1067" h="780" />
+    </links>
+</scene>
+<scene id="opening7">
+    <images>
+        <image path="page_6.jpg" x="0" y="0" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening8" x="0" y="0" w="1067" h="780" />
+    </links>
+</scene>
+<scene id="opening8">
+    <images>
+        <image path="page_7.jpg" x="0" y="0" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening9" x="0" y="0" w="1067" h="780" />
+    </links>
+</scene>
+<scene id="opening9">
+    <images>
+        <image path="page_8.jpg" x="0" y="0" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening10" x="0" y="0" w="1067" h="780" />
+    </links>
+</scene>
+<scene id="opening10">
+    <images>
+        <image path="page_9.jpg" x="0" y="0" w="1060" h="730" />
+    </images>
     <links>
     </links>
 </scene>

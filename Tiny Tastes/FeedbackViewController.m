@@ -31,6 +31,7 @@
 	self.feedbackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
     self.goShoppingLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     self.mainMenuLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
+    self.coinsNotifLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
 
     self.feedbackLabel.text = self.feedbackText;
     
@@ -48,11 +49,13 @@
     if (self.numCoins == 1) {
         UIImage *image = [UIImage imageNamed:@"coin_icon.jpg"];
         [self.coinView2 setImage:image];
+        self.coinsNotifLabel.text = @"+1";
     } else if (self.numCoins == 3) {
         UIImage *image = [UIImage imageNamed:@"coin_icon.jpg"];
         [self.coinView1 setImage:image];
         [self.coinView2 setImage:image];
         [self.coinView3 setImage:image];
+        self.coinsNotifLabel.text = @"+3";
     }
 }
 
