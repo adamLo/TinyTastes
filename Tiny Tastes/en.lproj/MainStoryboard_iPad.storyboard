@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -727,7 +727,7 @@ Reminders For...</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xp-ft-7vo">
-                                <rect key="frame" x="12" y="24" width="135" height="95"/>
+                                <rect key="frame" x="12" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -737,7 +737,7 @@ Reminders For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-S2-had">
-                                <rect key="frame" x="842" y="24" width="152" height="107"/>
+                                <rect key="frame" x="838" y="20" width="152" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button" image="skip_to_eat.jpg">
@@ -1434,20 +1434,10 @@ Do You Want For...</string>
     </scenes>
     <resources>
         <image name="all_finished_label.jpg" width="284" height="142"/>
-        <image name="all_finished_label.jpg" width="284" height="142"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
         <image name="back_arrow.jpg" width="150" height="88"/>
         <image name="bottle.jpg" width="105" height="236"/>
         <image name="camera.jpg" width="473" height="364"/>
         <image name="clock_settings.jpg" width="183" height="170"/>
-        <image name="coin_pouch.jpg" width="98" height="121"/>
         <image name="coin_pouch.jpg" width="98" height="121"/>
         <image name="drinking_bottle_2.jpg" width="581" height="829"/>
         <image name="eating_critter_1.jpg" width="657" height="708"/>
@@ -1455,25 +1445,19 @@ Do You Want For...</string>
         <image name="full_bowl.jpg" width="199" height="155"/>
         <image name="glass.jpg" width="118" height="232"/>
         <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
         <image name="main_tiny.jpg" width="337" height="456"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
-        <image name="none_this_time_label.jpg" width="286" height="142"/>
         <image name="pediasure.jpg" width="116" height="230"/>
-        <image name="redline.jpg" width="153" height="35"/>
         <image name="redline.jpg" width="153" height="35"/>
         <image name="save.jpg" width="150" height="85"/>
         <image name="sippy.jpg" width="206" height="184"/>
         <image name="skip_to_eat.jpg" width="150" height="100"/>
         <image name="start.jpg" width="150" height="74"/>
-        <image name="start.jpg" width="150" height="74"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
         <image name="tiny_shop_thumbnail.jpg" width="227" height="170"/>
-        <image name="tried_some_label.jpg" width="286" height="143"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1482,10 +1466,10 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rAV-tx-k0c"/>
-        <segue reference="qg2-we-N1h"/>
+        <segue reference="h34-Ks-joT"/>
+        <segue reference="8CT-h7-e3r"/>
         <segue reference="brf-LG-yVR"/>
-        <segue reference="lOn-zd-onO"/>
+        <segue reference="qg2-we-N1h"/>
         <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
         <segue reference="P60-4d-HuF"/>

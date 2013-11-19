@@ -55,9 +55,9 @@
 		FD187ED8183BE4420021D98F /* save.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ED4183BE4420021D98F /* save.jpg */; };
 		FD187EDA183BE8B60021D98F /* tiny_shop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ED9183BE8B60021D98F /* tiny_shop.jpg */; };
 		FD187EDC183BE93C0021D98F /* tiny_shop_thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */; };
+		FD187EE1183BF4F40021D98F /* title_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187EE0183BF4F40021D98F /* title_page.jpg */; };
 		FD2AC75A18396CF500A7D6A1 /* blue_glow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */; };
 		FD2AC75B18396CF500A7D6A1 /* blue_circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */; };
-		FD2AC75F18399F4900A7D6A1 /* title_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75E18399F4900A7D6A1 /* title_page.jpg */; };
 		FD2AC778183AC66900A7D6A1 /* page_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC770183AC66900A7D6A1 /* page_9.jpg */; };
 		FD2AC779183AC66900A7D6A1 /* page_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC771183AC66900A7D6A1 /* page_8.jpg */; };
 		FD2AC77A183AC66900A7D6A1 /* page_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC772183AC66900A7D6A1 /* page_7.jpg */; };
@@ -188,9 +188,9 @@
 		FD187ED4183BE4420021D98F /* save.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = save.jpg; sourceTree = "<group>"; };
 		FD187ED9183BE8B60021D98F /* tiny_shop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop.jpg; sourceTree = "<group>"; };
 		FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop_thumbnail.jpg; sourceTree = "<group>"; };
+		FD187EE0183BF4F40021D98F /* title_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title_page.jpg; sourceTree = "<group>"; };
 		FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_glow.jpg; sourceTree = "<group>"; };
 		FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_circle.jpg; sourceTree = "<group>"; };
-		FD2AC75E18399F4900A7D6A1 /* title_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title_page.jpg; sourceTree = "<group>"; };
 		FD2AC770183AC66900A7D6A1 /* page_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_9.jpg; sourceTree = "<group>"; };
 		FD2AC771183AC66900A7D6A1 /* page_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_8.jpg; sourceTree = "<group>"; };
 		FD2AC772183AC66900A7D6A1 /* page_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_7.jpg; sourceTree = "<group>"; };
@@ -383,6 +383,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FD187EE0183BF4F40021D98F /* title_page.jpg */,
 				FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */,
 				FD187ED9183BE8B60021D98F /* tiny_shop.jpg */,
 				FD187ED1183BE4420021D98F /* page_6.jpg */,
@@ -448,7 +449,6 @@
 				FD70730018303865003BFC29 /* pediasure.jpg */,
 				FD70731318303865003BFC29 /* redline.jpg */,
 				FD70731218303865003BFC29 /* sippy.jpg */,
-				FD2AC75E18399F4900A7D6A1 /* title_page.jpg */,
 				FD70731118303865003BFC29 /* tried_some_label.jpg */,
 			);
 			name = Images;
@@ -574,6 +574,7 @@
 				FD70733F18303865003BFC29 /* main_tiny.jpg in Resources */,
 				FD2AC77C183AC66900A7D6A1 /* page_5.jpg in Resources */,
 				FD187ECE183BE30F0021D98F /* home.jpg in Resources */,
+				FD187EE1183BF4F40021D98F /* title_page.jpg in Resources */,
 				FD70733818303865003BFC29 /* drinking_bottle_1.jpg in Resources */,
 				FD187EDA183BE8B60021D98F /* tiny_shop.jpg in Resources */,
 				EC6FD1C717EA746000EB05E9 /* Default.png in Resources */,
@@ -596,7 +597,6 @@
 				FD187ED8183BE4420021D98F /* save.jpg in Resources */,
 				FD70734F18303865003BFC29 /* arrow.jpg in Resources */,
 				FD187ED6183BE4420021D98F /* start.jpg in Resources */,
-				FD2AC75F18399F4900A7D6A1 /* title_page.jpg in Resources */,
 				FD70733B18303865003BFC29 /* sippy.jpg in Resources */,
 				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,
 				FD2AC77F183AC66900A7D6A1 /* coin_pouch.jpg in Resources */,
