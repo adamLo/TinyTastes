@@ -38,6 +38,8 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
     [self.backLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
+    [eatLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
+    [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
@@ -52,6 +54,7 @@
     customizeTimerLabel.hidden = YES;
     timeDisplayLabel.hidden = YES;
     mealStepper.hidden = YES;
+    retakeLabel.hidden = YES;
     
 }
 
@@ -107,6 +110,7 @@
     customizeTimerLabel.hidden = NO;
     timeDisplayLabel.hidden = NO;
     mealStepper.hidden = NO;
+    retakeLabel.hidden = NO;
     
     chosenImage = info[UIImagePickerControllerEditedImage];
     self.cameraIcon.hidden = YES;
