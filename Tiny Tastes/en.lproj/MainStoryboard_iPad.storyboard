@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -696,6 +696,9 @@ Photo Of Your Plate</string>
                                 <state key="normal" title="Retake Photo?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="t2j-Jj-fJN" eventType="touchUpInside" id="Al0-jq-7VA"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3yy-84-nxd">
                                 <rect key="frame" x="636" y="657" width="272" height="29"/>
@@ -1485,10 +1488,10 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="nop-3F-7cX"/>
         <segue reference="h34-Ks-joT"/>
         <segue reference="P60-4d-HuF"/>
         <segue reference="qg2-we-N1h"/>
-        <segue reference="gpD-ea-b6F"/>
         <segue reference="brf-LG-yVR"/>
         <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
