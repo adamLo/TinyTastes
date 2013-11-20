@@ -24,6 +24,7 @@
 {
     [super viewDidLoad];
     [self setLoaded:YES];
+    self.view.backgroundColor = [UIColor colorWithRed:0.33 green:0.32 blue:0.32 alpha:1.0];
     _loaded = [self loaded];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -31,6 +32,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    self.view.backgroundColor = [UIColor colorWithRed:0.33 green:0.32 blue:0.32 alpha:1.0];
     // Dispose of any resources that can be recreated.
 }
 

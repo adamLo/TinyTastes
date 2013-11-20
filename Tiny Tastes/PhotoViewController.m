@@ -35,27 +35,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
-    [self.backLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
+    [self.instructionLabel.titleLabel setTextAlignment:UITextAlignmentCenter];
     [eatLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
     [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    
+    mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+
     mealStepper.minimumValue = 5;
     mealStepper.maximumValue = 60;
     mealStepper.wraps = YES;
     mealStepper.autorepeat = YES;
     mealStepper.continuous = YES;
-    mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"mealTimer"];
-    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", mealStepper.value];
     
     customizeTimerLabel.hidden = YES;
     timeDisplayLabel.hidden = YES;
     mealStepper.hidden = YES;
     retakeLabel.hidden = YES;
     
+    //Change font of segment control
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], UITextAttributeFont,
+                                [UIColor grayColor], UITextAttributeTextColor, nil];
+    [mealOrSnackControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
+    
+    NSDictionary *highlightedAttributes = [NSDictionary
+                                           dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor];
+    [mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];    
 }
 
 - (void)didReceiveMemoryWarning
@@ -115,6 +124,15 @@
     chosenImage = info[UIImagePickerControllerEditedImage];
     self.cameraIcon.hidden = YES;
     self.instructionLabel.hidden = YES;
+    mealOrSnackControl.hidden = YES;
+    mealOrSnackLabel.hidden = YES;
+    
+    if (mealOrSnackControl.selectedSegmentIndex == 0) {
+        mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"mealTimer"];
+    } else {
+        mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"snackTimer"];
+    }
+    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", mealStepper.value];
     
     // Crop the image with an image mask
     chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];

@@ -611,10 +611,10 @@ Reminders For...</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkx-xy-jV5">
-                                <rect key="frame" x="199" y="83" width="635" height="446"/>
+                                <rect key="frame" x="199" y="92" width="635" height="446"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw">
-                                <rect key="frame" x="278" y="68" width="468" height="379"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw">
+                                <rect key="frame" x="278" y="207" width="468" height="379"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="camera.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -636,10 +636,13 @@ Reminders For...</string>
                                     <action selector="takePhoto:" destination="t2j-Jj-fJN" eventType="touchUpInside" id="zwj-rn-X4f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVl-Zf-Kiz">
-                                <rect key="frame" x="49" y="465" width="930" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lVl-Zf-Kiz">
+                                <rect key="frame" x="217" y="0.0" width="599" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="(1) Take A Photo Of Your Plate">
+                                <state key="normal">
+                                    <string key="title">(1) Take A
+Photo Of Your Plate</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -667,14 +670,14 @@ Reminders For...</string>
                                     <segue destination="uue-W2-mCd" kind="modal" identifier="letsEatSegue" id="q5w-Pn-Xd7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2) Set the Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW6-yx-Khh">
-                                <rect key="frame" x="90" y="599" width="451" height="88"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(3) Set the Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW6-yx-Khh">
+                                <rect key="frame" x="90" y="608" width="451" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FM1-gj-enc">
-                                <rect key="frame" x="575" y="628" width="94" height="29"/>
+                                <rect key="frame" x="575" y="637" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="drinkStepperValueChanged:" destination="pqo-h6-K1e" eventType="valueChanged" id="ZC2-ie-Zrk"/>
@@ -682,18 +685,32 @@ Reminders For...</string>
                                 </connections>
                             </stepper>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RR-YM-wdZ">
-                                <rect key="frame" x="722" y="611" width="265" height="63"/>
+                                <rect key="frame" x="722" y="620" width="265" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-eD-KON">
-                                <rect key="frame" x="761" y="383" width="243" height="45"/>
+                                <rect key="frame" x="761" y="392" width="243" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Retake Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3yy-84-nxd">
+                                <rect key="frame" x="636" y="657" width="272" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Meal"/>
+                                    <segment title="Snack"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2) Meal or Snack?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-nh-Xc7">
+                                <rect key="frame" x="84" y="627" width="451" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -705,6 +722,8 @@ Reminders For...</string>
                         <outlet property="eatLabel" destination="EPA-sM-0gR" id="NTu-TK-sOa"/>
                         <outlet property="imageView" destination="bkx-xy-jV5" id="ofD-o7-5KC"/>
                         <outlet property="instructionLabel" destination="lVl-Zf-Kiz" id="Nre-nf-6BZ"/>
+                        <outlet property="mealOrSnackControl" destination="3yy-84-nxd" id="HYl-nt-5eP"/>
+                        <outlet property="mealOrSnackLabel" destination="5q2-nh-Xc7" id="luv-1E-WVQ"/>
                         <outlet property="mealStepper" destination="FM1-gj-enc" id="5KL-UX-aqB"/>
                         <outlet property="retakeLabel" destination="fhg-eD-KON" id="mud-Fb-dfc"/>
                         <outlet property="timeDisplayLabel" destination="4RR-YM-wdZ" id="pDy-mf-g5H"/>
@@ -727,7 +746,7 @@ Reminders For...</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xp-ft-7vo">
-                                <rect key="frame" x="12" y="20" width="135" height="95"/>
+                                <rect key="frame" x="12" y="16" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -737,7 +756,7 @@ Reminders For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-S2-had">
-                                <rect key="frame" x="838" y="20" width="152" height="107"/>
+                                <rect key="frame" x="838" y="16" width="152" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button" image="skip_to_eat.jpg">
@@ -1467,7 +1486,7 @@ Do You Want For...</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="h34-Ks-joT"/>
-        <segue reference="8CT-h7-e3r"/>
+        <segue reference="nop-3F-7cX"/>
         <segue reference="brf-LG-yVR"/>
         <segue reference="qg2-we-N1h"/>
         <segue reference="zvZ-Al-NL1"/>

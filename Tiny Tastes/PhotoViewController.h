@@ -12,16 +12,17 @@
     
     UIImage *chosenImage;
     IBOutlet UILabel *customizeTimerLabel;
+    IBOutlet UILabel *mealOrSnackLabel;
     IBOutlet UILabel *timeDisplayLabel;
     IBOutlet UIStepper *mealStepper;
     IBOutlet UIButton *eatLabel;
     IBOutlet UIButton *retakeLabel;
+    IBOutlet UISegmentedControl *mealOrSnackControl;
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UIButton *instructionLabel;
 @property (strong, nonatomic) IBOutlet UIButton *cameraIcon;
-@property (strong, nonatomic) IBOutlet UILabel *backLabel;
 
 - (IBAction)mealStepperValueChanged:(UIStepper *)sender;
 - (IBAction)takePhoto:(UIButton *)sender;
