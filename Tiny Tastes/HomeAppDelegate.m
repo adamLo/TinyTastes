@@ -16,11 +16,7 @@
     // Override point for customization after application launch.
     
     // Handle launching from a notification
-    UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (locationNotification) {
-        // Set icon badge number to zero
-        application.applicationIconBadgeNumber = 0;
-    }
+    application.applicationIconBadgeNumber = 0;
     
     SetReminderAlertsViewController *setReminderViewController = [[SetReminderAlertsViewController alloc] init];
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];

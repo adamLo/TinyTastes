@@ -536,7 +536,7 @@ Reminders For...</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXe-fR-Wgc">
-                                <rect key="frame" x="258" y="4" width="509" height="112"/>
+                                <rect key="frame" x="259" y="13" width="509" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1486,11 +1486,11 @@ Do You Want For...</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="h34-Ks-joT"/>
-        <segue reference="nop-3F-7cX"/>
-        <segue reference="brf-LG-yVR"/>
+        <segue reference="P60-4d-HuF"/>
         <segue reference="qg2-we-N1h"/>
+        <segue reference="gpD-ea-b6F"/>
+        <segue reference="brf-LG-yVR"/>
         <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
-        <segue reference="P60-4d-HuF"/>
     </inferredMetricsTieBreakers>
 </document>
