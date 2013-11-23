@@ -157,7 +157,20 @@
     
     // Crop the image with an image mask
     chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
-    self.imageView.image = chosenImage;
+    
+
+    
+    UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.jpg"];
+    UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];
+    overlayGraphicView.frame = CGRectMake(180, 200, overlayGraphic.size.width, overlayGraphic.size.height);
+    [self.view addSubview:overlayGraphicView];
+    
+    UIImageView *foodImageView = [[UIImageView alloc] init];
+    foodImageView.image = chosenImage;
+    
+    foodImageView.frame = CGRectMake(200, 20, chosenImage.size.width/1.2, chosenImage.size.height/1.2);
+    [self.view addSubview:foodImageView];
+    
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
 }
