@@ -22,7 +22,6 @@
 		316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB411831973A00FE3A83 /* bowl11.png */; };
 		316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB421831973A00FE3A83 /* bowl12.png */; };
 		316ACB501831A15A00FE3A83 /* default_food.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB4F1831A15A00FE3A83 /* default_food.png */; };
-		31BBF057183D597B00665C15 /* outline_camera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31BBF056183D597B00665C15 /* outline_camera.jpg */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
 		EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
@@ -69,6 +68,9 @@
 		FD23B10818416A3200D1C9A9 /* drinking_sippy_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10418416A3200D1C9A9 /* drinking_sippy_1.jpg */; };
 		FD23B10B18416D1E00D1C9A9 /* drinking_bottle_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */; };
 		FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */; };
+		FD23B10E184172E200D1C9A9 /* outline_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10D184172E200D1C9A9 /* outline_camera.png */; };
+		FD23B1151841770000D1C9A9 /* narration_on.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B1131841770000D1C9A9 /* narration_on.jpg */; };
+		FD23B1161841770000D1C9A9 /* narration_off.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B1141841770000D1C9A9 /* narration_off.jpg */; };
 		FD2AC75A18396CF500A7D6A1 /* blue_glow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */; };
 		FD2AC75B18396CF500A7D6A1 /* blue_circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */; };
 		FD2AC778183AC66900A7D6A1 /* page_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC770183AC66900A7D6A1 /* page_9.jpg */; };
@@ -143,7 +145,6 @@
 		316ACB411831973A00FE3A83 /* bowl11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl11.png; sourceTree = "<group>"; };
 		316ACB421831973A00FE3A83 /* bowl12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl12.png; sourceTree = "<group>"; };
 		316ACB4F1831A15A00FE3A83 /* default_food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_food.png; sourceTree = "<group>"; };
-		31BBF056183D597B00665C15 /* outline_camera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outline_camera.jpg; sourceTree = "<group>"; };
 		31FD15CE1804B91C00142A5F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		31FD15CF1804B91C00142A5F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		EC6FD1B117EA746000EB05E9 /* Tiny Tastes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tastes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +204,9 @@
 		FD23B10418416A3200D1C9A9 /* drinking_sippy_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_sippy_1.jpg; sourceTree = "<group>"; };
 		FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_bottle_2.jpg; sourceTree = "<group>"; };
 		FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_bottle_1.jpg; sourceTree = "<group>"; };
+		FD23B10D184172E200D1C9A9 /* outline_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline_camera.png; sourceTree = "<group>"; };
+		FD23B1131841770000D1C9A9 /* narration_on.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = narration_on.jpg; sourceTree = "<group>"; };
+		FD23B1141841770000D1C9A9 /* narration_off.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = narration_off.jpg; sourceTree = "<group>"; };
 		FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_glow.jpg; sourceTree = "<group>"; };
 		FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_circle.jpg; sourceTree = "<group>"; };
 		FD2AC770183AC66900A7D6A1 /* page_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_9.jpg; sourceTree = "<group>"; };
@@ -394,6 +398,9 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FD23B1131841770000D1C9A9 /* narration_on.jpg */,
+				FD23B1141841770000D1C9A9 /* narration_off.jpg */,
+				FD23B10D184172E200D1C9A9 /* outline_camera.png */,
 				FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */,
 				FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */,
 				FD23B10118416A3200D1C9A9 /* drinking_pediasure_2.jpg */,
@@ -406,7 +413,6 @@
 				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
 				FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */,
 				FD70732418303865003BFC29 /* book_cover.jpg */,
-				31BBF056183D597B00665C15 /* outline_camera.jpg */,
 				FD70732218303865003BFC29 /* bottle.jpg */,
 				316ACB371831973A00FE3A83 /* bowl1.png */,
 				316ACB401831973A00FE3A83 /* bowl10.png */,
@@ -601,6 +607,7 @@
 				FD187ECC183BE2EB0021D98F /* back_arrow.jpg in Resources */,
 				FD23B0F8184166DE00D1C9A9 /* drinking_juice_1.jpg in Resources */,
 				FD187ED8183BE4420021D98F /* save.jpg in Resources */,
+				FD23B1161841770000D1C9A9 /* narration_off.jpg in Resources */,
 				FD187ED6183BE4420021D98F /* start.jpg in Resources */,
 				FD70733B18303865003BFC29 /* sippy.jpg in Resources */,
 				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,
@@ -612,7 +619,6 @@
 				316ACB4A1831973A00FE3A83 /* bowl8.png in Resources */,
 				FD187EDC183BE93C0021D98F /* tiny_shop_thumbnail.jpg in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
-				31BBF057183D597B00665C15 /* outline_camera.jpg in Resources */,
 				FD70735118303865003BFC29 /* camera_overlay.jpg in Resources */,
 				FD70734718303865003BFC29 /* cutout.jpg in Resources */,
 				FD187ED5183BE4420021D98F /* page_6.jpg in Resources */,
@@ -633,11 +639,13 @@
 				FD23B10B18416D1E00D1C9A9 /* drinking_bottle_2.jpg in Resources */,
 				FD2AC77A183AC66900A7D6A1 /* page_7.jpg in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
+				FD23B10E184172E200D1C9A9 /* outline_camera.png in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				316ACB481831973A00FE3A83 /* bowl6.png in Resources */,
 				316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */,
 				FD2AC77D183AC66900A7D6A1 /* page_4.jpg in Resources */,
 				FD187EE6183C03E70021D98F /* title_page.jpg in Resources */,
+				FD23B1151841770000D1C9A9 /* narration_on.jpg in Resources */,
 				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
 				FD70734318303865003BFC29 /* glass.jpg in Resources */,
 				FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */,

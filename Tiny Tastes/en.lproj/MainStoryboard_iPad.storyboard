@@ -1467,20 +1467,20 @@ Do You Want For...</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2) Set the Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3Q-56-keA">
-                                <rect key="frame" x="86" y="630" width="451" height="88"/>
+                                <rect key="frame" x="86" y="646" width="451" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RCU-xb-3oD">
-                                <rect key="frame" x="589" y="659" width="94" height="29"/>
+                                <rect key="frame" x="589" y="675" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="drinkStepperValueChanged:" destination="pqo-h6-K1e" eventType="valueChanged" id="Fn9-wN-KH1"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmC-ak-JCO">
-                                <rect key="frame" x="718" y="642" width="265" height="63"/>
+                                <rect key="frame" x="718" y="658" width="265" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -1568,12 +1568,12 @@ Do You Want For...</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="kua-Mf-zTR"/>
-        <segue reference="Acc-TB-wKP"/>
-        <segue reference="zmz-FB-Dv9"/>
+        <segue reference="EPJ-LP-1lu"/>
         <segue reference="Ot4-iE-EpB"/>
-        <segue reference="nop-3F-7cX"/>
         <segue reference="r0P-sc-w0f"/>
         <segue reference="7dq-CF-qXO"/>
+        <segue reference="Acc-TB-wKP"/>
+        <segue reference="zmz-FB-Dv9"/>
         <segue reference="iI4-Xm-D66"/>
         <segue reference="ghn-Mn-MwL"/>
     </inferredMetricsTieBreakers>
