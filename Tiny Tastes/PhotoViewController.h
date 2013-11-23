@@ -18,6 +18,8 @@
     IBOutlet UIButton *eatLabel;
     IBOutlet UIButton *retakeLabel;
     IBOutlet UISegmentedControl *mealOrSnackControl;
+    IBOutlet UIImageView *thoughtBubble;
+    IBOutlet UILabel *cameraInstructionLabel;
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;

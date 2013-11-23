@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
-
-@property(nonatomic) IBOutlet UILabel *storyModeLabel;
-@property(nonatomic) IBOutlet UILabel *bookTitleLabel;
-@property(nonatomic) IBOutlet UILabel *letsDrinkLabel;
-@property(nonatomic) IBOutlet UILabel *letsEatLabel;
-@property(nonatomic) IBOutlet UILabel *tinyShopLabel;
-@property(nonatomic) IBOutlet UILabel *settingsLabel;
-@property(nonatomic) IBOutlet UILabel *numCoinsLabel;
+@interface HomeViewController : UIViewController {
+    IBOutlet UIButton *storyModeLabel;
+    IBOutlet UIButton *letsDrinkLabel;
+    IBOutlet UIButton *letsEatLabel;
+    IBOutlet UIButton *tinyShopLabel;
+    IBOutlet UIButton *settingsLabel;
+    IBOutlet UIButton *numCoinsButton;
+    IBOutlet UILabel *numCoinsLabel;
+}
 
 @end

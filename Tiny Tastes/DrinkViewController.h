@@ -10,8 +10,6 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface DrinkViewController : UIViewController {
-    AVAudioPlayer *audioPlayer;
-    
     IBOutlet UILabel *countdownLabel;
     IBOutlet UILabel *chooseLabel;
     IBOutlet UILabel *timeLeftLabel;
@@ -28,6 +26,7 @@
     IBOutlet UIButton *partiallyFinishedButton;
     IBOutlet UIButton *notFinishedButton;
 }
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (weak, nonatomic) IBOutlet UIImage *drinkingImage1;
 @property (weak, nonatomic) IBOutlet UIImage *drinkingImage2;
 @property int timeToDrink;

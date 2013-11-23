@@ -49,11 +49,11 @@
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", drinkStepper.value];
     
     //by default, set chosen drink to the sippy cup
-    choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
+    choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
     
-    chosenDrinkView = juiceBoxGlow;
-    [self setAnimation:juiceBoxGlow];
+    chosenDrinkView = pediasureGlow;
+    [self setAnimation:pediasureGlow];
 }
 
 - (void)setAnimation:(UIImageView *)animatedImageView

@@ -35,6 +35,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    //first time photo page is launched
+    if (![prefs boolForKey:@"photoView"]) {
+        [prefs setBool:YES forKey:@"photoView"];
+        [prefs synchronize];
+    } else {
+        thoughtBubble.hidden = YES;
+        cameraInstructionLabel.hidden = YES;
+    }
+    
     [mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
@@ -43,7 +54,7 @@
     [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
 
     mealStepper.minimumValue = 5;
     mealStepper.maximumValue = 60;
@@ -56,15 +67,22 @@
     mealStepper.hidden = YES;
     retakeLabel.hidden = YES;
     
-    //Change font of segment control
+    // Show Start button on Step 1 for Simulator
+    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad Simulator"]) {
+        eatLabel.hidden = NO;
+    } else {
+        eatLabel.hidden = YES;
+    }
+    
+    //Change settings (font, size) of segment control
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], UITextAttributeFont,
+                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:35], UITextAttributeFont,
                                 [UIColor grayColor], UITextAttributeTextColor, nil];
     [mealOrSnackControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
     
     NSDictionary *highlightedAttributes = [NSDictionary
                                            dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor];
-    [mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];    
+    [mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,12 +138,15 @@
     timeDisplayLabel.hidden = NO;
     mealStepper.hidden = NO;
     retakeLabel.hidden = NO;
+    eatLabel.hidden = NO;
     
     chosenImage = info[UIImagePickerControllerEditedImage];
     self.cameraIcon.hidden = YES;
     self.instructionLabel.hidden = YES;
     mealOrSnackControl.hidden = YES;
     mealOrSnackLabel.hidden = YES;
+    thoughtBubble.hidden = YES;
+    cameraInstructionLabel.hidden = YES;
     
     if (mealOrSnackControl.selectedSegmentIndex == 0) {
         mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"mealTimer"];

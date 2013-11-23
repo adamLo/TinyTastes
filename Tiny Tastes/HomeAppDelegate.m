@@ -20,9 +20,13 @@
     
     SetReminderAlertsViewController *setReminderViewController = [[SetReminderAlertsViewController alloc] init];
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    //first time app is launched
     if (![prefs boolForKey:@"HasLaunchedOnce"]) {
         //first time the app was launched, schedule default notifications
         [setReminderViewController scheduleDefaultNotifications];
+        [prefs setBool:YES forKey:@"HasLaunchedOnce"];
+        [prefs setBool:YES forKey:@"sound"];
+        [prefs synchronize];
     }
     
     return YES;

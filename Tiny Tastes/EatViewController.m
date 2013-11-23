@@ -67,6 +67,8 @@
     // display critter animation -- 3 seconds eating, 12 seconds with spoon back down on plate
     eatingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"eating_critter_1.jpg"],
                                      [UIImage imageNamed:@"eating_critter_2.jpg"],
+                                     [UIImage imageNamed:@"eating_critter_1.jpg"],
+                                     [UIImage imageNamed:@"eating_critter_1.jpg"],
                                      [UIImage imageNamed:@"eating_critter_1.jpg"],nil];
     eatingCritter.animationDuration = 15;
     [self.view addSubview:eatingCritter];
@@ -137,7 +139,6 @@
     partiallyFinishedButton.hidden = NO;
     notFinishedButton.hidden = NO;
     chooseLabel.hidden = NO;
-    redLine.hidden = NO;
     doneButton.hidden = YES;
     [eatingCritter stopAnimating];
     [disappearingFood stopAnimating];
@@ -145,9 +146,13 @@
     foodImageView.hidden = YES;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
+    if (![prefs boolForKey:@"HasLaunchedEatScreenOnce"]) {
+        NSLog(@"first time launching in Eat screen");
+        redLine.hidden = NO;
         [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
-        blinkStatus = FALSE;
+        blinkStatus = TRUE;
+        [prefs setBool:YES forKey:@"HasLaunchedEatScreenOnce"];
+        [prefs synchronize];
     }
 }
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -27,20 +27,6 @@
                                     <segue destination="pqo-h6-K1e" kind="modal" id="ON0-tQ-Uz4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Drink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndD-Jt-0kU">
-                                <rect key="frame" x="690" y="611" width="263" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Eat!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-gR-JmZ">
-                                <rect key="frame" x="684" y="279" width="263" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-w8-fb3">
                                 <rect key="frame" x="703" y="104" width="236" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -64,20 +50,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDo-IJ-ezK">
-                                <rect key="frame" x="112" y="428" width="190" height="171"/>
+                                <rect key="frame" x="122" y="438" width="171" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="clock_settings.jpg"/>
                                 <connections>
                                     <segue destination="gqI-Hq-2FL" kind="modal" id="brf-LG-yVR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCj-x3-o64">
-                                <rect key="frame" x="95" y="618" width="224" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-9B-8dG">
                                 <rect key="frame" x="84" y="92" width="246" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -89,17 +68,6 @@
                                     <segue destination="u8I-qd-D1P" kind="modal" id="qg2-we-N1h"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiny Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJC-F0-1CX">
-                                <rect key="frame" x="65" y="286" width="285" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_pouch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Hbx-Hk-Klh">
-                                <rect key="frame" x="477" y="579" width="129" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAi-Nf-bIo">
                                 <rect key="frame" x="502" y="632" width="72" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,12 +75,81 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YT-i1-2RI">
-                                <rect key="frame" x="388" y="500" width="285" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-mg-QET">
+                                <rect key="frame" x="694" y="276" width="243" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Let's Eat!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t2j-Jj-fJN" kind="modal" id="Ot4-iE-EpB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-YT-L2k">
+                                <rect key="frame" x="694" y="608" width="243" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Let's Drink!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pqo-h6-K1e" kind="modal" id="Z7Z-Z2-FTi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cku-Cv-QdM">
+                                <rect key="frame" x="86" y="608" width="243" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gqI-Hq-2FL" kind="modal" id="7dq-CF-qXO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yp-1d-zXC">
+                                <rect key="frame" x="86" y="276" width="243" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Tiny Shop">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u8I-qd-D1P" kind="modal" id="sbx-X6-G8B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKN-Rb-yfT">
+                                <rect key="frame" x="406" y="492" width="243" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Story Time">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1iE-zo-HXc" kind="modal" id="4D0-RR-fTN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4B-w5-u7g">
+                                <rect key="frame" x="492" y="579" width="98" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="coin_pouch.jpg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u8I-qd-D1P" kind="modal" id="Chy-Cu-IYP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRJ-6P-1WR">
+                                <rect key="frame" x="502" y="630" width="79" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -122,17 +159,18 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="letsDrinkLabel" destination="ndD-Jt-0kU" id="eic-Jr-Qjk"/>
-                        <outlet property="letsEatLabel" destination="n4Q-gR-JmZ" id="QRL-LR-jOP"/>
-                        <outlet property="numCoinsLabel" destination="vAi-Nf-bIo" id="fil-I9-Nbb"/>
-                        <outlet property="settingsLabel" destination="JCj-x3-o64" id="JV1-cP-6bV"/>
-                        <outlet property="storyModeLabel" destination="0YT-i1-2RI" id="pNO-Mx-RyN"/>
-                        <outlet property="tinyShopLabel" destination="dJC-F0-1CX" id="gAn-rx-A1O"/>
+                        <outlet property="letsDrinkLabel" destination="ivY-YT-L2k" id="1LR-5B-UgI"/>
+                        <outlet property="letsEatLabel" destination="ibL-mg-QET" id="vBY-7G-z0h"/>
+                        <outlet property="numCoinsButton" destination="z4B-w5-u7g" id="gnJ-2a-5Q5"/>
+                        <outlet property="numCoinsLabel" destination="kRJ-6P-1WR" id="Po0-WZ-OOk"/>
+                        <outlet property="settingsLabel" destination="cku-Cv-QdM" id="D4u-Hs-O3o"/>
+                        <outlet property="storyModeLabel" destination="JKN-Rb-yfT" id="dzC-w2-Fa6"/>
+                        <outlet property="tinyShopLabel" destination="5yp-1d-zXC" id="yYa-Yf-sSG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3360" y="-3423"/>
+            <point key="canvasLocation" x="-3345" y="-3403"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="Rxp-xa-s1u">
@@ -155,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZpT-V1-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2167" y="-4332"/>
+            <point key="canvasLocation" x="-2157" y="-4384"/>
         </scene>
         <!--Add Meal Notification View Controller-->
         <scene sceneID="ZxS-Sw-rK8">
@@ -606,7 +644,7 @@ Reminders For...</string>
                         <viewControllerLayoutGuide type="top" id="S5m-1z-HuM"/>
                         <viewControllerLayoutGuide type="bottom" id="4y8-Sk-Zmh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EFf-Hb-yNG">
+                    <view key="view" contentMode="scaleAspectFit" id="EFf-Hb-yNG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -614,7 +652,7 @@ Reminders For...</string>
                                 <rect key="frame" x="199" y="92" width="635" height="446"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw">
-                                <rect key="frame" x="278" y="207" width="468" height="379"/>
+                                <rect key="frame" x="261" y="351" width="468" height="379"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="camera.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -637,11 +675,9 @@ Reminders For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lVl-Zf-Kiz">
-                                <rect key="frame" x="217" y="0.0" width="599" height="224"/>
+                                <rect key="frame" x="19" y="249" width="994" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <string key="title">(1) Take A
-Photo Of Your Plate</string>
+                                <state key="normal" title="(2) Take A Photo Of Your Plate">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -652,7 +688,7 @@ Photo Of Your Plate</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmP-aj-xDj">
                                 <rect key="frame" x="20" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="home.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -660,7 +696,7 @@ Photo Of Your Plate</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPA-sM-0gR">
-                                <rect key="frame" x="824" y="31" width="215" height="74"/>
+                                <rect key="frame" x="809" y="668" width="215" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="start.jpg">
@@ -700,18 +736,35 @@ Photo Of Your Plate</string>
                                     <action selector="takePhoto:" destination="t2j-Jj-fJN" eventType="touchUpInside" id="Al0-jq-7VA"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3yy-84-nxd">
-                                <rect key="frame" x="636" y="657" width="272" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3yy-84-nxd">
+                                <rect key="frame" x="380" y="153" width="272" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="11W-JO-b85"/>
+                                    <constraint firstAttribute="height" constant="55" id="UHm-iy-aXP"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Meal"/>
                                     <segment title="Snack"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2) Meal or Snack?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-nh-Xc7">
-                                <rect key="frame" x="84" y="627" width="451" height="88"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(1) Meal or Snack?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-nh-Xc7">
+                                <rect key="frame" x="287" y="46" width="451" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thought_bubble.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-Ub-VgD">
+                                <rect key="frame" x="756" y="410" width="231" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="181" translatesAutoresizingMaskIntoConstraints="NO" id="OC3-c9-uej">
+                                <rect key="frame" x="781" y="424" width="181" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Touch camera
+to take
+photo</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -721,6 +774,7 @@ Photo Of Your Plate</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="cameraIcon" destination="qtL-r8-iUw" id="KJc-Kc-4Yt"/>
+                        <outlet property="cameraInstructionLabel" destination="OC3-c9-uej" id="NwR-mJ-9zf"/>
                         <outlet property="customizeTimerLabel" destination="XW6-yx-Khh" id="e8V-FV-ERy"/>
                         <outlet property="eatLabel" destination="EPA-sM-0gR" id="NTu-TK-sOa"/>
                         <outlet property="imageView" destination="bkx-xy-jV5" id="ofD-o7-5KC"/>
@@ -729,12 +783,13 @@ Photo Of Your Plate</string>
                         <outlet property="mealOrSnackLabel" destination="5q2-nh-Xc7" id="luv-1E-WVQ"/>
                         <outlet property="mealStepper" destination="FM1-gj-enc" id="5KL-UX-aqB"/>
                         <outlet property="retakeLabel" destination="fhg-eD-KON" id="mud-Fb-dfc"/>
+                        <outlet property="thoughtBubble" destination="N6e-Ub-VgD" id="Fml-L4-1kw"/>
                         <outlet property="timeDisplayLabel" destination="4RR-YM-wdZ" id="pDy-mf-g5H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02E-bE-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1009" y="-3395"/>
+            <point key="canvasLocation" x="-1073" y="-3395"/>
         </scene>
         <!--Story Data View Controller-->
         <scene sceneID="0wC-ax-qQz">
@@ -924,14 +979,14 @@ Photo Of Your Plate</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLy-yw-gPK">
-                                <rect key="frame" x="461" y="97" width="210" height="105"/>
+                                <rect key="frame" x="642" y="98" width="210" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="55"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drinking_bottle_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-1r-vNU">
-                                <rect key="frame" x="-177" y="10" width="892" height="833"/>
+                            <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drinking_pediasure_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-1r-vNU">
+                                <rect key="frame" x="104" y="-65" width="892" height="833"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnV-bd-EiS">
@@ -989,7 +1044,7 @@ Photo Of Your Plate</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" id="pcN-tE-SoU"/>
+                                    <segue destination="pqo-h6-K1e" kind="modal" id="kua-Mf-zTR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAK-Kw-vYq">
@@ -1003,12 +1058,23 @@ Photo Of Your Plate</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time To Finish:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m0-4I-lx7">
-                                <rect key="frame" x="375" y="25" width="383" height="81"/>
+                                <rect key="frame" x="556" y="26" width="383" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-te-Xh4">
+                                <rect key="frame" x="20" y="142" width="140" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="home.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" id="NJ5-dJ-HAC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1028,7 +1094,7 @@ Photo Of Your Plate</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUx-Qs-sSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1009" y="-2435"/>
+            <point key="canvasLocation" x="-1009" y="-2403"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="4GA-IX-HCy">
@@ -1046,22 +1112,10 @@ Photo Of Your Plate</string>
                                 <rect key="frame" x="244" y="112" width="901" height="656"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Go Shopping" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3K-zQ-yDG">
-                                <rect key="frame" x="149" y="483" width="220" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaY-hW-aCt">
                                 <rect key="frame" x="-10" y="7" width="1024" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc2-yM-frW">
-                                <rect key="frame" x="187" y="603" width="173" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-4R-xBD">
@@ -1103,6 +1157,30 @@ Photo Of Your Plate</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzB-aB-hy0">
+                                <rect key="frame" x="126" y="465" width="266" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Go Shopping">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u8I-qd-D1P" kind="modal" id="J0t-qH-lZG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tm-aM-qxz">
+                                <rect key="frame" x="113" y="602" width="266" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" id="nau-dm-eUF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1114,8 +1192,8 @@ Photo Of Your Plate</string>
                         <outlet property="coinView3" destination="udI-kP-IlC" id="y8E-pe-BOi"/>
                         <outlet property="coinsNotifLabel" destination="dTF-HD-eFY" id="P4O-bh-xBf"/>
                         <outlet property="feedbackLabel" destination="EaY-hW-aCt" id="kLp-JR-eMz"/>
-                        <outlet property="goShoppingLabel" destination="g3K-zQ-yDG" id="egS-pp-ELx"/>
-                        <outlet property="mainMenuLabel" destination="Uc2-yM-frW" id="hbY-Bp-eXz"/>
+                        <outlet property="goShoppingLabel" destination="PzB-aB-hy0" id="IBS-JE-eBX"/>
+                        <outlet property="mainMenuLabel" destination="8Tm-aM-qxz" id="MdL-Gb-r8d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yF2-Hc-HMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1147,7 +1225,7 @@ Photo Of Your Plate</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSk-Wf-jad">
                                 <rect key="frame" x="20" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="home.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1337,7 +1415,7 @@ Do You Want For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHM-V3-wMn">
-                                <rect key="frame" x="465" y="336" width="144" height="239"/>
+                                <rect key="frame" x="615" y="129" width="144" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button" image="juicebox.jpg">
@@ -1350,7 +1428,7 @@ Do You Want For...</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRu-oh-kvr">
                                 <rect key="frame" x="801" y="366" width="111" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="bottle.jpg">
+                                <state key="normal" image="bottle.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1358,7 +1436,7 @@ Do You Want For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KN-Lw-TYN">
-                                <rect key="frame" x="652" y="137" width="120" height="230"/>
+                                <rect key="frame" x="452" y="363" width="120" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="pediasure.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1408,7 +1486,7 @@ Do You Want For...</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7A-9b-x8L">
-                                <rect key="frame" x="337" y="260" width="400" height="400"/>
+                                <rect key="frame" x="487" y="55" width="400" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZd-6a-Zey">
@@ -1420,7 +1498,7 @@ Do You Want For...</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Joa-ds-V6M">
-                                <rect key="frame" x="512" y="52" width="400" height="400"/>
+                                <rect key="frame" x="312" y="282" width="400" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJV-w3-ulQ">
@@ -1451,7 +1529,7 @@ Do You Want For...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7D-3Z-Ipi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2151" y="-2435"/>
+            <point key="canvasLocation" x="-2265" y="-2421"/>
         </scene>
     </scenes>
     <resources>
@@ -1461,7 +1539,7 @@ Do You Want For...</string>
         <image name="camera.jpg" width="473" height="364"/>
         <image name="clock_settings.jpg" width="183" height="170"/>
         <image name="coin_pouch.jpg" width="98" height="121"/>
-        <image name="drinking_bottle_2.jpg" width="581" height="829"/>
+        <image name="drinking_pediasure_1.jpg" width="526" height="768"/>
         <image name="eating_critter_1.jpg" width="657" height="708"/>
         <image name="feedback_tiny.jpg" width="659" height="655"/>
         <image name="full_bowl.jpg" width="199" height="155"/>
@@ -1478,6 +1556,7 @@ Do You Want For...</string>
         <image name="sippy.jpg" width="206" height="184"/>
         <image name="skip_to_eat.jpg" width="150" height="100"/>
         <image name="start.jpg" width="150" height="74"/>
+        <image name="thought_bubble.jpg" width="300" height="255"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
         <image name="tiny_shop_thumbnail.jpg" width="227" height="170"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
@@ -1488,12 +1567,14 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="kua-Mf-zTR"/>
+        <segue reference="Acc-TB-wKP"/>
+        <segue reference="zmz-FB-Dv9"/>
+        <segue reference="Ot4-iE-EpB"/>
         <segue reference="nop-3F-7cX"/>
-        <segue reference="h34-Ks-joT"/>
-        <segue reference="P60-4d-HuF"/>
-        <segue reference="qg2-we-N1h"/>
-        <segue reference="brf-LG-yVR"/>
-        <segue reference="zvZ-Al-NL1"/>
+        <segue reference="r0P-sc-w0f"/>
+        <segue reference="7dq-CF-qXO"/>
         <segue reference="iI4-Xm-D66"/>
+        <segue reference="ghn-Mn-MwL"/>
     </inferredMetricsTieBreakers>
 </document>

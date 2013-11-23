@@ -18,6 +18,7 @@
 @synthesize drinkingImage1;
 @synthesize drinkingImage2;
 @synthesize timeToDrink;
+@synthesize audioPlayer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +35,7 @@
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"slurping" ofType:@"mp3"];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    [audioPlayer setVolume:0.5];
     
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     allFinishedButton.hidden = YES;
@@ -122,15 +124,20 @@
     partiallyFinishedButton.hidden = NO;
     notFinishedButton.hidden = NO;
     chooseLabel.hidden = NO;
-    redLine.hidden = NO;
     doneButton.hidden = YES;
+    countdownLabel.hidden = YES;
+    timeLeftLabel.hidden = YES;
+    
     [drinkingCritter stopAnimating];
     [drinkingCritter setImage:drinkingImage1];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    if (![prefs boolForKey:@"HasLaunchedOnce"]) {
+    if (![prefs boolForKey:@"HasLaunchedDrinkScreenOnce"]) {
+        redLine.hidden = NO;
         [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
-        blinkStatus = FALSE;
+        blinkStatus = TRUE;
+        [prefs setBool:YES forKey:@"HasLaunchedDrinkScreenOnce"];
+        [prefs synchronize];
     }
 }
 

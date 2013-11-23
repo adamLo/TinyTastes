@@ -11,8 +11,8 @@
 @interface FeedbackViewController : UIViewController
 
 @property(nonatomic) IBOutlet UILabel *feedbackLabel;
-@property(nonatomic) IBOutlet UILabel *goShoppingLabel;
-@property(nonatomic) IBOutlet UILabel *mainMenuLabel;
+@property(nonatomic) IBOutlet UIButton *goShoppingLabel;
+@property(nonatomic) IBOutlet UIButton *mainMenuLabel;
 @property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
 
 @property(nonatomic) IBOutlet UIImageView *coinView1;

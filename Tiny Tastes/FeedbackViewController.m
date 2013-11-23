@@ -29,8 +29,8 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     
 	self.feedbackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
-    self.goShoppingLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
-    self.mainMenuLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
+    self.goShoppingLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
+    self.mainMenuLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
     self.coinsNotifLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
 
     self.feedbackLabel.text = self.feedbackText;
