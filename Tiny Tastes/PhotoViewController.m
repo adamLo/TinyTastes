@@ -16,12 +16,20 @@
 #import "OverlayView.h"
 #import "EatViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <CoreVideo/CoreVideo.h>
+#import <CoreMedia/CoreMedia.h>
+#import <ImageIO/ImageIO.h>
 
 @interface PhotoViewController ()
 
 @end
 
 @implementation PhotoViewController
+
+AVCaptureStillImageOutput *stillImageOutput;
+OverlayView *overlay;
+AVCaptureSession *session;
+AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,17 +43,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    //first time photo page is launched
-    if (![prefs boolForKey:@"photoView"]) {
-        [prefs setBool:YES forKey:@"photoView"];
-        [prefs synchronize];
-    } else {
-        thoughtBubble.hidden = YES;
-        cameraInstructionLabel.hidden = YES;
-    }
-    
     [mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
@@ -54,8 +51,8 @@
     [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-
+    mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    
     mealStepper.minimumValue = 5;
     mealStepper.maximumValue = 60;
     mealStepper.wraps = YES;
@@ -67,16 +64,9 @@
     mealStepper.hidden = YES;
     retakeLabel.hidden = YES;
     
-    // Show Start button on Step 1 for Simulator
-    if ([[[UIDevice currentDevice] model] isEqualToString:@"iPad Simulator"]) {
-        eatLabel.hidden = NO;
-    } else {
-        eatLabel.hidden = YES;
-    }
-    
-    //Change settings (font, size) of segment control
+    //Change font of segment control
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:35], UITextAttributeFont,
+                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], UITextAttributeFont,
                                 [UIColor grayColor], UITextAttributeTextColor, nil];
     [mealOrSnackControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
     
@@ -100,47 +90,108 @@
 - (IBAction)takePhoto:(UIButton *)sender {
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        // Create a new image picker instance:
-        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-        picker.delegate = self;
-        picker.allowsEditing = YES;
         
-        // Set the image picker source:
-        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        session = [[AVCaptureSession alloc] init];
+        session.sessionPreset = AVCaptureSessionPresetPhoto;
         
-        // Hide the controls:
-        picker.showsCameraControls = YES;
-        picker.navigationBarHidden = YES;
-        picker.toolbarHidden = YES;
+        captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
         
-        // Insert the overlay:
-        OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-        overlay.picker = picker;
-        picker.cameraOverlayView = overlay;
+        captureVideoPreviewLayer.frame = self.view.bounds;
+        [self.view.layer addSublayer:captureVideoPreviewLayer];
         
-        // Show the picker:
-        [self presentViewController:picker animated:YES completion:nil];
+        AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+        
+        NSError *error = nil;
+        AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
+        if (!input) {
+            // Handle the error appropriately.
+            NSLog(@"ERROR: trying to open camera: %@", error);
+        }
+        [session addInput:input];
+		
+        stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
+        NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys: AVVideoCodecJPEG, AVVideoCodecKey, nil];
+        [stillImageOutput setOutputSettings:outputSettings];
+        
+        [session addOutput:stillImageOutput];
+        
+        [session startRunning];
+        
+        overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        overlay.photoViewController = self;
+        
+        [self.view addSubview:overlay];
+        
+        AVCaptureConnection *previewLayerConnection=captureVideoPreviewLayer.connection;
+        
+        if ([previewLayerConnection isVideoOrientationSupported]) {
+            [previewLayerConnection setVideoOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
+        }
+        
         
     } else {
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message:@"This device has no camera"
-                                                        delegate:nil
-                                                        cancelButtonTitle:@"OK"
-                                                        otherButtonTitles: nil];
+                                                              message:@"This device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
         [myAlertView show];
     }
     
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
 
-- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+
+-(IBAction) captureNow
+{
+	AVCaptureConnection *videoConnection = nil;
+	for (AVCaptureConnection *connection in stillImageOutput.connections)
+	{
+		for (AVCaptureInputPort *port in [connection inputPorts])
+		{
+			if ([[port mediaType] isEqual:AVMediaTypeVideo] )
+			{
+				videoConnection = connection;
+				break;
+			}
+		}
+		if (videoConnection) { break; }
+	}
+	
+	NSLog(@"about to request a capture from: %@", stillImageOutput);
+	[stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error)
+     {
+         /*
+		 CFDictionaryRef exifAttachments = CMGetAttachment( imageSampleBuffer, kCGImagePropertyExifDictionary, NULL);
+		 if (exifAttachments)
+		 {
+             // Do something with the attachments.
+             NSLog(@"attachements: %@", exifAttachments);
+		 }
+         else
+             NSLog(@"no attachments");
+          */
+         
+         NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
+         chosenImage = [[UIImage alloc] initWithData:imageData];
+	 }];
+    
+    [session stopRunning];
+    [captureVideoPreviewLayer removeFromSuperlayer];
+    
+    [self processImage];
+}
+
+
+- (void) processImage {
     customizeTimerLabel.hidden = NO;
     timeDisplayLabel.hidden = NO;
     mealStepper.hidden = NO;
     retakeLabel.hidden = NO;
-    eatLabel.hidden = NO;
     
-    chosenImage = info[UIImagePickerControllerEditedImage];
     self.cameraIcon.hidden = YES;
     self.instructionLabel.hidden = YES;
     mealOrSnackControl.hidden = YES;
@@ -158,21 +209,19 @@
     // Crop the image with an image mask
     chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
     
-
+    
     
     UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.jpg"];
     UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];
-    overlayGraphicView.frame = CGRectMake(180, 200, overlayGraphic.size.width, overlayGraphic.size.height);
+    overlayGraphicView.frame = CGRectMake(0, 0, overlayGraphic.size.width, overlayGraphic.size.height);
     [self.view addSubview:overlayGraphicView];
     
     UIImageView *foodImageView = [[UIImageView alloc] init];
     foodImageView.image = chosenImage;
     
-    foodImageView.frame = CGRectMake(200, 20, chosenImage.size.width/1.2, chosenImage.size.height/1.2);
+    foodImageView.frame = CGRectMake(0, 0, chosenImage.size.width*1.067, chosenImage.size.height*1.067);
     [self.view addSubview:foodImageView];
     
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {

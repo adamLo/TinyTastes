@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PhotoViewController.h"
 
 @interface OverlayView : UIView
 
-@property (weak, nonatomic) IBOutlet UIImagePickerController *picker;
+@property (weak, nonatomic) IBOutlet PhotoViewController *photoViewController;
 
 @end
