@@ -551,19 +551,19 @@ Reminders For...</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Stj-aL-I3N">
-                                <rect key="frame" x="770" y="222" width="51" height="31"/>
+                                <rect key="frame" x="811" y="184" width="51" height="31"/>
                                 <connections>
-                                    <action selector="soundButtonClicked:" destination="gqI-Hq-2FL" eventType="valueChanged" id="897-iQ-0wC"/>
+                                    <action selector="backgroundSoundButtonClicked:" destination="gqI-Hq-2FL" eventType="valueChanged" id="Cu3-Di-hjg"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Sound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFq-hD-NDA">
-                                <rect key="frame" x="134" y="189" width="241" height="98"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Background Sounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFq-hD-NDA">
+                                <rect key="frame" x="156" y="151" width="501" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-SF-mXE">
-                                <rect key="frame" x="757" y="589" width="74" height="39"/>
+                                <rect key="frame" x="798" y="642" width="74" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Set">
@@ -581,13 +581,13 @@ Reminders For...</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Customize Timer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93r-3g-a6V">
-                                <rect key="frame" x="134" y="366" width="389" height="101"/>
+                                <rect key="frame" x="156" y="455" width="389" height="101"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Customize Alerts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilk-9w-7JK">
-                                <rect key="frame" x="134" y="553" width="453" height="112"/>
+                                <rect key="frame" x="156" y="606" width="453" height="112"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -603,7 +603,7 @@ Reminders For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN3-DV-HVi">
-                                <rect key="frame" x="757" y="397" width="74" height="39"/>
+                                <rect key="frame" x="798" y="486" width="74" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Set">
@@ -613,19 +613,33 @@ Reminders For...</string>
                                     <segue destination="lG1-dD-4C0" kind="modal" id="yCD-bC-YGb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Story Narration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Op-Hq-S3K">
+                                <rect key="frame" x="156" y="302" width="345" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4y-g5-IY7">
+                                <rect key="frame" x="811" y="335" width="51" height="31"/>
+                                <connections>
+                                    <action selector="storyNarrationButtonClicked:" destination="gqI-Hq-2FL" eventType="valueChanged" id="DFw-7p-eg5"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="backgroundSoundLabel" destination="eFq-hD-NDA" id="iEw-0L-dYP"/>
+                        <outlet property="backgroundSoundSwitch" destination="Stj-aL-I3N" id="ju8-7u-Fba"/>
                         <outlet property="mealAlerts" destination="ilk-9w-7JK" id="SCJ-hk-8sv"/>
                         <outlet property="mealTimer" destination="93r-3g-a6V" id="jhs-8x-ZvD"/>
                         <outlet property="setAlertsButton" destination="sYA-SF-mXE" id="vBx-K6-Qvm"/>
                         <outlet property="setTimerButton" destination="RN3-DV-HVi" id="PTt-62-ZYs"/>
                         <outlet property="settingsLabel" destination="RXe-fR-Wgc" id="Vqx-Mg-3TS"/>
-                        <outlet property="soundLabel" destination="eFq-hD-NDA" id="N4Y-Kd-mur"/>
-                        <outlet property="soundSwitch" destination="Stj-aL-I3N" id="4BB-QN-7jZ"/>
+                        <outlet property="storyNarrationLabel" destination="9Op-Hq-S3K" id="ar6-s9-EiS"/>
+                        <outlet property="storyNarrationSwitch" destination="b4y-g5-IY7" id="dWr-bK-rEi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEJ-yj-HdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -634,7 +648,7 @@ Reminders For...</string>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 </pickerView>
             </objects>
-            <point key="canvasLocation" x="-4619" y="-3395"/>
+            <point key="canvasLocation" x="-4503" y="-3413"/>
         </scene>
         <!--Photo View Controller-->
         <scene sceneID="ppO-NU-SHz">
@@ -911,7 +925,7 @@ photo</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-4r-sly">
                                 <rect key="frame" x="15" y="15" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="home.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1567,14 +1581,14 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="kua-Mf-zTR"/>
-        <segue reference="EPJ-LP-1lu"/>
-        <segue reference="Ot4-iE-EpB"/>
         <segue reference="r0P-sc-w0f"/>
-        <segue reference="7dq-CF-qXO"/>
-        <segue reference="Acc-TB-wKP"/>
-        <segue reference="zmz-FB-Dv9"/>
+        <segue reference="gpD-ea-b6F"/>
+        <segue reference="brf-LG-yVR"/>
+        <segue reference="zvZ-Al-NL1"/>
         <segue reference="iI4-Xm-D66"/>
-        <segue reference="ghn-Mn-MwL"/>
+        <segue reference="Ot4-iE-EpB"/>
+        <segue reference="P60-4d-HuF"/>
+        <segue reference="zmz-FB-Dv9"/>
+        <segue reference="kua-Mf-zTR"/>
     </inferredMetricsTieBreakers>
 </document>

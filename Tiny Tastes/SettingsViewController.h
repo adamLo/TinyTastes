@@ -10,16 +10,19 @@
 
 @interface SettingsViewController : UIViewController {
     IBOutlet UILabel *settingsLabel;
-    IBOutlet UILabel *soundLabel;
+    IBOutlet UILabel *backgroundSoundLabel;
+    IBOutlet UILabel *storyNarrationLabel;
     IBOutlet UILabel *mealTimer;
     IBOutlet UILabel *mealAlerts;
     
-    IBOutlet UISwitch *soundSwitch;
+    IBOutlet UISwitch *backgroundSoundSwitch;
+    IBOutlet UISwitch *storyNarrationSwitch;
     
     IBOutlet UIButton *setTimerButton;
     IBOutlet UIButton *setAlertsButton;
 }
 
-- (IBAction)soundButtonClicked:(UIButton *)sender;
+- (IBAction)backgroundSoundButtonClicked:(UIButton *)sender;
+- (IBAction)storyNarrationButtonClicked:(UIButton *)sender;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface FeedbackViewController : UIViewController
 
@@ -21,5 +22,7 @@
 
 @property(nonatomic) NSString *feedbackText;
 @property(nonatomic) int numCoins;
+@property(nonatomic) BOOL eating;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end

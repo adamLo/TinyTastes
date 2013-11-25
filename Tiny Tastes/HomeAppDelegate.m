@@ -25,7 +25,8 @@
         //first time the app was launched, schedule default notifications
         [setReminderViewController scheduleDefaultNotifications];
         [prefs setBool:YES forKey:@"HasLaunchedOnce"];
-        [prefs setBool:YES forKey:@"sound"];
+        [prefs setBool:YES forKey:@"backgroundSound"];
+        [prefs setBool:NO forKey:@"storyNarration"];
         [prefs synchronize];
     }
     

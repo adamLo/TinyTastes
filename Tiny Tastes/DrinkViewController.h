@@ -16,6 +16,7 @@
 
     NSTimer *countdownTimer;
     int secondsCount;
+    int secondsCountFinal;
     bool blinkStatus;
 
     IBOutlet UIImageView *drinkingCritter;
@@ -26,10 +27,14 @@
     IBOutlet UIButton *partiallyFinishedButton;
     IBOutlet UIButton *notFinishedButton;
 }
-@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (weak, nonatomic) IBOutlet UIImage *drinkingImage1;
 @property (weak, nonatomic) IBOutlet UIImage *drinkingImage2;
 @property int timeToDrink;
 
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer1;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer2;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer3;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer4;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer5;
 
 @end

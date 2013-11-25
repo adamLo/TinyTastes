@@ -32,30 +32,50 @@
     
     // Set customized font for labels
     settingsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:70];
-    soundLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    backgroundSoundLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    storyNarrationLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     mealTimer.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     mealAlerts.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     setTimerButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     setAlertsButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
-    // Set sound button state
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"sound"] == YES) {
-        [soundSwitch setOn:YES animated:YES];
+    // Set background sound button state
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
+        [backgroundSoundSwitch setOn:YES animated:YES];
     } else {
-        [soundSwitch setOn:NO animated:YES];
+        [backgroundSoundSwitch setOn:NO animated:YES];
+    }
+    
+    // Set story narration sound button state
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
+        [storyNarrationSwitch setOn:YES animated:YES];
+    } else {
+        [storyNarrationSwitch setOn:NO animated:YES];
     }
 }
 
-- (IBAction)soundButtonClicked:(UIButton *)sender
+- (IBAction)backgroundSoundButtonClicked:(UIButton *)sender
 {
-    if (soundSwitch.on) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"sound"];
+    if (backgroundSoundSwitch.on) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"backgroundSound"];
     }
     else {
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"sound"];
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"backgroundSound"];
     }
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
+- (IBAction)storyNarrationButtonClicked:(UIButton *)sender
+{
+    if (storyNarrationSwitch.on) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"storyNarration"];
+    }
+    else {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"storyNarration"];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

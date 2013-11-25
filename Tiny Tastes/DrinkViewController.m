@@ -18,7 +18,11 @@
 @synthesize drinkingImage1;
 @synthesize drinkingImage2;
 @synthesize timeToDrink;
-@synthesize audioPlayer;
+@synthesize audioPlayer1;
+@synthesize audioPlayer2;
+@synthesize audioPlayer3;
+@synthesize audioPlayer4;
+@synthesize audioPlayer5;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,14 +37,11 @@
 {
     [super viewDidLoad];
     
-    NSString *path = [[NSBundle mainBundle]pathForResource:@"slurping" ofType:@"mp3"];
-    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
-    [audioPlayer setVolume:0.5];
-    
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     allFinishedButton.hidden = YES;
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
+    secondsCountFinal = secondsCount;
     
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
@@ -52,6 +53,7 @@
     [self.view addSubview:drinkingCritter];
     [drinkingCritter startAnimating];
     
+    [self setUpAudioPlayers];
     [self setTimer];
 }
 
@@ -71,12 +73,8 @@
     countdownLabel.textAlignment = NSTextAlignmentCenter;
     countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"sound"] == YES) {
-        if (((secondsCount % 5) == 0) && ((secondsCount % 10) != 0)) {
-            [audioPlayer play];
-        }
-    }
-    
+    [self playSoundBite];
+
     if (secondsCount == 0) {
         [countdownTimer invalidate];
         countdownTimer = nil;
@@ -84,26 +82,66 @@
     }
     
 }
+
+- (void)setUpAudioPlayers {
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"i_like_this" ofType:@"m4a"];
+    audioPlayer1 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    [audioPlayer1 setVolume:0.5];
+
+    path = [[NSBundle mainBundle]pathForResource:@"slurping" ofType:@"mp3"];
+    audioPlayer2 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    [audioPlayer2 setVolume:0.5];
+
+    path = [[NSBundle mainBundle]pathForResource:@"this_is_good" ofType:@"m4a"];
+    audioPlayer3 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    [audioPlayer3 setVolume:0.5];
+
+    path = [[NSBundle mainBundle]pathForResource:@"eating_sound_2" ofType:@"m4a"];
+    audioPlayer4 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    [audioPlayer4 setVolume:0.5];
+
+    path = [[NSBundle mainBundle]pathForResource:@"encouragement" ofType:@"m4a"];
+    audioPlayer5 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    [audioPlayer5 setVolume:0.5];
+}
+
+- (void)playSoundBite {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
+        if ((secondsCount % 180) == 0) { //play "Mmm I like this" every 3 minutes
+            [audioPlayer1 play];
+        } else if (((secondsCount % 5) == 0) && ((secondsCount % 10) != 0)) {  //play sipping sound during every sip
+            [audioPlayer2 play];
+        } else if (((secondsCount % 30) == 0) && ((secondsCount % 60) != 0)) { //play "This is good!" every minute
+            [audioPlayer3 play];
+        } else if ((secondsCountFinal-10) == secondsCount) {  //play "Mmm!" after first sip
+            [audioPlayer4 play];
+        } else if (secondsCount == 180) {  //play encouragement sound 3 minutes before the end
+            [audioPlayer5 play];
+        }
+    }
+}
+
 - (void)setTimer {
     secondsCount = 60 * timeToDrink;
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    FeedbackViewController *controller = (FeedbackViewController *)segue.destinationViewController;
     if([segue.identifier isEqualToString:@"allFinishedSegue"]){
-        FeedbackViewController *controller = (FeedbackViewController *)segue.destinationViewController;
         controller.feedbackText = @"Great job!";
         controller.numCoins = 3;
+        controller.eating = NO;
     }
     if([segue.identifier isEqualToString:@"triedSomeSegue"]){
-        FeedbackViewController *controller = (FeedbackViewController *)segue.destinationViewController;
         controller.feedbackText = @"Thanks for drinking with me!";
         controller.numCoins = 1;
+        controller.eating = NO;
     }
     if([segue.identifier isEqualToString:@"notFinishedSegue"]){
-        FeedbackViewController *controller = (FeedbackViewController *)segue.destinationViewController;
         controller.feedbackText = @"Maybe we can try next time!";
         controller.numCoins = 0;
+        controller.eating = NO;
     }
 }
 
@@ -127,6 +165,12 @@
     doneButton.hidden = YES;
     countdownLabel.hidden = YES;
     timeLeftLabel.hidden = YES;
+    
+    [audioPlayer1 stop];
+    [audioPlayer2 stop];
+    [audioPlayer3 stop];
+    [audioPlayer4 stop];
+    [audioPlayer5 stop];
     
     [drinkingCritter stopAnimating];
     [drinkingCritter setImage:drinkingImage1];

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface EatViewController : UIViewController {
     IBOutlet UILabel *countdownLabel;
@@ -15,7 +16,10 @@
 
     NSTimer *countdownTimer;
     int secondsCount;
+    int secondsCountFinal;
+    int lastEaten;
     bool blinkStatus;
+    bool phraseStatus;
     
     IBOutlet UIImageView *eatingCritter;
     IBOutlet UIImageView *foodImageView;
@@ -30,5 +34,14 @@
 
 @property (weak, nonatomic) IBOutlet UIImage *foodImage;
 @property int timeToEat;
+
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer1;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer2;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer3;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer4;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer5;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer6;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer7;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer8;
 
 @end
