@@ -595,7 +595,7 @@ Reminders For...</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMS-gB-sjG">
                                 <rect key="frame" x="24" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="home.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1460,9 +1460,9 @@ Do You Want For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gS-ZS-5TQ">
-                                <rect key="frame" x="28" y="20" width="152" height="107"/>
+                                <rect key="frame" x="7" y="20" width="152" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="home.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1582,13 +1582,13 @@ Do You Want For...</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="r0P-sc-w0f"/>
-        <segue reference="gpD-ea-b6F"/>
-        <segue reference="brf-LG-yVR"/>
-        <segue reference="zvZ-Al-NL1"/>
-        <segue reference="iI4-Xm-D66"/>
-        <segue reference="Ot4-iE-EpB"/>
-        <segue reference="P60-4d-HuF"/>
+        <segue reference="rAV-tx-k0c"/>
         <segue reference="zmz-FB-Dv9"/>
+        <segue reference="P60-4d-HuF"/>
+        <segue reference="Ot4-iE-EpB"/>
+        <segue reference="brf-LG-yVR"/>
         <segue reference="kua-Mf-zTR"/>
+        <segue reference="iI4-Xm-D66"/>
+        <segue reference="ghn-Mn-MwL"/>
     </inferredMetricsTieBreakers>
 </document>

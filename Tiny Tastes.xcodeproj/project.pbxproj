@@ -56,7 +56,6 @@
 		FD187EDA183BE8B60021D98F /* tiny_shop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ED9183BE8B60021D98F /* tiny_shop.jpg */; };
 		FD187EDC183BE93C0021D98F /* tiny_shop_thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */; };
 		FD187EE4183C01800021D98F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD187EE3183C01800021D98F /* Icon.png */; };
-		FD187EE6183C03E70021D98F /* title_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187EE5183C03E70021D98F /* title_page.jpg */; };
 		FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */; };
 		FD23B0F7184166DE00D1C9A9 /* drinking_juice_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */; };
 		FD23B0F8184166DE00D1C9A9 /* drinking_juice_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */; };
@@ -84,6 +83,7 @@
 		FD23B12E18429F2500D1C9A9 /* eating_sound_2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD23B12118429F2500D1C9A9 /* eating_sound_2.m4a */; };
 		FD23B12F18429F2500D1C9A9 /* eating_sound_1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD23B12218429F2500D1C9A9 /* eating_sound_1.m4a */; };
 		FD23B13018429F2500D1C9A9 /* this_is_good.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD23B12318429F2500D1C9A9 /* this_is_good.m4a */; };
+		FD23B1321842FB5200D1C9A9 /* title_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B1311842FB5200D1C9A9 /* title_page.jpg */; };
 		FD2AC75A18396CF500A7D6A1 /* blue_glow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */; };
 		FD2AC75B18396CF500A7D6A1 /* blue_circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */; };
 		FD2AC778183AC66900A7D6A1 /* page_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC770183AC66900A7D6A1 /* page_9.jpg */; };
@@ -205,7 +205,6 @@
 		FD187ED9183BE8B60021D98F /* tiny_shop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop.jpg; sourceTree = "<group>"; };
 		FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop_thumbnail.jpg; sourceTree = "<group>"; };
 		FD187EE3183C01800021D98F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		FD187EE5183C03E70021D98F /* title_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title_page.jpg; sourceTree = "<group>"; };
 		FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thought_bubble.jpg; sourceTree = "<group>"; };
 		FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_juice_2.jpg; sourceTree = "<group>"; };
 		FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_juice_1.jpg; sourceTree = "<group>"; };
@@ -233,6 +232,7 @@
 		FD23B12118429F2500D1C9A9 /* eating_sound_2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eating_sound_2.m4a; sourceTree = "<group>"; };
 		FD23B12218429F2500D1C9A9 /* eating_sound_1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eating_sound_1.m4a; sourceTree = "<group>"; };
 		FD23B12318429F2500D1C9A9 /* this_is_good.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = this_is_good.m4a; sourceTree = "<group>"; };
+		FD23B1311842FB5200D1C9A9 /* title_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title_page.jpg; sourceTree = "<group>"; };
 		FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_glow.jpg; sourceTree = "<group>"; };
 		FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_circle.jpg; sourceTree = "<group>"; };
 		FD2AC770183AC66900A7D6A1 /* page_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_9.jpg; sourceTree = "<group>"; };
@@ -437,6 +437,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FD23B1311842FB5200D1C9A9 /* title_page.jpg */,
 				FD23B1131841770000D1C9A9 /* narration_on.jpg */,
 				FD23B1141841770000D1C9A9 /* narration_off.jpg */,
 				FD23B10D184172E200D1C9A9 /* outline_camera.png */,
@@ -504,7 +505,6 @@
 				FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */,
 				FD187ED9183BE8B60021D98F /* tiny_shop.jpg */,
 				FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */,
-				FD187EE5183C03E70021D98F /* title_page.jpg */,
 				FD70731118303865003BFC29 /* tried_some_label.jpg */,
 			);
 			name = Images;
@@ -694,7 +694,6 @@
 				316ACB481831973A00FE3A83 /* bowl6.png in Resources */,
 				316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */,
 				FD2AC77D183AC66900A7D6A1 /* page_4.jpg in Resources */,
-				FD187EE6183C03E70021D98F /* title_page.jpg in Resources */,
 				FD23B1151841770000D1C9A9 /* narration_on.jpg in Resources */,
 				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
 				FD23B12418429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a in Resources */,
@@ -704,6 +703,7 @@
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
 				316ACB451831973A00FE3A83 /* bowl3.png in Resources */,
 				316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */,
+				FD23B1321842FB5200D1C9A9 /* title_page.jpg in Resources */,
 				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
 				FD187EE4183C01800021D98F /* Icon.png in Resources */,
 				FD23B12C18429F2500D1C9A9 /* its_fun_eating_together.m4a in Resources */,

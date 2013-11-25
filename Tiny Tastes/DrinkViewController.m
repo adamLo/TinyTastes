@@ -41,7 +41,6 @@
     allFinishedButton.hidden = YES;
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
-    secondsCountFinal = secondsCount;
     
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
@@ -123,6 +122,7 @@
 
 - (void)setTimer {
     secondsCount = 60 * timeToDrink;
+    secondsCountFinal = secondsCount;
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 

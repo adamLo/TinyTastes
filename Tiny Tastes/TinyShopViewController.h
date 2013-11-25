@@ -12,5 +12,4 @@
 
 @property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
 
-
 @end
