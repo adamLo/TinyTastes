@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -942,10 +942,6 @@ photo</string>
                                 <rect key="frame" x="101" y="157" width="153" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmT-kv-JNx">
-                                <rect key="frame" x="362" y="312" width="400" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time To Finish:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTb-aW-Kcw">
                                 <rect key="frame" x="250" y="20" width="405" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -953,10 +949,6 @@ photo</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-tY-0op">
-                                <rect key="frame" x="361" y="312" width="400" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -966,10 +958,8 @@ photo</string>
                         <outlet property="allFinishedButton" destination="j7n-Rf-qYa" id="h0R-s3-Prg"/>
                         <outlet property="chooseLabel" destination="E3E-fU-Nla" id="WHz-aI-09F"/>
                         <outlet property="countdownLabel" destination="wKD-Vh-RXi" id="0MU-gA-jVc"/>
-                        <outlet property="disappearingFood" destination="Onv-tY-0op" id="Jnf-WO-5Ue"/>
                         <outlet property="doneButton" destination="x6y-LA-z8d" id="q9l-lc-E2x"/>
                         <outlet property="eatingCritter" destination="MzP-Di-1Qo" id="LLF-04-1Zj"/>
-                        <outlet property="foodImageView" destination="qmT-kv-JNx" id="4Uf-B3-1ct"/>
                         <outlet property="notFinishedButton" destination="jFZ-Ge-JMl" id="b54-SZ-Fv4"/>
                         <outlet property="partiallyFinishedButton" destination="KRH-jI-bq5" id="I5r-hP-hhE"/>
                         <outlet property="redLine" destination="aqH-5T-okb" id="r0t-ff-LsH"/>
@@ -1581,14 +1571,14 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="r0P-sc-w0f"/>
-        <segue reference="rAV-tx-k0c"/>
-        <segue reference="zmz-FB-Dv9"/>
-        <segue reference="P60-4d-HuF"/>
-        <segue reference="Ot4-iE-EpB"/>
-        <segue reference="brf-LG-yVR"/>
-        <segue reference="kua-Mf-zTR"/>
-        <segue reference="iI4-Xm-D66"/>
         <segue reference="ghn-Mn-MwL"/>
+        <segue reference="iI4-Xm-D66"/>
+        <segue reference="brf-LG-yVR"/>
+        <segue reference="h2A-7l-Kmo"/>
+        <segue reference="Ot4-iE-EpB"/>
+        <segue reference="P60-4d-HuF"/>
+        <segue reference="zmz-FB-Dv9"/>
+        <segue reference="r0P-sc-w0f"/>
+        <segue reference="kua-Mf-zTR"/>
     </inferredMetricsTieBreakers>
 </document>

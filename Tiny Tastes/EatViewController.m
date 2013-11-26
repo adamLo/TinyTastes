@@ -53,13 +53,21 @@
     [self setUpAudioPlayers];
     
     // display picture of the food
+    foodImageView = [[UIImageView alloc] init];
     if (self.foodImage == NULL) {
         self.foodImage = [UIImage imageNamed:@"default_food.png"];
+        foodImageView.frame = CGRectMake(362, 312, 400, 400);
+        
+    } else{
+        foodImageView.frame = CGRectMake(312, 302, 500, 435);
     }
+    
     foodImageView.image = self.foodImage;
     [self.view addSubview:foodImageView];
     
     // display disappearing food
+    disappearingFood = [[UIImageView alloc] init];
+    disappearingFood.frame = CGRectMake(362, 312, 400, 400);
     disappearingFood.animationImages = [NSArray arrayWithObjects:
                                         self.foodImage,
                                         [UIImage imageNamed:@"bowl1.png"],

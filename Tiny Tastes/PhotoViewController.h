@@ -28,5 +28,6 @@
 
 - (IBAction)mealStepperValueChanged:(UIStepper *)sender;
 - (IBAction)takePhoto:(UIButton *)sender;
+- (IBAction)captureNow;
 
 @end
