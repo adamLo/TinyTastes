@@ -207,6 +207,14 @@
         controller.numCoins = 0;
         controller.eating = YES;
     }
+    [audioPlayer1 stop];
+    [audioPlayer2 stop];
+    [audioPlayer3 stop];
+    [audioPlayer4 stop];
+    [audioPlayer5 stop];
+    [audioPlayer6 stop];
+    [audioPlayer7 stop];
+    [audioPlayer8 stop];
 }
 
 - (void)blink{

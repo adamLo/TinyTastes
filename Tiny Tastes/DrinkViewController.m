@@ -143,6 +143,11 @@
         controller.numCoins = 0;
         controller.eating = NO;
     }
+    [audioPlayer1 stop];
+    [audioPlayer2 stop];
+    [audioPlayer3 stop];
+    [audioPlayer4 stop];
+    [audioPlayer5 stop];
 }
 
 - (void)blink{
