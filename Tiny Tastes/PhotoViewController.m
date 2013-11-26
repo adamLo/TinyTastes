@@ -63,6 +63,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     timeDisplayLabel.hidden = YES;
     mealStepper.hidden = YES;
     retakeLabel.hidden = YES;
+    eatLabel.hidden = YES;
     
     //Change font of segment control
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -191,6 +192,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     timeDisplayLabel.hidden = NO;
     mealStepper.hidden = NO;
     retakeLabel.hidden = NO;
+    eatLabel.hidden = NO;
     
     self.cameraIcon.hidden = YES;
     self.instructionLabel.hidden = YES;
