@@ -56,13 +56,4 @@
             || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 
-- (UIImage *)resizedImageWithSize:(UIImage *)image setSize:(CGSize)size
-{
-	UIGraphicsBeginImageContext(size);
-	[image drawInRect:CGRectMake(0.0f, 0.0f, size.width, size.height)];
-	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
-	return newImage;
-}
-
 @end
