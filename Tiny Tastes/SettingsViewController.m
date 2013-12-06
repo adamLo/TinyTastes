@@ -43,6 +43,7 @@
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
         [backgroundSoundSwitch setOn:YES animated:YES];
     } else {
+        [backgroundSoundLabel setTextColor:[UIColor grayColor]];
         [backgroundSoundSwitch setOn:NO animated:YES];
     }
     
@@ -50,6 +51,7 @@
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
         [storyNarrationSwitch setOn:YES animated:YES];
     } else {
+        [storyNarrationLabel setTextColor:[UIColor grayColor]];
         [storyNarrationSwitch setOn:NO animated:YES];
     }
 }
@@ -58,9 +60,11 @@
 {
     if (backgroundSoundSwitch.on) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"backgroundSound"];
+        [backgroundSoundLabel setTextColor:[UIColor blackColor]];
     }
     else {
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"backgroundSound"];
+        [backgroundSoundLabel setTextColor:[UIColor grayColor]];
     }
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -69,9 +73,11 @@
 {
     if (storyNarrationSwitch.on) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"storyNarration"];
+        [storyNarrationLabel setTextColor:[UIColor blackColor]];
     }
     else {
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"storyNarration"];
+        [storyNarrationLabel setTextColor:[UIColor grayColor]];
     }
     [[NSUserDefaults standardUserDefaults] synchronize];
 }

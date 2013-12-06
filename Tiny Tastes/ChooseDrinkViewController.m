@@ -40,7 +40,7 @@
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
-    drinkStepper.minimumValue = 5;
+    drinkStepper.minimumValue = 1;
     drinkStepper.maximumValue = 60;
     drinkStepper.wraps = YES;
     drinkStepper.autorepeat = YES;

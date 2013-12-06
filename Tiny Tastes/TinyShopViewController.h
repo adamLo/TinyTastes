@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface TinyShopViewController : UIViewController
 
 @property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end

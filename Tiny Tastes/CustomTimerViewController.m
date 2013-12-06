@@ -39,9 +39,9 @@
     minutesText2.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     minutesText3.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
 
-    mealStepper.minimumValue = 5;
-    snackStepper.minimumValue = 5;
-    drinkStepper.minimumValue = 5;
+    mealStepper.minimumValue = 1;
+    snackStepper.minimumValue = 1;
+    drinkStepper.minimumValue = 1;
     
     mealStepper.maximumValue = 60;
     snackStepper.maximumValue = 60;

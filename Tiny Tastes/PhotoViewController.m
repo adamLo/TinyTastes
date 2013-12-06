@@ -53,7 +53,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
-    mealStepper.minimumValue = 5;
+    mealStepper.minimumValue = 1;
     mealStepper.maximumValue = 60;
     mealStepper.wraps = YES;
     mealStepper.autorepeat = YES;

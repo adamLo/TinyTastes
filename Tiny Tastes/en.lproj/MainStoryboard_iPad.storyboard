@@ -1571,14 +1571,14 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ghn-Mn-MwL"/>
-        <segue reference="iI4-Xm-D66"/>
-        <segue reference="brf-LG-yVR"/>
-        <segue reference="h2A-7l-Kmo"/>
-        <segue reference="Ot4-iE-EpB"/>
-        <segue reference="P60-4d-HuF"/>
+        <segue reference="rAV-tx-k0c"/>
         <segue reference="zmz-FB-Dv9"/>
+        <segue reference="P60-4d-HuF"/>
+        <segue reference="fZK-si-7Zi"/>
         <segue reference="r0P-sc-w0f"/>
+        <segue reference="iI4-Xm-D66"/>
+        <segue reference="ghn-Mn-MwL"/>
+        <segue reference="Vx6-Mt-HbU"/>
         <segue reference="kua-Mf-zTR"/>
     </inferredMetricsTieBreakers>
 </document>
