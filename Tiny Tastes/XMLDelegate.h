@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 #import "Scene.h"
 
 @interface XMLDelegate : NSObject <NSXMLParserDelegate> {
@@ -16,6 +17,7 @@
 
 @property (nonatomic, retain) NSMutableArray *scenes;
 @property (nonatomic, retain) Scene *currentScene;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 - (XMLDelegate *) initXMLDelegate;
 

@@ -42,7 +42,6 @@
 		EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B51813430E007319C5 /* StoryDataViewController.m */; };
 		EC7124B918134358007319C5 /* StoryModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B818134358007319C5 /* StoryModelController.m */; };
 		EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124BB181343A2007319C5 /* StoryViewController.m */; };
-		EC7124BE181354EB007319C5 /* Story.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC7124BD181354EB007319C5 /* Story.strings */; };
 		EC7124C018145E25007319C5 /* story.xml in Resources */ = {isa = PBXBuildFile; fileRef = EC7124BF18145E25007319C5 /* story.xml */; };
 		EC7124C31814603F007319C5 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C21814603F007319C5 /* Scene.m */; };
 		EC7124C618146152007319C5 /* XMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLDelegate.m */; };
@@ -214,7 +213,6 @@
 		EC7124B818134358007319C5 /* StoryModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModelController.m; sourceTree = "<group>"; };
 		EC7124BA181343A2007319C5 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		EC7124BB181343A2007319C5 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
-		EC7124BD181354EB007319C5 /* Story.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Story.strings; sourceTree = "<group>"; };
 		EC7124BF18145E25007319C5 /* story.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = story.xml; sourceTree = "<group>"; };
 		EC7124C11814603F007319C5 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		EC7124C21814603F007319C5 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
@@ -427,7 +425,6 @@
 			isa = PBXGroup;
 			children = (
 				FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */,
-				EC7124BD181354EB007319C5 /* Story.strings */,
 				EC6FD1BC17EA746000EB05E9 /* Tiny Tastes-Info.plist */,
 				EC6FD1BD17EA746000EB05E9 /* InfoPlist.strings */,
 				EC6FD1C017EA746000EB05E9 /* main.m */,
@@ -768,7 +765,6 @@
 				FD70733E18303865003BFC29 /* lets_drink.jpg in Resources */,
 				FD23B10518416A3200D1C9A9 /* drinking_pediasure_2.jpg in Resources */,
 				316ACB491831973A00FE3A83 /* bowl7.png in Resources */,
-				EC7124BE181354EB007319C5 /* Story.strings in Resources */,
 				FD16EA7218524A1900A801B3 /* sound_page_11.m4a in Resources */,
 				FD16EA7818524A1900A801B3 /* sound_page_5.m4a in Resources */,
 				FD70734018303865003BFC29 /* juicebox.jpg in Resources */,

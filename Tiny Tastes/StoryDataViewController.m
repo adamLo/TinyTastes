@@ -42,6 +42,11 @@
     for (UIImageView *image in self.dataObject.images) {
         [self.view addSubview:image];
     }
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
+        for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
+            [audioPlayer play];
+        }
+    }
     //Buttons to change story screen
     /*
     NSInteger tagCount = 0;
@@ -52,12 +57,15 @@
         tagCount++;
     }
     */
-    for (UILabel *text in self.dataObject.text) {
-        [self.view addSubview:text];
-    }
     [self.view bringSubviewToFront:_backButton];
     [self.view bringSubviewToFront:_skipButton];
-    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
+        [audioPlayer stop];
+    }
 }
 
 - (void) changeViewController:(UIButton*)button

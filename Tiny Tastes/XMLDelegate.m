@@ -9,7 +9,7 @@
 #import "XMLDelegate.h"
 
 @implementation XMLDelegate
-@synthesize currentScene, scenes;
+@synthesize currentScene, scenes, audioPlayer;
 
 - (XMLDelegate *) initXMLDelegate {
     self = [super init];
@@ -29,7 +29,7 @@ didStartElement:(NSString *)elementName
         currentScene.images = [[NSMutableArray alloc] init];
         currentScene.links = [[NSMutableArray alloc] init];
         currentScene.linkDestinations = [[NSMutableArray alloc] init];
-        currentScene.text = [[NSMutableArray alloc] init];
+        currentScene.sounds = [[NSMutableArray alloc] init];
         currentScene.sceneID = [attributeDict objectForKey:@"id"];
         //NSLog(@"SceneID is %@",currentScene.sceneID);
     }
@@ -43,17 +43,6 @@ didStartElement:(NSString *)elementName
         //NSLog(@"Image is %d",currentScene.images.count);
     }
     
-    if ([elementName isEqualToString:@"text"]) {
-        //NSLog(@"Adding text to scene...");
-        CGRect currentImageRect = CGRectMake(120, 500, 800, 200);
-        UILabel *text = [[UILabel alloc] initWithFrame:currentImageRect];
-        text.text = (NSString *) [attributeDict objectForKey:@"string"];
-        [text setNumberOfLines:4];
-        [text setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:45]];
-        [currentScene.text addObject:text];
-        //NSLog(@"Text is %@",currentScene.text);
-    }
-    
     if ([elementName isEqualToString:@"link"]) {
         //NSLog(@"Adding link to scene...");
         CGRect currentImageRect = CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue]);
@@ -61,6 +50,13 @@ didStartElement:(NSString *)elementName
         NSString *linkDestination = (NSString *) [attributeDict objectForKey:@"id"];
         [currentScene.links addObject:currentLink];
         [currentScene.linkDestinations addObject:linkDestination];
+    }
+    
+    if ([elementName isEqualToString:@"sound"]) {
+        NSString *path = [[NSBundle mainBundle]pathForResource:([attributeDict objectForKey:@"path"]) ofType:([attributeDict objectForKey:@"type"])];
+        audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+        [audioPlayer setVolume:0.5];
+        [currentScene.sounds addObject:audioPlayer];
     }
 }
 

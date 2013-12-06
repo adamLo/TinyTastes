@@ -9,6 +9,6 @@
 #import "Scene.h"
 
 @implementation Scene
-@synthesize sceneID, images, links, text, linkDestinations;
+@synthesize sceneID, images, links, linkDestinations, sounds;
 
 @end

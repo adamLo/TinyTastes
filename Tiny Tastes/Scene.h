@@ -12,13 +12,13 @@
     NSString *sceneID;
     NSMutableArray *images;
     NSMutableArray *links;
-    NSMutableArray *text;
+    NSMutableArray *sounds;
 }
 
 @property (nonatomic, retain) NSString *sceneID;
 @property (nonatomic, retain) NSMutableArray *images;
 @property (nonatomic, retain) NSMutableArray *links;
 @property (nonatomic, retain) NSMutableArray *linkDestinations;
-@property (nonatomic, retain) NSMutableArray *text;
+@property (nonatomic, retain) NSMutableArray *sounds;
 
 @end

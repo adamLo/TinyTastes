@@ -14,6 +14,9 @@
     <links>
         <link id="opening3" x="0" y="0" w="1067" h="800" />
     </links>
+    <sounds>
+        <sound path="sound_page_1" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening3">
     <images>
@@ -22,6 +25,9 @@
     <links>
         <link id="opening4" x="0" y="0" w="1067" h="780" />
     </links>
+    <sounds>
+        <sound path="sound_page_2" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening4">
     <images>
@@ -30,6 +36,9 @@
     <links>
         <link id="opening5" x="0" y="0" w="1067" h="780" />
     </links>
+    <sounds>
+        <sound path="sound_page_3" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening5">
     <images>
@@ -38,6 +47,9 @@
     <links>
         <link id="opening6" x="0" y="0" w="1067" h="780" />
     </links>
+    <sounds>
+        <sound path="sound_page_4" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening6">
     <images>
@@ -46,6 +58,9 @@
     <links>
          <link id="opening7" x="0" y="0" w="1067" h="780" />
     </links>
+    <sounds>
+        <sound path="sound_page_5" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening7">
     <images>
@@ -54,6 +69,9 @@
     <links>
          <link id="opening8" x="0" y="0" w="1067" h="780" />
     </links>
+    <sounds>
+        <sound path="sound_page_6" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening8">
     <images>
@@ -62,6 +80,9 @@
     <links>
          <link id="opening9" x="0" y="0" w="1067" h="780" />
     </links>
+    <sounds>
+        <sound path="sound_page_7" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening9">
     <images>
@@ -70,6 +91,9 @@
     <links>
          <link id="opening10" x="0" y="0" w="1067" h="780" />
     </links>
+    <sounds>
+        <sound path="sound_page_8" type="m4a" />
+    </sounds>
 </scene>
 <scene id="opening10">
     <images>
@@ -77,5 +101,8 @@
     </images>
     <links>
     </links>
+    <sounds>
+        <sound path="sound_page_9" type="m4a" />
+    </sounds>
 </scene>
 </scenes>
