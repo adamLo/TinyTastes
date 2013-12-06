@@ -68,6 +68,7 @@
 		FD16EA7918524A1900A801B3 /* sound_page_4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD16EA6A18524A1900A801B3 /* sound_page_4.m4a */; };
 		FD16EA7A18524A1900A801B3 /* sound_page_3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD16EA6B18524A1900A801B3 /* sound_page_3.m4a */; };
 		FD16EA7B18524A1900A801B3 /* sound_page_2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD16EA6C18524A1900A801B3 /* sound_page_2.m4a */; };
+		FD16EA7D18525A5A00A801B3 /* sound_page_1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD16EA7C18525A5A00A801B3 /* sound_page_1.m4a */; };
 		FD187ECC183BE2EB0021D98F /* back_arrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ECB183BE2EB0021D98F /* back_arrow.jpg */; };
 		FD187ECE183BE30F0021D98F /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ECD183BE30F0021D98F /* home.jpg */; };
 		FD187ED5183BE4420021D98F /* page_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ED1183BE4420021D98F /* page_6.jpg */; };
@@ -242,6 +243,7 @@
 		FD16EA6A18524A1900A801B3 /* sound_page_4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound_page_4.m4a; sourceTree = "<group>"; };
 		FD16EA6B18524A1900A801B3 /* sound_page_3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound_page_3.m4a; sourceTree = "<group>"; };
 		FD16EA6C18524A1900A801B3 /* sound_page_2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound_page_2.m4a; sourceTree = "<group>"; };
+		FD16EA7C18525A5A00A801B3 /* sound_page_1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound_page_1.m4a; sourceTree = "<group>"; };
 		FD187ECB183BE2EB0021D98F /* back_arrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back_arrow.jpg; sourceTree = "<group>"; };
 		FD187ECD183BE30F0021D98F /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
 		FD187ED1183BE4420021D98F /* page_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_6.jpg; sourceTree = "<group>"; };
@@ -460,21 +462,22 @@
 		FD16EA5D18524A0700A801B3 /* Story Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				FD16EA5E18524A1900A801B3 /* sound_page_18.m4a */,
-				FD16EA5F18524A1900A801B3 /* sound_page_17.m4a */,
-				FD16EA6018524A1900A801B3 /* sound_page_14.m4a */,
-				FD16EA6118524A1900A801B3 /* sound_page_13.m4a */,
-				FD16EA6218524A1900A801B3 /* sound_page_12.m4a */,
-				FD16EA6318524A1900A801B3 /* sound_page_11.m4a */,
+				FD16EA7C18525A5A00A801B3 /* sound_page_1.m4a */,
 				FD16EA6418524A1900A801B3 /* sound_page_10.m4a */,
-				FD16EA6518524A1900A801B3 /* sound_page_9.m4a */,
-				FD16EA6618524A1900A801B3 /* sound_page_8.m4a */,
-				FD16EA6718524A1900A801B3 /* sound_page_7.m4a */,
-				FD16EA6818524A1900A801B3 /* sound_page_6.m4a */,
-				FD16EA6918524A1900A801B3 /* sound_page_5.m4a */,
-				FD16EA6A18524A1900A801B3 /* sound_page_4.m4a */,
-				FD16EA6B18524A1900A801B3 /* sound_page_3.m4a */,
+				FD16EA6318524A1900A801B3 /* sound_page_11.m4a */,
+				FD16EA6218524A1900A801B3 /* sound_page_12.m4a */,
+				FD16EA6118524A1900A801B3 /* sound_page_13.m4a */,
+				FD16EA6018524A1900A801B3 /* sound_page_14.m4a */,
+				FD16EA5F18524A1900A801B3 /* sound_page_17.m4a */,
+				FD16EA5E18524A1900A801B3 /* sound_page_18.m4a */,
 				FD16EA6C18524A1900A801B3 /* sound_page_2.m4a */,
+				FD16EA6B18524A1900A801B3 /* sound_page_3.m4a */,
+				FD16EA6A18524A1900A801B3 /* sound_page_4.m4a */,
+				FD16EA6918524A1900A801B3 /* sound_page_5.m4a */,
+				FD16EA6818524A1900A801B3 /* sound_page_6.m4a */,
+				FD16EA6718524A1900A801B3 /* sound_page_7.m4a */,
+				FD16EA6618524A1900A801B3 /* sound_page_8.m4a */,
+				FD16EA6518524A1900A801B3 /* sound_page_9.m4a */,
 			);
 			name = "Story Sounds";
 			sourceTree = "<group>";
@@ -748,6 +751,7 @@
 				FD16EA5A1850414D00A801B3 /* page_13.jpg in Resources */,
 				FD16EA591850414D00A801B3 /* page_14.jpg in Resources */,
 				FD2AC77F183AC66900A7D6A1 /* coin_pouch.jpg in Resources */,
+				FD16EA7D18525A5A00A801B3 /* sound_page_1.m4a in Resources */,
 				316ACB431831973A00FE3A83 /* bowl1.png in Resources */,
 				FD23B0F7184166DE00D1C9A9 /* drinking_juice_2.jpg in Resources */,
 				FD29BBD9184D0B7A00E59036 /* page_11.jpg in Resources */,
