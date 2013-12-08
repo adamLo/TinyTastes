@@ -18,6 +18,7 @@
     int secondsCount;
     int secondsCountFinal;
     int lastEaten;
+    int currentFrame;
     bool blinkStatus;
     bool phraseStatus;
     
@@ -30,6 +31,8 @@
     IBOutlet UIButton *allFinishedButton;
     IBOutlet UIButton *partiallyFinishedButton;
     IBOutlet UIButton *notFinishedButton;
+    IBOutlet UIButton *pauseButton;
+    IBOutlet UIButton *resumeButton;
 }
 
 @property (weak, nonatomic) IBOutlet UIImage *foodImage;

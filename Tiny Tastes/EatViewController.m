@@ -69,6 +69,7 @@
     disappearingFood = [[UIImageView alloc] init];
     disappearingFood.frame = CGRectMake(362, 312, 400, 400);
     disappearingFood.animationImages = [NSArray arrayWithObjects:
+                                        [UIImage imageNamed:@"bowl0.png"],
                                         [UIImage imageNamed:@"bowl1.png"],
                                         [UIImage imageNamed:@"bowl1.png"],
                                         [UIImage imageNamed:@"bowl2.png"],
@@ -185,6 +186,17 @@
     }
 }
 
+- (void)stopSoundBite {
+    [audioPlayer1 stop];
+    [audioPlayer2 stop];
+    [audioPlayer3 stop];
+    [audioPlayer4 stop];
+    [audioPlayer5 stop];
+    [audioPlayer6 stop];
+    [audioPlayer7 stop];
+    [audioPlayer8 stop];
+}
+
 - (void)setTimer {
     secondsCount = 60 * self.timeToEat; //what about snacks?
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
@@ -207,14 +219,8 @@
         controller.numCoins = 0;
         controller.eating = YES;
     }
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
-    [audioPlayer6 stop];
-    [audioPlayer7 stop];
-    [audioPlayer8 stop];
+
+    [self stopSoundBite];
 }
 
 - (void)blink{
@@ -239,15 +245,10 @@
     [disappearingFood stopAnimating];
     disappearingFood.image = [UIImage imageNamed:@"bowl12.png"];
     foodImageView.hidden = YES;
-    
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
-    [audioPlayer6 stop];
-    [audioPlayer7 stop];
-    [audioPlayer8 stop];
+    pauseButton.hidden = YES;
+    resumeButton.hidden = YES;
+
+    [self stopSoundBite];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (![prefs boolForKey:@"HasLaunchedEatScreenOnce"]) {
@@ -259,5 +260,35 @@
         [prefs synchronize];
     }
 }
+
+- (IBAction)pauseButtonClicked:(id)sender {
+    pauseButton.hidden = YES;
+    resumeButton.hidden = NO;
+    
+    [self stopSoundBite];
+    
+    [eatingCritter stopAnimating];
+    [disappearingFood stopAnimating];
+    currentFrame = secondsCountFinal / (secondsCountFinal - secondsCount);
+    [disappearingFood setImage:[[disappearingFood animationImages] objectAtIndex:currentFrame]];
+
+    
+}
+
+- (IBAction)resumeButtonClicked:(id)sender {
+    resumeButton.hidden = YES;
+    pauseButton.hidden = NO;
+    
+    [self playSoundBite];
+    
+    for (int i = 0; i < currentFrame; i++) {
+        //disappearingFood.animationImages.objectEnumerator
+    }
+    
+    [eatingCritter startAnimating];
+    [disappearingFood startAnimating];
+    
+}
+
 
 @end

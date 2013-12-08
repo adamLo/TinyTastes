@@ -949,6 +949,26 @@ photo</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-oj-per">
+                                <rect key="frame" x="382" y="271" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonClicked:" destination="uue-W2-mCd" eventType="touchUpInside" id="XZh-uv-Rr1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-if-Lcl">
+                                <rect key="frame" x="484" y="271" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Resume">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeButtonClicked:" destination="uue-W2-mCd" eventType="touchUpInside" id="aS7-Ly-ffE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -962,7 +982,9 @@ photo</string>
                         <outlet property="eatingCritter" destination="MzP-Di-1Qo" id="LLF-04-1Zj"/>
                         <outlet property="notFinishedButton" destination="jFZ-Ge-JMl" id="b54-SZ-Fv4"/>
                         <outlet property="partiallyFinishedButton" destination="KRH-jI-bq5" id="I5r-hP-hhE"/>
+                        <outlet property="pauseButton" destination="A7S-oj-per" id="bl2-xv-kK4"/>
                         <outlet property="redLine" destination="aqH-5T-okb" id="r0t-ff-LsH"/>
+                        <outlet property="resumeButton" destination="7gZ-if-Lcl" id="V5p-vV-4kR"/>
                         <outlet property="timeLeftLabel" destination="fTb-aW-Kcw" id="ZNB-iK-e2C"/>
                     </connections>
                 </viewController>
@@ -1575,7 +1597,7 @@ Do You Want For...</string>
         <segue reference="P60-4d-HuF"/>
         <segue reference="fZK-si-7Zi"/>
         <segue reference="r0P-sc-w0f"/>
-        <segue reference="nop-3F-7cX"/>
+        <segue reference="h2A-7l-Kmo"/>
         <segue reference="Vx6-Mt-HbU"/>
         <segue reference="iI4-Xm-D66"/>
         <segue reference="ghn-Mn-MwL"/>
