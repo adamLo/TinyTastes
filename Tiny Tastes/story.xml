@@ -1,5 +1,5 @@
 <scenes>
-<scene id="opening1">
+<scene id="opening1" title="true">
     <images>
         <image path="title_page.jpg" x="0" y="20" w="1060" h="730" />
     </images>
