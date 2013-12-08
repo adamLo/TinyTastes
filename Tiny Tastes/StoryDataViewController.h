@@ -16,6 +16,7 @@
 @property (strong, nonatomic) Scene * dataObject;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *skipButton;
+@property (weak, nonatomic) IBOutlet UIButton *narrationButton;
 
 -(void) addButtons:(id) vc;
 
