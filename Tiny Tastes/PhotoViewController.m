@@ -48,7 +48,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
     [self.instructionLabel.titleLabel setTextAlignment:UITextAlignmentCenter];
     [eatLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
-    [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
+    [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:65]];
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
     timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];

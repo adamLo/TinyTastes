@@ -59,7 +59,7 @@
         foodImageView.frame = CGRectMake(362, 312, 400, 400);
         
     } else{
-        foodImageView.frame = CGRectMake(312, 302, 500, 435);
+        foodImageView.frame = CGRectMake(312, 312, 500, 450);
     }
     
     foodImageView.image = self.foodImage;
@@ -69,7 +69,7 @@
     disappearingFood = [[UIImageView alloc] init];
     disappearingFood.frame = CGRectMake(362, 312, 400, 400);
     disappearingFood.animationImages = [NSArray arrayWithObjects:
-                                        self.foodImage,
+                                        [UIImage imageNamed:@"bowl1.png"],
                                         [UIImage imageNamed:@"bowl1.png"],
                                         [UIImage imageNamed:@"bowl2.png"],
                                         [UIImage imageNamed:@"bowl3.png"],
