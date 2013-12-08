@@ -157,6 +157,8 @@
 		FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */; };
 		FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9CD218163E2700861C75 /* FeedbackViewController.m */; };
 		FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */; };
+		FDC918E518552A6700B19DA4 /* play.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC918E318552A6700B19DA4 /* play.jpg */; };
+		FDC918E618552A6700B19DA4 /* pause.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC918E418552A6700B19DA4 /* pause.jpg */; };
 		FDCE238E184EC25B007A0F4F /* BACKLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = FDCE238D184EC25B007A0F4F /* BACKLOG.txt */; };
 		FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */; };
 /* End PBXBuildFile section */
@@ -345,6 +347,8 @@
 		FDBC9CD218163E2700861C75 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDrinkViewController.h; sourceTree = "<group>"; };
 		FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDrinkViewController.m; sourceTree = "<group>"; };
+		FDC918E318552A6700B19DA4 /* play.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = play.jpg; sourceTree = "<group>"; };
+		FDC918E418552A6700B19DA4 /* pause.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pause.jpg; sourceTree = "<group>"; };
 		FDCE238D184EC25B007A0F4F /* BACKLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BACKLOG.txt; sourceTree = "<group>"; };
 		FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_done_label.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -524,6 +528,8 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDC918E318552A6700B19DA4 /* play.jpg */,
+				FDC918E418552A6700B19DA4 /* pause.jpg */,
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				FD187ECB183BE2EB0021D98F /* back_arrow.jpg */,
 				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
@@ -832,11 +838,13 @@
 				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
 				FD187EE4183C01800021D98F /* Icon.png in Resources */,
 				FD23B12C18429F2500D1C9A9 /* its_fun_eating_together.m4a in Resources */,
+				FDC918E618552A6700B19DA4 /* pause.jpg in Resources */,
 				FD70732E18303865003BFC29 /* full_bowl.jpg in Resources */,
 				316ACB441831973A00FE3A83 /* bowl2.png in Resources */,
 				FDA9D1B4185507E200600A8C /* page_19.jpg in Resources */,
 				FD16EA7718524A1900A801B3 /* sound_page_6.m4a in Resources */,
 				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
+				FDC918E518552A6700B19DA4 /* play.jpg in Resources */,
 				FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */,
 				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				FD7073541833456C003BFC29 /* slurping.mp3 in Resources */,
