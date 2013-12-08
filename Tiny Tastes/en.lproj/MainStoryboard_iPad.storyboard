@@ -933,10 +933,11 @@ photo</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-oj-per">
-                                <rect key="frame" x="477" y="95" width="187" height="105"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-oj-per">
+                                <rect key="frame" x="481" y="112" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pause">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="pause.jpg">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -944,10 +945,11 @@ photo</string>
                                     <action selector="pauseButtonClicked:" destination="uue-W2-mCd" eventType="touchUpInside" id="XZh-uv-Rr1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-if-Lcl">
-                                <rect key="frame" x="477" y="95" width="187" height="105"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-if-Lcl">
+                                <rect key="frame" x="481" y="112" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Resume">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="play.jpg">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1088,10 +1090,10 @@ photo</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-YE-cvU">
-                                <rect key="frame" x="610" y="101" width="43" height="30"/>
+                                <rect key="frame" x="807" y="111" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Pause">
+                                <state key="normal" image="pause.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1099,10 +1101,10 @@ photo</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBn-tK-VZy">
-                                <rect key="frame" x="651" y="149" width="56" height="30"/>
+                                <rect key="frame" x="807" y="118" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Resume">
+                                <state key="normal" image="play.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1587,7 +1589,9 @@ Do You Want For...</string>
         <image name="main_tiny.jpg" width="337" height="459"/>
         <image name="narration_on.jpg" width="104" height="98"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
+        <image name="pause.jpg" width="154" height="65"/>
         <image name="pediasure.jpg" width="116" height="230"/>
+        <image name="play.jpg" width="154" height="65"/>
         <image name="redline.jpg" width="153" height="35"/>
         <image name="save.jpg" width="150" height="85"/>
         <image name="sippy.jpg" width="206" height="184"/>
@@ -1604,13 +1608,13 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sbx-X6-G8B"/>
-        <segue reference="NJ5-dJ-HAC"/>
         <segue reference="kua-Mf-zTR"/>
-        <segue reference="Acc-TB-wKP"/>
-        <segue reference="r0P-sc-w0f"/>
-        <segue reference="lOn-zd-onO"/>
         <segue reference="brf-LG-yVR"/>
+        <segue reference="h2A-7l-Kmo"/>
+        <segue reference="lOn-zd-onO"/>
+        <segue reference="P60-4d-HuF"/>
+        <segue reference="sbx-X6-G8B"/>
+        <segue reference="r0P-sc-w0f"/>
         <segue reference="ghn-Mn-MwL"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>

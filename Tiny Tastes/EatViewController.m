@@ -271,6 +271,8 @@
     foodImageView.hidden = YES;
     pauseButton.hidden = YES;
     resumeButton.hidden = YES;
+    countdownLabel.hidden = YES;
+    timeLeftLabel.hidden = YES;
     
     [self stopAudioPlayers];
     
