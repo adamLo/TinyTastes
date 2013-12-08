@@ -38,9 +38,12 @@
     allFinishedButton.hidden = YES;
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
+    resumeButton.hidden = YES;
     
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    pauseButton.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    resumeButton.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
     chooseLabel.hidden = YES;
     redLine.hidden = YES;
     

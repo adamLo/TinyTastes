@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -849,7 +849,7 @@ photo</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKD-Vh-RXi">
-                                <rect key="frame" x="347" y="91" width="210" height="105"/>
+                                <rect key="frame" x="274" y="95" width="210" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="55"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -934,9 +934,10 @@ photo</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-oj-per">
-                                <rect key="frame" x="382" y="271" width="43" height="30"/>
+                                <rect key="frame" x="477" y="95" width="187" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pause">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -944,9 +945,10 @@ photo</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-if-Lcl">
-                                <rect key="frame" x="484" y="271" width="56" height="30"/>
+                                <rect key="frame" x="477" y="95" width="187" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Resume">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1544,10 +1546,6 @@ Do You Want For...</string>
     </scenes>
     <resources>
         <image name="all_finished_label.jpg" width="284" height="142"/>
-        <image name="all_finished_label.jpg" width="284" height="142"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
         <image name="back_arrow.jpg" width="150" height="88"/>
         <image name="bottle.jpg" width="105" height="236"/>
         <image name="camera.jpg" width="473" height="364"/>
@@ -1559,33 +1557,21 @@ Do You Want For...</string>
         <image name="full_bowl.jpg" width="199" height="155"/>
         <image name="glass.jpg" width="118" height="232"/>
         <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="home.jpg" width="94" height="100"/>
-        <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
-        <image name="narration_on.jpg" width="104" height="98"/>
         <image name="main_tiny.jpg" width="337" height="459"/>
-        <image name="none_this_time_label.jpg" width="286" height="142"/>
+        <image name="narration_on.jpg" width="104" height="98"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
         <image name="pediasure.jpg" width="116" height="230"/>
-        <image name="redline.jpg" width="153" height="35"/>
         <image name="redline.jpg" width="153" height="35"/>
         <image name="save.jpg" width="150" height="85"/>
         <image name="sippy.jpg" width="206" height="184"/>
         <image name="skip_to_eat.jpg" width="150" height="100"/>
         <image name="start.jpg" width="150" height="74"/>
-        <image name="start.jpg" width="150" height="74"/>
         <image name="thought_bubble.jpg" width="300" height="255"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
         <image name="tiny_shop_thumbnail.jpg" width="227" height="170"/>
-        <image name="tried_some_label.jpg" width="286" height="143"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1594,17 +1580,13 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lOn-zd-onO"/>
-        <segue reference="rAV-tx-k0c"/>
-        <segue reference="sbx-X6-G8B"/>
-        <segue reference="Z7Z-Z2-FTi"/>
-        <segue reference="brf-LG-yVR"/>
         <segue reference="r0P-sc-w0f"/>
-        <segue reference="h2A-7l-Kmo"/>
+        <segue reference="NJ5-dJ-HAC"/>
+        <segue reference="kua-Mf-zTR"/>
+        <segue reference="Acc-TB-wKP"/>
+        <segue reference="lOn-zd-onO"/>
+        <segue reference="sbx-X6-G8B"/>
         <segue reference="Vx6-Mt-HbU"/>
-        <segue reference="nop-3F-7cX"/>
-        <segue reference="iI4-Xm-D66"/>
-        <segue reference="P60-4d-HuF"/>
         <segue reference="ghn-Mn-MwL"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
