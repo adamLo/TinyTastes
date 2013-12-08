@@ -207,14 +207,7 @@
         controller.numCoins = 0;
         controller.eating = YES;
     }
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
-    [audioPlayer6 stop];
-    [audioPlayer7 stop];
-    [audioPlayer8 stop];
+    [self stopAudioPlayers];
 }
 
 - (void)blink{
@@ -226,6 +219,26 @@
         blinkStatus = FALSE;
     }
 }
+
+- (void)stopAudioPlayers{
+    [audioPlayer1 stop];
+    [audioPlayer2 stop];
+    [audioPlayer3 stop];
+    [audioPlayer4 stop];
+    [audioPlayer5 stop];
+    [audioPlayer6 stop];
+    [audioPlayer7 stop];
+    [audioPlayer8 stop];
+    audioPlayer1 = nil;
+    audioPlayer2 = nil;
+    audioPlayer3 = nil;
+    audioPlayer4 = nil;
+    audioPlayer5 = nil;
+    audioPlayer6 = nil;
+    audioPlayer7 = nil;
+    audioPlayer8 = nil;
+}
+
 
 - (IBAction)doneButtonClicked {
     [countdownTimer invalidate];
@@ -240,14 +253,7 @@
     disappearingFood.image = [UIImage imageNamed:@"bowl12.png"];
     foodImageView.hidden = YES;
     
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
-    [audioPlayer6 stop];
-    [audioPlayer7 stop];
-    [audioPlayer8 stop];
+    [self stopAudioPlayers];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (![prefs boolForKey:@"HasLaunchedEatScreenOnce"]) {

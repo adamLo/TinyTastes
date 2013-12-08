@@ -46,7 +46,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     [mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
-    [self.instructionLabel.titleLabel setTextAlignment:UITextAlignmentCenter];
+    self.instructionLabel.titleLabel.textAlignment = NSTextAlignmentCenter;
     [eatLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
     [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:65]];
     customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
@@ -64,6 +64,13 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     mealStepper.hidden = YES;
     retakeLabel.hidden = YES;
     eatLabel.hidden = YES;
+    
+    //Hide instruction if this is not the first time the app was launched
+    //if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedEatScreenOnce"]) {
+        //self.instructionLabel.hidden = YES;
+        //thoughtBubble.hidden = YES;
+    //}
+
     
     //Change font of segment control
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -126,7 +133,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
         AVCaptureConnection *previewLayerConnection=captureVideoPreviewLayer.connection;
         
         if ([previewLayerConnection isVideoOrientationSupported]) {
-            [previewLayerConnection setVideoOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
+            [previewLayerConnection setVideoOrientation:(AVCaptureVideoOrientation)[[UIApplication sharedApplication] statusBarOrientation]];
         }
         
         
@@ -242,7 +249,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     
     CGContextRef offscreenContext = CGBitmapContextCreate(NULL, width, height,
-                                                          8, 0, colorSpace, kCGImageAlphaPremultipliedFirst);
+                                                          8, 0, colorSpace, (CGBitmapInfo) kCGImageAlphaPremultipliedFirst);
     
     if (offscreenContext != NULL) {
         CGContextDrawImage(offscreenContext, CGRectMake(0, 0, width, height), sourceImage);

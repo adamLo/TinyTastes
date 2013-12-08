@@ -143,14 +143,10 @@
         controller.numCoins = 0;
         controller.eating = NO;
     }
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
+    [self stopAudioPlayers];
 }
 
-- (void)blink{
+- (void)blink {
     if(blinkStatus == FALSE){
         redLine.hidden = NO;
         blinkStatus = TRUE;
@@ -158,6 +154,19 @@
         redLine.hidden = YES;
         blinkStatus = FALSE;
     }
+}
+
+- (void)stopAudioPlayers {
+    [audioPlayer1 stop];
+    [audioPlayer2 stop];
+    [audioPlayer3 stop];
+    [audioPlayer4 stop];
+    [audioPlayer5 stop];
+    audioPlayer1 = nil;
+    audioPlayer2 = nil;
+    audioPlayer3 = nil;
+    audioPlayer4 = nil;
+    audioPlayer5 = nil;
 }
 
 - (IBAction)doneButtonClicked {
@@ -171,11 +180,7 @@
     countdownLabel.hidden = YES;
     timeLeftLabel.hidden = YES;
     
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
+    [self stopAudioPlayers];
     
     [drinkingCritter stopAnimating];
     [drinkingCritter setImage:drinkingImage1];
