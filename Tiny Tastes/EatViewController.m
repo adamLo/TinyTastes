@@ -275,17 +275,18 @@
     pauseButton.hidden = YES;
     resumeButton.hidden = NO;
     
+    // Pause the timer
+    [countdownTimer invalidate];
+    
     [self stopSoundBite];
     
     [eatingCritter stopAnimating];
     [disappearingFood stopAnimating];
     currentFrame = disappearingFood.animationImages.count * (animationDuration - secondsCount) / animationDuration;
     animationDuration = secondsCount;
-    NSLog(@"current frame: %d", currentFrame);
     [disappearingFood setImage:[[disappearingFood animationImages] objectAtIndex:currentFrame]];
     
-    // Pause the timer
-    [countdownTimer invalidate];
+
     
 }
 
@@ -296,9 +297,12 @@
     [self playSoundBite];
     
     // reset the disappearing food image to match the remaining time
+    currentFrame = [animationImageArray indexOfObject: disappearingFood.image];
+    
     for (int i = 0; i < currentFrame; i++) {
-        [animationImageArray removeObjectAtIndex:i];
+        [animationImageArray removeObjectAtIndex:0];
     }
+    
     disappearingFood.animationImages = animationImageArray;
     disappearingFood.animationDuration = secondsCount;
     

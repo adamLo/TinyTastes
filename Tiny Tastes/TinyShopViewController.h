@@ -12,6 +12,7 @@
 @interface TinyShopViewController : UIViewController
 
 @property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
+@property(nonatomic) IBOutlet UILabel *testerLabel;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end

@@ -28,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _testerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     NSString *path = [[NSBundle mainBundle]pathForResource:@"store_background_jingle" ofType:@"mp3"];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
