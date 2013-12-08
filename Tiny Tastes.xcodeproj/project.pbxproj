@@ -146,8 +146,8 @@
 		FDA9D1B5185507E200600A8C /* page_18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1AF185507E200600A8C /* page_18.jpg */; };
 		FDA9D1B6185507E200600A8C /* page_17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B0185507E200600A8C /* page_17.jpg */; };
 		FDA9D1B7185507E200600A8C /* page_16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B1185507E200600A8C /* page_16.jpg */; };
-		FDA9D1B8185507E200600A8C /* menu_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B2185507E200600A8C /* menu_page.jpg */; };
 		FDA9D1BA185511F300600A8C /* book_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B9185511F300600A8C /* book_cover.jpg */; };
+		FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1BB185513FF00600A8C /* menu_page.jpg */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
 		FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */; };
@@ -327,8 +327,8 @@
 		FDA9D1AF185507E200600A8C /* page_18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_18.jpg; sourceTree = "<group>"; };
 		FDA9D1B0185507E200600A8C /* page_17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_17.jpg; sourceTree = "<group>"; };
 		FDA9D1B1185507E200600A8C /* page_16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_16.jpg; sourceTree = "<group>"; };
-		FDA9D1B2185507E200600A8C /* menu_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_page.jpg; sourceTree = "<group>"; };
 		FDA9D1B9185511F300600A8C /* book_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book_cover.jpg; sourceTree = "<group>"; };
+		FDA9D1BB185513FF00600A8C /* menu_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_page.jpg; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -524,6 +524,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				FD187ECB183BE2EB0021D98F /* back_arrow.jpg */,
 				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
@@ -570,7 +571,6 @@
 				FD70731718303865003BFC29 /* juicebox.jpg */,
 				FD70731518303865003BFC29 /* lets_drink.jpg */,
 				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
-				FDA9D1B2185507E200600A8C /* menu_page.jpg */,
 				FD23B1141841770000D1C9A9 /* narration_off.jpg */,
 				FD23B1131841770000D1C9A9 /* narration_on.jpg */,
 				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
@@ -817,7 +817,6 @@
 				FD23B1151841770000D1C9A9 /* narration_on.jpg in Resources */,
 				FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */,
 				FD16EA581850414D00A801B3 /* page_15.jpg in Resources */,
-				FDA9D1B8185507E200600A8C /* menu_page.jpg in Resources */,
 				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
 				FD23B12418429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a in Resources */,
 				FD16EA6F18524A1900A801B3 /* sound_page_14.m4a in Resources */,
@@ -839,6 +838,7 @@
 				FD16EA7718524A1900A801B3 /* sound_page_6.m4a in Resources */,
 				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
 				FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */,
+				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				FD7073541833456C003BFC29 /* slurping.mp3 in Resources */,
 				FD23B10618416A3200D1C9A9 /* drinking_pediasure_1.jpg in Resources */,
 				FD23B1001841690400D1C9A9 /* drinking_glass_1.jpg in Resources */,

@@ -47,18 +47,23 @@
             [audioPlayer play];
         }
     }
-    //Buttons to change story screen
-    /*
-    NSInteger tagCount = 0;
-    for (UIButton *button in self.dataObject.links) {
-        [button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
-        [button setTag:tagCount];
-        [self.view addSubview:button];
-        tagCount++;
+    if (self.dataObject.titlePage == YES) {
+        [self displayNarration];
+        [_narrationButton addTarget:self action:@selector(toggleNarration) forControlEvents:UIControlEventTouchUpInside];
+        [self.view bringSubviewToFront:_narrationButton];
     }
-    */
     [self.view bringSubviewToFront:_backButton];
     [self.view bringSubviewToFront:_skipButton];
+    //Buttons to change story screen
+    /*
+     NSInteger tagCount = 0;
+     for (UIButton *button in self.dataObject.links) {
+     [button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
+     [button setTag:tagCount];
+     [self.view addSubview:button];
+     tagCount++;
+     }
+     */
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -66,6 +71,29 @@
     for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
         [audioPlayer stop];
     }
+}
+
+- (void) displayNarration
+{
+    UIImage *buttonImage;
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
+        buttonImage = [UIImage imageNamed:@"narration_on.jpg"];
+    }
+    else {
+        buttonImage = [UIImage imageNamed:@"narration_off.jpg"];
+    }
+    [_narrationButton setImage:buttonImage forState:UIControlStateNormal];
+}
+
+- (void) toggleNarration
+{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"storyNarration"];
+    }
+    else {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"storyNarration"];
+    }
+    [self displayNarration];
 }
 
 - (void) changeViewController:(UIButton*)button

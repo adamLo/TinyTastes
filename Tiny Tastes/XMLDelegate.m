@@ -26,6 +26,10 @@ didStartElement:(NSString *)elementName
     if ([elementName isEqualToString:@"scene"]) {
         //NSLog(@"Creating a new instance of Scene class...");
         currentScene = [[Scene alloc] init];
+        NSString *isTitle = (NSString *) [attributeDict objectForKey:@"title"];
+        if ([isTitle isEqualToString:@"true"]) {
+            [currentScene setTitlePage:YES];
+        }
         currentScene.images = [[NSMutableArray alloc] init];
         currentScene.links = [[NSMutableArray alloc] init];
         currentScene.linkDestinations = [[NSMutableArray alloc] init];

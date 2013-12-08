@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JE-yn-Jx9">
-                                <rect key="frame" x="794" y="372" width="112" height="183"/>
+                                <rect key="frame" x="794" y="387" width="112" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="lets_drink.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hc-w8-fb3">
-                                <rect key="frame" x="694" y="98" width="236" height="147"/>
+                                <rect key="frame" x="694" y="103" width="236" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="full_bowl.jpg">
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Eo-IMH">
-                                <rect key="frame" x="356" y="186" width="327" height="413"/>
+                                <rect key="frame" x="356" y="195" width="327" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="main_tiny.jpg">
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDo-IJ-ezK">
-                                <rect key="frame" x="129" y="428" width="145" height="132"/>
+                                <rect key="frame" x="129" y="438" width="145" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="clock_settings.jpg"/>
                                 <connections>
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-9B-8dG">
-                                <rect key="frame" x="118" y="68" width="246" height="171"/>
+                                <rect key="frame" x="118" y="78" width="246" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="tiny_shop_thumbnail.jpg">
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-mg-QET">
-                                <rect key="frame" x="673" y="84" width="284" height="249"/>
+                                <rect key="frame" x="673" y="89" width="284" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal">
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-YT-L2k">
-                                <rect key="frame" x="719" y="411" width="269" height="242"/>
+                                <rect key="frame" x="719" y="416" width="269" height="275"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal">
@@ -93,7 +93,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cku-Cv-QdM">
-                                <rect key="frame" x="86" y="412" width="243" height="242"/>
+                                <rect key="frame" x="86" y="418" width="243" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal">
@@ -105,7 +105,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yp-1d-zXC">
-                                <rect key="frame" x="86" y="84" width="307" height="255"/>
+                                <rect key="frame" x="86" y="90" width="307" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal">
@@ -117,7 +117,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKN-Rb-yfT">
-                                <rect key="frame" x="379" y="596" width="299" height="95"/>
+                                <rect key="frame" x="392" y="607" width="286" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal">
@@ -813,6 +813,14 @@ photo</string>
                                     <segue destination="t2j-Jj-fJN" kind="modal" id="h34-Ks-joT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33a-Ja-PTi">
+                                <rect key="frame" x="460" y="514" width="104" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="narration_on.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -820,6 +828,7 @@ photo</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="backButton" destination="3xp-ft-7vo" id="cGx-h7-xrT"/>
+                        <outlet property="narrationButton" destination="33a-Ja-PTi" id="smj-ma-csd"/>
                         <outlet property="skipButton" destination="Z3K-S2-had" id="lYk-yk-8ok"/>
                     </connections>
                 </viewController>
@@ -1535,6 +1544,10 @@ Do You Want For...</string>
     </scenes>
     <resources>
         <image name="all_finished_label.jpg" width="284" height="142"/>
+        <image name="all_finished_label.jpg" width="284" height="142"/>
+        <image name="back_arrow.jpg" width="150" height="88"/>
+        <image name="back_arrow.jpg" width="150" height="88"/>
+        <image name="back_arrow.jpg" width="150" height="88"/>
         <image name="back_arrow.jpg" width="150" height="88"/>
         <image name="bottle.jpg" width="105" height="236"/>
         <image name="camera.jpg" width="473" height="364"/>
@@ -1546,20 +1559,33 @@ Do You Want For...</string>
         <image name="full_bowl.jpg" width="199" height="155"/>
         <image name="glass.jpg" width="118" height="232"/>
         <image name="home.jpg" width="94" height="100"/>
+        <image name="home.jpg" width="94" height="100"/>
+        <image name="home.jpg" width="94" height="100"/>
+        <image name="home.jpg" width="94" height="100"/>
+        <image name="home.jpg" width="94" height="100"/>
+        <image name="home.jpg" width="94" height="100"/>
+        <image name="home.jpg" width="94" height="100"/>
+        <image name="home.jpg" width="94" height="100"/>
+        <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
+        <image name="narration_on.jpg" width="104" height="98"/>
         <image name="main_tiny.jpg" width="337" height="459"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
+        <image name="none_this_time_label.jpg" width="286" height="142"/>
         <image name="pediasure.jpg" width="116" height="230"/>
+        <image name="redline.jpg" width="153" height="35"/>
         <image name="redline.jpg" width="153" height="35"/>
         <image name="save.jpg" width="150" height="85"/>
         <image name="sippy.jpg" width="206" height="184"/>
         <image name="skip_to_eat.jpg" width="150" height="100"/>
         <image name="start.jpg" width="150" height="74"/>
+        <image name="start.jpg" width="150" height="74"/>
         <image name="thought_bubble.jpg" width="300" height="255"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
         <image name="tiny_shop_thumbnail.jpg" width="227" height="170"/>
+        <image name="tried_some_label.jpg" width="286" height="143"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
