@@ -991,7 +991,7 @@ photo</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLy-yw-gPK">
-                                <rect key="frame" x="642" y="98" width="210" height="105"/>
+                                <rect key="frame" x="576" y="101" width="210" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="55"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1087,6 +1087,28 @@ photo</string>
                                     <segue destination="2" kind="modal" id="NJ5-dJ-HAC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-YE-cvU">
+                                <rect key="frame" x="610" y="101" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonClicked:" destination="yZk-YG-ftA" eventType="touchUpInside" id="sGE-ik-u6d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBn-tK-VZy">
+                                <rect key="frame" x="651" y="149" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Resume">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeButtonClicked:" destination="yZk-YG-ftA" eventType="touchUpInside" id="h9o-Vn-0RI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1100,7 +1122,9 @@ photo</string>
                         <outlet property="drinkingCritter" destination="3U1-1r-vNU" id="SFD-M4-5uT"/>
                         <outlet property="notFinishedButton" destination="cHg-hP-BoM" id="w5r-1o-OSl"/>
                         <outlet property="partiallyFinishedButton" destination="ryI-0g-A7a" id="vPy-de-Prh"/>
+                        <outlet property="pauseButton" destination="dXd-YE-cvU" id="TJO-hd-kh1"/>
                         <outlet property="redLine" destination="ho3-R5-6Mq" id="bwT-iZ-k78"/>
+                        <outlet property="resumeButton" destination="kBn-tK-VZy" id="3iG-t8-stU"/>
                         <outlet property="timeLeftLabel" destination="7m0-4I-lx7" id="Q3y-Pn-pce"/>
                     </connections>
                 </viewController>
@@ -1580,13 +1604,13 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="r0P-sc-w0f"/>
+        <segue reference="sbx-X6-G8B"/>
         <segue reference="NJ5-dJ-HAC"/>
         <segue reference="kua-Mf-zTR"/>
         <segue reference="Acc-TB-wKP"/>
+        <segue reference="r0P-sc-w0f"/>
         <segue reference="lOn-zd-onO"/>
-        <segue reference="sbx-X6-G8B"/>
-        <segue reference="Vx6-Mt-HbU"/>
+        <segue reference="brf-LG-yVR"/>
         <segue reference="ghn-Mn-MwL"/>
         <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>

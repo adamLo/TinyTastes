@@ -195,17 +195,6 @@
     }
 }
 
-- (void)stopSoundBite {
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
-    [audioPlayer6 stop];
-    [audioPlayer7 stop];
-    [audioPlayer8 stop];
-}
-
 - (void)setTimer {
     secondsCount = 60 * self.timeToEat; //what about snacks?
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
@@ -232,8 +221,8 @@
         controller.numCoins = 0;
         controller.eating = YES;
     }
-
-    [self stopSoundBite];
+    
+    [self stopAudioPlayers];
 }
 
 - (void)blink{
@@ -245,6 +234,26 @@
         blinkStatus = FALSE;
     }
 }
+
+- (void)stopAudioPlayers{
+    [audioPlayer1 stop];
+    [audioPlayer2 stop];
+    [audioPlayer3 stop];
+    [audioPlayer4 stop];
+    [audioPlayer5 stop];
+    [audioPlayer6 stop];
+    [audioPlayer7 stop];
+    [audioPlayer8 stop];
+    audioPlayer1 = nil;
+    audioPlayer2 = nil;
+    audioPlayer3 = nil;
+    audioPlayer4 = nil;
+    audioPlayer5 = nil;
+    audioPlayer6 = nil;
+    audioPlayer7 = nil;
+    audioPlayer8 = nil;
+}
+
 
 - (IBAction)doneButtonClicked {
     [countdownTimer invalidate];
@@ -260,8 +269,8 @@
     foodImageView.hidden = YES;
     pauseButton.hidden = YES;
     resumeButton.hidden = YES;
-
-    [self stopSoundBite];
+    
+    [self stopAudioPlayers];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (![prefs boolForKey:@"HasLaunchedEatScreenOnce"]) {
@@ -281,7 +290,7 @@
     // Pause the timer
     [countdownTimer invalidate];
     
-    [self stopSoundBite];
+    [self stopAudioPlayers];
     
     [eatingCritter stopAnimating];
     [disappearingFood stopAnimating];

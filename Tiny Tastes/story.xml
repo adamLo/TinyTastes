@@ -199,10 +199,20 @@
         <image path="page_18.jpg" x="0" y="20" w="1060" h="730" />
     </images>
     <links>
+        <link id="opening20" x="0" y="0" w="1067" h="780" />
     </links>
     <sounds>
         <sound path="sound_page_18" type="m4a" />
     </sounds>
 </scene>
-
+<scene id="opening20">
+    <images>
+        <image path="page_19.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+    </links>
+    <sounds>
+        <sound path="sound_page_18" type="m4a" />
+    </sounds>
+</scene>
 </scenes>

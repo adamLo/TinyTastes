@@ -378,8 +378,6 @@
 			isa = PBXGroup;
 			children = (
 				FD16EA5D18524A0700A801B3 /* Story Sounds */,
-				FDCE238D184EC25B007A0F4F /* BACKLOG.txt */,
-				FDB582FB17EA778F004C6FA3 /* README */,
 				FD187EE2183C016F0021D98F /* Icons */,
 				FD7073521833455E003BFC29 /* Other Sounds */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
@@ -387,6 +385,8 @@
 				EC6FD1E117EA746000EB05E9 /* Tiny TastesTests */,
 				EC6FD1B317EA746000EB05E9 /* Frameworks */,
 				EC6FD1B217EA746000EB05E9 /* Products */,
+				FDCE238D184EC25B007A0F4F /* BACKLOG.txt */,
+				FDB582FB17EA778F004C6FA3 /* README */,
 			);
 			sourceTree = "<group>";
 		};
@@ -524,7 +524,6 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				FD187ECB183BE2EB0021D98F /* back_arrow.jpg */,
 				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
@@ -571,6 +570,7 @@
 				FD70731718303865003BFC29 /* juicebox.jpg */,
 				FD70731518303865003BFC29 /* lets_drink.jpg */,
 				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
+				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
 				FD23B1141841770000D1C9A9 /* narration_off.jpg */,
 				FD23B1131841770000D1C9A9 /* narration_on.jpg */,
 				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
