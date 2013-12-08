@@ -14,8 +14,6 @@
     IBOutlet UIButton *letsEatLabel;
     IBOutlet UIButton *tinyShopLabel;
     IBOutlet UIButton *settingsLabel;
-    IBOutlet UIButton *numCoinsButton;
-    IBOutlet UILabel *numCoinsLabel;
 }
 
 @end

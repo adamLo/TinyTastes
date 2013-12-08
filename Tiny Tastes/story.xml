@@ -1,7 +1,7 @@
 <scenes>
 <scene id="opening1" title="true">
     <images>
-        <image path="title_page.jpg" x="0" y="20" w="1060" h="730" />
+        <image path="book_cover.jpg" x="0" y="20" w="1060" h="730" />
     </images>
     <links>
         <link id="opening2" x="0" y="0" w="1067" h="800" />
