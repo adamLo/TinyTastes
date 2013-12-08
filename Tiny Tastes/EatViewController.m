@@ -68,22 +68,28 @@
     // display disappearing food
     disappearingFood = [[UIImageView alloc] init];
     disappearingFood.frame = CGRectMake(362, 312, 400, 400);
-    disappearingFood.animationImages = [NSArray arrayWithObjects:
-                                        [UIImage imageNamed:@"bowl0.png"],
-                                        [UIImage imageNamed:@"bowl1.png"],
-                                        [UIImage imageNamed:@"bowl1.png"],
-                                        [UIImage imageNamed:@"bowl2.png"],
-                                        [UIImage imageNamed:@"bowl3.png"],
-                                        [UIImage imageNamed:@"bowl4.png"],
-                                        [UIImage imageNamed:@"bowl5.png"],
-                                        [UIImage imageNamed:@"bowl6.png"],
-                                        [UIImage imageNamed:@"bowl7.png"],
-                                        [UIImage imageNamed:@"bowl8.png"],
-                                        [UIImage imageNamed:@"bowl9.png"],
-                                        [UIImage imageNamed:@"bowl10.png"],
-                                        [UIImage imageNamed:@"bowl11.png"],
-                                        [UIImage imageNamed:@"bowl12.png"], nil];
+    
+    animationImageArray = [NSMutableArray arrayWithObjects:
+                           [UIImage imageNamed:@"bowl0.png"],
+                           [UIImage imageNamed:@"bowl1.png"],
+                           [UIImage imageNamed:@"bowl1.png"],
+                           [UIImage imageNamed:@"bowl2.png"],
+                           [UIImage imageNamed:@"bowl3.png"],
+                           [UIImage imageNamed:@"bowl4.png"],
+                           [UIImage imageNamed:@"bowl5.png"],
+                           [UIImage imageNamed:@"bowl6.png"],
+                           [UIImage imageNamed:@"bowl7.png"],
+                           [UIImage imageNamed:@"bowl8.png"],
+                           [UIImage imageNamed:@"bowl9.png"],
+                           [UIImage imageNamed:@"bowl10.png"],
+                           [UIImage imageNamed:@"bowl11.png"],
+                           [UIImage imageNamed:@"bowl12.png"], nil];
+    
+    disappearingFood.animationImages = animationImageArray;
+    
     disappearingFood.animationDuration = secondsCount;
+    animationDuration = secondsCount;
+    
     [self.view addSubview:disappearingFood];
     [disappearingFood startAnimating];
     
@@ -202,6 +208,10 @@
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 
+- (void) resetTimer {
+    countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     FeedbackViewController *controller = (FeedbackViewController *)segue.destinationViewController;
     if([segue.identifier isEqualToString:@"allFinishedSegue"]){
@@ -269,9 +279,13 @@
     
     [eatingCritter stopAnimating];
     [disappearingFood stopAnimating];
-    currentFrame = secondsCountFinal / (secondsCountFinal - secondsCount);
+    currentFrame = disappearingFood.animationImages.count * (animationDuration - secondsCount) / animationDuration;
+    animationDuration = secondsCount;
+    NSLog(@"current frame: %d", currentFrame);
     [disappearingFood setImage:[[disappearingFood animationImages] objectAtIndex:currentFrame]];
-
+    
+    // Pause the timer
+    [countdownTimer invalidate];
     
 }
 
@@ -281,12 +295,18 @@
     
     [self playSoundBite];
     
+    // reset the disappearing food image to match the remaining time
     for (int i = 0; i < currentFrame; i++) {
-        //disappearingFood.animationImages.objectEnumerator
+        [animationImageArray removeObjectAtIndex:i];
     }
+    disappearingFood.animationImages = animationImageArray;
+    disappearingFood.animationDuration = secondsCount;
     
     [eatingCritter startAnimating];
     [disappearingFood startAnimating];
+    
+    // Resume the timer
+    [self resetTimer];
     
 }
 

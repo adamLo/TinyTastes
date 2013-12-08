@@ -15,10 +15,12 @@
     IBOutlet UILabel *timeLeftLabel;
 
     NSTimer *countdownTimer;
+    NSMutableArray *animationImageArray;
     int secondsCount;
     int secondsCountFinal;
     int lastEaten;
     int currentFrame;
+    int animationDuration;
     bool blinkStatus;
     bool phraseStatus;
     

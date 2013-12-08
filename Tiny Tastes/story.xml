@@ -100,9 +100,109 @@
         <image path="page_9.jpg" x="0" y="20" w="1060" h="730" />
     </images>
     <links>
+        <link id="opening11" x="0" y="0" w="1067" h="780" />
     </links>
     <sounds>
         <sound path="sound_page_9" type="m4a" />
     </sounds>
 </scene>
+<scene id="opening11">
+    <images>
+        <image path="page_10.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+        <link id="opening12" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_10" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening12">
+    <images>
+        <image path="page_11.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+        <link id="opening13" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_11" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening13">
+    <images>
+        <image path="page_12.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+        <link id="opening14" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_12" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening14">
+    <images>
+        <image path="page_13.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening15" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_13" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening15">
+    <images>
+        <image path="page_14.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening16" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_14" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening16">
+    <images>
+        <image path="page_15.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening17" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_15" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening17">
+    <images>
+        <image path="page_16.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening18" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_16" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening18">
+    <images>
+        <image path="page_17.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+         <link id="opening19" x="0" y="0" w="1067" h="780" />
+    </links>
+    <sounds>
+        <sound path="sound_page_17" type="m4a" />
+    </sounds>
+</scene>
+<scene id="opening19">
+    <images>
+        <image path="page_18.jpg" x="0" y="20" w="1060" h="730" />
+    </images>
+    <links>
+    </links>
+    <sounds>
+        <sound path="sound_page_18" type="m4a" />
+    </sounds>
+</scene>
+
 </scenes>
