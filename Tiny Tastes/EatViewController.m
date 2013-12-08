@@ -221,22 +221,24 @@
 }
 
 - (void)stopAudioPlayers{
-    [audioPlayer1 stop];
-    [audioPlayer2 stop];
-    [audioPlayer3 stop];
-    [audioPlayer4 stop];
-    [audioPlayer5 stop];
-    [audioPlayer6 stop];
-    [audioPlayer7 stop];
-    [audioPlayer8 stop];
-    audioPlayer1 = nil;
-    audioPlayer2 = nil;
-    audioPlayer3 = nil;
-    audioPlayer4 = nil;
-    audioPlayer5 = nil;
-    audioPlayer6 = nil;
-    audioPlayer7 = nil;
-    audioPlayer8 = nil;
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
+        [audioPlayer1 stop];
+        [audioPlayer2 stop];
+        [audioPlayer3 stop];
+        [audioPlayer4 stop];
+        [audioPlayer5 stop];
+        [audioPlayer6 stop];
+        [audioPlayer7 stop];
+        [audioPlayer8 stop];
+        audioPlayer1 = nil;
+        audioPlayer2 = nil;
+        audioPlayer3 = nil;
+        audioPlayer4 = nil;
+        audioPlayer5 = nil;
+        audioPlayer6 = nil;
+        audioPlayer7 = nil;
+        audioPlayer8 = nil;
+    }
 }
 
 

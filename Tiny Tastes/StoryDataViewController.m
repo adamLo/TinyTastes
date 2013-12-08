@@ -68,8 +68,11 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
-        [audioPlayer stop];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
+        for (AVAudioPlayer __strong *audioPlayer in self.dataObject.sounds) {
+            [audioPlayer stop];
+            audioPlayer = nil;
+        }
     }
 }
 

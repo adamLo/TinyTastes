@@ -80,6 +80,14 @@
         [audioPlayer play];
     }
 }
+    
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
+        [audioPlayer stop];
+        audioPlayer = nil;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
