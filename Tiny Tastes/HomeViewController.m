@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 
-    UIImage *image = [UIImage imageNamed:@"book_cover.jpg"];
+    UIImage *image = [UIImage imageNamed:@"menu_page.jpg"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
     storyModeLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
@@ -27,20 +27,13 @@
     letsDrinkLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     tinyShopLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     settingsLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    numCoinsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
     [storyModeLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [letsEatLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [letsDrinkLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [tinyShopLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [settingsLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    numCoinsLabel.textColor = [UIColor whiteColor];
-    
-    NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"coinsKey"];
-    numCoinsLabel.text = [NSString stringWithFormat:@"%d", myNumCoins];
-    numCoinsLabel.textColor = [UIColor whiteColor];
-    [self.view bringSubviewToFront:numCoinsLabel];
-    
+        
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 }
 
