@@ -663,7 +663,7 @@ Reminders For...</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkx-xy-jV5">
-                                <rect key="frame" x="199" y="92" width="635" height="446"/>
+                                <rect key="frame" x="199" y="68" width="635" height="446"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw">
                                 <rect key="frame" x="261" y="351" width="468" height="379"/>
@@ -721,13 +721,13 @@ Reminders For...</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(3) Set the Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XW6-yx-Khh">
-                                <rect key="frame" x="90" y="586" width="451" height="88"/>
+                                <rect key="frame" x="90" y="567" width="451" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FM1-gj-enc">
-                                <rect key="frame" x="575" y="615" width="94" height="29"/>
+                                <rect key="frame" x="575" y="596" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="drinkStepperValueChanged:" destination="pqo-h6-K1e" eventType="valueChanged" id="ZC2-ie-Zrk"/>
@@ -735,13 +735,13 @@ Reminders For...</string>
                                 </connections>
                             </stepper>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RR-YM-wdZ">
-                                <rect key="frame" x="722" y="598" width="265" height="63"/>
+                                <rect key="frame" x="722" y="579" width="265" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-eD-KON">
-                                <rect key="frame" x="322" y="109" width="388" height="83"/>
+                                <rect key="frame" x="322" y="26" width="388" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Retake Photo?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1571,14 +1571,14 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rAV-tx-k0c"/>
+        <segue reference="Vx6-Mt-HbU"/>
         <segue reference="zmz-FB-Dv9"/>
         <segue reference="P60-4d-HuF"/>
         <segue reference="fZK-si-7Zi"/>
         <segue reference="r0P-sc-w0f"/>
+        <segue reference="nop-3F-7cX"/>
+        <segue reference="kua-Mf-zTR"/>
         <segue reference="iI4-Xm-D66"/>
         <segue reference="ghn-Mn-MwL"/>
-        <segue reference="Vx6-Mt-HbU"/>
-        <segue reference="kua-Mf-zTR"/>
     </inferredMetricsTieBreakers>
 </document>
