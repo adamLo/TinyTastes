@@ -9,11 +9,12 @@
 #import "XMLDelegate.h"
 
 @implementation XMLDelegate
-@synthesize currentScene, scenes, audioPlayer;
+@synthesize currentScene, sceneDictionary, audioPlayer, currentSceneArray;
 
 - (XMLDelegate *) initXMLDelegate {
     self = [super init];
-    scenes = [[NSMutableArray alloc] init];
+    sceneDictionary = [[NSMutableDictionary alloc] init];
+    currentSceneArray = [[NSMutableArray alloc] init];
     return self;
 }
 
@@ -27,8 +28,12 @@ didStartElement:(NSString *)elementName
         //NSLog(@"Creating a new instance of Scene class...");
         currentScene = [[Scene alloc] init];
         NSString *isTitle = (NSString *) [attributeDict objectForKey:@"title"];
+        NSString *isEnding = (NSString *) [attributeDict objectForKey:@"end"];
         if ([isTitle isEqualToString:@"true"]) {
             [currentScene setTitlePage:YES];
+        }
+        if ([isEnding isEqualToString:@"true"]) {
+            [currentScene setEnd:YES];
         }
         currentScene.images = [[NSMutableArray alloc] init];
         currentScene.links = [[NSMutableArray alloc] init];
@@ -45,6 +50,10 @@ didStartElement:(NSString *)elementName
         [currentImage setFrame:currentImageRect];
         [currentScene.images addObject: currentImage];
         //NSLog(@"Image is %d",currentScene.images.count);
+    }
+    
+    if ([elementName isEqualToString:@"next"]) {
+        [currentScene setNext:YES];
     }
     
     if ([elementName isEqualToString:@"link"]) {
@@ -72,7 +81,11 @@ didStartElement:(NSString *)elementName
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName {
     if ([elementName isEqualToString:@"scene"]) {
-        [scenes addObject:currentScene];
+        [currentSceneArray addObject:currentScene];
+        if ([currentScene next] != YES) {
+            [sceneDictionary setObject:currentSceneArray forKey:((Scene *)[currentSceneArray objectAtIndex:0]).sceneID];
+            currentSceneArray = [[NSMutableArray alloc] init];
+        }
         // release user object
         currentScene = nil;
     }

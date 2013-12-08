@@ -10,6 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Scene.h"
 
+@class StoryViewController;
+
 @interface StoryDataViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
@@ -18,6 +20,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *skipButton;
 @property (weak, nonatomic) IBOutlet UIButton *narrationButton;
 
--(void) addButtons:(id) vc;
+- (void) setStoryViewController:(StoryViewController *) controller;
 
 @end

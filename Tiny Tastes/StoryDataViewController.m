@@ -8,6 +8,7 @@
 
 #import "StoryDataViewController.h"
 #import "StoryViewController.h"
+#import "StoryModelController.h"
 
 @interface StoryDataViewController ()
 @property (weak, nonatomic) StoryViewController *viewController;
@@ -54,16 +55,13 @@
     }
     [self.view bringSubviewToFront:_backButton];
     [self.view bringSubviewToFront:_skipButton];
-    //Buttons to change story screen
-    /*
-     NSInteger tagCount = 0;
-     for (UIButton *button in self.dataObject.links) {
-     [button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
-     [button setTag:tagCount];
-     [self.view addSubview:button];
-     tagCount++;
-     }
-     */
+    NSInteger tagCount = 0;
+    for (UIButton *button in self.dataObject.links) {
+        [button addTarget:self action:@selector(changeSceneStack:) forControlEvents:UIControlEventTouchUpInside];
+        [button setTag:tagCount];
+        [self.view addSubview:button];
+        tagCount++;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -96,18 +94,14 @@
     [self displayNarration];
 }
 
-- (void) changeViewController:(UIButton*)button
-{
-    if(_loaded) {
-        //NSInteger buttonId = [button tag];
-        //[_viewController changeViewController:[self.dataObject.linkDestinations objectAtIndex:buttonId]];
-    }
+- (void) setStoryViewController:(StoryViewController *)controller {
+    _viewController = controller;
 }
 
-- (void) addButtons:(id) vc
+- (void) changeSceneStack:(UIButton*)button
 {
-    StoryViewController *vcontroller = (StoryViewController *) vc;
-    _viewController = vcontroller;
+    NSInteger buttonId = [button tag];
+    [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:buttonId]];
 }
 
 @end
