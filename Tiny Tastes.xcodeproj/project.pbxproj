@@ -146,8 +146,8 @@
 		FDA9D1B5185507E200600A8C /* page_18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1AF185507E200600A8C /* page_18.jpg */; };
 		FDA9D1B6185507E200600A8C /* page_17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B0185507E200600A8C /* page_17.jpg */; };
 		FDA9D1B7185507E200600A8C /* page_16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B1185507E200600A8C /* page_16.jpg */; };
-		FDA9D1B8185507E200600A8C /* menu_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B2185507E200600A8C /* menu_page.jpg */; };
 		FDA9D1BA185511F300600A8C /* book_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1B9185511F300600A8C /* book_cover.jpg */; };
+		FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1BB185513FF00600A8C /* menu_page.jpg */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB582FC17EA778F004C6FA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FDB582FB17EA778F004C6FA3 /* README */; };
 		FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */; };
@@ -157,6 +157,8 @@
 		FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */; };
 		FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9CD218163E2700861C75 /* FeedbackViewController.m */; };
 		FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */; };
+		FDC918E518552A6700B19DA4 /* play.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC918E318552A6700B19DA4 /* play.jpg */; };
+		FDC918E618552A6700B19DA4 /* pause.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC918E418552A6700B19DA4 /* pause.jpg */; };
 		FDCE238E184EC25B007A0F4F /* BACKLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = FDCE238D184EC25B007A0F4F /* BACKLOG.txt */; };
 		FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */; };
 /* End PBXBuildFile section */
@@ -327,8 +329,8 @@
 		FDA9D1AF185507E200600A8C /* page_18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_18.jpg; sourceTree = "<group>"; };
 		FDA9D1B0185507E200600A8C /* page_17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_17.jpg; sourceTree = "<group>"; };
 		FDA9D1B1185507E200600A8C /* page_16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_16.jpg; sourceTree = "<group>"; };
-		FDA9D1B2185507E200600A8C /* menu_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_page.jpg; sourceTree = "<group>"; };
 		FDA9D1B9185511F300600A8C /* book_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book_cover.jpg; sourceTree = "<group>"; };
+		FDA9D1BB185513FF00600A8C /* menu_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_page.jpg; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB582FB17EA778F004C6FA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -345,6 +347,8 @@
 		FDBC9CD218163E2700861C75 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDrinkViewController.h; sourceTree = "<group>"; };
 		FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDrinkViewController.m; sourceTree = "<group>"; };
+		FDC918E318552A6700B19DA4 /* play.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = play.jpg; sourceTree = "<group>"; };
+		FDC918E418552A6700B19DA4 /* pause.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pause.jpg; sourceTree = "<group>"; };
 		FDCE238D184EC25B007A0F4F /* BACKLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BACKLOG.txt; sourceTree = "<group>"; };
 		FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_done_label.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -377,10 +381,7 @@
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
-				317343121854ED81000DC80C /* bowl0.png */,
 				FD16EA5D18524A0700A801B3 /* Story Sounds */,
-				FDCE238D184EC25B007A0F4F /* BACKLOG.txt */,
-				FDB582FB17EA778F004C6FA3 /* README */,
 				FD187EE2183C016F0021D98F /* Icons */,
 				FD7073521833455E003BFC29 /* Other Sounds */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
@@ -388,6 +389,8 @@
 				EC6FD1E117EA746000EB05E9 /* Tiny TastesTests */,
 				EC6FD1B317EA746000EB05E9 /* Frameworks */,
 				EC6FD1B217EA746000EB05E9 /* Products */,
+				FDCE238D184EC25B007A0F4F /* BACKLOG.txt */,
+				FDB582FB17EA778F004C6FA3 /* README */,
 			);
 			sourceTree = "<group>";
 		};
@@ -525,12 +528,15 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FDC918E318552A6700B19DA4 /* play.jpg */,
+				FDC918E418552A6700B19DA4 /* pause.jpg */,
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				FD187ECB183BE2EB0021D98F /* back_arrow.jpg */,
 				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
 				FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */,
 				FDA9D1B9185511F300600A8C /* book_cover.jpg */,
 				FD70732218303865003BFC29 /* bottle.jpg */,
+				317343121854ED81000DC80C /* bowl0.png */,
 				316ACB371831973A00FE3A83 /* bowl1.png */,
 				316ACB401831973A00FE3A83 /* bowl10.png */,
 				316ACB411831973A00FE3A83 /* bowl11.png */,
@@ -570,7 +576,7 @@
 				FD70731718303865003BFC29 /* juicebox.jpg */,
 				FD70731518303865003BFC29 /* lets_drink.jpg */,
 				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
-				FDA9D1B2185507E200600A8C /* menu_page.jpg */,
+				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
 				FD23B1141841770000D1C9A9 /* narration_off.jpg */,
 				FD23B1131841770000D1C9A9 /* narration_on.jpg */,
 				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
@@ -817,7 +823,6 @@
 				FD23B1151841770000D1C9A9 /* narration_on.jpg in Resources */,
 				FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */,
 				FD16EA581850414D00A801B3 /* page_15.jpg in Resources */,
-				FDA9D1B8185507E200600A8C /* menu_page.jpg in Resources */,
 				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
 				FD23B12418429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a in Resources */,
 				FD16EA6F18524A1900A801B3 /* sound_page_14.m4a in Resources */,
@@ -833,12 +838,15 @@
 				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
 				FD187EE4183C01800021D98F /* Icon.png in Resources */,
 				FD23B12C18429F2500D1C9A9 /* its_fun_eating_together.m4a in Resources */,
+				FDC918E618552A6700B19DA4 /* pause.jpg in Resources */,
 				FD70732E18303865003BFC29 /* full_bowl.jpg in Resources */,
 				316ACB441831973A00FE3A83 /* bowl2.png in Resources */,
 				FDA9D1B4185507E200600A8C /* page_19.jpg in Resources */,
 				FD16EA7718524A1900A801B3 /* sound_page_6.m4a in Resources */,
 				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
+				FDC918E518552A6700B19DA4 /* play.jpg in Resources */,
 				FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */,
+				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				FD7073541833456C003BFC29 /* slurping.mp3 in Resources */,
 				FD23B10618416A3200D1C9A9 /* drinking_pediasure_1.jpg in Resources */,
 				FD23B1001841690400D1C9A9 /* drinking_glass_1.jpg in Resources */,
