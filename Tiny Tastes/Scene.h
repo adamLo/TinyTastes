@@ -21,5 +21,7 @@
 @property (nonatomic, retain) NSMutableArray *linkDestinations;
 @property (nonatomic, retain) NSMutableArray *sounds;
 @property (nonatomic, assign) BOOL titlePage;
+@property (nonatomic, assign) BOOL next;
+@property (nonatomic, assign) BOOL end;
 
 @end

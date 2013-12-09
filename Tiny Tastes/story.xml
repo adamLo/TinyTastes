@@ -1,218 +1,96 @@
 <scenes>
-<scene id="opening1" title="true">
-    <images>
-        <image path="book_cover.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening2" x="0" y="0" w="1067" h="800" />
-    </links>
+<scene id="titlePage" title="true">
+    <image path="book_cover.jpg" x="0" y="20" w="1060" h="730" />
+    <next id="opening1" />
+</scene>
+<scene id="opening1">
+    <image path="page_1.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_1" type="m4a" />
+    <next id="opening2" />
 </scene>
 <scene id="opening2">
-    <images>
-        <image path="page_1.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening3" x="0" y="0" w="1067" h="800" />
-    </links>
-    <sounds>
-        <sound path="sound_page_1" type="m4a" />
-    </sounds>
+    <image path="page_2.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_2" type="m4a" />
+    <next id="opening3" />
 </scene>
 <scene id="opening3">
-    <images>
-        <image path="page_2.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening4" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_2" type="m4a" />
-    </sounds>
+    <image path="page_3.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_3" type="m4a" />
+    <next id="opening4" />
 </scene>
 <scene id="opening4">
-    <images>
-        <image path="page_3.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening5" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_3" type="m4a" />
-    </sounds>
+    <image path="page_4.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_4" type="m4a" />
+    <next id="opening5" />
 </scene>
 <scene id="opening5">
-    <images>
-        <image path="page_4.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening6" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_4" type="m4a" />
-    </sounds>
+    <image path="page_5.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_5" type="m4a" />
+    <next id="opening6" />
 </scene>
 <scene id="opening6">
-    <images>
-        <image path="page_5.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening7" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_5" type="m4a" />
-    </sounds>
-</scene>
-<scene id="opening7">
-    <images>
-        <image path="page_6.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening8" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_6" type="m4a" />
-    </sounds>
+    <image path="page_6.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_6" type="m4a" />
+    <next id="opening7" />
 </scene>
 <scene id="opening8">
-    <images>
-        <image path="page_7.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening9" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_7" type="m4a" />
-    </sounds>
+    <image path="page_8.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_8" type="m4a" />
+    <next id="opening9" />
 </scene>
 <scene id="opening9">
-    <images>
-        <image path="page_8.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening10" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_8" type="m4a" />
-    </sounds>
+    <image path="page_9.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_9" type="m4a" />
+    <next id="opening10" />
 </scene>
 <scene id="opening10">
-    <images>
-        <image path="page_9.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening11" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_9" type="m4a" />
-    </sounds>
+    <image path="page_10.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_10" type="m4a" />
+    <link id="titlePage" x="80" y="180" w="400" h="315" />
+    <link id="yard1" x="570" y="182" w="400" h="315" />
 </scene>
-<scene id="opening11">
-    <images>
-        <image path="page_10.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening12" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_10" type="m4a" />
-    </sounds>
+<scene id="yard1">
+    <image path="page_11.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_11" type="m4a" />
+    <next id="yard2" />
 </scene>
-<scene id="opening12">
-    <images>
-        <image path="page_11.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening13" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_11" type="m4a" />
-    </sounds>
+<scene id="yard2">
+    <image path="page_12.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_12" type="m4a" />
+    <link id="yard3" x="154" y="300" w="370" h="190" />
 </scene>
-<scene id="opening13">
-    <images>
-        <image path="page_12.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening14" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_12" type="m4a" />
-    </sounds>
+<scene id="yard3">
+    <image path="page_13.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_13" type="m4a" />
+    <link id="titlePage" x="270" y="420" w="220" h="215" />
+    <link id="yard4" x="620" y="300" w="230" h="220" />
 </scene>
-<scene id="opening14">
-    <images>
-        <image path="page_13.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening15" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_13" type="m4a" />
-    </sounds>
+<scene id="yard4">
+    <image path="page_14.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_14" type="m4a" />
+    <next id="yard5" />
 </scene>
-<scene id="opening15">
-    <images>
-        <image path="page_14.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening16" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_14" type="m4a" />
-    </sounds>
+<scene id="yard5">
+    <image path="page_15.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_15" type="m4a" />
+    <next id="yard6" />
 </scene>
-<scene id="opening16">
-    <images>
-        <image path="page_15.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening17" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_15" type="m4a" />
-    </sounds>
+<scene id="yard6">
+    <image path="page_16.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_16" type="m4a" />
+    <next id="yard7" />
 </scene>
-<scene id="opening17">
-    <images>
-        <image path="page_16.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening18" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_16" type="m4a" />
-    </sounds>
+<scene id="yard7">
+    <image path="page_17.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_17" type="m4a" />
+    <next id="yard8" />
 </scene>
-<scene id="opening18">
-    <images>
-        <image path="page_17.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-         <link id="opening19" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_17" type="m4a" />
-    </sounds>
+<scene id="yard8">
+    <image path="page_18.jpg" x="0" y="20" w="1060" h="730" />
+    <sound path="sound_page_18" type="m4a" />
+    <next id="yard9" />
 </scene>
-<scene id="opening19">
-    <images>
-        <image path="page_18.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-        <link id="opening20" x="0" y="0" w="1067" h="780" />
-    </links>
-    <sounds>
-        <sound path="sound_page_18" type="m4a" />
-    </sounds>
-</scene>
-<scene id="opening20">
-    <images>
-        <image path="page_19.jpg" x="0" y="20" w="1060" h="730" />
-    </images>
-    <links>
-    </links>
-    <sounds>
-        <sound path="sound_page_18" type="m4a" />
-    </sounds>
+<scene id="yard9" end="true">
+    <image path="page_19.jpg" x="0" y="20" w="1060" h="730" />
 </scene>
 </scenes>

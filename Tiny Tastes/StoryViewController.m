@@ -40,18 +40,12 @@
     
     // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
     CGRect pageViewRect = self.view.bounds;
-    /*if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        pageViewRect = CGRectInset(pageViewRect, 0, 40);
-    }*/
     self.pageViewController.view.frame = pageViewRect;
     
     [self.pageViewController didMoveToParentViewController:self];
     
     // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
-    /*for (UIGestureRecognizer* recognizer in self.pageViewController.gestureRecognizers) {
-        [self.pageViewController.view removeGestureRecognizer:recognizer];
-    }*/
 }
 
 - (void)didReceiveMemoryWarning
@@ -82,21 +76,13 @@
         return UIPageViewControllerSpineLocationMin;
 }
 
-- (void) setStoryViewController:(StoryDataViewController *) key
+- (void) changeSceneStack:(NSString *)key
 {
-    [key addButtons:self];
+    [_modelController changeSceneStack:key];
+    StoryDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
-
-/*
--(void) changeViewController:(NSString *) key
-{
-    if (_lastKey != key) {
-        StoryDataViewController *startingViewController = [self.modelController viewControllerAtKey:key storyboard:self.storyboard];
-        NSArray *viewControllers = @[startingViewController];
-        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
-    }
-    _lastKey = key;
-}*/
 
 
 @end

@@ -13,9 +13,9 @@
 @interface SceneFactory : NSObject {
     NSXMLParser *nsXmlParser;
     XMLDelegate *xmlDelegate;
-    NSMutableArray *sceneArray;
+    NSMutableDictionary *sceneDictionary;
 }
 
 -(SceneFactory *) init;
--(NSMutableArray *) populateScenes;
+-(NSMutableDictionary *) populateScenes;
 @end

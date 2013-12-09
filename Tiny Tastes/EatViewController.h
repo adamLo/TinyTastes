@@ -15,9 +15,12 @@
     IBOutlet UILabel *timeLeftLabel;
 
     NSTimer *countdownTimer;
+    NSMutableArray *animationImageArray;
     int secondsCount;
     int secondsCountFinal;
     int lastEaten;
+    int currentFrame;
+    int animationDuration;
     bool blinkStatus;
     bool phraseStatus;
     
@@ -30,6 +33,8 @@
     IBOutlet UIButton *allFinishedButton;
     IBOutlet UIButton *partiallyFinishedButton;
     IBOutlet UIButton *notFinishedButton;
+    IBOutlet UIButton *pauseButton;
+    IBOutlet UIButton *resumeButton;
 }
 
 @property (weak, nonatomic) IBOutlet UIImage *foodImage;

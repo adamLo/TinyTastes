@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -817,7 +817,7 @@ photo</string>
                                 <rect key="frame" x="460" y="514" width="104" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="narration_on.jpg">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -849,7 +849,7 @@ photo</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKD-Vh-RXi">
-                                <rect key="frame" x="347" y="91" width="210" height="105"/>
+                                <rect key="frame" x="274" y="95" width="210" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="55"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -933,6 +933,30 @@ photo</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-oj-per">
+                                <rect key="frame" x="481" y="112" width="197" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="pause.jpg">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonClicked:" destination="uue-W2-mCd" eventType="touchUpInside" id="XZh-uv-Rr1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-if-Lcl">
+                                <rect key="frame" x="481" y="112" width="197" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="play.jpg">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeButtonClicked:" destination="uue-W2-mCd" eventType="touchUpInside" id="aS7-Ly-ffE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -946,7 +970,9 @@ photo</string>
                         <outlet property="eatingCritter" destination="MzP-Di-1Qo" id="LLF-04-1Zj"/>
                         <outlet property="notFinishedButton" destination="jFZ-Ge-JMl" id="b54-SZ-Fv4"/>
                         <outlet property="partiallyFinishedButton" destination="KRH-jI-bq5" id="I5r-hP-hhE"/>
+                        <outlet property="pauseButton" destination="A7S-oj-per" id="bl2-xv-kK4"/>
                         <outlet property="redLine" destination="aqH-5T-okb" id="r0t-ff-LsH"/>
+                        <outlet property="resumeButton" destination="7gZ-if-Lcl" id="V5p-vV-4kR"/>
                         <outlet property="timeLeftLabel" destination="fTb-aW-Kcw" id="ZNB-iK-e2C"/>
                     </connections>
                 </viewController>
@@ -967,7 +993,7 @@ photo</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLy-yw-gPK">
-                                <rect key="frame" x="642" y="98" width="210" height="105"/>
+                                <rect key="frame" x="576" y="101" width="210" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="55"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1063,6 +1089,28 @@ photo</string>
                                     <segue destination="2" kind="modal" id="NJ5-dJ-HAC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-YE-cvU">
+                                <rect key="frame" x="807" y="111" width="197" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="pause.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonClicked:" destination="yZk-YG-ftA" eventType="touchUpInside" id="sGE-ik-u6d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBn-tK-VZy">
+                                <rect key="frame" x="807" y="118" width="197" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="play.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeButtonClicked:" destination="yZk-YG-ftA" eventType="touchUpInside" id="h9o-Vn-0RI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1076,7 +1124,9 @@ photo</string>
                         <outlet property="drinkingCritter" destination="3U1-1r-vNU" id="SFD-M4-5uT"/>
                         <outlet property="notFinishedButton" destination="cHg-hP-BoM" id="w5r-1o-OSl"/>
                         <outlet property="partiallyFinishedButton" destination="ryI-0g-A7a" id="vPy-de-Prh"/>
+                        <outlet property="pauseButton" destination="dXd-YE-cvU" id="TJO-hd-kh1"/>
                         <outlet property="redLine" destination="ho3-R5-6Mq" id="bwT-iZ-k78"/>
+                        <outlet property="resumeButton" destination="kBn-tK-VZy" id="3iG-t8-stU"/>
                         <outlet property="timeLeftLabel" destination="7m0-4I-lx7" id="Q3y-Pn-pce"/>
                     </connections>
                 </viewController>
@@ -1537,9 +1587,10 @@ Do You Want For...</string>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
         <image name="main_tiny.jpg" width="337" height="459"/>
-        <image name="narration_on.jpg" width="104" height="98"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
+        <image name="pause.jpg" width="154" height="65"/>
         <image name="pediasure.jpg" width="116" height="230"/>
+        <image name="play.jpg" width="154" height="65"/>
         <image name="redline.jpg" width="153" height="35"/>
         <image name="save.jpg" width="150" height="85"/>
         <image name="sippy.jpg" width="206" height="184"/>
@@ -1556,14 +1607,14 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="r0P-sc-w0f"/>
-        <segue reference="nop-3F-7cX"/>
-        <segue reference="lOn-zd-onO"/>
+        <segue reference="brf-LG-yVR"/>
+        <segue reference="8CT-h7-e3r"/>
+        <segue reference="h34-Ks-joT"/>
         <segue reference="P60-4d-HuF"/>
         <segue reference="sbx-X6-G8B"/>
-        <segue reference="brf-LG-yVR"/>
-        <segue reference="Z7Z-Z2-FTi"/>
+        <segue reference="r0P-sc-w0f"/>
         <segue reference="iI4-Xm-D66"/>
         <segue reference="ghn-Mn-MwL"/>
+        <segue reference="kua-Mf-zTR"/>
     </inferredMetricsTieBreakers>
 </document>

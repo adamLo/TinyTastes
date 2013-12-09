@@ -8,6 +8,7 @@
 
 #import "StoryDataViewController.h"
 #import "StoryViewController.h"
+#import "StoryModelController.h"
 
 @interface StoryDataViewController ()
 @property (weak, nonatomic) StoryViewController *viewController;
@@ -54,20 +55,19 @@
     }
     [self.view bringSubviewToFront:_backButton];
     [self.view bringSubviewToFront:_skipButton];
-    //Buttons to change story screen
-    /*
-     NSInteger tagCount = 0;
-     for (UIButton *button in self.dataObject.links) {
-     [button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
-     [button setTag:tagCount];
-     [self.view addSubview:button];
-     tagCount++;
-     }
-     */
+    NSInteger tagCount = 0;
+    for (UIButton *button in self.dataObject.links) {
+        UIButton *buttonCopy = [[UIButton alloc] initWithFrame:button.frame];
+        [buttonCopy addTarget:self action:@selector(changeSceneStack:) forControlEvents:UIControlEventTouchUpInside];
+        [buttonCopy setTag:tagCount];
+        [self.view addSubview:buttonCopy];
+        tagCount++;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
         for (AVAudioPlayer __strong *audioPlayer in self.dataObject.sounds) {
             [audioPlayer stop];
@@ -99,18 +99,27 @@
     [self displayNarration];
 }
 
-- (void) changeViewController:(UIButton*)button
-{
-    if(_loaded) {
-        //NSInteger buttonId = [button tag];
-        //[_viewController changeViewController:[self.dataObject.linkDestinations objectAtIndex:buttonId]];
-    }
+- (void) setStoryViewController:(StoryViewController *)controller {
+    _viewController = controller;
 }
 
-- (void) addButtons:(id) vc
+/*- (void) changeSceneStack:(UIButton*)button
 {
-    StoryViewController *vcontroller = (StoryViewController *) vc;
-    _viewController = vcontroller;
+    NSInteger buttonId = [button tag];
+    [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:buttonId]];
+}*/
+
+- (void) changeSceneStack
+{
+    NSInteger r = arc4random()%2;
+    [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:r]];
+}
+
+- (IBAction) changeSceneStack:(id) sender
+{
+    UIButton* button = (UIButton *) sender;
+    NSInteger buttonId = [button tag];
+    [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:buttonId]];
 }
 
 @end

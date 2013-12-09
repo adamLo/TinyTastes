@@ -19,7 +19,6 @@
 - (void) setStoryViewController:(StoryViewController *) controller;
 - (StoryDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(StoryDataViewController *)viewController;
-//- (StoryDataViewController *)viewControllerAtKey:(NSString *)key storyboard:(UIStoryboard *)storyboard;
-//- (NSString *)keyOfViewController:(StoryDataViewController *)viewController;
+- (void) changeSceneStack:(NSString *) key;
 
 @end

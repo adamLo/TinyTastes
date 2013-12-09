@@ -38,9 +38,12 @@
     allFinishedButton.hidden = YES;
     partiallyFinishedButton.hidden = YES;
     notFinishedButton.hidden = YES;
+    resumeButton.hidden = YES;
     
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    pauseButton.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    resumeButton.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
     chooseLabel.hidden = YES;
     redLine.hidden = YES;
     
@@ -59,7 +62,7 @@
         foodImageView.frame = CGRectMake(362, 312, 400, 400);
         
     } else{
-        foodImageView.frame = CGRectMake(312, 312, 500, 450);
+        foodImageView.frame = CGRectMake(312, 332, 500, 450);
     }
     
     foodImageView.image = self.foodImage;
@@ -68,21 +71,28 @@
     // display disappearing food
     disappearingFood = [[UIImageView alloc] init];
     disappearingFood.frame = CGRectMake(362, 312, 400, 400);
-    disappearingFood.animationImages = [NSArray arrayWithObjects:
-                                        [UIImage imageNamed:@"bowl1.png"],
-                                        [UIImage imageNamed:@"bowl1.png"],
-                                        [UIImage imageNamed:@"bowl2.png"],
-                                        [UIImage imageNamed:@"bowl3.png"],
-                                        [UIImage imageNamed:@"bowl4.png"],
-                                        [UIImage imageNamed:@"bowl5.png"],
-                                        [UIImage imageNamed:@"bowl6.png"],
-                                        [UIImage imageNamed:@"bowl7.png"],
-                                        [UIImage imageNamed:@"bowl8.png"],
-                                        [UIImage imageNamed:@"bowl9.png"],
-                                        [UIImage imageNamed:@"bowl10.png"],
-                                        [UIImage imageNamed:@"bowl11.png"],
-                                        [UIImage imageNamed:@"bowl12.png"], nil];
+    
+    animationImageArray = [NSMutableArray arrayWithObjects:
+                           [UIImage imageNamed:@"bowl0.png"],
+                           [UIImage imageNamed:@"bowl1.png"],
+                           [UIImage imageNamed:@"bowl1.png"],
+                           [UIImage imageNamed:@"bowl2.png"],
+                           [UIImage imageNamed:@"bowl3.png"],
+                           [UIImage imageNamed:@"bowl4.png"],
+                           [UIImage imageNamed:@"bowl5.png"],
+                           [UIImage imageNamed:@"bowl6.png"],
+                           [UIImage imageNamed:@"bowl7.png"],
+                           [UIImage imageNamed:@"bowl8.png"],
+                           [UIImage imageNamed:@"bowl9.png"],
+                           [UIImage imageNamed:@"bowl10.png"],
+                           [UIImage imageNamed:@"bowl11.png"],
+                           [UIImage imageNamed:@"bowl12.png"], nil];
+    
+    disappearingFood.animationImages = animationImageArray;
+    
     disappearingFood.animationDuration = secondsCount;
+    animationDuration = secondsCount;
+    
     [self.view addSubview:disappearingFood];
     [disappearingFood startAnimating];
     
@@ -190,6 +200,10 @@
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 
+- (void) resetTimer {
+    countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     FeedbackViewController *controller = (FeedbackViewController *)segue.destinationViewController;
     if([segue.identifier isEqualToString:@"allFinishedSegue"]){
@@ -207,6 +221,7 @@
         controller.numCoins = 0;
         controller.eating = YES;
     }
+    
     [self stopAudioPlayers];
 }
 
@@ -254,6 +269,10 @@
     [disappearingFood stopAnimating];
     disappearingFood.image = [UIImage imageNamed:@"bowl12.png"];
     foodImageView.hidden = YES;
+    pauseButton.hidden = YES;
+    resumeButton.hidden = YES;
+    countdownLabel.hidden = YES;
+    timeLeftLabel.hidden = YES;
     
     [self stopAudioPlayers];
     
@@ -267,5 +286,49 @@
         [prefs synchronize];
     }
 }
+
+- (IBAction)pauseButtonClicked:(id)sender {
+    pauseButton.hidden = YES;
+    resumeButton.hidden = NO;
+    
+    // Pause the timer
+    [countdownTimer invalidate];
+    
+    [self stopAudioPlayers];
+    
+    [eatingCritter stopAnimating];
+    [disappearingFood stopAnimating];
+    currentFrame = disappearingFood.animationImages.count * (animationDuration - secondsCount) / animationDuration;
+    animationDuration = secondsCount;
+    [disappearingFood setImage:[[disappearingFood animationImages] objectAtIndex:currentFrame]];
+    
+
+    
+}
+
+- (IBAction)resumeButtonClicked:(id)sender {
+    resumeButton.hidden = YES;
+    pauseButton.hidden = NO;
+    
+    [self playSoundBite];
+    
+    // reset the disappearing food image to match the remaining time
+    currentFrame = [animationImageArray indexOfObject: disappearingFood.image];
+    
+    for (int i = 0; i < currentFrame; i++) {
+        [animationImageArray removeObjectAtIndex:0];
+    }
+    
+    disappearingFood.animationImages = animationImageArray;
+    disappearingFood.animationDuration = secondsCount;
+    
+    [eatingCritter startAnimating];
+    [disappearingFood startAnimating];
+    
+    // Resume the timer
+    [self resetTimer];
+    
+}
+
 
 @end

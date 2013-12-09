@@ -17,13 +17,13 @@
     xmlDelegate = [[XMLDelegate alloc] initXMLDelegate];
     [nsXmlParser setDelegate:xmlDelegate];
     
-    sceneArray = [[NSMutableArray alloc] init];
+    sceneDictionary = [[NSMutableDictionary alloc] init];
     return self;
 }
 
--(NSMutableArray *) populateScenes {
+-(NSMutableDictionary *) populateScenes {
     [nsXmlParser parse];
-    sceneArray = xmlDelegate.scenes;
-    return sceneArray;
+    sceneDictionary = xmlDelegate.sceneDictionary;
+    return sceneDictionary;
 }
 @end
