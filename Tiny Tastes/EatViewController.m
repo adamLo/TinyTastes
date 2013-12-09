@@ -62,7 +62,7 @@
         foodImageView.frame = CGRectMake(362, 312, 400, 400);
         
     } else{
-        foodImageView.frame = CGRectMake(312, 312, 500, 450);
+        foodImageView.frame = CGRectMake(312, 332, 500, 450);
     }
     
     foodImageView.image = self.foodImage;

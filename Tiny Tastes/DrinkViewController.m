@@ -213,6 +213,8 @@
     [self stopAudioPlayers];
     
     [drinkingCritter stopAnimating];
+    
+    [drinkingCritter setImage:[[drinkingCritter animationImages] firstObject]];
 }
 
 - (IBAction)resumeButtonClicked:(id)sender {
