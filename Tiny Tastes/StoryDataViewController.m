@@ -57,15 +57,17 @@
     [self.view bringSubviewToFront:_skipButton];
     NSInteger tagCount = 0;
     for (UIButton *button in self.dataObject.links) {
-        [button addTarget:self action:@selector(changeSceneStack:) forControlEvents:UIControlEventTouchUpInside];
-        [button setTag:tagCount];
-        [self.view addSubview:button];
+        UIButton *buttonCopy = [[UIButton alloc] initWithFrame:button.frame];
+        [buttonCopy addTarget:self action:@selector(changeSceneStack:) forControlEvents:UIControlEventTouchUpInside];
+        [buttonCopy setTag:tagCount];
+        [self.view addSubview:buttonCopy];
         tagCount++;
     }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
         for (AVAudioPlayer __strong *audioPlayer in self.dataObject.sounds) {
             [audioPlayer stop];
@@ -101,8 +103,21 @@
     _viewController = controller;
 }
 
-- (void) changeSceneStack:(UIButton*)button
+/*- (void) changeSceneStack:(UIButton*)button
 {
+    NSInteger buttonId = [button tag];
+    [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:buttonId]];
+}*/
+
+- (void) changeSceneStack
+{
+    NSInteger r = arc4random()%2;
+    [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:r]];
+}
+
+- (IBAction) changeSceneStack:(id) sender
+{
+    UIButton* button = (UIButton *) sender;
     NSInteger buttonId = [button tag];
     [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:buttonId]];
 }
