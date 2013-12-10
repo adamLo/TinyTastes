@@ -90,7 +90,7 @@
 
     path = [[NSBundle mainBundle]pathForResource:@"slurping" ofType:@"mp3"];
     audioPlayer2 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
-    [audioPlayer2 setVolume:0.5];
+    [audioPlayer2 setVolume:0.1];
 
     path = [[NSBundle mainBundle]pathForResource:@"this_is_good" ofType:@"m4a"];
     audioPlayer3 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
@@ -221,6 +221,7 @@
     resumeButton.hidden = YES;
     pauseButton.hidden = NO;
     
+    [self setUpAudioPlayers];
     [self playSoundBite];
     
     [drinkingCritter startAnimating];

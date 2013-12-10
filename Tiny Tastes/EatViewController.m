@@ -310,6 +310,7 @@
     resumeButton.hidden = YES;
     pauseButton.hidden = NO;
     
+    [self setUpAudioPlayers];
     [self playSoundBite];
     
     // reset the disappearing food image to match the remaining time

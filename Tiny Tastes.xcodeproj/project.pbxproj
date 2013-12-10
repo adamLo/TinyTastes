@@ -135,6 +135,7 @@
 		FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732718303865003BFC29 /* all_finished_label.jpg */; };
 		FD70735118303865003BFC29 /* camera_overlay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732818303865003BFC29 /* camera_overlay.jpg */; };
 		FD7073541833456C003BFC29 /* slurping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD7073531833456C003BFC29 /* slurping.mp3 */; };
+		FD7924BB1857B53700BF75B7 /* main_menu_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD7924BA1857B53700BF75B7 /* main_menu_music.mp3 */; };
 		FD8A4272185291DD009CD586 /* sound_page_16.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD8A4270185291DD009CD586 /* sound_page_16.m4a */; };
 		FD8A4273185291DD009CD586 /* sound_page_15.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD8A4271185291DD009CD586 /* sound_page_15.m4a */; };
 		FD9B72D31835CFCF000D76CD /* page_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD9B72D11835CFCF000D76CD /* page_2.jpg */; };
@@ -316,6 +317,7 @@
 		FD70732718303865003BFC29 /* all_finished_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_finished_label.jpg; sourceTree = "<group>"; };
 		FD70732818303865003BFC29 /* camera_overlay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera_overlay.jpg; sourceTree = "<group>"; };
 		FD7073531833456C003BFC29 /* slurping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slurping.mp3; sourceTree = "<group>"; };
+		FD7924BA1857B53700BF75B7 /* main_menu_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main_menu_music.mp3; sourceTree = "<group>"; };
 		FD8A4270185291DD009CD586 /* sound_page_16.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound_page_16.m4a; sourceTree = "<group>"; };
 		FD8A4271185291DD009CD586 /* sound_page_15.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound_page_15.m4a; sourceTree = "<group>"; };
 		FD9B72D11835CFCF000D76CD /* page_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page_2.jpg; sourceTree = "<group>"; };
@@ -381,6 +383,9 @@
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
+				FD7924BE1857B5A500BF75B7 /* Disappearing Food */,
+				FD7924BD1857B58000BF75B7 /* Drinking Critter */,
+				FD7924BC1857B54800BF75B7 /* Story Book Pages */,
 				FD16EA5D18524A0700A801B3 /* Story Sounds */,
 				FD187EE2183C016F0021D98F /* Icons */,
 				FD7073521833455E003BFC29 /* Other Sounds */,
@@ -506,6 +511,7 @@
 		FD7073521833455E003BFC29 /* Other Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				FD7924BA1857B53700BF75B7 /* main_menu_music.mp3 */,
 				FD16EA5B18511D8D00A801B3 /* store_background_jingle.mp3 */,
 				FD23B11718429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a */,
 				FD23B11818429F2500D1C9A9 /* eating_none_this_time_feedback.m4a */,
@@ -525,62 +531,9 @@
 			name = "Other Sounds";
 			sourceTree = "<group>";
 		};
-		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
+		FD7924BC1857B54800BF75B7 /* Story Book Pages */ = {
 			isa = PBXGroup;
 			children = (
-				FDC918E918552ECF00B19DA4 /* book_cover.jpg */,
-				FDC918E318552A6700B19DA4 /* play.jpg */,
-				FDC918E418552A6700B19DA4 /* pause.jpg */,
-				FD70732718303865003BFC29 /* all_finished_label.jpg */,
-				FD187ECB183BE2EB0021D98F /* back_arrow.jpg */,
-				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
-				FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */,
-				FD70732218303865003BFC29 /* bottle.jpg */,
-				317343121854ED81000DC80C /* bowl0.png */,
-				316ACB371831973A00FE3A83 /* bowl1.png */,
-				316ACB401831973A00FE3A83 /* bowl10.png */,
-				316ACB411831973A00FE3A83 /* bowl11.png */,
-				316ACB421831973A00FE3A83 /* bowl12.png */,
-				316ACB381831973A00FE3A83 /* bowl2.png */,
-				316ACB391831973A00FE3A83 /* bowl3.png */,
-				316ACB3A1831973A00FE3A83 /* bowl4.png */,
-				316ACB3B1831973A00FE3A83 /* bowl5.png */,
-				316ACB3C1831973A00FE3A83 /* bowl6.png */,
-				316ACB3D1831973A00FE3A83 /* bowl7.png */,
-				316ACB3E1831973A00FE3A83 /* bowl8.png */,
-				316ACB3F1831973A00FE3A83 /* bowl9.png */,
-				FD70732318303865003BFC29 /* camera.jpg */,
-				FD70732818303865003BFC29 /* camera_overlay.jpg */,
-				FD70732018303865003BFC29 /* clock_settings.jpg */,
-				FD70731F18303865003BFC29 /* coin_icon.jpg */,
-				FD2AC777183AC66900A7D6A1 /* coin_pouch.jpg */,
-				FD70731E18303865003BFC29 /* cutout.jpg */,
-				316ACB4F1831A15A00FE3A83 /* default_food.png */,
-				FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */,
-				FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */,
-				FD23B0FF1841690400D1C9A9 /* drinking_glass_1.jpg */,
-				FD23B0EF184166DE00D1C9A9 /* drinking_glass_2.jpg */,
-				FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */,
-				FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */,
-				FD23B10218416A3200D1C9A9 /* drinking_pediasure_1.jpg */,
-				FD23B10118416A3200D1C9A9 /* drinking_pediasure_2.jpg */,
-				FD23B10418416A3200D1C9A9 /* drinking_sippy_1.jpg */,
-				FD23B10318416A3200D1C9A9 /* drinking_sippy_2.jpg */,
-				FD70731B18303865003BFC29 /* eating_critter_1.jpg */,
-				FD70731C18303865003BFC29 /* eating_critter_2.jpg */,
-				FD70731918303865003BFC29 /* feedback_tiny.jpg */,
-				FD70730518303865003BFC29 /* full_bowl.jpg */,
-				FD70731A18303865003BFC29 /* glass.jpg */,
-				FD187ECD183BE30F0021D98F /* home.jpg */,
-				FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */,
-				FD70731718303865003BFC29 /* juicebox.jpg */,
-				FD70731518303865003BFC29 /* lets_drink.jpg */,
-				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
-				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
-				FD23B1141841770000D1C9A9 /* narration_off.jpg */,
-				FD23B1131841770000D1C9A9 /* narration_on.jpg */,
-				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
-				FD23B10D184172E200D1C9A9 /* outline_camera.png */,
 				FD9B72D21835CFCF000D76CD /* page_1.jpg */,
 				FD29BBD6184D0B7A00E59036 /* page_10.jpg */,
 				FD29BBD5184D0B7A00E59036 /* page_11.jpg */,
@@ -600,6 +553,80 @@
 				FD2AC772183AC66900A7D6A1 /* page_7.jpg */,
 				FD2AC771183AC66900A7D6A1 /* page_8.jpg */,
 				FD29BBD7184D0B7A00E59036 /* page_9.jpg */,
+			);
+			name = "Story Book Pages";
+			sourceTree = "<group>";
+		};
+		FD7924BD1857B58000BF75B7 /* Drinking Critter */ = {
+			isa = PBXGroup;
+			children = (
+				FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */,
+				FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */,
+				FD23B0FF1841690400D1C9A9 /* drinking_glass_1.jpg */,
+				FD23B0EF184166DE00D1C9A9 /* drinking_glass_2.jpg */,
+				FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */,
+				FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */,
+				FD23B10218416A3200D1C9A9 /* drinking_pediasure_1.jpg */,
+				FD23B10118416A3200D1C9A9 /* drinking_pediasure_2.jpg */,
+				FD23B10418416A3200D1C9A9 /* drinking_sippy_1.jpg */,
+				FD23B10318416A3200D1C9A9 /* drinking_sippy_2.jpg */,
+			);
+			name = "Drinking Critter";
+			sourceTree = "<group>";
+		};
+		FD7924BE1857B5A500BF75B7 /* Disappearing Food */ = {
+			isa = PBXGroup;
+			children = (
+				317343121854ED81000DC80C /* bowl0.png */,
+				316ACB371831973A00FE3A83 /* bowl1.png */,
+				316ACB401831973A00FE3A83 /* bowl10.png */,
+				316ACB411831973A00FE3A83 /* bowl11.png */,
+				316ACB421831973A00FE3A83 /* bowl12.png */,
+				316ACB381831973A00FE3A83 /* bowl2.png */,
+				316ACB391831973A00FE3A83 /* bowl3.png */,
+				316ACB3A1831973A00FE3A83 /* bowl4.png */,
+				316ACB3B1831973A00FE3A83 /* bowl5.png */,
+				316ACB3C1831973A00FE3A83 /* bowl6.png */,
+				316ACB3D1831973A00FE3A83 /* bowl7.png */,
+				316ACB3E1831973A00FE3A83 /* bowl8.png */,
+				316ACB3F1831973A00FE3A83 /* bowl9.png */,
+			);
+			name = "Disappearing Food";
+			sourceTree = "<group>";
+		};
+		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FDC918E918552ECF00B19DA4 /* book_cover.jpg */,
+				FDC918E318552A6700B19DA4 /* play.jpg */,
+				FDC918E418552A6700B19DA4 /* pause.jpg */,
+				FD70732718303865003BFC29 /* all_finished_label.jpg */,
+				FD187ECB183BE2EB0021D98F /* back_arrow.jpg */,
+				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
+				FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */,
+				FD70732218303865003BFC29 /* bottle.jpg */,
+				FD70732318303865003BFC29 /* camera.jpg */,
+				FD70732818303865003BFC29 /* camera_overlay.jpg */,
+				FD70732018303865003BFC29 /* clock_settings.jpg */,
+				FD70731F18303865003BFC29 /* coin_icon.jpg */,
+				FD2AC777183AC66900A7D6A1 /* coin_pouch.jpg */,
+				FD70731E18303865003BFC29 /* cutout.jpg */,
+				316ACB4F1831A15A00FE3A83 /* default_food.png */,
+				FD70731B18303865003BFC29 /* eating_critter_1.jpg */,
+				FD70731C18303865003BFC29 /* eating_critter_2.jpg */,
+				FD70731918303865003BFC29 /* feedback_tiny.jpg */,
+				FD70730518303865003BFC29 /* full_bowl.jpg */,
+				FD70731A18303865003BFC29 /* glass.jpg */,
+				FD187ECD183BE30F0021D98F /* home.jpg */,
+				FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */,
+				FD70731718303865003BFC29 /* juicebox.jpg */,
+				FD70731518303865003BFC29 /* lets_drink.jpg */,
+				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
+				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
+				FD23B1141841770000D1C9A9 /* narration_off.jpg */,
+				FD23B1131841770000D1C9A9 /* narration_on.jpg */,
+				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
+				FD23B10D184172E200D1C9A9 /* outline_camera.png */,
 				FD70730018303865003BFC29 /* pediasure.jpg */,
 				FD70731318303865003BFC29 /* redline.jpg */,
 				FD187ED4183BE4420021D98F /* save.jpg */,
@@ -764,6 +791,7 @@
 				FDCE238E184EC25B007A0F4F /* BACKLOG.txt in Resources */,
 				FD16EA7A18524A1900A801B3 /* sound_page_3.m4a in Resources */,
 				FD23B12618429F2500D1C9A9 /* drinking_tried_some_feedback.m4a in Resources */,
+				FD7924BB1857B53700BF75B7 /* main_menu_music.mp3 in Resources */,
 				FD187ED6183BE4420021D98F /* start.jpg in Resources */,
 				FD70733B18303865003BFC29 /* sippy.jpg in Resources */,
 				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,

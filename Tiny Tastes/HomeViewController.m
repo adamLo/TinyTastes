@@ -15,6 +15,8 @@
 
 @implementation HomeViewController
 
+@synthesize audioPlayer;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,12 +37,27 @@
     [settingsLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"main_menu_music" ofType:@"mp3"];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
+        [audioPlayer setVolume:0.5];
+        [audioPlayer setNumberOfLoops: -1];
+        [audioPlayer play];
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([audioPlayer isPlaying]) {
+        [audioPlayer stop];
+        audioPlayer = nil;
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation

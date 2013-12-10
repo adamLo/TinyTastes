@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface HomeViewController : UIViewController {
     IBOutlet UIButton *storyModeLabel;
@@ -15,5 +16,7 @@
     IBOutlet UIButton *tinyShopLabel;
     IBOutlet UIButton *settingsLabel;
 }
+
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end

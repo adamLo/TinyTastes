@@ -63,15 +63,14 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     timeDisplayLabel.hidden = YES;
     mealStepper.hidden = YES;
     retakeLabel.hidden = YES;
-    eatLabel.hidden = YES;
+    //eatLabel.hidden = YES;
     
     //Hide instruction if this is not the first time the app was launched
     //if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedEatScreenOnce"]) {
-        //self.instructionLabel.hidden = YES;
         //thoughtBubble.hidden = YES;
+        //cameraInstructionLabel.hidden = YES
     //}
 
-    
     //Change font of segment control
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                 [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], UITextAttributeFont,

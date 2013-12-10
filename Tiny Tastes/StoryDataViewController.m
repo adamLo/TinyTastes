@@ -45,7 +45,7 @@
     }
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
         for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
-            [audioPlayer play];
+            [audioPlayer playAtTime:(audioPlayer.deviceCurrentTime + 1.5)];
         }
     }
     if (self.dataObject.titlePage == YES) {
