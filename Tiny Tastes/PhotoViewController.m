@@ -63,7 +63,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     timeDisplayLabel.hidden = YES;
     mealStepper.hidden = YES;
     retakeLabel.hidden = YES;
-    //eatLabel.hidden = YES;
+    eatLabel.hidden = YES;
     
     //Hide instruction if this is not the first time the app was launched
     //if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedEatScreenOnce"]) {
@@ -171,17 +171,6 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 	NSLog(@"about to request a capture from: %@", stillImageOutput);
 	[stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error)
      {
-         /*
-		 CFDictionaryRef exifAttachments = CMGetAttachment( imageSampleBuffer, kCGImagePropertyExifDictionary, NULL);
-		 if (exifAttachments)
-		 {
-             // Do something with the attachments.
-             NSLog(@"attachements: %@", exifAttachments);
-		 }
-         else
-             NSLog(@"no attachments");
-          */
-         
          NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
          chosenImage = [[UIImage alloc] initWithData:imageData];
 	 }];
@@ -216,8 +205,6 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     
     // Crop the image with an image mask
     chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
-    
-    
     
     UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.jpg"];
     UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];
