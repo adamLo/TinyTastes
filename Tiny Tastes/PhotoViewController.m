@@ -137,13 +137,19 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
         
         
     } else {
+#ifdef DEBUG
+        chosenImage = [UIImage imageNamed:@"frenchfries.jpg"]; //Add a sample photo when running on simulator
+        [self processImage];
+#else
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                               message:@"This device has no camera"
                                                              delegate:nil
                                                     cancelButtonTitle:@"OK"
                                                     otherButtonTitles: nil];
         [myAlertView show];
+#endif
     }
+
     
 }
 
@@ -212,6 +218,8 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     [self.view addSubview:overlayGraphicView];
     
     UIImageView *foodImageView = [[UIImageView alloc] init];
+    foodImageView.opaque = NO;
+    foodImageView.backgroundColor = [UIColor clearColor];
     foodImageView.image = chosenImage;
     
     foodImageView.frame = CGRectMake(0, 0, chosenImage.size.width*1.067, chosenImage.size.height*1.067);

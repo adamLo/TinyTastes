@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1914019C19570D5E008F40C4 /* frenchfries.jpg */; };
+		191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A01957176B008F40C4 /* frenchfries@2x.jpg */; };
+		191401A319571957008F40C4 /* cutout@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A219571957008F40C4 /* cutout@2x.jpg */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		316ACB431831973A00FE3A83 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB371831973A00FE3A83 /* bowl1.png */; };
@@ -175,6 +178,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1914019C19570D5E008F40C4 /* frenchfries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frenchfries.jpg; sourceTree = "<group>"; };
+		191401A01957176B008F40C4 /* frenchfries@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frenchfries@2x.jpg"; sourceTree = "<group>"; };
+		191401A219571957008F40C4 /* cutout@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cutout@2x.jpg"; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
@@ -380,9 +386,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1914019B19570D5E008F40C4 /* sampleimages */ = {
+			isa = PBXGroup;
+			children = (
+				191401A01957176B008F40C4 /* frenchfries@2x.jpg */,
+				1914019C19570D5E008F40C4 /* frenchfries.jpg */,
+			);
+			path = sampleimages;
+			sourceTree = "<group>";
+		};
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
+				1914019B19570D5E008F40C4 /* sampleimages */,
 				FD7924BE1857B5A500BF75B7 /* Disappearing Food */,
 				FD7924BD1857B58000BF75B7 /* Drinking Critter */,
 				FD7924BC1857B54800BF75B7 /* Story Book Pages */,
@@ -611,6 +627,7 @@
 				FD70731F18303865003BFC29 /* coin_icon.jpg */,
 				FD2AC777183AC66900A7D6A1 /* coin_pouch.jpg */,
 				FD70731E18303865003BFC29 /* cutout.jpg */,
+				191401A219571957008F40C4 /* cutout@2x.jpg */,
 				316ACB4F1831A15A00FE3A83 /* default_food.png */,
 				FD70731B18303865003BFC29 /* eating_critter_1.jpg */,
 				FD70731C18303865003BFC29 /* eating_critter_2.jpg */,
@@ -855,8 +872,10 @@
 				FD23B12418429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a in Resources */,
 				FD16EA6F18524A1900A801B3 /* sound_page_14.m4a in Resources */,
 				FD70734318303865003BFC29 /* glass.jpg in Resources */,
+				191401A319571957008F40C4 /* cutout@2x.jpg in Resources */,
 				FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */,
 				FD16EA7518524A1900A801B3 /* sound_page_8.m4a in Resources */,
+				1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */,
 				FD29BBDB184D0B7A00E59036 /* page_9.jpg in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
@@ -874,6 +893,7 @@
 				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
 				FDC918E518552A6700B19DA4 /* play.jpg in Resources */,
 				FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */,
+				191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */,
 				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				FD7073541833456C003BFC29 /* slurping.mp3 in Resources */,
 				FD23B10618416A3200D1C9A9 /* drinking_pediasure_1.jpg in Resources */,
