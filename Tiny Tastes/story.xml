@@ -62,6 +62,7 @@
     <image path="page_13.jpg" x="0" y="20" w="1060" h="730" />
     <sound path="sound_page_13" type="m4a" />
     <link id="yard4" x="620" y="300" w="230" h="220" />
+    <link id="frog01" x="270" y="420" w="155" h="140" />
 </scene>
 <scene id="yard4">
     <image path="page_14.jpg" x="0" y="20" w="1060" h="730" />
@@ -91,4 +92,27 @@
 <scene id="yard9" end="true">
     <image path="page_19.jpg" x="0" y="20" w="1060" h="730" />
 </scene>
+
+<!-- Froggy fork begin -->
+<scene id="frog01">
+    <image path="page_14fr.jpg" x="0" y="20" w="1060" h="730" />
+    <next id="frog02" />
+</scene>
+<scene id="frog02">
+    <image path="page_15fr.jpg" x="0" y="20" w="1060" h="730" />
+    <next id="frog03" />
+</scene>
+<scene id="frog03">
+    <image path="page_16afr.jpg" x="0" y="20" w="1060" h="730" />
+    <next id="frog04" />
+</scene>
+<scene id="frog04">
+    <image path="page_16bfr.jpg" x="0" y="20" w="1060" h="730" />
+    <next id="frog05" />
+</scene>
+<scene id="frog05" end="true">
+    <image path="page_17fr.jpg" x="0" y="20" w="1060" h="730" />
+</scene>
+<!-- Froggy fork end -->
+
 </scenes>
