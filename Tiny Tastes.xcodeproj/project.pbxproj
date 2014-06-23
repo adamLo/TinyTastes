@@ -14,6 +14,7 @@
 		191401AD19582326008F40C4 /* greenpeas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401AC19582326008F40C4 /* greenpeas.jpg */; };
 		191401AF195824B5008F40C4 /* IMG_0609.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 191401AE195824B5008F40C4 /* IMG_0609.JPG */; };
 		191401B119583485008F40C4 /* mcdonalds-filet-o-fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401B019583485008F40C4 /* mcdonalds-filet-o-fish.png */; };
+		191401B319585B07008F40C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191401B219585B07008F40C4 /* Images.xcassets */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		316ACB431831973A00FE3A83 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB371831973A00FE3A83 /* bowl1.png */; };
@@ -81,7 +82,6 @@
 		FD187ED8183BE4420021D98F /* save.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ED4183BE4420021D98F /* save.jpg */; };
 		FD187EDA183BE8B60021D98F /* tiny_shop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ED9183BE8B60021D98F /* tiny_shop.jpg */; };
 		FD187EDC183BE93C0021D98F /* tiny_shop_thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */; };
-		FD187EE4183C01800021D98F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD187EE3183C01800021D98F /* Icon.png */; };
 		FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */; };
 		FD23B0F7184166DE00D1C9A9 /* drinking_juice_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */; };
 		FD23B0F8184166DE00D1C9A9 /* drinking_juice_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */; };
@@ -189,6 +189,7 @@
 		191401AC19582326008F40C4 /* greenpeas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeas.jpg; sourceTree = "<group>"; };
 		191401AE195824B5008F40C4 /* IMG_0609.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0609.JPG; sourceTree = "<group>"; };
 		191401B019583485008F40C4 /* mcdonalds-filet-o-fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mcdonalds-filet-o-fish.png"; sourceTree = "<group>"; };
+		191401B219585B07008F40C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
@@ -270,7 +271,6 @@
 		FD187ED4183BE4420021D98F /* save.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = save.jpg; sourceTree = "<group>"; };
 		FD187ED9183BE8B60021D98F /* tiny_shop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop.jpg; sourceTree = "<group>"; };
 		FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop_thumbnail.jpg; sourceTree = "<group>"; };
-		FD187EE3183C01800021D98F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thought_bubble.jpg; sourceTree = "<group>"; };
 		FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_juice_2.jpg; sourceTree = "<group>"; };
 		FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_juice_1.jpg; sourceTree = "<group>"; };
@@ -421,7 +421,6 @@
 				FD7924BD1857B58000BF75B7 /* Drinking Critter */,
 				FD7924BC1857B54800BF75B7 /* Story Book Pages */,
 				FD16EA5D18524A0700A801B3 /* Story Sounds */,
-				FD187EE2183C016F0021D98F /* Icons */,
 				FD7073521833455E003BFC29 /* Other Sounds */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
 				EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */,
@@ -469,6 +468,7 @@
 				EC7124CA18147519007319C5 /* SceneFactory.m */,
 				EC7124C418146152007319C5 /* XMLDelegate.h */,
 				EC7124C518146152007319C5 /* XMLDelegate.m */,
+				191401B219585B07008F40C4 /* Images.xcassets */,
 				EC6FD1BB17EA746000EB05E9 /* Supporting Files */,
 			);
 			path = "Tiny Tastes";
@@ -532,14 +532,6 @@
 				FD16EA6518524A1900A801B3 /* sound_page_9.m4a */,
 			);
 			name = "Story Sounds";
-			sourceTree = "<group>";
-		};
-		FD187EE2183C016F0021D98F /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				FD187EE3183C01800021D98F /* Icon.png */,
-			);
-			name = Icons;
 			sourceTree = "<group>";
 		};
 		FD7073521833455E003BFC29 /* Other Sounds */ = {
@@ -861,6 +853,7 @@
 				FD70734018303865003BFC29 /* juicebox.jpg in Resources */,
 				FD70733C18303865003BFC29 /* redline.jpg in Resources */,
 				316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */,
+				191401B319585B07008F40C4 /* Images.xcassets in Resources */,
 				FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */,
 				FD9B72D31835CFCF000D76CD /* page_2.jpg in Resources */,
 				FD16EA7418524A1900A801B3 /* sound_page_9.m4a in Resources */,
@@ -904,7 +897,6 @@
 				FD29BBD8184D0B7A00E59036 /* page_12.jpg in Resources */,
 				316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */,
 				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
-				FD187EE4183C01800021D98F /* Icon.png in Resources */,
 				FD23B12C18429F2500D1C9A9 /* its_fun_eating_together.m4a in Resources */,
 				FDC918E618552A6700B19DA4 /* pause.jpg in Resources */,
 				FD70732E18303865003BFC29 /* full_bowl.jpg in Resources */,
@@ -1086,11 +1078,14 @@
 		EC6FD1ED17EA746000EB05E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jei Min Yoo (YUXK6TQMJW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tiny Tastes/Tiny Tastes-Prefix.pch";
 				INFOPLIST_FILE = "Tiny Tastes/Tiny Tastes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1101,11 +1096,14 @@
 		EC6FD1EE17EA746000EB05E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jei Min Yoo (YUXK6TQMJW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tiny Tastes/Tiny Tastes-Prefix.pch";
 				INFOPLIST_FILE = "Tiny Tastes/Tiny Tastes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;

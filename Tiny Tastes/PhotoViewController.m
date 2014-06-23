@@ -74,12 +74,12 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 
     //Change font of segment control
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], UITextAttributeFont,
-                                [UIColor grayColor], UITextAttributeTextColor, nil];
+                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], NSFontAttributeName,
+                                [UIColor grayColor], NSForegroundColorAttributeName, nil];
     [mealOrSnackControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
     
     NSDictionary *highlightedAttributes = [NSDictionary
-                                           dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor];
+                                           dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     [mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
 }
 
