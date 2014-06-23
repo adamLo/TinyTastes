@@ -42,8 +42,8 @@
     
     chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
-    pauseButton.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
-    resumeButton.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    [pauseButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
+    [resumeButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
     chooseLabel.hidden = YES;
     redLine.hidden = YES;
     
@@ -112,6 +112,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    //Stop all audio players when navigating away to make sure all sounds canceled
+    [self stopAudioPlayers];
 }
 
 - (void)timerRun {
@@ -200,23 +206,23 @@
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 
-- (void) resetTimer {
+- (void)resetTimer {
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     FeedbackViewController *controller = (FeedbackViewController *)segue.destinationViewController;
-    if([segue.identifier isEqualToString:@"allFinishedSegue"]){
+    if ([segue.identifier isEqualToString:@"allFinishedSegue"]){
         controller.feedbackText = @"Great job!";
         controller.numCoins = 3;
         controller.eating = YES;
     }
-    if([segue.identifier isEqualToString:@"triedSomeSegue"]){
+    if ([segue.identifier isEqualToString:@"triedSomeSegue"]){
         controller.feedbackText = @"Thanks for eating with me!";
         controller.numCoins = 1;
         controller.eating = YES;
     }
-    if([segue.identifier isEqualToString:@"notFinishedSegue"]){
+    if ([segue.identifier isEqualToString:@"notFinishedSegue"]){
         controller.feedbackText = @"Maybe we can try next time!";
         controller.numCoins = 0;
         controller.eating = YES;
@@ -226,10 +232,12 @@
 }
 
 - (void)blink{
-    if(blinkStatus == FALSE){
+    
+    if (blinkStatus == FALSE){
         redLine.hidden = NO;
         blinkStatus = TRUE;
-    }else {
+    }
+    else {
         redLine.hidden = YES;
         blinkStatus = FALSE;
     }

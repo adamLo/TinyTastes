@@ -57,6 +57,12 @@
     [self setTimer];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    //Stop audio players when navigation away from screen to make sure they stop
+    [self stopAudioPlayers];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

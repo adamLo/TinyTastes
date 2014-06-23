@@ -140,8 +140,9 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     } else {
 #ifdef DEBUG
         //Add a sample photo when running on simulator
-        //chosenImage = [UIImage imageNamed:@"frenchfries.jpg"];
-        chosenImage = [UIImage imageNamed:@"IMG_0609.JPG"];
+        chosenImage = [UIImage imageNamed:@"frenchfries.jpg"];
+        //chosenImage = [UIImage imageNamed:@"IMG_0609.JPG"];
+        //chosenImage = [UIImage imageNamed:@"mcdonalds-filet-o-fish.png"];
         [self processImage];
 #else
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -241,7 +242,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     
 }
 
--(CGImageRef) CopyImageAndAddAlphaChannel :(CGImageRef) sourceImage
+- (CGImageRef)CopyImageAndAddAlphaChannel :(CGImageRef) sourceImage
 {
     CGImageRef retVal = NULL;
     
@@ -257,10 +258,12 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
         CGContextDrawImage(offscreenContext, CGRectMake(0, 0, width, height), sourceImage);
         
         retVal = CGBitmapContextCreateImage(offscreenContext);
-        CGContextRelease(offscreenContext);
     }
     
     CGColorSpaceRelease(colorSpace);
+    CGContextRelease(offscreenContext);
+    
+    CGImageRelease(retVal);
     
     return retVal;
 }
@@ -275,20 +278,22 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
                                         CGImageGetDataProvider(maskRef), NULL, false);
     
     CGImageRef sourceImage = [image CGImage];
-    CGImageRef imageWithAlpha = sourceImage;
+    //CGImageRef imageWithAlpha = sourceImage;
     //add alpha channel for images that don’t have one (ie GIF, JPEG, etc…)
     //this however has a computational cost
+    
+    CGImageRef masked;
     if (CGImageGetAlphaInfo(sourceImage) == kCGImageAlphaNone) {
-        imageWithAlpha = [self CopyImageAndAddAlphaChannel :sourceImage];
-    }
-    
-    CGImageRef masked = CGImageCreateWithMask(imageWithAlpha, mask);
-    CGImageRelease(mask);
-    
-    //release imageWithAlpha if it was created by CopyImageAndAddAlphaChannel
-    if (sourceImage != imageWithAlpha) {
+        CGImageRef imageWithAlpha = [self CopyImageAndAddAlphaChannel :sourceImage];
+        CGImageRetain(imageWithAlpha);
+        masked = CGImageCreateWithMask(imageWithAlpha, mask);
         CGImageRelease(imageWithAlpha);
     }
+    else {
+        masked = CGImageCreateWithMask(sourceImage, mask);
+    }
+    
+    CGImageRelease(mask);
     
     UIImage* retImage = [UIImage imageWithCGImage:masked];
     CGImageRelease(masked);

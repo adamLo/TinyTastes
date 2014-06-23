@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Le Labs. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface Tiny_TastesTests : SenTestCase
+@interface Tiny_TastesTests : XCTestCase
 
 @end

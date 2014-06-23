@@ -36,9 +36,10 @@
         // Create the data model.
         SceneFactory *sceneFactory = [[SceneFactory alloc] init];
         _pageData = [sceneFactory populateScenes];
-    }
-    _sceneStack = [self.pageData objectForKey:@"titlePage"];
-    _currentIndex = 0;
+        
+        _sceneStack = [self.pageData objectForKey:@"titlePage"];
+        _currentIndex = 0;
+    }    
     return self;
 }
 

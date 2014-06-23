@@ -6,7 +6,7 @@
 #import "UIImage+Resize.h"
 
 // Private helper methods
-@interface UIImage ()
+@interface UIImage (CustomResizing)
 - (UIImage *)resizedImage:(CGSize)newSize
                 transform:(CGAffineTransform)transform
            drawTransposed:(BOOL)transpose
@@ -14,7 +14,7 @@
 - (CGAffineTransform)transformForOrientation:(CGSize)newSize;
 @end
 
-@implementation UIImage (Resize)
+@implementation UIImage (CustomResize)
 
 // Returns a copy of this image that is cropped to the given bounds.
 // The bounds will be adjusted using CGRectIntegral.
@@ -143,6 +143,8 @@
             transform = CGAffineTransformTranslate(transform, 0, newSize.height);
             transform = CGAffineTransformRotate(transform, -M_PI_2);
             break;
+        default:
+            break;
     }
     
     switch (self.imageOrientation) {
@@ -156,6 +158,8 @@
         case UIImageOrientationRightMirrored:  // EXIF = 7
             transform = CGAffineTransformTranslate(transform, newSize.height, 0);
             transform = CGAffineTransformScale(transform, -1, 1);
+            break;
+        default:
             break;
     }
     
