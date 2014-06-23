@@ -8,12 +8,18 @@
 
 #import "HomeAppDelegate.h"
 #import "SetReminderAlertsViewController.h"
+#import "Crittercism.h"
 
 @implementation HomeAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+#ifndef DEBUG
+    //Start up Crittercism crash reporting when running on real device
+    [Crittercism enableWithAppID:@"53a898f907229a1613000002"];
+#endif
     
     // Handle launching from a notification
     application.applicationIconBadgeNumber = 0;
