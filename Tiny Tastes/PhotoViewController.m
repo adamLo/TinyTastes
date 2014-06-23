@@ -19,6 +19,7 @@
 #import <CoreVideo/CoreVideo.h>
 #import <CoreMedia/CoreMedia.h>
 #import <ImageIO/ImageIO.h>
+#import "UIImage+Resize.h"
 
 @interface PhotoViewController ()
 
@@ -138,7 +139,9 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
         
     } else {
 #ifdef DEBUG
-        chosenImage = [UIImage imageNamed:@"frenchfries.jpg"]; //Add a sample photo when running on simulator
+        //Add a sample photo when running on simulator
+        //chosenImage = [UIImage imageNamed:@"frenchfries.jpg"];
+        chosenImage = [UIImage imageNamed:@"IMG_0609.JPG"];
         [self processImage];
 #else
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -209,8 +212,13 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     }
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", mealStepper.value];
     
+    UIImage *mask = [UIImage imageNamed:@"cutout.jpg"];
+    
+    //Resize image
+    chosenImage = [chosenImage resizedImageWithContentMode:UIViewContentModeScaleAspectFill bounds:mask.size interpolationQuality:kCGInterpolationHigh];
+    
     // Crop the image with an image mask
-    chosenImage = [self maskImage :chosenImage withMask:[UIImage imageNamed:@"cutout.jpg"]];
+    chosenImage = [self maskImage :chosenImage withMask:mask];
     
     UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.jpg"];
     UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];

@@ -10,6 +10,9 @@
 		1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1914019C19570D5E008F40C4 /* frenchfries.jpg */; };
 		191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A01957176B008F40C4 /* frenchfries@2x.jpg */; };
 		191401A319571957008F40C4 /* cutout@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A219571957008F40C4 /* cutout@2x.jpg */; };
+		191401AB195821D1008F40C4 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 191401AA195821D1008F40C4 /* UIImage+Resize.m */; };
+		191401AD19582326008F40C4 /* greenpeas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401AC19582326008F40C4 /* greenpeas.jpg */; };
+		191401AF195824B5008F40C4 /* IMG_0609.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 191401AE195824B5008F40C4 /* IMG_0609.JPG */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		316ACB431831973A00FE3A83 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB371831973A00FE3A83 /* bowl1.png */; };
@@ -181,6 +184,10 @@
 		1914019C19570D5E008F40C4 /* frenchfries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frenchfries.jpg; sourceTree = "<group>"; };
 		191401A01957176B008F40C4 /* frenchfries@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frenchfries@2x.jpg"; sourceTree = "<group>"; };
 		191401A219571957008F40C4 /* cutout@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cutout@2x.jpg"; sourceTree = "<group>"; };
+		191401A9195821D1008F40C4 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		191401AA195821D1008F40C4 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		191401AC19582326008F40C4 /* greenpeas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeas.jpg; sourceTree = "<group>"; };
+		191401AE195824B5008F40C4 /* IMG_0609.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0609.JPG; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
@@ -389,10 +396,21 @@
 		1914019B19570D5E008F40C4 /* sampleimages */ = {
 			isa = PBXGroup;
 			children = (
+				191401AE195824B5008F40C4 /* IMG_0609.JPG */,
+				191401AC19582326008F40C4 /* greenpeas.jpg */,
 				191401A01957176B008F40C4 /* frenchfries@2x.jpg */,
 				1914019C19570D5E008F40C4 /* frenchfries.jpg */,
 			);
 			path = sampleimages;
+			sourceTree = "<group>";
+		};
+		191401A8195821D0008F40C4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				191401A9195821D1008F40C4 /* UIImage+Resize.h */,
+				191401AA195821D1008F40C4 /* UIImage+Resize.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		EC6FD1A817EA746000EB05E9 = {
@@ -439,6 +457,7 @@
 		EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */ = {
 			isa = PBXGroup;
 			children = (
+				191401A8195821D0008F40C4 /* Categories */,
 				FDB5830B17EA8B5D004C6FA3 /* View Controllers */,
 				EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */,
 				EC6FD1C317EA746000EB05E9 /* HomeAppDelegate.h */,
@@ -812,6 +831,7 @@
 				FD187ED6183BE4420021D98F /* start.jpg in Resources */,
 				FD70733B18303865003BFC29 /* sippy.jpg in Resources */,
 				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,
+				191401AF195824B5008F40C4 /* IMG_0609.JPG in Resources */,
 				FD23B12518429F2500D1C9A9 /* eating_none_this_time_feedback.m4a in Resources */,
 				FD16EA5A1850414D00A801B3 /* page_13.jpg in Resources */,
 				FD16EA591850414D00A801B3 /* page_14.jpg in Resources */,
@@ -894,6 +914,7 @@
 				FDC918E518552A6700B19DA4 /* play.jpg in Resources */,
 				FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */,
 				191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */,
+				191401AD19582326008F40C4 /* greenpeas.jpg in Resources */,
 				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				FD7073541833456C003BFC29 /* slurping.mp3 in Resources */,
 				FD23B10618416A3200D1C9A9 /* drinking_pediasure_1.jpg in Resources */,
@@ -953,6 +974,7 @@
 				31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */,
 				EC7124CB18147519007319C5 /* SceneFactory.m in Sources */,
 				FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */,
+				191401AB195821D1008F40C4 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
