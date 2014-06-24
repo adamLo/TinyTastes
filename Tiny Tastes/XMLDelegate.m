@@ -13,8 +13,10 @@
 
 - (XMLDelegate *) initXMLDelegate {
     self = [super init];
-    sceneDictionary = [[NSMutableDictionary alloc] init];
-    currentSceneArray = [[NSMutableArray alloc] init];
+    if (self) {
+        sceneDictionary = [[NSMutableDictionary alloc] init];
+        currentSceneArray = [[NSMutableArray alloc] init];
+    }
     return self;
 }
 
@@ -70,6 +72,39 @@ didStartElement:(NSString *)elementName
         audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
         [audioPlayer setVolume:0.5];
         [currentScene.sounds addObject:audioPlayer];
+    }
+    
+    if ([elementName isEqualToString:@"animations"]) {
+        NSLog(@"Animations");
+        if (!currentScene.animations) {
+            currentScene.animations = [[NSMutableArray alloc] init];
+        }
+    }
+    
+    if ([elementName isEqualToString:@"animation"]) {
+        NSLog(@"Animation");
+        //Create current animation pointer and copy attributes
+        currentAnimation = [[UIImageView alloc] initWithFrame:CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue])];
+        currentAnimation.animationDuration = [[attributeDict objectForKey:@"duration"] doubleValue];
+        currentAnimation.animationRepeatCount = [[attributeDict objectForKey:@"repeat"] integerValue];
+        
+        //Add animation to array
+        [currentScene.animations addObject:currentAnimation];
+        
+    }
+    
+    if ([elementName isEqualToString:@"animationphase"]) {
+        //Add an animation phase to current animation sequence
+        NSString *imageName = [attributeDict objectForKey:@"image"];
+        if (imageName) {
+            UIImage *image = [UIImage imageNamed:imageName];
+            if (image) {
+                //Valid image, make a mutable version of the images of animation and add current image
+                NSMutableArray *images = [[NSMutableArray alloc] initWithArray:currentAnimation.animationImages];
+                [images addObject:image];
+                currentAnimation.animationImages = images;
+            }
+        }
     }
 }
 

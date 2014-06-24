@@ -23,5 +23,6 @@
 @property (nonatomic, assign) BOOL titlePage;
 @property (nonatomic, assign) BOOL next;
 @property (nonatomic, assign) BOOL end;
+@property (nonatomic, retain) NSMutableArray *animations; /** Lopped andimations on the scene */
 
 @end

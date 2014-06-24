@@ -55,6 +55,13 @@
     }
     [self.view bringSubviewToFront:_backButton];
     [self.view bringSubviewToFront:_skipButton];
+    
+    //Draw animations
+    for (UIImageView *imageView in self.dataObject.animations) {
+        [self.view addSubview:imageView];
+        [imageView startAnimating];
+    }
+    
     NSInteger tagCount = 0;
     for (UIButton *button in self.dataObject.links) {
         UIButton *buttonCopy = [[UIButton alloc] initWithFrame:button.frame];
@@ -63,6 +70,8 @@
         [self.view addSubview:buttonCopy];
         tagCount++;
     }
+    
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -72,6 +81,14 @@
         for (AVAudioPlayer __strong *audioPlayer in self.dataObject.sounds) {
             [audioPlayer stop];
             audioPlayer = nil;
+        }
+    }
+    
+    //Stop all animations
+    for (id subview in self.view.subviews) {
+        if ([subview respondsToSelector:@selector(stopAnimating)]) {
+            //This is an imageview
+            [subview performSelector:@selector(stopAnimating) withObject:nil];
         }
     }
 }

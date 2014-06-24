@@ -54,9 +54,24 @@
     <next id="yard2" />
 </scene>
 <scene id="yard2">
-    <image path="page_12.jpg" x="0" y="20" w="1060" h="730" />
+    <image path="page_12_plain.png" x="0" y="20" w="1060" h="730" />
     <sound path="sound_page_12" type="m4a" />
     <link id="yard3" x="154" y="300" w="370" h="190" />
+    <!-- animations around the pond -->
+    <animations>
+        <animation id="pond_qmarks" x="310" y="250" w="210" h="160" duration="1" repeat="0">
+            <animationphase image="pond_qmarks_0.png" />
+            <animationphase image="pond_qmarks_1.png" />
+            <animationphase image="pond_qmarks_0.png" />
+            <animationphase image="pond_qmarks_2.png" />
+        </animation>
+        <animation id="pond_bubble" x="270" y="360" w="60" h="60" duration="1.5" repeat="0">
+            <animationphase image="pond_bubble_0.png" />
+            <animationphase image="pond_bubble_1.png" />
+            <animationphase image="pond_bubble_2.png" />
+            <animationphase image="pond_bubble_3.png" />
+        </animation>
+    </animations>
 </scene>
 <scene id="yard3">
     <image path="page_13.jpg" x="0" y="20" w="1060" h="730" />

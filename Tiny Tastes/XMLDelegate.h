@@ -14,6 +14,7 @@
     Scene * currentScene;
     NSMutableArray * currentSceneArray;
     NSMutableDictionary * sceneDictionary;
+    UIImageView *currentAnimation;
 }
 
 @property (nonatomic, retain) NSMutableDictionary *sceneDictionary;
