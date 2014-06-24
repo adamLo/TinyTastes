@@ -76,12 +76,38 @@
 
 #pragma mark - Page View Controller Data Source
 
+/**
+ *  Moving backwards in the story
+ */
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     if ((_currentIndex == 0) || (_currentIndex == NSNotFound)) {
+        //This is the first page of the current scene stack
+        
+        //Check if there is a preceding scene
+        for (NSString *sceneKey in self.pageData) {
+            NSArray *scenes = [self.pageData objectForKey:sceneKey];
+            for (Scene *scene in scenes) {            
+                if ([scene.linkDestinations indexOfObject:[(Scene*)self.sceneStack[_currentIndex] sceneID]] != NSNotFound) {
+                    //Got the last fork in the story
+                    
+                    //Change scene stack for the one that has this scene
+                    [self changeSceneStack:sceneKey];
+                    
+                    //Switch to last scene in the stack
+                    _currentIndex = scenes.count - 1;
+                    return [self viewControllerAtIndex:_currentIndex storyboard:viewController.storyboard];
+                }
+            }
+            
+        }
+        
+        //No previous scene
         return nil;
+        
     }
 
+    //Just simply scroll backwards
     _currentIndex--;
     return [self viewControllerAtIndex:_currentIndex storyboard:viewController.storyboard];
 }
