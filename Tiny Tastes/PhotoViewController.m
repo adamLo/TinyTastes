@@ -140,8 +140,8 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     } else {
 #ifdef DEBUG
         //Add a sample photo when running on simulator
-        chosenImage = [UIImage imageNamed:@"frenchfries.jpg"];
-        //chosenImage = [UIImage imageNamed:@"IMG_0609.JPG"];
+        //chosenImage = [UIImage imageNamed:@"frenchfries.jpg"];
+        chosenImage = [UIImage imageNamed:@"IMG_0609.JPG"];
         //chosenImage = [UIImage imageNamed:@"mcdonalds-filet-o-fish.png"];
         [self processImage];
 #else
@@ -162,8 +162,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 }
 
 
--(IBAction) captureNow
-{
+-(IBAction)captureNow {
 	AVCaptureConnection *videoConnection = nil;
 	for (AVCaptureConnection *connection in stillImageOutput.connections)
 	{
@@ -179,20 +178,46 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 	}
 	
 	NSLog(@"about to request a capture from: %@", stillImageOutput);
-	[stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error)
-     {
-         NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
-         chosenImage = [[UIImage alloc] initWithData:imageData];
+	[stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
+        
+        NSString *errorString;
+        
+        if (!error) {
+            if (imageSampleBuffer) {
+                
+                //Get still image data in jpeg format
+                NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
+                chosenImage = [[UIImage alloc] initWithData:imageData];
+                
+                //Process image
+                [self processImage];
+                
+            }
+            else {
+                errorString = NSLocalizedString(@"Could not take photo!", @"Error message when no photo taken");
+            }
+            
+        }
+        else {
+            NSLog(@"Error capturing photo: %@", error);
+            errorString = error.localizedDescription;
+        }
+        
+        if (errorString) {
+            //Display error
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error dialog title") message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        }
+        
 	 }];
     
     [session stopRunning];
     [captureVideoPreviewLayer removeFromSuperlayer];
     
-    [self processImage];
 }
 
 
-- (void) processImage {
+- (void)processImage {
     customizeTimerLabel.hidden = NO;
     timeDisplayLabel.hidden = NO;
     mealStepper.hidden = NO;
@@ -231,7 +256,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     foodImageView.backgroundColor = [UIColor clearColor];
     foodImageView.image = chosenImage;
     
-    foodImageView.frame = CGRectMake(0, 0, chosenImage.size.width*1.067, chosenImage.size.height*1.067);
+    foodImageView.frame = CGRectMake(0, 0, 1024, 768);
     [self.view addSubview:foodImageView];
     
 }
