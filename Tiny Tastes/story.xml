@@ -54,7 +54,7 @@
     <next id="yard2" />
 </scene>
 <scene id="yard2">
-    <image path="page_12_plain.png" x="0" y="20" w="1060" h="730" />
+    <image path="page_12_plain.jpg" x="0" y="20" w="1060" h="730" />
     <sound path="sound_page_12" type="m4a" />
     <link id="yard3" x="154" y="300" w="370" h="190" />
     <!-- animations around the pond -->
