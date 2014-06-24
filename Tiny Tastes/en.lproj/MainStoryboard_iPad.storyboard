@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -38,11 +38,15 @@
                                     <segue destination="t2j-Jj-fJN" kind="modal" id="lOn-zd-onO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Eo-IMH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1N-nt-R8G" userLabel="Animated Tiny">
+                                <rect key="frame" x="356" y="195" width="327" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Eo-IMH" userLabel="Button Tiny">
                                 <rect key="frame" x="356" y="195" width="327" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="main_tiny.jpg">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -136,6 +140,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="animatedTiny" destination="R1N-nt-R8G" id="qZq-Mo-VpM"/>
                         <outlet property="letsDrinkLabel" destination="ivY-YT-L2k" id="1LR-5B-UgI"/>
                         <outlet property="letsEatLabel" destination="ibL-mg-QET" id="vBY-7G-z0h"/>
                         <outlet property="settingsLabel" destination="cku-Cv-QdM" id="D4u-Hs-O3o"/>
@@ -1586,7 +1591,6 @@ Do You Want For...</string>
         <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
-        <image name="main_tiny.jpg" width="337" height="459"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
         <image name="pause.jpg" width="154" height="65"/>
         <image name="pediasure.jpg" width="116" height="230"/>
@@ -1607,14 +1611,14 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="7dq-CF-qXO"/>
+        <segue reference="8CT-h7-e3r"/>
         <segue reference="Z7Z-Z2-FTi"/>
-        <segue reference="h2A-7l-Kmo"/>
-        <segue reference="lOn-zd-onO"/>
-        <segue reference="P60-4d-HuF"/>
+        <segue reference="4D0-RR-fTN"/>
         <segue reference="sbx-X6-G8B"/>
-        <segue reference="r0P-sc-w0f"/>
-        <segue reference="brf-LG-yVR"/>
-        <segue reference="iI4-Xm-D66"/>
+        <segue reference="Ot4-iE-EpB"/>
+        <segue reference="P60-4d-HuF"/>
         <segue reference="ghn-Mn-MwL"/>
+        <segue reference="iI4-Xm-D66"/>
     </inferredMetricsTieBreakers>
 </document>

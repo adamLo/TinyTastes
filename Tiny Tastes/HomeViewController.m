@@ -45,12 +45,29 @@
         [audioPlayer setNumberOfLoops: -1];
         [audioPlayer play];
     }
+    
+    //Set up Tiny character animation
+    self.animatedTiny.animationImages = @[[UIImage imageNamed:@"home_tiny_0"], [UIImage imageNamed:@"home_tiny_1"], [UIImage imageNamed:@"home_tiny_2"], [UIImage imageNamed:@"home_tiny_3"], [UIImage imageNamed:@"home_tiny_4"], [UIImage imageNamed:@"home_tiny_5"], [UIImage imageNamed:@"home_tiny_6"], [UIImage imageNamed:@"home_tiny_5"], [UIImage imageNamed:@"home_tiny_4"], [UIImage imageNamed:@"home_tiny_3"], [UIImage imageNamed:@"home_tiny_2"], [UIImage imageNamed:@"home_tiny_1"]];
+    self.animatedTiny.animationRepeatCount = 0;
+    self.animatedTiny.animationDuration = 1.5;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    //Start animations
+    [self.animatedTiny startAnimating];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    //Stop animations
+    [self.animatedTiny stopAnimating];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

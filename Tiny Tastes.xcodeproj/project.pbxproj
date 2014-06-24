@@ -36,6 +36,13 @@
 		191401E91959DA64008F40C4 /* pond_bubble_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401E51959DA64008F40C4 /* pond_bubble_1.png */; };
 		191401EA1959DA64008F40C4 /* pond_bubble_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401E61959DA64008F40C4 /* pond_bubble_2.png */; };
 		191401EB1959DA64008F40C4 /* pond_bubble_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401E71959DA64008F40C4 /* pond_bubble_3.png */; };
+		191401F51959E1C9008F40C4 /* home_tiny_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401EE1959E1C9008F40C4 /* home_tiny_0.png */; };
+		191401F61959E1C9008F40C4 /* home_tiny_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401EF1959E1C9008F40C4 /* home_tiny_1.png */; };
+		191401F71959E1C9008F40C4 /* home_tiny_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F01959E1C9008F40C4 /* home_tiny_2.png */; };
+		191401F81959E1C9008F40C4 /* home_tiny_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F11959E1C9008F40C4 /* home_tiny_3.png */; };
+		191401F91959E1C9008F40C4 /* home_tiny_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F21959E1C9008F40C4 /* home_tiny_4.png */; };
+		191401FA1959E1C9008F40C4 /* home_tiny_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F31959E1C9008F40C4 /* home_tiny_5.png */; };
+		191401FB1959E1C9008F40C4 /* home_tiny_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F41959E1C9008F40C4 /* home_tiny_6.png */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		316ACB431831973A00FE3A83 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB371831973A00FE3A83 /* bowl1.png */; };
@@ -234,6 +241,13 @@
 		191401E51959DA64008F40C4 /* pond_bubble_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pond_bubble_1.png; sourceTree = "<group>"; };
 		191401E61959DA64008F40C4 /* pond_bubble_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pond_bubble_2.png; sourceTree = "<group>"; };
 		191401E71959DA64008F40C4 /* pond_bubble_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pond_bubble_3.png; sourceTree = "<group>"; };
+		191401EE1959E1C9008F40C4 /* home_tiny_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_0.png; sourceTree = "<group>"; };
+		191401EF1959E1C9008F40C4 /* home_tiny_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_1.png; sourceTree = "<group>"; };
+		191401F01959E1C9008F40C4 /* home_tiny_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_2.png; sourceTree = "<group>"; };
+		191401F11959E1C9008F40C4 /* home_tiny_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_3.png; sourceTree = "<group>"; };
+		191401F21959E1C9008F40C4 /* home_tiny_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_4.png; sourceTree = "<group>"; };
+		191401F31959E1C9008F40C4 /* home_tiny_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_5.png; sourceTree = "<group>"; };
+		191401F41959E1C9008F40C4 /* home_tiny_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_6.png; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
@@ -520,6 +534,29 @@
 			path = "Pond Animations";
 			sourceTree = "<group>";
 		};
+		191401EC1959E1C9008F40C4 /* Home screen */ = {
+			isa = PBXGroup;
+			children = (
+				191401ED1959E1C9008F40C4 /* Tiny */,
+			);
+			name = "Home screen";
+			path = "Tiny Tastes/Images/Home screen";
+			sourceTree = "<group>";
+		};
+		191401ED1959E1C9008F40C4 /* Tiny */ = {
+			isa = PBXGroup;
+			children = (
+				191401EE1959E1C9008F40C4 /* home_tiny_0.png */,
+				191401EF1959E1C9008F40C4 /* home_tiny_1.png */,
+				191401F01959E1C9008F40C4 /* home_tiny_2.png */,
+				191401F11959E1C9008F40C4 /* home_tiny_3.png */,
+				191401F21959E1C9008F40C4 /* home_tiny_4.png */,
+				191401F31959E1C9008F40C4 /* home_tiny_5.png */,
+				191401F41959E1C9008F40C4 /* home_tiny_6.png */,
+			);
+			path = Tiny;
+			sourceTree = "<group>";
+		};
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
@@ -733,6 +770,7 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				191401EC1959E1C9008F40C4 /* Home screen */,
 				FDC918E918552ECF00B19DA4 /* book_cover.jpg */,
 				FDC918E318552A6700B19DA4 /* play.jpg */,
 				FDC918E418552A6700B19DA4 /* pause.jpg */,
@@ -913,7 +951,9 @@
 				FD23B0F9184166DE00D1C9A9 /* drinking_glass_2.jpg in Resources */,
 				FD16EA7018524A1900A801B3 /* sound_page_13.m4a in Resources */,
 				FDA9D1B5185507E200600A8C /* page_18.jpg in Resources */,
+				191401F61959E1C9008F40C4 /* home_tiny_1.png in Resources */,
 				FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */,
+				191401FB1959E1C9008F40C4 /* home_tiny_6.png in Resources */,
 				FD23B10718416A3200D1C9A9 /* drinking_sippy_2.jpg in Resources */,
 				FD9B72D41835CFCF000D76CD /* page_1.jpg in Resources */,
 				FD2AC77E183AC66900A7D6A1 /* page_3.jpg in Resources */,
@@ -965,6 +1005,7 @@
 				FD70734718303865003BFC29 /* cutout.jpg in Resources */,
 				FD23B13018429F2500D1C9A9 /* this_is_good.m4a in Resources */,
 				FD187ED5183BE4420021D98F /* page_6.jpg in Resources */,
+				191401F51959E1C9008F40C4 /* home_tiny_0.png in Resources */,
 				FD16EA7118524A1900A801B3 /* sound_page_12.m4a in Resources */,
 				FD70733E18303865003BFC29 /* lets_drink.jpg in Resources */,
 				FD23B10518416A3200D1C9A9 /* drinking_pediasure_2.jpg in Resources */,
@@ -986,6 +1027,7 @@
 				191401C61958CB89008F40C4 /* page_15fr@2x.jpg in Resources */,
 				FD70734518303865003BFC29 /* eating_critter_2.jpg in Resources */,
 				316ACB461831973A00FE3A83 /* bowl4.png in Resources */,
+				191401F91959E1C9008F40C4 /* home_tiny_4.png in Resources */,
 				FD23B12E18429F2500D1C9A9 /* eating_sound_2.m4a in Resources */,
 				191401E81959DA64008F40C4 /* pond_bubble_0.png in Resources */,
 				FD16EA7618524A1900A801B3 /* sound_page_7.m4a in Resources */,
@@ -999,12 +1041,14 @@
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FD23B12B18429F2500D1C9A9 /* trying_new_things.m4a in Resources */,
 				FDA9D1B6185507E200600A8C /* page_17.jpg in Resources */,
+				191401F81959E1C9008F40C4 /* home_tiny_3.png in Resources */,
 				FD23B12718429F2500D1C9A9 /* eating_tried_some_feedback.m4a in Resources */,
 				316ACB481831973A00FE3A83 /* bowl6.png in Resources */,
 				191401CC1958CB89008F40C4 /* page_17fr@2x.jpg in Resources */,
 				316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */,
 				FD2AC77D183AC66900A7D6A1 /* page_4.jpg in Resources */,
 				FD23B1151841770000D1C9A9 /* narration_on.jpg in Resources */,
+				191401F71959E1C9008F40C4 /* home_tiny_2.png in Resources */,
 				FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */,
 				FD16EA581850414D00A801B3 /* page_15.jpg in Resources */,
 				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
@@ -1020,6 +1064,7 @@
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
 				316ACB451831973A00FE3A83 /* bowl3.png in Resources */,
 				316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */,
+				191401FA1959E1C9008F40C4 /* home_tiny_5.png in Resources */,
 				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
 				191401E21959D4C0008F40C4 /* pond_qmarks_1.png in Resources */,
 				FD23B12C18429F2500D1C9A9 /* its_fun_eating_together.m4a in Resources */,

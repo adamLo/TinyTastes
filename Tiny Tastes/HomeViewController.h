@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
+@property (weak, nonatomic) IBOutlet UIImageView *animatedTiny; /** ImageView for Animated tiny phase images */
+
 @end
