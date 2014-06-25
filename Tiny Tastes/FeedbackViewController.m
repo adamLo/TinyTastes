@@ -40,13 +40,10 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (![prefs boolForKey:@"HasLaunchedOnce"]) { //first time the app was launched
         [prefs setBool:YES forKey:@"HasLaunchedOnce"];
-        [prefs synchronize];
         // Initialize user's coins to 0
         [prefs setInteger:0 forKey:@"coinsKey"];
+        [prefs synchronize];
     }
-    // Add earned number of coins to user's total
-    NSInteger myNumCoins = [prefs integerForKey:@"coinsKey"] + self.numCoins;
-    [prefs setInteger:myNumCoins forKey:@"coinsKey"];
     
     NSString *path;
     if (self.numCoins == 1) {  //Tried some
@@ -80,6 +77,14 @@
         [audioPlayer play];
     }
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    // Add earned number of coins to user's total
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSInteger myNumCoins = [prefs integerForKey:@"coinsKey"] + self.numCoins;
+    [prefs setInteger:myNumCoins forKey:@"coinsKey"];
+    [prefs synchronize];
+}
     
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
@@ -95,4 +100,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)homePressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (IBAction)shopPressed:(id)sender {
+    [self performSegueWithIdentifier:@"goShopping" sender:sender];
+}
 @end

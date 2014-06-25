@@ -21,4 +21,6 @@
 
 - (void) setStoryViewController:(StoryViewController *) controller;
 
+- (IBAction)homeButtonPressed:(id)sender; /** User pressed Home button to go back to home screen */
+
 @end

@@ -51,4 +51,6 @@
 - (IBAction)toggleDinnerAlert:(id)sender;
 - (IBAction)toggleEveningSnackAlert:(id)sender;
 
+- (IBAction)backPressed:(id)sender; /** User pressed back button to go back to previous screen */
+
 @end

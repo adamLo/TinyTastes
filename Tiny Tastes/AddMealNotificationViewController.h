@@ -17,10 +17,11 @@
     IBOutlet UIButton *saveButton;    
 }
 
-- (IBAction)save:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property(nonatomic) NSString *currentMeal;
 @property(nonatomic) NSDate *currentNotificationTime;
+
+- (IBAction)backPressed:(id)sender; /** User pressed back button to go back to previous screen */
+- (IBAction)save:(id)sender; /** User pressed save button to persist changes and go back */
 
 @end

@@ -47,6 +47,20 @@
     snackStepper.maximumValue = 60;
     drinkStepper.maximumValue = 60;
     
+    mealStepper.wraps = YES;
+    snackStepper.wraps = YES;
+    drinkStepper.wraps = YES;
+    mealStepper.autorepeat = YES;
+    snackStepper.autorepeat = YES;
+    drinkStepper.autorepeat = YES;
+    mealStepper.continuous = YES;
+    snackStepper.continuous = YES;
+    drinkStepper.continuous = YES;
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if(![[[prefs dictionaryRepresentation] allKeys] containsObject:@"mealTimer"]) {
         
@@ -66,19 +80,10 @@
         drinkStepper.value = myDrinkTimer;
     }
     
-    mealStepper.wraps = YES;
-    snackStepper.wraps = YES;
-    drinkStepper.wraps = YES;
-    mealStepper.autorepeat = YES;
-    snackStepper.autorepeat = YES;
-    drinkStepper.autorepeat = YES;
-    mealStepper.continuous = YES;
-    snackStepper.continuous = YES;
-    drinkStepper.continuous = YES;
-    
     mealTimerText.text = [NSString stringWithFormat:@"%.f", mealStepper.value];
     snackTimerText.text = [NSString stringWithFormat:@"%.f", snackStepper.value];
     drinkTimerText.text = [NSString stringWithFormat:@"%.f", drinkStepper.value];
+    
 }
 
 - (IBAction)mealStepperValueChanged:(id)sender
@@ -109,6 +114,10 @@
     // Change drink timer value in user defaults
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:stepperValue forKey:@"drinkTimer"];
+}
+
+- (IBAction)backPressed:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning

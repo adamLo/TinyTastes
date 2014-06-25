@@ -40,11 +40,6 @@
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"main_menu_music" ofType:@"mp3"];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
-        [audioPlayer setVolume:0.5];
-        [audioPlayer setNumberOfLoops: -1];
-        [audioPlayer play];
-    }
     
     //Set up Tiny character animation
     self.animatedTiny.animationImages = @[[UIImage imageNamed:@"home_tiny_0"], [UIImage imageNamed:@"home_tiny_1"], [UIImage imageNamed:@"home_tiny_2"], [UIImage imageNamed:@"home_tiny_3"], [UIImage imageNamed:@"home_tiny_4"], [UIImage imageNamed:@"home_tiny_5"], [UIImage imageNamed:@"home_tiny_6"], [UIImage imageNamed:@"home_tiny_5"], [UIImage imageNamed:@"home_tiny_4"], [UIImage imageNamed:@"home_tiny_3"], [UIImage imageNamed:@"home_tiny_2"], [UIImage imageNamed:@"home_tiny_1"]];
@@ -60,8 +55,20 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
+        [audioPlayer setVolume:0.5];
+        [audioPlayer setNumberOfLoops: -1];
+        [audioPlayer play];
+    }
+    
     //Start animations
     [self.animatedTiny startAnimating];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    if ([audioPlayer isPlaying]) {
+        [audioPlayer stop];
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -71,10 +78,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([audioPlayer isPlaying]) {
-        [audioPlayer stop];
-        audioPlayer = nil;
-    }
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation

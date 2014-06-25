@@ -30,6 +30,9 @@
     UIColor *backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     self.view.backgroundColor = backgroundColor;
 	[self setFonts];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     [mealLabel setText:[NSString stringWithFormat:@"Meal:   %@", _currentMeal]];
     _datePicker.date = _currentNotificationTime;
 }
@@ -59,8 +62,12 @@
     if (canceled) {
         [self scheduleDailyNotification:_currentMeal setHour:[dateComps hour] setMinute:[dateComps minute]];
     }
+    
+    //Go back
+    [self.navigationController popViewControllerAnimated:YES];
 }
-- (void)scheduleDailyNotification:(NSString *)mealName setHour:(int)hour setMinute:(int)minute
+
+- (void)scheduleDailyNotification:(NSString *)mealName setHour:(NSInteger)hour setMinute:(NSInteger)minute
 {
     NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar] ;
     NSDateComponents *componentsForReferenceDate = [calendar components:(NSDayCalendarUnit
@@ -114,14 +121,16 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"saveEditedNotif"]){
-        [self save:sender];
-    }
+    
 }
-
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     return NO;
 }
+
+- (IBAction)backPressed:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

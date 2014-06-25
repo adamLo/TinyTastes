@@ -120,6 +120,10 @@
     _viewController = controller;
 }
 
+- (IBAction)homeButtonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 /*- (void) changeSceneStack:(UIButton*)button
 {
     NSInteger buttonId = [button tag];

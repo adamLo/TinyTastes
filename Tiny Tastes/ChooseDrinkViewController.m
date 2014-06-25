@@ -30,6 +30,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)awakeFromNib {
+    //by default, set chosen drink to the sippy cup
+    choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
+    choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
+    
+    chosenDrinkView = pediasureGlow;
+}
+
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
@@ -45,14 +53,13 @@
     drinkStepper.wraps = YES;
     drinkStepper.autorepeat = YES;
     drinkStepper.continuous = YES;
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     drinkStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"drinkTimer"];
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", drinkStepper.value];
     
-    //by default, set chosen drink to the sippy cup
-    choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
-    
-    chosenDrinkView = pediasureGlow;
     [self setAnimation:pediasureGlow];
 }
 
@@ -61,6 +68,13 @@
     if (chosenDrinkView != NULL) {
         [chosenDrinkView stopAnimating];
     }
+    
+    //Clear current selection
+    sippyGlow.animationImages = nil;
+    pediasureGlow.animationImages = nil;
+    glassGlow.animationImages = nil;
+    bottleGlow.animationImages = nil;
+    juiceBoxGlow.animationImages = nil;
     
     chosenDrinkView = animatedImageView;
     animatedImageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"blue_circle.jpg"],
@@ -109,6 +123,10 @@
     choiceDrink1 = [UIImage imageNamed:@"drinking_bottle_1.jpg"];
     choiceDrink2 = [UIImage imageNamed:@"drinking_bottle_2.jpg"];
     [self setAnimation:bottleGlow];
+}
+
+- (IBAction)homePressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

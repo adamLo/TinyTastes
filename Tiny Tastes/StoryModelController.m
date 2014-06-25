@@ -21,7 +21,7 @@
 @interface StoryModelController()
 @property (readonly, strong, nonatomic) NSMutableDictionary *pageData;
 @property (strong, nonatomic) NSMutableArray *sceneStack;
-@property (assign, nonatomic) int currentIndex;
+@property (assign, nonatomic) NSInteger currentIndex;
 @end
 
 @implementation StoryModelController

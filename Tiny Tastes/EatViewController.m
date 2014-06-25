@@ -56,16 +56,7 @@
     [self setUpAudioPlayers];
     
     // display picture of the food
-    foodImageView = [[UIImageView alloc] init];
-    if (self.foodImage == NULL) {
-        self.foodImage = [UIImage imageNamed:@"default_food.png"];
-        foodImageView.frame = CGRectMake(362, 312, 400, 400);
-        
-    } else{
-        foodImageView.frame = CGRectMake(312, 332, 500, 450);
-    }
-    
-    foodImageView.image = self.foodImage;
+    foodImageView = [[UIImageView alloc] initWithFrame:CGRectMake(362, 312, 400, 400)];
     [self.view addSubview:foodImageView];
     
     // display disappearing food
@@ -94,7 +85,7 @@
     animationDuration = secondsCount;
     
     [self.view addSubview:disappearingFood];
-    [disappearingFood startAnimating];
+    
     
     // display critter animation -- 3 seconds eating, 12 seconds with spoon back down on plate
     eatingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"eating_critter_1.jpg"],
@@ -104,8 +95,24 @@
                                      [UIImage imageNamed:@"eating_critter_1.jpg"],nil];
     eatingCritter.animationDuration = 15;
     [self.view addSubview:eatingCritter];
-    [eatingCritter startAnimating];
+    
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    //Display food
+    if (!self.foodImage) {
+        self.foodImage = [UIImage imageNamed:@"default_food.png"];
+        foodImageView.frame = CGRectMake(362, 312, 400, 400);
+    } else {
+        foodImageView.frame = CGRectMake(312, 332, 500, 450);
+    }    
+    foodImageView.image = self.foodImage;
+    
+    //Start animations
+    [disappearingFood startAnimating];
+    [eatingCritter startAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -118,6 +125,10 @@
     
     //Stop all audio players when navigating away to make sure all sounds canceled
     [self stopAudioPlayers];
+    
+    //Stop animations
+    [disappearingFood stopAnimating];
+    [eatingCritter stopAnimating];
 }
 
 - (void)timerRun {
@@ -339,5 +350,8 @@
     
 }
 
+- (IBAction)homePressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 @end

@@ -30,6 +30,9 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self setFonts];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     [self displayCurrentSettings];
 }
 
@@ -282,6 +285,10 @@
         [eveningSnackTime setTextColor:[UIColor blackColor]];
         [eveningSnackEdit setEnabled:YES];
     }
+}
+
+- (IBAction)backPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

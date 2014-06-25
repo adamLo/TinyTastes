@@ -25,4 +25,7 @@
 @property(nonatomic) BOOL eating;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
+- (IBAction)homePressed:(id)sender; /** User pressed home button to go back to home screen */
+- (IBAction)shopPressed:(id)sender; /** User pressed shop button to go shopping */
+
 @end

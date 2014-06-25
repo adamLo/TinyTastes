@@ -14,4 +14,6 @@
 @property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
+- (IBAction)homePressed:(id)sender; /** User pressed home button to go back to home screen */
+
 @end

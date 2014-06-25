@@ -36,23 +36,36 @@
         [audioPlayer setNumberOfLoops: -1];
         [audioPlayer play];
     }
-
-    self.coinsNotifLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"coinsKey"];
-    self.coinsNotifLabel.text = [NSString stringWithFormat:@"You have %d coins", myNumCoins];
+    
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+- (void)viewWillAppear:(BOOL)animated {
+    
+    //Display actual coins
+    self.coinsNotifLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"coinsKey"];
+    self.coinsNotifLabel.text = [NSString stringWithFormat:@"You have %ld coins", (long)myNumCoins];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
     if ([audioPlayer isPlaying]) {
         [audioPlayer stop];
         audioPlayer = nil;
     }
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)homePressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

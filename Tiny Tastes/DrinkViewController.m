@@ -51,6 +51,11 @@
     drinkingCritter.animationImages = [NSArray arrayWithObjects:drinkingImage1, drinkingImage2, nil];
     drinkingCritter.animationDuration = 10;
     [self.view addSubview:drinkingCritter];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    //Start animating
     [drinkingCritter startAnimating];
     
     [self setUpAudioPlayers];
@@ -61,6 +66,9 @@
     
     //Stop audio players when navigation away from screen to make sure they stop
     [self stopAudioPlayers];
+    
+    //Stop animation
+    [drinkingCritter stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -237,5 +245,13 @@
 }
 
 
+
+- (IBAction)homeButtonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (IBAction)backPressed:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

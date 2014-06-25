@@ -39,6 +39,9 @@
     setTimerButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     setAlertsButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     // Set background sound button state
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
         [backgroundSoundSwitch setOn:YES animated:YES];
@@ -55,6 +58,7 @@
         [storyNarrationSwitch setOn:NO animated:YES];
     }
 }
+
 
 - (IBAction)backgroundSoundButtonClicked:(UIButton *)sender
 {
@@ -80,6 +84,10 @@
         [storyNarrationLabel setTextColor:[UIColor grayColor]];
     }
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (IBAction)homePressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

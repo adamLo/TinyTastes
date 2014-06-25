@@ -19,7 +19,7 @@
     int secondsCount;
     int secondsCountFinal;
     int lastEaten;
-    int currentFrame;
+    NSInteger currentFrame;
     int animationDuration;
     bool blinkStatus;
     bool phraseStatus;
@@ -48,5 +48,7 @@
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer6;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer7;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer8;
+
+- (IBAction)homePressed:(id)sender; /** User pressed home button to go back to home screen */
 
 @end

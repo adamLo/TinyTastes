@@ -42,4 +42,7 @@
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer4;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer5;
 
+- (IBAction)homeButtonPressed:(id)sender; /** User pressed home buttoon to go back to home screen */
+- (IBAction)backPressed:(id)sender; /**User pressed back button to go back to previous screen */
+
 @end

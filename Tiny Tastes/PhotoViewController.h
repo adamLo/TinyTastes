@@ -29,5 +29,6 @@
 - (IBAction)mealStepperValueChanged:(UIStepper *)sender;
 - (IBAction)takePhoto:(UIButton *)sender;
 - (IBAction)captureNow;
+- (IBAction)homeButtonPressed:(id)sender; /** User pressed home button to go back to home screen */
 
 @end

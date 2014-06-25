@@ -25,4 +25,6 @@
 - (IBAction)backgroundSoundButtonClicked:(UIButton *)sender;
 - (IBAction)storyNarrationButtonClicked:(UIButton *)sender;
 
+- (IBAction)homePressed:(id)sender; /** User pressed home button to go back to home screen */
+
 @end

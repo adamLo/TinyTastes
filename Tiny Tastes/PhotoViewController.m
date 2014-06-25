@@ -215,6 +215,10 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     
 }
 
+- (IBAction)homeButtonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 
 - (void)processImage {
     customizeTimerLabel.hidden = NO;
