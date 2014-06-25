@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19120D55195B623E001302FF /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D53195B623E001302FF /* bookmark.png */; };
 		19120D56195B623E001302FF /* bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D54195B623E001302FF /* bookmark@2x.png */; };
+		19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19120D58195B8E1D001302FF /* UIImage+Rotate.m */; };
 		1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1914019C19570D5E008F40C4 /* frenchfries.jpg */; };
 		191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A01957176B008F40C4 /* frenchfries@2x.jpg */; };
 		191401A319571957008F40C4 /* cutout@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A219571957008F40C4 /* cutout@2x.jpg */; };
@@ -211,6 +212,8 @@
 /* Begin PBXFileReference section */
 		19120D53195B623E001302FF /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "Tiny Tastes/Images/Story/bookmark.png"; sourceTree = "<group>"; };
 		19120D54195B623E001302FF /* bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmark@2x.png"; path = "Tiny Tastes/Images/Story/bookmark@2x.png"; sourceTree = "<group>"; };
+		19120D57195B8E1D001302FF /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotate.h"; path = "Categories/UIImage+Rotate.h"; sourceTree = "<group>"; };
+		19120D58195B8E1D001302FF /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Rotate.m"; path = "Categories/UIImage+Rotate.m"; sourceTree = "<group>"; };
 		1914019C19570D5E008F40C4 /* frenchfries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frenchfries.jpg; sourceTree = "<group>"; };
 		191401A01957176B008F40C4 /* frenchfries@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frenchfries@2x.jpg"; sourceTree = "<group>"; };
 		191401A219571957008F40C4 /* cutout@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cutout@2x.jpg"; sourceTree = "<group>"; };
@@ -840,6 +843,8 @@
 				EC7124B818134358007319C5 /* StoryModelController.m */,
 				EC7124BA181343A2007319C5 /* StoryViewController.h */,
 				EC7124BB181343A2007319C5 /* StoryViewController.m */,
+				19120D57195B8E1D001302FF /* UIImage+Rotate.h */,
+				19120D58195B8E1D001302FF /* UIImage+Rotate.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1120,6 +1125,7 @@
 				EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */,
 				EC7124C618146152007319C5 /* XMLDelegate.m in Sources */,
 				31544D40181DAF41006C9D94 /* OverlayView.m in Sources */,
+				19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,

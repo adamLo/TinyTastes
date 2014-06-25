@@ -19,6 +19,7 @@
 #import <CoreVideo/CoreVideo.h>
 #import <CoreMedia/CoreMedia.h>
 #import <ImageIO/ImageIO.h>
+#import "UIImage+Rotate.h"
 
 @interface PhotoViewController ()
 
@@ -30,6 +31,9 @@ AVCaptureStillImageOutput *stillImageOutput;
 OverlayView *overlay;
 AVCaptureSession *session;
 AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
+
+static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -115,6 +119,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
             NSLog(@"ERROR: trying to open camera: %@", error);
         }
         [session addInput:input];
+        
 		
         stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
         NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys: AVVideoCodecJPEG, AVVideoCodecKey, nil];
@@ -242,6 +247,11 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", mealStepper.value];
     
     UIImage *mask = [UIImage imageNamed:@"cutout.jpg"];
+    
+    if ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationLandscapeLeft) {
+        //Rotate image by 180 degrees if held home button to left
+        chosenImage = [chosenImage rotate:UIImageOrientationDown];
+    }
     
     // Crop the image with an image mask
     chosenImage = [self maskImage :chosenImage withMask:mask];
