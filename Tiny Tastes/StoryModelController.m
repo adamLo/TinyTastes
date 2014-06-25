@@ -21,7 +21,6 @@
 @interface StoryModelController()
 @property (readonly, strong, nonatomic) NSMutableDictionary *pageData;
 @property (strong, nonatomic) NSMutableArray *sceneStack;
-@property (assign, nonatomic) NSInteger currentIndex;
 @end
 
 @implementation StoryModelController
@@ -123,6 +122,21 @@
     }
     _currentIndex++;
     return [self viewControllerAtIndex:_currentIndex storyboard:viewController.storyboard];
+}
+
+- (void)goToSceneWithId:(NSString*)sceneId {
+    for (NSString *sceneKey in self.pageData) {
+        NSArray *scenes = [self.pageData objectForKey:sceneKey];
+        for (Scene *scene in scenes) {
+            if ([scene.sceneID isEqualToString:sceneId]) {
+                //Change scene stack for the one that has this scene
+                _sceneStack = [self.pageData objectForKey:sceneKey];
+                _currentIndex = [scenes indexOfObject:scene];
+                
+                break;
+            }
+        }
+    }
 }
 
 @end

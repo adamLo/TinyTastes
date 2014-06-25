@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StoryDataViewController.h"
 
+
 @class StoryViewController;
 
 @interface StoryViewController : UIViewController <UIPageViewControllerDelegate>
@@ -16,5 +17,7 @@
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
 - (void) changeSceneStack:(NSString *) key;
+
+- (void)gotoSceneWithId:(NSString*)sceneId;
 
 @end

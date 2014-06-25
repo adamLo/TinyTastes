@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19120D55195B623E001302FF /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D53195B623E001302FF /* bookmark.png */; };
+		19120D56195B623E001302FF /* bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D54195B623E001302FF /* bookmark@2x.png */; };
 		1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1914019C19570D5E008F40C4 /* frenchfries.jpg */; };
 		191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A01957176B008F40C4 /* frenchfries@2x.jpg */; };
 		191401A319571957008F40C4 /* cutout@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A219571957008F40C4 /* cutout@2x.jpg */; };
@@ -207,6 +209,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19120D53195B623E001302FF /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "Tiny Tastes/Images/Story/bookmark.png"; sourceTree = "<group>"; };
+		19120D54195B623E001302FF /* bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmark@2x.png"; path = "Tiny Tastes/Images/Story/bookmark@2x.png"; sourceTree = "<group>"; };
 		1914019C19570D5E008F40C4 /* frenchfries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frenchfries.jpg; sourceTree = "<group>"; };
 		191401A01957176B008F40C4 /* frenchfries@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frenchfries@2x.jpg"; sourceTree = "<group>"; };
 		191401A219571957008F40C4 /* cutout@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cutout@2x.jpg"; sourceTree = "<group>"; };
@@ -757,6 +761,8 @@
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				19120D53195B623E001302FF /* bookmark.png */,
+				19120D54195B623E001302FF /* bookmark@2x.png */,
 				191401EC1959E1C9008F40C4 /* Home screen */,
 				FDC918E918552ECF00B19DA4 /* book_cover.jpg */,
 				FDC918E318552A6700B19DA4 /* play.jpg */,
@@ -1045,10 +1051,12 @@
 				FD70734318303865003BFC29 /* glass.jpg in Resources */,
 				191401A319571957008F40C4 /* cutout@2x.jpg in Resources */,
 				FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */,
+				19120D55195B623E001302FF /* bookmark.png in Resources */,
 				FD16EA7518524A1900A801B3 /* sound_page_8.m4a in Resources */,
 				1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */,
 				FD29BBDB184D0B7A00E59036 /* page_9.jpg in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
+				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
 				316ACB451831973A00FE3A83 /* bowl3.png in Resources */,
 				316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */,

@@ -10,8 +10,10 @@
 #import "StoryModelController.h"
 
 @interface StoryViewController ()
+
 @property (readonly, strong, nonatomic) StoryModelController *modelController;
 @property (weak, nonatomic) NSString *lastKey;
+
 @end
 
 @implementation StoryViewController
@@ -80,6 +82,13 @@
 {
     [_modelController changeSceneStack:key];
     StoryDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+}
+
+- (void)gotoSceneWithId:(NSString*)sceneId {
+    [_modelController goToSceneWithId:sceneId];
+    StoryDataViewController *startingViewController = [self.modelController viewControllerAtIndex:self.modelController.currentIndex storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
