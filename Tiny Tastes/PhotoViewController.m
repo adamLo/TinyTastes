@@ -254,7 +254,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     UIImageView *foodImageView = [[UIImageView alloc] init];
     foodImageView.opaque = NO;
     foodImageView.backgroundColor = [UIColor clearColor];
-    foodImageView.contentMode = UIViewContentModeScaleAspectFill;
+    foodImageView.contentMode = UIViewContentModeScaleAspectFit;
     foodImageView.image = chosenImage;
     
     foodImageView.frame = CGRectMake(0, 0, 1024, 768);
