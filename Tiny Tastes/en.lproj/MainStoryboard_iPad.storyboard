@@ -108,7 +108,7 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="t2j-Jj-fJN" kind="modal" identifier="toPhotoView" id="fZK-si-7Zi"/>
+                        <segue destination="t2j-Jj-fJN" kind="push" identifier="toPhotoView" id="fZK-si-7Zi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZpT-V1-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -722,7 +722,7 @@ photo</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02E-bE-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1073" y="-3395"/>
+            <point key="canvasLocation" x="-816" y="-3395"/>
         </scene>
         <!--Story Data View Controller-->
         <scene sceneID="0wC-ax-qQz">
@@ -754,7 +754,7 @@ photo</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="t2j-Jj-fJN" kind="push" identifier="skipToEat" id="h34-Ks-joT"/>
+                                    <segue destination="t2j-Jj-fJN" kind="push" identifier="toPhotoView" id="h34-Ks-joT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33a-Ja-PTi" userLabel="Toggle mute Button">
@@ -1572,9 +1572,9 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lOn-zd-onO"/>
-        <segue reference="qg2-we-N1h"/>
-        <segue reference="DIb-en-1tD"/>
         <segue reference="T73-72-6qB"/>
+        <segue reference="fZK-si-7Zi"/>
+        <segue reference="DIb-en-1tD"/>
+        <segue reference="ZMd-87-eiT"/>
     </inferredMetricsTieBreakers>
 </document>
