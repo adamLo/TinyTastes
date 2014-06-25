@@ -19,7 +19,6 @@
 #import <CoreVideo/CoreVideo.h>
 #import <CoreMedia/CoreMedia.h>
 #import <ImageIO/ImageIO.h>
-#import "UIImage+Resize.h"
 
 @interface PhotoViewController ()
 
@@ -240,9 +239,6 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     
     UIImage *mask = [UIImage imageNamed:@"cutout.jpg"];
     
-    //Resize image
-    chosenImage = [chosenImage resizedImageWithContentMode:UIViewContentModeScaleAspectFill bounds:mask.size interpolationQuality:kCGInterpolationHigh];
-    
     // Crop the image with an image mask
     chosenImage = [self maskImage :chosenImage withMask:mask];
     
@@ -254,6 +250,7 @@ AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
     UIImageView *foodImageView = [[UIImageView alloc] init];
     foodImageView.opaque = NO;
     foodImageView.backgroundColor = [UIColor clearColor];
+    foodImageView.contentMode = UIViewContentModeScaleAspectFill;
     foodImageView.image = chosenImage;
     
     foodImageView.frame = CGRectMake(0, 0, 1024, 768);
