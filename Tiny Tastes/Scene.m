@@ -12,7 +12,7 @@
 @synthesize sceneID, images, links, linkDestinations, sounds;
 
 - (NSString*)description {
-    return [NSString stringWithFormat:@"Scene [sceneId = %@, links=%@, likDestinations=%@, next=%d, end=%d, animations=%@]", sceneID, links, linkDestinations, self.next, self.end, self.animations];
+    return [NSString stringWithFormat:@"Scene [sceneId = %@, links=%@, likDestinations=%@, next=%d, end=%d, endStack=%d, animations=%@, nextSceneID=%@]", sceneID, links, linkDestinations, self.next, self.end, self.endStack, self.animations, self.nextSceneID];
 }
 
 @end

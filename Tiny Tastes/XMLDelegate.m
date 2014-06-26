@@ -31,11 +31,15 @@ didStartElement:(NSString *)elementName
         currentScene = [[Scene alloc] init];
         NSString *isTitle = (NSString *) [attributeDict objectForKey:@"title"];
         NSString *isEnding = (NSString *) [attributeDict objectForKey:@"end"];
+        NSString *isEndStack = (NSString *) [attributeDict objectForKey:@"endstack"];
         if ([isTitle isEqualToString:@"true"]) {
             [currentScene setTitlePage:YES];
         }
         if ([isEnding isEqualToString:@"true"]) {
             [currentScene setEnd:YES];
+        }
+        if ([isEndStack isEqualToString:@"true"]) {
+            [currentScene setEndStack:YES];
         }
         currentScene.images = [[NSMutableArray alloc] init];
         currentScene.links = [[NSMutableArray alloc] init];
@@ -56,6 +60,7 @@ didStartElement:(NSString *)elementName
     
     if ([elementName isEqualToString:@"next"]) {
         [currentScene setNext:YES];
+        currentScene.nextSceneID = [attributeDict objectForKey:@"id"];
     }
     
     if ([elementName isEqualToString:@"link"]) {
@@ -75,14 +80,12 @@ didStartElement:(NSString *)elementName
     }
     
     if ([elementName isEqualToString:@"animations"]) {
-        NSLog(@"Animations");
         if (!currentScene.animations) {
             currentScene.animations = [[NSMutableArray alloc] init];
         }
     }
     
     if ([elementName isEqualToString:@"animation"]) {
-        NSLog(@"Animation");
         //Create current animation pointer and copy attributes
         currentAnimation = [[UIImageView alloc] initWithFrame:CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue])];
         currentAnimation.animationDuration = [[attributeDict objectForKey:@"duration"] doubleValue];
@@ -117,7 +120,7 @@ didStartElement:(NSString *)elementName
  qualifiedName:(NSString *)qName {
     if ([elementName isEqualToString:@"scene"]) {
         [currentSceneArray addObject:currentScene];
-        if ([currentScene next] != YES) {
+        if ([currentScene endStack]) {
             [sceneDictionary setObject:currentSceneArray forKey:((Scene *)[currentSceneArray objectAtIndex:0]).sceneID];
             currentSceneArray = [[NSMutableArray alloc] init];
         }

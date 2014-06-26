@@ -24,5 +24,7 @@
 @property (nonatomic, assign) BOOL next;
 @property (nonatomic, assign) BOOL end;
 @property (nonatomic, retain) NSMutableArray *animations; /** Lopped andimations on the scene */
+@property (nonatomic, assign) BOOL endStack; /** Indicate that this scene was the final in the stack */
+@property (nonatomic, retain) NSString* nextSceneID; /** ID of next scene */
 
 @end

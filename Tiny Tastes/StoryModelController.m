@@ -83,18 +83,20 @@
     if ((_currentIndex == 0) || (_currentIndex == NSNotFound)) {
         //This is the first page of the current scene stack
         
+        Scene *currentScene = self.sceneStack[_currentIndex];
+        
         //Check if there is a preceding scene
         for (NSString *sceneKey in self.pageData) {
             NSArray *scenes = [self.pageData objectForKey:sceneKey];
             for (Scene *scene in scenes) {            
-                if ([scene.linkDestinations indexOfObject:[(Scene*)self.sceneStack[_currentIndex] sceneID]] != NSNotFound) {
+                if (([scene.linkDestinations indexOfObject:currentScene.sceneID] != NSNotFound) || [scene.nextSceneID isEqualToString:currentScene.sceneID]) {
                     //Got the last fork in the story
                     
                     //Change scene stack for the one that has this scene
                     [self changeSceneStack:sceneKey];
                     
                     //Switch to last scene in the stack
-                    _currentIndex = scenes.count - 1;
+                    _currentIndex = [scenes indexOfObject:scene];
                     return [self viewControllerAtIndex:_currentIndex storyboard:viewController.storyboard];
                 }
             }
@@ -118,7 +120,14 @@
         return nil;
     }
     if (_currentIndex == [self.sceneStack count] - 1) {
-        return nil;
+        NSString *nextId = [(Scene*)[self.sceneStack objectAtIndex:_currentIndex] nextSceneID];
+        if (nextId) {
+            [self changeSceneStack:nextId];
+            _currentIndex = -1; //To let it increase to 0;
+        }
+        else {
+            return nil;
+        }
     }
     _currentIndex++;
     return [self viewControllerAtIndex:_currentIndex storyboard:viewController.storyboard];
