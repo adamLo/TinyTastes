@@ -5,62 +5,62 @@
 </scene>
 <scene id="opening01">
     <image path="story_page_01.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_1" type="m4a" />
+    <sound path="story_sound_p01" type="m4a" />
     <next id="opening02" />
 </scene>
 <scene id="opening02">
     <image path="story_page_02.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_2" type="m4a" />
+    <sound path="story_sound_p02" type="m4a" />
     <next id="opening03" />
 </scene>
 <scene id="opening03">
     <image path="story_page_03.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_3" type="m4a" />
+    <sound path="story_sound_p03" type="m4a" />
     <next id="opening04" />
 </scene>
 <scene id="opening04">
     <image path="story_page_04.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_4" type="m4a" />
+    <sound path="story_sound_p04" type="m4a" />
     <next id="opening05" />
 </scene>
 <scene id="opening05">
     <image path="story_page_05.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_5" type="m4a" />
+    <sound path="story_sound_p05" type="m4a" />
     <next id="opening06" />
 </scene>
 <scene id="opening06">
     <image path="story_page_06.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_6" type="m4a" />
+    <sound path="story_sound_p06" type="m4a" />
     <next id="opening07" />
 </scene>
 <scene id="opening07">
     <image path="story_page_07.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_6" type="m4a" />
+    <sound path="story_sound_p07" type="m4a" />
     <next id="opening08" />
 </scene>
 <scene id="opening08">
     <image path="story_page_08.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_8" type="m4a" />
+    <sound path="story_sound_p08" type="m4a" />
     <next id="opening09" />
 </scene>
 <scene id="opening09">
     <image path="story_page_09.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_9" type="m4a" />
+    <sound path="story_sound_p09" type="m4a" />
     <next id="opening10" />
 </scene>
 <scene id="opening10" endstack="true">
     <image path="story_page_10.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_10" type="m4a" />
+    <sound path="story_sound_p10" type="m4a" />
     <link id="yard01" x="570" y="182" w="400" h="315" />
 </scene>
 <scene id="yard01">
     <image path="story_page_11.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_11" type="m4a" />
+    <sound path="story_sound_p11" type="m4a" />
     <next id="yard02" />
 </scene>
 <scene id="yard02" endstack="true">
     <image path="story_page_12_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_12" type="m4a" />
+    <sound path="story_sound_p12" type="m4a" />
     <link id="yard03" x="154" y="300" w="370" h="190" />
     <!-- animations around the pond -->
     <animations>
@@ -96,7 +96,7 @@
 <!-- Selection sceen between fish and frog -->
 <scene id="yard03" endstack="true">
     <image path="story_page_13.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_13" type="m4a" />
+    <sound path="story_sound_p13" type="m4a" />
     <link id="fish01" x="620" y="300" w="230" h="220" />
     <link id="frog01" x="270" y="420" w="155" h="140" />
 </scene>
@@ -104,27 +104,27 @@
 <!-- Fish fork -->
 <scene id="fish01">
     <image path="story_page_14_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_14" type="m4a" />
+    <sound path="story_sound_p14" type="m4a" />
     <next id="fish02" />
 </scene>
 <scene id="fish02">
     <image path="story_page_15_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_15" type="m4a" />
+    <sound path="story_sound_p15" type="m4a" />
     <next id="fish03" />
 </scene>
 <scene id="fish03">
     <image path="story_page_16_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_16" type="m4a" />
+    <sound path="story_sound_p16" type="m4a" />
     <next id="fish04" />
 </scene>
 <scene id="fish04">
     <image path="story_page_17_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_17" type="m4a" />
+    <sound path="story_sound_p17" type="m4a" />
     <next id="fish05" />
 </scene>
 <scene id="fish05">
     <image path="story_page_18_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="sound_page_18" type="m4a" />
+    <sound path="story_sound_p18" type="m4a" />
     <next id="fish06" />
 </scene>
 <scene id="fish06">

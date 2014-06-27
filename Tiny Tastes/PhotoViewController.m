@@ -184,33 +184,21 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
 	NSLog(@"about to request a capture from: %@", stillImageOutput);
 	[stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
         
-        NSString *errorString;
-        
-        if (!error) {
-            if (imageSampleBuffer) {
+        if (!error && imageSampleBuffer) {
                 
-                //Get still image data in jpeg format
-                NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
-                chosenImage = [[UIImage alloc] initWithData:imageData];
+            //Get still image data in jpeg format
+            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
+            chosenImage = [[UIImage alloc] initWithData:imageData];
                 
-                //Process image
-                [self processImage];
+            //Process image
+            [self processImage];
                 
-            }
-            else {
-                errorString = NSLocalizedString(@"Could not take photo!", @"Error message when no photo taken");
-            }
-            
         }
         else {
-            NSLog(@"Error capturing photo: %@", error);
-            errorString = error.localizedDescription;
-        }
-        
-        if (errorString) {
             //Display error
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error dialog title") message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error dialog title") message:NSLocalizedString(@"Photo could not be taken. Please try again with better focus and/or lighting.", @"Error message when failed to take photo") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
+            NSLog(@"Error taking photo:%@ samplebuffer is empty:%d", error, (imageSampleBuffer == NULL));
         }
         
 	 }];

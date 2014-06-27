@@ -74,11 +74,7 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     for (UIImageView *image in self.dataObject.images) {
         [self.view addSubview:image];
     }
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
-        for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
-            [audioPlayer playAtTime:(audioPlayer.deviceCurrentTime + 1.5)];
-        }
-    }
+    
     if (self.dataObject.titlePage == YES) {
         [self displayNarration];
         [_narrationButton addTarget:self action:@selector(toggleNarration) forControlEvents:UIControlEventTouchUpInside];
@@ -107,13 +103,22 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    //Start playing narration
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
+        for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
+            [audioPlayer setCurrentTime:0.0];
+            [audioPlayer play];
+        }
+    }
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
         for (AVAudioPlayer __strong *audioPlayer in self.dataObject.sounds) {
             [audioPlayer stop];
-            audioPlayer = nil;
         }
     }
     
