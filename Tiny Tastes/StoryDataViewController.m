@@ -133,14 +133,13 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     }
 }
 
-- (void) displayNarration
-{
+- (void)displayNarration {
     UIImage *buttonImage;
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
-        buttonImage = [UIImage imageNamed:@"narration_on.jpg"];
+        buttonImage = [UIImage imageNamed:@"button_sound-on"];
     }
     else {
-        buttonImage = [UIImage imageNamed:@"narration_off.jpg"];
+        buttonImage = [UIImage imageNamed:@"button_sound-off"];
     }
     [_narrationButton setImage:buttonImage forState:UIControlStateNormal];
 }

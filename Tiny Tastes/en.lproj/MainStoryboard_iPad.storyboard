@@ -177,7 +177,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPU-Yh-zhi" userLabel="Back Button">
                                 <rect key="frame" x="23" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="button_back.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -188,7 +188,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="888" y="33" width="101" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="save.jpg">
+                                <state key="normal" image="button_save.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -239,7 +239,7 @@ Reminders For...</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhb-fb-6hn" userLabel="Back Button">
                                 <rect key="frame" x="20" y="36" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="button_back.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -514,7 +514,7 @@ Reminders For...</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMS-gB-sjG" userLabel="Home Button">
                                 <rect key="frame" x="24" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -621,7 +621,7 @@ Reminders For...</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmP-aj-xDj" userLabel="Home Button">
                                 <rect key="frame" x="20" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -632,7 +632,7 @@ Reminders For...</string>
                                 <rect key="frame" x="809" y="668" width="215" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="start.jpg">
+                                <state key="normal" image="button_start.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -739,7 +739,7 @@ photo</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xp-ft-7vo" userLabel="Home Button">
                                 <rect key="frame" x="12" y="16" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -750,7 +750,7 @@ photo</string>
                                 <rect key="frame" x="838" y="16" width="152" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" image="skip_to_eat.jpg">
+                                <state key="normal" title="Button" image="button_skip-to-eat.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -761,7 +761,7 @@ photo</string>
                                 <rect key="frame" x="460" y="514" width="104" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal">
+                                <state key="normal" image="button_sound-off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -853,7 +853,7 @@ photo</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-4r-sly" userLabel="Home Button">
                                 <rect key="frame" x="15" y="15" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -881,7 +881,7 @@ photo</string>
                                 <rect key="frame" x="416" y="108" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="pause.jpg">
+                                <state key="normal" image="button_pause.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -893,7 +893,7 @@ photo</string>
                                 <rect key="frame" x="417" y="108" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="play.jpg">
+                                <state key="normal" image="button_play.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -998,7 +998,7 @@ photo</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-wE-hpW" userLabel="Back Button">
                                 <rect key="frame" x="16" y="18" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="button_back.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1026,29 +1026,29 @@ photo</string>
                                 <rect key="frame" x="20" y="142" width="140" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="homeButtonPressed:" destination="yZk-YG-ftA" eventType="touchUpInside" id="mJQ-zF-0KZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-YE-cvU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXd-YE-cvU" userLabel="Pause Button">
                                 <rect key="frame" x="790" y="121" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="pause.jpg">
+                                <state key="normal" image="button_pause.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="pauseButtonClicked:" destination="yZk-YG-ftA" eventType="touchUpInside" id="sGE-ik-u6d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBn-tK-VZy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBn-tK-VZy" userLabel="Play Button">
                                 <rect key="frame" x="790" y="121" width="197" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="play.jpg">
+                                <state key="normal" image="button_play.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1103,7 +1103,7 @@ photo</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-4R-xBD" userLabel="Home Button">
                                 <rect key="frame" x="40" y="603" width="121" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1208,7 +1208,7 @@ photo</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSk-Wf-jad" userLabel="Home Button">
                                 <rect key="frame" x="20" y="20" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1347,7 +1347,7 @@ Do You Want For...</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggL-7y-hs6" userLabel="Back Button">
                                 <rect key="frame" x="20" y="19" width="135" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back_arrow.jpg">
+                                <state key="normal" image="button_back.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1451,7 +1451,7 @@ Do You Want For...</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gS-ZS-5TQ" userLabel="Home Button">
                                 <rect key="frame" x="7" y="20" width="152" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home.jpg">
+                                <state key="normal" image="button_home.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1459,10 +1459,10 @@ Do You Want For...</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWG-Re-gbM">
-                                <rect key="frame" x="839" y="20" width="152" height="107"/>
+                                <rect key="frame" x="809" y="30" width="215" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" image="start.jpg">
+                                <state key="normal" title="Button" image="button_start.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1537,8 +1537,15 @@ Do You Want For...</string>
     </scenes>
     <resources>
         <image name="all_finished_label.jpg" width="284" height="142"/>
-        <image name="back_arrow.jpg" width="150" height="88"/>
         <image name="bottle.jpg" width="105" height="236"/>
+        <image name="button_back.png" width="135" height="95"/>
+        <image name="button_home.png" width="135" height="95"/>
+        <image name="button_pause.png" width="197" height="65"/>
+        <image name="button_play.png" width="197" height="65"/>
+        <image name="button_save.png" width="101" height="70"/>
+        <image name="button_skip-to-eat.png" width="152" height="107"/>
+        <image name="button_sound-off.png" width="104" height="98"/>
+        <image name="button_start.png" width="215" height="74"/>
         <image name="camera.jpg" width="473" height="364"/>
         <image name="clock_settings.jpg" width="183" height="170"/>
         <image name="coin_pouch.jpg" width="98" height="121"/>
@@ -1547,20 +1554,14 @@ Do You Want For...</string>
         <image name="feedback_tiny.jpg" width="659" height="655"/>
         <image name="full_bowl.jpg" width="199" height="155"/>
         <image name="glass.jpg" width="118" height="232"/>
-        <image name="home.jpg" width="94" height="100"/>
         <image name="home_tiny_0.png" width="337" height="459"/>
         <image name="im_done_label.jpg" width="327" height="163"/>
         <image name="juicebox.jpg" width="137" height="242"/>
         <image name="lets_drink.jpg" width="128" height="225"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
-        <image name="pause.jpg" width="154" height="65"/>
         <image name="pediasure.jpg" width="116" height="230"/>
-        <image name="play.jpg" width="154" height="65"/>
         <image name="redline.jpg" width="153" height="35"/>
-        <image name="save.jpg" width="150" height="85"/>
         <image name="sippy.jpg" width="206" height="184"/>
-        <image name="skip_to_eat.jpg" width="150" height="100"/>
-        <image name="start.jpg" width="150" height="74"/>
         <image name="thought_bubble.jpg" width="300" height="255"/>
         <image name="tiny_shop.jpg" width="1276" height="954"/>
         <image name="tiny_shop_thumbnail.jpg" width="227" height="170"/>
@@ -1572,9 +1573,9 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="T73-72-6qB"/>
-        <segue reference="fZK-si-7Zi"/>
-        <segue reference="DIb-en-1tD"/>
+        <segue reference="Acc-TB-wKP"/>
         <segue reference="ZMd-87-eiT"/>
+        <segue reference="T73-72-6qB"/>
+        <segue reference="h34-Ks-joT"/>
     </inferredMetricsTieBreakers>
 </document>
