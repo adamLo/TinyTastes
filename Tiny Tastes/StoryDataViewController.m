@@ -115,13 +115,15 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    
+    //Stop sounds
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
         for (AVAudioPlayer __strong *audioPlayer in self.dataObject.sounds) {
             [audioPlayer stop];
         }
     }
-    
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
     //Stop all animations
     for (id subview in self.view.subviews) {
         if ([subview respondsToSelector:@selector(stopAnimating)]) {

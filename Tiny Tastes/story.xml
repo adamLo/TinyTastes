@@ -229,8 +229,100 @@
     <image path="story_page_27.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard10" />
 </scene>
-<scene id="yard10" end="true" endstack="true">
+<scene id="yard10">
     <image path="story_page_28.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard11" />
+</scene>
+<scene id="yard11" endstack="true">
+    <image path="story_page_29_plain.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard12" />
+    <!-- animation with Tiny climbing up. Watch out for the order since they are actually layers! -->
+    <animations>
+        <!-- Tiny climbing up the tree -->
+        <animation id="tiny_climbing_up" x="504" y="235" w="152" h="339" duration="1.5" repeat="0">
+            <animationphase image="story_tiny_climbing_up_01.png" />
+            <animationphase image="story_tiny_climbing_up_02.png" />
+            <animationphase image="story_tiny_climbing_up_03.png" />
+            <animationphase image="story_tiny_climbing_up_04.png" />
+        </animation>
+        <!-- This is not a real animation but a static image. Put here to pretend layers -->
+        <animation id="tiny_climbing_up_tree1" x="549" y="46" w="257" h="564" duration="1" repeat="0">
+            <animationphase image="story_tiny_climbing_up_tree1.png" />
+        </animation>
+        <!-- This is not a real animation but a static image. Put here to pretend layers -->
+        <animation id="tiny_climbing_up_tree2" x="321" y="133" w="231" h="557" duration="1" repeat="0">
+            <animationphase image="story_tiny_climbing_up_tree2.png" />
+        </animation>
+        <!-- This is not a real animation but a static image. Put here to pretend layers -->
+        <animation id="tiny_climbing_up_tree3" x="486" y="65" w="176" h="258" duration="1" repeat="0">
+            <animationphase image="story_tiny_climbing_up_tree3.png" />
+        </animation>
+        <!-- Squirrel on the tree -->
+        <animation id="tiny_climbing_up_squirrel" x="512" y="100" w="96" h="73" duration="1.5" repeat="0">
+            <animationphase image="story_tiny_climbing_up_squirrel_01.png" />
+            <animationphase image="story_tiny_climbing_up_squirrel_02.png" />
+            <animationphase image="story_tiny_climbing_up_squirrel_03.png" />
+            <animationphase image="story_tiny_climbing_up_squirrel_04.png" />
+        </animation>
+    </animations>
+</scene>
+<scene id="yard12" endstack="true">
+    <image path="story_page_29e.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="tree01" />
 </scene>
 
+<!-- Tiny in the treehouse -->
+<scene id="tree01">
+    <image path="story_page_30.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="tree02" />
+</scene>
+<scene id="tree02">
+    <image path="story_page_31.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="tree03" />
+</scene>
+<scene id="tree03">
+    <image path="story_page_32.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="tree03" />
+</scene>
+<scene id="tree04" endstack="true">
+    <image path="story_page_33.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard13" />
+</scene>
+<!-- End treehouse scenes -->
+
+<!-- Back on the yard again, Tiny climbs down and goes away -->
+<scene id="yard13">
+    <image path="story_page_34_plain.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard14" />
+    <!-- animation with Tiny climbing up. Watch out for the order since they are actually layers! -->
+    <animations>
+        <!-- Tiny climbing down from the tree -->
+        <animation id="tiny_climbing_down" x="504" y="301" w="152" h="272" duration="1.5" repeat="0">
+            <animationphase image="story_tiny_climbing_down_01.png" />
+            <animationphase image="story_tiny_climbing_down_02.png" />
+            <animationphase image="story_tiny_climbing_down_03.png" />
+            <animationphase image="story_tiny_climbing_down_04.png" />
+            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
+        </animation>
+        <!-- Tiny walks away from the tree -->
+        <animation id="tiny_climbing_down_walk" x="700" y="382" w="164" h="218" duration="1.5" repeat="0">
+            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
+            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
+            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
+            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
+            <animationphase image="story_tiny_climbing_down_walk_04.png" />
+        </animation>
+        <!-- This is not a real animation but a static image. Put here to pretend layers -->
+        <animation id="tiny_climbing_down_tree" x="549" y="46" w="257" h="348" duration="1" repeat="0">
+            <animationphase image="story_tiny_climbing_down_tree.png" />
+        </animation>
+    </animations>
+</scene>
+<scene id="yard14">
+    <image path="story_page_34e.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard15" />
+</scene>
+<scene id="yard15" endstack="true" end="true">
+    <image path="story_page_35.jpg" x="0" y="20" w="1024" h="748" />
+</scene>
 </scenes>
