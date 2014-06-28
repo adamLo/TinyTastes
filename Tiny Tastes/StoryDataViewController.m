@@ -15,6 +15,8 @@
     UIImageView *bookmarkView; //Bookmark view
     UILabel *bookmarkLabel; //Localized instruction label on bookmark. Displayed on title only when bookmark is set
     UITapGestureRecognizer *bookmarTapGestureRecognizer; //Recognizer for user tap action
+    
+    NSTimer *pageDelayTimer; //Delay timer to defer narration and animation
 }
 @property (weak, nonatomic) StoryViewController *viewController;
 @property (nonatomic, assign) BOOL loaded;
@@ -29,6 +31,7 @@
 CGFloat const kStoryBookmarkHeightHidden = 30; //Bookmark height when not displayed
 CGFloat const kStoryBookmarkHeightSet = 107; //Bookmark height when set
 NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in NSUSerdefaults for bookmark
+NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after page appeared
 
 - (void)viewDidLoad
 {
@@ -85,8 +88,8 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     
     //Draw animations
     for (UIImageView *imageView in self.dataObject.animations) {
+        imageView.image = [imageView.animationImages firstObject];
         [self.view addSubview:imageView];
-        [imageView startAnimating];
     }
     
     NSInteger tagCount = 0;
@@ -104,6 +107,14 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+
+    //Schedule narration and animation start
+    pageDelayTimer = [NSTimer scheduledTimerWithTimeInterval:kStoryDelayAfterAppear target:self selector:@selector(pageDelayTimerFired:) userInfo:nil repeats:NO];
+    
+}
+
+- (void)pageDelayTimerFired:(NSTimer*)timer {
+    
     //Start playing narration
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] == YES) {
         for (AVAudioPlayer *audioPlayer in self.dataObject.sounds) {
@@ -111,6 +122,16 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
             [audioPlayer play];
         }
     }
+    
+    //Start animations
+    for (UIImageView *imageView in self.dataObject.animations) {
+        if (imageView.animationRepeatCount > 0) {
+            //Set default image of animation sequence to last frame if animation not continous
+            imageView.image = [imageView.animationImages lastObject];
+        }
+        [imageView startAnimating];
+    }
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -121,6 +142,10 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
             [audioPlayer stop];
         }
     }
+    
+    //Cancel timer if not yet fired
+    [pageDelayTimer invalidate];
+    pageDelayTimer = nil;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -227,6 +252,9 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     bookmarkView.frame = bookmarkFrame;
 }
 
+/**
+ *  User tapped on bookmark. Three different things could happen: go to bookmark if displaying title page, or set bookmark on story if not set on this page or remove bookmark if already set
+ */
 - (void)bookmarkTapped:(UITapGestureRecognizer*)recognizer {
     
     if (self.dataObject.titlePage) {
@@ -278,6 +306,10 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
         bookmarkView.frame = bookmarkFrame;
     } completion:^(BOOL finished) {
         bookmarkLabel.hidden = !bookmarkset;
+        if (bookmarkset) {
+            //Set label title if bookmark is set
+            bookmarkLabel.text = NSLocalizedString(@"Remove bookmark", @"Clear bookmark label text");
+        }
     }];
     
 }

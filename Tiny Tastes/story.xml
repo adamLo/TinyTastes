@@ -93,7 +93,7 @@
         </animation>
     </animations>
 </scene>
-<!-- Selection sceen between fish and frog -->
+<!-- Selection sceen between Fish and Frog -->
 <scene id="yard03" endstack="true">
     <image path="story_page_13.jpg" x="0" y="20" w="1024" h="748" />
     <sound path="story_sound_p13" type="m4a" />
@@ -127,20 +127,25 @@
     <sound path="story_sound_p18" type="m4a" />
     <next id="fish06" />
 </scene>
-<scene id="fish06">
+<scene id="fish06" endstack="true">
     <image path="story_page_19_fish_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="fish07" />
+    <next id="yard04a" />
     <!-- animation with Tiny and Fish -->
     <animations>
-        <animation id="tiny_fish" x="313" y="103" w="484" h="407" duration="2" repeat="0">
+        <animation id="tiny_fish" x="106" y="75" w="634" h="492" duration="4" repeat="1">
             <animationphase image="story_tiny_fish_00.png" />
             <animationphase image="story_tiny_fish_01.png" />
+            <animationphase image="story_tiny_fish_00.png" />
+            <animationphase image="story_tiny_fish_01.png" />
+            <animationphase image="story_tiny_fish_00.png" />
+            <animationphase image="story_tiny_fish_01.png" />
+            <animationphase image="story_tiny_fish_02.png" />
+        </animation>
+        <!-- This is just a layer -->
+        <animation id="tiny_fish_plant" x="676" y="103" w="128" h="405" duration="1" repeat="1">
+            <animationphase image="story_tiny_fish_plant.png" />
         </animation>
     </animations>
-</scene>
-<scene id="fish07" endstack="true">
-    <image path="story_page_20_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="yard04a" />
 </scene>
 <!-- Fish fork end -->
 
@@ -156,24 +161,26 @@
 <scene id="frog03">
     <image path="story_page_16_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
     <next id="frog04" />
-    <!-- animation with Tiny and Fog introduction -->
+    <!-- animation with Tiny and Frog introduction -->
     <animations>
-        <animation id="tiny_frog_intro" x="89" y="220" w="827" h="416" duration="2" repeat="0">
+        <animation id="tiny_frog_intro" x="89" y="220" w="827" h="416" duration="4" repeat="1">
+            <animationphase image="story_tiny_frog_fish_02.png" />
             <animationphase image="story_tiny_frog_fish_01.png" />
             <animationphase image="story_tiny_frog_fish_02.png" />
+            <animationphase image="story_tiny_frog_fish_01.png" />
+            <animationphase image="story_tiny_frog_fish_02.png" />
+            <animationphase image="story_tiny_frog_fish_01.png" />
+            <animationphase image="story_tiny_frog_fish_02.png" />
+            <animationphase image="story_tiny_frog_fish_03.png" />
         </animation>
     </animations>
 </scene>
 <scene id="frog04">
-    <image path="story_page_17_frog.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="frog05" />
-</scene>
-<scene id="frog05">
     <image path="story_page_18_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="frog06" />
+    <next id="frog05" />
     <!-- animation with Tiny and Fog jumping -->
     <animations>
-        <animation id="tiny_frog_jump" x="142" y="0" w="587" h="489" duration="3" repeat="0">
+        <animation id="tiny_frog_jump" x="142" y="0" w="587" h="489" duration="3" repeat="1">
             <animationphase image="story_tiny_frog_jump_01.png" />
             <animationphase image="story_tiny_frog_jump_02.png" />
             <animationphase image="story_tiny_frog_jump_03.png" />
@@ -183,18 +190,18 @@
         </animation>
     </animations>
 </scene>
-<scene id="frog06">
+<scene id="frog05">
     <image path="story_page_19_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="frog07" />
+    <next id="frog06" /> -->
     <!-- animation with Tiny and Fog jumping 2 -->
-    <animations>
-        <animation id="tiny_frog_jump_2" x="467" y="61" w="321" h="532" duration="2" repeat="0">
+   <animations>
+        <animation id="tiny_frog_jump_2" x="467" y="61" w="321" h="532" duration="1.6" repeat="1">
             <animationphase image="story_tiny_frog_jump_2_01.png" />
             <animationphase image="story_tiny_frog_jump_2_02.png" />
         </animation>
     </animations>
 </scene>
-<scene id="frog07" endstack="true">
+<scene id="frog06" endstack="true">
     <image path="story_page_20_frog.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard04b" />
 </scene>
@@ -239,7 +246,7 @@
     <!-- animation with Tiny climbing up. Watch out for the order since they are actually layers! -->
     <animations>
         <!-- Tiny climbing up the tree -->
-        <animation id="tiny_climbing_up" x="504" y="235" w="152" h="339" duration="1.5" repeat="0">
+        <animation id="tiny_climbing_up" x="504" y="235" w="152" h="339" duration="1.5" repeat="1">
             <animationphase image="story_tiny_climbing_up_01.png" />
             <animationphase image="story_tiny_climbing_up_02.png" />
             <animationphase image="story_tiny_climbing_up_03.png" />
@@ -258,7 +265,7 @@
             <animationphase image="story_tiny_climbing_up_tree3.png" />
         </animation>
         <!-- Squirrel on the tree -->
-        <animation id="tiny_climbing_up_squirrel" x="512" y="100" w="96" h="73" duration="1.5" repeat="0">
+        <animation id="tiny_climbing_up_squirrel" x="512" y="100" w="96" h="73" duration="1.5" repeat="1">
             <animationphase image="story_tiny_climbing_up_squirrel_01.png" />
             <animationphase image="story_tiny_climbing_up_squirrel_02.png" />
             <animationphase image="story_tiny_climbing_up_squirrel_03.png" />
@@ -297,7 +304,7 @@
     <!-- animation with Tiny climbing up. Watch out for the order since they are actually layers! -->
     <animations>
         <!-- Tiny climbing down from the tree -->
-        <animation id="tiny_climbing_down" x="504" y="301" w="152" h="272" duration="1.5" repeat="0">
+        <animation id="tiny_climbing_down" x="504" y="301" w="152" h="272" duration="1.5" repeat="1">
             <animationphase image="story_tiny_climbing_down_01.png" />
             <animationphase image="story_tiny_climbing_down_02.png" />
             <animationphase image="story_tiny_climbing_down_03.png" />
@@ -305,7 +312,7 @@
             <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
         </animation>
         <!-- Tiny walks away from the tree -->
-        <animation id="tiny_climbing_down_walk" x="700" y="382" w="164" h="218" duration="1.5" repeat="0">
+        <animation id="tiny_climbing_down_walk" x="700" y="382" w="164" h="218" duration="1.5" repeat="1">
             <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
             <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
             <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
@@ -313,7 +320,7 @@
             <animationphase image="story_tiny_climbing_down_walk_04.png" />
         </animation>
         <!-- This is not a real animation but a static image. Put here to pretend layers -->
-        <animation id="tiny_climbing_down_tree" x="549" y="46" w="257" h="348" duration="1" repeat="0">
+        <animation id="tiny_climbing_down_tree" x="549" y="46" w="257" h="348" duration="1" repeat="1">
             <animationphase image="story_tiny_climbing_down_tree.png" />
         </animation>
     </animations>
