@@ -144,9 +144,7 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
     } else {
 #ifdef DEBUG
         //Add a sample photo when running on simulator
-        //chosenImage = [UIImage imageNamed:@"frenchfries.jpg"];
-        chosenImage = [UIImage imageNamed:@"IMG_0609.JPG"];
-        //chosenImage = [UIImage imageNamed:@"mcdonalds-filet-o-fish.png"];
+        chosenImage = [UIImage imageNamed:@"greenpeas.jpg"];
         [self processImage];
 #else
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"

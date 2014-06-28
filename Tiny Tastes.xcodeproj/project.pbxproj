@@ -91,12 +91,8 @@
 		19120E0E195D5312001302FF /* story_sound_p16.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFC195D5312001302FF /* story_sound_p16.m4a */; };
 		19120E0F195D5312001302FF /* story_sound_p17.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFD195D5312001302FF /* story_sound_p17.m4a */; };
 		19120E10195D5312001302FF /* story_sound_p18.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFE195D5312001302FF /* story_sound_p18.m4a */; };
-		1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1914019C19570D5E008F40C4 /* frenchfries.jpg */; };
-		191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A01957176B008F40C4 /* frenchfries@2x.jpg */; };
 		191401A319571957008F40C4 /* cutout@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A219571957008F40C4 /* cutout@2x.jpg */; };
 		191401AD19582326008F40C4 /* greenpeas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401AC19582326008F40C4 /* greenpeas.jpg */; };
-		191401AF195824B5008F40C4 /* IMG_0609.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 191401AE195824B5008F40C4 /* IMG_0609.JPG */; };
-		191401B119583485008F40C4 /* mcdonalds-filet-o-fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401B019583485008F40C4 /* mcdonalds-filet-o-fish.png */; };
 		191401B319585B07008F40C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191401B219585B07008F40C4 /* Images.xcassets */; };
 		191401D41958D0E7008F40C4 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 191401D21958D0E7008F40C4 /* dsym_upload.sh */; };
 		191401D51958D0E7008F40C4 /* libCrittercism_v4_3_4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191401D31958D0E7008F40C4 /* libCrittercism_v4_3_4.a */; };
@@ -361,12 +357,8 @@
 		19120DFC195D5312001302FF /* story_sound_p16.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p16.m4a; sourceTree = "<group>"; };
 		19120DFD195D5312001302FF /* story_sound_p17.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p17.m4a; sourceTree = "<group>"; };
 		19120DFE195D5312001302FF /* story_sound_p18.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p18.m4a; sourceTree = "<group>"; };
-		1914019C19570D5E008F40C4 /* frenchfries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frenchfries.jpg; sourceTree = "<group>"; };
-		191401A01957176B008F40C4 /* frenchfries@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frenchfries@2x.jpg"; sourceTree = "<group>"; };
 		191401A219571957008F40C4 /* cutout@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cutout@2x.jpg"; sourceTree = "<group>"; };
 		191401AC19582326008F40C4 /* greenpeas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeas.jpg; sourceTree = "<group>"; };
-		191401AE195824B5008F40C4 /* IMG_0609.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0609.JPG; sourceTree = "<group>"; };
-		191401B019583485008F40C4 /* mcdonalds-filet-o-fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mcdonalds-filet-o-fish.png"; sourceTree = "<group>"; };
 		191401B219585B07008F40C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		191401CF1958D0E7008F40C4 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
 		191401D01958D0E7008F40C4 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
@@ -700,11 +692,7 @@
 		1914019B19570D5E008F40C4 /* sampleimages */ = {
 			isa = PBXGroup;
 			children = (
-				191401B019583485008F40C4 /* mcdonalds-filet-o-fish.png */,
-				191401AE195824B5008F40C4 /* IMG_0609.JPG */,
 				191401AC19582326008F40C4 /* greenpeas.jpg */,
-				191401A01957176B008F40C4 /* frenchfries@2x.jpg */,
-				1914019C19570D5E008F40C4 /* frenchfries.jpg */,
 			);
 			path = sampleimages;
 			sourceTree = "<group>";
@@ -1242,7 +1230,6 @@
 				FD7924BB1857B53700BF75B7 /* main_menu_music.mp3 in Resources */,
 				FD70733B18303865003BFC29 /* sippy.jpg in Resources */,
 				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,
-				191401AF195824B5008F40C4 /* IMG_0609.JPG in Resources */,
 				19945485195DA29C003BAC7F /* story_tiny_climbing_down_02.png in Resources */,
 				FD23B12518429F2500D1C9A9 /* eating_none_this_time_feedback.m4a in Resources */,
 				19120E01195D5312001302FF /* story_sound_p03.m4a in Resources */,
@@ -1251,7 +1238,6 @@
 				19120D8A195C36F5001302FF /* pond_qmarks_02.png in Resources */,
 				191401D41958D0E7008F40C4 /* dsym_upload.sh in Resources */,
 				199454A0195DB620003BAC7F /* button_start@2x.png in Resources */,
-				191401B119583485008F40C4 /* mcdonalds-filet-o-fish.png in Resources */,
 				19120E04195D5312001302FF /* story_sound_p06.m4a in Resources */,
 				19120DD3195CAC49001302FF /* story_tiny_frog_jump_05.png in Resources */,
 				19945486195DA29C003BAC7F /* story_tiny_climbing_down_03.png in Resources */,
@@ -1361,7 +1347,6 @@
 				19120E03195D5312001302FF /* story_sound_p05.m4a in Resources */,
 				19120D55195B623E001302FF /* bookmark.png in Resources */,
 				19120D79195C328A001302FF /* story_page_05.jpg in Resources */,
-				1914019D19570D5E008F40C4 /* frenchfries.jpg in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				19120DA1195C6DDB001302FF /* pond_bubble_08.png in Resources */,
 				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
@@ -1392,7 +1377,6 @@
 				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
 				19120E0C195D5312001302FF /* story_sound_p14.m4a in Resources */,
 				FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */,
-				191401A11957176B008F40C4 /* frenchfries@2x.jpg in Resources */,
 				1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */,
 				191401AD19582326008F40C4 /* greenpeas.jpg in Resources */,
 				19120D8D195C36F5001302FF /* pond_qmarks_05.png in Resources */,
