@@ -1,6 +1,6 @@
 <scenes>
 <scene id="titlePage" title="true">
-    <image path="book_cover.jpg" x="0" y="20" w="1060" h="730" />
+    <image path="story_cover_page.jpg" x="0" y="20" w="1024" h="748" />
     <next id="opening01" />
 </scene>
 <scene id="opening01">

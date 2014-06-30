@@ -9,20 +9,27 @@
 #import "DrinkViewController.h"
 #import "FeedbackViewController.h"
 
-@interface DrinkViewController ()
+@interface DrinkViewController () {
+    NSTimer *countdownTimer;
+    int secondsCount;
+    int secondsCountFinal;
+    int currentFrame;
+    int animationDuration;
+    bool blinkStatus;
+    
+    AVAudioPlayer *audioPlayer1;
+    AVAudioPlayer *audioPlayer2;
+    AVAudioPlayer *audioPlayer3;
+    AVAudioPlayer *audioPlayer4;
+    AVAudioPlayer *audioPlayer5;
+    
+    NSArray *animationImages; //Array of animation image arrays. Top level order is same as enum in header
+    
+}
 
 @end
 
 @implementation DrinkViewController
-
-@synthesize drinkingImage1;
-@synthesize drinkingImage2;
-@synthesize timeToDrink;
-@synthesize audioPlayer1;
-@synthesize audioPlayer2;
-@synthesize audioPlayer3;
-@synthesize audioPlayer4;
-@synthesize audioPlayer5;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,27 +45,44 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
-    allFinishedButton.hidden = YES;
-    partiallyFinishedButton.hidden = YES;
-    notFinishedButton.hidden = YES;
-    resumeButton.hidden = YES;
+    self.allFinishedButton.hidden = YES;
+    self.partiallyFinishedButton.hidden = YES;
+    self.notFinishedButton.hidden = YES;
+    self.resumeButton.hidden = YES;
     
-    chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
-    timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
-    chooseLabel.hidden = YES;
-    redLine.hidden = YES;
+    self.chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
+    self.timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    self.chooseLabel.hidden = YES;
+    self.redLine.hidden = YES;
     
-    drinkingCritter.animationImages = [NSArray arrayWithObjects:drinkingImage1, drinkingImage2, nil];
-    drinkingCritter.animationDuration = 10;
-    [self.view addSubview:drinkingCritter];
+    animationImages = @[
+                        @[[UIImage imageNamed:@"drinking_sippy_1"], [UIImage imageNamed:@"drinking_sippy_2"]],
+                        @[[UIImage imageNamed:@"drinking_juice_1"], [UIImage imageNamed:@"drinking_juice_2"]],
+                        @[[UIImage imageNamed:@"drinking_glass_1"], [UIImage imageNamed:@"drinking_glass_2"]],
+                        @[[UIImage imageNamed:@"drinking_pediasure_1"], [UIImage imageNamed:@"drinking_pediasure_2"]],
+                        @[[UIImage imageNamed:@"drinking_bottle_1"], [UIImage imageNamed:@"drinking_bottle_2"]],
+                        ];
+    
+    self.drinkingCritter.animationDuration = 10;
+    [self.view addSubview:self.drinkingCritter];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     //Start animating
-    [drinkingCritter startAnimating];
+    self.drinkingCritter.image = [[animationImages objectAtIndex:self.selectedDrinkType] firstObject];
+    self.drinkingCritter.animationImages = [animationImages objectAtIndex:self.selectedDrinkType];
     
+    //set up audio
     [self setUpAudioPlayers];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    //Start animation
+    [self.drinkingCritter startAnimating];
+    
+    //Start timer
     [self setTimer];
 }
 
@@ -68,7 +92,7 @@
     [self stopAudioPlayers];
     
     //Stop animation
-    [drinkingCritter stopAnimating];
+    [self.drinkingCritter stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,9 +107,9 @@
     int seconds = secondsCount - (minutes * 60);
     
     NSString *timerOutput = [NSString stringWithFormat:@"%2d:%.2d", minutes, seconds];
-    countdownLabel.text = timerOutput;
-    countdownLabel.textAlignment = NSTextAlignmentCenter;
-    countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
+    self.countdownLabel.text = timerOutput;
+    self.countdownLabel.textAlignment = NSTextAlignmentCenter;
+    self.countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
     
     [self playSoundBite];
 
@@ -136,7 +160,7 @@
 }
 
 - (void)setTimer {
-    secondsCount = 60 * timeToDrink;
+    secondsCount = 60 * self.timeToDrink;
     secondsCountFinal = secondsCount;
     countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats: YES];
 }
@@ -167,10 +191,10 @@
 
 - (void)blink {
     if(blinkStatus == FALSE){
-        redLine.hidden = NO;
+        self.redLine.hidden = NO;
         blinkStatus = TRUE;
     }else {
-        redLine.hidden = YES;
+        self.redLine.hidden = YES;
         blinkStatus = FALSE;
     }
 }
@@ -193,24 +217,24 @@
 - (IBAction)doneButtonClicked {
     [countdownTimer invalidate];
     countdownTimer = nil;
-    allFinishedButton.hidden = NO;
-    partiallyFinishedButton.hidden = NO;
-    notFinishedButton.hidden = NO;
-    chooseLabel.hidden = NO;
-    doneButton.hidden = YES;
-    countdownLabel.hidden = YES;
-    timeLeftLabel.hidden = YES;
-    pauseButton.hidden = YES;
-    resumeButton.hidden = YES;
+    self.allFinishedButton.hidden = NO;
+    self.partiallyFinishedButton.hidden = NO;
+    self.notFinishedButton.hidden = NO;
+    self.chooseLabel.hidden = NO;
+    self.doneButton.hidden = YES;
+    self.countdownLabel.hidden = YES;
+    self.timeLeftLabel.hidden = YES;
+    self.pauseButton.hidden = YES;
+    self.resumeButton.hidden = YES;
     
     [self stopAudioPlayers];
     
-    [drinkingCritter stopAnimating];
-    [drinkingCritter setImage:drinkingImage1];
+    [self.drinkingCritter stopAnimating];
+    //[self.drinkingCritter setImage:self.drinkingImage1];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (![prefs boolForKey:@"HasLaunchedDrinkScreenOnce"]) {
-        redLine.hidden = NO;
+        self.redLine.hidden = NO;
         [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
         blinkStatus = TRUE;
         [prefs setBool:YES forKey:@"HasLaunchedDrinkScreenOnce"];
@@ -218,27 +242,27 @@
     }
 }
 - (IBAction)pauseButtonClicked:(id)sender {
-    pauseButton.hidden = YES;
-    resumeButton.hidden = NO;
+    self.pauseButton.hidden = YES;
+    self.resumeButton.hidden = NO;
     
     // Pause the timer
     [countdownTimer invalidate];
     
     [self stopAudioPlayers];
     
-    [drinkingCritter stopAnimating];
+    [self.drinkingCritter stopAnimating];
     
-    [drinkingCritter setImage:[[drinkingCritter animationImages] firstObject]];
+    [self.drinkingCritter setImage:[[self.drinkingCritter animationImages] firstObject]];
 }
 
 - (IBAction)resumeButtonClicked:(id)sender {
-    resumeButton.hidden = YES;
-    pauseButton.hidden = NO;
+    self.resumeButton.hidden = YES;
+    self.pauseButton.hidden = NO;
     
     [self setUpAudioPlayers];
     [self playSoundBite];
     
-    [drinkingCritter startAnimating];
+    [self.drinkingCritter startAnimating];
     
     // Resume the timer
     [self resetTimer];

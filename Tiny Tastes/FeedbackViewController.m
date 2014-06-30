@@ -45,37 +45,6 @@
         [prefs synchronize];
     }
     
-    NSString *path;
-    if (self.numCoins == 1) {  //Tried some
-        UIImage *image = [UIImage imageNamed:@"coin_icon.jpg"];
-        [self.coinView2 setImage:image];
-        self.coinsNotifLabel.text = @"+1";
-        if (self.eating == YES) {
-            path = [[NSBundle mainBundle]pathForResource:@"eating_tried_some_feedback" ofType:@"m4a"];
-        } else {
-            path = [[NSBundle mainBundle]pathForResource:@"drinking_tried_some_feedback" ofType:@"m4a"];
-        }
-    } else if (self.numCoins == 3) {  //All finished
-        UIImage *image = [UIImage imageNamed:@"coin_icon.jpg"];
-        [self.coinView1 setImage:image];
-        [self.coinView2 setImage:image];
-        [self.coinView3 setImage:image];
-        self.coinsNotifLabel.text = @"+3";
-        path = [[NSBundle mainBundle]pathForResource:@"all_finished_feedback" ofType:@"m4a"];
-    } else {  //None this time
-        if (self.eating == YES) {
-            path = [[NSBundle mainBundle]pathForResource:@"eating_none_this_time_feedback" ofType:@"m4a"];
-        } else {
-            path = [[NSBundle mainBundle]pathForResource:@"drinking_none_this_time_feedback" ofType:@"m4a"];
-        }
-    }
-    
-    //Play feedback soundbite
-    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
-    [audioPlayer setVolume:0.5];
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
-        [audioPlayer play];
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -84,13 +53,56 @@
     NSInteger myNumCoins = [prefs integerForKey:@"coinsKey"] + self.numCoins;
     [prefs setInteger:myNumCoins forKey:@"coinsKey"];
     [prefs synchronize];
+    
+    NSString *soundPath;
+    if (self.numCoins == 1) {  //Tried some
+        
+        //Show one coin only
+        self.coinView1.hidden = YES;
+        self.coinView2.hidden = NO;
+        self.coinView3.hidden = YES;
+        
+        self.coinsNotifLabel.text = @"+1";
+        
+        soundPath = [[NSBundle mainBundle]pathForResource:(self.eating ? @"eating_tried_some_feedback" : @"drinking_tried_some_feedback") ofType:@"m4a"];
+        
+    } else if (self.numCoins == 3) {  //All finished
+        
+        //Show all 3 coins
+        self.coinView1.hidden = NO;
+        self.coinView2.hidden = NO;
+        self.coinView3.hidden = NO;
+
+        self.coinsNotifLabel.text = @"+3";
+        soundPath = [[NSBundle mainBundle]pathForResource:@"all_finished_feedback" ofType:@"m4a"];
+        
+    } else {  //None this time
+        
+        //Hide all 3 coins
+        self.coinView1.hidden = YES;
+        self.coinView2.hidden = YES;
+        self.coinView3.hidden = YES;
+        
+        soundPath = [[NSBundle mainBundle]pathForResource:(self.eating ? @"eating_none_this_time_feedback" : @"drinking_none_this_time_feedback") ofType:@"m4a"];
+    }
+    
+    //Play feedback soundbite
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:soundPath] error:NULL];
+    [audioPlayer setVolume:0.5];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
+        [audioPlayer play];
+    }
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    //Stop audio
+    [audioPlayer stop];
+    audioPlayer = nil;
 }
     
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"backgroundSound"] == YES) {
-        [audioPlayer stop];
-        audioPlayer = nil;
-    }
+    
 }
 
 

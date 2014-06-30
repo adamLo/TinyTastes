@@ -42,7 +42,7 @@
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
     
     //Set up Tiny character animation
-    self.animatedTiny.animationImages = @[[UIImage imageNamed:@"home_tiny_0"], [UIImage imageNamed:@"home_tiny_1"], [UIImage imageNamed:@"home_tiny_2"], [UIImage imageNamed:@"home_tiny_3"], [UIImage imageNamed:@"home_tiny_4"], [UIImage imageNamed:@"home_tiny_5"], [UIImage imageNamed:@"home_tiny_6"], [UIImage imageNamed:@"home_tiny_5"], [UIImage imageNamed:@"home_tiny_4"], [UIImage imageNamed:@"home_tiny_3"], [UIImage imageNamed:@"home_tiny_2"], [UIImage imageNamed:@"home_tiny_1"]];
+    self.animatedTiny.animationImages = @[[UIImage imageNamed:@"home_tiny_00"], [UIImage imageNamed:@"home_tiny_01"], [UIImage imageNamed:@"home_tiny_02"], [UIImage imageNamed:@"home_tiny_03"], [UIImage imageNamed:@"home_tiny_04"], [UIImage imageNamed:@"home_tiny_05"], [UIImage imageNamed:@"home_tiny_04"], [UIImage imageNamed:@"home_tiny_03"], [UIImage imageNamed:@"home_tiny_02"], [UIImage imageNamed:@"home_tiny_01"]];
     self.animatedTiny.animationRepeatCount = 0;
     self.animatedTiny.animationDuration = 1.5;
 }

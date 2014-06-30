@@ -9,39 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface ChooseDrinkViewController : UIViewController {
-    IBOutlet UILabel *chooseDrinkLabel;
-    IBOutlet UILabel *customizeTimerLabel;
-    IBOutlet UILabel *timeDisplayLabel;
-    
-    IBOutlet UIImage *choiceDrink1;
-    IBOutlet UIImage *choiceDrink2;
-    
-    IBOutlet UIImageView *sippyGlow;
-    IBOutlet UIImageView *pediasureGlow;
-    IBOutlet UIImageView *glassGlow;
-    IBOutlet UIImageView *bottleGlow;
-    IBOutlet UIImageView *juiceBoxGlow;
-    
-    IBOutlet UIImageView *chosenDrinkView;
-    IBOutlet NSString *chosenDrinkImage;
-    
-    IBOutlet UIButton *sippyCupButton;
-    IBOutlet UIButton *pediasureButton;
-    IBOutlet UIButton *bottleButton;
-    IBOutlet UIButton *glassButton;
-    IBOutlet UIButton *juiceBoxButton;
-    
-    IBOutlet UIStepper *drinkStepper;
     
 }
 
-- (IBAction)drinkStepperValueChanged:(UIStepper *)sender;
-- (IBAction)sippyClicked:(UIButton *)sender;
-- (IBAction)pediasureClicked:(UIButton *)sender;
-- (IBAction)juiceBoxClicked:(UIButton *)sender;
-- (IBAction)glassClicked:(UIButton *)sender;
-- (IBAction)bottleClicked:(UIButton *)sender;
+@property (nonatomic, weak) IBOutlet UILabel *chooseDrinkLabel;
+@property (nonatomic, weak) IBOutlet UILabel *customizeTimerLabel;
+@property (nonatomic, weak) IBOutlet UILabel *timeDisplayLabel;
+@property (nonatomic, weak) IBOutlet UIStepper *drinkStepper;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *selectionBackgrounds; /** Collection of selection backgrounds behind drink buttons to display selection animation */
 
+- (IBAction)drinkStepperValueChanged:(UIStepper *)sender;
 - (IBAction)homePressed:(id)sender; /** User pressed home button to go back to home screen */
+- (IBAction)drinkSelected:(UIButton *)sender; /** User pressed a drink button to select drink type */
+
 
 @end

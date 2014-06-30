@@ -56,12 +56,12 @@
     [self setUpAudioPlayers];
     
     // display picture of the food
-    foodImageView = [[UIImageView alloc] initWithFrame:CGRectMake(362, 312, 400, 400)];
-    [self.view addSubview:foodImageView];
+    //foodImageView = [[UIImageView alloc] initWithFrame:CGRectMake(362, 312, 400, 400)];
+    //[self.view addSubview:foodImageView];
     
     // display disappearing food
-    disappearingFood = [[UIImageView alloc] init];
-    disappearingFood.frame = CGRectMake(362, 312, 400, 400);
+    //disappearingFood = [[UIImageView alloc] init];
+    //disappearingFood.frame = CGRectMake(362, 312, 400, 400);
     
     animationImageArray = [NSMutableArray arrayWithObjects:
                            [UIImage imageNamed:@"bowl0.png"],
@@ -79,22 +79,18 @@
                            [UIImage imageNamed:@"bowl11.png"],
                            [UIImage imageNamed:@"bowl12.png"], nil];
     
-    disappearingFood.animationImages = animationImageArray;
+    self.disappearingFood.animationImages = animationImageArray;
     
-    disappearingFood.animationDuration = secondsCount;
-    animationDuration = secondsCount;
-    
-    [self.view addSubview:disappearingFood];
+    //[self.view addSubview:disappearingFood];
     
     
     // display critter animation -- 3 seconds eating, 12 seconds with spoon back down on plate
-    eatingCritter.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"eating_critter_1.jpg"],
-                                     [UIImage imageNamed:@"eating_critter_2.jpg"],
-                                     [UIImage imageNamed:@"eating_critter_1.jpg"],
-                                     [UIImage imageNamed:@"eating_critter_1.jpg"],
-                                     [UIImage imageNamed:@"eating_critter_1.jpg"],nil];
-    eatingCritter.animationDuration = 15;
-    [self.view addSubview:eatingCritter];
+    self.eatingCritter.animationImages = @[[UIImage imageNamed:@"tiny_eating_1"], [UIImage imageNamed:@"tiny_eating_2"],
+                                      [UIImage imageNamed:@"tiny_eating_2"],
+                                      [UIImage imageNamed:@"tiny_eating_2"],
+                                      [UIImage imageNamed:@"tiny_eating_2"]];
+    self.eatingCritter.animationDuration = 15;
+    //[self.view addSubview:eatingCritter];
     
 
 }
@@ -104,15 +100,15 @@
     //Display food
     if (!self.foodImage) {
         self.foodImage = [UIImage imageNamed:@"default_food.png"];
-        foodImageView.frame = CGRectMake(362, 312, 400, 400);
-    } else {
-        foodImageView.frame = CGRectMake(312, 332, 500, 450);
-    }    
-    foodImageView.image = self.foodImage;
+    }
+    self.foodImageView.image = self.foodImage;
+    
+    self.disappearingFood.animationDuration = secondsCount;
+    animationDuration = secondsCount;
     
     //Start animations
-    [disappearingFood startAnimating];
-    [eatingCritter startAnimating];
+    //[self.disappearingFood startAnimating];
+    [self.eatingCritter startAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -127,8 +123,8 @@
     [self stopAudioPlayers];
     
     //Stop animations
-    [disappearingFood stopAnimating];
-    [eatingCritter stopAnimating];
+    [self.disappearingFood stopAnimating];
+    [self.eatingCritter stopAnimating];
 }
 
 - (void)timerRun {
@@ -284,10 +280,10 @@
     notFinishedButton.hidden = NO;
     chooseLabel.hidden = NO;
     doneButton.hidden = YES;
-    [eatingCritter stopAnimating];
-    [disappearingFood stopAnimating];
-    disappearingFood.image = [UIImage imageNamed:@"bowl12.png"];
-    foodImageView.hidden = YES;
+    [self.eatingCritter stopAnimating];
+    [self.disappearingFood stopAnimating];
+    self.disappearingFood.image = [self.disappearingFood.animationImages lastObject];
+    self.foodImageView.hidden = YES;
     pauseButton.hidden = YES;
     resumeButton.hidden = YES;
     countdownLabel.hidden = YES;
@@ -315,11 +311,11 @@
     
     [self stopAudioPlayers];
     
-    [eatingCritter stopAnimating];
-    [disappearingFood stopAnimating];
-    currentFrame = disappearingFood.animationImages.count * (animationDuration - secondsCount) / animationDuration;
+    [self.eatingCritter stopAnimating];
+    [self.disappearingFood stopAnimating];
+    currentFrame = self.disappearingFood.animationImages.count * (animationDuration - secondsCount) / animationDuration;
     animationDuration = secondsCount;
-    [disappearingFood setImage:[[disappearingFood animationImages] objectAtIndex:currentFrame]];
+    [self.disappearingFood setImage:[[self.disappearingFood animationImages] objectAtIndex:currentFrame]];
     
 
     
@@ -333,17 +329,17 @@
     [self playSoundBite];
     
     // reset the disappearing food image to match the remaining time
-    currentFrame = [animationImageArray indexOfObject: disappearingFood.image];
+    currentFrame = [animationImageArray indexOfObject: self.disappearingFood.image];
     
     for (int i = 0; i < currentFrame; i++) {
         [animationImageArray removeObjectAtIndex:0];
     }
     
-    disappearingFood.animationImages = animationImageArray;
-    disappearingFood.animationDuration = secondsCount;
+    self.disappearingFood.animationImages = animationImageArray;
+    self.disappearingFood.animationDuration = secondsCount;
     
-    [eatingCritter startAnimating];
-    [disappearingFood startAnimating];
+    [self.eatingCritter startAnimating];
+    [self.disappearingFood startAnimating];
     
     // Resume the timer
     [self resetTimer];

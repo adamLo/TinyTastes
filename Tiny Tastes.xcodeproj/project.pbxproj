@@ -73,40 +73,93 @@
 		19120DE9195CB646001302FF /* story_page_26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19120DE2195CB646001302FF /* story_page_26.jpg */; };
 		19120DEA195CB646001302FF /* story_page_27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19120DE3195CB646001302FF /* story_page_27.jpg */; };
 		19120DEB195CB646001302FF /* story_page_28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19120DE4195CB646001302FF /* story_page_28.jpg */; };
-		19120DFF195D5312001302FF /* story_sound_p01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DED195D5312001302FF /* story_sound_p01.m4a */; };
-		19120E00195D5312001302FF /* story_sound_p02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DEE195D5312001302FF /* story_sound_p02.m4a */; };
-		19120E01195D5312001302FF /* story_sound_p03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DEF195D5312001302FF /* story_sound_p03.m4a */; };
-		19120E02195D5312001302FF /* story_sound_p04.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF0195D5312001302FF /* story_sound_p04.m4a */; };
-		19120E03195D5312001302FF /* story_sound_p05.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF1195D5312001302FF /* story_sound_p05.m4a */; };
-		19120E04195D5312001302FF /* story_sound_p06.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF2195D5312001302FF /* story_sound_p06.m4a */; };
-		19120E05195D5312001302FF /* story_sound_p07.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF3195D5312001302FF /* story_sound_p07.m4a */; };
-		19120E06195D5312001302FF /* story_sound_p08.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF4195D5312001302FF /* story_sound_p08.m4a */; };
-		19120E07195D5312001302FF /* story_sound_p09.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF5195D5312001302FF /* story_sound_p09.m4a */; };
-		19120E08195D5312001302FF /* story_sound_p10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF6195D5312001302FF /* story_sound_p10.m4a */; };
-		19120E09195D5312001302FF /* story_sound_p11.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF7195D5312001302FF /* story_sound_p11.m4a */; };
-		19120E0A195D5312001302FF /* story_sound_p12.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF8195D5312001302FF /* story_sound_p12.m4a */; };
-		19120E0B195D5312001302FF /* story_sound_p13.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DF9195D5312001302FF /* story_sound_p13.m4a */; };
-		19120E0C195D5312001302FF /* story_sound_p14.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFA195D5312001302FF /* story_sound_p14.m4a */; };
-		19120E0D195D5312001302FF /* story_sound_p15.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFB195D5312001302FF /* story_sound_p15.m4a */; };
-		19120E0E195D5312001302FF /* story_sound_p16.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFC195D5312001302FF /* story_sound_p16.m4a */; };
-		19120E0F195D5312001302FF /* story_sound_p17.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFD195D5312001302FF /* story_sound_p17.m4a */; };
-		19120E10195D5312001302FF /* story_sound_p18.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19120DFE195D5312001302FF /* story_sound_p18.m4a */; };
-		191401A319571957008F40C4 /* cutout@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401A219571957008F40C4 /* cutout@2x.jpg */; };
 		191401AD19582326008F40C4 /* greenpeas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401AC19582326008F40C4 /* greenpeas.jpg */; };
 		191401B319585B07008F40C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191401B219585B07008F40C4 /* Images.xcassets */; };
 		191401D41958D0E7008F40C4 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 191401D21958D0E7008F40C4 /* dsym_upload.sh */; };
 		191401D51958D0E7008F40C4 /* libCrittercism_v4_3_4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191401D31958D0E7008F40C4 /* libCrittercism_v4_3_4.a */; };
 		191401D71958D17E008F40C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191401D61958D17E008F40C4 /* SystemConfiguration.framework */; };
-		191401F51959E1C9008F40C4 /* home_tiny_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401EE1959E1C9008F40C4 /* home_tiny_0.png */; };
-		191401F61959E1C9008F40C4 /* home_tiny_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401EF1959E1C9008F40C4 /* home_tiny_1.png */; };
-		191401F71959E1C9008F40C4 /* home_tiny_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F01959E1C9008F40C4 /* home_tiny_2.png */; };
-		191401F81959E1C9008F40C4 /* home_tiny_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F11959E1C9008F40C4 /* home_tiny_3.png */; };
-		191401F91959E1C9008F40C4 /* home_tiny_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F21959E1C9008F40C4 /* home_tiny_4.png */; };
-		191401FA1959E1C9008F40C4 /* home_tiny_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F31959E1C9008F40C4 /* home_tiny_5.png */; };
-		191401FB1959E1C9008F40C4 /* home_tiny_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 191401F41959E1C9008F40C4 /* home_tiny_6.png */; };
 		1920F1B4195F36BE0094FAA3 /* story_tiny_frog_fish_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1B3195F36BD0094FAA3 /* story_tiny_frog_fish_03.png */; };
 		1920F1B7195F48FD0094FAA3 /* story_tiny_fish_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1B5195F48FD0094FAA3 /* story_tiny_fish_02.png */; };
 		1920F1B8195F48FD0094FAA3 /* story_tiny_fish_plant.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1B6195F48FD0094FAA3 /* story_tiny_fish_plant.png */; };
+		1920F1BA1961873D0094FAA3 /* story_cover_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1B91961873D0094FAA3 /* story_cover_page.jpg */; };
+		1920F1CE196187FF0094FAA3 /* story_sound_p01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1BC196187FF0094FAA3 /* story_sound_p01.m4a */; };
+		1920F1CF196187FF0094FAA3 /* story_sound_p02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1BD196187FF0094FAA3 /* story_sound_p02.m4a */; };
+		1920F1D0196187FF0094FAA3 /* story_sound_p03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1BE196187FF0094FAA3 /* story_sound_p03.m4a */; };
+		1920F1D1196187FF0094FAA3 /* story_sound_p04.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1BF196187FF0094FAA3 /* story_sound_p04.m4a */; };
+		1920F1D2196187FF0094FAA3 /* story_sound_p05.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C0196187FF0094FAA3 /* story_sound_p05.m4a */; };
+		1920F1D3196187FF0094FAA3 /* story_sound_p06.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C1196187FF0094FAA3 /* story_sound_p06.m4a */; };
+		1920F1D4196187FF0094FAA3 /* story_sound_p07.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C2196187FF0094FAA3 /* story_sound_p07.m4a */; };
+		1920F1D5196187FF0094FAA3 /* story_sound_p08.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C3196187FF0094FAA3 /* story_sound_p08.m4a */; };
+		1920F1D6196187FF0094FAA3 /* story_sound_p09.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C4196187FF0094FAA3 /* story_sound_p09.m4a */; };
+		1920F1D7196187FF0094FAA3 /* story_sound_p10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C5196187FF0094FAA3 /* story_sound_p10.m4a */; };
+		1920F1D8196187FF0094FAA3 /* story_sound_p11.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C6196187FF0094FAA3 /* story_sound_p11.m4a */; };
+		1920F1D9196187FF0094FAA3 /* story_sound_p12.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C7196187FF0094FAA3 /* story_sound_p12.m4a */; };
+		1920F1DA196187FF0094FAA3 /* story_sound_p13.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C8196187FF0094FAA3 /* story_sound_p13.m4a */; };
+		1920F1DB196187FF0094FAA3 /* story_sound_p14.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1C9196187FF0094FAA3 /* story_sound_p14.m4a */; };
+		1920F1DC196187FF0094FAA3 /* story_sound_p15.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1CA196187FF0094FAA3 /* story_sound_p15.m4a */; };
+		1920F1DD196187FF0094FAA3 /* story_sound_p16.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1CB196187FF0094FAA3 /* story_sound_p16.m4a */; };
+		1920F1DE196187FF0094FAA3 /* story_sound_p17.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1CC196187FF0094FAA3 /* story_sound_p17.m4a */; };
+		1920F1DF196187FF0094FAA3 /* story_sound_p18.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1CD196187FF0094FAA3 /* story_sound_p18.m4a */; };
+		1920F1E3196189BF0094FAA3 /* home_shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1E1196189BF0094FAA3 /* home_shop.png */; };
+		1920F1E4196189BF0094FAA3 /* home_shop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1E2196189BF0094FAA3 /* home_shop@2x.png */; };
+		1920F1E719618B9E0094FAA3 /* home_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1E519618B9E0094FAA3 /* home_settings.png */; };
+		1920F1E819618B9E0094FAA3 /* home_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1E619618B9E0094FAA3 /* home_settings@2x.png */; };
+		1920F1EB19618C320094FAA3 /* home_eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1E919618C320094FAA3 /* home_eat.png */; };
+		1920F1EC19618C320094FAA3 /* home_eat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1EA19618C320094FAA3 /* home_eat@2x.png */; };
+		1920F1EF19618CD70094FAA3 /* home_drink.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1ED19618CD70094FAA3 /* home_drink.png */; };
+		1920F1F019618CD70094FAA3 /* home_drink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1EE19618CD70094FAA3 /* home_drink@2x.png */; };
+		1920F1FE196194F20094FAA3 /* home_tiny_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F2196194F20094FAA3 /* home_tiny_00.png */; };
+		1920F1FF196194F20094FAA3 /* home_tiny_00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F3196194F20094FAA3 /* home_tiny_00@2x.png */; };
+		1920F200196194F20094FAA3 /* home_tiny_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F4196194F20094FAA3 /* home_tiny_01.png */; };
+		1920F201196194F20094FAA3 /* home_tiny_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F5196194F20094FAA3 /* home_tiny_01@2x.png */; };
+		1920F202196194F20094FAA3 /* home_tiny_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F6196194F20094FAA3 /* home_tiny_02.png */; };
+		1920F203196194F20094FAA3 /* home_tiny_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F7196194F20094FAA3 /* home_tiny_02@2x.png */; };
+		1920F204196194F20094FAA3 /* home_tiny_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F8196194F20094FAA3 /* home_tiny_03.png */; };
+		1920F205196194F20094FAA3 /* home_tiny_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1F9196194F20094FAA3 /* home_tiny_03@2x.png */; };
+		1920F206196194F20094FAA3 /* home_tiny_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1FA196194F20094FAA3 /* home_tiny_04.png */; };
+		1920F207196194F20094FAA3 /* home_tiny_04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1FB196194F20094FAA3 /* home_tiny_04@2x.png */; };
+		1920F208196194F20094FAA3 /* home_tiny_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1FC196194F20094FAA3 /* home_tiny_05.png */; };
+		1920F209196194F20094FAA3 /* home_tiny_05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F1FD196194F20094FAA3 /* home_tiny_05@2x.png */; };
+		1920F20D196197E00094FAA3 /* shop_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F20B196197E00094FAA3 /* shop_large.png */; };
+		1920F20E196197E00094FAA3 /* shop_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F20C196197E00094FAA3 /* shop_large@2x.png */; };
+		1920F21619619B800094FAA3 /* money_bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F21419619B800094FAA3 /* money_bag.png */; };
+		1920F21719619B800094FAA3 /* money_bag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F21519619B800094FAA3 /* money_bag@2x.png */; };
+		1920F21A19619D5B0094FAA3 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F21819619D5B0094FAA3 /* coin.png */; };
+		1920F21B19619D5B0094FAA3 /* coin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F21919619D5B0094FAA3 /* coin@2x.png */; };
+		1920F21F1961A15B0094FAA3 /* sippy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F21D1961A15B0094FAA3 /* sippy.png */; };
+		1920F2201961A15B0094FAA3 /* sippy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F21E1961A15B0094FAA3 /* sippy@2x.png */; };
+		1920F2231961A1CC0094FAA3 /* juicebox.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2211961A1CC0094FAA3 /* juicebox.png */; };
+		1920F2241961A1CC0094FAA3 /* juicebox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2221961A1CC0094FAA3 /* juicebox@2x.png */; };
+		1920F2271961A3760094FAA3 /* glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2251961A3760094FAA3 /* glass.png */; };
+		1920F2281961A3760094FAA3 /* glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2261961A3760094FAA3 /* glass@2x.png */; };
+		1920F22B1961A3C90094FAA3 /* pediasure.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2291961A3C90094FAA3 /* pediasure.png */; };
+		1920F22C1961A3C90094FAA3 /* pediasure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F22A1961A3C90094FAA3 /* pediasure@2x.png */; };
+		1920F22F1961A4330094FAA3 /* bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F22D1961A4330094FAA3 /* bottle.png */; };
+		1920F2301961A4330094FAA3 /* bottle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F22E1961A4330094FAA3 /* bottle@2x.png */; };
+		1920F2461961B8140094FAA3 /* drinking_bottle_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2321961B8140094FAA3 /* drinking_bottle_1.png */; };
+		1920F2471961B8140094FAA3 /* drinking_bottle_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2331961B8140094FAA3 /* drinking_bottle_1@2x.png */; };
+		1920F2481961B8140094FAA3 /* drinking_bottle_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2341961B8140094FAA3 /* drinking_bottle_2.png */; };
+		1920F2491961B8140094FAA3 /* drinking_bottle_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2351961B8140094FAA3 /* drinking_bottle_2@2x.png */; };
+		1920F24A1961B8140094FAA3 /* drinking_glass_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2361961B8140094FAA3 /* drinking_glass_1.png */; };
+		1920F24B1961B8140094FAA3 /* drinking_glass_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2371961B8140094FAA3 /* drinking_glass_1@2x.png */; };
+		1920F24C1961B8140094FAA3 /* drinking_glass_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2381961B8140094FAA3 /* drinking_glass_2.png */; };
+		1920F24D1961B8140094FAA3 /* drinking_glass_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2391961B8140094FAA3 /* drinking_glass_2@2x.png */; };
+		1920F24E1961B8140094FAA3 /* drinking_juice_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F23A1961B8140094FAA3 /* drinking_juice_1.png */; };
+		1920F24F1961B8140094FAA3 /* drinking_juice_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F23B1961B8140094FAA3 /* drinking_juice_1@2x.png */; };
+		1920F2501961B8140094FAA3 /* drinking_juice_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F23C1961B8140094FAA3 /* drinking_juice_2.png */; };
+		1920F2511961B8140094FAA3 /* drinking_juice_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F23D1961B8140094FAA3 /* drinking_juice_2@2x.png */; };
+		1920F2521961B8140094FAA3 /* drinking_pediasure_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F23E1961B8140094FAA3 /* drinking_pediasure_1.png */; };
+		1920F2531961B8140094FAA3 /* drinking_pediasure_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F23F1961B8140094FAA3 /* drinking_pediasure_1@2x.png */; };
+		1920F2541961B8140094FAA3 /* drinking_pediasure_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2401961B8140094FAA3 /* drinking_pediasure_2.png */; };
+		1920F2551961B8140094FAA3 /* drinking_pediasure_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2411961B8140094FAA3 /* drinking_pediasure_2@2x.png */; };
+		1920F2561961B8140094FAA3 /* drinking_sippy_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2421961B8140094FAA3 /* drinking_sippy_1.png */; };
+		1920F2571961B8140094FAA3 /* drinking_sippy_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2431961B8140094FAA3 /* drinking_sippy_1@2x.png */; };
+		1920F2581961B8140094FAA3 /* drinking_sippy_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2441961B8140094FAA3 /* drinking_sippy_2.png */; };
+		1920F2591961B8140094FAA3 /* drinking_sippy_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2451961B8140094FAA3 /* drinking_sippy_2@2x.png */; };
+		1920F25D1961FB450094FAA3 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F25B1961FB450094FAA3 /* camera.png */; };
+		1920F25E1961FB450094FAA3 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F25C1961FB450094FAA3 /* camera@2x.png */; };
+		1920F2611961FE100094FAA3 /* camera_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F25F1961FE100094FAA3 /* camera_overlay.png */; };
+		1920F2621961FE100094FAA3 /* camera_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2601961FE100094FAA3 /* camera_overlay@2x.png */; };
 		1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545A195D740A003BAC7F /* story_page_29e.jpg */; };
 		19945460195D740B003BAC7F /* story_page_30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545B195D740A003BAC7F /* story_page_30.jpg */; };
 		19945461195D740B003BAC7F /* story_page_31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545C195D740A003BAC7F /* story_page_31.jpg */; };
@@ -152,6 +205,15 @@
 		199454B3195DBA7A003BAC7F /* button_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 199454B1195DBA7A003BAC7F /* button_play.png */; };
 		199454B4195DBA7A003BAC7F /* button_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 199454B2195DBA7A003BAC7F /* button_play@2x.png */; };
 		199454B6195E00C2003BAC7F /* spacer.png in Resources */ = {isa = PBXBuildFile; fileRef = 199454B5195E00C2003BAC7F /* spacer.png */; };
+		19FE7CD9196207600074A32F /* cutout.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CD7196207600074A32F /* cutout.png */; };
+		19FE7CDA196207600074A32F /* cutout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CD8196207600074A32F /* cutout@2x.png */; };
+		19FE7CE019620B2A0074A32F /* tiny_eating_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */; };
+		19FE7CE119620B2A0074A32F /* tiny_eating_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDD19620B2A0074A32F /* tiny_eating_1@2x.png */; };
+		19FE7CE219620B2A0074A32F /* tiny_eating_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDE19620B2A0074A32F /* tiny_eating_2.png */; };
+		19FE7CE319620B2A0074A32F /* tiny_eating_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDF19620B2A0074A32F /* tiny_eating_2@2x.png */; };
+		19FE7CE5196215B90074A32F /* greenpeas_cutout.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CE4196215B90074A32F /* greenpeas_cutout.png */; };
+		19FE7CE9196219AB0074A32F /* tiny_plate_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CE7196219AB0074A32F /* tiny_plate_12.png */; };
+		19FE7CEA196219AB0074A32F /* tiny_plate_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CE8196219AB0074A32F /* tiny_plate_12@2x.png */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		316ACB431831973A00FE3A83 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB371831973A00FE3A83 /* bowl1.png */; };
@@ -192,19 +254,7 @@
 		EC7124C618146152007319C5 /* XMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLDelegate.m */; };
 		EC7124CB18147519007319C5 /* SceneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124CA18147519007319C5 /* SceneFactory.m */; };
 		FD16EA5C18511D8D00A801B3 /* store_background_jingle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD16EA5B18511D8D00A801B3 /* store_background_jingle.mp3 */; };
-		FD187EDA183BE8B60021D98F /* tiny_shop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187ED9183BE8B60021D98F /* tiny_shop.jpg */; };
-		FD187EDC183BE93C0021D98F /* tiny_shop_thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */; };
 		FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */; };
-		FD23B0F7184166DE00D1C9A9 /* drinking_juice_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */; };
-		FD23B0F8184166DE00D1C9A9 /* drinking_juice_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */; };
-		FD23B0F9184166DE00D1C9A9 /* drinking_glass_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0EF184166DE00D1C9A9 /* drinking_glass_2.jpg */; };
-		FD23B1001841690400D1C9A9 /* drinking_glass_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0FF1841690400D1C9A9 /* drinking_glass_1.jpg */; };
-		FD23B10518416A3200D1C9A9 /* drinking_pediasure_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10118416A3200D1C9A9 /* drinking_pediasure_2.jpg */; };
-		FD23B10618416A3200D1C9A9 /* drinking_pediasure_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10218416A3200D1C9A9 /* drinking_pediasure_1.jpg */; };
-		FD23B10718416A3200D1C9A9 /* drinking_sippy_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10318416A3200D1C9A9 /* drinking_sippy_2.jpg */; };
-		FD23B10818416A3200D1C9A9 /* drinking_sippy_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10418416A3200D1C9A9 /* drinking_sippy_1.jpg */; };
-		FD23B10B18416D1E00D1C9A9 /* drinking_bottle_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */; };
-		FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */; };
 		FD23B10E184172E200D1C9A9 /* outline_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10D184172E200D1C9A9 /* outline_camera.png */; };
 		FD23B12418429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD23B11718429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a */; };
 		FD23B12518429F2500D1C9A9 /* eating_none_this_time_feedback.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD23B11818429F2500D1C9A9 /* eating_none_this_time_feedback.m4a */; };
@@ -221,26 +271,13 @@
 		FD23B13018429F2500D1C9A9 /* this_is_good.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD23B12318429F2500D1C9A9 /* this_is_good.m4a */; };
 		FD2AC75A18396CF500A7D6A1 /* blue_glow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */; };
 		FD2AC75B18396CF500A7D6A1 /* blue_circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */; };
-		FD2AC77F183AC66900A7D6A1 /* coin_pouch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD2AC777183AC66900A7D6A1 /* coin_pouch.jpg */; };
-		FD70732918303865003BFC29 /* pediasure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730018303865003BFC29 /* pediasure.jpg */; };
-		FD70732E18303865003BFC29 /* full_bowl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70730518303865003BFC29 /* full_bowl.jpg */; };
 		FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731118303865003BFC29 /* tried_some_label.jpg */; };
-		FD70733B18303865003BFC29 /* sippy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731218303865003BFC29 /* sippy.jpg */; };
 		FD70733C18303865003BFC29 /* redline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731318303865003BFC29 /* redline.jpg */; };
 		FD70733D18303865003BFC29 /* none_this_time_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731418303865003BFC29 /* none_this_time_label.jpg */; };
-		FD70733E18303865003BFC29 /* lets_drink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731518303865003BFC29 /* lets_drink.jpg */; };
-		FD70734018303865003BFC29 /* juicebox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731718303865003BFC29 /* juicebox.jpg */; };
 		FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731918303865003BFC29 /* feedback_tiny.jpg */; };
-		FD70734318303865003BFC29 /* glass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731A18303865003BFC29 /* glass.jpg */; };
 		FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731B18303865003BFC29 /* eating_critter_1.jpg */; };
 		FD70734518303865003BFC29 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731C18303865003BFC29 /* eating_critter_2.jpg */; };
-		FD70734718303865003BFC29 /* cutout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731E18303865003BFC29 /* cutout.jpg */; };
-		FD70734818303865003BFC29 /* coin_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731F18303865003BFC29 /* coin_icon.jpg */; };
-		FD70734918303865003BFC29 /* clock_settings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732018303865003BFC29 /* clock_settings.jpg */; };
-		FD70734B18303865003BFC29 /* bottle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732218303865003BFC29 /* bottle.jpg */; };
-		FD70734C18303865003BFC29 /* camera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732318303865003BFC29 /* camera.jpg */; };
 		FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732718303865003BFC29 /* all_finished_label.jpg */; };
-		FD70735118303865003BFC29 /* camera_overlay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732818303865003BFC29 /* camera_overlay.jpg */; };
 		FD7073541833456C003BFC29 /* slurping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD7073531833456C003BFC29 /* slurping.mp3 */; };
 		FD7924BB1857B53700BF75B7 /* main_menu_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD7924BA1857B53700BF75B7 /* main_menu_music.mp3 */; };
 		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
@@ -256,7 +293,6 @@
 		FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDBC9CCF1816319800861C75 /* KBZipaDeeDooDah.ttf */; };
 		FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9CD218163E2700861C75 /* FeedbackViewController.m */; };
 		FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */; };
-		FDC918EA18552ECF00B19DA4 /* book_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC918E918552ECF00B19DA4 /* book_cover.jpg */; };
 		FDCE238E184EC25B007A0F4F /* BACKLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = FDCE238D184EC25B007A0F4F /* BACKLOG.txt */; };
 		FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */; };
 /* End PBXBuildFile section */
@@ -339,25 +375,6 @@
 		19120DE2195CB646001302FF /* story_page_26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_26.jpg; path = "Tiny Tastes/Images/Story/story_page_26.jpg"; sourceTree = "<group>"; };
 		19120DE3195CB646001302FF /* story_page_27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_27.jpg; path = "Tiny Tastes/Images/Story/story_page_27.jpg"; sourceTree = "<group>"; };
 		19120DE4195CB646001302FF /* story_page_28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_28.jpg; path = "Tiny Tastes/Images/Story/story_page_28.jpg"; sourceTree = "<group>"; };
-		19120DED195D5312001302FF /* story_sound_p01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p01.m4a; sourceTree = "<group>"; };
-		19120DEE195D5312001302FF /* story_sound_p02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p02.m4a; sourceTree = "<group>"; };
-		19120DEF195D5312001302FF /* story_sound_p03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p03.m4a; sourceTree = "<group>"; };
-		19120DF0195D5312001302FF /* story_sound_p04.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p04.m4a; sourceTree = "<group>"; };
-		19120DF1195D5312001302FF /* story_sound_p05.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p05.m4a; sourceTree = "<group>"; };
-		19120DF2195D5312001302FF /* story_sound_p06.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p06.m4a; sourceTree = "<group>"; };
-		19120DF3195D5312001302FF /* story_sound_p07.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p07.m4a; sourceTree = "<group>"; };
-		19120DF4195D5312001302FF /* story_sound_p08.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p08.m4a; sourceTree = "<group>"; };
-		19120DF5195D5312001302FF /* story_sound_p09.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p09.m4a; sourceTree = "<group>"; };
-		19120DF6195D5312001302FF /* story_sound_p10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p10.m4a; sourceTree = "<group>"; };
-		19120DF7195D5312001302FF /* story_sound_p11.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p11.m4a; sourceTree = "<group>"; };
-		19120DF8195D5312001302FF /* story_sound_p12.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p12.m4a; sourceTree = "<group>"; };
-		19120DF9195D5312001302FF /* story_sound_p13.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p13.m4a; sourceTree = "<group>"; };
-		19120DFA195D5312001302FF /* story_sound_p14.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p14.m4a; sourceTree = "<group>"; };
-		19120DFB195D5312001302FF /* story_sound_p15.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p15.m4a; sourceTree = "<group>"; };
-		19120DFC195D5312001302FF /* story_sound_p16.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p16.m4a; sourceTree = "<group>"; };
-		19120DFD195D5312001302FF /* story_sound_p17.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p17.m4a; sourceTree = "<group>"; };
-		19120DFE195D5312001302FF /* story_sound_p18.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p18.m4a; sourceTree = "<group>"; };
-		191401A219571957008F40C4 /* cutout@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cutout@2x.jpg"; sourceTree = "<group>"; };
 		191401AC19582326008F40C4 /* greenpeas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeas.jpg; sourceTree = "<group>"; };
 		191401B219585B07008F40C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		191401CF1958D0E7008F40C4 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
@@ -366,16 +383,88 @@
 		191401D21958D0E7008F40C4 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
 		191401D31958D0E7008F40C4 /* libCrittercism_v4_3_4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v4_3_4.a; sourceTree = "<group>"; };
 		191401D61958D17E008F40C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		191401EE1959E1C9008F40C4 /* home_tiny_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_0.png; sourceTree = "<group>"; };
-		191401EF1959E1C9008F40C4 /* home_tiny_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_1.png; sourceTree = "<group>"; };
-		191401F01959E1C9008F40C4 /* home_tiny_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_2.png; sourceTree = "<group>"; };
-		191401F11959E1C9008F40C4 /* home_tiny_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_3.png; sourceTree = "<group>"; };
-		191401F21959E1C9008F40C4 /* home_tiny_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_4.png; sourceTree = "<group>"; };
-		191401F31959E1C9008F40C4 /* home_tiny_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_5.png; sourceTree = "<group>"; };
-		191401F41959E1C9008F40C4 /* home_tiny_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_6.png; sourceTree = "<group>"; };
 		1920F1B3195F36BD0094FAA3 /* story_tiny_frog_fish_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = story_tiny_frog_fish_03.png; sourceTree = "<group>"; };
 		1920F1B5195F48FD0094FAA3 /* story_tiny_fish_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = story_tiny_fish_02.png; sourceTree = "<group>"; };
 		1920F1B6195F48FD0094FAA3 /* story_tiny_fish_plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = story_tiny_fish_plant.png; sourceTree = "<group>"; };
+		1920F1B91961873D0094FAA3 /* story_cover_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_cover_page.jpg; path = "Tiny Tastes/Images/Story/story_cover_page.jpg"; sourceTree = "<group>"; };
+		1920F1BC196187FF0094FAA3 /* story_sound_p01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p01.m4a; sourceTree = "<group>"; };
+		1920F1BD196187FF0094FAA3 /* story_sound_p02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p02.m4a; sourceTree = "<group>"; };
+		1920F1BE196187FF0094FAA3 /* story_sound_p03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p03.m4a; sourceTree = "<group>"; };
+		1920F1BF196187FF0094FAA3 /* story_sound_p04.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p04.m4a; sourceTree = "<group>"; };
+		1920F1C0196187FF0094FAA3 /* story_sound_p05.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p05.m4a; sourceTree = "<group>"; };
+		1920F1C1196187FF0094FAA3 /* story_sound_p06.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p06.m4a; sourceTree = "<group>"; };
+		1920F1C2196187FF0094FAA3 /* story_sound_p07.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p07.m4a; sourceTree = "<group>"; };
+		1920F1C3196187FF0094FAA3 /* story_sound_p08.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p08.m4a; sourceTree = "<group>"; };
+		1920F1C4196187FF0094FAA3 /* story_sound_p09.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p09.m4a; sourceTree = "<group>"; };
+		1920F1C5196187FF0094FAA3 /* story_sound_p10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p10.m4a; sourceTree = "<group>"; };
+		1920F1C6196187FF0094FAA3 /* story_sound_p11.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p11.m4a; sourceTree = "<group>"; };
+		1920F1C7196187FF0094FAA3 /* story_sound_p12.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p12.m4a; sourceTree = "<group>"; };
+		1920F1C8196187FF0094FAA3 /* story_sound_p13.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p13.m4a; sourceTree = "<group>"; };
+		1920F1C9196187FF0094FAA3 /* story_sound_p14.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p14.m4a; sourceTree = "<group>"; };
+		1920F1CA196187FF0094FAA3 /* story_sound_p15.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p15.m4a; sourceTree = "<group>"; };
+		1920F1CB196187FF0094FAA3 /* story_sound_p16.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p16.m4a; sourceTree = "<group>"; };
+		1920F1CC196187FF0094FAA3 /* story_sound_p17.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p17.m4a; sourceTree = "<group>"; };
+		1920F1CD196187FF0094FAA3 /* story_sound_p18.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p18.m4a; sourceTree = "<group>"; };
+		1920F1E1196189BF0094FAA3 /* home_shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_shop.png; sourceTree = "<group>"; };
+		1920F1E2196189BF0094FAA3 /* home_shop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_shop@2x.png"; sourceTree = "<group>"; };
+		1920F1E519618B9E0094FAA3 /* home_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_settings.png; sourceTree = "<group>"; };
+		1920F1E619618B9E0094FAA3 /* home_settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_settings@2x.png"; sourceTree = "<group>"; };
+		1920F1E919618C320094FAA3 /* home_eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_eat.png; sourceTree = "<group>"; };
+		1920F1EA19618C320094FAA3 /* home_eat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_eat@2x.png"; sourceTree = "<group>"; };
+		1920F1ED19618CD70094FAA3 /* home_drink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_drink.png; sourceTree = "<group>"; };
+		1920F1EE19618CD70094FAA3 /* home_drink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_drink@2x.png"; sourceTree = "<group>"; };
+		1920F1F2196194F20094FAA3 /* home_tiny_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_00.png; sourceTree = "<group>"; };
+		1920F1F3196194F20094FAA3 /* home_tiny_00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_00@2x.png"; sourceTree = "<group>"; };
+		1920F1F4196194F20094FAA3 /* home_tiny_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_01.png; sourceTree = "<group>"; };
+		1920F1F5196194F20094FAA3 /* home_tiny_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_01@2x.png"; sourceTree = "<group>"; };
+		1920F1F6196194F20094FAA3 /* home_tiny_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_02.png; sourceTree = "<group>"; };
+		1920F1F7196194F20094FAA3 /* home_tiny_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_02@2x.png"; sourceTree = "<group>"; };
+		1920F1F8196194F20094FAA3 /* home_tiny_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_03.png; sourceTree = "<group>"; };
+		1920F1F9196194F20094FAA3 /* home_tiny_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_03@2x.png"; sourceTree = "<group>"; };
+		1920F1FA196194F20094FAA3 /* home_tiny_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_04.png; sourceTree = "<group>"; };
+		1920F1FB196194F20094FAA3 /* home_tiny_04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_04@2x.png"; sourceTree = "<group>"; };
+		1920F1FC196194F20094FAA3 /* home_tiny_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_05.png; sourceTree = "<group>"; };
+		1920F1FD196194F20094FAA3 /* home_tiny_05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_05@2x.png"; sourceTree = "<group>"; };
+		1920F20B196197E00094FAA3 /* shop_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shop_large.png; sourceTree = "<group>"; };
+		1920F20C196197E00094FAA3 /* shop_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_large@2x.png"; sourceTree = "<group>"; };
+		1920F21419619B800094FAA3 /* money_bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money_bag.png; sourceTree = "<group>"; };
+		1920F21519619B800094FAA3 /* money_bag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "money_bag@2x.png"; sourceTree = "<group>"; };
+		1920F21819619D5B0094FAA3 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		1920F21919619D5B0094FAA3 /* coin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin@2x.png"; sourceTree = "<group>"; };
+		1920F21D1961A15B0094FAA3 /* sippy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sippy.png; sourceTree = "<group>"; };
+		1920F21E1961A15B0094FAA3 /* sippy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sippy@2x.png"; sourceTree = "<group>"; };
+		1920F2211961A1CC0094FAA3 /* juicebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juicebox.png; sourceTree = "<group>"; };
+		1920F2221961A1CC0094FAA3 /* juicebox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "juicebox@2x.png"; sourceTree = "<group>"; };
+		1920F2251961A3760094FAA3 /* glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glass.png; sourceTree = "<group>"; };
+		1920F2261961A3760094FAA3 /* glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass@2x.png"; sourceTree = "<group>"; };
+		1920F2291961A3C90094FAA3 /* pediasure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pediasure.png; sourceTree = "<group>"; };
+		1920F22A1961A3C90094FAA3 /* pediasure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pediasure@2x.png"; sourceTree = "<group>"; };
+		1920F22D1961A4330094FAA3 /* bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottle.png; sourceTree = "<group>"; };
+		1920F22E1961A4330094FAA3 /* bottle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottle@2x.png"; sourceTree = "<group>"; };
+		1920F2321961B8140094FAA3 /* drinking_bottle_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_bottle_1.png; sourceTree = "<group>"; };
+		1920F2331961B8140094FAA3 /* drinking_bottle_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_bottle_1@2x.png"; sourceTree = "<group>"; };
+		1920F2341961B8140094FAA3 /* drinking_bottle_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_bottle_2.png; sourceTree = "<group>"; };
+		1920F2351961B8140094FAA3 /* drinking_bottle_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_bottle_2@2x.png"; sourceTree = "<group>"; };
+		1920F2361961B8140094FAA3 /* drinking_glass_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_glass_1.png; sourceTree = "<group>"; };
+		1920F2371961B8140094FAA3 /* drinking_glass_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_glass_1@2x.png"; sourceTree = "<group>"; };
+		1920F2381961B8140094FAA3 /* drinking_glass_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_glass_2.png; sourceTree = "<group>"; };
+		1920F2391961B8140094FAA3 /* drinking_glass_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_glass_2@2x.png"; sourceTree = "<group>"; };
+		1920F23A1961B8140094FAA3 /* drinking_juice_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_juice_1.png; sourceTree = "<group>"; };
+		1920F23B1961B8140094FAA3 /* drinking_juice_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_juice_1@2x.png"; sourceTree = "<group>"; };
+		1920F23C1961B8140094FAA3 /* drinking_juice_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_juice_2.png; sourceTree = "<group>"; };
+		1920F23D1961B8140094FAA3 /* drinking_juice_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_juice_2@2x.png"; sourceTree = "<group>"; };
+		1920F23E1961B8140094FAA3 /* drinking_pediasure_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_pediasure_1.png; sourceTree = "<group>"; };
+		1920F23F1961B8140094FAA3 /* drinking_pediasure_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_pediasure_1@2x.png"; sourceTree = "<group>"; };
+		1920F2401961B8140094FAA3 /* drinking_pediasure_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_pediasure_2.png; sourceTree = "<group>"; };
+		1920F2411961B8140094FAA3 /* drinking_pediasure_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_pediasure_2@2x.png"; sourceTree = "<group>"; };
+		1920F2421961B8140094FAA3 /* drinking_sippy_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_sippy_1.png; sourceTree = "<group>"; };
+		1920F2431961B8140094FAA3 /* drinking_sippy_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_sippy_1@2x.png"; sourceTree = "<group>"; };
+		1920F2441961B8140094FAA3 /* drinking_sippy_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinking_sippy_2.png; sourceTree = "<group>"; };
+		1920F2451961B8140094FAA3 /* drinking_sippy_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinking_sippy_2@2x.png"; sourceTree = "<group>"; };
+		1920F25B1961FB450094FAA3 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		1920F25C1961FB450094FAA3 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		1920F25F1961FE100094FAA3 /* camera_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_overlay.png; sourceTree = "<group>"; };
+		1920F2601961FE100094FAA3 /* camera_overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_overlay@2x.png"; sourceTree = "<group>"; };
 		1994545A195D740A003BAC7F /* story_page_29e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_29e.jpg; path = "Tiny Tastes/Images/Story/story_page_29e.jpg"; sourceTree = "<group>"; };
 		1994545B195D740A003BAC7F /* story_page_30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_30.jpg; path = "Tiny Tastes/Images/Story/story_page_30.jpg"; sourceTree = "<group>"; };
 		1994545C195D740A003BAC7F /* story_page_31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_31.jpg; path = "Tiny Tastes/Images/Story/story_page_31.jpg"; sourceTree = "<group>"; };
@@ -421,6 +510,15 @@
 		199454B1195DBA7A003BAC7F /* button_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_play.png; sourceTree = "<group>"; };
 		199454B2195DBA7A003BAC7F /* button_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_play@2x.png"; sourceTree = "<group>"; };
 		199454B5195E00C2003BAC7F /* spacer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spacer.png; path = "Tiny Tastes/Images/spacer.png"; sourceTree = "<group>"; };
+		19FE7CD7196207600074A32F /* cutout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cutout.png; sourceTree = "<group>"; };
+		19FE7CD8196207600074A32F /* cutout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cutout@2x.png"; sourceTree = "<group>"; };
+		19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_eating_1.png; sourceTree = "<group>"; };
+		19FE7CDD19620B2A0074A32F /* tiny_eating_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny_eating_1@2x.png"; sourceTree = "<group>"; };
+		19FE7CDE19620B2A0074A32F /* tiny_eating_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_eating_2.png; sourceTree = "<group>"; };
+		19FE7CDF19620B2A0074A32F /* tiny_eating_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny_eating_2@2x.png"; sourceTree = "<group>"; };
+		19FE7CE4196215B90074A32F /* greenpeas_cutout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenpeas_cutout.png; sourceTree = "<group>"; };
+		19FE7CE7196219AB0074A32F /* tiny_plate_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_plate_12.png; sourceTree = "<group>"; };
+		19FE7CE8196219AB0074A32F /* tiny_plate_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny_plate_12@2x.png"; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
@@ -475,19 +573,7 @@
 		EC7124C918147519007319C5 /* SceneFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFactory.h; sourceTree = "<group>"; };
 		EC7124CA18147519007319C5 /* SceneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneFactory.m; sourceTree = "<group>"; };
 		FD16EA5B18511D8D00A801B3 /* store_background_jingle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = store_background_jingle.mp3; sourceTree = "<group>"; };
-		FD187ED9183BE8B60021D98F /* tiny_shop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop.jpg; sourceTree = "<group>"; };
-		FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny_shop_thumbnail.jpg; sourceTree = "<group>"; };
 		FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thought_bubble.jpg; sourceTree = "<group>"; };
-		FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_juice_2.jpg; sourceTree = "<group>"; };
-		FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_juice_1.jpg; sourceTree = "<group>"; };
-		FD23B0EF184166DE00D1C9A9 /* drinking_glass_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_glass_2.jpg; sourceTree = "<group>"; };
-		FD23B0FF1841690400D1C9A9 /* drinking_glass_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_glass_1.jpg; sourceTree = "<group>"; };
-		FD23B10118416A3200D1C9A9 /* drinking_pediasure_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_pediasure_2.jpg; sourceTree = "<group>"; };
-		FD23B10218416A3200D1C9A9 /* drinking_pediasure_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_pediasure_1.jpg; sourceTree = "<group>"; };
-		FD23B10318416A3200D1C9A9 /* drinking_sippy_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_sippy_2.jpg; sourceTree = "<group>"; };
-		FD23B10418416A3200D1C9A9 /* drinking_sippy_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_sippy_1.jpg; sourceTree = "<group>"; };
-		FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_bottle_2.jpg; sourceTree = "<group>"; };
-		FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinking_bottle_1.jpg; sourceTree = "<group>"; };
 		FD23B10D184172E200D1C9A9 /* outline_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline_camera.png; sourceTree = "<group>"; };
 		FD23B11718429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = drinking_none_this_time_feedback.m4a; sourceTree = "<group>"; };
 		FD23B11818429F2500D1C9A9 /* eating_none_this_time_feedback.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eating_none_this_time_feedback.m4a; sourceTree = "<group>"; };
@@ -504,26 +590,13 @@
 		FD23B12318429F2500D1C9A9 /* this_is_good.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = this_is_good.m4a; sourceTree = "<group>"; };
 		FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_glow.jpg; sourceTree = "<group>"; };
 		FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_circle.jpg; sourceTree = "<group>"; };
-		FD2AC777183AC66900A7D6A1 /* coin_pouch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coin_pouch.jpg; sourceTree = "<group>"; };
-		FD70730018303865003BFC29 /* pediasure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pediasure.jpg; sourceTree = "<group>"; };
-		FD70730518303865003BFC29 /* full_bowl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = full_bowl.jpg; sourceTree = "<group>"; };
 		FD70731118303865003BFC29 /* tried_some_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tried_some_label.jpg; sourceTree = "<group>"; };
-		FD70731218303865003BFC29 /* sippy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sippy.jpg; sourceTree = "<group>"; };
 		FD70731318303865003BFC29 /* redline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redline.jpg; sourceTree = "<group>"; };
 		FD70731418303865003BFC29 /* none_this_time_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = none_this_time_label.jpg; sourceTree = "<group>"; };
-		FD70731518303865003BFC29 /* lets_drink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lets_drink.jpg; sourceTree = "<group>"; };
-		FD70731718303865003BFC29 /* juicebox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = juicebox.jpg; sourceTree = "<group>"; };
 		FD70731918303865003BFC29 /* feedback_tiny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feedback_tiny.jpg; sourceTree = "<group>"; };
-		FD70731A18303865003BFC29 /* glass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glass.jpg; sourceTree = "<group>"; };
 		FD70731B18303865003BFC29 /* eating_critter_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_1.jpg; sourceTree = "<group>"; };
 		FD70731C18303865003BFC29 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
-		FD70731E18303865003BFC29 /* cutout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cutout.jpg; sourceTree = "<group>"; };
-		FD70731F18303865003BFC29 /* coin_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coin_icon.jpg; sourceTree = "<group>"; };
-		FD70732018303865003BFC29 /* clock_settings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clock_settings.jpg; sourceTree = "<group>"; };
-		FD70732218303865003BFC29 /* bottle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottle.jpg; sourceTree = "<group>"; };
-		FD70732318303865003BFC29 /* camera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera.jpg; sourceTree = "<group>"; };
 		FD70732718303865003BFC29 /* all_finished_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_finished_label.jpg; sourceTree = "<group>"; };
-		FD70732818303865003BFC29 /* camera_overlay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera_overlay.jpg; sourceTree = "<group>"; };
 		FD7073531833456C003BFC29 /* slurping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slurping.mp3; sourceTree = "<group>"; };
 		FD7924BA1857B53700BF75B7 /* main_menu_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main_menu_music.mp3; sourceTree = "<group>"; };
 		FDA12066182452EC00877E20 /* CustomTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTimerViewController.h; sourceTree = "<group>"; };
@@ -548,7 +621,6 @@
 		FDBC9CD218163E2700861C75 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDrinkViewController.h; sourceTree = "<group>"; };
 		FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDrinkViewController.m; sourceTree = "<group>"; };
-		FDC918E918552ECF00B19DA4 /* book_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book_cover.jpg; sourceTree = "<group>"; };
 		FDCE238D184EC25B007A0F4F /* BACKLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BACKLOG.txt; sourceTree = "<group>"; };
 		FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_done_label.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -663,35 +735,10 @@
 			path = "tiny and frog jump 2";
 			sourceTree = "<group>";
 		};
-		19120DEC195D5312001302FF /* Story sounds */ = {
-			isa = PBXGroup;
-			children = (
-				19120DED195D5312001302FF /* story_sound_p01.m4a */,
-				19120DEE195D5312001302FF /* story_sound_p02.m4a */,
-				19120DEF195D5312001302FF /* story_sound_p03.m4a */,
-				19120DF0195D5312001302FF /* story_sound_p04.m4a */,
-				19120DF1195D5312001302FF /* story_sound_p05.m4a */,
-				19120DF2195D5312001302FF /* story_sound_p06.m4a */,
-				19120DF3195D5312001302FF /* story_sound_p07.m4a */,
-				19120DF4195D5312001302FF /* story_sound_p08.m4a */,
-				19120DF5195D5312001302FF /* story_sound_p09.m4a */,
-				19120DF6195D5312001302FF /* story_sound_p10.m4a */,
-				19120DF7195D5312001302FF /* story_sound_p11.m4a */,
-				19120DF8195D5312001302FF /* story_sound_p12.m4a */,
-				19120DF9195D5312001302FF /* story_sound_p13.m4a */,
-				19120DFA195D5312001302FF /* story_sound_p14.m4a */,
-				19120DFB195D5312001302FF /* story_sound_p15.m4a */,
-				19120DFC195D5312001302FF /* story_sound_p16.m4a */,
-				19120DFD195D5312001302FF /* story_sound_p17.m4a */,
-				19120DFE195D5312001302FF /* story_sound_p18.m4a */,
-			);
-			name = "Story sounds";
-			path = "Tiny Tastes/Story sounds";
-			sourceTree = "<group>";
-		};
 		1914019B19570D5E008F40C4 /* sampleimages */ = {
 			isa = PBXGroup;
 			children = (
+				19FE7CE4196215B90074A32F /* greenpeas_cutout.png */,
 				191401AC19582326008F40C4 /* greenpeas.jpg */,
 			);
 			path = sampleimages;
@@ -735,27 +782,148 @@
 			path = CrittercismSDK;
 			sourceTree = "<group>";
 		};
-		191401EC1959E1C9008F40C4 /* Home screen */ = {
+		1920F1BB196187FF0094FAA3 /* Story sounds */ = {
 			isa = PBXGroup;
 			children = (
-				191401ED1959E1C9008F40C4 /* Tiny */,
+				1920F1BC196187FF0094FAA3 /* story_sound_p01.m4a */,
+				1920F1BD196187FF0094FAA3 /* story_sound_p02.m4a */,
+				1920F1BE196187FF0094FAA3 /* story_sound_p03.m4a */,
+				1920F1BF196187FF0094FAA3 /* story_sound_p04.m4a */,
+				1920F1C0196187FF0094FAA3 /* story_sound_p05.m4a */,
+				1920F1C1196187FF0094FAA3 /* story_sound_p06.m4a */,
+				1920F1C2196187FF0094FAA3 /* story_sound_p07.m4a */,
+				1920F1C3196187FF0094FAA3 /* story_sound_p08.m4a */,
+				1920F1C4196187FF0094FAA3 /* story_sound_p09.m4a */,
+				1920F1C5196187FF0094FAA3 /* story_sound_p10.m4a */,
+				1920F1C6196187FF0094FAA3 /* story_sound_p11.m4a */,
+				1920F1C7196187FF0094FAA3 /* story_sound_p12.m4a */,
+				1920F1C8196187FF0094FAA3 /* story_sound_p13.m4a */,
+				1920F1C9196187FF0094FAA3 /* story_sound_p14.m4a */,
+				1920F1CA196187FF0094FAA3 /* story_sound_p15.m4a */,
+				1920F1CB196187FF0094FAA3 /* story_sound_p16.m4a */,
+				1920F1CC196187FF0094FAA3 /* story_sound_p17.m4a */,
+				1920F1CD196187FF0094FAA3 /* story_sound_p18.m4a */,
 			);
-			name = "Home screen";
-			path = "Tiny Tastes/Images/Home screen";
+			name = "Story sounds";
+			path = "Tiny Tastes/Sounds/Story sounds";
 			sourceTree = "<group>";
 		};
-		191401ED1959E1C9008F40C4 /* Tiny */ = {
+		1920F1E0196189BF0094FAA3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				191401EE1959E1C9008F40C4 /* home_tiny_0.png */,
-				191401EF1959E1C9008F40C4 /* home_tiny_1.png */,
-				191401F01959E1C9008F40C4 /* home_tiny_2.png */,
-				191401F11959E1C9008F40C4 /* home_tiny_3.png */,
-				191401F21959E1C9008F40C4 /* home_tiny_4.png */,
-				191401F31959E1C9008F40C4 /* home_tiny_5.png */,
-				191401F41959E1C9008F40C4 /* home_tiny_6.png */,
+				1920F1E1196189BF0094FAA3 /* home_shop.png */,
+				1920F1E2196189BF0094FAA3 /* home_shop@2x.png */,
+				1920F1E519618B9E0094FAA3 /* home_settings.png */,
+				1920F1E619618B9E0094FAA3 /* home_settings@2x.png */,
+				1920F1E919618C320094FAA3 /* home_eat.png */,
+				1920F1EA19618C320094FAA3 /* home_eat@2x.png */,
+				1920F1ED19618CD70094FAA3 /* home_drink.png */,
+				1920F1EE19618CD70094FAA3 /* home_drink@2x.png */,
+				1920F1F1196194F20094FAA3 /* Animated Tiny */,
 			);
-			path = Tiny;
+			name = Home;
+			path = "Tiny Tastes/Images/Home";
+			sourceTree = "<group>";
+		};
+		1920F1F1196194F20094FAA3 /* Animated Tiny */ = {
+			isa = PBXGroup;
+			children = (
+				1920F1F2196194F20094FAA3 /* home_tiny_00.png */,
+				1920F1F3196194F20094FAA3 /* home_tiny_00@2x.png */,
+				1920F1F4196194F20094FAA3 /* home_tiny_01.png */,
+				1920F1F5196194F20094FAA3 /* home_tiny_01@2x.png */,
+				1920F1F6196194F20094FAA3 /* home_tiny_02.png */,
+				1920F1F7196194F20094FAA3 /* home_tiny_02@2x.png */,
+				1920F1F8196194F20094FAA3 /* home_tiny_03.png */,
+				1920F1F9196194F20094FAA3 /* home_tiny_03@2x.png */,
+				1920F1FA196194F20094FAA3 /* home_tiny_04.png */,
+				1920F1FB196194F20094FAA3 /* home_tiny_04@2x.png */,
+				1920F1FC196194F20094FAA3 /* home_tiny_05.png */,
+				1920F1FD196194F20094FAA3 /* home_tiny_05@2x.png */,
+			);
+			path = "Animated Tiny";
+			sourceTree = "<group>";
+		};
+		1920F20A196197E00094FAA3 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				1920F20B196197E00094FAA3 /* shop_large.png */,
+				1920F20C196197E00094FAA3 /* shop_large@2x.png */,
+			);
+			name = Shop;
+			path = "Tiny Tastes/Images/Shop";
+			sourceTree = "<group>";
+		};
+		1920F21319619B800094FAA3 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				1920F21819619D5B0094FAA3 /* coin.png */,
+				1920F21919619D5B0094FAA3 /* coin@2x.png */,
+				1920F21419619B800094FAA3 /* money_bag.png */,
+				1920F21519619B800094FAA3 /* money_bag@2x.png */,
+			);
+			name = Feedback;
+			path = "Tiny Tastes/Images/Feedback";
+			sourceTree = "<group>";
+		};
+		1920F21C1961A15B0094FAA3 /* Drink */ = {
+			isa = PBXGroup;
+			children = (
+				1920F21D1961A15B0094FAA3 /* sippy.png */,
+				1920F21E1961A15B0094FAA3 /* sippy@2x.png */,
+				1920F2211961A1CC0094FAA3 /* juicebox.png */,
+				1920F2221961A1CC0094FAA3 /* juicebox@2x.png */,
+				1920F2251961A3760094FAA3 /* glass.png */,
+				1920F2261961A3760094FAA3 /* glass@2x.png */,
+				1920F2291961A3C90094FAA3 /* pediasure.png */,
+				1920F22A1961A3C90094FAA3 /* pediasure@2x.png */,
+				1920F22D1961A4330094FAA3 /* bottle.png */,
+				1920F22E1961A4330094FAA3 /* bottle@2x.png */,
+			);
+			name = Drink;
+			path = "Tiny Tastes/Images/Drink";
+			sourceTree = "<group>";
+		};
+		1920F2311961B8140094FAA3 /* Drinking */ = {
+			isa = PBXGroup;
+			children = (
+				1920F2321961B8140094FAA3 /* drinking_bottle_1.png */,
+				1920F2331961B8140094FAA3 /* drinking_bottle_1@2x.png */,
+				1920F2341961B8140094FAA3 /* drinking_bottle_2.png */,
+				1920F2351961B8140094FAA3 /* drinking_bottle_2@2x.png */,
+				1920F2361961B8140094FAA3 /* drinking_glass_1.png */,
+				1920F2371961B8140094FAA3 /* drinking_glass_1@2x.png */,
+				1920F2381961B8140094FAA3 /* drinking_glass_2.png */,
+				1920F2391961B8140094FAA3 /* drinking_glass_2@2x.png */,
+				1920F23A1961B8140094FAA3 /* drinking_juice_1.png */,
+				1920F23B1961B8140094FAA3 /* drinking_juice_1@2x.png */,
+				1920F23C1961B8140094FAA3 /* drinking_juice_2.png */,
+				1920F23D1961B8140094FAA3 /* drinking_juice_2@2x.png */,
+				1920F23E1961B8140094FAA3 /* drinking_pediasure_1.png */,
+				1920F23F1961B8140094FAA3 /* drinking_pediasure_1@2x.png */,
+				1920F2401961B8140094FAA3 /* drinking_pediasure_2.png */,
+				1920F2411961B8140094FAA3 /* drinking_pediasure_2@2x.png */,
+				1920F2421961B8140094FAA3 /* drinking_sippy_1.png */,
+				1920F2431961B8140094FAA3 /* drinking_sippy_1@2x.png */,
+				1920F2441961B8140094FAA3 /* drinking_sippy_2.png */,
+				1920F2451961B8140094FAA3 /* drinking_sippy_2@2x.png */,
+			);
+			name = Drinking;
+			path = "Tiny Tastes/Images/Drinking";
+			sourceTree = "<group>";
+		};
+		1920F25A1961FB450094FAA3 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				1920F25B1961FB450094FAA3 /* camera.png */,
+				1920F25C1961FB450094FAA3 /* camera@2x.png */,
+				1920F25F1961FE100094FAA3 /* camera_overlay.png */,
+				1920F2601961FE100094FAA3 /* camera_overlay@2x.png */,
+				19FE7CD7196207600074A32F /* cutout.png */,
+				19FE7CD8196207600074A32F /* cutout@2x.png */,
+			);
+			name = Photo;
+			path = "Tiny Tastes/Images/Photo";
 			sourceTree = "<group>";
 		};
 		19945466195D77B5003BAC7F /* Tiny climbing up */ = {
@@ -817,13 +985,34 @@
 			path = "Tiny Tastes/Images/Buttons";
 			sourceTree = "<group>";
 		};
+		19FE7CDB19620B2A0074A32F /* Eating */ = {
+			isa = PBXGroup;
+			children = (
+				19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */,
+				19FE7CDD19620B2A0074A32F /* tiny_eating_1@2x.png */,
+				19FE7CDE19620B2A0074A32F /* tiny_eating_2.png */,
+				19FE7CDF19620B2A0074A32F /* tiny_eating_2@2x.png */,
+				19FE7CE6196219AB0074A32F /* Disappearing food */,
+			);
+			name = Eating;
+			path = "Tiny Tastes/Images/Eating";
+			sourceTree = "<group>";
+		};
+		19FE7CE6196219AB0074A32F /* Disappearing food */ = {
+			isa = PBXGroup;
+			children = (
+				19FE7CE7196219AB0074A32F /* tiny_plate_12.png */,
+				19FE7CE8196219AB0074A32F /* tiny_plate_12@2x.png */,
+			);
+			path = "Disappearing food";
+			sourceTree = "<group>";
+		};
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
 				191401CD1958D0D8008F40C4 /* Third Party */,
 				1914019B19570D5E008F40C4 /* sampleimages */,
 				FD7924BE1857B5A500BF75B7 /* Disappearing Food */,
-				FD7924BD1857B58000BF75B7 /* Drinking Critter */,
 				FD7924BC1857B54800BF75B7 /* Story Book */,
 				FD7073521833455E003BFC29 /* Other Sounds */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
@@ -939,7 +1128,10 @@
 		FD7924BC1857B54800BF75B7 /* Story Book */ = {
 			isa = PBXGroup;
 			children = (
-				19120DEC195D5312001302FF /* Story sounds */,
+				1920F1B91961873D0094FAA3 /* story_cover_page.jpg */,
+				19120D53195B623E001302FF /* bookmark.png */,
+				19120D54195B623E001302FF /* bookmark@2x.png */,
+				1920F1BB196187FF0094FAA3 /* Story sounds */,
 				19120D5E195C328A001302FF /* Pond Animations */,
 				19120D5A195C2EAE001302FF /* story_page_01.jpg */,
 				19120D5C195C2FF5001302FF /* story_page_02.jpg */,
@@ -978,23 +1170,6 @@
 			name = "Story Book";
 			sourceTree = "<group>";
 		};
-		FD7924BD1857B58000BF75B7 /* Drinking Critter */ = {
-			isa = PBXGroup;
-			children = (
-				FD23B10A18416D1E00D1C9A9 /* drinking_bottle_1.jpg */,
-				FD23B10918416D1E00D1C9A9 /* drinking_bottle_2.jpg */,
-				FD23B0FF1841690400D1C9A9 /* drinking_glass_1.jpg */,
-				FD23B0EF184166DE00D1C9A9 /* drinking_glass_2.jpg */,
-				FD23B0EE184166DD00D1C9A9 /* drinking_juice_1.jpg */,
-				FD23B0ED184166DD00D1C9A9 /* drinking_juice_2.jpg */,
-				FD23B10218416A3200D1C9A9 /* drinking_pediasure_1.jpg */,
-				FD23B10118416A3200D1C9A9 /* drinking_pediasure_2.jpg */,
-				FD23B10418416A3200D1C9A9 /* drinking_sippy_1.jpg */,
-				FD23B10318416A3200D1C9A9 /* drinking_sippy_2.jpg */,
-			);
-			name = "Drinking Critter";
-			sourceTree = "<group>";
-		};
 		FD7924BE1857B5A500BF75B7 /* Disappearing Food */ = {
 			isa = PBXGroup;
 			children = (
@@ -1019,41 +1194,28 @@
 			isa = PBXGroup;
 			children = (
 				199454B5195E00C2003BAC7F /* spacer.png */,
+				1920F21319619B800094FAA3 /* Feedback */,
+				1920F1E0196189BF0094FAA3 /* Home */,
+				1920F20A196197E00094FAA3 /* Shop */,
 				19945490195DB1F0003BAC7F /* Buttons */,
-				19120D53195B623E001302FF /* bookmark.png */,
-				19120D54195B623E001302FF /* bookmark@2x.png */,
-				191401EC1959E1C9008F40C4 /* Home screen */,
-				FDC918E918552ECF00B19DA4 /* book_cover.jpg */,
+				1920F21C1961A15B0094FAA3 /* Drink */,
+				1920F2311961B8140094FAA3 /* Drinking */,
+				1920F25A1961FB450094FAA3 /* Photo */,
+				19FE7CDB19620B2A0074A32F /* Eating */,
+				316ACB4F1831A15A00FE3A83 /* default_food.png */,
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
 				FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */,
-				FD70732218303865003BFC29 /* bottle.jpg */,
-				FD70732318303865003BFC29 /* camera.jpg */,
-				FD70732818303865003BFC29 /* camera_overlay.jpg */,
-				FD70732018303865003BFC29 /* clock_settings.jpg */,
-				FD70731F18303865003BFC29 /* coin_icon.jpg */,
-				FD2AC777183AC66900A7D6A1 /* coin_pouch.jpg */,
-				FD70731E18303865003BFC29 /* cutout.jpg */,
-				191401A219571957008F40C4 /* cutout@2x.jpg */,
-				316ACB4F1831A15A00FE3A83 /* default_food.png */,
 				FD70731B18303865003BFC29 /* eating_critter_1.jpg */,
 				FD70731C18303865003BFC29 /* eating_critter_2.jpg */,
 				FD70731918303865003BFC29 /* feedback_tiny.jpg */,
-				FD70730518303865003BFC29 /* full_bowl.jpg */,
-				FD70731A18303865003BFC29 /* glass.jpg */,
 				FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */,
-				FD70731718303865003BFC29 /* juicebox.jpg */,
-				FD70731518303865003BFC29 /* lets_drink.jpg */,
 				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
 				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
 				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
 				FD23B10D184172E200D1C9A9 /* outline_camera.png */,
-				FD70730018303865003BFC29 /* pediasure.jpg */,
 				FD70731318303865003BFC29 /* redline.jpg */,
-				FD70731218303865003BFC29 /* sippy.jpg */,
 				FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */,
-				FD187ED9183BE8B60021D98F /* tiny_shop.jpg */,
-				FD187EDB183BE93C0021D98F /* tiny_shop_thumbnail.jpg */,
 				FD70731118303865003BFC29 /* tried_some_label.jpg */,
 			);
 			name = Images;
@@ -1175,226 +1337,262 @@
 			buildActionMask = 2147483647;
 			files = (
 				19945473195D999C003BAC7F /* story_tiny_climbing_up_03.png in Resources */,
+				1920F1EB19618C320094FAA3 /* home_eat.png in Resources */,
 				19120DE6195CB646001302FF /* story_page_23.jpg in Resources */,
 				FD23B12918429F2500D1C9A9 /* i_like_this.m4a in Resources */,
 				19120DB3195C887E001302FF /* story_page_17_fish.jpg in Resources */,
+				1920F2281961A3760094FAA3 /* glass@2x.png in Resources */,
 				1994549C195DB545003BAC7F /* button_pause@2x.png in Resources */,
+				19FE7CD9196207600074A32F /* cutout.png in Resources */,
+				1920F202196194F20094FAA3 /* home_tiny_02.png in Resources */,
+				1920F22F1961A4330094FAA3 /* bottle.png in Resources */,
+				1920F201196194F20094FAA3 /* home_tiny_01@2x.png in Resources */,
 				FD2AC75B18396CF500A7D6A1 /* blue_circle.jpg in Resources */,
 				19120DD4195CAC49001302FF /* story_tiny_frog_jump_06.png in Resources */,
 				EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */,
 				19120DD1195CAC49001302FF /* story_tiny_frog_jump_03.png in Resources */,
-				FD23B10818416A3200D1C9A9 /* drinking_sippy_1.jpg in Resources */,
+				1920F1E819618B9E0094FAA3 /* home_settings@2x.png in Resources */,
+				1920F1E3196189BF0094FAA3 /* home_shop.png in Resources */,
+				1920F2591961B8140094FAA3 /* drinking_sippy_2@2x.png in Resources */,
 				19945463195D740B003BAC7F /* story_page_33.jpg in Resources */,
 				FD23B12A18429F2500D1C9A9 /* encouragement.m4a in Resources */,
-				FD187EDA183BE8B60021D98F /* tiny_shop.jpg in Resources */,
+				1920F204196194F20094FAA3 /* home_tiny_03.png in Resources */,
 				199454B0195DBA01003BAC7F /* button_save@2x.png in Resources */,
 				EC6FD1C717EA746000EB05E9 /* Default.png in Resources */,
 				1994548E195DA6B5003BAC7F /* story_page_34e.jpg in Resources */,
+				1920F2531961B8140094FAA3 /* drinking_pediasure_1@2x.png in Resources */,
 				EC6FD1C917EA746000EB05E9 /* Default@2x.png in Resources */,
-				FD70734C18303865003BFC29 /* camera.jpg in Resources */,
+				1920F2461961B8140094FAA3 /* drinking_bottle_1.png in Resources */,
 				19120D89195C36F5001302FF /* pond_qmarks_01.png in Resources */,
 				1994549B195DB545003BAC7F /* button_pause.png in Resources */,
-				FD23B0F9184166DE00D1C9A9 /* drinking_glass_2.jpg in Resources */,
-				191401F61959E1C9008F40C4 /* home_tiny_1.png in Resources */,
 				FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */,
 				19120D97195C38B5001302FF /* pond_bubble_02.png in Resources */,
 				19120DE8195CB646001302FF /* story_page_25.jpg in Resources */,
-				191401FB1959E1C9008F40C4 /* home_tiny_6.png in Resources */,
-				FD23B10718416A3200D1C9A9 /* drinking_sippy_2.jpg in Resources */,
+				1920F1D3196187FF0094FAA3 /* story_sound_p06.m4a in Resources */,
+				1920F22B1961A3C90094FAA3 /* pediasure.png in Resources */,
+				1920F203196194F20094FAA3 /* home_tiny_02@2x.png in Resources */,
+				1920F2471961B8140094FAA3 /* drinking_bottle_1@2x.png in Resources */,
+				1920F1D6196187FF0094FAA3 /* story_sound_p09.m4a in Resources */,
 				19945494195DB1F0003BAC7F /* button_back@2x.png in Resources */,
 				316ACB471831973A00FE3A83 /* bowl5.png in Resources */,
+				19FE7CEA196219AB0074A32F /* tiny_plate_12@2x.png in Resources */,
+				1920F1FE196194F20094FAA3 /* home_tiny_00.png in Resources */,
+				1920F1DE196187FF0094FAA3 /* story_sound_p17.m4a in Resources */,
 				199454A8195DB7D0003BAC7F /* button_sound-on@2x.png in Resources */,
 				FD2AC75A18396CF500A7D6A1 /* blue_glow.jpg in Resources */,
 				19945498195DB350003BAC7F /* button_home@2x.png in Resources */,
 				1994548F195DA6B5003BAC7F /* story_page_35.jpg in Resources */,
-				FD70734B18303865003BFC29 /* bottle.jpg in Resources */,
-				19120E10195D5312001302FF /* story_sound_p18.m4a in Resources */,
+				1920F21619619B800094FAA3 /* money_bag.png in Resources */,
+				1920F24E1961B8140094FAA3 /* drinking_juice_1.png in Resources */,
 				19945471195D999C003BAC7F /* story_tiny_climbing_up_01.png in Resources */,
 				19120D7B195C328A001302FF /* story_page_07.jpg in Resources */,
 				19120DC3195C9B60001302FF /* story_page_17_frog.jpg in Resources */,
 				19120DB8195C887E001302FF /* story_tiny_fish_01.png in Resources */,
-				FDC918EA18552ECF00B19DA4 /* book_cover.jpg in Resources */,
 				1994547B195D9F5E003BAC7F /* story_tiny_climbing_up_squirrel_03.png in Resources */,
-				19120E0B195D5312001302FF /* story_sound_p13.m4a in Resources */,
-				FD23B0F8184166DE00D1C9A9 /* drinking_juice_1.jpg in Resources */,
 				19120D95195C38B5001302FF /* pond_bubble_00.png in Resources */,
+				19FE7CE319620B2A0074A32F /* tiny_eating_2@2x.png in Resources */,
 				1994548B195DA524003BAC7F /* story_tiny_climbing_down_walk_04.png in Resources */,
 				19945462195D740B003BAC7F /* story_page_32.jpg in Resources */,
 				FD23B12D18429F2500D1C9A9 /* i_like_eating_with_you.m4a in Resources */,
+				1920F1D9196187FF0094FAA3 /* story_sound_p12.m4a in Resources */,
+				1920F2551961B8140094FAA3 /* drinking_pediasure_2@2x.png in Resources */,
 				19120DB2195C887E001302FF /* story_page_16_fish.jpg in Resources */,
+				1920F21B19619D5B0094FAA3 /* coin@2x.png in Resources */,
 				FDCE238E184EC25B007A0F4F /* BACKLOG.txt in Resources */,
 				19120D8B195C36F5001302FF /* pond_qmarks_03.png in Resources */,
 				FD23B12618429F2500D1C9A9 /* drinking_tried_some_feedback.m4a in Resources */,
 				19120DD9195CB1F5001302FF /* story_page_19_frog_plain.jpg in Resources */,
-				19120E0E195D5312001302FF /* story_sound_p16.m4a in Resources */,
+				19FE7CE219620B2A0074A32F /* tiny_eating_2.png in Resources */,
+				1920F1F019618CD70094FAA3 /* home_drink@2x.png in Resources */,
 				FD7924BB1857B53700BF75B7 /* main_menu_music.mp3 in Resources */,
-				FD70733B18303865003BFC29 /* sippy.jpg in Resources */,
 				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,
 				19945485195DA29C003BAC7F /* story_tiny_climbing_down_02.png in Resources */,
 				FD23B12518429F2500D1C9A9 /* eating_none_this_time_feedback.m4a in Resources */,
-				19120E01195D5312001302FF /* story_sound_p03.m4a in Resources */,
 				19120D9A195C38B5001302FF /* pond_bubble_05.png in Resources */,
 				19120D7F195C328A001302FF /* story_page_11.jpg in Resources */,
 				19120D8A195C36F5001302FF /* pond_qmarks_02.png in Resources */,
+				19FE7CE119620B2A0074A32F /* tiny_eating_1@2x.png in Resources */,
 				191401D41958D0E7008F40C4 /* dsym_upload.sh in Resources */,
+				1920F1DB196187FF0094FAA3 /* story_sound_p14.m4a in Resources */,
 				199454A0195DB620003BAC7F /* button_start@2x.png in Resources */,
-				19120E04195D5312001302FF /* story_sound_p06.m4a in Resources */,
 				19120DD3195CAC49001302FF /* story_tiny_frog_jump_05.png in Resources */,
 				19945486195DA29C003BAC7F /* story_tiny_climbing_down_03.png in Resources */,
 				19120D5B195C2EAE001302FF /* story_page_01.jpg in Resources */,
+				1920F24D1961B8140094FAA3 /* drinking_glass_2@2x.png in Resources */,
 				19945483195DA29C003BAC7F /* story_page_34_plain.jpg in Resources */,
+				1920F2231961A1CC0094FAA3 /* juicebox.png in Resources */,
 				1994547C195D9F5E003BAC7F /* story_tiny_climbing_up_squirrel_04.png in Resources */,
+				1920F2241961A1CC0094FAA3 /* juicebox@2x.png in Resources */,
 				19120D99195C38B5001302FF /* pond_bubble_04.png in Resources */,
+				1920F22C1961A3C90094FAA3 /* pediasure@2x.png in Resources */,
 				19120D88195C36F5001302FF /* pond_qmarks_00.png in Resources */,
-				FD2AC77F183AC66900A7D6A1 /* coin_pouch.jpg in Resources */,
 				19945465195D77A4003BAC7F /* story_page_29_plain.jpg in Resources */,
 				19120D5D195C2FF5001302FF /* story_page_02.jpg in Resources */,
-				19120E02195D5312001302FF /* story_sound_p04.m4a in Resources */,
+				1920F24F1961B8140094FAA3 /* drinking_juice_1@2x.png in Resources */,
+				1920F2621961FE100094FAA3 /* camera_overlay@2x.png in Resources */,
 				317343131854ED81000DC80C /* bowl0.png in Resources */,
 				19120DD0195CAC49001302FF /* story_tiny_frog_jump_02.png in Resources */,
+				1920F1DF196187FF0094FAA3 /* story_sound_p18.m4a in Resources */,
 				316ACB431831973A00FE3A83 /* bowl1.png in Resources */,
 				19120DC2195C9B60001302FF /* story_page_16_frog_plain.jpg in Resources */,
-				19120E07195D5312001302FF /* story_sound_p09.m4a in Resources */,
-				19120DFF195D5312001302FF /* story_sound_p01.m4a in Resources */,
-				19120E00195D5312001302FF /* story_sound_p02.m4a in Resources */,
-				19120E06195D5312001302FF /* story_sound_p08.m4a in Resources */,
-				FD23B0F7184166DE00D1C9A9 /* drinking_juice_2.jpg in Resources */,
-				FD70734818303865003BFC29 /* coin_icon.jpg in Resources */,
 				19120DB1195C887E001302FF /* story_page_15_fish.jpg in Resources */,
 				199454B6195E00C2003BAC7F /* spacer.png in Resources */,
 				199454A6195DB7D0003BAC7F /* button_sound-off@2x.png in Resources */,
 				19120DC1195C9B60001302FF /* story_page_15_frog.jpg in Resources */,
+				1920F1EF19618CD70094FAA3 /* home_drink.png in Resources */,
+				1920F2541961B8140094FAA3 /* drinking_pediasure_2.png in Resources */,
 				19120D80195C328A001302FF /* story_page_12_plain.jpg in Resources */,
+				1920F2271961A3760094FAA3 /* glass.png in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
+				1920F21719619B800094FAA3 /* money_bag@2x.png in Resources */,
 				316ACB4A1831973A00FE3A83 /* bowl8.png in Resources */,
 				19120D7E195C328A001302FF /* story_page_10.jpg in Resources */,
 				19120DD2195CAC49001302FF /* story_tiny_frog_jump_04.png in Resources */,
-				FD187EDC183BE93C0021D98F /* tiny_shop_thumbnail.jpg in Resources */,
+				1920F206196194F20094FAA3 /* home_tiny_04.png in Resources */,
 				19120D8E195C36F5001302FF /* pond_qmarks_06.png in Resources */,
+				1920F2491961B8140094FAA3 /* drinking_bottle_2@2x.png in Resources */,
 				199454A5195DB7D0003BAC7F /* button_sound-off.png in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
 				19120DB7195C887E001302FF /* story_tiny_fish_00.png in Resources */,
 				19120DE9195CB646001302FF /* story_page_26.jpg in Resources */,
 				19945479195D9F5E003BAC7F /* story_tiny_climbing_up_squirrel_01.png in Resources */,
-				FD70735118303865003BFC29 /* camera_overlay.jpg in Resources */,
-				FD70734718303865003BFC29 /* cutout.jpg in Resources */,
 				FD23B13018429F2500D1C9A9 /* this_is_good.m4a in Resources */,
-				19120E0A195D5312001302FF /* story_sound_p12.m4a in Resources */,
-				191401F51959E1C9008F40C4 /* home_tiny_0.png in Resources */,
 				19945487195DA29C003BAC7F /* story_tiny_climbing_down_tree.png in Resources */,
 				19120DB4195C887E001302FF /* story_page_18_fish.jpg in Resources */,
+				1920F1D4196187FF0094FAA3 /* story_sound_p07.m4a in Resources */,
 				1994548A195DA524003BAC7F /* story_tiny_climbing_down_walk_01-03.png in Resources */,
 				19120D7D195C328A001302FF /* story_page_09.jpg in Resources */,
-				FD70733E18303865003BFC29 /* lets_drink.jpg in Resources */,
+				1920F24C1961B8140094FAA3 /* drinking_glass_2.png in Resources */,
 				19945474195D999C003BAC7F /* story_tiny_climbing_up_04.png in Resources */,
-				FD23B10518416A3200D1C9A9 /* drinking_pediasure_2.jpg in Resources */,
+				19FE7CE9196219AB0074A32F /* tiny_plate_12.png in Resources */,
 				316ACB491831973A00FE3A83 /* bowl7.png in Resources */,
 				19120D78195C328A001302FF /* story_page_04.jpg in Resources */,
 				19120DA4195C884B001302FF /* story_page_13.jpg in Resources */,
 				199454AB195DB966003BAC7F /* button_skip-to-eat.png in Resources */,
 				19120DB5195C887E001302FF /* story_page_19_fish_plain.jpg in Resources */,
 				19945468195D77B5003BAC7F /* story_tiny_climbing_up_tree1.png in Resources */,
-				FD70734018303865003BFC29 /* juicebox.jpg in Resources */,
 				199454AC195DB966003BAC7F /* button_skip-to-eat@2x.png in Resources */,
 				FD70733C18303865003BFC29 /* redline.jpg in Resources */,
 				316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */,
 				191401B319585B07008F40C4 /* Images.xcassets in Resources */,
 				FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */,
 				19120DC4195C9B60001302FF /* story_tiny_frog_fish_01.png in Resources */,
-				FD70732918303865003BFC29 /* pediasure.jpg in Resources */,
+				1920F2481961B8140094FAA3 /* drinking_bottle_2.png in Resources */,
+				1920F2561961B8140094FAA3 /* drinking_sippy_1.png in Resources */,
+				1920F200196194F20094FAA3 /* home_tiny_01.png in Resources */,
 				FD23B12F18429F2500D1C9A9 /* eating_sound_1.m4a in Resources */,
 				19120D77195C328A001302FF /* story_page_03.jpg in Resources */,
+				19FE7CE5196215B90074A32F /* greenpeas_cutout.png in Resources */,
 				FD16EA5C18511D8D00A801B3 /* store_background_jingle.mp3 in Resources */,
 				FD70734518303865003BFC29 /* eating_critter_2.jpg in Resources */,
 				19120DCF195CAC49001302FF /* story_tiny_frog_jump_01.png in Resources */,
 				19120D8C195C36F5001302FF /* pond_qmarks_04.png in Resources */,
 				19120DB6195C887E001302FF /* story_page_20_fish.jpg in Resources */,
 				19120DE5195CB646001302FF /* story_page_22.jpg in Resources */,
+				1920F1DC196187FF0094FAA3 /* story_sound_p15.m4a in Resources */,
 				316ACB461831973A00FE3A83 /* bowl4.png in Resources */,
-				191401F91959E1C9008F40C4 /* home_tiny_4.png in Resources */,
 				19120DEB195CB646001302FF /* story_page_28.jpg in Resources */,
+				1920F205196194F20094FAA3 /* home_tiny_03@2x.png in Resources */,
+				1920F20D196197E00094FAA3 /* shop_large.png in Resources */,
+				1920F2301961A4330094FAA3 /* bottle@2x.png in Resources */,
+				1920F24B1961B8140094FAA3 /* drinking_glass_1@2x.png in Resources */,
 				FD23B12E18429F2500D1C9A9 /* eating_sound_2.m4a in Resources */,
+				1920F1D2196187FF0094FAA3 /* story_sound_p05.m4a in Resources */,
 				19120DDA195CB1F5001302FF /* story_tiny_frog_jump_2_01.png in Resources */,
-				FD70734918303865003BFC29 /* clock_settings.jpg in Resources */,
-				FD23B10B18416D1E00D1C9A9 /* drinking_bottle_2.jpg in Resources */,
+				1920F1D8196187FF0094FAA3 /* story_sound_p11.m4a in Resources */,
+				1920F1E4196189BF0094FAA3 /* home_shop@2x.png in Resources */,
+				1920F21A19619D5B0094FAA3 /* coin.png in Resources */,
+				1920F1D1196187FF0094FAA3 /* story_sound_p04.m4a in Resources */,
 				19945493195DB1F0003BAC7F /* button_back.png in Resources */,
 				FD23B12818429F2500D1C9A9 /* all_finished_feedback.m4a in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				19120DC0195C9B60001302FF /* story_page_14_frog.jpg in Resources */,
 				FD23B10E184172E200D1C9A9 /* outline_camera.png in Resources */,
+				1920F1DA196187FF0094FAA3 /* story_sound_p13.m4a in Resources */,
 				1994546C195D936A003BAC7F /* story_tiny_climbing_up_tree3.png in Resources */,
 				FDB582FC17EA778F004C6FA3 /* README in Resources */,
 				FD23B12B18429F2500D1C9A9 /* trying_new_things.m4a in Resources */,
+				1920F25E1961FB450094FAA3 /* camera@2x.png in Resources */,
 				1994547A195D9F5E003BAC7F /* story_tiny_climbing_up_squirrel_02.png in Resources */,
+				1920F1CE196187FF0094FAA3 /* story_sound_p01.m4a in Resources */,
+				1920F2201961A15B0094FAA3 /* sippy@2x.png in Resources */,
 				199454AF195DBA01003BAC7F /* button_save.png in Resources */,
-				191401F81959E1C9008F40C4 /* home_tiny_3.png in Resources */,
 				FD23B12718429F2500D1C9A9 /* eating_tried_some_feedback.m4a in Resources */,
+				1920F1D7196187FF0094FAA3 /* story_sound_p10.m4a in Resources */,
+				1920F2501961B8140094FAA3 /* drinking_juice_2.png in Resources */,
 				316ACB481831973A00FE3A83 /* bowl6.png in Resources */,
 				316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */,
-				19120E09195D5312001302FF /* story_sound_p11.m4a in Resources */,
 				19120DDB195CB1F5001302FF /* story_tiny_frog_jump_2_02.png in Resources */,
-				191401F71959E1C9008F40C4 /* home_tiny_2.png in Resources */,
 				FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */,
+				1920F24A1961B8140094FAA3 /* drinking_glass_1.png in Resources */,
 				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
 				FD23B12418429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a in Resources */,
 				19120DC5195C9B60001302FF /* story_tiny_frog_fish_02.png in Resources */,
 				199454A7195DB7D0003BAC7F /* button_sound-on.png in Resources */,
-				FD70734318303865003BFC29 /* glass.jpg in Resources */,
-				19120E05195D5312001302FF /* story_sound_p07.m4a in Resources */,
-				191401A319571957008F40C4 /* cutout@2x.jpg in Resources */,
 				19120DE7195CB646001302FF /* story_page_24.jpg in Resources */,
+				19FE7CE019620B2A0074A32F /* tiny_eating_1.png in Resources */,
+				1920F1FF196194F20094FAA3 /* home_tiny_00@2x.png in Resources */,
 				FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */,
-				19120E03195D5312001302FF /* story_sound_p05.m4a in Resources */,
 				19120D55195B623E001302FF /* bookmark.png in Resources */,
 				19120D79195C328A001302FF /* story_page_05.jpg in Resources */,
+				1920F1EC19618C320094FAA3 /* home_eat@2x.png in Resources */,
+				1920F21F1961A15B0094FAA3 /* sippy.png in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
+				1920F1D0196187FF0094FAA3 /* story_sound_p03.m4a in Resources */,
 				19120DA1195C6DDB001302FF /* pond_bubble_08.png in Resources */,
 				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
+				1920F2581961B8140094FAA3 /* drinking_sippy_2.png in Resources */,
 				19120D7A195C328A001302FF /* story_page_06.jpg in Resources */,
-				19120E08195D5312001302FF /* story_sound_p10.m4a in Resources */,
 				316ACB451831973A00FE3A83 /* bowl3.png in Resources */,
+				1920F1BA1961873D0094FAA3 /* story_cover_page.jpg in Resources */,
+				1920F2521961B8140094FAA3 /* drinking_pediasure_1.png in Resources */,
 				1920F1B7195F48FD0094FAA3 /* story_tiny_fish_02.png in Resources */,
 				199454B4195DBA7A003BAC7F /* button_play@2x.png in Resources */,
+				1920F1D5196187FF0094FAA3 /* story_sound_p08.m4a in Resources */,
 				19120D9F195C6DDB001302FF /* pond_bubble_06.png in Resources */,
 				316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */,
 				19120DA0195C6DDB001302FF /* pond_bubble_07.png in Resources */,
-				191401FA1959E1C9008F40C4 /* home_tiny_5.png in Resources */,
+				1920F1E719618B9E0094FAA3 /* home_settings.png in Resources */,
 				19945472195D999C003BAC7F /* story_tiny_climbing_up_02.png in Resources */,
 				1920F1B4195F36BE0094FAA3 /* story_tiny_frog_fish_03.png in Resources */,
+				1920F208196194F20094FAA3 /* home_tiny_05.png in Resources */,
 				19945460195D740B003BAC7F /* story_page_30.jpg in Resources */,
 				19945461195D740B003BAC7F /* story_page_31.jpg in Resources */,
 				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
 				19120D7C195C328A001302FF /* story_page_08.jpg in Resources */,
+				1920F20E196197E00094FAA3 /* shop_large@2x.png in Resources */,
 				19120DB0195C887E001302FF /* story_page_14_fish.jpg in Resources */,
 				FD23B12C18429F2500D1C9A9 /* its_fun_eating_together.m4a in Resources */,
-				FD70732E18303865003BFC29 /* full_bowl.jpg in Resources */,
 				316ACB441831973A00FE3A83 /* bowl2.png in Resources */,
-				19120E0D195D5312001302FF /* story_sound_p15.m4a in Resources */,
-				19120E0F195D5312001302FF /* story_sound_p17.m4a in Resources */,
 				19120DCE195CAC49001302FF /* story_page_18_frog_plain.jpg in Resources */,
 				199454B3195DBA7A003BAC7F /* button_play.png in Resources */,
 				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
-				19120E0C195D5312001302FF /* story_sound_p14.m4a in Resources */,
-				FD23B10C18416D1E00D1C9A9 /* drinking_bottle_1.jpg in Resources */,
 				1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */,
+				1920F2611961FE100094FAA3 /* camera_overlay.png in Resources */,
 				191401AD19582326008F40C4 /* greenpeas.jpg in Resources */,
 				19120D8D195C36F5001302FF /* pond_qmarks_05.png in Resources */,
 				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				FD7073541833456C003BFC29 /* slurping.mp3 in Resources */,
-				FD23B10618416A3200D1C9A9 /* drinking_pediasure_1.jpg in Resources */,
+				1920F2571961B8140094FAA3 /* drinking_sippy_1@2x.png in Resources */,
+				19FE7CDA196207600074A32F /* cutout@2x.png in Resources */,
 				19120DDD195CB35F001302FF /* story_page_20_frog.jpg in Resources */,
-				FD23B1001841690400D1C9A9 /* drinking_glass_1.jpg in Resources */,
+				1920F1DD196187FF0094FAA3 /* story_sound_p16.m4a in Resources */,
+				1920F207196194F20094FAA3 /* home_tiny_04@2x.png in Resources */,
+				1920F25D1961FB450094FAA3 /* camera.png in Resources */,
 				1920F1B8195F48FD0094FAA3 /* story_tiny_fish_plant.png in Resources */,
 				19945484195DA29C003BAC7F /* story_tiny_climbing_down_01.png in Resources */,
 				19120D98195C38B5001302FF /* pond_bubble_03.png in Resources */,
 				19120D96195C38B5001302FF /* pond_bubble_01.png in Resources */,
 				1994549F195DB620003BAC7F /* button_start.png in Resources */,
+				1920F2511961B8140094FAA3 /* drinking_juice_2@2x.png in Resources */,
 				1994546A195D7CF2003BAC7F /* story_tiny_climbing_up_tree2.png in Resources */,
 				19120DEA195CB646001302FF /* story_page_27.jpg in Resources */,
 				19120DA2195C6DDB001302FF /* pond_bubble_09.png in Resources */,
 				19945497195DB350003BAC7F /* button_home.png in Resources */,
+				1920F1CF196187FF0094FAA3 /* story_sound_p02.m4a in Resources */,
 				FD70733D18303865003BFC29 /* none_this_time_label.jpg in Resources */,
+				1920F209196194F20094FAA3 /* home_tiny_05@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,9 +24,7 @@
     bool blinkStatus;
     bool phraseStatus;
     
-    IBOutlet UIImageView *eatingCritter;
-    IBOutlet UIImageView *foodImageView;
-    IBOutlet UIImageView *disappearingFood;
+    
     IBOutlet UIImageView *redLine;
     
     IBOutlet UIButton *doneButton;
@@ -37,8 +35,12 @@
     IBOutlet UIButton *resumeButton;
 }
 
-@property (weak, nonatomic) IBOutlet UIImage *foodImage;
-@property int timeToEat;
+@property (nonatomic, weak) IBOutlet UIImageView *foodImageView; /** ImageView holding photo food */
+@property (nonatomic, weak) IBOutlet UIImageView *disappearingFood; /** Imageview displaying animation of disappearing food (appearing plate bottom */
+@property (nonatomic, weak) IBOutlet UIImageView *eatingCritter; /** Eating Tiny aniumation */
+
+@property (weak, nonatomic) UIImage *foodImage; /** Masked image of food taken by PhotoViewController */
+@property int timeToEat; /** Time in seconds counting down for eating */
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer1;
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer2;

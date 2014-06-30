@@ -21,7 +21,7 @@
                                 <rect key="frame" x="719" y="387" width="269" height="275"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="75" minY="0.0" maxX="79" maxY="92"/>
-                                <state key="normal" image="lets_drink.jpg">
+                                <state key="normal" image="home_drink.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -33,15 +33,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="21" minY="14" maxX="24" maxY="103"/>
-                                <state key="normal" image="full_bowl.jpg">
+                                <state key="normal" image="home_eat.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="t2j-Jj-fJN" kind="push" identifier="eat" id="lOn-zd-onO"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_tiny_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="R1N-nt-R8G" userLabel="Animated Tiny">
-                                <rect key="frame" x="356" y="195" width="327" height="413"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_tiny_00.png" translatesAutoresizingMaskIntoConstraints="NO" id="R1N-nt-R8G" userLabel="Animated Tiny">
+                                <rect key="frame" x="356" y="201" width="327" height="401"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Eo-IMH" userLabel="Tiny Button">
@@ -59,7 +59,7 @@
                                 <rect key="frame" x="86" y="438" width="243" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="53" minY="0.0" maxX="49" maxY="130"/>
-                                <state key="normal" image="clock_settings.jpg"/>
+                                <state key="normal" image="home_settings.png"/>
                                 <connections>
                                     <segue destination="gqI-Hq-2FL" kind="push" identifier="Settings" id="brf-LG-yVR"/>
                                 </connections>
@@ -69,7 +69,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="32" minY="0.0" maxX="31" maxY="94"/>
-                                <state key="normal" image="tiny_shop_thumbnail.jpg">
+                                <state key="normal" image="home_shop.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -584,10 +584,10 @@ Reminders For...</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkx-xy-jV5">
                                 <rect key="frame" x="199" y="68" width="635" height="446"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-r8-iUw" userLabel="Camera Button">
                                 <rect key="frame" x="261" y="351" width="468" height="379"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="camera.jpg">
+                                <state key="normal" image="camera.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -688,11 +688,11 @@ Reminders For...</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thought_bubble.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-Ub-VgD">
-                                <rect key="frame" x="756" y="410" width="231" height="227"/>
+                                <rect key="frame" x="756" y="336" width="231" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="181" translatesAutoresizingMaskIntoConstraints="NO" id="OC3-c9-uej">
-                                <rect key="frame" x="781" y="424" width="181" height="194"/>
+                                <rect key="frame" x="781" y="360" width="181" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Touch camera
 to take
@@ -758,7 +758,7 @@ photo</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33a-Ja-PTi" userLabel="Toggle mute Button">
-                                <rect key="frame" x="460" y="514" width="104" height="98"/>
+                                <rect key="frame" x="838" y="565" width="104" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="button_sound-off.png">
@@ -799,8 +799,8 @@ photo</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eating_critter_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MzP-Di-1Qo">
-                                <rect key="frame" x="357" y="65" width="656" height="707"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tiny_eating_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="MzP-Di-1Qo" userLabel="Image View - Tiny eating">
+                                <rect key="frame" x="357" y="64" width="656" height="708"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6y-LA-z8d" userLabel="Done Button">
@@ -901,6 +901,14 @@ photo</string>
                                     <action selector="resumeButtonClicked:" destination="uue-W2-mCd" eventType="touchUpInside" id="aS7-Ly-ffE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenpeas_cutout.png" translatesAutoresizingMaskIntoConstraints="NO" id="KaI-6W-ZtJ" userLabel="Image View - Food">
+                                <rect key="frame" x="326" y="328" width="473" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tiny_plate_12.png" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-oD-swI" userLabel="Image View - Disappearing food">
+                                <rect key="frame" x="357" y="433" width="425" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -910,8 +918,10 @@ photo</string>
                         <outlet property="allFinishedButton" destination="j7n-Rf-qYa" id="h0R-s3-Prg"/>
                         <outlet property="chooseLabel" destination="E3E-fU-Nla" id="WHz-aI-09F"/>
                         <outlet property="countdownLabel" destination="wKD-Vh-RXi" id="0MU-gA-jVc"/>
+                        <outlet property="disappearingFood" destination="b5t-oD-swI" id="PGu-rS-iJG"/>
                         <outlet property="doneButton" destination="x6y-LA-z8d" id="q9l-lc-E2x"/>
                         <outlet property="eatingCritter" destination="MzP-Di-1Qo" id="LLF-04-1Zj"/>
+                        <outlet property="foodImageView" destination="KaI-6W-ZtJ" id="fU4-x4-5bJ"/>
                         <outlet property="notFinishedButton" destination="jFZ-Ge-JMl" id="b54-SZ-Fv4"/>
                         <outlet property="partiallyFinishedButton" destination="KRH-jI-bq5" id="I5r-hP-hhE"/>
                         <outlet property="pauseButton" destination="A7S-oj-per" id="bl2-xv-kK4"/>
@@ -943,8 +953,8 @@ photo</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drinking_pediasure_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-1r-vNU">
-                                <rect key="frame" x="104" y="-65" width="892" height="833"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drinking_bottle_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-1r-vNU">
+                                <rect key="frame" x="110" y="100" width="552" height="668"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnV-bd-EiS" userLabel="Done Button">
@@ -1111,25 +1121,25 @@ photo</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVo-eT-5gl" userLabel="Shop Button">
-                                <rect key="frame" x="40" y="459" width="121" height="117"/>
+                                <rect key="frame" x="40" y="459" width="95" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="coin_pouch.jpg">
+                                <state key="normal" image="money_bag.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="shopPressed:" destination="Qri-uE-hRt" eventType="touchUpInside" id="md2-FS-qxV"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5u-0J-ldv">
-                                <rect key="frame" x="214" y="233" width="180" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin.png" translatesAutoresizingMaskIntoConstraints="NO" id="w5u-0J-ldv">
+                                <rect key="frame" x="214" y="233" width="180" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5vn-Hh-yJT">
-                                <rect key="frame" x="24" y="233" width="180" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin.png" translatesAutoresizingMaskIntoConstraints="NO" id="5vn-Hh-yJT">
+                                <rect key="frame" x="24" y="233" width="180" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udI-kP-IlC">
-                                <rect key="frame" x="404" y="233" width="180" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin.png" translatesAutoresizingMaskIntoConstraints="NO" id="udI-kP-IlC">
+                                <rect key="frame" x="404" y="233" width="180" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTF-HD-eFY">
@@ -1195,8 +1205,8 @@ photo</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tiny_shop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ah5-Fq-tth">
-                                <rect key="frame" x="6" y="256" width="684" height="534"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop_large.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ah5-Fq-tth">
+                                <rect key="frame" x="0.0" y="257" width="684" height="511"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWh-sv-dSu">
@@ -1391,61 +1401,81 @@ Do You Want For...</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZd-6a-Zey" userLabel="Image View - Sippy select">
+                                <rect key="frame" x="136" y="62" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7A-9b-x8L" userLabel="Image View - Juicebox select">
+                                <rect key="frame" x="487" y="55" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Sa-dc-6iK" userLabel="Image View - Glass select">
+                                <rect key="frame" x="-35" y="268" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Joa-ds-V6M" userLabel="Image View - Pediasure select">
+                                <rect key="frame" x="312" y="282" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJV-w3-ulQ" userLabel="Image View - Bottle select">
+                                <rect key="frame" x="656" y="282" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(1) Choose A Drink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ug-4z-yzq">
                                 <rect key="frame" x="253" y="24" width="519" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-pD-eIB">
-                                <rect key="frame" x="234" y="170" width="205" height="184"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-pD-eIB" userLabel="Button - Sippy">
+                                <rect key="frame" x="234" y="170" width="206" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="sippy.jpg"/>
+                                <state key="normal" title="Sippy" image="sippy.png"/>
                                 <connections>
-                                    <action selector="sippyClicked:" destination="pqo-h6-K1e" eventType="touchUpInside" id="WsD-Gd-yMX"/>
+                                    <action selector="drinkSelected:" destination="pqo-h6-K1e" eventType="touchUpInside" id="eMK-7G-3tB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5en-Pq-rj5">
-                                <rect key="frame" x="106" y="360" width="119" height="215"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHM-V3-wMn" userLabel="Button - Juicebox">
+                                <rect key="frame" x="615" y="129" width="137" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" image="glass.jpg">
+                                <state key="normal" title="Juicebox" image="juicebox.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="glassClicked:" destination="pqo-h6-K1e" eventType="touchUpInside" id="a0G-N2-hnR"/>
+                                    <action selector="drinkSelected:" destination="pqo-h6-K1e" eventType="touchUpInside" id="f1H-jd-cht"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHM-V3-wMn">
-                                <rect key="frame" x="615" y="129" width="144" height="239"/>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5en-Pq-rj5" userLabel="Button - Glass">
+                                <rect key="frame" x="106" y="360" width="116" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" image="juicebox.jpg">
+                                <state key="normal" title="Glass" image="glass.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="juiceBoxClicked:" destination="pqo-h6-K1e" eventType="touchUpInside" id="XUJ-Bf-ZZf"/>
+                                    <action selector="drinkSelected:" destination="pqo-h6-K1e" eventType="touchUpInside" id="p8o-LR-4nK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRu-oh-kvr">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KN-Lw-TYN" userLabel="Button - Pediasure">
+                                <rect key="frame" x="452" y="363" width="116" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pediasure" image="pediasure.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="drinkSelected:" destination="pqo-h6-K1e" eventType="touchUpInside" id="D9g-BH-QU5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRu-oh-kvr" userLabel="Button - Bottle">
                                 <rect key="frame" x="801" y="366" width="111" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bottle.jpg">
+                                <state key="normal" image="bottle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="bottleClicked:" destination="pqo-h6-K1e" eventType="touchUpInside" id="yQK-sE-03D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KN-Lw-TYN">
-                                <rect key="frame" x="452" y="363" width="120" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="pediasure.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pediasureClicked:" destination="pqo-h6-K1e" eventType="touchUpInside" id="208-Gn-Hwm"/>
+                                    <action selector="drinkSelected:" destination="pqo-h6-K1e" eventType="touchUpInside" id="m3t-68-sCw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gS-ZS-5TQ" userLabel="Home Button">
@@ -1458,7 +1488,7 @@ Do You Want For...</string>
                                     <action selector="homePressed:" destination="pqo-h6-K1e" eventType="touchUpInside" id="l7F-O0-rAl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWG-Re-gbM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWG-Re-gbM" userLabel="Start Button">
                                 <rect key="frame" x="809" y="30" width="215" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1482,52 +1512,27 @@ Do You Want For...</string>
                                     <action selector="drinkStepperValueChanged:" destination="pqo-h6-K1e" eventType="valueChanged" id="Fn9-wN-KH1"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmC-ak-JCO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmC-ak-JCO" userLabel="Time display Label">
                                 <rect key="frame" x="718" y="658" width="265" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7A-9b-x8L">
-                                <rect key="frame" x="487" y="55" width="400" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZd-6a-Zey">
-                                <rect key="frame" x="136" y="62" width="400" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Sa-dc-6iK">
-                                <rect key="frame" x="-35" y="268" width="400" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Joa-ds-V6M">
-                                <rect key="frame" x="312" y="282" width="400" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJV-w3-ulQ">
-                                <rect key="frame" x="656" y="282" width="400" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="bottleButton" destination="fRu-oh-kvr" id="ewM-OD-LHJ"/>
-                        <outlet property="bottleGlow" destination="XJV-w3-ulQ" id="Ryn-mz-D4v"/>
                         <outlet property="chooseDrinkLabel" destination="0Ug-4z-yzq" id="yrj-Xv-eJM"/>
                         <outlet property="customizeTimerLabel" destination="n3Q-56-keA" id="28x-WF-Ghk"/>
                         <outlet property="drinkStepper" destination="RCU-xb-3oD" id="JS0-gR-uzf"/>
-                        <outlet property="glassButton" destination="5en-Pq-rj5" id="csq-Tg-EyM"/>
-                        <outlet property="glassGlow" destination="4Sa-dc-6iK" id="hsH-1s-qBe"/>
-                        <outlet property="juiceBoxButton" destination="MHM-V3-wMn" id="4kx-zF-pyl"/>
-                        <outlet property="juiceBoxGlow" destination="Z7A-9b-x8L" id="426-lj-5sj"/>
-                        <outlet property="pediasureButton" destination="8KN-Lw-TYN" id="G5h-lK-Wfg"/>
-                        <outlet property="pediasureGlow" destination="Joa-ds-V6M" id="kPu-XL-gLR"/>
-                        <outlet property="sippyCupButton" destination="5ow-pD-eIB" id="kpp-C9-2dQ"/>
-                        <outlet property="sippyGlow" destination="sZd-6a-Zey" id="uek-aF-Wwo"/>
                         <outlet property="timeDisplayLabel" destination="KmC-ak-JCO" id="f7x-db-J6w"/>
+                        <outletCollection property="selectionBackgrounds" destination="sZd-6a-Zey" id="OlL-p3-d2Z"/>
+                        <outletCollection property="selectionBackgrounds" destination="Z7A-9b-x8L" id="rBu-pz-Gqy"/>
+                        <outletCollection property="selectionBackgrounds" destination="4Sa-dc-6iK" id="VeQ-e9-xZc"/>
+                        <outletCollection property="selectionBackgrounds" destination="Joa-ds-V6M" id="gOd-8H-bYB"/>
+                        <outletCollection property="selectionBackgrounds" destination="XJV-w3-ulQ" id="Biu-b0-gOJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7D-3Z-Ipi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1537,7 +1542,7 @@ Do You Want For...</string>
     </scenes>
     <resources>
         <image name="all_finished_label.jpg" width="284" height="142"/>
-        <image name="bottle.jpg" width="105" height="236"/>
+        <image name="bottle.png" width="102" height="230"/>
         <image name="button_back.png" width="135" height="95"/>
         <image name="button_home.png" width="135" height="95"/>
         <image name="button_pause.png" width="197" height="65"/>
@@ -1546,25 +1551,28 @@ Do You Want For...</string>
         <image name="button_skip-to-eat.png" width="152" height="107"/>
         <image name="button_sound-off.png" width="104" height="98"/>
         <image name="button_start.png" width="215" height="74"/>
-        <image name="camera.jpg" width="473" height="364"/>
-        <image name="clock_settings.jpg" width="183" height="170"/>
-        <image name="coin_pouch.jpg" width="98" height="121"/>
-        <image name="drinking_pediasure_1.jpg" width="526" height="768"/>
-        <image name="eating_critter_1.jpg" width="657" height="708"/>
+        <image name="camera.png" width="468" height="379"/>
+        <image name="coin.png" width="180" height="169"/>
+        <image name="drinking_bottle_1.png" width="552" height="668"/>
         <image name="feedback_tiny.jpg" width="659" height="655"/>
-        <image name="full_bowl.jpg" width="199" height="155"/>
-        <image name="glass.jpg" width="118" height="232"/>
-        <image name="home_tiny_0.png" width="337" height="459"/>
+        <image name="glass.png" width="116" height="230"/>
+        <image name="greenpeas_cutout.png" width="1024" height="768"/>
+        <image name="home_drink.png" width="128" height="225"/>
+        <image name="home_eat.png" width="199" height="155"/>
+        <image name="home_settings.png" width="366" height="340"/>
+        <image name="home_shop.png" width="228" height="170"/>
+        <image name="home_tiny_00.png" width="327" height="401"/>
         <image name="im_done_label.jpg" width="327" height="163"/>
-        <image name="juicebox.jpg" width="137" height="242"/>
-        <image name="lets_drink.jpg" width="128" height="225"/>
+        <image name="juicebox.png" width="137" height="242"/>
+        <image name="money_bag.png" width="95" height="117"/>
         <image name="none_this_time_label.jpg" width="286" height="142"/>
-        <image name="pediasure.jpg" width="116" height="230"/>
+        <image name="pediasure.png" width="116" height="230"/>
         <image name="redline.jpg" width="153" height="35"/>
-        <image name="sippy.jpg" width="206" height="184"/>
+        <image name="shop_large.png" width="684" height="511"/>
+        <image name="sippy.png" width="206" height="184"/>
         <image name="thought_bubble.jpg" width="300" height="255"/>
-        <image name="tiny_shop.jpg" width="1276" height="954"/>
-        <image name="tiny_shop_thumbnail.jpg" width="227" height="170"/>
+        <image name="tiny_eating_1.png" width="656" height="708"/>
+        <image name="tiny_plate_12.png" width="425" height="164"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1573,9 +1581,9 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Acc-TB-wKP"/>
-        <segue reference="ZMd-87-eiT"/>
         <segue reference="T73-72-6qB"/>
         <segue reference="h34-Ks-joT"/>
+        <segue reference="P60-4d-HuF"/>
+        <segue reference="ZMd-87-eiT"/>
     </inferredMetricsTieBreakers>
 </document>

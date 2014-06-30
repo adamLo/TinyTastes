@@ -21,7 +21,10 @@
 #import <ImageIO/ImageIO.h>
 #import "UIImage+Rotate.h"
 
-@interface PhotoViewController ()
+@interface PhotoViewController () {
+    UIImageView *cameraOverlay; //Empty bowl that will hold image of food
+    UIImageView *foodImage; //Imageview displaying masked food in the bowl
+}
 
 @end
 
@@ -84,6 +87,17 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
     NSDictionary *highlightedAttributes = [NSDictionary
                                            dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     [mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    //Remove food
+    [foodImage removeFromSuperview];
+    foodImage = nil;
+    
+    //Remove bowl
+    [cameraOverlay removeFromSuperview];
+    cameraOverlay = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -232,7 +246,7 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
     }
     timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", mealStepper.value];
     
-    UIImage *mask = [UIImage imageNamed:@"cutout.jpg"];
+    UIImage *mask = [UIImage imageNamed:@"cutout"];
     
     if ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationLandscapeLeft) {
         //Rotate image by 180 degrees if held home button to left
@@ -242,19 +256,18 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
     // Crop the image with an image mask
     chosenImage = [self maskImage :chosenImage withMask:mask];
     
-    UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay.jpg"];
-    UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];
-    overlayGraphicView.frame = CGRectMake(0, 0, overlayGraphic.size.width, overlayGraphic.size.height);
-    [self.view addSubview:overlayGraphicView];
+    UIImage *overlayGraphic = [UIImage imageNamed:@"camera_overlay"];
+    cameraOverlay = [[UIImageView alloc] initWithImage:overlayGraphic];
+    cameraOverlay.frame = self.view.frame;
+    [self.view addSubview:cameraOverlay];
     
-    UIImageView *foodImageView = [[UIImageView alloc] init];
-    foodImageView.opaque = NO;
-    foodImageView.backgroundColor = [UIColor clearColor];
-    foodImageView.contentMode = UIViewContentModeScaleAspectFit;
-    foodImageView.image = chosenImage;
-    
-    foodImageView.frame = CGRectMake(0, 0, 1024, 768);
-    [self.view addSubview:foodImageView];
+    foodImage = [[UIImageView alloc] init];
+    foodImage.opaque = NO;
+    foodImage.backgroundColor = [UIColor clearColor];
+    foodImage.contentMode = UIViewContentModeScaleAspectFit;
+    foodImage.image = chosenImage;
+    foodImage.frame = self.view.frame;
+    [self.view addSubview:foodImage];
     
 }
 

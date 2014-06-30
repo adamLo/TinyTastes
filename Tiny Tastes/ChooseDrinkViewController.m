@@ -9,7 +9,10 @@
 #import "ChooseDrinkViewController.h"
 #import "DrinkViewController.h"
 
-@interface ChooseDrinkViewController ()
+@interface ChooseDrinkViewController () {
+    TTDrinkType chosenDrink; //Chosen drink type
+    NSArray *selectionAnimation; //Array of selection animation images
+}
 
 @end
 
@@ -31,11 +34,8 @@
 }
 
 - (void)awakeFromNib {
-    //by default, set chosen drink to the sippy cup
-    choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
-    
-    chosenDrinkView = pediasureGlow;
+    //by default, set chosen drink to the Pediasure
+    chosenDrink = TTDrinkPediasure;
 }
 
 - (void)viewDidLoad
@@ -43,86 +43,41 @@
 	[super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     
-    chooseDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    chooseDrinkLabel.numberOfLines = 0;
-    customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.chooseDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.chooseDrinkLabel.numberOfLines = 0;
+    self.customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
-    drinkStepper.minimumValue = 1;
-    drinkStepper.maximumValue = 60;
-    drinkStepper.wraps = YES;
-    drinkStepper.autorepeat = YES;
-    drinkStepper.continuous = YES;
+    self.drinkStepper.minimumValue = 1;
+    self.drinkStepper.maximumValue = 60;
+    self.drinkStepper.wraps = YES;
+    self.drinkStepper.autorepeat = YES;
+    self.drinkStepper.continuous = YES;
+    
+    selectionAnimation = [NSArray arrayWithObjects:[UIImage imageNamed:@"blue_circle.jpg"],
+     [UIImage imageNamed:@"blue_glow.jpg"],nil];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    drinkStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"drinkTimer"];
-    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", drinkStepper.value];
+    //Set stepper
+    self.drinkStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"drinkTimer"];
+    self.timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", self.drinkStepper.value];
     
-    [self setAnimation:pediasureGlow];
+    //Display animation
+    [self selectDrinkWithType:chosenDrink];
 }
 
-- (void)setAnimation:(UIImageView *)animatedImageView
-{
-    if (chosenDrinkView != NULL) {
-        [chosenDrinkView stopAnimating];
+- (void)viewDidDisappear:(BOOL)animated {
+    //Stop animation
+    for (UIImageView *background in self.selectionBackgrounds) {
+        [background stopAnimating];
     }
-    
-    //Clear current selection
-    sippyGlow.animationImages = nil;
-    pediasureGlow.animationImages = nil;
-    glassGlow.animationImages = nil;
-    bottleGlow.animationImages = nil;
-    juiceBoxGlow.animationImages = nil;
-    
-    chosenDrinkView = animatedImageView;
-    animatedImageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"blue_circle.jpg"],
-                                         [UIImage imageNamed:@"blue_glow.jpg"],nil];
-    animatedImageView.animationDuration = 1;
-    [self.view addSubview:animatedImageView];
-    [animatedImageView startAnimating];
-}
-                                                                                                                    
-- (IBAction)drinkStepperValueChanged:(id)sender
-{
-    double stepperValue = drinkStepper.value;
-    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", stepperValue];
 }
 
-- (IBAction)sippyClicked:(UIButton *)sender
-{
-    choiceDrink1 = [UIImage imageNamed:@"drinking_sippy_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_sippy_2.jpg"];
-    [self setAnimation:sippyGlow];
-}
-
-- (IBAction)pediasureClicked:(UIButton *)sender
-{
-    choiceDrink1 = [UIImage imageNamed:@"drinking_pediasure_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_pediasure_2.jpg"];
-    [self setAnimation:pediasureGlow];
-}
-
-- (IBAction)juiceBoxClicked:(UIButton *)sender
-{
-    choiceDrink1 = [UIImage imageNamed:@"drinking_juice_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_juice_2.jpg"];
-    [self setAnimation:juiceBoxGlow];
-}
-
-- (IBAction)glassClicked:(UIButton *)sender
-{
-    choiceDrink1 = [UIImage imageNamed:@"drinking_glass_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_glass_2.jpg"];
-    [self setAnimation:glassGlow];
-}
-
-- (IBAction)bottleClicked:(UIButton *)sender
-{
-    choiceDrink1 = [UIImage imageNamed:@"drinking_bottle_1.jpg"];
-    choiceDrink2 = [UIImage imageNamed:@"drinking_bottle_2.jpg"];
-    [self setAnimation:bottleGlow];
+- (IBAction)drinkStepperValueChanged:(id)sender {
+    double stepperValue = self.drinkStepper.value;
+    self.timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", stepperValue];
 }
 
 - (IBAction)homePressed:(id)sender {
@@ -132,10 +87,32 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"choseDrinkSegue"]){
         DrinkViewController *controller = (DrinkViewController *)segue.destinationViewController;
-        controller.timeToDrink = drinkStepper.value;
-        controller.drinkingImage1 = choiceDrink1;
-        controller.drinkingImage2 = choiceDrink2;
+        //Pass selection and timer to drink controller
+        controller.timeToDrink = self.drinkStepper.value;
+        controller.selectedDrinkType = chosenDrink;
     }
+}
+
+- (void)selectDrinkWithType:(NSInteger)drinkType {
+    
+    //Clear current selection
+    for (UIImageView *background in self.selectionBackgrounds) {
+        [background stopAnimating];
+        background.animationImages = nil;
+    }
+    
+    //Make new selection
+    UIImageView* selection = [self.selectionBackgrounds objectAtIndex:drinkType];
+    selection.animationImages = selectionAnimation;
+    selection.animationDuration = 1.0;
+    [selection startAnimating];
+    
+    //Store selection
+    chosenDrink = drinkType;
+}
+
+- (IBAction)drinkSelected:(UIButton *)sender {
+    [self selectDrinkWithType:sender.tag];
 }
 
 @end
