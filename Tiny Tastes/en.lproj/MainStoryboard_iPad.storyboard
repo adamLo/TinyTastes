@@ -905,7 +905,7 @@ photo</string>
                                 <rect key="frame" x="326" y="328" width="473" height="453"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tiny_plate_12.png" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-oD-swI" userLabel="Image View - Disappearing food">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disappearing-food_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-oD-swI" userLabel="Image View - Disappearing food">
                                 <rect key="frame" x="357" y="433" width="425" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1553,6 +1553,7 @@ Do You Want For...</string>
         <image name="button_start.png" width="215" height="74"/>
         <image name="camera.png" width="468" height="379"/>
         <image name="coin.png" width="180" height="169"/>
+        <image name="disappearing-food_01.png" width="425" height="164"/>
         <image name="drinking_bottle_1.png" width="552" height="668"/>
         <image name="feedback_tiny.jpg" width="659" height="655"/>
         <image name="glass.png" width="116" height="230"/>
@@ -1572,7 +1573,6 @@ Do You Want For...</string>
         <image name="sippy.png" width="206" height="184"/>
         <image name="thought_bubble.jpg" width="300" height="255"/>
         <image name="tiny_eating_1.png" width="656" height="708"/>
-        <image name="tiny_plate_12.png" width="425" height="164"/>
         <image name="tried_some_label.jpg" width="286" height="143"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

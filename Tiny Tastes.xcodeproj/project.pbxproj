@@ -73,7 +73,6 @@
 		19120DE9195CB646001302FF /* story_page_26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19120DE2195CB646001302FF /* story_page_26.jpg */; };
 		19120DEA195CB646001302FF /* story_page_27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19120DE3195CB646001302FF /* story_page_27.jpg */; };
 		19120DEB195CB646001302FF /* story_page_28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19120DE4195CB646001302FF /* story_page_28.jpg */; };
-		191401AD19582326008F40C4 /* greenpeas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191401AC19582326008F40C4 /* greenpeas.jpg */; };
 		191401B319585B07008F40C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191401B219585B07008F40C4 /* Images.xcassets */; };
 		191401D41958D0E7008F40C4 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 191401D21958D0E7008F40C4 /* dsym_upload.sh */; };
 		191401D51958D0E7008F40C4 /* libCrittercism_v4_3_4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191401D31958D0E7008F40C4 /* libCrittercism_v4_3_4.a */; };
@@ -211,25 +210,36 @@
 		19FE7CE119620B2A0074A32F /* tiny_eating_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDD19620B2A0074A32F /* tiny_eating_1@2x.png */; };
 		19FE7CE219620B2A0074A32F /* tiny_eating_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDE19620B2A0074A32F /* tiny_eating_2.png */; };
 		19FE7CE319620B2A0074A32F /* tiny_eating_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDF19620B2A0074A32F /* tiny_eating_2@2x.png */; };
-		19FE7CE5196215B90074A32F /* greenpeas_cutout.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CE4196215B90074A32F /* greenpeas_cutout.png */; };
-		19FE7CE9196219AB0074A32F /* tiny_plate_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CE7196219AB0074A32F /* tiny_plate_12.png */; };
-		19FE7CEA196219AB0074A32F /* tiny_plate_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CE8196219AB0074A32F /* tiny_plate_12@2x.png */; };
+		19FE7CF31962B52A0074A32F /* disappearing-food_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CEB1962B52A0074A32F /* disappearing-food_00.png */; };
+		19FE7CF41962B52A0074A32F /* disappearing-food_00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CEC1962B52A0074A32F /* disappearing-food_00@2x.png */; };
+		19FE7CF51962B52A0074A32F /* disappearing-food_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CED1962B52A0074A32F /* disappearing-food_01.png */; };
+		19FE7CF61962B52A0074A32F /* disappearing-food_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CEE1962B52A0074A32F /* disappearing-food_01@2x.png */; };
+		19FE7CF71962B52A0074A32F /* disappearing-food_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CEF1962B52A0074A32F /* disappearing-food_03.png */; };
+		19FE7CF81962B52A0074A32F /* disappearing-food_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CF01962B52A0074A32F /* disappearing-food_03@2x.png */; };
+		19FE7CF91962B52A0074A32F /* disappearing-food_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CF11962B52A0074A32F /* disappearing-food_04.png */; };
+		19FE7CFA1962B52A0074A32F /* disappearing-food_04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CF21962B52A0074A32F /* disappearing-food_04@2x.png */; };
+		19FE7CFD1962B8120074A32F /* disappearing-food_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CFB1962B8110074A32F /* disappearing-food_02.png */; };
+		19FE7CFE1962B8120074A32F /* disappearing-food_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CFC1962B8120074A32F /* disappearing-food_02@2x.png */; };
+		19FE7D0F1962C66F0074A32F /* disappearing-food_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CFF1962C66F0074A32F /* disappearing-food_05.png */; };
+		19FE7D101962C66F0074A32F /* disappearing-food_05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D001962C66F0074A32F /* disappearing-food_05@2x.png */; };
+		19FE7D111962C66F0074A32F /* disappearing-food_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D011962C66F0074A32F /* disappearing-food_06.png */; };
+		19FE7D121962C66F0074A32F /* disappearing-food_06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D021962C66F0074A32F /* disappearing-food_06@2x.png */; };
+		19FE7D131962C66F0074A32F /* disappearing-food_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D031962C66F0074A32F /* disappearing-food_07.png */; };
+		19FE7D141962C66F0074A32F /* disappearing-food_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D041962C66F0074A32F /* disappearing-food_07@2x.png */; };
+		19FE7D151962C66F0074A32F /* disappearing-food_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D051962C66F0074A32F /* disappearing-food_08.png */; };
+		19FE7D161962C66F0074A32F /* disappearing-food_08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D061962C66F0074A32F /* disappearing-food_08@2x.png */; };
+		19FE7D171962C66F0074A32F /* disappearing-food_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D071962C66F0074A32F /* disappearing-food_09.png */; };
+		19FE7D181962C66F0074A32F /* disappearing-food_09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D081962C66F0074A32F /* disappearing-food_09@2x.png */; };
+		19FE7D191962C66F0074A32F /* disappearing-food_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D091962C66F0074A32F /* disappearing-food_10.png */; };
+		19FE7D1A1962C66F0074A32F /* disappearing-food_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D0A1962C66F0074A32F /* disappearing-food_10@2x.png */; };
+		19FE7D1B1962C66F0074A32F /* disappearing-food_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D0B1962C66F0074A32F /* disappearing-food_11.png */; };
+		19FE7D1C1962C66F0074A32F /* disappearing-food_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D0C1962C66F0074A32F /* disappearing-food_11@2x.png */; };
+		19FE7D1D1962C66F0074A32F /* disappearing-food_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D0D1962C66F0074A32F /* disappearing-food_12.png */; };
+		19FE7D1E1962C66F0074A32F /* disappearing-food_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D0E1962C66F0074A32F /* disappearing-food_12@2x.png */; };
+		19FE7D221962C7E50074A32F /* greenpeas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D201962C7E50074A32F /* greenpeas.jpg */; };
+		19FE7D231962C7E50074A32F /* greenpeas_cutout.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D211962C7E50074A32F /* greenpeas_cutout.png */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
-		316ACB431831973A00FE3A83 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB371831973A00FE3A83 /* bowl1.png */; };
-		316ACB441831973A00FE3A83 /* bowl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB381831973A00FE3A83 /* bowl2.png */; };
-		316ACB451831973A00FE3A83 /* bowl3.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB391831973A00FE3A83 /* bowl3.png */; };
-		316ACB461831973A00FE3A83 /* bowl4.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3A1831973A00FE3A83 /* bowl4.png */; };
-		316ACB471831973A00FE3A83 /* bowl5.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3B1831973A00FE3A83 /* bowl5.png */; };
-		316ACB481831973A00FE3A83 /* bowl6.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3C1831973A00FE3A83 /* bowl6.png */; };
-		316ACB491831973A00FE3A83 /* bowl7.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3D1831973A00FE3A83 /* bowl7.png */; };
-		316ACB4A1831973A00FE3A83 /* bowl8.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3E1831973A00FE3A83 /* bowl8.png */; };
-		316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB3F1831973A00FE3A83 /* bowl9.png */; };
-		316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB401831973A00FE3A83 /* bowl10.png */; };
-		316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB411831973A00FE3A83 /* bowl11.png */; };
-		316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB421831973A00FE3A83 /* bowl12.png */; };
-		316ACB501831A15A00FE3A83 /* default_food.png in Resources */ = {isa = PBXBuildFile; fileRef = 316ACB4F1831A15A00FE3A83 /* default_food.png */; };
-		317343131854ED81000DC80C /* bowl0.png in Resources */ = {isa = PBXBuildFile; fileRef = 317343121854ED81000DC80C /* bowl0.png */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
 		EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B417EA746000EB05E9 /* UIKit.framework */; };
 		EC6FD1B717EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
@@ -275,8 +285,6 @@
 		FD70733C18303865003BFC29 /* redline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731318303865003BFC29 /* redline.jpg */; };
 		FD70733D18303865003BFC29 /* none_this_time_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731418303865003BFC29 /* none_this_time_label.jpg */; };
 		FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731918303865003BFC29 /* feedback_tiny.jpg */; };
-		FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731B18303865003BFC29 /* eating_critter_1.jpg */; };
-		FD70734518303865003BFC29 /* eating_critter_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731C18303865003BFC29 /* eating_critter_2.jpg */; };
 		FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732718303865003BFC29 /* all_finished_label.jpg */; };
 		FD7073541833456C003BFC29 /* slurping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD7073531833456C003BFC29 /* slurping.mp3 */; };
 		FD7924BB1857B53700BF75B7 /* main_menu_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD7924BA1857B53700BF75B7 /* main_menu_music.mp3 */; };
@@ -375,7 +383,6 @@
 		19120DE2195CB646001302FF /* story_page_26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_26.jpg; path = "Tiny Tastes/Images/Story/story_page_26.jpg"; sourceTree = "<group>"; };
 		19120DE3195CB646001302FF /* story_page_27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_27.jpg; path = "Tiny Tastes/Images/Story/story_page_27.jpg"; sourceTree = "<group>"; };
 		19120DE4195CB646001302FF /* story_page_28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_28.jpg; path = "Tiny Tastes/Images/Story/story_page_28.jpg"; sourceTree = "<group>"; };
-		191401AC19582326008F40C4 /* greenpeas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeas.jpg; sourceTree = "<group>"; };
 		191401B219585B07008F40C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		191401CF1958D0E7008F40C4 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
 		191401D01958D0E7008F40C4 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
@@ -516,26 +523,37 @@
 		19FE7CDD19620B2A0074A32F /* tiny_eating_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny_eating_1@2x.png"; sourceTree = "<group>"; };
 		19FE7CDE19620B2A0074A32F /* tiny_eating_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_eating_2.png; sourceTree = "<group>"; };
 		19FE7CDF19620B2A0074A32F /* tiny_eating_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny_eating_2@2x.png"; sourceTree = "<group>"; };
-		19FE7CE4196215B90074A32F /* greenpeas_cutout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenpeas_cutout.png; sourceTree = "<group>"; };
-		19FE7CE7196219AB0074A32F /* tiny_plate_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_plate_12.png; sourceTree = "<group>"; };
-		19FE7CE8196219AB0074A32F /* tiny_plate_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny_plate_12@2x.png"; sourceTree = "<group>"; };
+		19FE7CEB1962B52A0074A32F /* disappearing-food_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_00.png"; sourceTree = "<group>"; };
+		19FE7CEC1962B52A0074A32F /* disappearing-food_00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_00@2x.png"; sourceTree = "<group>"; };
+		19FE7CED1962B52A0074A32F /* disappearing-food_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_01.png"; sourceTree = "<group>"; };
+		19FE7CEE1962B52A0074A32F /* disappearing-food_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_01@2x.png"; sourceTree = "<group>"; };
+		19FE7CEF1962B52A0074A32F /* disappearing-food_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_03.png"; sourceTree = "<group>"; };
+		19FE7CF01962B52A0074A32F /* disappearing-food_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_03@2x.png"; sourceTree = "<group>"; };
+		19FE7CF11962B52A0074A32F /* disappearing-food_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_04.png"; sourceTree = "<group>"; };
+		19FE7CF21962B52A0074A32F /* disappearing-food_04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_04@2x.png"; sourceTree = "<group>"; };
+		19FE7CFB1962B8110074A32F /* disappearing-food_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_02.png"; sourceTree = "<group>"; };
+		19FE7CFC1962B8120074A32F /* disappearing-food_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_02@2x.png"; sourceTree = "<group>"; };
+		19FE7CFF1962C66F0074A32F /* disappearing-food_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_05.png"; sourceTree = "<group>"; };
+		19FE7D001962C66F0074A32F /* disappearing-food_05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_05@2x.png"; sourceTree = "<group>"; };
+		19FE7D011962C66F0074A32F /* disappearing-food_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_06.png"; sourceTree = "<group>"; };
+		19FE7D021962C66F0074A32F /* disappearing-food_06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_06@2x.png"; sourceTree = "<group>"; };
+		19FE7D031962C66F0074A32F /* disappearing-food_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_07.png"; sourceTree = "<group>"; };
+		19FE7D041962C66F0074A32F /* disappearing-food_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_07@2x.png"; sourceTree = "<group>"; };
+		19FE7D051962C66F0074A32F /* disappearing-food_08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_08.png"; sourceTree = "<group>"; };
+		19FE7D061962C66F0074A32F /* disappearing-food_08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_08@2x.png"; sourceTree = "<group>"; };
+		19FE7D071962C66F0074A32F /* disappearing-food_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_09.png"; sourceTree = "<group>"; };
+		19FE7D081962C66F0074A32F /* disappearing-food_09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_09@2x.png"; sourceTree = "<group>"; };
+		19FE7D091962C66F0074A32F /* disappearing-food_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_10.png"; sourceTree = "<group>"; };
+		19FE7D0A1962C66F0074A32F /* disappearing-food_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_10@2x.png"; sourceTree = "<group>"; };
+		19FE7D0B1962C66F0074A32F /* disappearing-food_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_11.png"; sourceTree = "<group>"; };
+		19FE7D0C1962C66F0074A32F /* disappearing-food_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_11@2x.png"; sourceTree = "<group>"; };
+		19FE7D0D1962C66F0074A32F /* disappearing-food_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_12.png"; sourceTree = "<group>"; };
+		19FE7D0E1962C66F0074A32F /* disappearing-food_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disappearing-food_12@2x.png"; sourceTree = "<group>"; };
+		19FE7D201962C7E50074A32F /* greenpeas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeas.jpg; sourceTree = "<group>"; };
+		19FE7D211962C7E50074A32F /* greenpeas_cutout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenpeas_cutout.png; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
-		316ACB371831973A00FE3A83 /* bowl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl1.png; sourceTree = "<group>"; };
-		316ACB381831973A00FE3A83 /* bowl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl2.png; sourceTree = "<group>"; };
-		316ACB391831973A00FE3A83 /* bowl3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl3.png; sourceTree = "<group>"; };
-		316ACB3A1831973A00FE3A83 /* bowl4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl4.png; sourceTree = "<group>"; };
-		316ACB3B1831973A00FE3A83 /* bowl5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl5.png; sourceTree = "<group>"; };
-		316ACB3C1831973A00FE3A83 /* bowl6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl6.png; sourceTree = "<group>"; };
-		316ACB3D1831973A00FE3A83 /* bowl7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl7.png; sourceTree = "<group>"; };
-		316ACB3E1831973A00FE3A83 /* bowl8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl8.png; sourceTree = "<group>"; };
-		316ACB3F1831973A00FE3A83 /* bowl9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl9.png; sourceTree = "<group>"; };
-		316ACB401831973A00FE3A83 /* bowl10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl10.png; sourceTree = "<group>"; };
-		316ACB411831973A00FE3A83 /* bowl11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl11.png; sourceTree = "<group>"; };
-		316ACB421831973A00FE3A83 /* bowl12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl12.png; sourceTree = "<group>"; };
-		316ACB4F1831A15A00FE3A83 /* default_food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_food.png; sourceTree = "<group>"; };
-		317343121854ED81000DC80C /* bowl0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl0.png; sourceTree = "<group>"; };
 		31FD15CE1804B91C00142A5F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		31FD15CF1804B91C00142A5F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		EC6FD1B117EA746000EB05E9 /* Tiny Tastes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tastes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -594,8 +612,6 @@
 		FD70731318303865003BFC29 /* redline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redline.jpg; sourceTree = "<group>"; };
 		FD70731418303865003BFC29 /* none_this_time_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = none_this_time_label.jpg; sourceTree = "<group>"; };
 		FD70731918303865003BFC29 /* feedback_tiny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feedback_tiny.jpg; sourceTree = "<group>"; };
-		FD70731B18303865003BFC29 /* eating_critter_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_1.jpg; sourceTree = "<group>"; };
-		FD70731C18303865003BFC29 /* eating_critter_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eating_critter_2.jpg; sourceTree = "<group>"; };
 		FD70732718303865003BFC29 /* all_finished_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_finished_label.jpg; sourceTree = "<group>"; };
 		FD7073531833456C003BFC29 /* slurping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slurping.mp3; sourceTree = "<group>"; };
 		FD7924BA1857B53700BF75B7 /* main_menu_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main_menu_music.mp3; sourceTree = "<group>"; };
@@ -733,15 +749,6 @@
 				19120DD8195CB1F5001302FF /* story_tiny_frog_jump_2_02.png */,
 			);
 			path = "tiny and frog jump 2";
-			sourceTree = "<group>";
-		};
-		1914019B19570D5E008F40C4 /* sampleimages */ = {
-			isa = PBXGroup;
-			children = (
-				19FE7CE4196215B90074A32F /* greenpeas_cutout.png */,
-				191401AC19582326008F40C4 /* greenpeas.jpg */,
-			);
-			path = sampleimages;
 			sourceTree = "<group>";
 		};
 		191401B41958C889008F40C4 /* Froggy */ = {
@@ -988,6 +995,7 @@
 		19FE7CDB19620B2A0074A32F /* Eating */ = {
 			isa = PBXGroup;
 			children = (
+				19FE7D1F1962C7E50074A32F /* Sample food */,
 				19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */,
 				19FE7CDD19620B2A0074A32F /* tiny_eating_1@2x.png */,
 				19FE7CDE19620B2A0074A32F /* tiny_eating_2.png */,
@@ -1001,18 +1009,49 @@
 		19FE7CE6196219AB0074A32F /* Disappearing food */ = {
 			isa = PBXGroup;
 			children = (
-				19FE7CE7196219AB0074A32F /* tiny_plate_12.png */,
-				19FE7CE8196219AB0074A32F /* tiny_plate_12@2x.png */,
+				19FE7CEB1962B52A0074A32F /* disappearing-food_00.png */,
+				19FE7CEC1962B52A0074A32F /* disappearing-food_00@2x.png */,
+				19FE7CED1962B52A0074A32F /* disappearing-food_01.png */,
+				19FE7CEE1962B52A0074A32F /* disappearing-food_01@2x.png */,
+				19FE7CFB1962B8110074A32F /* disappearing-food_02.png */,
+				19FE7CFC1962B8120074A32F /* disappearing-food_02@2x.png */,
+				19FE7CEF1962B52A0074A32F /* disappearing-food_03.png */,
+				19FE7CF01962B52A0074A32F /* disappearing-food_03@2x.png */,
+				19FE7CF11962B52A0074A32F /* disappearing-food_04.png */,
+				19FE7CF21962B52A0074A32F /* disappearing-food_04@2x.png */,
+				19FE7CFF1962C66F0074A32F /* disappearing-food_05.png */,
+				19FE7D001962C66F0074A32F /* disappearing-food_05@2x.png */,
+				19FE7D011962C66F0074A32F /* disappearing-food_06.png */,
+				19FE7D021962C66F0074A32F /* disappearing-food_06@2x.png */,
+				19FE7D031962C66F0074A32F /* disappearing-food_07.png */,
+				19FE7D041962C66F0074A32F /* disappearing-food_07@2x.png */,
+				19FE7D051962C66F0074A32F /* disappearing-food_08.png */,
+				19FE7D061962C66F0074A32F /* disappearing-food_08@2x.png */,
+				19FE7D071962C66F0074A32F /* disappearing-food_09.png */,
+				19FE7D081962C66F0074A32F /* disappearing-food_09@2x.png */,
+				19FE7D091962C66F0074A32F /* disappearing-food_10.png */,
+				19FE7D0A1962C66F0074A32F /* disappearing-food_10@2x.png */,
+				19FE7D0B1962C66F0074A32F /* disappearing-food_11.png */,
+				19FE7D0C1962C66F0074A32F /* disappearing-food_11@2x.png */,
+				19FE7D0D1962C66F0074A32F /* disappearing-food_12.png */,
+				19FE7D0E1962C66F0074A32F /* disappearing-food_12@2x.png */,
 			);
 			path = "Disappearing food";
+			sourceTree = "<group>";
+		};
+		19FE7D1F1962C7E50074A32F /* Sample food */ = {
+			isa = PBXGroup;
+			children = (
+				19FE7D201962C7E50074A32F /* greenpeas.jpg */,
+				19FE7D211962C7E50074A32F /* greenpeas_cutout.png */,
+			);
+			path = "Sample food";
 			sourceTree = "<group>";
 		};
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
 				191401CD1958D0D8008F40C4 /* Third Party */,
-				1914019B19570D5E008F40C4 /* sampleimages */,
-				FD7924BE1857B5A500BF75B7 /* Disappearing Food */,
 				FD7924BC1857B54800BF75B7 /* Story Book */,
 				FD7073521833455E003BFC29 /* Other Sounds */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
@@ -1170,26 +1209,6 @@
 			name = "Story Book";
 			sourceTree = "<group>";
 		};
-		FD7924BE1857B5A500BF75B7 /* Disappearing Food */ = {
-			isa = PBXGroup;
-			children = (
-				317343121854ED81000DC80C /* bowl0.png */,
-				316ACB371831973A00FE3A83 /* bowl1.png */,
-				316ACB401831973A00FE3A83 /* bowl10.png */,
-				316ACB411831973A00FE3A83 /* bowl11.png */,
-				316ACB421831973A00FE3A83 /* bowl12.png */,
-				316ACB381831973A00FE3A83 /* bowl2.png */,
-				316ACB391831973A00FE3A83 /* bowl3.png */,
-				316ACB3A1831973A00FE3A83 /* bowl4.png */,
-				316ACB3B1831973A00FE3A83 /* bowl5.png */,
-				316ACB3C1831973A00FE3A83 /* bowl6.png */,
-				316ACB3D1831973A00FE3A83 /* bowl7.png */,
-				316ACB3E1831973A00FE3A83 /* bowl8.png */,
-				316ACB3F1831973A00FE3A83 /* bowl9.png */,
-			);
-			name = "Disappearing Food";
-			sourceTree = "<group>";
-		};
 		FDB582FF17EA7BD0004C6FA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -1202,12 +1221,9 @@
 				1920F2311961B8140094FAA3 /* Drinking */,
 				1920F25A1961FB450094FAA3 /* Photo */,
 				19FE7CDB19620B2A0074A32F /* Eating */,
-				316ACB4F1831A15A00FE3A83 /* default_food.png */,
 				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				FD2AC75918396CF500A7D6A1 /* blue_circle.jpg */,
 				FD2AC75818396CF500A7D6A1 /* blue_glow.jpg */,
-				FD70731B18303865003BFC29 /* eating_critter_1.jpg */,
-				FD70731C18303865003BFC29 /* eating_critter_2.jpg */,
 				FD70731918303865003BFC29 /* feedback_tiny.jpg */,
 				FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */,
 				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
@@ -1339,6 +1355,7 @@
 				19945473195D999C003BAC7F /* story_tiny_climbing_up_03.png in Resources */,
 				1920F1EB19618C320094FAA3 /* home_eat.png in Resources */,
 				19120DE6195CB646001302FF /* story_page_23.jpg in Resources */,
+				19FE7CF81962B52A0074A32F /* disappearing-food_03@2x.png in Resources */,
 				FD23B12918429F2500D1C9A9 /* i_like_this.m4a in Resources */,
 				19120DB3195C887E001302FF /* story_page_17_fish.jpg in Resources */,
 				1920F2281961A3760094FAA3 /* glass@2x.png in Resources */,
@@ -1355,6 +1372,7 @@
 				1920F1E3196189BF0094FAA3 /* home_shop.png in Resources */,
 				1920F2591961B8140094FAA3 /* drinking_sippy_2@2x.png in Resources */,
 				19945463195D740B003BAC7F /* story_page_33.jpg in Resources */,
+				19FE7D111962C66F0074A32F /* disappearing-food_06.png in Resources */,
 				FD23B12A18429F2500D1C9A9 /* encouragement.m4a in Resources */,
 				1920F204196194F20094FAA3 /* home_tiny_03.png in Resources */,
 				199454B0195DBA01003BAC7F /* button_save@2x.png in Resources */,
@@ -1367,6 +1385,7 @@
 				1994549B195DB545003BAC7F /* button_pause.png in Resources */,
 				FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */,
 				19120D97195C38B5001302FF /* pond_bubble_02.png in Resources */,
+				19FE7D1D1962C66F0074A32F /* disappearing-food_12.png in Resources */,
 				19120DE8195CB646001302FF /* story_page_25.jpg in Resources */,
 				1920F1D3196187FF0094FAA3 /* story_sound_p06.m4a in Resources */,
 				1920F22B1961A3C90094FAA3 /* pediasure.png in Resources */,
@@ -1374,13 +1393,13 @@
 				1920F2471961B8140094FAA3 /* drinking_bottle_1@2x.png in Resources */,
 				1920F1D6196187FF0094FAA3 /* story_sound_p09.m4a in Resources */,
 				19945494195DB1F0003BAC7F /* button_back@2x.png in Resources */,
-				316ACB471831973A00FE3A83 /* bowl5.png in Resources */,
-				19FE7CEA196219AB0074A32F /* tiny_plate_12@2x.png in Resources */,
 				1920F1FE196194F20094FAA3 /* home_tiny_00.png in Resources */,
 				1920F1DE196187FF0094FAA3 /* story_sound_p17.m4a in Resources */,
 				199454A8195DB7D0003BAC7F /* button_sound-on@2x.png in Resources */,
 				FD2AC75A18396CF500A7D6A1 /* blue_glow.jpg in Resources */,
+				19FE7D101962C66F0074A32F /* disappearing-food_05@2x.png in Resources */,
 				19945498195DB350003BAC7F /* button_home@2x.png in Resources */,
+				19FE7CF61962B52A0074A32F /* disappearing-food_01@2x.png in Resources */,
 				1994548F195DA6B5003BAC7F /* story_page_35.jpg in Resources */,
 				1920F21619619B800094FAA3 /* money_bag.png in Resources */,
 				1920F24E1961B8140094FAA3 /* drinking_juice_1.png in Resources */,
@@ -1396,8 +1415,10 @@
 				FD23B12D18429F2500D1C9A9 /* i_like_eating_with_you.m4a in Resources */,
 				1920F1D9196187FF0094FAA3 /* story_sound_p12.m4a in Resources */,
 				1920F2551961B8140094FAA3 /* drinking_pediasure_2@2x.png in Resources */,
+				19FE7D191962C66F0074A32F /* disappearing-food_10.png in Resources */,
 				19120DB2195C887E001302FF /* story_page_16_fish.jpg in Resources */,
 				1920F21B19619D5B0094FAA3 /* coin@2x.png in Resources */,
+				19FE7D161962C66F0074A32F /* disappearing-food_08@2x.png in Resources */,
 				FDCE238E184EC25B007A0F4F /* BACKLOG.txt in Resources */,
 				19120D8B195C36F5001302FF /* pond_qmarks_03.png in Resources */,
 				FD23B12618429F2500D1C9A9 /* drinking_tried_some_feedback.m4a in Resources */,
@@ -1405,15 +1426,16 @@
 				19FE7CE219620B2A0074A32F /* tiny_eating_2.png in Resources */,
 				1920F1F019618CD70094FAA3 /* home_drink@2x.png in Resources */,
 				FD7924BB1857B53700BF75B7 /* main_menu_music.mp3 in Resources */,
-				FD70734418303865003BFC29 /* eating_critter_1.jpg in Resources */,
 				19945485195DA29C003BAC7F /* story_tiny_climbing_down_02.png in Resources */,
 				FD23B12518429F2500D1C9A9 /* eating_none_this_time_feedback.m4a in Resources */,
 				19120D9A195C38B5001302FF /* pond_bubble_05.png in Resources */,
 				19120D7F195C328A001302FF /* story_page_11.jpg in Resources */,
+				19FE7CFA1962B52A0074A32F /* disappearing-food_04@2x.png in Resources */,
 				19120D8A195C36F5001302FF /* pond_qmarks_02.png in Resources */,
 				19FE7CE119620B2A0074A32F /* tiny_eating_1@2x.png in Resources */,
 				191401D41958D0E7008F40C4 /* dsym_upload.sh in Resources */,
 				1920F1DB196187FF0094FAA3 /* story_sound_p14.m4a in Resources */,
+				19FE7D1A1962C66F0074A32F /* disappearing-food_10@2x.png in Resources */,
 				199454A0195DB620003BAC7F /* button_start@2x.png in Resources */,
 				19120DD3195CAC49001302FF /* story_tiny_frog_jump_05.png in Resources */,
 				19945486195DA29C003BAC7F /* story_tiny_climbing_down_03.png in Resources */,
@@ -1429,14 +1451,14 @@
 				19945465195D77A4003BAC7F /* story_page_29_plain.jpg in Resources */,
 				19120D5D195C2FF5001302FF /* story_page_02.jpg in Resources */,
 				1920F24F1961B8140094FAA3 /* drinking_juice_1@2x.png in Resources */,
+				19FE7CFE1962B8120074A32F /* disappearing-food_02@2x.png in Resources */,
 				1920F2621961FE100094FAA3 /* camera_overlay@2x.png in Resources */,
-				317343131854ED81000DC80C /* bowl0.png in Resources */,
 				19120DD0195CAC49001302FF /* story_tiny_frog_jump_02.png in Resources */,
 				1920F1DF196187FF0094FAA3 /* story_sound_p18.m4a in Resources */,
-				316ACB431831973A00FE3A83 /* bowl1.png in Resources */,
 				19120DC2195C9B60001302FF /* story_page_16_frog_plain.jpg in Resources */,
 				19120DB1195C887E001302FF /* story_page_15_fish.jpg in Resources */,
 				199454B6195E00C2003BAC7F /* spacer.png in Resources */,
+				19FE7D141962C66F0074A32F /* disappearing-food_07@2x.png in Resources */,
 				199454A6195DB7D0003BAC7F /* button_sound-off@2x.png in Resources */,
 				19120DC1195C9B60001302FF /* story_page_15_frog.jpg in Resources */,
 				1920F1EF19618CD70094FAA3 /* home_drink.png in Resources */,
@@ -1445,7 +1467,6 @@
 				1920F2271961A3760094FAA3 /* glass.png in Resources */,
 				FDBC9CD01816319800861C75 /* KBZipaDeeDooDah.ttf in Resources */,
 				1920F21719619B800094FAA3 /* money_bag@2x.png in Resources */,
-				316ACB4A1831973A00FE3A83 /* bowl8.png in Resources */,
 				19120D7E195C328A001302FF /* story_page_10.jpg in Resources */,
 				19120DD2195CAC49001302FF /* story_tiny_frog_jump_04.png in Resources */,
 				1920F206196194F20094FAA3 /* home_tiny_04.png in Resources */,
@@ -1464,33 +1485,31 @@
 				19120D7D195C328A001302FF /* story_page_09.jpg in Resources */,
 				1920F24C1961B8140094FAA3 /* drinking_glass_2.png in Resources */,
 				19945474195D999C003BAC7F /* story_tiny_climbing_up_04.png in Resources */,
-				19FE7CE9196219AB0074A32F /* tiny_plate_12.png in Resources */,
-				316ACB491831973A00FE3A83 /* bowl7.png in Resources */,
 				19120D78195C328A001302FF /* story_page_04.jpg in Resources */,
 				19120DA4195C884B001302FF /* story_page_13.jpg in Resources */,
+				19FE7D1E1962C66F0074A32F /* disappearing-food_12@2x.png in Resources */,
 				199454AB195DB966003BAC7F /* button_skip-to-eat.png in Resources */,
 				19120DB5195C887E001302FF /* story_page_19_fish_plain.jpg in Resources */,
 				19945468195D77B5003BAC7F /* story_tiny_climbing_up_tree1.png in Resources */,
 				199454AC195DB966003BAC7F /* button_skip-to-eat@2x.png in Resources */,
 				FD70733C18303865003BFC29 /* redline.jpg in Resources */,
-				316ACB4D1831973A00FE3A83 /* bowl11.png in Resources */,
 				191401B319585B07008F40C4 /* Images.xcassets in Resources */,
 				FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */,
+				19FE7CF71962B52A0074A32F /* disappearing-food_03.png in Resources */,
 				19120DC4195C9B60001302FF /* story_tiny_frog_fish_01.png in Resources */,
 				1920F2481961B8140094FAA3 /* drinking_bottle_2.png in Resources */,
 				1920F2561961B8140094FAA3 /* drinking_sippy_1.png in Resources */,
 				1920F200196194F20094FAA3 /* home_tiny_01.png in Resources */,
+				19FE7D171962C66F0074A32F /* disappearing-food_09.png in Resources */,
 				FD23B12F18429F2500D1C9A9 /* eating_sound_1.m4a in Resources */,
 				19120D77195C328A001302FF /* story_page_03.jpg in Resources */,
-				19FE7CE5196215B90074A32F /* greenpeas_cutout.png in Resources */,
+				19FE7D1C1962C66F0074A32F /* disappearing-food_11@2x.png in Resources */,
 				FD16EA5C18511D8D00A801B3 /* store_background_jingle.mp3 in Resources */,
-				FD70734518303865003BFC29 /* eating_critter_2.jpg in Resources */,
 				19120DCF195CAC49001302FF /* story_tiny_frog_jump_01.png in Resources */,
 				19120D8C195C36F5001302FF /* pond_qmarks_04.png in Resources */,
 				19120DB6195C887E001302FF /* story_page_20_fish.jpg in Resources */,
 				19120DE5195CB646001302FF /* story_page_22.jpg in Resources */,
 				1920F1DC196187FF0094FAA3 /* story_sound_p15.m4a in Resources */,
-				316ACB461831973A00FE3A83 /* bowl4.png in Resources */,
 				19120DEB195CB646001302FF /* story_page_28.jpg in Resources */,
 				1920F205196194F20094FAA3 /* home_tiny_03@2x.png in Resources */,
 				1920F20D196197E00094FAA3 /* shop_large.png in Resources */,
@@ -1499,11 +1518,14 @@
 				FD23B12E18429F2500D1C9A9 /* eating_sound_2.m4a in Resources */,
 				1920F1D2196187FF0094FAA3 /* story_sound_p05.m4a in Resources */,
 				19120DDA195CB1F5001302FF /* story_tiny_frog_jump_2_01.png in Resources */,
+				19FE7D181962C66F0074A32F /* disappearing-food_09@2x.png in Resources */,
 				1920F1D8196187FF0094FAA3 /* story_sound_p11.m4a in Resources */,
 				1920F1E4196189BF0094FAA3 /* home_shop@2x.png in Resources */,
 				1920F21A19619D5B0094FAA3 /* coin.png in Resources */,
 				1920F1D1196187FF0094FAA3 /* story_sound_p04.m4a in Resources */,
 				19945493195DB1F0003BAC7F /* button_back.png in Resources */,
+				19FE7D221962C7E50074A32F /* greenpeas.jpg in Resources */,
+				19FE7D151962C66F0074A32F /* disappearing-food_08.png in Resources */,
 				FD23B12818429F2500D1C9A9 /* all_finished_feedback.m4a in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
 				19120DC0195C9B60001302FF /* story_page_14_frog.jpg in Resources */,
@@ -1514,44 +1536,48 @@
 				FD23B12B18429F2500D1C9A9 /* trying_new_things.m4a in Resources */,
 				1920F25E1961FB450094FAA3 /* camera@2x.png in Resources */,
 				1994547A195D9F5E003BAC7F /* story_tiny_climbing_up_squirrel_02.png in Resources */,
+				19FE7D0F1962C66F0074A32F /* disappearing-food_05.png in Resources */,
 				1920F1CE196187FF0094FAA3 /* story_sound_p01.m4a in Resources */,
 				1920F2201961A15B0094FAA3 /* sippy@2x.png in Resources */,
 				199454AF195DBA01003BAC7F /* button_save.png in Resources */,
 				FD23B12718429F2500D1C9A9 /* eating_tried_some_feedback.m4a in Resources */,
 				1920F1D7196187FF0094FAA3 /* story_sound_p10.m4a in Resources */,
+				19FE7CF91962B52A0074A32F /* disappearing-food_04.png in Resources */,
 				1920F2501961B8140094FAA3 /* drinking_juice_2.png in Resources */,
-				316ACB481831973A00FE3A83 /* bowl6.png in Resources */,
-				316ACB4B1831973A00FE3A83 /* bowl9.png in Resources */,
 				19120DDB195CB1F5001302FF /* story_tiny_frog_jump_2_02.png in Resources */,
 				FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */,
+				19FE7D121962C66F0074A32F /* disappearing-food_06@2x.png in Resources */,
 				1920F24A1961B8140094FAA3 /* drinking_glass_1.png in Resources */,
-				316ACB501831A15A00FE3A83 /* default_food.png in Resources */,
 				FD23B12418429F2500D1C9A9 /* drinking_none_this_time_feedback.m4a in Resources */,
+				19FE7D231962C7E50074A32F /* greenpeas_cutout.png in Resources */,
 				19120DC5195C9B60001302FF /* story_tiny_frog_fish_02.png in Resources */,
 				199454A7195DB7D0003BAC7F /* button_sound-on.png in Resources */,
 				19120DE7195CB646001302FF /* story_page_24.jpg in Resources */,
 				19FE7CE019620B2A0074A32F /* tiny_eating_1.png in Resources */,
+				19FE7CFD1962B8120074A32F /* disappearing-food_02.png in Resources */,
 				1920F1FF196194F20094FAA3 /* home_tiny_00@2x.png in Resources */,
+				19FE7CF41962B52A0074A32F /* disappearing-food_00@2x.png in Resources */,
 				FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */,
 				19120D55195B623E001302FF /* bookmark.png in Resources */,
 				19120D79195C328A001302FF /* story_page_05.jpg in Resources */,
 				1920F1EC19618C320094FAA3 /* home_eat@2x.png in Resources */,
 				1920F21F1961A15B0094FAA3 /* sippy.png in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
+				19FE7CF51962B52A0074A32F /* disappearing-food_01.png in Resources */,
 				1920F1D0196187FF0094FAA3 /* story_sound_p03.m4a in Resources */,
 				19120DA1195C6DDB001302FF /* pond_bubble_08.png in Resources */,
 				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
 				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
 				1920F2581961B8140094FAA3 /* drinking_sippy_2.png in Resources */,
 				19120D7A195C328A001302FF /* story_page_06.jpg in Resources */,
-				316ACB451831973A00FE3A83 /* bowl3.png in Resources */,
 				1920F1BA1961873D0094FAA3 /* story_cover_page.jpg in Resources */,
 				1920F2521961B8140094FAA3 /* drinking_pediasure_1.png in Resources */,
 				1920F1B7195F48FD0094FAA3 /* story_tiny_fish_02.png in Resources */,
 				199454B4195DBA7A003BAC7F /* button_play@2x.png in Resources */,
 				1920F1D5196187FF0094FAA3 /* story_sound_p08.m4a in Resources */,
 				19120D9F195C6DDB001302FF /* pond_bubble_06.png in Resources */,
-				316ACB4C1831973A00FE3A83 /* bowl10.png in Resources */,
+				19FE7D1B1962C66F0074A32F /* disappearing-food_11.png in Resources */,
+				19FE7CF31962B52A0074A32F /* disappearing-food_00.png in Resources */,
 				19120DA0195C6DDB001302FF /* pond_bubble_07.png in Resources */,
 				1920F1E719618B9E0094FAA3 /* home_settings.png in Resources */,
 				19945472195D999C003BAC7F /* story_tiny_climbing_up_02.png in Resources */,
@@ -1564,13 +1590,11 @@
 				1920F20E196197E00094FAA3 /* shop_large@2x.png in Resources */,
 				19120DB0195C887E001302FF /* story_page_14_fish.jpg in Resources */,
 				FD23B12C18429F2500D1C9A9 /* its_fun_eating_together.m4a in Resources */,
-				316ACB441831973A00FE3A83 /* bowl2.png in Resources */,
 				19120DCE195CAC49001302FF /* story_page_18_frog_plain.jpg in Resources */,
 				199454B3195DBA7A003BAC7F /* button_play.png in Resources */,
-				316ACB4E1831973A00FE3A83 /* bowl12.png in Resources */,
+				19FE7D131962C66F0074A32F /* disappearing-food_07.png in Resources */,
 				1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */,
 				1920F2611961FE100094FAA3 /* camera_overlay.png in Resources */,
-				191401AD19582326008F40C4 /* greenpeas.jpg in Resources */,
 				19120D8D195C36F5001302FF /* pond_qmarks_05.png in Resources */,
 				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				FD7073541833456C003BFC29 /* slurping.mp3 in Resources */,

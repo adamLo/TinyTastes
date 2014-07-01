@@ -64,25 +64,22 @@
     //disappearingFood.frame = CGRectMake(362, 312, 400, 400);
     
     animationImageArray = [NSMutableArray arrayWithObjects:
-                           [UIImage imageNamed:@"bowl0.png"],
-                           [UIImage imageNamed:@"bowl1.png"],
-                           [UIImage imageNamed:@"bowl1.png"],
-                           [UIImage imageNamed:@"bowl2.png"],
-                           [UIImage imageNamed:@"bowl3.png"],
-                           [UIImage imageNamed:@"bowl4.png"],
-                           [UIImage imageNamed:@"bowl5.png"],
-                           [UIImage imageNamed:@"bowl6.png"],
-                           [UIImage imageNamed:@"bowl7.png"],
-                           [UIImage imageNamed:@"bowl8.png"],
-                           [UIImage imageNamed:@"bowl9.png"],
-                           [UIImage imageNamed:@"bowl10.png"],
-                           [UIImage imageNamed:@"bowl11.png"],
-                           [UIImage imageNamed:@"bowl12.png"], nil];
+                           [UIImage imageNamed:@"disappearing-food_00.png"],
+                           [UIImage imageNamed:@"disappearing-food_01.png"],
+                           [UIImage imageNamed:@"disappearing-food_02.png"],
+                           [UIImage imageNamed:@"disappearing-food_03.png"],
+                           [UIImage imageNamed:@"disappearing-food_04.png"],
+                           [UIImage imageNamed:@"disappearing-food_05.png"],
+                           [UIImage imageNamed:@"disappearing-food_06.png"],
+                           [UIImage imageNamed:@"disappearing-food_07.png"],
+                           [UIImage imageNamed:@"disappearing-food_08.png"],
+                           [UIImage imageNamed:@"disappearing-food_09.png"],
+                           [UIImage imageNamed:@"disappearing-food_10.png"],
+                           [UIImage imageNamed:@"disappearing-food_11.png"],
+                           [UIImage imageNamed:@"disappearing-food_12.png"],
+                           nil];
     
     self.disappearingFood.animationImages = animationImageArray;
-    
-    //[self.view addSubview:disappearingFood];
-    
     
     // display critter animation -- 3 seconds eating, 12 seconds with spoon back down on plate
     self.eatingCritter.animationImages = @[[UIImage imageNamed:@"tiny_eating_1"], [UIImage imageNamed:@"tiny_eating_2"],
@@ -90,8 +87,6 @@
                                       [UIImage imageNamed:@"tiny_eating_2"],
                                       [UIImage imageNamed:@"tiny_eating_2"]];
     self.eatingCritter.animationDuration = 15;
-    //[self.view addSubview:eatingCritter];
-    
 
 }
 
@@ -103,11 +98,15 @@
     }
     self.foodImageView.image = self.foodImage;
     
+    self.disappearingFood.image = [self.disappearingFood.animationImages firstObject];
     self.disappearingFood.animationDuration = secondsCount;
     animationDuration = secondsCount;
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     //Start animations
-    //[self.disappearingFood startAnimating];
+    [self.disappearingFood startAnimating];
     [self.eatingCritter startAnimating];
 }
 
