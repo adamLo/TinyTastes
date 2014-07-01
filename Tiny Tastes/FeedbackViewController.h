@@ -11,19 +11,18 @@
 
 @interface FeedbackViewController : UIViewController
 
-@property(nonatomic) IBOutlet UILabel *feedbackLabel;
-@property(nonatomic) IBOutlet UIButton *goShoppingLabel;
-@property(nonatomic) IBOutlet UIButton *mainMenuLabel;
-@property(nonatomic) IBOutlet UILabel *coinsNotifLabel;
+@property(nonatomic, weak) IBOutlet UILabel *feedbackLabel;
+@property(nonatomic, weak) IBOutlet UIButton *goShoppingLabel;
+@property(nonatomic, weak) IBOutlet UIButton *mainMenuLabel;
+@property(nonatomic, weak) IBOutlet UILabel *coinsNotifLabel;
 
-@property(nonatomic) IBOutlet UIImageView *coinView1;
-@property(nonatomic) IBOutlet UIImageView *coinView2;
-@property(nonatomic) IBOutlet UIImageView *coinView3;
+@property(nonatomic, weak) IBOutlet UIImageView *coinView1;
+@property(nonatomic, weak) IBOutlet UIImageView *coinView2;
+@property(nonatomic, weak) IBOutlet UIImageView *coinView3;
 
-@property(nonatomic) NSString *feedbackText;
-@property(nonatomic) int numCoins;
-@property(nonatomic) BOOL eating;
-@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
+@property(nonatomic, weak) NSString *feedbackText;
+@property(nonatomic, assign) int numCoins;
+@property(nonatomic, assign) BOOL eating;
 
 - (IBAction)homePressed:(id)sender; /** User pressed home button to go back to home screen */
 - (IBAction)shopPressed:(id)sender; /** User pressed shop button to go shopping */

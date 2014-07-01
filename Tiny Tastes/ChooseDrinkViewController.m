@@ -54,8 +54,8 @@
     self.drinkStepper.autorepeat = YES;
     self.drinkStepper.continuous = YES;
     
-    selectionAnimation = [NSArray arrayWithObjects:[UIImage imageNamed:@"blue_circle.jpg"],
-     [UIImage imageNamed:@"blue_glow.jpg"],nil];
+    //Seelction animation (glowing blue circle) around selected drink
+    selectionAnimation = @[[UIImage imageNamed:@"drink_selection_01.png"], [UIImage imageNamed:@"drink_selection_02.png"]];
     
 }
 

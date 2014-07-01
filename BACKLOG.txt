@@ -1,7 +1,0 @@
-Future Features
-
-The main feature the client wishes to develop in the future is the addition of the Tiny Store. This will be an in-app store where the user can trade in coins for cool/useful items that will then show up in the story or on the Choose Drink/Eat screens. Possible ideas for this include different characters that the user can swap out in Story Mode, different colors/styles of plates, cups, and utensils, and clothes/accessories for Tiny the Kangaroo.
-
-The client also wishes to add the feature of multiple accounts within the app, where each account saves user preferences and app progress. This feature is useful for a family with more than one children but only one iPad.
-
-The client also will be adding story book images and sounds as they are illustrated, but this functionality is already in place within the code, so this part should be very simple. The process of adding these story pages is explained in great detail in the Programmer Transfer Documentation.

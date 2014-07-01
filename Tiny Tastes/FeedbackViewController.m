@@ -8,13 +8,13 @@
 
 #import "FeedbackViewController.h"
 
-@interface FeedbackViewController ()
+@interface FeedbackViewController () {
+    AVAudioPlayer *audioPlayer;
+}
 
 @end
 
 @implementation FeedbackViewController
-
-@synthesize audioPlayer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

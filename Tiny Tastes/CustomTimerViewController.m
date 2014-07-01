@@ -28,34 +28,34 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
 
-	customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:70];
-    mealTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    snackTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    drinkTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    mealTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    snackTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    drinkTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    minutesText1.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    minutesText2.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    minutesText3.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+	self.customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:70];
+    self.mealTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.snackTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.drinkTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.mealTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.snackTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.drinkTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.minutesText1.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.minutesText2.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.minutesText3.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
 
-    mealStepper.minimumValue = 1;
-    snackStepper.minimumValue = 1;
-    drinkStepper.minimumValue = 1;
+    self.mealStepper.minimumValue = 1;
+    self.snackStepper.minimumValue = 1;
+    self.drinkStepper.minimumValue = 1;
     
-    mealStepper.maximumValue = 60;
-    snackStepper.maximumValue = 60;
-    drinkStepper.maximumValue = 60;
+    self.mealStepper.maximumValue = 60;
+    self.snackStepper.maximumValue = 60;
+    self.drinkStepper.maximumValue = 60;
     
-    mealStepper.wraps = YES;
-    snackStepper.wraps = YES;
-    drinkStepper.wraps = YES;
-    mealStepper.autorepeat = YES;
-    snackStepper.autorepeat = YES;
-    drinkStepper.autorepeat = YES;
-    mealStepper.continuous = YES;
-    snackStepper.continuous = YES;
-    drinkStepper.continuous = YES;
+    self.mealStepper.wraps = YES;
+    self.snackStepper.wraps = YES;
+    self.drinkStepper.wraps = YES;
+    self.mealStepper.autorepeat = YES;
+    self.snackStepper.autorepeat = YES;
+    self.drinkStepper.autorepeat = YES;
+    self.mealStepper.continuous = YES;
+    self.snackStepper.continuous = YES;
+    self.drinkStepper.continuous = YES;
     
 }
 
@@ -68,28 +68,28 @@
         [prefs setInteger:30 forKey:@"mealTimer"];
         [prefs setInteger:15 forKey:@"snackTimer"];
         [prefs setInteger:10 forKey:@"drinkTimer"];
-        mealStepper.value = 30;
-        snackStepper.value = 15;
-        drinkStepper.value = 10;
+        self.mealStepper.value = 30;
+        self.snackStepper.value = 15;
+        self.drinkStepper.value = 10;
     } else {
         NSInteger myMealTimer = [prefs integerForKey:@"mealTimer"];
-        mealStepper.value = myMealTimer;
+        self.mealStepper.value = myMealTimer;
         NSInteger mySnackTimer = [prefs integerForKey:@"snackTimer"];
-        snackStepper.value = mySnackTimer;
+        self.snackStepper.value = mySnackTimer;
         NSInteger myDrinkTimer = [prefs integerForKey:@"drinkTimer"];
-        drinkStepper.value = myDrinkTimer;
+        self.drinkStepper.value = myDrinkTimer;
     }
     
-    mealTimerText.text = [NSString stringWithFormat:@"%.f", mealStepper.value];
-    snackTimerText.text = [NSString stringWithFormat:@"%.f", snackStepper.value];
-    drinkTimerText.text = [NSString stringWithFormat:@"%.f", drinkStepper.value];
+    self.mealTimerText.text = [NSString stringWithFormat:@"%.f", self.mealStepper.value];
+    self.snackTimerText.text = [NSString stringWithFormat:@"%.f", self.snackStepper.value];
+    self.drinkTimerText.text = [NSString stringWithFormat:@"%.f", self.drinkStepper.value];
     
 }
 
 - (IBAction)mealStepperValueChanged:(id)sender
 {
-    double stepperValue = mealStepper.value;
-    mealTimerText.text = [NSString stringWithFormat:@"%.f", stepperValue];
+    double stepperValue = self.mealStepper.value;
+    self.mealTimerText.text = [NSString stringWithFormat:@"%.f", stepperValue];
     
     // Change meal timer value in user defaults
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
@@ -98,8 +98,8 @@
 
 - (IBAction)snackStepperValueChanged:(id)sender
 {
-    double stepperValue = snackStepper.value;
-    snackTimerText.text = [NSString stringWithFormat:@"%.f", stepperValue];
+    double stepperValue = self.snackStepper.value;
+    self.snackTimerText.text = [NSString stringWithFormat:@"%.f", stepperValue];
     
     // Change snack timer value in user defaults
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
@@ -108,8 +108,8 @@
 
 - (IBAction)drinkStepperValueChanged:(id)sender
 {
-    double stepperValue = drinkStepper.value;
-    drinkTimerText.text = [NSString stringWithFormat:@"%.f", stepperValue];
+    double stepperValue = self.drinkStepper.value;
+    self.drinkTimerText.text = [NSString stringWithFormat:@"%.f", stepperValue];
     
     // Change drink timer value in user defaults
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];

@@ -9,20 +9,31 @@
 #import "EatViewController.h"
 #import "FeedbackViewController.h"
 
-@interface EatViewController ()
+@interface EatViewController () {
+    NSTimer *countdownTimer;
+    NSMutableArray *animationImageArray;
+    int secondsCount;
+    int secondsCountFinal;
+    int lastEaten;
+    NSInteger currentFrame;
+    int animationDuration;
+    bool blinkStatus;
+    bool phraseStatus;
+    
+    AVAudioPlayer *audioPlayer1;
+    AVAudioPlayer *audioPlayer2;
+    AVAudioPlayer *audioPlayer3;
+    AVAudioPlayer *audioPlayer4;
+    AVAudioPlayer *audioPlayer5;
+    AVAudioPlayer *audioPlayer6;
+    AVAudioPlayer *audioPlayer7;
+    AVAudioPlayer *audioPlayer8;
+}
 
 @end
 
 @implementation EatViewController
 
-@synthesize audioPlayer1;
-@synthesize audioPlayer2;
-@synthesize audioPlayer3;
-@synthesize audioPlayer4;
-@synthesize audioPlayer5;
-@synthesize audioPlayer6;
-@synthesize audioPlayer7;
-@synthesize audioPlayer8;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,17 +46,20 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
-    allFinishedButton.hidden = YES;
-    partiallyFinishedButton.hidden = YES;
-    notFinishedButton.hidden = YES;
-    resumeButton.hidden = YES;
+    self.allFinishedButton.hidden = YES;
+    self.partiallyFinishedButton.hidden = YES;
+    self.notFinishedButton.hidden = YES;
+    self.resumeButton.hidden = YES;
     
-    chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
-    timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
-    [pauseButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
-    [resumeButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
-    chooseLabel.hidden = YES;
-    redLine.hidden = YES;
+    self.chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
+    self.timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    [self.pauseButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
+    [self.resumeButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
+    self.chooseLabel.hidden = YES;
+    self.redLine.hidden = YES;
+    
+    self.countdownLabel.textAlignment = NSTextAlignmentCenter;
+    self.countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
     
     lastEaten = -12;
     phraseStatus = YES;
@@ -54,14 +68,6 @@
     [self setTimer];
     secondsCountFinal = secondsCount;
     [self setUpAudioPlayers];
-    
-    // display picture of the food
-    //foodImageView = [[UIImageView alloc] initWithFrame:CGRectMake(362, 312, 400, 400)];
-    //[self.view addSubview:foodImageView];
-    
-    // display disappearing food
-    //disappearingFood = [[UIImageView alloc] init];
-    //disappearingFood.frame = CGRectMake(362, 312, 400, 400);
     
     animationImageArray = [NSMutableArray arrayWithObjects:
                            [UIImage imageNamed:@"disappearing-food_00.png"],
@@ -132,9 +138,8 @@
     int seconds = secondsCount - (minutes * 60);
     
     NSString *timerOutput = [NSString stringWithFormat:@"%2d:%.2d", minutes, seconds];
-    countdownLabel.text = timerOutput;
-    countdownLabel.textAlignment = NSTextAlignmentCenter;
-    countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
+    self.countdownLabel.text = timerOutput;
+    
     
     [self playSoundBite];
     
@@ -240,11 +245,11 @@
 - (void)blink{
     
     if (blinkStatus == FALSE){
-        redLine.hidden = NO;
+        self.redLine.hidden = NO;
         blinkStatus = TRUE;
     }
     else {
-        redLine.hidden = YES;
+        self.redLine.hidden = YES;
         blinkStatus = FALSE;
     }
 }
@@ -274,26 +279,26 @@
 - (IBAction)doneButtonClicked {
     [countdownTimer invalidate];
     countdownTimer = nil;
-    allFinishedButton.hidden = NO;
-    partiallyFinishedButton.hidden = NO;
-    notFinishedButton.hidden = NO;
-    chooseLabel.hidden = NO;
-    doneButton.hidden = YES;
+    self.allFinishedButton.hidden = NO;
+    self.partiallyFinishedButton.hidden = NO;
+    self.notFinishedButton.hidden = NO;
+    self.chooseLabel.hidden = NO;
+    self.doneButton.hidden = YES;
     [self.eatingCritter stopAnimating];
     [self.disappearingFood stopAnimating];
     self.disappearingFood.image = [self.disappearingFood.animationImages lastObject];
     self.foodImageView.hidden = YES;
-    pauseButton.hidden = YES;
-    resumeButton.hidden = YES;
-    countdownLabel.hidden = YES;
-    timeLeftLabel.hidden = YES;
+    self.pauseButton.hidden = YES;
+    self.resumeButton.hidden = YES;
+    self.countdownLabel.hidden = YES;
+    self.timeLeftLabel.hidden = YES;
     
     [self stopAudioPlayers];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (![prefs boolForKey:@"HasLaunchedEatScreenOnce"]) {
         NSLog(@"first time launching in Eat screen");
-        redLine.hidden = NO;
+        self.redLine.hidden = NO;
         [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0)  target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
         blinkStatus = TRUE;
         [prefs setBool:YES forKey:@"HasLaunchedEatScreenOnce"];
@@ -302,8 +307,8 @@
 }
 
 - (IBAction)pauseButtonClicked:(id)sender {
-    pauseButton.hidden = YES;
-    resumeButton.hidden = NO;
+    self.pauseButton.hidden = YES;
+    self.resumeButton.hidden = NO;
     
     // Pause the timer
     [countdownTimer invalidate];
@@ -321,8 +326,8 @@
 }
 
 - (IBAction)resumeButtonClicked:(id)sender {
-    resumeButton.hidden = YES;
-    pauseButton.hidden = NO;
+    self.resumeButton.hidden = YES;
+    self.pauseButton.hidden = NO;
     
     [self setUpAudioPlayers];
     [self playSoundBite];
