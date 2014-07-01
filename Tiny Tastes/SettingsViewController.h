@@ -9,18 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController {
-    IBOutlet UILabel *settingsLabel;
-    IBOutlet UILabel *backgroundSoundLabel;
-    IBOutlet UILabel *storyNarrationLabel;
-    IBOutlet UILabel *mealTimer;
-    IBOutlet UILabel *mealAlerts;
-    
-    IBOutlet UISwitch *backgroundSoundSwitch;
-    IBOutlet UISwitch *storyNarrationSwitch;
-    
-    IBOutlet UIButton *setTimerButton;
-    IBOutlet UIButton *setAlertsButton;
 }
+
+@property (nonatomic, weak) IBOutlet UILabel *settingsLabel;
+@property (nonatomic, weak) IBOutlet IBOutlet UILabel *backgroundSoundLabel;
+@property (nonatomic, weak) IBOutlet IBOutlet UILabel *storyNarrationLabel;
+@property (nonatomic, weak) IBOutlet IBOutlet UILabel *mealTimer;
+@property (nonatomic, weak) IBOutlet IBOutlet UILabel *mealAlerts;
+
+@property (nonatomic, weak) IBOutlet IBOutlet UISwitch *backgroundSoundSwitch;
+@property (nonatomic, weak) IBOutlet IBOutlet UISwitch *storyNarrationSwitch;
+
+@property (nonatomic, weak) IBOutlet IBOutlet UIButton *setTimerButton;
+@property (nonatomic, weak) IBOutlet IBOutlet UIButton *setAlertsButton;
 
 - (IBAction)backgroundSoundButtonClicked:(UIButton *)sender;
 - (IBAction)storyNarrationButtonClicked:(UIButton *)sender;

@@ -23,10 +23,6 @@ typedef enum {
 @property (nonatomic, weak) IBOutlet UILabel *countdownLabel;
 @property (nonatomic, weak) IBOutlet UILabel *chooseLabel;
 @property (nonatomic, weak) IBOutlet UILabel *timeLeftLabel;
-
-//@property (weak, nonatomic) IBOutlet UIImage *drinkingImage1;
-//@property (weak, nonatomic) IBOutlet UIImage *drinkingImage2;
-
 @property (weak, nonatomic) IBOutlet UIImageView *drinkingCritter;
 @property (weak, nonatomic) IBOutlet UIImageView *redLine;
 

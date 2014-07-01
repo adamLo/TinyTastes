@@ -10,15 +10,16 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface HomeViewController : UIViewController {
-    IBOutlet UIButton *storyModeLabel;
-    IBOutlet UIButton *letsDrinkLabel;
-    IBOutlet UIButton *letsEatLabel;
-    IBOutlet UIButton *tinyShopLabel;
-    IBOutlet UIButton *settingsLabel;
+    
 }
 
-@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
-
+@property (weak, nonatomic) IBOutlet UIButton *storyModeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *letsDrinkLabel;
+@property (weak, nonatomic) IBOutlet UIButton *letsEatLabel;
+@property (weak, nonatomic) IBOutlet UIButton *tinyShopLabel;
+@property (weak, nonatomic) IBOutlet UIButton *settingsLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *animatedTiny; /** ImageView for Animated tiny phase images */
+
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end

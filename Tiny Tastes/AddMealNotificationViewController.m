@@ -33,15 +33,15 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [mealLabel setText:[NSString stringWithFormat:@"Meal:   %@", _currentMeal]];
+    [self.mealLabel setText:[NSString stringWithFormat:@"Meal:   %@", _currentMeal]];
     _datePicker.date = _currentNotificationTime;
 }
 
 - (void)setFonts
 {
-    editReminderLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    remindMeAtLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    mealLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    self.editReminderLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.remindMeAtLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.mealLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
 }
 
 - (void)didReceiveMemoryWarning

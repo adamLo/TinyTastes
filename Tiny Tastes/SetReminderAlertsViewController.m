@@ -43,62 +43,62 @@
 
     NSDate *time = [self getNotificationFireDate:@"breakfast"];
     if(time != NULL) {
-        [breakfastTime setText:[formatter stringFromDate:time]];
+        [self.breakfastTime setText:[formatter stringFromDate:time]];
     } else {
-        [breakfastSwitch setOn:NO animated:YES];
-        [breakfastLabel setTextColor:[UIColor grayColor]];
-        [breakfastTime setTextColor:[UIColor grayColor]];
-        [breakfastEdit setEnabled:NO];
+        [self.breakfastSwitch setOn:NO animated:YES];
+        [self.breakfastLabel setTextColor:[UIColor grayColor]];
+        [self.breakfastTime setTextColor:[UIColor grayColor]];
+        [self.breakfastEdit setEnabled:NO];
     }
     
     time = [self getNotificationFireDate:@"morning snack"];
     if(time != NULL) {
-        [morningSnackTime setText:[formatter stringFromDate:time]];
+        [self.morningSnackTime setText:[formatter stringFromDate:time]];
     } else {
-        [morningSnackSwitch setOn:NO animated:YES];
-        [morningSnackLabel setTextColor:[UIColor grayColor]];
-        [morningSnackTime setTextColor:[UIColor grayColor]];
-        [morningSnackEdit setEnabled:NO];
+        [self.morningSnackSwitch setOn:NO animated:YES];
+        [self.morningSnackLabel setTextColor:[UIColor grayColor]];
+        [self.morningSnackTime setTextColor:[UIColor grayColor]];
+        [self.morningSnackEdit setEnabled:NO];
     }
 
     time = [self getNotificationFireDate:@"lunch"];
     if(time != NULL) {
-        [lunchTime setText:[formatter stringFromDate:time]];
+        [self.lunchTime setText:[formatter stringFromDate:time]];
     } else {
-        [lunchSwitch setOn:NO animated:YES];
-        [lunchLabel setTextColor:[UIColor grayColor]];
-        [lunchTime setTextColor:[UIColor grayColor]];
-        [lunchEdit setEnabled:NO];
+        [self.lunchSwitch setOn:NO animated:YES];
+        [self.lunchLabel setTextColor:[UIColor grayColor]];
+        [self.lunchTime setTextColor:[UIColor grayColor]];
+        [self.lunchEdit setEnabled:NO];
     }
     
     time = [self getNotificationFireDate:@"afternoon snack"];
     if(time != NULL) {
-        [afternoonSnackTime setText:[formatter stringFromDate:time]];
+        [self.afternoonSnackTime setText:[formatter stringFromDate:time]];
     } else {
-        [afternoonSnackSwitch setOn:NO animated:YES];
-        [afternoonSnackLabel setTextColor:[UIColor grayColor]];
-        [afternoonSnackTime setTextColor:[UIColor grayColor]];
-        [afternoonSnackEdit setEnabled:NO];
+        [self.afternoonSnackSwitch setOn:NO animated:YES];
+        [self.afternoonSnackLabel setTextColor:[UIColor grayColor]];
+        [self.afternoonSnackTime setTextColor:[UIColor grayColor]];
+        [self.afternoonSnackEdit setEnabled:NO];
     }
     
     time = [self getNotificationFireDate:@"dinner"];
     if(time != NULL) {
-        [dinnerTime setText:[formatter stringFromDate:time]];
+        [self.dinnerTime setText:[formatter stringFromDate:time]];
     } else {
-        [dinnerSwitch setOn:NO animated:YES];
-        [dinnerLabel setTextColor:[UIColor grayColor]];
-        [dinnerTime setTextColor:[UIColor grayColor]];
-        [dinnerEdit setEnabled:NO];
+        [self.dinnerSwitch setOn:NO animated:YES];
+        [self.dinnerLabel setTextColor:[UIColor grayColor]];
+        [self.dinnerTime setTextColor:[UIColor grayColor]];
+        [self.dinnerEdit setEnabled:NO];
     }
     
     time = [self getNotificationFireDate:@"evening snack"];
     if(time != NULL) {
-        [eveningSnackTime setText:[formatter stringFromDate:time]];
+        [self.eveningSnackTime setText:[formatter stringFromDate:time]];
     } else {
-        [eveningSnackSwitch setOn:NO animated:YES];
-        [eveningSnackLabel setTextColor:[UIColor grayColor]];
-        [eveningSnackTime setTextColor:[UIColor grayColor]];
-        [eveningSnackEdit setEnabled:NO];
+        [self.eveningSnackSwitch setOn:NO animated:YES];
+        [self.eveningSnackLabel setTextColor:[UIColor grayColor]];
+        [self.eveningSnackTime setTextColor:[UIColor grayColor]];
+        [self.eveningSnackEdit setEnabled:NO];
     }
 }
 
@@ -124,25 +124,25 @@
 
 - (void)setFonts
 {
-    setRemindersHeadingLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-	breakfastLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    morningSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    lunchLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    afternoonSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    dinnerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    eveningSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    breakfastTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    morningSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    lunchTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    afternoonSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    dinnerTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    eveningSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    breakfastEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    morningSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    lunchEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    afternoonSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    dinnerEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    eveningSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.setRemindersHeadingLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+	self.breakfastLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.morningSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.lunchLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.afternoonSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.dinnerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.eveningSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.breakfastTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.morningSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.lunchTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.afternoonSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.dinnerTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.eveningSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.breakfastEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.morningSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.lunchEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.afternoonSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.dinnerEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.eveningSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
 }
 
 - (void)scheduleDailyNotification:(NSString *)mealName setHour:(int)hour setMinute:(int)minute
@@ -199,91 +199,91 @@
 
 - (IBAction)toggleBreakfastAlert:(id)sender
 {
-    if (![breakfastSwitch isOn]) {
+    if (![self.breakfastSwitch isOn]) {
         [self cancelDailyNotification:@"breakfast"];
-        [breakfastLabel setTextColor:[UIColor grayColor]];
-        [breakfastTime setTextColor:[UIColor grayColor]];
-        [breakfastEdit setEnabled:NO];
+        [self.breakfastLabel setTextColor:[UIColor grayColor]];
+        [self.breakfastTime setTextColor:[UIColor grayColor]];
+        [self.breakfastEdit setEnabled:NO];
     } else {
         [self scheduleDailyNotification:@"breakfast" setHour:8 setMinute:0];
-        [breakfastLabel setTextColor:[UIColor blackColor]];
-        [breakfastTime setTextColor:[UIColor blackColor]];
-        [breakfastEdit setEnabled:YES];
+        [self.breakfastLabel setTextColor:[UIColor blackColor]];
+        [self.breakfastTime setTextColor:[UIColor blackColor]];
+        [self.breakfastEdit setEnabled:YES];
     }
 }
 
 - (IBAction)toggleMorningSnackAlert:(id)sender
 {
-    if (![morningSnackSwitch isOn]) {
+    if (![self.morningSnackSwitch isOn]) {
         [self cancelDailyNotification:@"morning snack"];
-        [morningSnackLabel setTextColor:[UIColor grayColor]];
-        [morningSnackTime setTextColor:[UIColor grayColor]];
-        [morningSnackEdit setEnabled:NO];
+        [self.morningSnackLabel setTextColor:[UIColor grayColor]];
+        [self.morningSnackTime setTextColor:[UIColor grayColor]];
+        [self.morningSnackEdit setEnabled:NO];
     } else {
         [self scheduleDailyNotification:@"morning snack" setHour:10 setMinute:0];
-        [morningSnackLabel setTextColor:[UIColor blackColor]];
-        [morningSnackTime setTextColor:[UIColor blackColor]];
-        [morningSnackEdit setEnabled:YES];
+        [self.morningSnackLabel setTextColor:[UIColor blackColor]];
+        [self.morningSnackTime setTextColor:[UIColor blackColor]];
+        [self.morningSnackEdit setEnabled:YES];
     }
 }
 
 - (IBAction)toggleLunchAlert:(id)sender
 {
-    if (![lunchSwitch isOn]) {
+    if (![self.lunchSwitch isOn]) {
         [self cancelDailyNotification:@"lunch"];
-        [lunchLabel setTextColor:[UIColor grayColor]];
-        [lunchTime setTextColor:[UIColor grayColor]];
-        [lunchEdit setEnabled:NO];
+        [self.lunchLabel setTextColor:[UIColor grayColor]];
+        [self.lunchTime setTextColor:[UIColor grayColor]];
+        [self.lunchEdit setEnabled:NO];
     } else {
         [self scheduleDailyNotification:@"lunch" setHour:12 setMinute:0];
-        [lunchLabel setTextColor:[UIColor blackColor]];
-        [lunchTime setTextColor:[UIColor blackColor]];
-        [lunchEdit setEnabled:YES];
+        [self.lunchLabel setTextColor:[UIColor blackColor]];
+        [self.lunchTime setTextColor:[UIColor blackColor]];
+        [self.lunchEdit setEnabled:YES];
     }
 }
 
 - (IBAction)toggleAfternoonSnackAlert:(id)sender
 {
-    if (![afternoonSnackSwitch isOn]) {
+    if (![self.afternoonSnackSwitch isOn]) {
         [self cancelDailyNotification:@"afternoon snack"];
-        [afternoonSnackLabel setTextColor:[UIColor grayColor]];
-        [afternoonSnackTime setTextColor:[UIColor grayColor]];
-        [afternoonSnackEdit setEnabled:NO];
+        [self.afternoonSnackLabel setTextColor:[UIColor grayColor]];
+        [self.afternoonSnackTime setTextColor:[UIColor grayColor]];
+        [self.afternoonSnackEdit setEnabled:NO];
     } else {
         [self scheduleDailyNotification:@"afternoon snack" setHour:14 setMinute:30];
-        [afternoonSnackLabel setTextColor:[UIColor blackColor]];
-        [afternoonSnackTime setTextColor:[UIColor blackColor]];
-        [afternoonSnackEdit setEnabled:YES];
+        [self.afternoonSnackLabel setTextColor:[UIColor blackColor]];
+        [self.afternoonSnackTime setTextColor:[UIColor blackColor]];
+        [self.afternoonSnackEdit setEnabled:YES];
     }
 }
 
 - (IBAction)toggleDinnerAlert:(id)sender
 {
-    if (![dinnerSwitch isOn]) {
+    if (![self.dinnerSwitch isOn]) {
         [self cancelDailyNotification:@"dinner"];
-        [dinnerLabel setTextColor:[UIColor grayColor]];
-        [dinnerTime setTextColor:[UIColor grayColor]];
-        [dinnerEdit setEnabled:NO];
+        [self.dinnerLabel setTextColor:[UIColor grayColor]];
+        [self.dinnerTime setTextColor:[UIColor grayColor]];
+        [self.dinnerEdit setEnabled:NO];
     } else {
         [self scheduleDailyNotification:@"dinner" setHour:7 setMinute:0];
-        [dinnerLabel setTextColor:[UIColor blackColor]];
-        [dinnerTime setTextColor:[UIColor blackColor]];
-        [dinnerEdit setEnabled:YES];
+        [self.dinnerLabel setTextColor:[UIColor blackColor]];
+        [self.dinnerTime setTextColor:[UIColor blackColor]];
+        [self.dinnerEdit setEnabled:YES];
     }
 }
 
 - (IBAction)toggleEveningSnackAlert:(id)sender
 {
-    if (![eveningSnackSwitch isOn]) {
+    if (![self.eveningSnackSwitch isOn]) {
         [self cancelDailyNotification:@"evening snack"];
-        [eveningSnackLabel setTextColor:[UIColor grayColor]];
-        [eveningSnackTime setTextColor:[UIColor grayColor]];
-        [eveningSnackEdit setEnabled:NO];
+        [self.eveningSnackLabel setTextColor:[UIColor grayColor]];
+        [self.eveningSnackTime setTextColor:[UIColor grayColor]];
+        [self.eveningSnackEdit setEnabled:NO];
     } else {
         [self scheduleDailyNotification:@"evening snack" setHour:19 setMinute:30];
-        [eveningSnackLabel setTextColor:[UIColor blackColor]];
-        [eveningSnackTime setTextColor:[UIColor blackColor]];
-        [eveningSnackEdit setEnabled:YES];
+        [self.eveningSnackLabel setTextColor:[UIColor blackColor]];
+        [self.eveningSnackTime setTextColor:[UIColor blackColor]];
+        [self.eveningSnackEdit setEnabled:YES];
     }
 }
 

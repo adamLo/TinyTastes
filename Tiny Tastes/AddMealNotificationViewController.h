@@ -9,17 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface AddMealNotificationViewController : UIViewController {
-    IBOutlet UILabel *mealLabel;
-    IBOutlet UILabel *remindMeAtLabel;
-    IBOutlet UILabel *editReminderLabel;
-    
-    IBOutlet UIButton *cancelButton;
-    IBOutlet UIButton *saveButton;    
 }
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property(nonatomic) NSString *currentMeal;
-@property(nonatomic) NSDate *currentNotificationTime;
+@property (weak, nonatomic) IBOutlet UILabel *mealLabel;
+@property (weak, nonatomic) IBOutlet UILabel *remindMeAtLabel;
+@property (weak, nonatomic) IBOutlet UILabel *editReminderLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property(nonatomic, weak) NSString *currentMeal;
+@property(nonatomic, weak) NSDate *currentNotificationTime;
 
 - (IBAction)backPressed:(id)sender; /** User pressed back button to go back to previous screen */
 - (IBAction)save:(id)sender; /** User pressed save button to persist changes and go back */

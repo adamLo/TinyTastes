@@ -24,6 +24,7 @@
 @interface PhotoViewController () {
     UIImageView *cameraOverlay; //Empty bowl that will hold image of food
     UIImageView *foodImage; //Imageview displaying masked food in the bowl
+    UIImage *chosenImage; //Maked, resized photo
 }
 
 @end
@@ -50,27 +51,27 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
+    [self.mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
     self.instructionLabel.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [eatLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
-    [retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:65]];
-    customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    [self.eatLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
+    [self.retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:65]];
+    self.customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
     
-    mealStepper.minimumValue = 1;
-    mealStepper.maximumValue = 60;
-    mealStepper.wraps = YES;
-    mealStepper.autorepeat = YES;
-    mealStepper.continuous = YES;
+    self.mealStepper.minimumValue = 1;
+    self.mealStepper.maximumValue = 60;
+    self.mealStepper.wraps = YES;
+    self.mealStepper.autorepeat = YES;
+    self.mealStepper.continuous = YES;
     
-    customizeTimerLabel.hidden = YES;
-    timeDisplayLabel.hidden = YES;
-    mealStepper.hidden = YES;
-    retakeLabel.hidden = YES;
-    eatLabel.hidden = YES;
+    self.customizeTimerLabel.hidden = YES;
+    self.timeDisplayLabel.hidden = YES;
+    self.mealStepper.hidden = YES;
+    self.retakeLabel.hidden = YES;
+    self.eatLabel.hidden = YES;
     
     //Hide instruction if this is not the first time the app was launched
     //if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedEatScreenOnce"]) {
@@ -82,11 +83,11 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                 [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], NSFontAttributeName,
                                 [UIColor grayColor], NSForegroundColorAttributeName, nil];
-    [mealOrSnackControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
+    [self.mealOrSnackControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
     
     NSDictionary *highlightedAttributes = [NSDictionary
                                            dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
-    [mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
+    [self.mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -108,8 +109,8 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
 
 - (IBAction)mealStepperValueChanged:(id)sender
 {
-    double stepperValue = mealStepper.value;
-    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", stepperValue];
+    double stepperValue = self.mealStepper.value;
+    self.timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", stepperValue];
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {
@@ -226,25 +227,25 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
 
 
 - (void)processImage {
-    customizeTimerLabel.hidden = NO;
-    timeDisplayLabel.hidden = NO;
-    mealStepper.hidden = NO;
-    retakeLabel.hidden = NO;
-    eatLabel.hidden = NO;
+    self.customizeTimerLabel.hidden = NO;
+    self.timeDisplayLabel.hidden = NO;
+    self.mealStepper.hidden = NO;
+    self.retakeLabel.hidden = NO;
+    self.eatLabel.hidden = NO;
     
     self.cameraIcon.hidden = YES;
     self.instructionLabel.hidden = YES;
-    mealOrSnackControl.hidden = YES;
-    mealOrSnackLabel.hidden = YES;
-    thoughtBubble.hidden = YES;
-    cameraInstructionLabel.hidden = YES;
+    self.mealOrSnackControl.hidden = YES;
+    self.mealOrSnackLabel.hidden = YES;
+    self.thoughtBubble.hidden = YES;
+    self.cameraInstructionLabel.hidden = YES;
     
-    if (mealOrSnackControl.selectedSegmentIndex == 0) {
-        mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"mealTimer"];
+    if (self.mealOrSnackControl.selectedSegmentIndex == 0) {
+        self.mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"mealTimer"];
     } else {
-        mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"snackTimer"];
+        self.mealStepper.value = [[NSUserDefaults standardUserDefaults] integerForKey:@"snackTimer"];
     }
-    timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", mealStepper.value];
+    self.timeDisplayLabel.text = [NSString stringWithFormat:@"%.f minutes", self.mealStepper.value];
     
     UIImage *mask = [UIImage imageNamed:@"cutout"];
     
@@ -340,7 +341,7 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
     if([segue.identifier isEqualToString:@"letsEatSegue"]){
         EatViewController *controller = (EatViewController *)segue.destinationViewController;
         controller.foodImage = chosenImage;
-        controller.timeToEat = mealStepper.value;
+        controller.timeToEat = self.mealStepper.value;
     }
 }
 
