@@ -260,6 +260,8 @@
 		19FE7D741962E0530074A32F /* drink_selection_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D701962E0530074A32F /* drink_selection_01@2x.png */; };
 		19FE7D751962E0530074A32F /* drink_selection_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D711962E0530074A32F /* drink_selection_02.png */; };
 		19FE7D761962E0530074A32F /* drink_selection_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D721962E0530074A32F /* drink_selection_02@2x.png */; };
+		19FE7D7919630F4D0074A32F /* cloud_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D7719630F4D0074A32F /* cloud_button.png */; };
+		19FE7D7A19630F4D0074A32F /* cloud_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D7819630F4D0074A32F /* cloud_button@2x.png */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
@@ -574,6 +576,8 @@
 		19FE7D701962E0530074A32F /* drink_selection_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drink_selection_01@2x.png"; sourceTree = "<group>"; };
 		19FE7D711962E0530074A32F /* drink_selection_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drink_selection_02.png; sourceTree = "<group>"; };
 		19FE7D721962E0530074A32F /* drink_selection_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drink_selection_02@2x.png"; sourceTree = "<group>"; };
+		19FE7D7719630F4D0074A32F /* cloud_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_button.png; sourceTree = "<group>"; };
+		19FE7D7819630F4D0074A32F /* cloud_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud_button@2x.png"; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
@@ -949,6 +953,8 @@
 		19945490195DB1F0003BAC7F /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				19FE7D7719630F4D0074A32F /* cloud_button.png */,
+				19FE7D7819630F4D0074A32F /* cloud_button@2x.png */,
 				19945491195DB1F0003BAC7F /* button_back.png */,
 				19945492195DB1F0003BAC7F /* button_back@2x.png */,
 				19945495195DB350003BAC7F /* button_home.png */,
@@ -1442,6 +1448,7 @@
 				19120D8A195C36F5001302FF /* pond_qmarks_02.png in Resources */,
 				19FE7CE119620B2A0074A32F /* tiny_eating_1@2x.png in Resources */,
 				191401D41958D0E7008F40C4 /* dsym_upload.sh in Resources */,
+				19FE7D7919630F4D0074A32F /* cloud_button.png in Resources */,
 				19FE7D1A1962C66F0074A32F /* disappearing-food_10@2x.png in Resources */,
 				199454A0195DB620003BAC7F /* button_start@2x.png in Resources */,
 				19120DD3195CAC49001302FF /* story_tiny_frog_jump_05.png in Resources */,
@@ -1624,6 +1631,7 @@
 				1994549F195DB620003BAC7F /* button_start.png in Resources */,
 				1920F2511961B8140094FAA3 /* drinking_juice_2@2x.png in Resources */,
 				1994546A195D7CF2003BAC7F /* story_tiny_climbing_up_tree2.png in Resources */,
+				19FE7D7A19630F4D0074A32F /* cloud_button@2x.png in Resources */,
 				19120DEA195CB646001302FF /* story_page_27.jpg in Resources */,
 				19120DA2195C6DDB001302FF /* pond_bubble_09.png in Resources */,
 				19945497195DB350003BAC7F /* button_home.png in Resources */,

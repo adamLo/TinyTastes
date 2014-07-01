@@ -50,6 +50,10 @@
     self.notFinishedButton.hidden = YES;
     self.resumeButton.hidden = YES;
     
+    //Set button fonts
+    [self.allFinishedButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
+    [self.allFinishedButton setTitle:NSLocalizedString(@"all finished", @"All finished button title") forState:UIControlStateNormal];
+    
     self.chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
     self.timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
     self.chooseLabel.hidden = YES;

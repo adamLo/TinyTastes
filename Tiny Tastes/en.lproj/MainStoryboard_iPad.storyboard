@@ -970,10 +970,12 @@ photo</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqv-lG-rxa" userLabel="All finished Button">
-                                <rect key="frame" x="690" y="193" width="285" height="143"/>
+                                <rect key="frame" x="690" y="193" width="284" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="all_finished_label.jpg">
+                                <inset key="contentEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="all finished" backgroundImage="cloud_button.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1552,6 +1554,7 @@ Do You Want For...</string>
         <image name="button_sound-off.png" width="104" height="98"/>
         <image name="button_start.png" width="215" height="74"/>
         <image name="camera.png" width="468" height="379"/>
+        <image name="cloud_button.png" width="284" height="142"/>
         <image name="coin.png" width="180" height="169"/>
         <image name="disappearing-food_01.png" width="425" height="164"/>
         <image name="drinking_bottle_1.png" width="552" height="668"/>
@@ -1582,8 +1585,8 @@ Do You Want For...</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="T73-72-6qB"/>
-        <segue reference="h34-Ks-joT"/>
-        <segue reference="P60-4d-HuF"/>
+        <segue reference="Acc-TB-wKP"/>
         <segue reference="ZMd-87-eiT"/>
+        <segue reference="h34-Ks-joT"/>
     </inferredMetricsTieBreakers>
 </document>
