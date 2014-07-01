@@ -8,6 +8,7 @@
 
 #import "SetReminderAlertsViewController.h"
 #import "AddMealNotificationViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface SetReminderAlertsViewController ()
 
@@ -124,25 +125,25 @@
 
 - (void)setFonts
 {
-    self.setRemindersHeadingLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-	self.breakfastLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.morningSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.lunchLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.afternoonSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.dinnerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.eveningSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.breakfastTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.morningSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.lunchTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.afternoonSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.dinnerTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.eveningSnackTime.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.breakfastEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.morningSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.lunchEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.afternoonSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.dinnerEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.eveningSnackEdit.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.setRemindersHeadingLabel.font = [UIFont ttFont60];
+	self.breakfastLabel.font = [UIFont ttFont50];
+    self.morningSnackLabel.font = [UIFont ttFont50];
+    self.lunchLabel.font = [UIFont ttFont50];
+    self.afternoonSnackLabel.font = [UIFont ttFont50];
+    self.dinnerLabel.font = [UIFont ttFont50];
+    self.eveningSnackLabel.font = [UIFont ttFont50];
+    self.breakfastTime.font = [UIFont ttFont50];
+    self.morningSnackTime.font = [UIFont ttFont50];
+    self.lunchTime.font = [UIFont ttFont50];
+    self.afternoonSnackTime.font = [UIFont ttFont50];
+    self.dinnerTime.font = [UIFont ttFont50];
+    self.eveningSnackTime.font = [UIFont ttFont50];
+    self.breakfastEdit.titleLabel.font = [UIFont ttFont50];
+    self.morningSnackEdit.titleLabel.font = [UIFont ttFont50];
+    self.lunchEdit.titleLabel.font = [UIFont ttFont50];
+    self.afternoonSnackEdit.titleLabel.font = [UIFont ttFont50];
+    self.dinnerEdit.titleLabel.font = [UIFont ttFont50];
+    self.eveningSnackEdit.titleLabel.font = [UIFont ttFont50];
 }
 
 - (void)scheduleDailyNotification:(NSString *)mealName setHour:(int)hour setMinute:(int)minute

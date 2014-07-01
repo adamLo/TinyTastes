@@ -8,6 +8,7 @@
 
 #import "DrinkViewController.h"
 #import "FeedbackViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface DrinkViewController () {
     NSTimer *countdownTimer;
@@ -51,11 +52,20 @@
     self.resumeButton.hidden = YES;
     
     //Set button fonts
-    [self.allFinishedButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:50]];
-    [self.allFinishedButton setTitle:NSLocalizedString(@"all finished", @"All finished button title") forState:UIControlStateNormal];
+    [self.allFinishedButton.titleLabel setFont:[UIFont ttFont50]];
+    [self.allFinishedButton setTitle:NSLocalizedString(@"all finished!", @"All finished button title") forState:UIControlStateNormal];
     
-    self.chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
-    self.timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    [self.partiallyFinishedButton.titleLabel setFont:[UIFont ttFont50]];
+    [self.partiallyFinishedButton setTitle:NSLocalizedString(@"tried some", @"Tried some button title") forState:UIControlStateNormal];
+    
+    [self.notFinishedButton.titleLabel setFont:[UIFont ttFont40]];
+    [self.notFinishedButton setTitle:NSLocalizedString(@"none this time", @"None this time button title") forState:UIControlStateNormal];
+    
+    [self.doneButton.titleLabel setFont:[UIFont ttFont50]];
+    [self.doneButton setTitle:NSLocalizedString(@"I\'m done", @"Done button title") forState:UIControlStateNormal];
+    
+    self.chooseLabel.font = [UIFont ttFont40];
+    self.timeLeftLabel.font = [UIFont ttFont55];
     self.chooseLabel.hidden = YES;
     self.redLine.hidden = YES;
     
@@ -68,7 +78,10 @@
                         ];
     
     self.drinkingCritter.animationDuration = 10;
-    [self.view addSubview:self.drinkingCritter];
+    //[self.view addSubview:self.drinkingCritter];
+    
+    self.countdownLabel.textAlignment = NSTextAlignmentCenter;
+    self.countdownLabel.font = [UIFont ttFont70];
     
 }
 
@@ -112,8 +125,6 @@
     
     NSString *timerOutput = [NSString stringWithFormat:@"%2d:%.2d", minutes, seconds];
     self.countdownLabel.text = timerOutput;
-    self.countdownLabel.textAlignment = NSTextAlignmentCenter;
-    self.countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
     
     [self playSoundBite];
 

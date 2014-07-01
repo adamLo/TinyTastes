@@ -8,6 +8,7 @@
 
 #import "ChooseDrinkViewController.h"
 #import "DrinkViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface ChooseDrinkViewController () {
     TTDrinkType chosenDrink; //Chosen drink type
@@ -43,10 +44,10 @@
 	[super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     
-    self.chooseDrinkLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
+    self.chooseDrinkLabel.font = [UIFont ttFont60];
     self.chooseDrinkLabel.numberOfLines = 0;
-    self.customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    self.timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.customizeTimerLabel.font = [UIFont ttFont60];
+    self.timeDisplayLabel.font = [UIFont ttFont50];
     
     self.drinkStepper.minimumValue = 1;
     self.drinkStepper.maximumValue = 60;

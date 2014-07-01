@@ -8,6 +8,7 @@
 
 #import "EatViewController.h"
 #import "FeedbackViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface EatViewController () {
     NSTimer *countdownTimer;
@@ -51,15 +52,15 @@
     self.notFinishedButton.hidden = YES;
     self.resumeButton.hidden = YES;
     
-    self.chooseLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:40];
-    self.timeLeftLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
-    [self.pauseButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
-    [self.resumeButton.titleLabel setFont:[UIFont fontWithName:@"KBZipaDeeDooDah" size:55]];
+    self.chooseLabel.font = [UIFont ttFont40];
+    self.timeLeftLabel.font = [UIFont ttFont55];
+    [self.pauseButton.titleLabel setFont:[UIFont ttFont55]];
+    [self.resumeButton.titleLabel setFont:[UIFont ttFont55]];
     self.chooseLabel.hidden = YES;
     self.redLine.hidden = YES;
     
     self.countdownLabel.textAlignment = NSTextAlignmentCenter;
-    self.countdownLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:68];
+    self.countdownLabel.font = [UIFont ttFont70];
     
     lastEaten = -12;
     phraseStatus = YES;
@@ -93,6 +94,19 @@
                                       [UIImage imageNamed:@"tiny_eating_2"],
                                       [UIImage imageNamed:@"tiny_eating_2"]];
     self.eatingCritter.animationDuration = 15;
+    
+    //Set button fonts
+    [self.allFinishedButton.titleLabel setFont:[UIFont ttFont50]];
+    [self.allFinishedButton setTitle:NSLocalizedString(@"all finished!", @"All finished button title") forState:UIControlStateNormal];
+    
+    [self.partiallyFinishedButton.titleLabel setFont:[UIFont ttFont50]];
+    [self.partiallyFinishedButton setTitle:NSLocalizedString(@"tried some", @"Tried some button title") forState:UIControlStateNormal];
+    
+    [self.notFinishedButton.titleLabel setFont:[UIFont ttFont40]];
+    [self.notFinishedButton setTitle:NSLocalizedString(@"none this time", @"None this time button title") forState:UIControlStateNormal];
+    
+    [self.doneButton.titleLabel setFont:[UIFont ttFont50]];
+    [self.doneButton setTitle:NSLocalizedString(@"I\'m done", @"Done button title") forState:UIControlStateNormal];
 
 }
 
@@ -100,7 +114,7 @@
     
     //Display food
     if (!self.foodImage) {
-        self.foodImage = [UIImage imageNamed:@"default_food.png"];
+        self.foodImage = [UIImage imageNamed:@"greenpeas_cutout.png"];
     }
     self.foodImageView.image = self.foodImage;
     

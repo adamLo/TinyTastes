@@ -262,6 +262,9 @@
 		19FE7D761962E0530074A32F /* drink_selection_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D721962E0530074A32F /* drink_selection_02@2x.png */; };
 		19FE7D7919630F4D0074A32F /* cloud_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D7719630F4D0074A32F /* cloud_button.png */; };
 		19FE7D7A19630F4D0074A32F /* cloud_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D7819630F4D0074A32F /* cloud_button@2x.png */; };
+		19FE7D7E19633F930074A32F /* UIFont+TinyTastes.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FE7D7D19633F930074A32F /* UIFont+TinyTastes.m */; };
+		19FE7D8119634BD30074A32F /* thought_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D7F19634BD30074A32F /* thought_bubble.png */; };
+		19FE7D8219634BD30074A32F /* thought_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7D8019634BD30074A32F /* thought_bubble@2x.png */; };
 		311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311252DD1820A935008D5C75 /* AVFoundation.framework */; };
 		31544D40181DAF41006C9D94 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31544D3F181DAF41006C9D94 /* OverlayView.m */; };
 		31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD15CF1804B91C00142A5F /* PhotoViewController.m */; };
@@ -287,13 +290,9 @@
 		EC7124C31814603F007319C5 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C21814603F007319C5 /* Scene.m */; };
 		EC7124C618146152007319C5 /* XMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLDelegate.m */; };
 		EC7124CB18147519007319C5 /* SceneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124CA18147519007319C5 /* SceneFactory.m */; };
-		FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */; };
 		FD23B10E184172E200D1C9A9 /* outline_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = FD23B10D184172E200D1C9A9 /* outline_camera.png */; };
-		FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731118303865003BFC29 /* tried_some_label.jpg */; };
 		FD70733C18303865003BFC29 /* redline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731318303865003BFC29 /* redline.jpg */; };
-		FD70733D18303865003BFC29 /* none_this_time_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731418303865003BFC29 /* none_this_time_label.jpg */; };
 		FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731918303865003BFC29 /* feedback_tiny.jpg */; };
-		FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70732718303865003BFC29 /* all_finished_label.jpg */; };
 		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
 		FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */; };
 		FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1AD185507E200600A8C /* main_tiny.jpg */; };
@@ -305,7 +304,6 @@
 		FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5831317EA8DE3004C6FA3 /* DrinkViewController.m */; };
 		FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9CD218163E2700861C75 /* FeedbackViewController.m */; };
 		FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */; };
-		FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -578,6 +576,10 @@
 		19FE7D721962E0530074A32F /* drink_selection_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drink_selection_02@2x.png"; sourceTree = "<group>"; };
 		19FE7D7719630F4D0074A32F /* cloud_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_button.png; sourceTree = "<group>"; };
 		19FE7D7819630F4D0074A32F /* cloud_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud_button@2x.png"; sourceTree = "<group>"; };
+		19FE7D7C19633F930074A32F /* UIFont+TinyTastes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+TinyTastes.h"; path = "Categories/UIFont+TinyTastes.h"; sourceTree = "<group>"; };
+		19FE7D7D19633F930074A32F /* UIFont+TinyTastes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+TinyTastes.m"; path = "Categories/UIFont+TinyTastes.m"; sourceTree = "<group>"; };
+		19FE7D7F19634BD30074A32F /* thought_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thought_bubble.png; sourceTree = "<group>"; };
+		19FE7D8019634BD30074A32F /* thought_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thought_bubble@2x.png"; sourceTree = "<group>"; };
 		311252DD1820A935008D5C75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		31544D3E181DAF41006C9D94 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		31544D3F181DAF41006C9D94 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
@@ -617,13 +619,9 @@
 		EC7124C518146152007319C5 /* XMLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDelegate.m; sourceTree = "<group>"; };
 		EC7124C918147519007319C5 /* SceneFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFactory.h; sourceTree = "<group>"; };
 		EC7124CA18147519007319C5 /* SceneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneFactory.m; sourceTree = "<group>"; };
-		FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thought_bubble.jpg; sourceTree = "<group>"; };
 		FD23B10D184172E200D1C9A9 /* outline_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline_camera.png; sourceTree = "<group>"; };
-		FD70731118303865003BFC29 /* tried_some_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tried_some_label.jpg; sourceTree = "<group>"; };
 		FD70731318303865003BFC29 /* redline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redline.jpg; sourceTree = "<group>"; };
-		FD70731418303865003BFC29 /* none_this_time_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = none_this_time_label.jpg; sourceTree = "<group>"; };
 		FD70731918303865003BFC29 /* feedback_tiny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feedback_tiny.jpg; sourceTree = "<group>"; };
-		FD70732718303865003BFC29 /* all_finished_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_finished_label.jpg; sourceTree = "<group>"; };
 		FDA12066182452EC00877E20 /* CustomTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTimerViewController.h; sourceTree = "<group>"; };
 		FDA12067182452EC00877E20 /* CustomTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTimerViewController.m; sourceTree = "<group>"; };
 		FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetReminderAlertsViewController.h; sourceTree = "<group>"; };
@@ -644,7 +642,6 @@
 		FDBC9CD218163E2700861C75 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDrinkViewController.h; sourceTree = "<group>"; };
 		FDBC9D1318188A7500861C75 /* ChooseDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDrinkViewController.m; sourceTree = "<group>"; };
-		FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_done_label.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -906,6 +903,8 @@
 		1920F25A1961FB450094FAA3 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				19FE7D7F19634BD30074A32F /* thought_bubble.png */,
+				19FE7D8019634BD30074A32F /* thought_bubble@2x.png */,
 				1920F25B1961FB450094FAA3 /* camera.png */,
 				1920F25C1961FB450094FAA3 /* camera@2x.png */,
 				1920F25F1961FE100094FAA3 /* camera_overlay.png */,
@@ -1092,6 +1091,17 @@
 			path = "Story sounds";
 			sourceTree = "<group>";
 		};
+		19FE7D7B19633F700074A32F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				19120D57195B8E1D001302FF /* UIImage+Rotate.h */,
+				19120D58195B8E1D001302FF /* UIImage+Rotate.m */,
+				19FE7D7C19633F930074A32F /* UIFont+TinyTastes.h */,
+				19FE7D7D19633F930074A32F /* UIFont+TinyTastes.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		EC6FD1A817EA746000EB05E9 = {
 			isa = PBXGroup;
 			children = (
@@ -1130,6 +1140,7 @@
 		EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */ = {
 			isa = PBXGroup;
 			children = (
+				19FE7D7B19633F700074A32F /* Categories */,
 				FDB5830B17EA8B5D004C6FA3 /* View Controllers */,
 				EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */,
 				EC6FD1C317EA746000EB05E9 /* HomeAppDelegate.h */,
@@ -1240,16 +1251,11 @@
 				1920F2311961B8140094FAA3 /* Drinking */,
 				1920F25A1961FB450094FAA3 /* Photo */,
 				19FE7CDB19620B2A0074A32F /* Eating */,
-				FD70732718303865003BFC29 /* all_finished_label.jpg */,
 				FD70731918303865003BFC29 /* feedback_tiny.jpg */,
-				FDE1ECFA18368FBC00AA7385 /* im_done_label.jpg */,
 				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
 				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
-				FD70731418303865003BFC29 /* none_this_time_label.jpg */,
 				FD23B10D184172E200D1C9A9 /* outline_camera.png */,
 				FD70731318303865003BFC29 /* redline.jpg */,
-				FD23B0E718414F3900D1C9A9 /* thought_bubble.jpg */,
-				FD70731118303865003BFC29 /* tried_some_label.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -1285,8 +1291,6 @@
 				EC7124B818134358007319C5 /* StoryModelController.m */,
 				EC7124BA181343A2007319C5 /* StoryViewController.h */,
 				EC7124BB181343A2007319C5 /* StoryViewController.m */,
-				19120D57195B8E1D001302FF /* UIImage+Rotate.h */,
-				19120D58195B8E1D001302FF /* UIImage+Rotate.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1387,6 +1391,7 @@
 				19FE7D631962DAE80074A32F /* story_sound_p11.m4a in Resources */,
 				1920F1E819618B9E0094FAA3 /* home_settings@2x.png in Resources */,
 				19FE7D4D1962DAE80074A32F /* eating_sound_1.m4a in Resources */,
+				19FE7D8219634BD30074A32F /* thought_bubble@2x.png in Resources */,
 				1920F1E3196189BF0094FAA3 /* home_shop.png in Resources */,
 				1920F2591961B8140094FAA3 /* drinking_sippy_2@2x.png in Resources */,
 				19945463195D740B003BAC7F /* story_page_33.jpg in Resources */,
@@ -1512,7 +1517,6 @@
 				199454AC195DB966003BAC7F /* button_skip-to-eat@2x.png in Resources */,
 				FD70733C18303865003BFC29 /* redline.jpg in Resources */,
 				191401B319585B07008F40C4 /* Images.xcassets in Resources */,
-				FDE1ECFB18368FBD00AA7385 /* im_done_label.jpg in Resources */,
 				19FE7CF71962B52A0074A32F /* disappearing-food_03.png in Resources */,
 				19FE7D681962DAE80074A32F /* story_sound_p16.m4a in Resources */,
 				19120DC4195C9B60001302FF /* story_tiny_frog_fish_01.png in Resources */,
@@ -1537,6 +1541,7 @@
 				1920F20D196197E00094FAA3 /* shop_large.png in Resources */,
 				1920F2301961A4330094FAA3 /* bottle@2x.png in Resources */,
 				1920F24B1961B8140094FAA3 /* drinking_glass_1@2x.png in Resources */,
+				19FE7D8119634BD30074A32F /* thought_bubble.png in Resources */,
 				19FE7D661962DAE80074A32F /* story_sound_p14.m4a in Resources */,
 				19120DDA195CB1F5001302FF /* story_tiny_frog_jump_2_01.png in Resources */,
 				19FE7D181962C66F0074A32F /* disappearing-food_09@2x.png in Resources */,
@@ -1575,7 +1580,6 @@
 				19FE7D6C1962DB610074A32F /* readme.md in Resources */,
 				1920F1FF196194F20094FAA3 /* home_tiny_00@2x.png in Resources */,
 				19FE7CF41962B52A0074A32F /* disappearing-food_00@2x.png in Resources */,
-				FD23B0E818414F3900D1C9A9 /* thought_bubble.jpg in Resources */,
 				19120D55195B623E001302FF /* bookmark.png in Resources */,
 				19120D79195C328A001302FF /* story_page_05.jpg in Resources */,
 				1920F1EC19618C320094FAA3 /* home_eat@2x.png in Resources */,
@@ -1584,7 +1588,6 @@
 				19FE7CF51962B52A0074A32F /* disappearing-food_01.png in Resources */,
 				19120DA1195C6DDB001302FF /* pond_bubble_08.png in Resources */,
 				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
-				FD70733A18303865003BFC29 /* tried_some_label.jpg in Resources */,
 				1920F2581961B8140094FAA3 /* drinking_sippy_2.png in Resources */,
 				19FE7D6A1962DAE80074A32F /* story_sound_p18.m4a in Resources */,
 				19120D7A195C328A001302FF /* story_page_06.jpg in Resources */,
@@ -1605,7 +1608,6 @@
 				1920F208196194F20094FAA3 /* home_tiny_05.png in Resources */,
 				19945460195D740B003BAC7F /* story_page_30.jpg in Resources */,
 				19945461195D740B003BAC7F /* story_page_31.jpg in Resources */,
-				FD70735018303865003BFC29 /* all_finished_label.jpg in Resources */,
 				19120D7C195C328A001302FF /* story_page_08.jpg in Resources */,
 				1920F20E196197E00094FAA3 /* shop_large@2x.png in Resources */,
 				19120DB0195C887E001302FF /* story_page_14_fish.jpg in Resources */,
@@ -1635,7 +1637,6 @@
 				19120DEA195CB646001302FF /* story_page_27.jpg in Resources */,
 				19120DA2195C6DDB001302FF /* pond_bubble_09.png in Resources */,
 				19945497195DB350003BAC7F /* button_home.png in Resources */,
-				FD70733D18303865003BFC29 /* none_this_time_label.jpg in Resources */,
 				1920F209196194F20094FAA3 /* home_tiny_05@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1673,6 +1674,7 @@
 			files = (
 				FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */,
 				EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */,
+				19FE7D7E19633F930074A32F /* UIFont+TinyTastes.m in Sources */,
 				EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */,
 				EC7124C618146152007319C5 /* XMLDelegate.m in Sources */,
 				31544D40181DAF41006C9D94 /* OverlayView.m in Sources */,

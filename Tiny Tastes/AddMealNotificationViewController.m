@@ -8,6 +8,7 @@
 
 #import "AddMealNotificationViewController.h"
 #import "SetReminderAlertsViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface AddMealNotificationViewController ()
 
@@ -39,9 +40,9 @@
 
 - (void)setFonts
 {
-    self.editReminderLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    self.remindMeAtLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.mealLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:55];
+    self.editReminderLabel.font = [UIFont ttFont60];
+    self.remindMeAtLabel.font = [UIFont ttFont50];
+    self.mealLabel.font = [UIFont ttFont55];
 }
 
 - (void)didReceiveMemoryWarning

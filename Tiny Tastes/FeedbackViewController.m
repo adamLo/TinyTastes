@@ -7,6 +7,7 @@
 //
 
 #import "FeedbackViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface FeedbackViewController () {
     AVAudioPlayer *audioPlayer;
@@ -30,10 +31,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     
-	self.feedbackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
-    self.goShoppingLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
-    self.mainMenuLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:35];
-    self.coinsNotifLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:80];
+	self.feedbackLabel.font = [UIFont ttFont80];
+    self.goShoppingLabel.titleLabel.font = [UIFont ttFont35];
+    self.mainMenuLabel.titleLabel.font = [UIFont ttFont35];
+    self.coinsNotifLabel.font = [UIFont ttFont80];
 
     self.feedbackLabel.text = self.feedbackText;
     

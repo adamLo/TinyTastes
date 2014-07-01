@@ -7,6 +7,7 @@
 //
 
 #import "CustomTimerViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface CustomTimerViewController ()
 
@@ -28,16 +29,16 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
 
-	self.customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:70];
-    self.mealTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    self.snackTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    self.drinkTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    self.mealTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.snackTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.drinkTimerText.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.minutesText1.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.minutesText2.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.minutesText3.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+	self.customizeTimerLabel.font = [UIFont ttFont70];
+    self.mealTimerLabel.font = [UIFont ttFont60];
+    self.snackTimerLabel.font = [UIFont ttFont60];
+    self.drinkTimerLabel.font = [UIFont ttFont60];
+    self.mealTimerText.font = [UIFont ttFont50];
+    self.snackTimerText.font = [UIFont ttFont50];
+    self.drinkTimerText.font = [UIFont ttFont50];
+    self.minutesText1.font = [UIFont ttFont50];
+    self.minutesText2.font = [UIFont ttFont50];
+    self.minutesText3.font = [UIFont ttFont50];
 
     self.mealStepper.minimumValue = 1;
     self.snackStepper.minimumValue = 1;

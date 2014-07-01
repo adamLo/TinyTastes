@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import "UIFont+TinyTastes.h"
 
 @interface SettingsViewController ()
 
@@ -31,13 +32,13 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     
     // Set customized font for labels
-    self.settingsLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:70];
-    self.backgroundSoundLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.storyNarrationLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.mealTimer.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.mealAlerts.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.setTimerButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.setAlertsButton.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.settingsLabel.font = [UIFont ttFont70];
+    self.backgroundSoundLabel.font = [UIFont ttFont50];
+    self.storyNarrationLabel.font = [UIFont ttFont50];
+    self.mealTimer.font = [UIFont ttFont50];
+    self.mealAlerts.font = [UIFont ttFont50];
+    self.setTimerButton.titleLabel.font = [UIFont ttFont50];
+    self.setAlertsButton.titleLabel.font = [UIFont ttFont50];
     
 }
 

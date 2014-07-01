@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import <UIKit/UIKit.h>
+#import "UIFont+TinyTastes.h"
 
 @interface HomeViewController ()
 
@@ -24,11 +25,11 @@
     UIImage *image = [UIImage imageNamed:@"menu_page.jpg"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
-    self.storyModeLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.letsEatLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.letsDrinkLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.tinyShopLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.settingsLabel.titleLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    self.storyModeLabel.titleLabel.font = [UIFont ttFont50];
+    self.letsEatLabel.titleLabel.font = [UIFont ttFont50];
+    self.letsDrinkLabel.titleLabel.font = [UIFont ttFont50];
+    self.tinyShopLabel.titleLabel.font = [UIFont ttFont50];
+    self.settingsLabel.titleLabel.font = [UIFont ttFont50];
     
     [self.storyModeLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.letsEatLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

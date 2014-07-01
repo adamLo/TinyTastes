@@ -20,24 +20,22 @@
 #import <CoreMedia/CoreMedia.h>
 #import <ImageIO/ImageIO.h>
 #import "UIImage+Rotate.h"
+#import "UIFont+TinyTastes.h"
 
 @interface PhotoViewController () {
     UIImageView *cameraOverlay; //Empty bowl that will hold image of food
     UIImageView *foodImage; //Imageview displaying masked food in the bowl
     UIImage *chosenImage; //Maked, resized photo
+    
+    AVCaptureStillImageOutput *stillImageOutput;
+    OverlayView *overlay;
+    AVCaptureSession *session;
+    AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 }
 
 @end
 
 @implementation PhotoViewController
-
-AVCaptureStillImageOutput *stillImageOutput;
-OverlayView *overlay;
-AVCaptureSession *session;
-AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
-
-static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,13 +51,13 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
     [super viewDidLoad];
     [self.mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
-    [self.instructionLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:60]];
+    [self.instructionLabel.titleLabel setFont: [UIFont ttFont60]];
     self.instructionLabel.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self.eatLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:35]];
-    [self.retakeLabel.titleLabel setFont: [UIFont fontWithName:@"KBZipaDeeDooDah" size:65]];
-    self.customizeTimerLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:60];
-    self.timeDisplayLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
-    self.mealOrSnackLabel.font = [UIFont fontWithName:@"KBZipaDeeDooDah" size:50];
+    [self.eatLabel.titleLabel setFont: [UIFont ttFont35]];
+    [self.retakeLabel.titleLabel setFont: [UIFont ttFont65]];
+    self.customizeTimerLabel.font = [UIFont ttFont60];
+    self.timeDisplayLabel.font = [UIFont ttFont50];
+    self.mealOrSnackLabel.font = [UIFont ttFont50];
     
     self.mealStepper.minimumValue = 1;
     self.mealStepper.maximumValue = 60;
@@ -81,7 +79,7 @@ static CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
 
     //Change font of segment control
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                [UIFont fontWithName:@"KBZipaDeeDooDah" size:30], NSFontAttributeName,
+                                [UIFont ttFont30], NSFontAttributeName,
                                 [UIColor grayColor], NSForegroundColorAttributeName, nil];
     [self.mealOrSnackControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
     
