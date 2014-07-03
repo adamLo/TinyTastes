@@ -384,7 +384,7 @@
     <image path="story_page_43.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard19" />
 </scene>
-<scene id="yard19" endstack="true" end="true">
+<scene id="yard19" endstack="true" end="true" hideskip="true">
     <image path="story_page_44.jpg" x="0" y="20" w="1024" h="748" />
     <animations>
         <!-- Glow around the bowl -->
@@ -392,8 +392,13 @@
             <animationphase image="spacer.png" />
             <animationphase image="home_bowl_glow_01.png" />
         </animation>
+        <animation id="home_tap_bowl" x="460" y="67" w="477" h="122" duration="2" repeat="1">
+            <animationphase image="spacer.png" />
+            <animationphase image="home_tap_bowl_01.png" />
+        </animation>
     </animations>
+    <!-- Tapping the bowl takes directly to photo screen. Mind the attribute "segue" replacing "id" -->
+    <link segue="toPhotoView" x="130" y="355" w="265" h="105" />
 </scene>
-
 
 </scenes>

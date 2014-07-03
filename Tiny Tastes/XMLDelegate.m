@@ -32,6 +32,7 @@ didStartElement:(NSString *)elementName
         NSString *isTitle = (NSString *) [attributeDict objectForKey:@"title"];
         NSString *isEnding = (NSString *) [attributeDict objectForKey:@"end"];
         NSString *isEndStack = (NSString *) [attributeDict objectForKey:@"endstack"];
+        NSString *hideSkip = (NSString *) [attributeDict objectForKey:@"hideskip"];
         if ([isTitle isEqualToString:@"true"]) {
             [currentScene setTitlePage:YES];
         }
@@ -40,6 +41,9 @@ didStartElement:(NSString *)elementName
         }
         if ([isEndStack isEqualToString:@"true"]) {
             [currentScene setEndStack:YES];
+        }
+        if ([hideSkip isEqualToString:@"true"]) {
+            [currentScene setHideSkip:YES];
         }
         currentScene.images = [[NSMutableArray alloc] init];
         currentScene.links = [[NSMutableArray alloc] init];
@@ -67,9 +71,26 @@ didStartElement:(NSString *)elementName
         //NSLog(@"Adding link to scene...");
         CGRect currentImageRect = CGRectMake([[attributeDict objectForKey:@"x"] floatValue], [[attributeDict objectForKey:@"y"] floatValue], [[attributeDict objectForKey:@"w"] floatValue], [[attributeDict objectForKey:@"h"] floatValue]);
         UIButton *currentLink = [[UIButton alloc] initWithFrame:currentImageRect];
-        NSString *linkDestination = (NSString *) [attributeDict objectForKey:@"id"];
         [currentScene.links addObject:currentLink];
-        [currentScene.linkDestinations addObject:linkDestination];
+        if ([attributeDict objectForKey:@"id"]) {
+            NSString *linkDestination = (NSString *) [attributeDict objectForKey:@"id"];
+            if (linkDestination) {
+                [currentScene.linkDestinations addObject:@{kSceneLinkKeyID: linkDestination}];
+            }
+            else {
+                NSLog(@"Link id is null in scene with id %@", currentScene.sceneID);
+            }
+        }
+        else if ([attributeDict objectForKey:@"segue"]) {
+            NSString* segue = (NSString*)[attributeDict objectForKey:@"segue"];
+            if (segue) {
+                [currentScene.linkDestinations addObject:@{kSceneLinkKeySegue: segue}];
+            }
+            else {
+                NSLog(@"Link segue is null in scene with id %@", currentScene.sceneID);
+            }
+        }
+        
     }
     
     if ([elementName isEqualToString:@"sound"]) {

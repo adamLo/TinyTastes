@@ -8,11 +8,14 @@
 
 #import "Scene.h"
 
+const NSString* kSceneLinkKeyID = @"id";
+const NSString* kSceneLinkKeySegue = @"segue";
+
 @implementation Scene
 @synthesize sceneID, images, links, linkDestinations, sounds;
 
 - (NSString*)description {
-    return [NSString stringWithFormat:@"Scene [sceneId = %@, links=%@, likDestinations=%@, next=%d, end=%d, endStack=%d, animations=%@, nextSceneID=%@]", sceneID, links, linkDestinations, self.next, self.end, self.endStack, self.animations, self.nextSceneID];
+    return [NSString stringWithFormat:@"Scene [sceneId = %@, links=%@, likDestinations=%@, next=%d, end=%d, endStack=%d, animations=%@, nextSceneID=%@, hideSkip=%d]", sceneID, links, linkDestinations, self.next, self.end, self.endStack, self.animations, self.nextSceneID, self.hideSkip];
 }
 
 @end

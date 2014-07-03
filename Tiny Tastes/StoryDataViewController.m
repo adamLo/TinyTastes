@@ -9,6 +9,8 @@
 #import "StoryDataViewController.h"
 #import "StoryViewController.h"
 #import "StoryModelController.h"
+#import "Scene.h"
+#import "Crittercism.h"
 
 @interface StoryDataViewController () {
     UIImage *bookmarkImage; //Resizable bookmark image
@@ -83,8 +85,6 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
         [_narrationButton addTarget:self action:@selector(toggleNarration) forControlEvents:UIControlEventTouchUpInside];
         [self.view bringSubviewToFront:_narrationButton];
     }
-    [self.view bringSubviewToFront:_backButton];
-    [self.view bringSubviewToFront:_skipButton];
     
     //Draw animations
     for (UIImageView *imageView in self.dataObject.animations) {
@@ -103,6 +103,14 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     
     //Set up bookmark
     [self setupBookmark];
+    
+    //Bring buttons to front
+    [self.view bringSubviewToFront:self.skipButton];
+    [self.view bringSubviewToFront:self.backButton];
+    
+    //Toggle buttons
+    [self.skipButton setHidden:self.dataObject.hideSkip];
+    
     
 }
 
@@ -204,7 +212,25 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
 {
     UIButton* button = (UIButton *) sender;
     NSInteger buttonId = [button tag];
-    [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:buttonId]];
+    NSDictionary *link;
+    if (self.dataObject.linkDestinations.count > buttonId) {
+        link = [self.dataObject.linkDestinations objectAtIndex:buttonId];
+    }
+    if ([link objectForKey:kSceneLinkKeyID]) {
+        //Go to scene with id from link
+        [_viewController changeSceneStack:[link objectForKey:kSceneLinkKeyID]];
+    }
+    else if ([link objectForKey:kSceneLinkKeySegue]) {
+        //Perform segue with id from link
+        [self performSegueWithIdentifier:[link objectForKey:kSceneLinkKeySegue] sender:sender];
+    }
+    else {
+        //This shouldn't happen, let's log it
+        NSString *error = [NSString stringWithFormat:@"No id or segue in link with index:%d on scene:%@", buttonId, self.dataObject.sceneID];
+        NSLog(@"%@", error);
+        [Crittercism logHandledException:[NSException exceptionWithName:@"StoryError" reason:error userInfo:nil]];
+        
+    }
 }
 
 #pragma mark - Bookmark

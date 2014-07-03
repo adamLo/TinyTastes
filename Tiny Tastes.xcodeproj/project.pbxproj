@@ -199,6 +199,7 @@
 		19CF680019655F9B00C70E39 /* home_bowl_glow_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 19CF67FD19655F9B00C70E39 /* home_bowl_glow_01.png */; };
 		19CF680119655F9B00C70E39 /* story_page_43.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19CF67FE19655F9B00C70E39 /* story_page_43.jpg */; };
 		19CF680219655F9B00C70E39 /* story_page_44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19CF67FF19655F9B00C70E39 /* story_page_44.jpg */; };
+		19CF680419656ED900C70E39 /* home_tap_bowl_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 19CF680319656ED900C70E39 /* home_tap_bowl_01.png */; };
 		19FE7CD9196207600074A32F /* cutout.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CD7196207600074A32F /* cutout.png */; };
 		19FE7CDA196207600074A32F /* cutout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CD8196207600074A32F /* cutout@2x.png */; };
 		19FE7CE019620B2A0074A32F /* tiny_eating_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */; };
@@ -526,6 +527,7 @@
 		19CF67FD19655F9B00C70E39 /* home_bowl_glow_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_bowl_glow_01.png; sourceTree = "<group>"; };
 		19CF67FE19655F9B00C70E39 /* story_page_43.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_43.jpg; path = "Tiny Tastes/Images/Story/story_page_43.jpg"; sourceTree = "<group>"; };
 		19CF67FF19655F9B00C70E39 /* story_page_44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_44.jpg; path = "Tiny Tastes/Images/Story/story_page_44.jpg"; sourceTree = "<group>"; };
+		19CF680319656ED900C70E39 /* home_tap_bowl_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tap_bowl_01.png; sourceTree = "<group>"; };
 		19FE7CD7196207600074A32F /* cutout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cutout.png; sourceTree = "<group>"; };
 		19FE7CD8196207600074A32F /* cutout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cutout@2x.png"; sourceTree = "<group>"; };
 		19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_eating_1.png; sourceTree = "<group>"; };
@@ -1031,6 +1033,7 @@
 			isa = PBXGroup;
 			children = (
 				19CF67FD19655F9B00C70E39 /* home_bowl_glow_01.png */,
+				19CF680319656ED900C70E39 /* home_tap_bowl_01.png */,
 			);
 			name = "Home bowl animations";
 			path = "Tiny Tastes/Images/Story/Home bowl animations";
@@ -1621,6 +1624,7 @@
 				19FE7D661962DAE80074A32F /* story_sound_p14.m4a in Resources */,
 				19120DDA195CB1F5001302FF /* story_tiny_frog_jump_2_01.png in Resources */,
 				19FE7D181962C66F0074A32F /* disappearing-food_09@2x.png in Resources */,
+				19CF680419656ED900C70E39 /* home_tap_bowl_01.png in Resources */,
 				1920F1E4196189BF0094FAA3 /* home_shop@2x.png in Resources */,
 				1920F21A19619D5B0094FAA3 /* coin.png in Resources */,
 				19945493195DB1F0003BAC7F /* button_back.png in Resources */,
