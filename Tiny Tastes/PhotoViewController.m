@@ -21,6 +21,7 @@
 #import <ImageIO/ImageIO.h>
 #import "UIImage+Rotate.h"
 #import "UIFont+TinyTastes.h"
+#import "Crittercism.h"
 
 @interface PhotoViewController () {
     UIImageView *cameraOverlay; //Empty bowl that will hold image of food
@@ -130,29 +131,37 @@
         if (!input) {
             // Handle the error appropriately.
             NSLog(@"ERROR: trying to open camera: %@", error);
+            
+            //Send error to crash reporting
+            [Crittercism logHandledException:[NSException exceptionWithName:@"CameraError" reason:error.description userInfo:error.userInfo]];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error dialog title") message:NSLocalizedString(@"Error accessing camera, please try again!", @"Error message when camera could npt be opened") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            [alert show];
         }
-        [session addInput:input];
-        
-		
-        stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
-        NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys: AVVideoCodecJPEG, AVVideoCodecKey, nil];
-        [stillImageOutput setOutputSettings:outputSettings];
-        
-        [session addOutput:stillImageOutput];
-        
-        [session startRunning];
-        
-        overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-        overlay.photoViewController = self;
-        
-        [self.view addSubview:overlay];
-        
-        AVCaptureConnection *previewLayerConnection=captureVideoPreviewLayer.connection;
-        
-        if ([previewLayerConnection isVideoOrientationSupported]) {
-            [previewLayerConnection setVideoOrientation:(AVCaptureVideoOrientation)[[UIApplication sharedApplication] statusBarOrientation]];
+        else {
+            [session addInput:input];
+            
+            
+            stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
+            NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys: AVVideoCodecJPEG, AVVideoCodecKey, nil];
+            [stillImageOutput setOutputSettings:outputSettings];
+            
+            [session addOutput:stillImageOutput];
+            
+            [session startRunning];
+            
+            overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+            overlay.photoViewController = self;
+            
+            [self.view addSubview:overlay];
+            
+            AVCaptureConnection *previewLayerConnection=captureVideoPreviewLayer.connection;
+            
+            if ([previewLayerConnection isVideoOrientationSupported]) {
+                [previewLayerConnection setVideoOrientation:(AVCaptureVideoOrientation)[[UIApplication sharedApplication] statusBarOrientation]];
+            }
         }
-        
         
     } else {
 #ifdef DEBUG
@@ -206,6 +215,10 @@
                 
         }
         else {
+            
+            //Log error to crash reporting
+            [Crittercism logHandledException:[NSException exceptionWithName:@"CaptureError" reason:(error ? error.description : @"Empty sample buffer without error") userInfo:error.userInfo]];
+            
             //Display error
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error dialog title") message:NSLocalizedString(@"Photo could not be taken. Please try again with better focus and/or lighting.", @"Error message when failed to take photo") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
