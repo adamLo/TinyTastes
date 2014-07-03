@@ -329,7 +329,71 @@
     <image path="story_page_34e.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard15" />
 </scene>
-<scene id="yard15" endstack="true" end="true">
-    <image path="story_page_35.jpg" x="0" y="20" w="1024" h="748" />
+<scene id="yard15">
+    <image path="story_page_35_plain.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard16" />
+    <animations>
+        <!-- Bunny reaches out for the newspapers -->
+        <animation id="bunny_reach_out" x="341" y="314" w="372" h="248" duration="1.6" repeat="1">
+            <animationphase image="story_bunny_reaching_00.png" />
+            <animationphase image="story_bunny_reaching_01.png" />
+        </animation>
+    </animations>
 </scene>
+<!-- Selection scene to go into Bunny's house or skip -->
+<scene id="yard16" endstack="true" end="true">
+    <image path="story_page_35c.jpg" x="0" y="20" w="1024" h="748" />
+    <link id="bunny01" x="588" y="269" w="159" h="128" />
+    <link id="yard17" x="336" y="392" w="137" h="107" />
+</scene>
+<!-- Yard scene end -->
+
+<!-- Tiny in Bunny's house -->
+<scene id="bunny01">
+    <image path="story_page_36_bunny.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="bunny02" />
+</scene>
+<scene id="bunny02">
+    <image path="story_page_37_bunny.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="bunny03" />
+</scene>
+<scene id="bunny03">
+    <image path="story_page_38_bunny.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="bunny04" />
+</scene>
+<scene id="bunny04">
+    <image path="story_page_39_bunny.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="bunny05" />
+</scene>
+<scene id="bunny05">
+    <image path="story_page_40_bunny.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="bunny06" />
+</scene>
+<scene id="bunny06" endstack="true">
+    <image path="story_page_41_bunny.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard17" />
+</scene>
+<!-- Bunny house end -->
+
+<!-- Back in the yard again -->
+<scene id="yard17">
+    <image path="story_page_42.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard18" />
+</scene>
+<scene id="yard18">
+    <image path="story_page_43.jpg" x="0" y="20" w="1024" h="748" />
+    <next id="yard19" />
+</scene>
+<scene id="yard19" endstack="true" end="true">
+    <image path="story_page_44.jpg" x="0" y="20" w="1024" h="748" />
+    <animations>
+        <!-- Glow around the bowl -->
+        <animation id="home_bowl_glow" x="92" y="279" w="388" h="318" duration="2" repeat="0">
+            <animationphase image="spacer.png" />
+            <animationphase image="home_bowl_glow_01.png" />
+        </animation>
+    </animations>
+</scene>
+
+
 </scenes>
