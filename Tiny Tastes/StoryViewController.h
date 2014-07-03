@@ -16,7 +16,7 @@
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
-- (void) changeSceneStack:(NSString *) key;
+- (void)changeSceneStack:(NSString *) key;
 
 - (void)gotoSceneWithId:(NSString*)sceneId;
 

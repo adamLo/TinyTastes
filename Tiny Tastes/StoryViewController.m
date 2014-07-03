@@ -54,6 +54,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    _modelController = nil;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    NSLog(@"Story view controller disappear");
+    _modelController = nil;
 }
 
 - (StoryModelController *)modelController
@@ -80,18 +87,17 @@
 
 - (void) changeSceneStack:(NSString *)key
 {
-    [_modelController changeSceneStack:key];
+    [self.modelController changeSceneStack:key];
     StoryDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
 
 - (void)gotoSceneWithId:(NSString*)sceneId {
-    [_modelController goToSceneWithId:sceneId];
+    [self.modelController goToSceneWithId:sceneId];
     StoryDataViewController *startingViewController = [self.modelController viewControllerAtIndex:self.modelController.currentIndex storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
-
 
 @end

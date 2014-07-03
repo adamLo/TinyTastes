@@ -10,8 +10,8 @@
 #import "SceneFactory.h"
 
 @interface StoryModelController()
-@property (readonly, strong, nonatomic) NSMutableDictionary *pageData;
-@property (strong, nonatomic) NSMutableArray *sceneStack;
+@property (readonly, strong, nonatomic) NSDictionary *pageData;
+@property (strong, nonatomic) NSArray *sceneStack;
 @end
 
 @implementation StoryModelController
@@ -25,7 +25,8 @@
     if (self) {
         // Create the data model.
         SceneFactory *sceneFactory = [[SceneFactory alloc] init];
-        _pageData = [sceneFactory populateScenes];
+        _pageData = [NSDictionary dictionaryWithDictionary:[sceneFactory populateScenes]];
+        sceneFactory = nil;
         
         _sceneStack = [self.pageData objectForKey:@"titlePage"];
         _currentIndex = 0;
@@ -137,6 +138,11 @@
             }
         }
     }
+}
+
+- (void)dealloc {
+    _sceneStack = nil;
+    _pageData = nil;
 }
 
 @end

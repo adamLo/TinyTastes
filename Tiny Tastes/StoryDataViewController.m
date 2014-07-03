@@ -163,7 +163,11 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
             //This is an imageview
             [subview performSelector:@selector(stopAnimating) withObject:nil];
         }
+        
+        //Remove subview
+        [subview removeFromSuperview];
     }
+    
 }
 
 - (void)displayNarration {
@@ -208,7 +212,7 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     [_viewController changeSceneStack:(NSString *) [self.dataObject.linkDestinations objectAtIndex:r]];
 }
 
-- (IBAction) changeSceneStack:(id) sender
+- (IBAction)changeSceneStack:(id) sender
 {
     UIButton* button = (UIButton *) sender;
     NSInteger buttonId = [button tag];

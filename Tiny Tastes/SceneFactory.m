@@ -30,4 +30,8 @@
     return sceneDictionary;
 }
 
+- (void)dealloc {
+    sceneDictionary = nil;
+}
+
 @end
