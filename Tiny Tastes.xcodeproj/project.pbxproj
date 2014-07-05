@@ -141,6 +141,9 @@
 		1920F25E1961FB450094FAA3 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F25C1961FB450094FAA3 /* camera@2x.png */; };
 		1920F2611961FE100094FAA3 /* camera_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F25F1961FE100094FAA3 /* camera_overlay.png */; };
 		1920F2621961FE100094FAA3 /* camera_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1920F2601961FE100094FAA3 /* camera_overlay@2x.png */; };
+		1993A8A819681DB700465D83 /* StoryPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8A719681DB700465D83 /* StoryPageViewController.m */; };
+		1993A8AC196822C400465D83 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8AB196822C400465D83 /* XMLDictionary.m */; };
+		1993A8AF19682AF000465D83 /* StoryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8AE19682AF000465D83 /* StoryPageController.m */; };
 		1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545A195D740A003BAC7F /* story_page_29e.jpg */; };
 		19945460195D740B003BAC7F /* story_page_30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545B195D740A003BAC7F /* story_page_30.jpg */; };
 		19945461195D740B003BAC7F /* story_page_31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545C195D740A003BAC7F /* story_page_31.jpg */; };
@@ -297,9 +300,6 @@
 		EC6FD1DE17EA746000EB05E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FD1B617EA746000EB05E9 /* Foundation.framework */; };
 		EC6FD1E617EA746000EB05E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6FD1E417EA746000EB05E9 /* InfoPlist.strings */; };
 		EC6FD1E917EA746000EB05E9 /* Tiny_TastesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */; };
-		EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B51813430E007319C5 /* StoryDataViewController.m */; };
-		EC7124B918134358007319C5 /* StoryModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124B818134358007319C5 /* StoryModelController.m */; };
-		EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124BB181343A2007319C5 /* StoryViewController.m */; };
 		EC7124C018145E25007319C5 /* story.xml in Resources */ = {isa = PBXBuildFile; fileRef = EC7124BF18145E25007319C5 /* story.xml */; };
 		EC7124C31814603F007319C5 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C21814603F007319C5 /* Scene.m */; };
 		EC7124C618146152007319C5 /* XMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7124C518146152007319C5 /* XMLDelegate.m */; };
@@ -469,6 +469,12 @@
 		1920F25C1961FB450094FAA3 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
 		1920F25F1961FE100094FAA3 /* camera_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_overlay.png; sourceTree = "<group>"; };
 		1920F2601961FE100094FAA3 /* camera_overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_overlay@2x.png"; sourceTree = "<group>"; };
+		1993A8A619681DB700465D83 /* StoryPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryPageViewController.h; path = Story/StoryPageViewController.h; sourceTree = "<group>"; };
+		1993A8A719681DB700465D83 /* StoryPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryPageViewController.m; path = Story/StoryPageViewController.m; sourceTree = "<group>"; };
+		1993A8AA196822C400465D83 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		1993A8AB196822C400465D83 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		1993A8AD19682AF000465D83 /* StoryPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryPageController.h; path = Story/StoryPageController.h; sourceTree = "<group>"; };
+		1993A8AE19682AF000465D83 /* StoryPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryPageController.m; path = Story/StoryPageController.m; sourceTree = "<group>"; };
 		1994545A195D740A003BAC7F /* story_page_29e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_29e.jpg; path = "Tiny Tastes/Images/Story/story_page_29e.jpg"; sourceTree = "<group>"; };
 		1994545B195D740A003BAC7F /* story_page_30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_30.jpg; path = "Tiny Tastes/Images/Story/story_page_30.jpg"; sourceTree = "<group>"; };
 		1994545C195D740A003BAC7F /* story_page_31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_31.jpg; path = "Tiny Tastes/Images/Story/story_page_31.jpg"; sourceTree = "<group>"; };
@@ -803,6 +809,7 @@
 		191401CD1958D0D8008F40C4 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				1993A8A9196822C400465D83 /* XMLDictionary */,
 				191401CE1958D0E7008F40C4 /* CrittercismSDK */,
 			);
 			name = "Third Party";
@@ -942,6 +949,16 @@
 			);
 			name = Photo;
 			path = "Tiny Tastes/Images/Photo";
+			sourceTree = "<group>";
+		};
+		1993A8A9196822C400465D83 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				1993A8AA196822C400465D83 /* XMLDictionary.h */,
+				1993A8AB196822C400465D83 /* XMLDictionary.m */,
+			);
+			name = XMLDictionary;
+			path = XMLDictionary/XMLDictionary;
 			sourceTree = "<group>";
 		};
 		19945466195D77B5003BAC7F /* Tiny climbing up */ = {
@@ -1360,6 +1377,10 @@
 				EC7124B818134358007319C5 /* StoryModelController.m */,
 				EC7124BA181343A2007319C5 /* StoryViewController.h */,
 				EC7124BB181343A2007319C5 /* StoryViewController.m */,
+				1993A8A619681DB700465D83 /* StoryPageViewController.h */,
+				1993A8A719681DB700465D83 /* StoryPageViewController.m */,
+				1993A8AD19682AF000465D83 /* StoryPageController.h */,
+				1993A8AE19682AF000465D83 /* StoryPageController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1755,10 +1776,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1993A8AF19682AF000465D83 /* StoryPageController.m in Sources */,
 				FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */,
-				EC7124B61813430E007319C5 /* StoryDataViewController.m in Sources */,
 				19FE7D7E19633F930074A32F /* UIFont+TinyTastes.m in Sources */,
-				EC7124BC181343A2007319C5 /* StoryViewController.m in Sources */,
 				EC7124C618146152007319C5 /* XMLDelegate.m in Sources */,
 				31544D40181DAF41006C9D94 /* OverlayView.m in Sources */,
 				19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */,
@@ -1769,8 +1789,9 @@
 				FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */,
 				FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */,
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
-				EC7124B918134358007319C5 /* StoryModelController.m in Sources */,
+				1993A8A819681DB700465D83 /* StoryPageViewController.m in Sources */,
 				FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */,
+				1993A8AC196822C400465D83 /* XMLDictionary.m in Sources */,
 				FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */,
 				FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */,
 				EC7124C31814603F007319C5 /* Scene.m in Sources */,

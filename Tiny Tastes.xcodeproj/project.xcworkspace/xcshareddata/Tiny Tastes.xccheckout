@@ -12,6 +12,8 @@
 	<dict>
 		<key>0C1A38F9-ACC6-4BEB-8B92-5D55FD31C998</key>
 		<string>https://github.com/emilyems/CS408--Critter-Friends.git</string>
+		<key>118431B6-5F18-4EA6-9EBA-77EE5486BBA2</key>
+		<string>https://github.com/nicklockwood/XMLDictionary.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Tiny Tastes.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>0C1A38F9-ACC6-4BEB-8B92-5D55FD31C998</key>
 		<string>../..</string>
+		<key>118431B6-5F18-4EA6-9EBA-77EE5486BBA2</key>
+		<string>../../XMLDictionary</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/emilyems/CS408--Critter-Friends.git</string>
@@ -35,6 +39,14 @@
 			<string>0C1A38F9-ACC6-4BEB-8B92-5D55FD31C998</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TinyTastes</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>118431B6-5F18-4EA6-9EBA-77EE5486BBA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XMLDictionary</string>
 		</dict>
 	</array>
 </dict>

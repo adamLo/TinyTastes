@@ -52,7 +52,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1iE-zo-HXc" kind="push" identifier="toStory" id="r0P-sc-w0f"/>
+                                    <segue destination="BFK-Tc-tVo" kind="push" id="lat-Pg-uUb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDo-IJ-ezK" userLabel="Settings Button">
@@ -114,6 +114,18 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZpT-V1-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-969" y="-4400"/>
+        </scene>
+        <!--Story Page View Controller-->
+        <scene sceneID="5X5-4B-mJf">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="BFK-Tc-tVo" customClass="StoryPageViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="u0B-cp-uQF"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guV-xX-gMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="-4400"/>
         </scene>
         <!--Add Meal Notification View Controller-->
         <scene sceneID="ZxS-Sw-rK8">
@@ -1593,9 +1605,9 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="T73-72-6qB"/>
-        <segue reference="h34-Ks-joT"/>
+        <segue reference="lOn-zd-onO"/>
+        <segue reference="qg2-we-N1h"/>
         <segue reference="P60-4d-HuF"/>
-        <segue reference="ZMd-87-eiT"/>
+        <segue reference="T73-72-6qB"/>
     </inferredMetricsTieBreakers>
 </document>
