@@ -122,6 +122,9 @@
                     <navigationItem key="navigationItem" id="u0B-cp-uQF"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="t2j-Jj-fJN" kind="push" identifier="toPhotoView" id="ZzM-Qq-cqj"/>
+                    </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guV-xX-gMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -716,6 +719,7 @@ photo</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ula-jf-UO7"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="cameraIcon" destination="qtL-r8-iUw" id="KJc-Kc-4Yt"/>
@@ -933,6 +937,7 @@ photo</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2xo-dn-duh"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="allFinishedButton" destination="j7n-Rf-qYa" id="h0R-s3-Prg"/>
@@ -1204,6 +1209,7 @@ photo</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1fV-vi-mBX"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="coinView1" destination="5vn-Hh-yJT" id="Qle-uH-QCR"/>
@@ -1605,8 +1611,8 @@ Do You Want For...</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lOn-zd-onO"/>
         <segue reference="qg2-we-N1h"/>
+        <segue reference="ZzM-Qq-cqj"/>
         <segue reference="P60-4d-HuF"/>
         <segue reference="T73-72-6qB"/>
     </inferredMetricsTieBreakers>

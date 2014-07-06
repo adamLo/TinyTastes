@@ -40,6 +40,21 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     self.view.userInteractionEnabled = YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    //Reset animations to first phase
+    for (id subView in self.view.subviews) {
+        if ([subView isKindOfClass:[UIImageView class]]) {
+            UIImageView *imageView = (UIImageView*)subView;
+            if (imageView.animationImages.count) {
+                if (imageView.animationRepeatCount > 0) {
+                    //Set default image of animation sequence to last frame if animation not continous
+                    imageView.image = [imageView.animationImages firstObject];
+                }
+            }
+        }
+    }
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     
     //Schedule narration and animation start
@@ -50,6 +65,11 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     
 }
 
+/**
+ *  A timer is defined to delay narration and animation after page appeared
+ *
+ *  @param timer Timer
+ */
 - (void)pageDelayTimerFired:(NSTimer*)timer {
     
     //Start playing narration
@@ -122,10 +142,46 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
 
 #pragma mark - Images
 
+/**
+ *  Construct an imageview from dictionary. Add animation if there's any
+ *
+ *  @param imageDict Dictionary describing image
+ *
+ *  @return Imageview
+ */
 - (UIImageView*)imageViewFromDictionary:(NSDictionary*)imageDict {
 
+    //Construct imageview
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake([[imageDict objectForKey:kStoryDictionaryKeyX] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyY]floatValue], [[imageDict objectForKey:kStoryDictionaryKeyW] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyH] floatValue])];
-    imageView.image = [UIImage imageNamed:[imageDict objectForKey:kStoryDictionaryKeyPath]];
+    
+    //Add image if exists
+    if ([imageDict objectForKey:kStoryDictionaryKeyPath]) {
+        imageView.image = [UIImage imageNamed:[imageDict objectForKey:kStoryDictionaryKeyPath]];
+    }
+    
+    //Add animations if there are
+    if ([[imageDict objectForKey:kStoryDictionaryKeyAnimation] isKindOfClass:[NSArray class]]) {
+        //We have animation images
+        
+        //Add animation phase images
+        NSMutableArray *animationImages = [[NSMutableArray alloc] init];
+        for (NSString *imgName in [imageDict objectForKey:kStoryDictionaryKeyAnimation]) {
+            UIImage *image = [UIImage imageNamed:imgName];
+            if (image) {
+                [animationImages addObject:image];
+            }
+        }
+        imageView.animationImages = [NSArray arrayWithArray:animationImages];
+        
+        //Set animation properties
+        imageView.animationDuration = [[imageDict objectForKey:kStoryDictionaryKeyDuration] floatValue];
+        imageView.animationRepeatCount = [[imageDict objectForKey:kStoryDictionaryKeyRepeat] integerValue];
+        
+        //set first image if not set
+        if (!imageView.image) {
+            imageView.image = [imageView.animationImages firstObject];
+        }
+    }
     
     return imageView;
     
@@ -185,6 +241,9 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     return nil;
 }
 
+/**
+ *  Build up sound players for page
+ */
 - (void)buildSoundPlayers {
     
     if ([[self.pageData objectForKey:kStoryDictionaryKeySound] isKindOfClass:[NSDictionary class]]) {
@@ -204,10 +263,89 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     
 }
 
+- (void)toggleNarrationOn:(BOOL)narrationOn {
+    
+    for (AVAudioPlayer *player in audioPlayers) {
+        if (narrationOn) {
+            [player play];
+        }
+        else {
+            [player stop];
+        }
+    }
+    
+}
+
 #pragma mark - Tap gesture
 
-- (void)pageTappedWithRecognizer:(UITapGestureRecognizer*)recognizer {
-    NSLog(@"Tapped page");
+/**
+ *  Constructs a CGRect frame from a dictionary data for comparision
+ *
+ *  @param linkDict Dictionary describing area
+ *
+ *  @return Frame
+ */
+- (CGRect)frameFromLinkDictionary:(NSDictionary*)linkDict {
+    return CGRectMake([[linkDict objectForKey:kStoryDictionaryKeyX] floatValue], [[linkDict objectForKey:kStoryDictionaryKeyY] floatValue], [[linkDict objectForKey:kStoryDictionaryKeyW] floatValue], [[linkDict objectForKey:kStoryDictionaryKeyH] floatValue]);
 }
+
+/**
+ *  Handle tapping a hot area
+ *
+ *  @param linkData Data describes what to to
+ */
+- (void)handleTapWithData:(NSDictionary*)linkData {
+    
+    if ([linkData objectForKey:kStoryDictionaryKeyID]) {
+        //Go to scene
+        [self.pageViewController gotoSceneWithID:[linkData objectForKey:kStoryDictionaryKeyID]];
+    }
+    else if ([linkData objectForKey:kStoryDictionaryKeySegue]) {
+        //There's a segue to push
+        [self.pageViewController performSegueWithIdentifier:[linkData objectForKey:kStoryDictionaryKeySegue] sender:self.pageViewController];
+    }
+}
+
+/**
+ *  Tap gesture recognizer delegate handle method. Will check if there's a hot area defined in the story in section "links"
+ *
+ *  @param recognizer Tap gesture recognizer
+ */
+- (void)pageTappedWithRecognizer:(UITapGestureRecognizer*)recognizer {
+    
+    if (recognizer.state == UIGestureRecognizerStateEnded) {
+        CGPoint touchPoint = [recognizer locationInView:self.view];
+
+        if ([[self.pageData objectForKey:kStoryDictionaryKeyLink] isKindOfClass:[NSDictionary class]]) {
+            //We have one link
+            
+            NSDictionary *linkData = [self.pageData objectForKey:kStoryDictionaryKeyLink];
+            //Get link frame
+            CGRect linkFrame = [self frameFromLinkDictionary:linkData];
+            
+            //Check touch
+            if (CGRectContainsPoint(linkFrame, touchPoint)) {
+                //Touchdown
+                [self handleTapWithData:linkData];
+            }
+        }
+        else if ([[self.pageData objectForKey:kStoryDictionaryKeyLink] isKindOfClass:[NSArray class]]) {
+            //Multiple links on page
+            
+            for (NSDictionary *linkData in [self.pageData objectForKey:kStoryDictionaryKeyLink]) {
+                //Get link frame
+                CGRect linkFrame = [self frameFromLinkDictionary:linkData];
+                
+                //Check touch
+                if (CGRectContainsPoint(linkFrame, touchPoint)) {
+                    //Touchdown
+                    [self handleTapWithData:linkData];
+                    break;
+                }
+            }
+        }
+    }
+}
+
 
 @end

@@ -24,4 +24,11 @@
  */
 - (void)loadStoryPage:(NSDictionary*)storyPage;
 
+/**
+ *  Toggle narration on/off
+ *
+ *  @param narrationOn Yes to turn on, NO to turn off
+ */
+- (void)toggleNarrationOn:(BOOL)narrationOn;
+
 @end

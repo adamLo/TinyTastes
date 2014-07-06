@@ -15,6 +15,15 @@
     NSDictionary *currentPage; //Actual page index in the story book
     
     NSMutableDictionary *pageControllerCache; //Cache containing UIViewControllers for already created pages
+    
+    UIButton *homeButton; //Button to go back to home screen
+    UIButton *skipButton; //Button to skip story and go to eating screen
+    UIButton *narrationButton; //Button to toggle narration on and off
+    
+    UIImage *bookmarkImage; //Resizable bookmark image
+    UIImageView *bookmarkView; //Bookmark view
+    UILabel *bookmarkLabel; //Localized instruction label on bookmark. Displayed on title only when bookmark is set
+    UITapGestureRecognizer *bookmarTapGestureRecognizer; //Recognizer for user tap action
 }
 
 @end
@@ -34,6 +43,11 @@ NSString* const kStoryDictionaryKeyNext = @"next";
 NSString* const kStoryDictionaryKeyLink = @"link";
 NSString* const kStoryDictionaryKeySound = @"sound";
 NSString* const kStoryDictionaryKeyType = @"type";
+NSString* const kStoryDictionaryKeyAnimation = @"animation";
+NSString* const kStoryDictionaryKeyDuration = @"duration";
+NSString* const kStoryDictionaryKeyRepeat = @"repeat";
+NSString* const kStoryDictionaryKeySegue = @"segue";
+NSString* const kStoryDictionaryKeyTitle = @"title";
 
 //Class-level constants
 CGFloat const kStoryBookmarkHeightHidden = 30; //Bookmark height when not displayed
@@ -54,14 +68,62 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self loadStoryBookWithFilename:@"story.xml"];
-    
+    //Set Datasource and delegate for pageviewcontroller
     self.dataSource = self;
     self.delegate = self;
     
+    //Set background
+    self.view.backgroundColor = [UIColor darkGrayColor];
+    
+    //Init cache
     pageControllerCache = [[NSMutableDictionary alloc] init];
     
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    //Add home button
+    homeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    homeButton.frame = CGRectMake(12, 16, 135, 95);
+    [homeButton setImage:[UIImage imageNamed:@"button_home"] forState:UIControlStateNormal];
+    [homeButton addTarget:self action:@selector(homeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:homeButton];
+    
+    //Add skip button
+    skipButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    skipButton.frame = CGRectMake(838, 16, 152, 107);
+    [skipButton setImage:[UIImage imageNamed:@"button_skip-to-eat"] forState:UIControlStateNormal];
+    [skipButton addTarget:self action:@selector(skipButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:skipButton];
+    
+    //Add narration button
+    narrationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    narrationButton.frame = CGRectMake(838, 565, 104, 98);
+    [narrationButton addTarget:self action:@selector(narrationButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:narrationButton];
+    
+    //Create bookmark
+    [self createBookmark];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    //Load bundled storybook
+    [self loadStoryBookWithFilename:@"story.xml"];
+    
+    //Bring buttons to front
+    [self.view bringSubviewToFront:homeButton];
+    [self.view bringSubviewToFront:skipButton];
+    [self.view bringSubviewToFront:narrationButton];
+    [self.view bringSubviewToFront:bookmarkView];
+    
+    //Toggle narration button
+    [self toggleNarrationButton];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    //Free storybook and controls
+    storyBook = nil;
+    
+    [pageControllerCache removeAllObjects];
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,9 +157,16 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     [pageControllerCache removeAllObjects];
     
     //Load first page
+    __weak UIButton *_narrationButton = narrationButton;
     [self setViewControllers:@[[self controllerForSceneID:[currentPage objectForKey:kStoryDictionaryKeyID]]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
-        NSLog(@"Finished");
+        
+        //Show narration button
+        _narrationButton.hidden = NO;
+        
+        //Set up bookmark
     }];
+    
+    [self setupBookmark];
 }
 
 #pragma mark Page caching
@@ -140,14 +209,34 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
 - (void)gotoSceneWithID:(NSString *)sceneId {
     StoryPageController *controller = [self controllerForSceneID:sceneId];
     if (controller) {
-        //Load first page
+        
+        //Load page
+        __weak id _self = self;
+        __weak UIButton *_narrationButton = narrationButton;
         [self setViewControllers:@[controller] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
-            NSLog(@"Finished");
+            
+            if (finished) {
+                //Setup bookmark
+                [_self setupBookmark];
+                
+                //Toggle narration button
+                [_narrationButton setHidden:![[controller.pageData objectForKey:kStoryDictionaryKeyTitle] boolValue]];
+            }
+            
         }];
     }
 }
 
 #pragma mark UIPageViewController dataSource
+
+/**
+ *  Get Controller of actual page
+ *
+ *  @return Current page controller
+ */
+- (StoryPageController*)currentPageController {
+    return [self.viewControllers lastObject];
+}
 
 - (UIViewController*)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
 
@@ -190,6 +279,7 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
         prevController = [self controllerForSceneID:prevSceneId];
     }
     
+    
     return prevController;
 }
 
@@ -198,16 +288,244 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     NSDictionary *pageData = [(StoryPageController*)viewController pageData];
     NSDictionary *next = [pageData objectForKey:kStoryDictionaryKeyNext];
     
-    StoryPageController *nextController;
     if (next) {
-        nextController = [self controllerForSceneID:[next objectForKey:kStoryDictionaryKeyID]];
+        
+        if ([next objectForKey:kStoryDictionaryKeyID]) {
+            //We have a next scene
+            StoryPageController *nextController;
+            nextController = [self controllerForSceneID:[next objectForKey:kStoryDictionaryKeyID]];
+            
+            return nextController;
+        }
+        else if ([next objectForKey:kStoryDictionaryKeySegue]) {
+            //There's a segue to push
+            [self performSegueWithIdentifier:[next objectForKey:kStoryDictionaryKeySegue] sender:self];
+        }
     }
     
-    if (!nextController) {
-        //No next scene, go to eating screen
+    return nil;
+    
+}
+
+#pragma mark  PageViewController delegate
+
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed {
+    
+    StoryPageController *controller = [self currentPageController];
+    if (finished) {
+        if ([[controller.pageData objectForKey:kStoryDictionaryKeyTitle] boolValue]) {
+            //Show narration button when turning animation to cover page finished
+            narrationButton.hidden = NO;
+        }
+        else {
+            //Hide otherwise
+            narrationButton.hidden = YES;
+        }
+        [self setupBookmark];
+    }
+    else {
+        if (![[controller.pageData objectForKey:kStoryDictionaryKeyTitle] boolValue]) {
+            //Hide otherwise
+            narrationButton.hidden = YES;
+        }
+    }
+}
+
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers {
+    
+    StoryPageController *controller = [pendingViewControllers lastObject];
+    if (![[controller.pageData objectForKey:kStoryDictionaryKeyTitle] boolValue]) {
+        //Hide narration button when moving away from title page
+        narrationButton.hidden = YES;
     }
     
-    return nextController;
+    bookmarkView.hidden = YES;
+}
+
+#pragma mark - Button actions
+
+/**
+ *  User pressed home button to go back to home screen
+ *
+ *  @param sender Button
+ */
+- (void)homeButtonPressed:(id)sender {
+    //Go home
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+/**
+ *  User pressed skip button to go to eating screen
+ *
+ *  @param sender Button
+ */
+- (void)skipButtonPressed:(id)sender {
+    //Go to photo screen (eating)
+    [self performSegueWithIdentifier:@"toPhotoView" sender:sender];
+    
+}
+
+/**
+ *  User pressed narration button to toggle narration
+ *
+ *  @param sender Button
+ */
+- (void)narrationButtonPressed:(id)sender {
+    
+    //Toggle setting
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL state = ![defaults boolForKey:@"storyNarration"];
+    [defaults setBool:state forKey:@"storyNarration"];
+    [defaults synchronize];
+    
+    //Toggle button image
+    [self toggleNarrationButton];
+    
+    //Tell actual controller to stop narration
+    StoryPageController *controller = [self currentPageController];
+    [controller toggleNarrationOn:state];
+}
+
+/**
+ *  Toggle narration button on/off image
+ */
+- (void)toggleNarrationButton {
+    [narrationButton setImage:[UIImage imageNamed:([[NSUserDefaults standardUserDefaults] boolForKey:@"storyNarration"] ? @"button_sound-on" : @"button_sound-off")] forState:UIControlStateNormal];
+}
+
+#pragma mark - Bookmark
+
+/**
+ *  Create bookmark
+ */
+- (void)createBookmark {
+    //Create bookmark image
+    bookmarkImage = [[UIImage imageNamed:@"bookmark"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 25, 0)];
+    bookmarkView = [[UIImageView alloc] initWithFrame:CGRectMake(750, 45, 47, kStoryBookmarkHeightSet)];
+    bookmarkView.image = bookmarkImage;
+    [self.view addSubview:bookmarkView];
+    
+    //Add go label to bookmark
+    bookmarkLabel = [[UILabel alloc] initWithFrame:CGRectMake(6, 18, bookmarkView.frame.size.width - 16, bookmarkView.frame.size.height - 35)];
+    bookmarkLabel.text = @"bookmark"; //Placeholder
+    bookmarkLabel.numberOfLines = 0;
+    bookmarkLabel.textColor = [UIColor whiteColor];
+    bookmarkLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    bookmarkLabel.textAlignment = NSTextAlignmentCenter;
+    bookmarkLabel.font = [UIFont systemFontOfSize:10.0];
+    [bookmarkView addSubview:bookmarkLabel];
+    bookmarkLabel.autoresizingMask = 0;
+    
+    //Add tap gesture to bookmark
+    bookmarTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bookmarkTapped:)];
+    [bookmarkView addGestureRecognizer:bookmarTapGestureRecognizer];
+    bookmarkView.userInteractionEnabled = YES;
+}
+
+/**
+ *  Toggle bookmark visibility and size
+ */
+- (void)setupBookmark {
+    
+    bookmarkView.hidden = NO;
+
+    CGRect bookmarkFrame = bookmarkView.frame;
+    NSString *bookmarkedId = [[NSUserDefaults standardUserDefaults] objectForKey:kStoryBookmarkDefaultsKey];
+    if ([[[[self currentPageController] pageData] objectForKey:kStoryDictionaryKeyTitle] boolValue]) {
+        //Bookmark on title page: display full size if set otherwise hide
+        
+        bookmarkLabel.hidden = NO;
+        bookmarkLabel.text = NSLocalizedString(@"Go to bookmark", @"Go to bookmark label text");
+        if (bookmarkedId) {
+            //Display in full size
+            bookmarkView.hidden = NO;
+            bookmarkFrame.size.height = kStoryBookmarkHeightSet;
+            bookmarTapGestureRecognizer.enabled = YES;
+        }
+        else {
+            //Hide bookmark since not set
+            bookmarkView.hidden = YES;
+            bookmarTapGestureRecognizer.enabled = NO;
+        }
+        
+    }
+    else {
+        //Bookmark on story pages
+        bookmarkView.hidden = NO;
+        bookmarTapGestureRecognizer.enabled = YES;
+        if (bookmarkedId && [bookmarkedId isEqualToString:[[[self currentPageController] pageData] objectForKey:kStoryDictionaryKeyID]]) {
+            //Display bookmark full size
+            bookmarkFrame.size.height = kStoryBookmarkHeightSet;
+            bookmarkLabel.hidden = NO;
+            bookmarkLabel.text = NSLocalizedString(@"Remove bookmark", @"Clear bookmark label text");
+        }
+        else {
+            bookmarkLabel.hidden = YES;
+            bookmarkFrame.size.height = kStoryBookmarkHeightHidden;
+        }
+    }
+    bookmarkView.frame = bookmarkFrame;
+}
+
+/**
+ *  User tapped on bookmark. Three different things could happen: go to bookmark if displaying title page, or set bookmark on story if not set on this page or remove bookmark if already set
+ */
+- (void)bookmarkTapped:(UITapGestureRecognizer*)recognizer {
+    
+    if ([[[[self currentPageController] pageData] objectForKey:kStoryDictionaryKeyTitle] boolValue]) {
+        //Tapped on cover page, go to bookmark
+        NSString *bookmarkedId = [[NSUserDefaults standardUserDefaults] objectForKey:kStoryBookmarkDefaultsKey];
+        if (bookmarkedId) {
+            [self gotoSceneWithID:bookmarkedId];
+        }
+    }
+    else {
+        //Tapped on a book page
+        if (bookmarkView.frame.size.height == kStoryBookmarkHeightSet) {
+            //Bookmark already set, clear it
+            [self togleBookmarkSet:NO];
+        }
+        else {
+            //Bookmark not set, set it
+            [self togleBookmarkSet:YES];
+        }
+    }
+    
+}
+
+/**
+ *  Toggle bookmark with animation and set in userdefaults
+ *
+ *  @param bookmarkset YES to set bookmark, NO to clear
+ */
+- (void)togleBookmarkSet:(BOOL)bookmarkset {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (bookmarkset) {
+        [defaults setObject:[[[self currentPageController] pageData] objectForKey:kStoryDictionaryKeyID] forKey:kStoryBookmarkDefaultsKey];
+    }
+    else {
+        [defaults removeObjectForKey:kStoryBookmarkDefaultsKey];
+    }
+    [defaults synchronize];
+    
+    //Set desired height
+    CGRect bookmarkFrame = bookmarkView.frame;
+    bookmarkFrame.size.height = bookmarkset ? kStoryBookmarkHeightSet : kStoryBookmarkHeightHidden;
+    
+    if (!bookmarkset) {
+        bookmarkLabel.hidden = YES;
+    }
+    //Animate
+    [UIView animateWithDuration:0.6 animations:^{
+        bookmarkView.frame = bookmarkFrame;
+    } completion:^(BOOL finished) {
+        bookmarkLabel.hidden = !bookmarkset;
+        if (bookmarkset) {
+            //Set label title if bookmark is set
+            bookmarkLabel.text = NSLocalizedString(@"Remove bookmark", @"Clear bookmark label text");
+        }
+    }];
     
 }
 

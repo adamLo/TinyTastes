@@ -48,7 +48,7 @@
     <sound path="story_sound_p09" type="m4a" />
     <next id="opening10" />
 </scene>
-<scene id="opening10" endstack="true">
+<scene id="opening10">
     <image path="story_page_10.jpg" x="0" y="20" w="1024" h="748" />
     <sound path="story_sound_p10" type="m4a" />
     <link id="yard01" x="570" y="182" w="400" h="315" />
@@ -58,43 +58,44 @@
     <sound path="story_sound_p11" type="m4a" />
     <next id="yard02" />
 </scene>
-<scene id="yard02" endstack="true">
+<scene id="yard02">
     <image path="story_page_12_plain.jpg" x="0" y="20" w="1024" h="748" />
+    
+    <!-- Floating question marks around the pond -->
+    <image path="pond_qmarks_00.png" x="310" y="250" w="210" h="160" duration="1.5" repeat="0">
+        <animation>pond_qmarks_00.png</animation>
+        <animation>pond_qmarks_01.png</animation>
+        <animation>pond_qmarks_02.png</animation>
+        <animation>pond_qmarks_03.png</animation>
+        <animation>pond_qmarks_02.png</animation>
+        <animation>pond_qmarks_01.png</animation>
+        <animation>pond_qmarks_00.png</animation>
+        <animation>pond_qmarks_04.png</animation>
+        <animation>pond_qmarks_05.png</animation>
+        <animation>pond_qmarks_06.png</animation>
+        <animation>pond_qmarks_05.png</animation>
+        <animation>pond_qmarks_04.png</animation>
+    </image>
+    
+    <!-- Bubble in the pund making waves -->
+    <image x="270" y="360" w="60" h="60" duration="1.8" repeat="0">
+        <animation>pond_bubble_00.png</animation>
+        <animation>pond_bubble_01.png</animation>
+        <animation>pond_bubble_02.png</animation>
+        <animation>pond_bubble_03.png</animation>
+        <animation>pond_bubble_04.png</animation>
+        <animation>pond_bubble_05.png</animation>
+        <animation>pond_bubble_06.png</animation>
+        <animation>pond_bubble_07.png</animation>
+        <animation>pond_bubble_08.png</animation>
+        <animation>pond_bubble_09.png</animation>
+    </image>
+    
     <sound path="story_sound_p12" type="m4a" />
     <link id="yard03" x="154" y="300" w="370" h="190" />
-    <!-- animations around the pond -->
-    <animations>
-        <animation id="pond_qmarks" x="310" y="250" w="210" h="160" duration="1.5" repeat="0">
-            <animationphase image="pond_qmarks_00.png" />
-            <animationphase image="pond_qmarks_01.png" />
-            <animationphase image="pond_qmarks_02.png" />
-            <animationphase image="pond_qmarks_03.png" />
-            <animationphase image="pond_qmarks_02.png" />
-            <animationphase image="pond_qmarks_01.png" />
-            <animationphase image="pond_qmarks_00.png" />
-            <animationphase image="pond_qmarks_04.png" />
-            <animationphase image="pond_qmarks_05.png" />
-            <animationphase image="pond_qmarks_06.png" />
-            <animationphase image="pond_qmarks_05.png" />
-            <animationphase image="pond_qmarks_04.png" />
-            
-        </animation>
-        <animation id="pond_bubble" x="270" y="360" w="60" h="60" duration="1.8" repeat="0">
-            <animationphase image="pond_bubble_00.png" />
-            <animationphase image="pond_bubble_01.png" />
-            <animationphase image="pond_bubble_02.png" />
-            <animationphase image="pond_bubble_03.png" />
-            <animationphase image="pond_bubble_04.png" />
-            <animationphase image="pond_bubble_05.png" />
-            <animationphase image="pond_bubble_06.png" />
-            <animationphase image="pond_bubble_07.png" />
-            <animationphase image="pond_bubble_08.png" />
-            <animationphase image="pond_bubble_09.png" />
-        </animation>
-    </animations>
 </scene>
 <!-- Selection sceen between Fish and Frog -->
-<scene id="yard03" endstack="true">
+<scene id="yard03">
     <image path="story_page_13.jpg" x="0" y="20" w="1024" h="748" />
     <sound path="story_sound_p13" type="m4a" />
     <link id="fish01" x="620" y="300" w="230" h="220" />
@@ -127,25 +128,20 @@
     <sound path="story_sound_p18" type="m4a" />
     <next id="fish06" />
 </scene>
-<scene id="fish06" endstack="true">
+<scene id="fish06">
     <image path="story_page_19_fish_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="yard04a" />
     <!-- animation with Tiny and Fish -->
-    <animations>
-        <animation id="tiny_fish" x="106" y="75" w="634" h="492" duration="4" repeat="1">
-            <animationphase image="story_tiny_fish_00.png" />
-            <animationphase image="story_tiny_fish_01.png" />
-            <animationphase image="story_tiny_fish_00.png" />
-            <animationphase image="story_tiny_fish_01.png" />
-            <animationphase image="story_tiny_fish_00.png" />
-            <animationphase image="story_tiny_fish_01.png" />
-            <animationphase image="story_tiny_fish_02.png" />
-        </animation>
-        <!-- This is just a layer -->
-        <animation id="tiny_fish_plant" x="676" y="103" w="128" h="405" duration="1" repeat="1">
-            <animationphase image="story_tiny_fish_plant.png" />
-        </animation>
-    </animations>
+    <image path="story_tiny_fish_00.png" x="106" y="75" w="634" h="492" duration="4" repeat="1">
+        <animation>story_tiny_fish_00.png</animation>
+        <animation>story_tiny_fish_01.png</animation>
+        <animation>story_tiny_fish_00.png</animation>
+        <animation>story_tiny_fish_01.png</animation>
+        <animation>story_tiny_fish_00.png</animation>
+        <animation>story_tiny_fish_01.png</animation>
+        <animation>story_tiny_fish_02.png</animation>
+    </image>
+    <image path="story_tiny_fish_plant.png" x="676" y="103" w="128" h="405" />
+    <next id="yard04a" />
 </scene>
 <!-- Fish fork end -->
 
@@ -160,59 +156,53 @@
 </scene>
 <scene id="frog03">
     <image path="story_page_16_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="frog04" />
     <!-- animation with Tiny and Frog introduction -->
-    <animations>
-        <animation id="tiny_frog_intro" x="89" y="220" w="827" h="416" duration="4" repeat="1">
-            <animationphase image="story_tiny_frog_fish_02.png" />
-            <animationphase image="story_tiny_frog_fish_01.png" />
-            <animationphase image="story_tiny_frog_fish_02.png" />
-            <animationphase image="story_tiny_frog_fish_01.png" />
-            <animationphase image="story_tiny_frog_fish_02.png" />
-            <animationphase image="story_tiny_frog_fish_01.png" />
-            <animationphase image="story_tiny_frog_fish_02.png" />
-            <animationphase image="story_tiny_frog_fish_03.png" />
-        </animation>
-    </animations>
+    <image path="story_tiny_frog_fish_01.png" x="89" y="220" w="827" h="416" duration="4" repeat="1">
+        <animation>story_tiny_frog_fish_02.png</animation>
+        <animation>story_tiny_frog_fish_01.png</animation>
+        <animation>story_tiny_frog_fish_02.png</animation>
+        <animation>story_tiny_frog_fish_01.png</animation>
+        <animation>story_tiny_frog_fish_02.png</animation>
+        <animation>story_tiny_frog_fish_01.png</animation>
+        <animation>story_tiny_frog_fish_02.png</animation>
+        <animation>story_tiny_frog_fish_03.png</animation>
+    </image>
+    <next id="frog04" />
 </scene>
 <scene id="frog04">
     <image path="story_page_18_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="frog05" />
     <!-- animation with Tiny and Fog jumping -->
-    <animations>
-        <animation id="tiny_frog_jump" x="142" y="0" w="587" h="489" duration="3" repeat="1">
-            <animationphase image="story_tiny_frog_jump_01.png" />
-            <animationphase image="story_tiny_frog_jump_02.png" />
-            <animationphase image="story_tiny_frog_jump_03.png" />
-            <animationphase image="story_tiny_frog_jump_04.png" />
-            <animationphase image="story_tiny_frog_jump_05.png" />
-            <animationphase image="story_tiny_frog_jump_06.png" />
-        </animation>
-    </animations>
+    <image x="142" y="0" w="587" h="489" duration="3" repeat="1">
+        <animation>story_tiny_frog_jump_01.png</animation>
+        <animation>story_tiny_frog_jump_02.png</animation>
+        <animation>story_tiny_frog_jump_03.png</animation>
+        <animation>story_tiny_frog_jump_04.png</animation>
+        <animation>story_tiny_frog_jump_05.png</animation>
+        <animation>story_tiny_frog_jump_06.png</animation>
+    </image>
+    <next id="frog05" />
 </scene>
 <scene id="frog05">
     <image path="story_page_19_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="frog06" /> -->
     <!-- animation with Tiny and Fog jumping 2 -->
-   <animations>
-        <animation id="tiny_frog_jump_2" x="467" y="61" w="321" h="532" duration="1.6" repeat="1">
-            <animationphase image="story_tiny_frog_jump_2_01.png" />
-            <animationphase image="story_tiny_frog_jump_2_02.png" />
-        </animation>
-    </animations>
+    <image x="467" y="61" w="321" h="532" duration="1.6" repeat="1">
+        <animation>story_tiny_frog_jump_2_01.png</animation>
+        <animation>story_tiny_frog_jump_2_02.png</animation>
+    </image>
+<next id="frog06" /> -->
 </scene>
-<scene id="frog06" endstack="true">
+<scene id="frog06">
     <image path="story_page_20_frog.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard04b" />
 </scene>
 <!-- Froggy fork end -->
 
 <!-- Back to yard scenes -->
-<scene id="yard04a" endstack="true">
+<scene id="yard04a">
     <image path="story_page_22.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard05" />
 </scene>
-<scene id="yard04b" endstack="true">
+<scene id="yard04b">
     <image path="story_page_22.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard05" />
 </scene>
@@ -240,40 +230,28 @@
     <image path="story_page_28.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard11" />
 </scene>
-<scene id="yard11" endstack="true">
+<scene id="yard11">
     <image path="story_page_29_plain.jpg" x="0" y="20" w="1024" h="748" />
+    <!-- Tiny climbing up the tree -->
+    <image x="504" y="235" w="152" h="339" duration="1.5" repeat="1">
+        <animation>story_tiny_climbing_up_01.png</animation>
+        <animation>story_tiny_climbing_up_02.png</animation>
+        <animation>story_tiny_climbing_up_03.png</animation>
+        <animation>story_tiny_climbing_up_04.png</animation>
+    </image>
+    <image x="549" y="46" w="257" h="564" path="story_tiny_climbing_up_tree1.png" />
+    <image x="321" y="133" w="231" h="557" path="story_tiny_climbing_up_tree2.png" />
+    <image x="486" y="65" w="176" h="258" path="story_tiny_climbing_up_tree3.png" />
+    <!-- Squirrel on the tree -->
+    <image x="512" y="100" w="96" h="73" duration="1.5" repeat="1">
+        <animation>story_tiny_climbing_up_squirrel_01.png</animation>
+        <animation>story_tiny_climbing_up_squirrel_02.png</animation>
+        <animation>story_tiny_climbing_up_squirrel_03.png</animation>
+        <animation>story_tiny_climbing_up_squirrel_04.png</animation>
+    </image>
     <next id="yard12" />
-    <!-- animation with Tiny climbing up. Watch out for the order since they are actually layers! -->
-    <animations>
-        <!-- Tiny climbing up the tree -->
-        <animation id="tiny_climbing_up" x="504" y="235" w="152" h="339" duration="1.5" repeat="1">
-            <animationphase image="story_tiny_climbing_up_01.png" />
-            <animationphase image="story_tiny_climbing_up_02.png" />
-            <animationphase image="story_tiny_climbing_up_03.png" />
-            <animationphase image="story_tiny_climbing_up_04.png" />
-        </animation>
-        <!-- This is not a real animation but a static image. Put here to pretend layers -->
-        <animation id="tiny_climbing_up_tree1" x="549" y="46" w="257" h="564" duration="1" repeat="0">
-            <animationphase image="story_tiny_climbing_up_tree1.png" />
-        </animation>
-        <!-- This is not a real animation but a static image. Put here to pretend layers -->
-        <animation id="tiny_climbing_up_tree2" x="321" y="133" w="231" h="557" duration="1" repeat="0">
-            <animationphase image="story_tiny_climbing_up_tree2.png" />
-        </animation>
-        <!-- This is not a real animation but a static image. Put here to pretend layers -->
-        <animation id="tiny_climbing_up_tree3" x="486" y="65" w="176" h="258" duration="1" repeat="0">
-            <animationphase image="story_tiny_climbing_up_tree3.png" />
-        </animation>
-        <!-- Squirrel on the tree -->
-        <animation id="tiny_climbing_up_squirrel" x="512" y="100" w="96" h="73" duration="1.5" repeat="1">
-            <animationphase image="story_tiny_climbing_up_squirrel_01.png" />
-            <animationphase image="story_tiny_climbing_up_squirrel_02.png" />
-            <animationphase image="story_tiny_climbing_up_squirrel_03.png" />
-            <animationphase image="story_tiny_climbing_up_squirrel_04.png" />
-        </animation>
-    </animations>
 </scene>
-<scene id="yard12" endstack="true">
+<scene id="yard12">
     <image path="story_page_29e.jpg" x="0" y="20" w="1024" h="748" />
     <next id="tree01" />
 </scene>
@@ -289,9 +267,9 @@
 </scene>
 <scene id="tree03">
     <image path="story_page_32.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="tree03" />
+    <next id="tree04" />
 </scene>
-<scene id="tree04" endstack="true">
+<scene id="tree04">
     <image path="story_page_33.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard13" />
 </scene>
@@ -300,30 +278,24 @@
 <!-- Back on the yard again, Tiny climbs down and goes away -->
 <scene id="yard13">
     <image path="story_page_34_plain.jpg" x="0" y="20" w="1024" h="748" />
+    <!-- Tiny climbing down from the tree -->
+    <image x="504" y="301" w="152" h="272" duration="1.5" repeat="1">
+        <animation>story_tiny_climbing_down_01.png</animation>
+        <animation>story_tiny_climbing_down_02.png</animation>
+        <animation>story_tiny_climbing_down_03.png</animation>
+        <animation>story_tiny_climbing_down_04.png</animation>
+        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
+    </image>
+    <!-- Tiny walks away from the tree -->
+    <image x="700" y="382" w="164" h="218" duration="1.5" repeat="1">
+        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
+        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
+        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
+        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
+        <animation>story_tiny_climbing_down_walk_04.png</animation>
+    </image>
+    <image x="549" y="46" w="257" h="348" path="story_tiny_climbing_down_tree.png" />
     <next id="yard14" />
-    <!-- animation with Tiny climbing up. Watch out for the order since they are actually layers! -->
-    <animations>
-        <!-- Tiny climbing down from the tree -->
-        <animation id="tiny_climbing_down" x="504" y="301" w="152" h="272" duration="1.5" repeat="1">
-            <animationphase image="story_tiny_climbing_down_01.png" />
-            <animationphase image="story_tiny_climbing_down_02.png" />
-            <animationphase image="story_tiny_climbing_down_03.png" />
-            <animationphase image="story_tiny_climbing_down_04.png" />
-            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
-        </animation>
-        <!-- Tiny walks away from the tree -->
-        <animation id="tiny_climbing_down_walk" x="700" y="382" w="164" h="218" duration="1.5" repeat="1">
-            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
-            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
-            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
-            <animationphase image="story_tiny_climbing_down_walk_01-03.png" />
-            <animationphase image="story_tiny_climbing_down_walk_04.png" />
-        </animation>
-        <!-- This is not a real animation but a static image. Put here to pretend layers -->
-        <animation id="tiny_climbing_down_tree" x="549" y="46" w="257" h="348" duration="1" repeat="1">
-            <animationphase image="story_tiny_climbing_down_tree.png" />
-        </animation>
-    </animations>
 </scene>
 <scene id="yard14">
     <image path="story_page_34e.jpg" x="0" y="20" w="1024" h="748" />
@@ -331,17 +303,15 @@
 </scene>
 <scene id="yard15">
     <image path="story_page_35_plain.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="yard16" />
-    <animations>
-        <!-- Bunny reaches out for the newspapers -->
-        <animation id="bunny_reach_out" x="341" y="314" w="372" h="248" duration="1.6" repeat="1">
-            <animationphase image="story_bunny_reaching_00.png" />
-            <animationphase image="story_bunny_reaching_01.png" />
-        </animation>
-    </animations>
+    <!-- Bunny reaches out for the newspapers -->
+    <image x="341" y="314" w="372" h="248" duration="1.6" repeat="1">
+        <animation>story_bunny_reaching_00.png</animation>
+        <animation>story_bunny_reaching_01.png</animation>
+    </image>
+<next id="yard16" />
 </scene>
 <!-- Selection scene to go into Bunny's house or skip -->
-<scene id="yard16" endstack="true" end="true">
+<scene id="yard16">
     <image path="story_page_35c.jpg" x="0" y="20" w="1024" h="748" />
     <link id="bunny01" x="588" y="269" w="159" h="128" />
     <link id="yard17" x="336" y="392" w="137" h="107" />
@@ -369,7 +339,7 @@
     <image path="story_page_40_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="bunny06" />
 </scene>
-<scene id="bunny06" endstack="true">
+<scene id="bunny06">
     <image path="story_page_41_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard17" />
 </scene>
@@ -384,19 +354,18 @@
     <image path="story_page_43.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard19" />
 </scene>
-<scene id="yard19" endstack="true" end="true" hideskip="true">
+<scene id="yard19" hideskip="true">
     <image path="story_page_44.jpg" x="0" y="20" w="1024" h="748" />
-    <animations>
-        <!-- Glow around the bowl -->
-        <animation id="home_bowl_glow" x="92" y="279" w="388" h="318" duration="2" repeat="0">
-            <animationphase image="spacer.png" />
-            <animationphase image="home_bowl_glow_01.png" />
-        </animation>
-        <animation id="home_tap_bowl" x="460" y="67" w="477" h="122" duration="2" repeat="1">
-            <animationphase image="spacer.png" />
-            <animationphase image="home_tap_bowl_01.png" />
-        </animation>
-    </animations>
+    <!-- Glow around the bowl -->
+    <image x="92" y="279" w="388" h="318" duration="2" repeat="0">
+        <animation>spacer.png</animation>
+        <animation>home_bowl_glow_01.png</animation>
+    </image>
+    <!-- "Tap the bowl post" appears with some delay -->
+    <image x="460" y="67" w="477" h="122" duration="2" repeat="1">
+        <animation>spacer.png</animation>
+        <animation>home_tap_bowl_01.png</animation>
+    </image>
     <!-- Tapping the bowl takes directly to photo screen. Mind the attribute "segue" replacing "id" -->
     <link segue="toPhotoView" x="130" y="355" w="265" h="105" />
 </scene>

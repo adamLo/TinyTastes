@@ -20,6 +20,11 @@ extern NSString* const kStoryDictionaryKeyNext; /** Key to next in story diction
 extern NSString* const kStoryDictionaryKeyLink; /** Key to link in story dictionary */
 extern NSString* const kStoryDictionaryKeySound; /** Key to sound in story dictionary */
 extern NSString* const kStoryDictionaryKeyType; /** Key to type in story dictionary */
+extern NSString* const kStoryDictionaryKeyAnimation; /** Key to animation in story dictionary */
+extern NSString* const kStoryDictionaryKeyDuration; /** Key to duration in story dictionary */
+extern NSString* const kStoryDictionaryKeyRepeat; /** Key to repeat in story dictionary */
+extern NSString* const kStoryDictionaryKeySegue; /** Key to segue in story dictionary */
+extern NSString* const kStoryDictionaryKeyTitle; /** Key to title in story dictionary */
 
 /**
  *  Reimplemented new Story Book main controller that displays the story book as a PageViewControler. Each page in the book is a single view controller.
