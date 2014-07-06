@@ -92,29 +92,6 @@
             </objects>
             <point key="canvasLocation" x="-3345" y="-3403"/>
         </scene>
-        <!--Story View Controller-->
-        <scene sceneID="Rxp-xa-s1u">
-            <objects>
-                <viewController id="1iE-zo-HXc" customClass="StoryViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mZG-Xi-2lH"/>
-                        <viewControllerLayoutGuide type="bottom" id="uss-sX-EAo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E42-HO-brt">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <segue destination="t2j-Jj-fJN" kind="push" identifier="toPhotoView" id="fZK-si-7Zi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZpT-V1-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-969" y="-4400"/>
-        </scene>
         <!--Story Page View Controller-->
         <scene sceneID="5X5-4B-mJf">
             <objects>
@@ -128,7 +105,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guV-xX-gMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="-4400"/>
+            <point key="canvasLocation" x="-2008" y="-3482"/>
         </scene>
         <!--Add Meal Notification View Controller-->
         <scene sceneID="ZxS-Sw-rK8">
@@ -740,62 +717,6 @@ photo</string>
             </objects>
             <point key="canvasLocation" x="-816" y="-3395"/>
         </scene>
-        <!--Story Data View Controller-->
-        <scene sceneID="0wC-ax-qQz">
-            <objects>
-                <viewController storyboardIdentifier="StoryDataViewController" id="LZw-xn-LmE" customClass="StoryDataViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5jz-cd-8eL"/>
-                        <viewControllerLayoutGuide type="bottom" id="afx-bp-SCj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="h5b-jF-pZe">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xp-ft-7vo" userLabel="Home Button">
-                                <rect key="frame" x="12" y="16" width="135" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button_home.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="homeButtonPressed:" destination="LZw-xn-LmE" eventType="touchUpInside" id="9tf-S4-bvn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-S2-had" userLabel="Skip to eat Button">
-                                <rect key="frame" x="838" y="16" width="152" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" image="button_skip-to-eat.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="t2j-Jj-fJN" kind="push" identifier="toPhotoView" id="h34-Ks-joT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33a-Ja-PTi" userLabel="Toggle mute Button">
-                                <rect key="frame" x="838" y="565" width="104" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="button_sound-off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="backButton" destination="3xp-ft-7vo" id="cGx-h7-xrT"/>
-                        <outlet property="narrationButton" destination="33a-Ja-PTi" id="smj-ma-csd"/>
-                        <outlet property="skipButton" destination="Z3K-S2-had" id="lYk-yk-8ok"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xY6-aO-nc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2157" y="-3395"/>
-        </scene>
         <!--Eat View Controller-->
         <scene sceneID="G7I-S7-He1">
             <objects>
@@ -926,7 +847,7 @@ photo</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenpeas_cutout.png" translatesAutoresizingMaskIntoConstraints="NO" id="KaI-6W-ZtJ" userLabel="Image View - Food">
-                                <rect key="frame" x="326" y="328" width="473" height="453"/>
+                                <rect key="frame" x="326" y="328" width="473" height="454"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disappearing-food_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-oD-swI" userLabel="Image View - Disappearing food">
@@ -1580,8 +1501,6 @@ Do You Want For...</string>
         <image name="button_pause.png" width="197" height="65"/>
         <image name="button_play.png" width="197" height="65"/>
         <image name="button_save.png" width="101" height="70"/>
-        <image name="button_skip-to-eat.png" width="152" height="107"/>
-        <image name="button_sound-off.png" width="104" height="98"/>
         <image name="button_start.png" width="215" height="74"/>
         <image name="camera.png" width="468" height="379"/>
         <image name="cloud_button.png" width="284" height="142"/>

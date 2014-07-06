@@ -48,6 +48,8 @@ NSString* const kStoryDictionaryKeyDuration = @"duration";
 NSString* const kStoryDictionaryKeyRepeat = @"repeat";
 NSString* const kStoryDictionaryKeySegue = @"segue";
 NSString* const kStoryDictionaryKeyTitle = @"title";
+NSString* const kStoryDictionaryKeyPrev = @"prev";
+NSString* const kStoryDictionaryKeyHideSkip = @"hideskip";
 
 //Class-level constants
 CGFloat const kStoryBookmarkHeightHidden = 30; //Bookmark height when not displayed
@@ -73,7 +75,7 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     self.delegate = self;
     
     //Set background
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    self.view.backgroundColor = [UIColor colorWithRed:89/255.0 green:88/255.0 blue:89/255.0 alpha:1.0];
     
     //Init cache
     pageControllerCache = [[NSMutableDictionary alloc] init];
@@ -130,6 +132,8 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    [pageControllerCache removeAllObjects];
 }
 
 /*
@@ -210,9 +214,11 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     StoryPageController *controller = [self controllerForSceneID:sceneId];
     if (controller) {
         
+        //Create weak pointers to the objects so they won't cause retain cycle
+        __block __weak id _self = self;
+        __block __weak UIButton *_narrationButton = narrationButton;
+        __block __weak UIButton *_skipButton = skipButton;
         //Load page
-        __weak id _self = self;
-        __weak UIButton *_narrationButton = narrationButton;
         [self setViewControllers:@[controller] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
             
             if (finished) {
@@ -221,6 +227,9 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
                 
                 //Toggle narration button
                 [_narrationButton setHidden:![[controller.pageData objectForKey:kStoryDictionaryKeyTitle] boolValue]];
+                
+                //Toggle skip button
+                [_skipButton setHidden:[[controller.pageData objectForKey:kStoryDictionaryKeyHideSkip] boolValue]];
             }
             
         }];
@@ -241,33 +250,37 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
 - (UIViewController*)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
 
     //Get current scene id
-    NSString *currentSceneId = [[(StoryPageController*)viewController pageData] objectForKey:kStoryDictionaryKeyID];
+    NSDictionary *pageData = [(StoryPageController*)viewController pageData];
+    NSString *currentSceneId = [pageData objectForKey:kStoryDictionaryKeyID];
     
     //Find previous scene id
-    NSString *prevSceneId;
-    for (NSDictionary *pageData in [storyBook objectForKey:kStoryDictionaryKeyScene]) {
-        NSDictionary *next = [pageData objectForKey:kStoryDictionaryKeyNext];
-        if ([[next objectForKey:kStoryDictionaryKeyID] isEqualToString:currentSceneId]) {
-            //We got previous page
-            prevSceneId = [pageData objectForKey:kStoryDictionaryKeyID];
-            break;
-        }
-        
-        if ([[pageData objectForKey:kStoryDictionaryKeyLink] isKindOfClass:[NSDictionary class]]) {
-            //One link only
-            if ([[[pageData objectForKey:kStoryDictionaryKeyLink] objectForKey:kStoryDictionaryKeyID] isEqualToString:currentSceneId]) {
-                //Got the link
+    NSString *prevSceneId = [[pageData objectForKey:kStoryDictionaryKeyPrev] objectForKey:kStoryDictionaryKeyID];
+    //We don't have an explicit previous scene id
+    if (!prevSceneId) {
+        for (NSDictionary *pageData in [storyBook objectForKey:kStoryDictionaryKeyScene]) {
+            NSDictionary *next = [pageData objectForKey:kStoryDictionaryKeyNext];
+            if ([[next objectForKey:kStoryDictionaryKeyID] isEqualToString:currentSceneId]) {
+                //We got previous page
                 prevSceneId = [pageData objectForKey:kStoryDictionaryKeyID];
                 break;
             }
-        }
-        else if ([[pageData objectForKey:kStoryDictionaryKeyLink] isKindOfClass:[NSArray class]]) {
-            //Search over links
-            for (NSDictionary *linkDict in [pageData objectForKey:kStoryDictionaryKeyLink]) {
-                if ([[linkDict objectForKey:kStoryDictionaryKeyID] isEqualToString:currentSceneId]) {
+            
+            if ([[pageData objectForKey:kStoryDictionaryKeyLink] isKindOfClass:[NSDictionary class]]) {
+                //One link only
+                if ([[[pageData objectForKey:kStoryDictionaryKeyLink] objectForKey:kStoryDictionaryKeyID] isEqualToString:currentSceneId]) {
                     //Got the link
                     prevSceneId = [pageData objectForKey:kStoryDictionaryKeyID];
                     break;
+                }
+            }
+            else if ([[pageData objectForKey:kStoryDictionaryKeyLink] isKindOfClass:[NSArray class]]) {
+                //Search over links
+                for (NSDictionary *linkDict in [pageData objectForKey:kStoryDictionaryKeyLink]) {
+                    if ([[linkDict objectForKey:kStoryDictionaryKeyID] isEqualToString:currentSceneId]) {
+                        //Got the link
+                        prevSceneId = [pageData objectForKey:kStoryDictionaryKeyID];
+                        break;
+                    }
                 }
             }
         }
@@ -321,7 +334,12 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
             //Hide otherwise
             narrationButton.hidden = YES;
         }
+        
+        //Set bookmark
         [self setupBookmark];
+        
+        //Toggle skip button
+        [skipButton setHidden:[[controller.pageData objectForKey:kStoryDictionaryKeyHideSkip] boolValue]];
     }
     else {
         if (![[controller.pageData objectForKey:kStoryDictionaryKeyTitle] boolValue]) {

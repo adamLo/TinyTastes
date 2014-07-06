@@ -141,7 +141,7 @@
         <animation>story_tiny_fish_02.png</animation>
     </image>
     <image path="story_tiny_fish_plant.png" x="676" y="103" w="128" h="405" />
-    <next id="yard04a" />
+    <next id="yard04" />
 </scene>
 <!-- Fish fork end -->
 
@@ -193,18 +193,15 @@
 </scene>
 <scene id="frog06">
     <image path="story_page_20_frog.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="yard04b" />
+    <next id="yard04" />
 </scene>
 <!-- Froggy fork end -->
 
 <!-- Back to yard scenes -->
-<scene id="yard04a">
+<scene id="yard04">
     <image path="story_page_22.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard05" />
-</scene>
-<scene id="yard04b">
-    <image path="story_page_22.jpg" x="0" y="20" w="1024" h="748" />
-    <next id="yard05" />
+    <prev id="yard03" />
 </scene>
 <scene id="yard05">
     <image path="story_page_23.jpg" x="0" y="20" w="1024" h="748" />
@@ -349,6 +346,7 @@
 <scene id="yard17">
     <image path="story_page_42.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard18" />
+    <prev id="yard16" />
 </scene>
 <scene id="yard18">
     <image path="story_page_43.jpg" x="0" y="20" w="1024" h="748" />

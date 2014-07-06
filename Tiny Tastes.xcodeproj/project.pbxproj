@@ -640,12 +640,6 @@
 		EC6FD1E517EA746000EB05E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC6FD1E717EA746000EB05E9 /* Tiny_TastesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiny_TastesTests.h; sourceTree = "<group>"; };
 		EC6FD1E817EA746000EB05E9 /* Tiny_TastesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tiny_TastesTests.m; sourceTree = "<group>"; };
-		EC7124B41813430E007319C5 /* StoryDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataViewController.h; sourceTree = "<group>"; };
-		EC7124B51813430E007319C5 /* StoryDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataViewController.m; sourceTree = "<group>"; };
-		EC7124B718134358007319C5 /* StoryModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryModelController.h; sourceTree = "<group>"; };
-		EC7124B818134358007319C5 /* StoryModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModelController.m; sourceTree = "<group>"; };
-		EC7124BA181343A2007319C5 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
-		EC7124BB181343A2007319C5 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		EC7124BF18145E25007319C5 /* story.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = story.xml; sourceTree = "<group>"; };
 		EC7124C11814603F007319C5 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		EC7124C21814603F007319C5 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
@@ -959,6 +953,17 @@
 			);
 			name = XMLDictionary;
 			path = XMLDictionary/XMLDictionary;
+			sourceTree = "<group>";
+		};
+		1993A8B01969E2F500465D83 /* Story book */ = {
+			isa = PBXGroup;
+			children = (
+				1993A8A619681DB700465D83 /* StoryPageViewController.h */,
+				1993A8A719681DB700465D83 /* StoryPageViewController.m */,
+				1993A8AD19682AF000465D83 /* StoryPageController.h */,
+				1993A8AE19682AF000465D83 /* StoryPageController.m */,
+			);
+			name = "Story book";
 			sourceTree = "<group>";
 		};
 		19945466195D77B5003BAC7F /* Tiny climbing up */ = {
@@ -1349,6 +1354,7 @@
 		FDB5830B17EA8B5D004C6FA3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1993A8B01969E2F500465D83 /* Story book */,
 				FDA12066182452EC00877E20 /* CustomTimerViewController.h */,
 				FDA12067182452EC00877E20 /* CustomTimerViewController.m */,
 				FDBC9D1218188A7500861C75 /* ChooseDrinkViewController.h */,
@@ -1371,16 +1377,6 @@
 				FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */,
 				EC6FD1D217EA746000EB05E9 /* HomeViewController.h */,
 				EC6FD1D317EA746000EB05E9 /* HomeViewController.m */,
-				EC7124B41813430E007319C5 /* StoryDataViewController.h */,
-				EC7124B51813430E007319C5 /* StoryDataViewController.m */,
-				EC7124B718134358007319C5 /* StoryModelController.h */,
-				EC7124B818134358007319C5 /* StoryModelController.m */,
-				EC7124BA181343A2007319C5 /* StoryViewController.h */,
-				EC7124BB181343A2007319C5 /* StoryViewController.m */,
-				1993A8A619681DB700465D83 /* StoryPageViewController.h */,
-				1993A8A719681DB700465D83 /* StoryPageViewController.m */,
-				1993A8AD19682AF000465D83 /* StoryPageController.h */,
-				1993A8AE19682AF000465D83 /* StoryPageController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";

@@ -25,6 +25,8 @@ extern NSString* const kStoryDictionaryKeyDuration; /** Key to duration in story
 extern NSString* const kStoryDictionaryKeyRepeat; /** Key to repeat in story dictionary */
 extern NSString* const kStoryDictionaryKeySegue; /** Key to segue in story dictionary */
 extern NSString* const kStoryDictionaryKeyTitle; /** Key to title in story dictionary */
+extern NSString* const kStoryDictionaryKeyPrev; /** Key to prev in story dictionary */
+extern NSString* const kStoryDictionaryKeyHideSkip; /** Key to hideskip in story dictionary */
 
 /**
  *  Reimplemented new Story Book main controller that displays the story book as a PageViewControler. Each page in the book is a single view controller.
