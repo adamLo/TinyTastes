@@ -146,10 +146,11 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
  *  Construct an imageview from dictionary. Add animation if there's any
  *
  *  @param imageDict Dictionary describing image
+ *  @param sequence Sequence order in processing. Will be added as tag if tag property not set
  *
  *  @return Imageview
  */
-- (UIImageView*)imageViewFromDictionary:(NSDictionary*)imageDict {
+- (UIImageView*)imageViewFromDictionary:(NSDictionary*)imageDict sequence:(NSInteger)sequence {
 
     //Construct imageview
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake([[imageDict objectForKey:kStoryDictionaryKeyX] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyY]floatValue], [[imageDict objectForKey:kStoryDictionaryKeyW] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyH] floatValue])];
@@ -160,7 +161,7 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     }
     
     //Set tag, this will help layering
-    imageView.tag = [[imageDict objectForKey:kStoryDictionaryKeyTag] integerValue];
+    imageView.tag = ([imageDict objectForKey:kStoryDictionaryKeyTag] != nil) ? [[imageDict objectForKey:kStoryDictionaryKeyTag] integerValue] : sequence;
     
     //Add animations if there are
     if ([[imageDict objectForKey:kStoryDictionaryKeyAnimation] isKindOfClass:[NSArray class]]) {
@@ -198,14 +199,16 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     //Add images
     if ([[self.pageData objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSDictionary class]]) {
         //Single image
-        [self.view addSubview:[self imageViewFromDictionary:[self.pageData objectForKey:kStoryDictionaryKeyImage]]];
+        [self.view addSubview:[self imageViewFromDictionary:[self.pageData objectForKey:kStoryDictionaryKeyImage] sequence:0]];
     }
     else if ([[self.pageData objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSArray class]]) {
         //Multiple images
         
         //Add imageview
+        NSInteger sequence = 0;
         for (NSDictionary *imageDict in [self.pageData objectForKey:kStoryDictionaryKeyImage]) {
-            [self.view addSubview:[self imageViewFromDictionary:imageDict]];
+            [self.view addSubview:[self imageViewFromDictionary:imageDict sequence:sequence]];
+            sequence++;
         }
     }
     
