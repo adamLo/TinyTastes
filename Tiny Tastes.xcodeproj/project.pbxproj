@@ -144,6 +144,8 @@
 		1993A8A819681DB700465D83 /* StoryPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8A719681DB700465D83 /* StoryPageViewController.m */; };
 		1993A8AC196822C400465D83 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8AB196822C400465D83 /* XMLDictionary.m */; };
 		1993A8AF19682AF000465D83 /* StoryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8AE19682AF000465D83 /* StoryPageController.m */; };
+		1993A8B4196AA25B00465D83 /* shop_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 1993A8B2196AA25B00465D83 /* shop_large.png */; };
+		1993A8B5196AA25B00465D83 /* shop_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1993A8B3196AA25B00465D83 /* shop_large@2x.png */; };
 		1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545A195D740A003BAC7F /* story_page_29e.jpg */; };
 		19945460195D740B003BAC7F /* story_page_30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545B195D740A003BAC7F /* story_page_30.jpg */; };
 		19945461195D740B003BAC7F /* story_page_31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545C195D740A003BAC7F /* story_page_31.jpg */; };
@@ -475,6 +477,8 @@
 		1993A8AB196822C400465D83 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		1993A8AD19682AF000465D83 /* StoryPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryPageController.h; path = Story/StoryPageController.h; sourceTree = "<group>"; };
 		1993A8AE19682AF000465D83 /* StoryPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryPageController.m; path = Story/StoryPageController.m; sourceTree = "<group>"; };
+		1993A8B2196AA25B00465D83 /* shop_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shop_large.png; sourceTree = "<group>"; };
+		1993A8B3196AA25B00465D83 /* shop_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_large@2x.png"; sourceTree = "<group>"; };
 		1994545A195D740A003BAC7F /* story_page_29e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_29e.jpg; path = "Tiny Tastes/Images/Story/story_page_29e.jpg"; sourceTree = "<group>"; };
 		1994545B195D740A003BAC7F /* story_page_30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_30.jpg; path = "Tiny Tastes/Images/Story/story_page_30.jpg"; sourceTree = "<group>"; };
 		1994545C195D740A003BAC7F /* story_page_31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_31.jpg; path = "Tiny Tastes/Images/Story/story_page_31.jpg"; sourceTree = "<group>"; };
@@ -966,6 +970,16 @@
 			name = "Story book";
 			sourceTree = "<group>";
 		};
+		1993A8B1196AA25B00465D83 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				1993A8B2196AA25B00465D83 /* shop_large.png */,
+				1993A8B3196AA25B00465D83 /* shop_large@2x.png */,
+			);
+			name = Shop;
+			path = Images/Shop;
+			sourceTree = "<group>";
+		};
 		19945466195D77B5003BAC7F /* Tiny climbing up */ = {
 			isa = PBXGroup;
 			children = (
@@ -1125,8 +1139,7 @@
 				19FE7D351962DAE80074A32F /* store_background_jingle.mp3 */,
 				19FE7D361962DAE80074A32F /* Story sounds */,
 			);
-			name = Sounds;
-			path = "Tiny Tastes/Sounds";
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		19FE7D251962DAE80074A32F /* Eating and drinking */ = {
@@ -1190,8 +1203,6 @@
 			isa = PBXGroup;
 			children = (
 				191401CD1958D0D8008F40C4 /* Third Party */,
-				19FE7D241962DAE80074A32F /* Sounds */,
-				FDB582FF17EA7BD0004C6FA3 /* Images */,
 				EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */,
 				EC6FD1E117EA746000EB05E9 /* Tiny TastesTests */,
 				EC6FD1B317EA746000EB05E9 /* Frameworks */,
@@ -1224,6 +1235,9 @@
 		EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */ = {
 			isa = PBXGroup;
 			children = (
+				19FE7D241962DAE80074A32F /* Sounds */,
+				FDB582FF17EA7BD0004C6FA3 /* Images */,
+				1993A8B1196AA25B00465D83 /* Shop */,
 				19FE7D7B19633F700074A32F /* Categories */,
 				FDB5830B17EA8B5D004C6FA3 /* View Controllers */,
 				EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */,
@@ -1349,6 +1363,7 @@
 				FD70731318303865003BFC29 /* redline.jpg */,
 			);
 			name = Images;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		FDB5830B17EA8B5D004C6FA3 /* View Controllers */ = {
@@ -1552,6 +1567,7 @@
 				19120D5B195C2EAE001302FF /* story_page_01.jpg in Resources */,
 				1920F24D1961B8140094FAA3 /* drinking_glass_2@2x.png in Resources */,
 				19CF680219655F9B00C70E39 /* story_page_44.jpg in Resources */,
+				1993A8B4196AA25B00465D83 /* shop_large.png in Resources */,
 				19FE7D601962DAE80074A32F /* story_sound_p08.m4a in Resources */,
 				19CF67E919654E8700C70E39 /* story_bunny_reaching_01.png in Resources */,
 				19945483195DA29C003BAC7F /* story_page_34_plain.jpg in Resources */,
@@ -1686,6 +1702,7 @@
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				19FE7CF51962B52A0074A32F /* disappearing-food_01.png in Resources */,
 				19120DA1195C6DDB001302FF /* pond_bubble_08.png in Resources */,
+				1993A8B5196AA25B00465D83 /* shop_large@2x.png in Resources */,
 				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
 				1920F2581961B8140094FAA3 /* drinking_sippy_2.png in Resources */,
 				19FE7D6A1962DAE80074A32F /* story_sound_p18.m4a in Resources */,
