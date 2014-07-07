@@ -50,6 +50,7 @@ NSString* const kStoryDictionaryKeySegue = @"segue";
 NSString* const kStoryDictionaryKeyTitle = @"title";
 NSString* const kStoryDictionaryKeyPrev = @"prev";
 NSString* const kStoryDictionaryKeyHideSkip = @"hideskip";
+NSString* const kStoryDictionaryKeyTag = @"tag";
 
 //Class-level constants
 CGFloat const kStoryBookmarkHeightHidden = 30; //Bookmark height when not displayed

@@ -159,6 +159,9 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
         imageView.image = [UIImage imageNamed:[imageDict objectForKey:kStoryDictionaryKeyPath]];
     }
     
+    //Set tag, this will help layering
+    imageView.tag = [[imageDict objectForKey:kStoryDictionaryKeyTag] integerValue];
+    
     //Add animations if there are
     if ([[imageDict objectForKey:kStoryDictionaryKeyAnimation] isKindOfClass:[NSArray class]]) {
         //We have animation images
@@ -198,8 +201,10 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
         [self.view addSubview:[self imageViewFromDictionary:[self.pageData objectForKey:kStoryDictionaryKeyImage]]];
     }
     else if ([[self.pageData objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSArray class]]) {
+        //Multiple images
+        
+        //Add imageview
         for (NSDictionary *imageDict in [self.pageData objectForKey:kStoryDictionaryKeyImage]) {
-            //Multiple images
             [self.view addSubview:[self imageViewFromDictionary:imageDict]];
         }
     }
