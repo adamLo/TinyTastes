@@ -192,20 +192,22 @@
 }
 
 - (IBAction)cameraOverlayTapped:(id)sender {
-#ifdef DEBUG
-    //Hide camera overlay
-    self.cameraOverlayView.hidden = YES;
-    
-    //Add a sample photo when running on simulator
-    chosenImage = [UIImage imageNamed:@"greenpeas.jpg"];
-    [self processImage];
-#else
-    //Capture photo
-    [self captureNow];
-    
-    //Hide camera overlay
-    self.cameraOverlayView.hidden = YES;
-#endif
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        //Capture photo
+        [self captureNow];
+        
+        //Hide camera overlay
+        self.cameraOverlayView.hidden = YES;
+    }
+    else {
+        //Hide camera overlay
+        self.cameraOverlayView.hidden = YES;
+        
+        //Add a sample photo when running on simulator
+        chosenImage = [UIImage imageNamed:@"greenpeas.jpg"];
+        [self processImage];
+        
+    }
 }
 
 - (void)captureNow {
