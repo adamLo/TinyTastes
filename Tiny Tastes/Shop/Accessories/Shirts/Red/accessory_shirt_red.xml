@@ -1,0 +1,9 @@
+<accessory 
+	type="shirt" 
+	color="white" 
+	price="3" 
+	storeimage="accessory_shirt_red_store.png">
+	<description>
+		This is a red shirt that Tiny can wear during his adventures
+	</description>
+</accessory>

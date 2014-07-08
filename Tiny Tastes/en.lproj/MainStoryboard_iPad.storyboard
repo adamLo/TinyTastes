@@ -1202,15 +1202,31 @@ photo</string>
                                     <inset key="sectionInset" minX="140" minY="0.0" maxX="140" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QBr-cH-Kx8">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shopItemCell" id="QBr-cH-Kx8" customClass="ShopItemCell">
                                         <rect key="frame" x="140" y="0.0" width="740" height="495"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="740" height="495"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_shirt_blue_store.png" id="CLf-pE-5Ph" userLabel="Item image">
+                                                    <rect key="frame" x="10" y="0.0" width="720" height="300"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zrn-K0-5Gr" userLabel="Item details">
+                                                    <rect key="frame" x="170" y="310" width="400" height="185"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="itemDetailsLabel" destination="zrn-K0-5Gr" id="ApK-cM-GEo"/>
+                                            <outlet property="itemImageView" destination="CLf-pE-5Ph" id="bep-sv-OBQ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -1547,6 +1563,7 @@ Do You Want For...</string>
         </scene>
     </scenes>
     <resources>
+        <image name="accessory_shirt_blue_store.png" width="642" height="600"/>
         <image name="bottle.png" width="102" height="230"/>
         <image name="button_back.png" width="135" height="95"/>
         <image name="button_home.png" width="135" height="95"/>

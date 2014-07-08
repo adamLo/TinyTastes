@@ -18,6 +18,19 @@
 		1902BBE3196BF4A400E88F84 /* home_tiny_button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBDF196BF4A400E88F84 /* home_tiny_button_bg@2x.png */; };
 		1902BBE4196BF4A400E88F84 /* homescreen_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBE0196BF4A400E88F84 /* homescreen_bg.png */; };
 		1902BBE5196BF4A400E88F84 /* homescreen_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBE1196BF4A400E88F84 /* homescreen_bg@2x.png */; };
+		1902BC14196C1DC300E88F84 /* accessory_shirt_blue.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC03196C1DC300E88F84 /* accessory_shirt_blue.xml */; };
+		1902BC15196C1DC300E88F84 /* accessory_shirt_blue_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC04196C1DC300E88F84 /* accessory_shirt_blue_store.png */; };
+		1902BC16196C1DC300E88F84 /* accessory_shirt_green.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC06196C1DC300E88F84 /* accessory_shirt_green.xml */; };
+		1902BC17196C1DC300E88F84 /* accessory_shirt_green_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC07196C1DC300E88F84 /* accessory_shirt_green_store.png */; };
+		1902BC18196C1DC300E88F84 /* accessory_shirt_orange.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC09196C1DC300E88F84 /* accessory_shirt_orange.xml */; };
+		1902BC19196C1DC300E88F84 /* accessory_shirt_orange_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC0A196C1DC300E88F84 /* accessory_shirt_orange_store.png */; };
+		1902BC1A196C1DC300E88F84 /* accessory_shirt_pink.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC0C196C1DC300E88F84 /* accessory_shirt_pink.xml */; };
+		1902BC1B196C1DC300E88F84 /* accessory_shirt_pink_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC0D196C1DC300E88F84 /* accessory_shirt_pink_store.png */; };
+		1902BC1C196C1DC300E88F84 /* accessory_shirt_red.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC0F196C1DC300E88F84 /* accessory_shirt_red.xml */; };
+		1902BC1D196C1DC300E88F84 /* accessory_shirt_red_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC10196C1DC300E88F84 /* accessory_shirt_red_store.png */; };
+		1902BC1E196C1DC300E88F84 /* accessory_shirt_white.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC12196C1DC300E88F84 /* accessory_shirt_white.xml */; };
+		1902BC1F196C1DC300E88F84 /* accessory_shirt_white_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC13196C1DC300E88F84 /* accessory_shirt_white_store.png */; };
+		1902BC22196C1E1C00E88F84 /* ShopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC21196C1E1C00E88F84 /* ShopItemCell.m */; };
 		19120D55195B623E001302FF /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D53195B623E001302FF /* bookmark.png */; };
 		19120D56195B623E001302FF /* bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D54195B623E001302FF /* bookmark@2x.png */; };
 		19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19120D58195B8E1D001302FF /* UIImage+Rotate.m */; };
@@ -155,8 +168,6 @@
 		1993A8A819681DB700465D83 /* StoryPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8A719681DB700465D83 /* StoryPageViewController.m */; };
 		1993A8AC196822C400465D83 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8AB196822C400465D83 /* XMLDictionary.m */; };
 		1993A8AF19682AF000465D83 /* StoryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993A8AE19682AF000465D83 /* StoryPageController.m */; };
-		1993A8B4196AA25B00465D83 /* shop_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 1993A8B2196AA25B00465D83 /* shop_large.png */; };
-		1993A8B5196AA25B00465D83 /* shop_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1993A8B3196AA25B00465D83 /* shop_large@2x.png */; };
 		1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545A195D740A003BAC7F /* story_page_29e.jpg */; };
 		19945460195D740B003BAC7F /* story_page_30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545B195D740A003BAC7F /* story_page_30.jpg */; };
 		19945461195D740B003BAC7F /* story_page_31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1994545C195D740A003BAC7F /* story_page_31.jpg */; };
@@ -354,6 +365,20 @@
 		1902BBDF196BF4A400E88F84 /* home_tiny_button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_button_bg@2x.png"; sourceTree = "<group>"; };
 		1902BBE0196BF4A400E88F84 /* homescreen_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen_bg.png; sourceTree = "<group>"; };
 		1902BBE1196BF4A400E88F84 /* homescreen_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homescreen_bg@2x.png"; sourceTree = "<group>"; };
+		1902BC03196C1DC300E88F84 /* accessory_shirt_blue.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessory_shirt_blue.xml; sourceTree = "<group>"; };
+		1902BC04196C1DC300E88F84 /* accessory_shirt_blue_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_shirt_blue_store.png; sourceTree = "<group>"; };
+		1902BC06196C1DC300E88F84 /* accessory_shirt_green.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessory_shirt_green.xml; sourceTree = "<group>"; };
+		1902BC07196C1DC300E88F84 /* accessory_shirt_green_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_shirt_green_store.png; sourceTree = "<group>"; };
+		1902BC09196C1DC300E88F84 /* accessory_shirt_orange.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessory_shirt_orange.xml; sourceTree = "<group>"; };
+		1902BC0A196C1DC300E88F84 /* accessory_shirt_orange_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_shirt_orange_store.png; sourceTree = "<group>"; };
+		1902BC0C196C1DC300E88F84 /* accessory_shirt_pink.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessory_shirt_pink.xml; sourceTree = "<group>"; };
+		1902BC0D196C1DC300E88F84 /* accessory_shirt_pink_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_shirt_pink_store.png; sourceTree = "<group>"; };
+		1902BC0F196C1DC300E88F84 /* accessory_shirt_red.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessory_shirt_red.xml; sourceTree = "<group>"; };
+		1902BC10196C1DC300E88F84 /* accessory_shirt_red_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_shirt_red_store.png; sourceTree = "<group>"; };
+		1902BC12196C1DC300E88F84 /* accessory_shirt_white.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessory_shirt_white.xml; sourceTree = "<group>"; };
+		1902BC13196C1DC300E88F84 /* accessory_shirt_white_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_shirt_white_store.png; sourceTree = "<group>"; };
+		1902BC20196C1E1C00E88F84 /* ShopItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopItemCell.h; path = Shop/ShopItemCell.h; sourceTree = "<group>"; };
+		1902BC21196C1E1C00E88F84 /* ShopItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopItemCell.m; path = Shop/ShopItemCell.m; sourceTree = "<group>"; };
 		19120D53195B623E001302FF /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "Tiny Tastes/Images/Story/bookmark.png"; sourceTree = "<group>"; };
 		19120D54195B623E001302FF /* bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmark@2x.png"; path = "Tiny Tastes/Images/Story/bookmark@2x.png"; sourceTree = "<group>"; };
 		19120D57195B8E1D001302FF /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotate.h"; path = "Categories/UIImage+Rotate.h"; sourceTree = "<group>"; };
@@ -498,8 +523,6 @@
 		1993A8AB196822C400465D83 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		1993A8AD19682AF000465D83 /* StoryPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryPageController.h; path = Story/StoryPageController.h; sourceTree = "<group>"; };
 		1993A8AE19682AF000465D83 /* StoryPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryPageController.m; path = Story/StoryPageController.m; sourceTree = "<group>"; };
-		1993A8B2196AA25B00465D83 /* shop_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shop_large.png; sourceTree = "<group>"; };
-		1993A8B3196AA25B00465D83 /* shop_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_large@2x.png"; sourceTree = "<group>"; };
 		1994545A195D740A003BAC7F /* story_page_29e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_29e.jpg; path = "Tiny Tastes/Images/Story/story_page_29e.jpg"; sourceTree = "<group>"; };
 		1994545B195D740A003BAC7F /* story_page_30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_30.jpg; path = "Tiny Tastes/Images/Story/story_page_30.jpg"; sourceTree = "<group>"; };
 		1994545C195D740A003BAC7F /* story_page_31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = story_page_31.jpg; path = "Tiny Tastes/Images/Story/story_page_31.jpg"; sourceTree = "<group>"; };
@@ -726,8 +749,93 @@
 			children = (
 				1902BBD3196B351400E88F84 /* ShopInteriorViewController.h */,
 				1902BBD4196B351400E88F84 /* ShopInteriorViewController.m */,
+				1902BC20196C1E1C00E88F84 /* ShopItemCell.h */,
+				1902BC21196C1E1C00E88F84 /* ShopItemCell.m */,
 			);
 			name = Shop;
+			sourceTree = "<group>";
+		};
+		1902BBE6196C1ACE00E88F84 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC00196C1DC300E88F84 /* Accessories */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		1902BC00196C1DC300E88F84 /* Accessories */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC01196C1DC300E88F84 /* Shirts */,
+			);
+			path = Accessories;
+			sourceTree = "<group>";
+		};
+		1902BC01196C1DC300E88F84 /* Shirts */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC02196C1DC300E88F84 /* Blue */,
+				1902BC05196C1DC300E88F84 /* Green */,
+				1902BC08196C1DC300E88F84 /* Orange */,
+				1902BC0B196C1DC300E88F84 /* Pink */,
+				1902BC0E196C1DC300E88F84 /* Red */,
+				1902BC11196C1DC300E88F84 /* White */,
+			);
+			path = Shirts;
+			sourceTree = "<group>";
+		};
+		1902BC02196C1DC300E88F84 /* Blue */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC03196C1DC300E88F84 /* accessory_shirt_blue.xml */,
+				1902BC04196C1DC300E88F84 /* accessory_shirt_blue_store.png */,
+			);
+			path = Blue;
+			sourceTree = "<group>";
+		};
+		1902BC05196C1DC300E88F84 /* Green */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC06196C1DC300E88F84 /* accessory_shirt_green.xml */,
+				1902BC07196C1DC300E88F84 /* accessory_shirt_green_store.png */,
+			);
+			path = Green;
+			sourceTree = "<group>";
+		};
+		1902BC08196C1DC300E88F84 /* Orange */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC09196C1DC300E88F84 /* accessory_shirt_orange.xml */,
+				1902BC0A196C1DC300E88F84 /* accessory_shirt_orange_store.png */,
+			);
+			path = Orange;
+			sourceTree = "<group>";
+		};
+		1902BC0B196C1DC300E88F84 /* Pink */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC0C196C1DC300E88F84 /* accessory_shirt_pink.xml */,
+				1902BC0D196C1DC300E88F84 /* accessory_shirt_pink_store.png */,
+			);
+			path = Pink;
+			sourceTree = "<group>";
+		};
+		1902BC0E196C1DC300E88F84 /* Red */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC0F196C1DC300E88F84 /* accessory_shirt_red.xml */,
+				1902BC10196C1DC300E88F84 /* accessory_shirt_red_store.png */,
+			);
+			path = Red;
+			sourceTree = "<group>";
+		};
+		1902BC11196C1DC300E88F84 /* White */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC12196C1DC300E88F84 /* accessory_shirt_white.xml */,
+				1902BC13196C1DC300E88F84 /* accessory_shirt_white_store.png */,
+			);
+			path = White;
 			sourceTree = "<group>";
 		};
 		19120D5E195C328A001302FF /* Pond Animations */ = {
@@ -1008,16 +1116,6 @@
 			name = "Story book";
 			sourceTree = "<group>";
 		};
-		1993A8B1196AA25B00465D83 /* Shop */ = {
-			isa = PBXGroup;
-			children = (
-				1993A8B2196AA25B00465D83 /* shop_large.png */,
-				1993A8B3196AA25B00465D83 /* shop_large@2x.png */,
-			);
-			name = Shop;
-			path = Images/Shop;
-			sourceTree = "<group>";
-		};
 		19945466195D77B5003BAC7F /* Tiny climbing up */ = {
 			isa = PBXGroup;
 			children = (
@@ -1273,9 +1371,9 @@
 		EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */ = {
 			isa = PBXGroup;
 			children = (
+				1902BBE6196C1ACE00E88F84 /* Shop */,
 				19FE7D241962DAE80074A32F /* Sounds */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
-				1993A8B1196AA25B00465D83 /* Shop */,
 				19FE7D7B19633F700074A32F /* Categories */,
 				FDB5830B17EA8B5D004C6FA3 /* View Controllers */,
 				EC6FD1CF17EA746000EB05E9 /* MainStoryboard_iPad.storyboard */,
@@ -1536,6 +1634,7 @@
 				1920F2591961B8140094FAA3 /* drinking_sippy_2@2x.png in Resources */,
 				19945463195D740B003BAC7F /* story_page_33.jpg in Resources */,
 				19FE7D111962C66F0074A32F /* disappearing-food_06.png in Resources */,
+				1902BC18196C1DC300E88F84 /* accessory_shirt_orange.xml in Resources */,
 				1920F204196194F20094FAA3 /* home_tiny_03.png in Resources */,
 				199454B0195DBA01003BAC7F /* button_save@2x.png in Resources */,
 				EC6FD1C717EA746000EB05E9 /* Default.png in Resources */,
@@ -1559,14 +1658,17 @@
 				19945494195DB1F0003BAC7F /* button_back@2x.png in Resources */,
 				1920F1FE196194F20094FAA3 /* home_tiny_00.png in Resources */,
 				199454A8195DB7D0003BAC7F /* button_sound-on@2x.png in Resources */,
+				1902BC19196C1DC300E88F84 /* accessory_shirt_orange_store.png in Resources */,
 				19FE7D101962C66F0074A32F /* disappearing-food_05@2x.png in Resources */,
 				19CF67EF196552A500C70E39 /* story_page_36_bunny.jpg in Resources */,
 				19945498195DB350003BAC7F /* button_home@2x.png in Resources */,
+				1902BC14196C1DC300E88F84 /* accessory_shirt_blue.xml in Resources */,
 				19FE7CF61962B52A0074A32F /* disappearing-food_01@2x.png in Resources */,
 				19FE7D691962DAE80074A32F /* story_sound_p17.m4a in Resources */,
 				1920F21619619B800094FAA3 /* money_bag.png in Resources */,
 				1920F24E1961B8140094FAA3 /* drinking_juice_1.png in Resources */,
 				19945471195D999C003BAC7F /* story_tiny_climbing_up_01.png in Resources */,
+				1902BC1F196C1DC300E88F84 /* accessory_shirt_white_store.png in Resources */,
 				19120D7B195C328A001302FF /* story_page_07.jpg in Resources */,
 				19120DC3195C9B60001302FF /* story_page_17_frog.jpg in Resources */,
 				19120DB8195C887E001302FF /* story_tiny_fish_01.png in Resources */,
@@ -1608,7 +1710,6 @@
 				19120D5B195C2EAE001302FF /* story_page_01.jpg in Resources */,
 				1920F24D1961B8140094FAA3 /* drinking_glass_2@2x.png in Resources */,
 				19CF680219655F9B00C70E39 /* story_page_44.jpg in Resources */,
-				1993A8B4196AA25B00465D83 /* shop_large.png in Resources */,
 				19FE7D601962DAE80074A32F /* story_sound_p08.m4a in Resources */,
 				19CF67E919654E8700C70E39 /* story_bunny_reaching_01.png in Resources */,
 				19945483195DA29C003BAC7F /* story_page_34_plain.jpg in Resources */,
@@ -1633,6 +1734,7 @@
 				19FE7D141962C66F0074A32F /* disappearing-food_07@2x.png in Resources */,
 				199454A6195DB7D0003BAC7F /* button_sound-off@2x.png in Resources */,
 				19CF67F1196552A500C70E39 /* story_page_42.jpg in Resources */,
+				1902BC17196C1DC300E88F84 /* accessory_shirt_green_store.png in Resources */,
 				19120DC1195C9B60001302FF /* story_page_15_frog.jpg in Resources */,
 				19FE7D561962DAE80074A32F /* trying_new_things.m4a in Resources */,
 				1920F1EF19618CD70094FAA3 /* home_drink.png in Resources */,
@@ -1645,6 +1747,7 @@
 				1920F206196194F20094FAA3 /* home_tiny_04.png in Resources */,
 				19120D8E195C36F5001302FF /* pond_qmarks_06.png in Resources */,
 				1920F2491961B8140094FAA3 /* drinking_bottle_2@2x.png in Resources */,
+				1902BC1A196C1DC300E88F84 /* accessory_shirt_pink.xml in Resources */,
 				199454A5195DB7D0003BAC7F /* button_sound-off.png in Resources */,
 				EC6FD1CB17EA746000EB05E9 /* Default-568h@2x.png in Resources */,
 				19120DB7195C887E001302FF /* story_tiny_fish_00.png in Resources */,
@@ -1655,6 +1758,7 @@
 				19120DB4195C887E001302FF /* story_page_18_fish.jpg in Resources */,
 				1994548A195DA524003BAC7F /* story_tiny_climbing_down_walk_01-03.png in Resources */,
 				19120D7D195C328A001302FF /* story_page_09.jpg in Resources */,
+				1902BC1B196C1DC300E88F84 /* accessory_shirt_pink_store.png in Resources */,
 				1920F24C1961B8140094FAA3 /* drinking_glass_2.png in Resources */,
 				1902BBE5196BF4A400E88F84 /* homescreen_bg@2x.png in Resources */,
 				19FE7D761962E0530074A32F /* drink_selection_02@2x.png in Resources */,
@@ -1679,7 +1783,9 @@
 				1920F200196194F20094FAA3 /* home_tiny_01.png in Resources */,
 				19FE7D171962C66F0074A32F /* disappearing-food_09.png in Resources */,
 				19120D77195C328A001302FF /* story_page_03.jpg in Resources */,
+				1902BC1E196C1DC300E88F84 /* accessory_shirt_white.xml in Resources */,
 				19FE7D1C1962C66F0074A32F /* disappearing-food_11@2x.png in Resources */,
+				1902BC15196C1DC300E88F84 /* accessory_shirt_blue_store.png in Resources */,
 				19FE7D4F1962DAE80074A32F /* eating_tried_some_feedback.m4a in Resources */,
 				19FE7D5F1962DAE80074A32F /* story_sound_p07.m4a in Resources */,
 				19120DCF195CAC49001302FF /* story_tiny_frog_jump_01.png in Resources */,
@@ -1701,6 +1807,7 @@
 				19120DDA195CB1F5001302FF /* story_tiny_frog_jump_2_01.png in Resources */,
 				19FE7D181962C66F0074A32F /* disappearing-food_09@2x.png in Resources */,
 				19CF680419656ED900C70E39 /* home_tap_bowl_01.png in Resources */,
+				1902BC16196C1DC300E88F84 /* accessory_shirt_green.xml in Resources */,
 				1920F1E4196189BF0094FAA3 /* home_shop@2x.png in Resources */,
 				1902BBCF196B348100E88F84 /* shop_interior_background.png in Resources */,
 				1920F21A19619D5B0094FAA3 /* coin.png in Resources */,
@@ -1709,6 +1816,7 @@
 				19FE7D4E1962DAE80074A32F /* eating_sound_2.m4a in Resources */,
 				19FE7D151962C66F0074A32F /* disappearing-food_08.png in Resources */,
 				EC6FD1D117EA746000EB05E9 /* MainStoryboard_iPad.storyboard in Resources */,
+				1902BC1D196C1DC300E88F84 /* accessory_shirt_red_store.png in Resources */,
 				19120DC0195C9B60001302FF /* story_page_14_frog.jpg in Resources */,
 				FD23B10E184172E200D1C9A9 /* outline_camera.png in Resources */,
 				19CF67FB19655B1C00C70E39 /* story_page_41_bunny.jpg in Resources */,
@@ -1748,7 +1856,6 @@
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
 				19FE7CF51962B52A0074A32F /* disappearing-food_01.png in Resources */,
 				19120DA1195C6DDB001302FF /* pond_bubble_08.png in Resources */,
-				1993A8B5196AA25B00465D83 /* shop_large@2x.png in Resources */,
 				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
 				1920F2581961B8140094FAA3 /* drinking_sippy_2.png in Resources */,
 				19FE7D6A1962DAE80074A32F /* story_sound_p18.m4a in Resources */,
@@ -1782,6 +1889,7 @@
 				19120D8D195C36F5001302FF /* pond_qmarks_05.png in Resources */,
 				1920F2571961B8140094FAA3 /* drinking_sippy_1@2x.png in Resources */,
 				19FE7CDA196207600074A32F /* cutout@2x.png in Resources */,
+				1902BC1C196C1DC300E88F84 /* accessory_shirt_red.xml in Resources */,
 				19120DDD195CB35F001302FF /* story_page_20_frog.jpg in Resources */,
 				1920F207196194F20094FAA3 /* home_tiny_04@2x.png in Resources */,
 				1920F25D1961FB450094FAA3 /* camera.png in Resources */,
@@ -1844,6 +1952,7 @@
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
 				1902BBD5196B351400E88F84 /* ShopInteriorViewController.m in Sources */,
+				1902BC22196C1E1C00E88F84 /* ShopItemCell.m in Sources */,
 				FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */,
 				FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */,
 				FDBC9D1418188A7500861C75 /* ChooseDrinkViewController.m in Sources */,
