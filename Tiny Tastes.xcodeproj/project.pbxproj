@@ -322,8 +322,6 @@
 		FD70734218303865003BFC29 /* feedback_tiny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD70731918303865003BFC29 /* feedback_tiny.jpg */; };
 		FDA12068182452EC00877E20 /* CustomTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA12067182452EC00877E20 /* CustomTimerViewController.m */; };
 		FDA1206B18256A3A00877E20 /* SetReminderAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */; };
-		FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1AD185507E200600A8C /* main_tiny.jpg */; };
-		FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDA9D1BB185513FF00600A8C /* menu_page.jpg */; };
 		FDB11DEB1804E1F800F15964 /* AddMealNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */; };
 		FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */; };
 		FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5830D17EA8CF6004C6FA3 /* TinyShopViewController.m */; };
@@ -681,8 +679,6 @@
 		FDA12067182452EC00877E20 /* CustomTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTimerViewController.m; sourceTree = "<group>"; };
 		FDA1206918256A3A00877E20 /* SetReminderAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetReminderAlertsViewController.h; sourceTree = "<group>"; };
 		FDA1206A18256A3A00877E20 /* SetReminderAlertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetReminderAlertsViewController.m; sourceTree = "<group>"; };
-		FDA9D1AD185507E200600A8C /* main_tiny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_tiny.jpg; sourceTree = "<group>"; };
-		FDA9D1BB185513FF00600A8C /* menu_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_page.jpg; sourceTree = "<group>"; };
 		FDB11DE91804E1F800F15964 /* AddMealNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealNotificationViewController.h; sourceTree = "<group>"; };
 		FDB11DEA1804E1F800F15964 /* AddMealNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealNotificationViewController.m; sourceTree = "<group>"; };
 		FDB5830817EA8A9F004C6FA3 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -1399,8 +1395,6 @@
 				1920F25A1961FB450094FAA3 /* Photo */,
 				19FE7CDB19620B2A0074A32F /* Eating */,
 				FD70731918303865003BFC29 /* feedback_tiny.jpg */,
-				FDA9D1AD185507E200600A8C /* main_tiny.jpg */,
-				FDA9D1BB185513FF00600A8C /* menu_page.jpg */,
 				FD23B10D184172E200D1C9A9 /* outline_camera.png */,
 				FD70731318303865003BFC29 /* redline.jpg */,
 			);
@@ -1729,7 +1723,6 @@
 				1920F2501961B8140094FAA3 /* drinking_juice_2.png in Resources */,
 				19120DDB195CB1F5001302FF /* story_tiny_frog_jump_2_02.png in Resources */,
 				19FE7D4C1962DAE80074A32F /* eating_none_this_time_feedback.m4a in Resources */,
-				FDA9D1B3185507E200600A8C /* main_tiny.jpg in Resources */,
 				19FE7D121962C66F0074A32F /* disappearing-food_06@2x.png in Resources */,
 				1920F24A1961B8140094FAA3 /* drinking_glass_1.png in Resources */,
 				19FE7D231962C7E50074A32F /* greenpeas_cutout.png in Resources */,
@@ -1787,7 +1780,6 @@
 				1994545F195D740A003BAC7F /* story_page_29e.jpg in Resources */,
 				1920F2611961FE100094FAA3 /* camera_overlay.png in Resources */,
 				19120D8D195C36F5001302FF /* pond_qmarks_05.png in Resources */,
-				FDA9D1BC185513FF00600A8C /* menu_page.jpg in Resources */,
 				1920F2571961B8140094FAA3 /* drinking_sippy_1@2x.png in Resources */,
 				19FE7CDA196207600074A32F /* cutout@2x.png in Resources */,
 				19120DDD195CB35F001302FF /* story_page_20_frog.jpg in Resources */,

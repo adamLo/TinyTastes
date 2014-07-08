@@ -27,10 +27,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9JE-yn-Jx9" userLabel="Drink Button">
-                                <rect key="frame" x="719" y="387" width="269" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="75" minY="0.0" maxX="79" maxY="92"/>
-                                <state key="normal" image="home_drink.png">
+                                <rect key="frame" x="718" y="387" width="275" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="11" minY="164" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Let's drink!" backgroundImage="home_drink.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -38,23 +40,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hc-w8-fb3" userLabel="Eat Button">
-                                <rect key="frame" x="673" y="89" width="284" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="21" minY="14" maxX="24" maxY="103"/>
-                                <state key="normal" image="home_eat.png">
+                                <rect key="frame" x="655" y="64" width="296" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="188" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Let's eat!" backgroundImage="home_eat.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="t2j-Jj-fJN" kind="push" identifier="eat" id="lOn-zd-onO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wDo-IJ-ezK" userLabel="Settings Button">
+                                <rect key="frame" x="86" y="447" width="242" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="117" maxX="16" maxY="0.0"/>
+                                <state key="normal" title="Settings" backgroundImage="home_settings.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gqI-Hq-2FL" kind="push" identifier="Settings" id="brf-LG-yVR"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_tiny_00.png" id="R1N-nt-R8G" userLabel="Animated Tiny">
-                                <rect key="frame" x="356" y="218" width="327" height="401"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="356" y="237" width="327" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QhS-Eo-IMH" userLabel="Tiny Button">
-                                <rect key="frame" x="367" y="230" width="312" height="465"/>
+                                <rect key="frame" x="367" y="250" width="312" height="465"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <inset key="contentEdgeInsets" minX="17" minY="403" maxX="0.0" maxY="0.0"/>
@@ -64,15 +79,6 @@
                                 </state>
                                 <connections>
                                     <segue destination="BFK-Tc-tVo" kind="push" id="lat-Pg-uUb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wDo-IJ-ezK" userLabel="Settings Button">
-                                <rect key="frame" x="86" y="438" width="243" height="262"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="53" minY="0.0" maxX="49" maxY="130"/>
-                                <state key="normal" image="home_settings.png"/>
-                                <connections>
-                                    <segue destination="gqI-Hq-2FL" kind="push" identifier="Settings" id="brf-LG-yVR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,6 +91,11 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="animatedTiny" destination="R1N-nt-R8G" id="qZq-Mo-VpM"/>
+                        <outlet property="letsDrinkButton" destination="9JE-yn-Jx9" id="ol4-gt-U0h"/>
+                        <outlet property="letsEatButton" destination="0Hc-w8-fb3" id="0g8-cE-JD5"/>
+                        <outlet property="settingsButton" destination="wDo-IJ-ezK" id="99U-eR-FLw"/>
+                        <outlet property="storyModeButton" destination="QhS-Eo-IMH" id="Adq-oB-F4O"/>
+                        <outlet property="tinyShopButton" destination="OkK-9B-8dG" id="fbW-OK-tGa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -646,7 +657,7 @@ Reminders For...</string>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="3yy-84-nxd">
                                 <rect key="frame" x="380" y="153" width="272" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Meal"/>
                                     <segment title="Snack"/>
@@ -1551,9 +1562,9 @@ Do You Want For...</string>
         <image name="feedback_tiny.jpg" width="659" height="655"/>
         <image name="glass.png" width="116" height="230"/>
         <image name="greenpeas_cutout.png" width="1024" height="768"/>
-        <image name="home_drink.png" width="128" height="225"/>
-        <image name="home_eat.png" width="199" height="155"/>
-        <image name="home_settings.png" width="366" height="340"/>
+        <image name="home_drink.png" width="275" height="293"/>
+        <image name="home_eat.png" width="296" height="284"/>
+        <image name="home_settings.png" width="242" height="265"/>
         <image name="home_shop.png" width="338" height="298"/>
         <image name="home_tiny_00.png" width="327" height="401"/>
         <image name="home_tiny_button_bg.png" width="312" height="465"/>

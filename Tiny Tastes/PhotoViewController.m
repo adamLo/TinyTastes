@@ -50,7 +50,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
+    //[self.mealOrSnackControl setFrame:CGRectMake(300, 300, 300, 300)];
     self.view.backgroundColor = [UIColor colorWithRed:0.99 green:0.99 blue:0.83 alpha:1.0];
     [self.instructionLabel.titleLabel setFont: [UIFont ttFont60]];
     self.instructionLabel.titleLabel.textAlignment = NSTextAlignmentCenter;

@@ -25,18 +25,13 @@
     //Set background
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"homescreen_bg"]];
     
-    self.storyModeLabel.titleLabel.font = [UIFont ttFont50];
-    self.letsEatLabel.titleLabel.font = [UIFont ttFont50];
-    self.letsDrinkLabel.titleLabel.font = [UIFont ttFont50];
-    self.tinyShopLabel.titleLabel.font = [UIFont ttFont50];
-    self.settingsLabel.titleLabel.font = [UIFont ttFont50];
+    //Localize button captions
+    [self.tinyShopButton setTitle:NSLocalizedString(@"Tiny shop", @"Tiny shop button title on home screen") forState:UIControlStateNormal];
+    [self.letsEatButton setTitle:NSLocalizedString(@"Let's eat!", @"Eat button title on home screen") forState:UIControlStateNormal];
+    [self.letsDrinkButton setTitle:NSLocalizedString(@"Let's drink", @"Drink button title on home screen") forState:UIControlStateNormal];
+    [self.storyModeButton setTitle:NSLocalizedString(@"STORY TIME", @"Story button title on home screen") forState:UIControlStateNormal];
+    [self.settingsButton setTitle:NSLocalizedString(@"Settings", @"Settings button title on home screen") forState:UIControlStateNormal];
     
-    [self.storyModeLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.letsEatLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.letsDrinkLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.tinyShopLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.settingsLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     
     NSString *path = [[NSBundle mainBundle]pathForResource:@"main_menu_music" ofType:@"mp3"];
