@@ -13,7 +13,6 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import "PhotoViewController.h"
-#import "OverlayView.h"
 #import "EatViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <CoreVideo/CoreVideo.h>
@@ -29,7 +28,6 @@
     UIImage *chosenImage; //Maked, resized photo
     
     AVCaptureStillImageOutput *stillImageOutput;
-    OverlayView *overlay;
     AVCaptureSession *session;
     AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 }
@@ -87,6 +85,19 @@
     NSDictionary *highlightedAttributes = [NSDictionary
                                            dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     [self.mealOrSnackControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
+    
+#ifdef DEBUG
+    //Add fake food image under camera overlay
+    UIImageView *photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)/* self.cameraOverlayView.frame*/];
+    photoImageView.contentMode = UIViewContentModeScaleAspectFit;
+    photoImageView.image = [UIImage imageNamed:@"greenpeas.jpg"];
+    [self.cameraOverlayView insertSubview:photoImageView atIndex:0];
+#endif
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.cameraOverlayView.hidden = YES;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -140,9 +151,11 @@
             [alert show];
         }
         else {
+            //Show overlay
+            self.cameraOverlayView.hidden = NO;
+            
             [session addInput:input];
-            
-            
+
             stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
             NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys: AVVideoCodecJPEG, AVVideoCodecKey, nil];
             [stillImageOutput setOutputSettings:outputSettings];
@@ -150,11 +163,6 @@
             [session addOutput:stillImageOutput];
             
             [session startRunning];
-            
-            overlay = [[OverlayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-            overlay.photoViewController = self;
-            
-            [self.view addSubview:overlay];
             
             AVCaptureConnection *previewLayerConnection=captureVideoPreviewLayer.connection;
             
@@ -165,9 +173,7 @@
         
     } else {
 #ifdef DEBUG
-        //Add a sample photo when running on simulator
-        chosenImage = [UIImage imageNamed:@"greenpeas.jpg"];
-        [self processImage];
+        self.cameraOverlayView.hidden = NO;
 #else
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                               message:@"This device has no camera"
@@ -185,8 +191,24 @@
     return NO;
 }
 
+- (IBAction)cameraOverlayTapped:(id)sender {
+#ifdef DEBUG
+    //Hide camera overlay
+    self.cameraOverlayView.hidden = YES;
+    
+    //Add a sample photo when running on simulator
+    chosenImage = [UIImage imageNamed:@"greenpeas.jpg"];
+    [self processImage];
+#else
+    //Capture photo
+    [self captureNow];
+    
+    //Hide camera overlay
+    self.cameraOverlayView.hidden = YES;
+#endif
+}
 
--(IBAction)captureNow {
+- (void)captureNow {
 	AVCaptureConnection *videoConnection = nil;
 	for (AVCaptureConnection *connection in stillImageOutput.connections)
 	{
@@ -235,7 +257,6 @@
 - (IBAction)homeButtonPressed:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
-
 
 - (void)processImage {
     self.customizeTimerLabel.hidden = NO;
@@ -355,5 +376,6 @@
         controller.timeToEat = self.mealStepper.value;
     }
 }
+
 
 @end

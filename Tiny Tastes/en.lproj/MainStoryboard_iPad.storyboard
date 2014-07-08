@@ -562,10 +562,10 @@ Reminders For...</string>
         <!--Photo View Controller-->
         <scene sceneID="ppO-NU-SHz">
             <objects>
-                <viewController id="t2j-Jj-fJN" customClass="PhotoViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="t2j-Jj-fJN" customClass="PhotoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="EFf-Hb-yNG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="bkx-xy-jV5">
                                 <rect key="frame" x="199" y="68" width="635" height="446"/>
@@ -682,6 +682,21 @@ photo</string>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view opaque="NO" contentMode="scaleToFill" id="iD7-zz-Soa" userLabel="Camera overlay">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outline_camera.png" id="3RK-Gg-8d2" userLabel="Overlay image">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="O6J-6R-zKW" appends="YES" id="TmT-x2-56Q"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -691,6 +706,7 @@ photo</string>
                     <connections>
                         <outlet property="cameraIcon" destination="qtL-r8-iUw" id="KJc-Kc-4Yt"/>
                         <outlet property="cameraInstructionLabel" destination="OC3-c9-uej" id="NwR-mJ-9zf"/>
+                        <outlet property="cameraOverlayView" destination="iD7-zz-Soa" id="0Dz-WE-Tcf"/>
                         <outlet property="customizeTimerLabel" destination="XW6-yx-Khh" id="e8V-FV-ERy"/>
                         <outlet property="eatLabel" destination="EPA-sM-0gR" id="NTu-TK-sOa"/>
                         <outlet property="imageView" destination="bkx-xy-jV5" id="ofD-o7-5KC"/>
@@ -704,6 +720,11 @@ photo</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02E-bE-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="O6J-6R-zKW" userLabel="Camera Overlay Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="cameraOverlayTapped:" destination="t2j-Jj-fJN" id="HTM-RK-rcW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-816" y="-3395"/>
         </scene>
@@ -1588,6 +1609,7 @@ Do You Want For...</string>
         <image name="home_tiny_button_bg.png" width="312" height="465"/>
         <image name="juicebox.png" width="137" height="242"/>
         <image name="money_bag.png" width="95" height="117"/>
+        <image name="outline_camera.png" width="1024" height="768"/>
         <image name="pediasure.png" width="116" height="230"/>
         <image name="redline.jpg" width="153" height="35"/>
         <image name="shop_carousel_arrow_left.png" width="120" height="87"/>
