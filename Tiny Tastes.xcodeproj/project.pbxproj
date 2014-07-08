@@ -14,6 +14,10 @@
 		1902BBDB196B3A2D00E88F84 /* shop_carousel_arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBD7196B3A2D00E88F84 /* shop_carousel_arrow_left@2x.png */; };
 		1902BBDC196B3A2D00E88F84 /* shop_carousel_arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBD8196B3A2D00E88F84 /* shop_carousel_arrow_right.png */; };
 		1902BBDD196B3A2D00E88F84 /* shop_carousel_arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBD9196B3A2D00E88F84 /* shop_carousel_arrow_right@2x.png */; };
+		1902BBE2196BF4A400E88F84 /* home_tiny_button_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBDE196BF4A400E88F84 /* home_tiny_button_bg.png */; };
+		1902BBE3196BF4A400E88F84 /* home_tiny_button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBDF196BF4A400E88F84 /* home_tiny_button_bg@2x.png */; };
+		1902BBE4196BF4A400E88F84 /* homescreen_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBE0196BF4A400E88F84 /* homescreen_bg.png */; };
+		1902BBE5196BF4A400E88F84 /* homescreen_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BBE1196BF4A400E88F84 /* homescreen_bg@2x.png */; };
 		19120D55195B623E001302FF /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D53195B623E001302FF /* bookmark.png */; };
 		19120D56195B623E001302FF /* bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D54195B623E001302FF /* bookmark@2x.png */; };
 		19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19120D58195B8E1D001302FF /* UIImage+Rotate.m */; };
@@ -348,6 +352,10 @@
 		1902BBD7196B3A2D00E88F84 /* shop_carousel_arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_carousel_arrow_left@2x.png"; sourceTree = "<group>"; };
 		1902BBD8196B3A2D00E88F84 /* shop_carousel_arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shop_carousel_arrow_right.png; sourceTree = "<group>"; };
 		1902BBD9196B3A2D00E88F84 /* shop_carousel_arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_carousel_arrow_right@2x.png"; sourceTree = "<group>"; };
+		1902BBDE196BF4A400E88F84 /* home_tiny_button_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tiny_button_bg.png; sourceTree = "<group>"; };
+		1902BBDF196BF4A400E88F84 /* home_tiny_button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tiny_button_bg@2x.png"; sourceTree = "<group>"; };
+		1902BBE0196BF4A400E88F84 /* homescreen_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen_bg.png; sourceTree = "<group>"; };
+		1902BBE1196BF4A400E88F84 /* homescreen_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homescreen_bg@2x.png"; sourceTree = "<group>"; };
 		19120D53195B623E001302FF /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "Tiny Tastes/Images/Story/bookmark.png"; sourceTree = "<group>"; };
 		19120D54195B623E001302FF /* bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmark@2x.png"; path = "Tiny Tastes/Images/Story/bookmark@2x.png"; sourceTree = "<group>"; };
 		19120D57195B8E1D001302FF /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotate.h"; path = "Categories/UIImage+Rotate.h"; sourceTree = "<group>"; };
@@ -852,6 +860,10 @@
 		1920F1E0196189BF0094FAA3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1902BBDE196BF4A400E88F84 /* home_tiny_button_bg.png */,
+				1902BBDF196BF4A400E88F84 /* home_tiny_button_bg@2x.png */,
+				1902BBE0196BF4A400E88F84 /* homescreen_bg.png */,
+				1902BBE1196BF4A400E88F84 /* homescreen_bg@2x.png */,
 				1920F1E1196189BF0094FAA3 /* home_shop.png */,
 				1920F1E2196189BF0094FAA3 /* home_shop@2x.png */,
 				1920F1E519618B9E0094FAA3 /* home_settings.png */,
@@ -1518,6 +1530,7 @@
 				1920F202196194F20094FAA3 /* home_tiny_02.png in Resources */,
 				1920F22F1961A4330094FAA3 /* bottle.png in Resources */,
 				1920F201196194F20094FAA3 /* home_tiny_01@2x.png in Resources */,
+				1902BBE3196BF4A400E88F84 /* home_tiny_button_bg@2x.png in Resources */,
 				19120DD4195CAC49001302FF /* story_tiny_frog_jump_06.png in Resources */,
 				EC6FD1BF17EA746000EB05E9 /* InfoPlist.strings in Resources */,
 				19120DD1195CAC49001302FF /* story_tiny_frog_jump_03.png in Resources */,
@@ -1575,6 +1588,7 @@
 				19120DB2195C887E001302FF /* story_page_16_fish.jpg in Resources */,
 				19FE7D5D1962DAE80074A32F /* story_sound_p05.m4a in Resources */,
 				1920F21B19619D5B0094FAA3 /* coin@2x.png in Resources */,
+				1902BBE4196BF4A400E88F84 /* homescreen_bg.png in Resources */,
 				19FE7D161962C66F0074A32F /* disappearing-food_08@2x.png in Resources */,
 				19FE7D611962DAE80074A32F /* story_sound_p09.m4a in Resources */,
 				19CF67F719655A8F00C70E39 /* story_page_39_bunny.jpg in Resources */,
@@ -1648,6 +1662,7 @@
 				1994548A195DA524003BAC7F /* story_tiny_climbing_down_walk_01-03.png in Resources */,
 				19120D7D195C328A001302FF /* story_page_09.jpg in Resources */,
 				1920F24C1961B8140094FAA3 /* drinking_glass_2.png in Resources */,
+				1902BBE5196BF4A400E88F84 /* homescreen_bg@2x.png in Resources */,
 				19FE7D761962E0530074A32F /* drink_selection_02@2x.png in Resources */,
 				19945474195D999C003BAC7F /* story_tiny_climbing_up_04.png in Resources */,
 				19120D78195C328A001302FF /* story_page_04.jpg in Resources */,
@@ -1722,6 +1737,7 @@
 				19FE7D501962DAE80074A32F /* encouragement.m4a in Resources */,
 				199454A7195DB7D0003BAC7F /* button_sound-on.png in Resources */,
 				1902BBDA196B3A2D00E88F84 /* shop_carousel_arrow_left.png in Resources */,
+				1902BBE2196BF4A400E88F84 /* home_tiny_button_bg.png in Resources */,
 				19FE7D521962DAE80074A32F /* i_like_this.m4a in Resources */,
 				19FE7D5E1962DAE80074A32F /* story_sound_p06.m4a in Resources */,
 				19120DE7195CB646001302FF /* story_page_24.jpg in Resources */,

@@ -74,4 +74,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark - UICollectionView datasource
+
+#pragma mark - UICollectionView delegate
+
 @end

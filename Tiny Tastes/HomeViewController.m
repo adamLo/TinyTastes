@@ -22,8 +22,8 @@
 {
     [super viewDidLoad];
 
-    UIImage *image = [UIImage imageNamed:@"menu_page.jpg"];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    //Set background
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"homescreen_bg"]];
     
     self.storyModeLabel.titleLabel.font = [UIFont ttFont50];
     self.letsEatLabel.titleLabel.font = [UIFont ttFont50];
