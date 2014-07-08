@@ -46,4 +46,8 @@
     return [UIFont fontWithName:CUSTOMFONT size:30.0];
 }
 
++ (UIFont*)ttFont20 {
+    return [UIFont fontWithName:CUSTOMFONT size:20.0];
+}
+
 @end

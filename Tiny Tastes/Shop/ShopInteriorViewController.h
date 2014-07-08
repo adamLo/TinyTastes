@@ -13,6 +13,7 @@
  */
 @interface ShopInteriorViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView; /** Collectionview displaying shop items as a carousel */
 @property (weak, nonatomic) IBOutlet UIButton *leftArrowButton; /** Arrow button pointing left to turn carousel */
 @property (weak, nonatomic) IBOutlet UIButton *rightArrowButton; /** Arrow button pointing right to turn carousel */
 

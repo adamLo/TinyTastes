@@ -31,6 +31,7 @@
 		1902BC1E196C1DC300E88F84 /* accessory_shirt_white.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC12196C1DC300E88F84 /* accessory_shirt_white.xml */; };
 		1902BC1F196C1DC300E88F84 /* accessory_shirt_white_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC13196C1DC300E88F84 /* accessory_shirt_white_store.png */; };
 		1902BC22196C1E1C00E88F84 /* ShopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC21196C1E1C00E88F84 /* ShopItemCell.m */; };
+		1902BC25196C491200E88F84 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC24196C491200E88F84 /* UIImage+Resize.m */; };
 		19120D55195B623E001302FF /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D53195B623E001302FF /* bookmark.png */; };
 		19120D56195B623E001302FF /* bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D54195B623E001302FF /* bookmark@2x.png */; };
 		19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19120D58195B8E1D001302FF /* UIImage+Rotate.m */; };
@@ -379,6 +380,8 @@
 		1902BC13196C1DC300E88F84 /* accessory_shirt_white_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_shirt_white_store.png; sourceTree = "<group>"; };
 		1902BC20196C1E1C00E88F84 /* ShopItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopItemCell.h; path = Shop/ShopItemCell.h; sourceTree = "<group>"; };
 		1902BC21196C1E1C00E88F84 /* ShopItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopItemCell.m; path = Shop/ShopItemCell.m; sourceTree = "<group>"; };
+		1902BC23196C491200E88F84 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "Categories/UIImage+Resize.h"; sourceTree = "<group>"; };
+		1902BC24196C491200E88F84 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "Categories/UIImage+Resize.m"; sourceTree = "<group>"; };
 		19120D53195B623E001302FF /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "Tiny Tastes/Images/Story/bookmark.png"; sourceTree = "<group>"; };
 		19120D54195B623E001302FF /* bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmark@2x.png"; path = "Tiny Tastes/Images/Story/bookmark@2x.png"; sourceTree = "<group>"; };
 		19120D57195B8E1D001302FF /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotate.h"; path = "Categories/UIImage+Rotate.h"; sourceTree = "<group>"; };
@@ -1331,6 +1334,8 @@
 				19120D58195B8E1D001302FF /* UIImage+Rotate.m */,
 				19FE7D7C19633F930074A32F /* UIFont+TinyTastes.h */,
 				19FE7D7D19633F930074A32F /* UIFont+TinyTastes.m */,
+				1902BC23196C491200E88F84 /* UIImage+Resize.h */,
+				1902BC24196C491200E88F84 /* UIImage+Resize.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1966,6 +1971,7 @@
 				31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */,
 				EC7124CB18147519007319C5 /* SceneFactory.m in Sources */,
 				FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */,
+				1902BC25196C491200E88F84 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

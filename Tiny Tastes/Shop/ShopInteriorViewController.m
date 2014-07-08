@@ -7,9 +7,11 @@
 //
 
 #import "ShopInteriorViewController.h"
+#import "ShopItemCell.h"
 
 @interface ShopInteriorViewController () {
     UIStatusBarStyle statusbarStyle; //retain status bar style to reset when leaving shop
+    NSArray *shopItems; //Array of XML file names for items in the shop
 }
 
 @end
@@ -32,6 +34,9 @@
     
     //Set background
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"shop_interior_background"]]];
+    
+    //TODO: Replace this array with a proper implementation
+    shopItems = @[@"accessory_shirt_white.xml", @"accessory_shirt_red.xml", @"accessory_shirt_blue.xml", @"accessory_shirt_orange.xml", @"accessory_shirt_pink.xml"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,9 +60,21 @@
 
 
 - (IBAction)leftArrowPressed:(id)sender {
+    
+    //Scroll to prior item if not already at first position
+    NSIndexPath *currentIndexpath = [[self.collectionView indexPathsForVisibleItems] firstObject];
+    if (currentIndexpath.row > 0) {
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:currentIndexpath.row-1 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+    }
 }
 
 - (IBAction)rightArrowPressed:(id)sender {
+    
+    //Scroll to next item if not already at last position
+    NSIndexPath *currentIndexpath = [[self.collectionView indexPathsForVisibleItems] lastObject];
+    if (currentIndexpath.row < shopItems.count-1) {
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:currentIndexpath.row+1 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+    }
 }
 
 #pragma mark - Navigation
@@ -76,6 +93,36 @@
 
 #pragma mark - UICollectionView datasource
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return shopItems.count;
+}
+
+- (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //Dequeue cell
+    ShopItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"shopItemCell" forIndexPath:indexPath];
+    
+    //Setup cell
+    [cell setupItemWithXMLFile:[shopItems objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return collectionView.bounds.size;
+}
+
 #pragma mark - UICollectionView delegate
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    //TODO: implement selection
+}
 
 @end

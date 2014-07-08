@@ -78,4 +78,11 @@
  */
 + (UIFont*)ttFont30;
 
+/**
+ *  Custom font 20 pt font size
+ *
+ *  @return Font
+ */
++ (UIFont*)ttFont20;
+
 @end
