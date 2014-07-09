@@ -12,6 +12,10 @@
 #import "XMLDictionary.h"
 #import "UIFont+TinyTastes.h"
 
+#import "CoreDataManager.h"
+#import "CDPurchasedItem.h"
+#import "Crittercism.h"
+
 @interface ShopInteriorViewController () {
     UIStatusBarStyle statusbarStyle; //retain status bar style to reset when leaving shop
     NSArray *shopItems; //Array of XML file names for items in the shop
@@ -95,8 +99,9 @@
         if (path) {
             
             //Get item details
-            NSDictionary *itemData = [NSDictionary dictionaryWithXMLFile:path];
+            NSMutableDictionary *itemData = [NSMutableDictionary dictionaryWithDictionary:[NSDictionary dictionaryWithXMLFile:path]];
             if (itemData) {
+                [itemData setObject:fileName forKey:@"xmlFile"];
                 [tempItems addObject:itemData];
             }
             else {
@@ -224,13 +229,73 @@
 }
 
 - (IBAction)purchaseConfirmationPressed:(id)sender {
-    // TODO: Make purchase
     
-    [self togglePurchaseDialogVisible:NO completion:^{
-        // TODO: implement actual purchase transaction
-        NSDictionary *item = [shopItems objectAtIndex:[[[self.collectionView indexPathsForSelectedItems] firstObject] row]];
-        NSLog(@"Selected item: %@", item);
-    }];
+    //Get selected item
+    NSDictionary *item = [shopItems objectAtIndex:[[[self.collectionView indexPathsForSelectedItems] firstObject] row]];
+ 
+    //Check if user has enough funds
+    if ([[NSUserDefaults standardUserDefaults] integerForKey:TTDefaultsKeyPurseCoins] >= [[item objectForKey:@"price"] integerValue]) {
+    
+        [self togglePurchaseDialogVisible:NO completion:^{
+            
+            //Check if already bought this item
+            NSManagedObjectContext *context = [[CoreDataManager sharedInstance] managedObjectContext];
+            NSFetchRequest* request = [[NSFetchRequest alloc] init];
+            [request setEntity:[NSEntityDescription entityForName:@"PurchasedItem" inManagedObjectContext:context]];
+            [request setPredicate:[NSPredicate predicateWithFormat:@"itemId == %@", [item objectForKey:@"id"]]];
+            [request setIncludesSubentities:NO]; //Omit subentities. Default is YES (i.e. include subentities)
+            
+            NSError *error;
+            NSArray *purchases = [context executeFetchRequest:request error:&error];
+            NSString *errorString;
+            if (error) {
+                NSLog(@"Error querying purchases: %@", error);
+                errorString = NSLocalizedString(@"Sorry, error making the purchase! Try again later!", @"Error message when purchase fetch failed");
+                [Crittercism logHandledException:[NSException exceptionWithName:@"CoreDataError" reason:error.description userInfo:error.userInfo]];
+            }
+            else if (purchases.count) {
+                //Already bought
+                errorString = NSLocalizedString(@"You already purchased this item!", @"Error message when user wnats to buy simething that already owns");
+            }
+            if (errorString) {
+                //Display error
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error dialog title") message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alert show];
+            }
+            else {
+                //Make purchase transaction
+                CDPurchasedItem *purchasedItem = [NSEntityDescription insertNewObjectForEntityForName:@"PurchasedItem" inManagedObjectContext:context];
+                purchasedItem.itemId = [item objectForKey:@"id"];
+                purchasedItem.itemType = [item objectForKey:@"type"];
+                purchasedItem.purchaseDate = [NSDate date];
+                purchasedItem.xmlFilename = [item objectForKey:@"xmlFile"];
+                if ([context save:&error]) {
+                    //Decrease purse content
+                    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                    NSInteger coins = [defaults integerForKey:TTDefaultsKeyPurseCoins];
+                    coins -= [[item objectForKey:@"price"] integerValue];
+                    [defaults setInteger:coins forKey:TTDefaultsKeyPurseCoins];
+                    [defaults synchronize];
+                    
+                    //Update display
+                    [self displayPurseContents];
+                }
+                else {
+                    //Display error
+                    NSLog(@"Error saving context when making purchase: %@", error);
+                    [Crittercism logHandledException:[NSException exceptionWithName:@"CoreDataError" reason:error.description userInfo:error.userInfo]];
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error dialog title") message:NSLocalizedString(@"Sorry purchase could not be made, please try again later!", @"Error message when purchase transaction failed") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    [alert show];
+                }
+            }
+            
+        }];
+    }
+    else {
+        //Display error
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Sorry", @"Error dialog title when not enough funds") message:NSLocalizedString(@"You don't have enough coins to buy this item", @"Error message when not enough funds to make purchase") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (IBAction)purchaseCancelPressed:(id)sender {

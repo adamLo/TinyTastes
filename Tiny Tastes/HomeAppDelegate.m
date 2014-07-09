@@ -9,6 +9,7 @@
 #import "HomeAppDelegate.h"
 #import "SetReminderAlertsViewController.h"
 #import "Crittercism.h"
+#import "CoreDataManager.h"
 
 @implementation HomeAppDelegate
 
@@ -20,6 +21,11 @@
     //Start up Crittercism crash reporting when running on real device
     [Crittercism enableWithAppID:@"53a898f907229a1613000002"];
 #endif
+    
+    //Initialize Core Data
+    if (![[CoreDataManager sharedInstance] persistentStoreCoordinator]) {
+        NSLog(@")Failed to set up persistence manager");
+    }
     
     // Handle launching from a notification
     application.applicationIconBadgeNumber = 0;
@@ -82,6 +88,13 @@
     
     // Set icon badge number to zero
     application.applicationIconBadgeNumber = 0;
+}
+
+#pragma mark - Application's Documents directory
+
+// Returns the URL to the application's Documents directory.
+- (NSURL *)applicationDocumentsDirectory {
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 @end

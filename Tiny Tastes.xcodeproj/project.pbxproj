@@ -35,6 +35,10 @@
 		1902BC2A196D275200E88F84 /* accessory_spoon_red.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC28196D275100E88F84 /* accessory_spoon_red.xml */; };
 		1902BC2B196D275200E88F84 /* accessory_spoon_red_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC29196D275100E88F84 /* accessory_spoon_red_store.png */; };
 		1902BC2E196D2DFA00E88F84 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC2D196D2DFA00E88F84 /* Constants.m */; };
+		1902BC32196D599C00E88F84 /* TinyTastes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC30196D599C00E88F84 /* TinyTastes.xcdatamodeld */; };
+		1902BC36196D59FF00E88F84 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1902BC35196D59FF00E88F84 /* CoreData.framework */; };
+		1902BC39196D5AFC00E88F84 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC38196D5AFC00E88F84 /* CoreDataManager.m */; };
+		1902BC3F196D605200E88F84 /* CDPurchasedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC3E196D605200E88F84 /* CDPurchasedItem.m */; };
 		19120D55195B623E001302FF /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D53195B623E001302FF /* bookmark.png */; };
 		19120D56195B623E001302FF /* bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D54195B623E001302FF /* bookmark@2x.png */; };
 		19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19120D58195B8E1D001302FF /* UIImage+Rotate.m */; };
@@ -389,6 +393,13 @@
 		1902BC29196D275100E88F84 /* accessory_spoon_red_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_spoon_red_store.png; sourceTree = "<group>"; };
 		1902BC2C196D2DFA00E88F84 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		1902BC2D196D2DFA00E88F84 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		1902BC31196D599C00E88F84 /* TinyTastes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TinyTastes.xcdatamodel; sourceTree = "<group>"; };
+		1902BC35196D59FF00E88F84 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1902BC37196D5AFC00E88F84 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = "Core Data/CoreDataManager.h"; sourceTree = "<group>"; };
+		1902BC38196D5AFC00E88F84 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager.m; path = "Core Data/CoreDataManager.m"; sourceTree = "<group>"; };
+		1902BC3C196D5E8E00E88F84 /* TinyTastes 1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TinyTastes 1.xcdatamodel"; sourceTree = "<group>"; };
+		1902BC3D196D605200E88F84 /* CDPurchasedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDPurchasedItem.h; path = "Core Data/CDPurchasedItem.h"; sourceTree = "<group>"; };
+		1902BC3E196D605200E88F84 /* CDPurchasedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDPurchasedItem.m; path = "Core Data/CDPurchasedItem.m"; sourceTree = "<group>"; };
 		19120D53195B623E001302FF /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "Tiny Tastes/Images/Story/bookmark.png"; sourceTree = "<group>"; };
 		19120D54195B623E001302FF /* bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmark@2x.png"; path = "Tiny Tastes/Images/Story/bookmark@2x.png"; sourceTree = "<group>"; };
 		19120D57195B8E1D001302FF /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotate.h"; path = "Categories/UIImage+Rotate.h"; sourceTree = "<group>"; };
@@ -733,6 +744,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1902BC36196D59FF00E88F84 /* CoreData.framework in Frameworks */,
 				191401D71958D17E008F40C4 /* SystemConfiguration.framework in Frameworks */,
 				311252DE1820A935008D5C75 /* AVFoundation.framework in Frameworks */,
 				EC6FD1B517EA746000EB05E9 /* UIKit.framework in Frameworks */,
@@ -864,6 +876,18 @@
 				1902BC29196D275100E88F84 /* accessory_spoon_red_store.png */,
 			);
 			path = Red;
+			sourceTree = "<group>";
+		};
+		1902BC2F196D597600E88F84 /* Data model */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC30196D599C00E88F84 /* TinyTastes.xcdatamodeld */,
+				1902BC37196D5AFC00E88F84 /* CoreDataManager.h */,
+				1902BC38196D5AFC00E88F84 /* CoreDataManager.m */,
+				1902BC3D196D605200E88F84 /* CDPurchasedItem.h */,
+				1902BC3E196D605200E88F84 /* CDPurchasedItem.m */,
+			);
+			name = "Data model";
 			sourceTree = "<group>";
 		};
 		19120D5E195C328A001302FF /* Pond Animations */ = {
@@ -1389,6 +1413,7 @@
 		EC6FD1B317EA746000EB05E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1902BC35196D59FF00E88F84 /* CoreData.framework */,
 				191401D61958D17E008F40C4 /* SystemConfiguration.framework */,
 				311252DD1820A935008D5C75 /* AVFoundation.framework */,
 				EC6FD1B417EA746000EB05E9 /* UIKit.framework */,
@@ -1401,6 +1426,7 @@
 		EC6FD1BA17EA746000EB05E9 /* Tiny Tastes */ = {
 			isa = PBXGroup;
 			children = (
+				1902BC2F196D597600E88F84 /* Data model */,
 				1902BBE6196C1ACE00E88F84 /* Shop */,
 				19FE7D241962DAE80074A32F /* Sounds */,
 				FDB582FF17EA7BD0004C6FA3 /* Images */,
@@ -1982,6 +2008,7 @@
 				EC7124C618146152007319C5 /* XMLDelegate.m in Sources */,
 				31544D40181DAF41006C9D94 /* OverlayView.m in Sources */,
 				19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */,
+				1902BC32196D599C00E88F84 /* TinyTastes.xcdatamodeld in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
 				1902BC2E196D2DFA00E88F84 /* Constants.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
@@ -1997,10 +2024,12 @@
 				1993A8AC196822C400465D83 /* XMLDictionary.m in Sources */,
 				FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */,
 				FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */,
+				1902BC39196D5AFC00E88F84 /* CoreDataManager.m in Sources */,
 				EC7124C31814603F007319C5 /* Scene.m in Sources */,
 				31FD15D01804B91C00142A5F /* PhotoViewController.m in Sources */,
 				EC7124CB18147519007319C5 /* SceneFactory.m in Sources */,
 				FDBC9CD318163E2700861C75 /* FeedbackViewController.m in Sources */,
+				1902BC3F196D605200E88F84 /* CDPurchasedItem.m in Sources */,
 				1902BC25196C491200E88F84 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2218,6 +2247,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1902BC30196D599C00E88F84 /* TinyTastes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1902BC3C196D5E8E00E88F84 /* TinyTastes 1.xcdatamodel */,
+				1902BC31196D599C00E88F84 /* TinyTastes.xcdatamodel */,
+			);
+			currentVersion = 1902BC3C196D5E8E00E88F84 /* TinyTastes 1.xcdatamodel */;
+			name = TinyTastes.xcdatamodeld;
+			path = "Core Data/TinyTastes.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EC6FD1A917EA746000EB05E9 /* Project object */;
 }

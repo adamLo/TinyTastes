@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PurchasedItem" representedClassName="CDPurchasedItem" syncable="YES">
+        <attribute name="itemId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="itemType" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="purchaseDate" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="xmlFilename" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PurchasedItem" positionX="-45" positionY="0" width="128" height="105"/>
+    </elements>
+</model>

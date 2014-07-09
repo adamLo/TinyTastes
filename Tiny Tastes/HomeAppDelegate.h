@@ -12,4 +12,11 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+/**
+ *  Return application document directory URL. Needed for Core Data
+ *
+ *  @return URL to application document directory
+ */
+- (NSURL *)applicationDocumentsDirectory;
+
 @end
