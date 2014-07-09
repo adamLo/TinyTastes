@@ -24,6 +24,8 @@
     UIImageView *bookmarkView; //Bookmark view
     UILabel *bookmarkLabel; //Localized instruction label on bookmark. Displayed on title only when bookmark is set
     UITapGestureRecognizer *bookmarTapGestureRecognizer; //Recognizer for user tap action
+    
+    NSArray* accessoryItems; //Array of loaded and parsed accessory items from xml files defined in accessories */
 }
 
 @end
@@ -51,6 +53,8 @@ NSString* const kStoryDictionaryKeyTitle = @"title";
 NSString* const kStoryDictionaryKeyPrev = @"prev";
 NSString* const kStoryDictionaryKeyHideSkip = @"hideskip";
 NSString* const kStoryDictionaryKeyTag = @"tag";
+NSString* const kStoryDictionaryKeyAboveTag = @"aboveTag";
+NSString* const kStoryDictionaryKeyScenes = @"scenes";
 
 //Class-level constants
 CGFloat const kStoryBookmarkHeightHidden = 30; //Bookmark height when not displayed
@@ -107,6 +111,10 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    //Load accessory items
+    self.accessories = @[@"accessory_shirt_white.xml"];
+    [self loadAccessoryItems];
     
     //Load bundled storybook
     [self loadStoryBookWithFilename:@"story.xml"];
@@ -198,7 +206,7 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
                 controller = [[StoryPageController alloc] init];
                 controller.view.frame = self.view.frame;
                 controller.pageViewController = self;
-                [controller loadStoryPage:pageData];
+                [controller loadStoryPage:pageData accessories:[self accessoriesForSceneWithID:[pageData objectForKey:kStoryDictionaryKeyID]]];
                 
                 //Add to cache
                 [pageControllerCache setObject:controller forKey:sceneID];
@@ -545,6 +553,54 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
             bookmarkLabel.text = NSLocalizedString(@"Remove bookmark", @"Clear bookmark label text");
         }
     }];
+    
+}
+
+#pragma mark - Accessories
+
+- (void)loadAccessoryItems {
+    
+    NSMutableArray *tempAccItems = [[NSMutableArray alloc] init];
+    
+    for (NSString *fileName in self.accessories) {
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+        if (path) {
+            
+            //Get item details
+            NSMutableDictionary *itemData = [NSMutableDictionary dictionaryWithDictionary:[NSDictionary dictionaryWithXMLFile:path]];
+            if (itemData) {
+                [itemData setObject:fileName forKey:@"xmlFile"];
+                [tempAccItems addObject:itemData];
+            }
+            else {
+                NSLog(@"Dictionary could not be parsed from %@", path);
+            }
+        }
+        else {
+            NSLog(@"File not found: %@", fileName);
+        }
+    }
+    
+    accessoryItems = [NSArray arrayWithArray:tempAccItems];
+}
+
+/**
+ *  Filter accessories for current page
+ *
+ *  @param sceneId SceneID to filter accessories for
+ *
+ *  @return Array of accessories grouped in dictionaries
+ */
+- (NSArray*)accessoriesForSceneWithID:(NSString*)sceneId {
+    
+    NSMutableArray *tempAcc = [[NSMutableArray alloc] init];
+    for (NSDictionary *accessoryItem in accessoryItems) {
+        id scenes = [accessoryItem objectForKey:@"scenes"];
+        NSLog(@"scenes: %@", scenes);
+    }
+    
+    return [NSArray arrayWithArray:tempAcc];
     
 }
 

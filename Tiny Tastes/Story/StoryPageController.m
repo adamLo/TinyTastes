@@ -24,6 +24,8 @@
 
 NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after page appeared
 
+@synthesize pageData;
+@synthesize accessories;
 
 #pragma mark - View lifecycle
 
@@ -127,10 +129,13 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     // Dispose of any resources that can be recreated.
 }
 
-- (void)loadStoryPage:(NSDictionary *)storyPage {
+- (void)loadStoryPage:(NSDictionary *)storyPage accessories:(NSArray *)pageAccessories {
 
     //Assign data
-    self.pageData = storyPage;
+    pageData = storyPage;
+    
+    //Assign accessories
+    accessories = pageAccessories;
     
     //Build page
     [self buildPageImages];

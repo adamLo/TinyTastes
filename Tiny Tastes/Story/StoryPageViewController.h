@@ -28,6 +28,8 @@ extern NSString* const kStoryDictionaryKeyTitle; /** Key to title in story dicti
 extern NSString* const kStoryDictionaryKeyPrev; /** Key to prev in story dictionary */
 extern NSString* const kStoryDictionaryKeyHideSkip; /** Key to hideskip in story dictionary */
 extern NSString* const kStoryDictionaryKeyTag; /** Key to tag in story dictionary */
+extern NSString* const kStoryDictionaryKeyAboveTag; /** Key to aboveTag in story dictionary */
+extern NSString* const kStoryDictionaryKeyScenes; /** Key to scenes in story dictionary */
 
 /**
  *  Reimplemented new Story Book main controller that displays the story book as a PageViewControler. Each page in the book is a single view controller.
@@ -35,6 +37,7 @@ extern NSString* const kStoryDictionaryKeyTag; /** Key to tag in story dictionar
 @interface StoryPageViewController : UIPageViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (nonatomic, retain) NSString *storyBookFileName; /** File name of story book to display. Opens bundled strorybook if empty */
+@property (nonatomic, retain) NSArray *accessories; /** Array of accessory xml file names to display on story pages */
 
 /**
  *  Go directly to scene with given id

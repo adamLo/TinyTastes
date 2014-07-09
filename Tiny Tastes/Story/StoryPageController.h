@@ -14,15 +14,17 @@
  */
 @interface StoryPageController : UIViewController
 
-@property (nonatomic, weak) NSDictionary *pageData; /** Current page data from XML storybook */
+@property (nonatomic, weak, readonly) NSDictionary *pageData; /** Current page data from XML storybook */
+@property (nonatomic, weak, readonly) NSArray *accessories; /** Array of accessories on current page */
 @property (nonatomic, weak) StoryPageViewController *pageViewController; /** Parent controller */
 
 /**
  *  Initialize a story page controller to create story subviews
  *
  *  @param storyPage  Dictionary that describes story page look
+ *  @param accessories  Array of accessories to display on page
  */
-- (void)loadStoryPage:(NSDictionary*)storyPage;
+- (void)loadStoryPage:(NSDictionary*)storyPage accessories:(NSArray*)pageAccessories;
 
 /**
  *  Toggle narration on/off
