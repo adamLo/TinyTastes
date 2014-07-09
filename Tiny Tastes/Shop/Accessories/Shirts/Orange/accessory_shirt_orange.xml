@@ -1,8 +1,10 @@
-<accessory 
+<accessory
+    id="10030"
 	type="shirt" 
 	color="white" 
 	price="3" 
-	storeimage="accessory_shirt_orange_store.png">
+	storeimage="accessory_shirt_orange_store.png"
+    usage="storybook">
 	<description>
 		This is an orange shirt that Tiny can wear during his adventures
 	</description>

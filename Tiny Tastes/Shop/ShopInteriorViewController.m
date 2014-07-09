@@ -8,6 +8,9 @@
 
 #import "ShopInteriorViewController.h"
 #import "ShopItemCell.h"
+#import "Constants.h"
+#import "XMLDictionary.h"
+#import "UIFont+TinyTastes.h"
 
 @interface ShopInteriorViewController () {
     UIStatusBarStyle statusbarStyle; //retain status bar style to reset when leaving shop
@@ -35,8 +38,16 @@
     //Set background
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"shop_interior_background"]]];
     
-    //TODO: Replace this array with a proper implementation
-    shopItems = @[@"accessory_shirt_white.xml", @"accessory_shirt_red.xml", @"accessory_shirt_blue.xml", @"accessory_shirt_orange.xml", @"accessory_shirt_pink.xml"];
+    //Localize labels
+    self.purseLabel.text = NSLocalizedString(@"You have", @"Purse label on shop interior screen");
+    
+    //Set up buttons
+    [self.purchaseConfirmationButton.titleLabel setFont:[UIFont ttFont35]];
+    [self.purchaseConfirmationButton setTitle:NSLocalizedString(@"I want to buy it", @"Purchase confirmation button on shop screen") forState:UIControlStateNormal];
+    
+    [self.purchaseCancelButton.titleLabel setFont:[UIFont ttFont40]];
+    [self.purchaseCancelButton setTitle:NSLocalizedString(@"No", @"Purchase cancel button on shop screen") forState:UIControlStateNormal];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,9 +57,19 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
     //Retain and change status bar style
     statusbarStyle = [[UIApplication sharedApplication] statusBarStyle];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+    
+    //Hide purchase confirmation dialog
+    self.purchaseConfirmationHolderView.hidden = YES;
+    
+    //Display purse contents
+    [self displayPurseContents];
+    
+    //Load shop items
+    [self loadShopItems];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -56,8 +77,51 @@
     [[UIApplication sharedApplication] setStatusBarStyle:statusbarStyle animated:NO];
 }
 
-#pragma mark - Carousel
+#pragma mark - Load shop items
 
+/**
+ *  Loads shop items from xml file names into an array containing all item properties
+ */
+- (void)loadShopItems {
+    
+    // TODO: These should come from a persistent storage
+    NSArray *xmlFiles = @[@"accessory_shirt_white.xml", @"accessory_shirt_red.xml", @"accessory_shirt_blue.xml", @"accessory_shirt_orange.xml", @"accessory_shirt_pink.xml", @"accessory_spoon_red.xml"];
+    
+    [XMLDictionaryParser sharedInstance].attributesMode = XMLDictionaryAttributesModeUnprefixed;
+    //Load each item data
+    NSMutableArray *tempItems = [[NSMutableArray alloc] init];
+    for (NSString* fileName in xmlFiles) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+        if (path) {
+            
+            //Get item details
+            NSDictionary *itemData = [NSDictionary dictionaryWithXMLFile:path];
+            if (itemData) {
+                [tempItems addObject:itemData];
+            }
+            else {
+                NSLog(@"Dictionary could not be parsed from %@", path);
+            }
+        }
+        else {
+            NSLog(@"File not found: %@", fileName);
+        }
+    }
+    shopItems = [NSArray arrayWithArray:tempItems];
+    
+    [self.collectionView reloadData];
+}
+
+#pragma mark - Purse
+
+/**
+ *  Display number of coins in the purse
+ */
+- (void)displayPurseContents {
+    self.coinsNumberLabel.text = [NSString stringWithFormat:@"x %d", [[NSUserDefaults standardUserDefaults] integerForKey:TTDefaultsKeyPurseCoins]];
+}
+
+#pragma mark - Carousel
 
 - (IBAction)leftArrowPressed:(id)sender {
     
@@ -107,7 +171,7 @@
     ShopItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"shopItemCell" forIndexPath:indexPath];
     
     //Setup cell
-    [cell setupItemWithXMLFile:[shopItems objectAtIndex:indexPath.row]];
+    [cell setupItemWithDictionary:[shopItems objectAtIndex:indexPath.row]];
     
     return cell;
 }
@@ -121,8 +185,58 @@
 
 #pragma mark - UICollectionView delegate
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-    //TODO: implement selection
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //Show confirmation dialog
+    [self togglePurchaseDialogVisible:YES completion:nil];
+    
+}
+
+#pragma mark - Purchase
+
+/**
+ *  Toggle purchase confirmation dialog visiblity
+ *
+ *  @param visible         YES to show NO to hide
+ *  @param completionBlock Block to execute when animation finished
+ */
+- (void)togglePurchaseDialogVisible:(BOOL)visible completion:(void (^)())completionBlock {
+    
+    if (visible) {
+        self.purchaseConfirmationHolderView.alpha = 0.0;
+        self.purchaseConfirmationHolderView.hidden = NO;
+    }
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        self.purchaseConfirmationHolderView.alpha = visible ? 1.0 : 0;
+    } completion:^(BOOL finished) {
+        if (!visible) {
+            self.purchaseConfirmationHolderView.hidden = YES;
+            self.purchaseConfirmationHolderView.alpha = 1.0;
+        }
+        
+        //Execute completion block
+        if (completionBlock) {
+            completionBlock();
+        }
+    }];
+    
+}
+
+- (IBAction)purchaseConfirmationPressed:(id)sender {
+    // TODO: Make purchase
+    
+    [self togglePurchaseDialogVisible:NO completion:^{
+        // TODO: implement actual purchase transaction
+        NSDictionary *item = [shopItems objectAtIndex:[[[self.collectionView indexPathsForSelectedItems] firstObject] row]];
+        NSLog(@"Selected item: %@", item);
+    }];
+}
+
+- (IBAction)purchaseCancelPressed:(id)sender {
+    
+    //Hide purchase confirmation dialog
+    [self togglePurchaseDialogVisible:NO completion:nil];
 }
 
 @end

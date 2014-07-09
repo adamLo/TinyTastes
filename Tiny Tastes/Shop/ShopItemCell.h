@@ -17,10 +17,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *itemDetailsLabel; /** Label to display item properties in formatted string */
 
 /**
- *  Set up cell with item details in given xml file that will be read from bundle
+ *  Set up cell with item details in dictionary
  *
- *  @param fileName XML file name that gives accessory details
+ *  @param itemData Dictionary containing item details
  */
-- (void)setupItemWithXMLFile:(NSString*)fileName;
+- (void)setupItemWithDictionary:(NSDictionary*)itemData;
 
 @end

@@ -1,0 +1,11 @@
+<accessory
+    id="10100"
+	type="spoon" 
+	color="red" 
+	price="4" 
+	storeimage="accessory_spoon_red_store.png"
+    usage="storybook">
+	<description>
+		This is a red spoon that Tiny can use for eating
+	</description>
+</accessory>

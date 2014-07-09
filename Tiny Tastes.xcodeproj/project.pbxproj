@@ -32,6 +32,9 @@
 		1902BC1F196C1DC300E88F84 /* accessory_shirt_white_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC13196C1DC300E88F84 /* accessory_shirt_white_store.png */; };
 		1902BC22196C1E1C00E88F84 /* ShopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC21196C1E1C00E88F84 /* ShopItemCell.m */; };
 		1902BC25196C491200E88F84 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC24196C491200E88F84 /* UIImage+Resize.m */; };
+		1902BC2A196D275200E88F84 /* accessory_spoon_red.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC28196D275100E88F84 /* accessory_spoon_red.xml */; };
+		1902BC2B196D275200E88F84 /* accessory_spoon_red_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 1902BC29196D275100E88F84 /* accessory_spoon_red_store.png */; };
+		1902BC2E196D2DFA00E88F84 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902BC2D196D2DFA00E88F84 /* Constants.m */; };
 		19120D55195B623E001302FF /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D53195B623E001302FF /* bookmark.png */; };
 		19120D56195B623E001302FF /* bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19120D54195B623E001302FF /* bookmark@2x.png */; };
 		19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19120D58195B8E1D001302FF /* UIImage+Rotate.m */; };
@@ -382,6 +385,10 @@
 		1902BC21196C1E1C00E88F84 /* ShopItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopItemCell.m; path = Shop/ShopItemCell.m; sourceTree = "<group>"; };
 		1902BC23196C491200E88F84 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "Categories/UIImage+Resize.h"; sourceTree = "<group>"; };
 		1902BC24196C491200E88F84 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "Categories/UIImage+Resize.m"; sourceTree = "<group>"; };
+		1902BC28196D275100E88F84 /* accessory_spoon_red.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accessory_spoon_red.xml; sourceTree = "<group>"; };
+		1902BC29196D275100E88F84 /* accessory_spoon_red_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_spoon_red_store.png; sourceTree = "<group>"; };
+		1902BC2C196D2DFA00E88F84 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1902BC2D196D2DFA00E88F84 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		19120D53195B623E001302FF /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmark.png; path = "Tiny Tastes/Images/Story/bookmark.png"; sourceTree = "<group>"; };
 		19120D54195B623E001302FF /* bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmark@2x.png"; path = "Tiny Tastes/Images/Story/bookmark@2x.png"; sourceTree = "<group>"; };
 		19120D57195B8E1D001302FF /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotate.h"; path = "Categories/UIImage+Rotate.h"; sourceTree = "<group>"; };
@@ -769,6 +776,7 @@
 		1902BC00196C1DC300E88F84 /* Accessories */ = {
 			isa = PBXGroup;
 			children = (
+				1902BC26196D275100E88F84 /* Spoons */,
 				1902BC01196C1DC300E88F84 /* Shirts */,
 			);
 			path = Accessories;
@@ -839,6 +847,23 @@
 				1902BC13196C1DC300E88F84 /* accessory_shirt_white_store.png */,
 			);
 			path = White;
+			sourceTree = "<group>";
+		};
+		1902BC26196D275100E88F84 /* Spoons */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC27196D275100E88F84 /* Red */,
+			);
+			path = Spoons;
+			sourceTree = "<group>";
+		};
+		1902BC27196D275100E88F84 /* Red */ = {
+			isa = PBXGroup;
+			children = (
+				1902BC28196D275100E88F84 /* accessory_spoon_red.xml */,
+				1902BC29196D275100E88F84 /* accessory_spoon_red_store.png */,
+			);
+			path = Red;
 			sourceTree = "<group>";
 		};
 		19120D5E195C328A001302FF /* Pond Animations */ = {
@@ -1532,6 +1557,8 @@
 				FDB5830917EA8A9F004C6FA3 /* SettingsViewController.m */,
 				EC6FD1D217EA746000EB05E9 /* HomeViewController.h */,
 				EC6FD1D317EA746000EB05E9 /* HomeViewController.m */,
+				1902BC2C196D2DFA00E88F84 /* Constants.h */,
+				1902BC2D196D2DFA00E88F84 /* Constants.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1764,6 +1791,7 @@
 				1994548A195DA524003BAC7F /* story_tiny_climbing_down_walk_01-03.png in Resources */,
 				19120D7D195C328A001302FF /* story_page_09.jpg in Resources */,
 				1902BC1B196C1DC300E88F84 /* accessory_shirt_pink_store.png in Resources */,
+				1902BC2A196D275200E88F84 /* accessory_spoon_red.xml in Resources */,
 				1920F24C1961B8140094FAA3 /* drinking_glass_2.png in Resources */,
 				1902BBE5196BF4A400E88F84 /* homescreen_bg@2x.png in Resources */,
 				19FE7D761962E0530074A32F /* drink_selection_02@2x.png in Resources */,
@@ -1796,6 +1824,7 @@
 				19120DCF195CAC49001302FF /* story_tiny_frog_jump_01.png in Resources */,
 				1902BBDB196B3A2D00E88F84 /* shop_carousel_arrow_left@2x.png in Resources */,
 				19120D8C195C36F5001302FF /* pond_qmarks_04.png in Resources */,
+				1902BC2B196D275200E88F84 /* accessory_spoon_red_store.png in Resources */,
 				19120DB6195C887E001302FF /* story_page_20_fish.jpg in Resources */,
 				19120DE5195CB646001302FF /* story_page_22.jpg in Resources */,
 				19FE7D671962DAE80074A32F /* story_sound_p15.m4a in Resources */,
@@ -1954,6 +1983,7 @@
 				31544D40181DAF41006C9D94 /* OverlayView.m in Sources */,
 				19120D59195B8E1D001302FF /* UIImage+Rotate.m in Sources */,
 				EC6FD1C117EA746000EB05E9 /* main.m in Sources */,
+				1902BC2E196D2DFA00E88F84 /* Constants.m in Sources */,
 				EC6FD1C517EA746000EB05E9 /* HomeAppDelegate.m in Sources */,
 				EC6FD1D417EA746000EB05E9 /* HomeViewController.m in Sources */,
 				1902BBD5196B351400E88F84 /* ShopInteriorViewController.m in Sources */,

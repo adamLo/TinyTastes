@@ -8,6 +8,7 @@
 
 #import "TinyShopViewController.h"
 #import "UIFont+TinyTastes.h"
+#import "Constants.h"
 
 @interface TinyShopViewController ()
 
@@ -44,7 +45,7 @@
     
     //Display actual coins
     self.coinsNotifLabel.font = [UIFont ttFont50];
-    NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"coinsKey"];
+    NSInteger myNumCoins = [[NSUserDefaults standardUserDefaults] integerForKey:TTDefaultsKeyPurseCoins];
     self.coinsNotifLabel.text = [NSString stringWithFormat:@"You have %ld coins", (long)myNumCoins];
 }
 

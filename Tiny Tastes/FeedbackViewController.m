@@ -8,6 +8,7 @@
 
 #import "FeedbackViewController.h"
 #import "UIFont+TinyTastes.h"
+#import "Constants.h"
 
 @interface FeedbackViewController () {
     AVAudioPlayer *audioPlayer;
@@ -42,7 +43,7 @@
     if (![prefs boolForKey:@"HasLaunchedOnce"]) { //first time the app was launched
         [prefs setBool:YES forKey:@"HasLaunchedOnce"];
         // Initialize user's coins to 0
-        [prefs setInteger:0 forKey:@"coinsKey"];
+        [prefs setInteger:0 forKey:TTDefaultsKeyPurseCoins];
         [prefs synchronize];
     }
     
@@ -51,8 +52,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     // Add earned number of coins to user's total
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSInteger myNumCoins = [prefs integerForKey:@"coinsKey"] + self.numCoins;
-    [prefs setInteger:myNumCoins forKey:@"coinsKey"];
+    NSInteger myNumCoins = [prefs integerForKey:TTDefaultsKeyPurseCoins] + self.numCoins;
+    [prefs setInteger:myNumCoins forKey:TTDefaultsKeyPurseCoins];
     [prefs synchronize];
     
     NSString *soundPath;

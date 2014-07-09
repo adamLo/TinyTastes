@@ -1197,7 +1197,7 @@ photo</string>
         <!--Shop Interior View Controller-->
         <scene sceneID="Bfn-Y2-YOQ">
             <objects>
-                <viewController id="qdd-Pu-oqa" customClass="ShopInteriorViewController" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="qdd-Pu-oqa" customClass="ShopInteriorViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h5q-SH-851">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1231,7 +1231,7 @@ photo</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_shirt_blue_store.png" id="CLf-pE-5Ph" userLabel="Item image">
-                                                    <rect key="frame" x="10" y="0.0" width="720" height="300"/>
+                                                    <rect key="frame" x="10" y="10" width="720" height="280"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zrn-K0-5Gr" userLabel="Item details">
@@ -1275,15 +1275,106 @@ photo</string>
                                     <action selector="rightArrowPressed:" destination="qdd-Pu-oqa" eventType="touchUpInside" id="sA9-0R-yUQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="GMy-OP-zLc" userLabel="Purse holder">
+                                <rect key="frame" x="552" y="20" width="465" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IAg-aP-H2M" userLabel="Purse label">
+                                        <rect key="frame" x="5" y="5" width="455" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin.png" id="cpn-8F-EBE" userLabel="Coin">
+                                        <rect key="frame" x="123" y="30" width="59" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x 99999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ScB-VF-smG" userLabel="Coins number label">
+                                        <rect key="frame" x="190" y="30" width="153" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="bg1-DA-bNJ" userLabel="Confirmation holder">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="hSp-hI-oiW" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to buy this item?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nJV-h3-OVa" userLabel="Buy question label">
+                                                <rect key="frame" x="10" y="83" width="1004" height="90"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="45"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="gj8-h7-uoO" userLabel="Left">
+                                        <rect key="frame" x="0.0" y="190" width="144" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="dMD-Cu-snf" userLabel="Right">
+                                        <rect key="frame" x="880" y="190" width="144" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="pBU-Wm-Cpd" userLabel="Bottom">
+                                        <rect key="frame" x="0.0" y="490" width="1024" height="278"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6nR-m2-7AU">
+                                                <rect key="frame" x="649" y="68" width="284" height="142"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="36" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Yes" backgroundImage="cloud_button.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="purchaseConfirmationPressed:" destination="qdd-Pu-oqa" eventType="touchUpInside" id="dSG-qr-c5n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fbA-bA-rXh" userLabel="Button - No">
+                                                <rect key="frame" x="104" y="68" width="284" height="142"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="36" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Yes" backgroundImage="cloud_button.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="purchaseCancelPressed:" destination="qdd-Pu-oqa" eventType="touchUpInside" id="Gdz-Cz-u1V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="qOA-dp-hFv"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="coinsNumberLabel" destination="ScB-VF-smG" id="fxr-Y0-fjy"/>
                         <outlet property="collectionView" destination="3LB-oB-7gL" id="cXV-jW-RDn"/>
                         <outlet property="leftArrowButton" destination="owm-OH-C5S" id="SdN-Hd-1L3"/>
+                        <outlet property="purchaseCancelButton" destination="fbA-bA-rXh" id="mia-7O-x8D"/>
+                        <outlet property="purchaseConfirmationButton" destination="6nR-m2-7AU" id="NjN-xS-0u2"/>
+                        <outlet property="purchaseConfirmationHolderView" destination="bg1-DA-bNJ" id="uD6-nV-FvU"/>
+                        <outlet property="purchaseQuestionLabel" destination="nJV-h3-OVa" id="QQp-Eu-6ZQ"/>
+                        <outlet property="purseLabel" destination="IAg-aP-H2M" id="Pqd-hO-FAW"/>
                         <outlet property="rightArrowButton" destination="Vtr-MH-qGe" id="rab-hY-9vV"/>
                     </connections>
                 </viewController>
