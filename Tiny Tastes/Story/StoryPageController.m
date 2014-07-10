@@ -138,11 +138,31 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     accessories = pageAccessories;
     
     //Build page
-    [self buildPageImages];
+    [self buildPageImagesFromDictionary:self.pageData];
+    
+    //Add accesories
+    [self buildPageImagesFromAccessoriesArray:self.accessories];
     
     //Load sounds
     [self buildSoundPlayers];
 
+}
+
+/**
+ *  Find already added imageview with given tag for layering
+ *
+ *  @param tag Tag of needed imageView
+ *
+ *  @return ImageView or nothing
+ */
+- (UIImageView*)imageViewWithTag:(NSInteger)tag {
+    for (id subview in self.view.subviews) {
+        if ([subview isKindOfClass:[UIImageView class]] && ([(UIImageView*)subview tag] == tag)) {
+            return subview;
+        }
+    }
+    
+    return nil;
 }
 
 #pragma mark - Images
@@ -155,7 +175,7 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
  *
  *  @return Imageview
  */
-- (UIImageView*)imageViewFromDictionary:(NSDictionary*)imageDict sequence:(NSInteger)sequence {
+- (UIImageView*)addImageViewFromDictionary:(NSDictionary*)imageDict sequence:(NSInteger)sequence {
 
     //Construct imageview
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake([[imageDict objectForKey:kStoryDictionaryKeyX] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyY]floatValue], [[imageDict objectForKey:kStoryDictionaryKeyW] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyH] floatValue])];
@@ -192,31 +212,58 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
         }
     }
     
+    if ([imageDict objectForKey:kStoryDictionaryKeyAboveTag]) {
+        NSInteger tag = [[imageDict objectForKey:kStoryDictionaryKeyAboveTag] integerValue];
+        UIImageView *imageViewBelow = [self imageViewWithTag:tag];
+        if (imageViewBelow) {
+            [self.view insertSubview:imageView aboveSubview:imageViewBelow];
+        }
+        else {
+            NSLog(@"Not found imageview with tag %d", tag);
+        }
+    }
+    else {
+        [self.view addSubview:imageView];
+    }
+    
     return imageView;
     
 }
 
 /**
  *  Constructs page views
+ *
+ *  @param sceneDict Dictionary containing scene data. Can be either storybook page or accessory scene data
  */
-- (void)buildPageImages {
+- (void)buildPageImagesFromDictionary:(NSDictionary*)sceneDict {
     
     //Add images
-    if ([[self.pageData objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSDictionary class]]) {
+    if ([[sceneDict objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSDictionary class]]) {
         //Single image
-        [self.view addSubview:[self imageViewFromDictionary:[self.pageData objectForKey:kStoryDictionaryKeyImage] sequence:0]];
+        [self addImageViewFromDictionary:[sceneDict objectForKey:kStoryDictionaryKeyImage] sequence:0];
     }
-    else if ([[self.pageData objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSArray class]]) {
+    else if ([[sceneDict objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSArray class]]) {
         //Multiple images
         
         //Add imageview
         NSInteger sequence = 0;
-        for (NSDictionary *imageDict in [self.pageData objectForKey:kStoryDictionaryKeyImage]) {
-            [self.view addSubview:[self imageViewFromDictionary:imageDict sequence:sequence]];
+        for (NSDictionary *imageDict in [sceneDict objectForKey:kStoryDictionaryKeyImage]) {
+            [self addImageViewFromDictionary:imageDict sequence:sequence];
             sequence++;
         }
     }
     
+}
+
+/**
+ *  Add images from accessories relevant to current scene
+ *
+ *  @param accessories Array of accessories dictionaryy for scene
+ */
+- (void)buildPageImagesFromAccessoriesArray:(NSArray*)accessoriesArray {
+    for (NSDictionary *accessoryScene in accessoriesArray) {
+        [self buildPageImagesFromDictionary:accessoryScene];
+    }
 }
 
 #pragma mark - Sounds

@@ -138,8 +138,13 @@
         <animation>story_tiny_fish_01.png</animation>
         <animation>story_tiny_fish_00.png</animation>
         <animation>story_tiny_fish_01.png</animation>
-        <animation>story_tiny_fish_02.png</animation>
     </image>
+    <image path="story_tiny_fish_plant.png" x="676" y="103" w="128" h="405" />
+    <next id="fish07" />
+</scene>
+<scene id="fish07">
+    <image path="story_page_19_fish_plain.jpg" x="0" y="20" w="1024" h="748" />
+    <image path="story_tiny_fish_02.png" x="106" y="75" w="634" h="492"/>
     <image path="story_tiny_fish_plant.png" x="676" y="103" w="128" h="405" />
     <next id="yard04" />
 </scene>
@@ -157,7 +162,7 @@
 <scene id="frog03">
     <image path="story_page_16_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
     <!-- animation with Tiny and Frog introduction -->
-    <image path="story_tiny_frog_fish_01.png" x="89" y="220" w="827" h="416" duration="4" repeat="1">
+    <image path="story_tiny_frog_fish_01.png" x="89" y="211" w="826" h="471" duration="4" repeat="1">
         <animation>story_tiny_frog_fish_02.png</animation>
         <animation>story_tiny_frog_fish_01.png</animation>
         <animation>story_tiny_frog_fish_02.png</animation>

@@ -53,7 +53,7 @@ NSString* const kStoryDictionaryKeyTitle = @"title";
 NSString* const kStoryDictionaryKeyPrev = @"prev";
 NSString* const kStoryDictionaryKeyHideSkip = @"hideskip";
 NSString* const kStoryDictionaryKeyTag = @"tag";
-NSString* const kStoryDictionaryKeyAboveTag = @"aboveTag";
+NSString* const kStoryDictionaryKeyAboveTag = @"abovetag";
 NSString* const kStoryDictionaryKeyScenes = @"scenes";
 
 //Class-level constants
@@ -568,6 +568,7 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
         if (path) {
             
             //Get item details
+            [XMLDictionaryParser sharedInstance].attributesMode = XMLDictionaryAttributesModeUnprefixed;
             NSMutableDictionary *itemData = [NSMutableDictionary dictionaryWithDictionary:[NSDictionary dictionaryWithXMLFile:path]];
             if (itemData) {
                 [itemData setObject:fileName forKey:@"xmlFile"];
@@ -596,8 +597,24 @@ NSString* const kStoryBookmarkDefaultsKey = @"BookmarkedStorySceneId"; //Key in 
     
     NSMutableArray *tempAcc = [[NSMutableArray alloc] init];
     for (NSDictionary *accessoryItem in accessoryItems) {
-        id scenes = [accessoryItem objectForKey:@"scenes"];
-        NSLog(@"scenes: %@", scenes);
+        NSDictionary *scenes = [accessoryItem objectForKey:kStoryDictionaryKeyScenes];
+        
+        if ([[scenes objectForKey:kStoryDictionaryKeyScene] isKindOfClass:[NSDictionary class]]) {
+            //Only one scene
+            NSDictionary *scene = [scenes objectForKey:kStoryDictionaryKeyScene];
+            if ([[scene objectForKey:kStoryDictionaryKeyID] isEqualToString:sceneId]) {
+                //Add scene
+                [tempAcc addObject:scene];
+            }
+        }
+        else if ([[scenes objectForKey:kStoryDictionaryKeyScene] isKindOfClass:[NSArray class]]) {
+            for (NSDictionary *scene in [scenes objectForKey:kStoryDictionaryKeyScene]) {
+                if ([[scene objectForKey:kStoryDictionaryKeyID] isEqualToString:sceneId]) {
+                    //Add scene
+                    [tempAcc addObject:scene];
+                }
+            }
+        }
     }
     
     return [NSArray arrayWithArray:tempAcc];
