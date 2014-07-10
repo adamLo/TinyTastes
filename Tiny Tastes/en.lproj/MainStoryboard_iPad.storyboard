@@ -682,7 +682,7 @@ photo</string>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view opaque="NO" contentMode="scaleToFill" id="iD7-zz-Soa" userLabel="Camera overlay">
+                            <view contentMode="scaleToFill" id="iD7-zz-Soa" userLabel="Camera overlay">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -691,7 +691,7 @@ photo</string>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="O6J-6R-zKW" appends="YES" id="TmT-x2-56Q"/>
@@ -706,6 +706,7 @@ photo</string>
                     <connections>
                         <outlet property="cameraIcon" destination="qtL-r8-iUw" id="KJc-Kc-4Yt"/>
                         <outlet property="cameraInstructionLabel" destination="OC3-c9-uej" id="NwR-mJ-9zf"/>
+                        <outlet property="cameraOverlayImageView" destination="3RK-Gg-8d2" id="5Li-Nk-2lc"/>
                         <outlet property="cameraOverlayView" destination="iD7-zz-Soa" id="0Dz-WE-Tcf"/>
                         <outlet property="customizeTimerLabel" destination="XW6-yx-Khh" id="e8V-FV-ERy"/>
                         <outlet property="eatLabel" destination="EPA-sM-0gR" id="NTu-TK-sOa"/>

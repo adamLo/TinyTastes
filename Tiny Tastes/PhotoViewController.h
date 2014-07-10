@@ -12,6 +12,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UIView *cameraOverlayView; /** Overlay that displays camera center outline image to help user focusing on target image */
+@property (weak, nonatomic) IBOutlet UIImageView *cameraOverlayImageView; /** helper image on camera overlay */
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *instructionLabel;

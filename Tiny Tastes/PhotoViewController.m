@@ -126,15 +126,7 @@
 - (IBAction)takePhoto:(UIButton *)sender {
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
-        session = [[AVCaptureSession alloc] init];
-        session.sessionPreset = AVCaptureSessionPresetPhoto;
-        
-        captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
-        
-        captureVideoPreviewLayer.frame = self.view.bounds;
-        [self.view.layer addSublayer:captureVideoPreviewLayer];
-        
+
         AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
         
         NSError *error = nil;
@@ -154,6 +146,15 @@
             //Show overlay
             self.cameraOverlayView.hidden = NO;
             
+            session = [[AVCaptureSession alloc] init];
+            session.sessionPreset = AVCaptureSessionPresetPhoto;
+            
+            //Create camera overlay and attach to overlay view
+            captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
+            captureVideoPreviewLayer.frame = self.cameraOverlayView.bounds;
+            [self.cameraOverlayView.layer addSublayer:captureVideoPreviewLayer];
+            [self.cameraOverlayView bringSubviewToFront:self.cameraOverlayImageView];
+            
             [session addInput:input];
 
             stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
@@ -164,7 +165,7 @@
             
             [session startRunning];
             
-            AVCaptureConnection *previewLayerConnection=captureVideoPreviewLayer.connection;
+            AVCaptureConnection *previewLayerConnection = captureVideoPreviewLayer.connection;
             
             if ([previewLayerConnection isVideoOrientationSupported]) {
                 [previewLayerConnection setVideoOrientation:(AVCaptureVideoOrientation)[[UIApplication sharedApplication] statusBarOrientation]];
