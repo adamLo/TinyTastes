@@ -8,6 +8,8 @@
 
 #import "StoryPageController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "Constants.h"
+#import "UIView+TTAnimation.h"
 
 @interface StoryPageController () {
     
@@ -149,88 +151,6 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
 }
 
 /**
- *  Find already added imageview with given tag for layering
- *
- *  @param tag Tag of needed imageView
- *
- *  @return ImageView or nothing
- */
-- (UIImageView*)imageViewWithTag:(NSInteger)tag {
-    for (id subview in self.view.subviews) {
-        if ([subview isKindOfClass:[UIImageView class]] && ([(UIImageView*)subview tag] == tag)) {
-            return subview;
-        }
-    }
-    
-    return nil;
-}
-
-#pragma mark - Images
-
-/**
- *  Construct an imageview from dictionary. Add animation if there's any
- *
- *  @param imageDict Dictionary describing image
- *  @param sequence Sequence order in processing. Will be added as tag if tag property not set
- *
- *  @return Imageview
- */
-- (UIImageView*)addImageViewFromDictionary:(NSDictionary*)imageDict sequence:(NSInteger)sequence {
-
-    //Construct imageview
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake([[imageDict objectForKey:kStoryDictionaryKeyX] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyY]floatValue], [[imageDict objectForKey:kStoryDictionaryKeyW] floatValue], [[imageDict objectForKey:kStoryDictionaryKeyH] floatValue])];
-    
-    //Add image if exists
-    if ([imageDict objectForKey:kStoryDictionaryKeyPath]) {
-        imageView.image = [UIImage imageNamed:[imageDict objectForKey:kStoryDictionaryKeyPath]];
-    }
-    
-    //Set tag, this will help layering
-    imageView.tag = ([imageDict objectForKey:kStoryDictionaryKeyTag] != nil) ? [[imageDict objectForKey:kStoryDictionaryKeyTag] integerValue] : sequence;
-    
-    //Add animations if there are
-    if ([[imageDict objectForKey:kStoryDictionaryKeyAnimation] isKindOfClass:[NSArray class]]) {
-        //We have animation images
-        
-        //Add animation phase images
-        NSMutableArray *animationImages = [[NSMutableArray alloc] init];
-        for (NSString *imgName in [imageDict objectForKey:kStoryDictionaryKeyAnimation]) {
-            UIImage *image = [UIImage imageNamed:imgName];
-            if (image) {
-                [animationImages addObject:image];
-            }
-        }
-        imageView.animationImages = [NSArray arrayWithArray:animationImages];
-        
-        //Set animation properties
-        imageView.animationDuration = [[imageDict objectForKey:kStoryDictionaryKeyDuration] floatValue];
-        imageView.animationRepeatCount = [[imageDict objectForKey:kStoryDictionaryKeyRepeat] integerValue];
-        
-        //set first image if not set
-        if (!imageView.image) {
-            imageView.image = [imageView.animationImages firstObject];
-        }
-    }
-    
-    if ([imageDict objectForKey:kStoryDictionaryKeyAboveTag]) {
-        NSInteger tag = [[imageDict objectForKey:kStoryDictionaryKeyAboveTag] integerValue];
-        UIImageView *imageViewBelow = [self imageViewWithTag:tag];
-        if (imageViewBelow) {
-            [self.view insertSubview:imageView aboveSubview:imageViewBelow];
-        }
-        else {
-            NSLog(@"Not found imageview with tag %d", tag);
-        }
-    }
-    else {
-        [self.view addSubview:imageView];
-    }
-    
-    return imageView;
-    
-}
-
-/**
  *  Constructs page views
  *
  *  @param sceneDict Dictionary containing scene data. Can be either storybook page or accessory scene data
@@ -240,7 +160,7 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
     //Add images
     if ([[sceneDict objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSDictionary class]]) {
         //Single image
-        [self addImageViewFromDictionary:[sceneDict objectForKey:kStoryDictionaryKeyImage] sequence:0];
+        [self.view addImageViewFromDictionary:[sceneDict objectForKey:kStoryDictionaryKeyImage] sequence:0];
     }
     else if ([[sceneDict objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSArray class]]) {
         //Multiple images
@@ -248,7 +168,7 @@ NSTimeInterval const kStoryDelayAfterAppear = 0.33; //Postpone animation after p
         //Add imageview
         NSInteger sequence = 0;
         for (NSDictionary *imageDict in [sceneDict objectForKey:kStoryDictionaryKeyImage]) {
-            [self addImageViewFromDictionary:imageDict sequence:sequence];
+            [self.view addImageViewFromDictionary:imageDict sequence:sequence];
             sequence++;
         }
     }

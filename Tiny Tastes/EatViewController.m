@@ -9,6 +9,9 @@
 #import "EatViewController.h"
 #import "FeedbackViewController.h"
 #import "UIFont+TinyTastes.h"
+#import "XMLDictionary.h"
+#import "Constants.h"
+#import "UIView+TTAnimation.h"
 
 @interface EatViewController () {
     NSTimer *countdownTimer;
@@ -29,6 +32,7 @@
     AVAudioPlayer *audioPlayer6;
     AVAudioPlayer *audioPlayer7;
     AVAudioPlayer *audioPlayer8;
+    
 }
 
 @end
@@ -107,6 +111,9 @@
     
     [self.doneButton.titleLabel setFont:[UIFont ttFont50]];
     [self.doneButton setTitle:NSLocalizedString(@"I\'m done", @"Done button title") forState:UIControlStateNormal];
+    
+    // TODO: Replace hardcoded accessory xml files array with argument
+    self.accessoryFiles = @[@"accessory_spoon_red.xml"];
 
 }
 
@@ -122,12 +129,24 @@
     self.disappearingFood.animationDuration = secondsCount;
     animationDuration = secondsCount;
     
+    //Add accessory animations
+    [self addAccessoryViews];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     //Start animations
     [self.disappearingFood startAnimating];
+    
+    //Start Tiny animation
     [self.eatingCritter startAnimating];
+    
+    //Start accessories
+    for (id subview in self.eatingCritter.subviews) {
+        if ([subview respondsToSelector:@selector(startAnimating)]) {
+            [subview performSelector:@selector(startAnimating)];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -144,6 +163,74 @@
     //Stop animations
     [self.disappearingFood stopAnimating];
     [self.eatingCritter stopAnimating];
+    
+    //Sop accessories
+    for (id subview in self.eatingCritter.subviews) {
+        if ([subview respondsToSelector:@selector(stopAnimating)]) {
+            [subview performSelector:@selector(stopAnimating)];
+        }
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    //Remove all accessories
+    for (id subview in self.eatingCritter.subviews) {
+        if ([subview respondsToSelector:@selector(removeFromSuperview)]) {
+            [subview performSelector:@selector(removeFromSuperview)];
+        }
+    }
+}
+
+#pragma mark - Accessories
+
+- (void)addAccessoryViews {
+
+    for (NSString *fileName in self.accessoryFiles) {
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+        if (path) {
+            
+            //Get item details
+            [XMLDictionaryParser sharedInstance].attributesMode = XMLDictionaryAttributesModeUnprefixed;
+            NSDictionary *itemData = [NSDictionary dictionaryWithXMLFile:path];
+            if (itemData) {
+                //Add images
+                if ([[itemData objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSDictionary class]]) {
+                    //Single image
+                    UIImageView *imageView = [self.eatingCritter addImageViewFromDictionary:[itemData objectForKey:kStoryDictionaryKeyImage] sequence:0];
+                    if (![itemData objectForKey:kStoryDictionaryKeyRepeat]) {
+                        imageView.animationRepeatCount = self.eatingCritter.animationRepeatCount;
+                    }
+                    if (![itemData objectForKey:kStoryDictionaryKeyDuration]) {
+                        imageView.animationDuration = self.eatingCritter.animationDuration;
+                    }
+                }
+                else if ([[itemData objectForKey:kStoryDictionaryKeyImage] isKindOfClass:[NSArray class]]) {
+                    //Multiple images
+                    
+                    //Add imageview
+                    NSInteger sequence = 0;
+                    for (NSDictionary *imageDict in [itemData objectForKey:kStoryDictionaryKeyImage]) {
+                        UIImageView *imageView = [self.view addImageViewFromDictionary:imageDict sequence:sequence];
+                        if (![itemData objectForKey:kStoryDictionaryKeyRepeat]) {
+                            imageView.animationRepeatCount = self.eatingCritter.animationRepeatCount;
+                        }
+                        if (![itemData objectForKey:kStoryDictionaryKeyDuration]) {
+                            imageView.animationDuration = self.eatingCritter.animationDuration;
+                        }
+                        sequence++;
+                    }
+                }
+            }
+            else {
+                NSLog(@"Dictionary could not be parsed from %@", path);
+            }
+        }
+        else {
+            NSLog(@"File not found: %@", fileName);
+        }
+    }
+    
 }
 
 - (void)timerRun {
@@ -298,8 +385,18 @@
     self.notFinishedButton.hidden = NO;
     self.chooseLabel.hidden = NO;
     self.doneButton.hidden = YES;
+    
+    //Stop tiny
     [self.eatingCritter stopAnimating];
+    //Stop accessories
+    for (id subview in self.eatingCritter.subviews) {
+        if ([subview respondsToSelector:@selector(stopAnimating)]) {
+            [subview performSelector:@selector(stopAnimating)];
+        }
+    }
+    
     [self.disappearingFood stopAnimating];
+    
     self.disappearingFood.image = [self.disappearingFood.animationImages lastObject];
     self.foodImageView.hidden = YES;
     self.pauseButton.hidden = YES;
@@ -329,7 +426,16 @@
     
     [self stopAudioPlayers];
     
+    //Stop Tiny
     [self.eatingCritter stopAnimating];
+    //Stop accessories
+    for (id subview in self.eatingCritter.subviews) {
+        if ([subview respondsToSelector:@selector(stopAnimating)]) {
+            [subview performSelector:@selector(stopAnimating)];
+        }
+    }
+    
+    
     [self.disappearingFood stopAnimating];
     currentFrame = self.disappearingFood.animationImages.count * (animationDuration - secondsCount) / animationDuration;
     animationDuration = secondsCount;
@@ -356,7 +462,15 @@
     self.disappearingFood.animationImages = animationImageArray;
     self.disappearingFood.animationDuration = secondsCount;
     
+    //Start Tiny
     [self.eatingCritter startAnimating];
+    //Start accessories
+    for (id subview in self.eatingCritter.subviews) {
+        if ([subview respondsToSelector:@selector(startAnimating)]) {
+            [subview performSelector:@selector(startAnimating)];
+        }
+    }
+    
     [self.disappearingFood startAnimating];
     
     // Resume the timer

@@ -315,6 +315,9 @@
 		19FA9B801970541300C286E0 /* story_sound_p42.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19FA9B7D1970541300C286E0 /* story_sound_p42.m4a */; };
 		19FA9B811970541300C286E0 /* story_sound_p43.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19FA9B7E1970541300C286E0 /* story_sound_p43.m4a */; };
 		19FA9B821970541300C286E0 /* story_sound_p44.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 19FA9B7F1970541300C286E0 /* story_sound_p44.m4a */; };
+		19FA9B851970801700C286E0 /* accessory_spoon_red_eating_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FA9B831970801700C286E0 /* accessory_spoon_red_eating_01.png */; };
+		19FA9B861970801700C286E0 /* accessory_spoon_red_eating_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FA9B841970801700C286E0 /* accessory_spoon_red_eating_02.png */; };
+		19FA9B891970863200C286E0 /* UIView+TTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FA9B881970863200C286E0 /* UIView+TTAnimation.m */; };
 		19FE7CD9196207600074A32F /* cutout.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CD7196207600074A32F /* cutout.png */; };
 		19FE7CDA196207600074A32F /* cutout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CD8196207600074A32F /* cutout@2x.png */; };
 		19FE7CE019620B2A0074A32F /* tiny_eating_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */; };
@@ -758,6 +761,10 @@
 		19FA9B7D1970541300C286E0 /* story_sound_p42.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p42.m4a; sourceTree = "<group>"; };
 		19FA9B7E1970541300C286E0 /* story_sound_p43.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p43.m4a; sourceTree = "<group>"; };
 		19FA9B7F1970541300C286E0 /* story_sound_p44.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = story_sound_p44.m4a; sourceTree = "<group>"; };
+		19FA9B831970801700C286E0 /* accessory_spoon_red_eating_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_spoon_red_eating_01.png; sourceTree = "<group>"; };
+		19FA9B841970801700C286E0 /* accessory_spoon_red_eating_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_spoon_red_eating_02.png; sourceTree = "<group>"; };
+		19FA9B871970863200C286E0 /* UIView+TTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+TTAnimation.h"; path = "Categories/UIView+TTAnimation.h"; sourceTree = "<group>"; };
+		19FA9B881970863200C286E0 /* UIView+TTAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+TTAnimation.m"; path = "Categories/UIView+TTAnimation.m"; sourceTree = "<group>"; };
 		19FE7CD7196207600074A32F /* cutout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cutout.png; sourceTree = "<group>"; };
 		19FE7CD8196207600074A32F /* cutout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cutout@2x.png"; sourceTree = "<group>"; };
 		19FE7CDC19620B2A0074A32F /* tiny_eating_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_eating_1.png; sourceTree = "<group>"; };
@@ -1067,6 +1074,8 @@
 			children = (
 				1902BC28196D275100E88F84 /* accessory_spoon_red.xml */,
 				1902BC29196D275100E88F84 /* accessory_spoon_red_store.png */,
+				19FA9B831970801700C286E0 /* accessory_spoon_red_eating_01.png */,
+				19FA9B841970801700C286E0 /* accessory_spoon_red_eating_02.png */,
 			);
 			path = Red;
 			sourceTree = "<group>";
@@ -1642,6 +1651,8 @@
 				19FE7D7D19633F930074A32F /* UIFont+TinyTastes.m */,
 				1902BC23196C491200E88F84 /* UIImage+Resize.h */,
 				1902BC24196C491200E88F84 /* UIImage+Resize.m */,
+				19FA9B871970863200C286E0 /* UIView+TTAnimation.h */,
+				19FA9B881970863200C286E0 /* UIView+TTAnimation.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -2146,6 +2157,7 @@
 				19FA9B1219700E6100C286E0 /* accessory_shirt_white_27.png in Resources */,
 				1902BC1E196C1DC300E88F84 /* accessory_shirt_white.xml in Resources */,
 				19FE7D1C1962C66F0074A32F /* disappearing-food_11@2x.png in Resources */,
+				19FA9B861970801700C286E0 /* accessory_spoon_red_eating_02.png in Resources */,
 				1902BC15196C1DC300E88F84 /* accessory_shirt_blue_store.png in Resources */,
 				19FE7D4F1962DAE80074A32F /* eating_tried_some_feedback.m4a in Resources */,
 				19FE7D5F1962DAE80074A32F /* story_sound_p07.m4a in Resources */,
@@ -2234,6 +2246,7 @@
 				19CF67F619655A8F00C70E39 /* story_page_38_bunny.jpg in Resources */,
 				1920F21F1961A15B0094FAA3 /* sippy.png in Resources */,
 				EC7124C018145E25007319C5 /* story.xml in Resources */,
+				19FA9B851970801700C286E0 /* accessory_spoon_red_eating_01.png in Resources */,
 				19FE7CF51962B52A0074A32F /* disappearing-food_01.png in Resources */,
 				19120DA1195C6DDB001302FF /* pond_bubble_08.png in Resources */,
 				19120D56195B623E001302FF /* bookmark@2x.png in Resources */,
@@ -2353,6 +2366,7 @@
 				FDB5830A17EA8A9F004C6FA3 /* SettingsViewController.m in Sources */,
 				1993A8A819681DB700465D83 /* StoryPageViewController.m in Sources */,
 				FDB5830E17EA8CF6004C6FA3 /* TinyShopViewController.m in Sources */,
+				19FA9B891970863200C286E0 /* UIView+TTAnimation.m in Sources */,
 				1993A8AC196822C400465D83 /* XMLDictionary.m in Sources */,
 				FDB5831117EA8DD9004C6FA3 /* EatViewController.m in Sources */,
 				FDB5831417EA8DE3004C6FA3 /* DrinkViewController.m in Sources */,

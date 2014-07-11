@@ -6,9 +6,9 @@
 	storeimage="accessory_shirt_white_store.png"
     usage="storybook">
 	<description>
-		This is a white shirt that Tiny can wear during his adventures
+		This is a white shirt that Tiny can wear during her adventures
 	</description>
-    <!-- List all scenes that should show up the item -->
+    <!-- List all scenes that should show up the item. Keys are the same as in the Story Book. Mind the tag is the same as item id: this is not necessary but may help in future; also mind "abovetag" property that defines which item should this image appear _above_ - that must be already added! -->
     <scenes>
         <scene id="opening09">
             <image path="accessory_shirt_white_01.png" x="404" y="403" w="68" h="60" abovetag="0" tag="10001"/>

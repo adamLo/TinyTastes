@@ -4,8 +4,16 @@
 	color="red" 
 	price="4" 
 	storeimage="accessory_spoon_red_store.png"
-    usage="storybook">
+    usage="eating">
 	<description>
 		This is a red spoon that Tiny can use for eating
 	</description>
+    <!-- Animation similary for story page accessories except that images are directly in the root node. Mind the animation secuence: it must be the same to synch with Tiny eating -->
+    <image x="85" y="176" w="241" h="180" tag="10100">
+        <animation>accessory_spoon_red_eating_01.png</animation>
+        <animation>accessory_spoon_red_eating_02.png</animation>
+        <animation>accessory_spoon_red_eating_02.png</animation>
+        <animation>accessory_spoon_red_eating_02.png</animation>
+        <animation>accessory_spoon_red_eating_02.png</animation>
+    </image>
 </accessory>

@@ -24,10 +24,11 @@
 @property (nonatomic, weak) IBOutlet UILabel *timeLeftLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *foodImageView; /** ImageView holding photo food */
 @property (nonatomic, weak) IBOutlet UIImageView *disappearingFood; /** Imageview displaying animation of disappearing food (appearing plate bottom */
-@property (nonatomic, weak) IBOutlet UIImageView *eatingCritter; /** Eating Tiny aniumation */
+@property (nonatomic, weak) IBOutlet UIImageView *eatingCritter; /** Eating Tiny animation */
 
 @property (weak, nonatomic) UIImage *foodImage; /** Masked image of food taken by PhotoViewController */
 @property int timeToEat; /** Time in seconds counting down for eating */
+@property (nonatomic, retain) NSArray *accessoryFiles; /** Array of accessory XML file names to use */
 
 - (IBAction)homePressed:(id)sender; /** User pressed home button to go back to home screen */
 
