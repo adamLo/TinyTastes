@@ -194,7 +194,7 @@
         <animation>story_tiny_frog_jump_2_01.png</animation>
         <animation>story_tiny_frog_jump_2_02.png</animation>
     </image>
-<next id="frog06" /> -->
+    <next id="frog06" />
 </scene>
 <scene id="frog06">
     <image path="story_page_20_frog.jpg" x="0" y="20" w="1024" h="748" />
@@ -281,22 +281,13 @@
 <scene id="yard13">
     <image path="story_page_34_plain.jpg" x="0" y="20" w="1024" h="748" />
     <!-- Tiny climbing down from the tree -->
-    <image x="504" y="301" w="152" h="272" duration="1.5" repeat="1">
+    <image x="504" y="321" w="358" h="299" duration="2" repeat="1">
         <animation>story_tiny_climbing_down_01.png</animation>
         <animation>story_tiny_climbing_down_02.png</animation>
         <animation>story_tiny_climbing_down_03.png</animation>
         <animation>story_tiny_climbing_down_04.png</animation>
-        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
     </image>
-    <!-- Tiny walks away from the tree -->
-    <image x="700" y="382" w="164" h="218" duration="1.5" repeat="1">
-        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
-        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
-        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
-        <animation>story_tiny_climbing_down_walk_01-03.png</animation>
-        <animation>story_tiny_climbing_down_walk_04.png</animation>
-    </image>
-    <image x="549" y="46" w="257" h="348" path="story_tiny_climbing_down_tree.png" />
+    <image x="549" y="66" w="257" h="348" path="story_tiny_climbing_down_tree.png" />
     <next id="yard14" />
 </scene>
 <scene id="yard14">
@@ -306,7 +297,7 @@
 <scene id="yard15">
     <image path="story_page_35_plain.jpg" x="0" y="20" w="1024" h="748" />
     <!-- Bunny reaches out for the newspapers -->
-    <image x="341" y="314" w="372" h="248" duration="1.6" repeat="1">
+    <image x="341" y="334" w="372" h="246" duration="1.6" repeat="1">
         <animation>story_bunny_reaching_00.png</animation>
         <animation>story_bunny_reaching_01.png</animation>
     </image>
