@@ -17,7 +17,6 @@
 #import "Crittercism.h"
 
 @interface ShopInteriorViewController () {
-    UIStatusBarStyle statusbarStyle; //retain status bar style to reset when leaving shop
     NSArray *shopItems; //Array of XML file names for items in the shop
 }
 
@@ -62,10 +61,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    //Retain and change status bar style
-    statusbarStyle = [[UIApplication sharedApplication] statusBarStyle];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
-    
     //Hide purchase confirmation dialog
     self.purchaseConfirmationHolderView.hidden = YES;
     
@@ -77,8 +72,7 @@
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-    //Reset status bar style
-    [[UIApplication sharedApplication] setStatusBarStyle:statusbarStyle animated:NO];
+
 }
 
 #pragma mark - Load shop items

@@ -44,6 +44,9 @@
                 <animation>accessory_shirt_white_08.png</animation>
             </image>
         </scene>
+        <scene id="fish07">
+            <image path="accessory_shirt_white_09.png" x="285" y="343" w="156" h="77" abovetag="1" tag="10001"/>
+        </scene>
         <scene id="frog01">
             <image path="accessory_shirt_white_10.png" x="89" y="450" w="170" h="162" abovetag="0" tag="10001"/>
         </scene>
@@ -52,6 +55,45 @@
         </scene>
         <scene id="frog03">
             <image path="accessory_shirt_white_10.png" x="89" y="450" w="170" h="162" abovetag="1" tag="10001"/>
+        </scene>
+        <scene id="frog04">
+            <image x="185" y="52" w="462" h="379" abovetag="1" tag="10001" duration="3" repeat="1">
+                <animation>accessory_shirt_white_11.png</animation>
+                <animation>accessory_shirt_white_12.png</animation>
+                <animation>accessory_shirt_white_13.png</animation>
+                <animation>accessory_shirt_white_12a.png</animation>
+                <animation>accessory_shirt_white_14.png</animation>
+                <animation>accessory_shirt_white_15.png</animation>
+            </image>
+        </scene>
+        <scene id="yard04">
+            <image path="accessory_shirt_white_16.png" x="240" y="327" w="49" h="44" abovetag="0" tag="10001"/>
+        </scene>
+        <scene id="yard06">
+            <image path="accessory_shirt_white_17.png" x="461" y="479" w="95" h="85" abovetag="0" tag="10001"/>
+        </scene>
+        <scene id="yard07">
+            <image path="accessory_shirt_white_18.png" x="461" y="479" w="96" h="85" abovetag="0" tag="10001"/>
+        </scene>
+        <scene id="yard08">
+            <image path="accessory_shirt_white_19.png" x="487" y="555" w="111" h="90" abovetag="0" tag="10001"/>
+        </scene>
+        <scene id="yard09">
+            <image path="accessory_shirt_white_20.png" x="571" y="521" w="95" h="105" abovetag="0" tag="10001"/>
+        </scene>
+        <scene id="yard10">
+            <image path="accessory_shirt_white_20.png" x="571" y="521" w="95" h="105" abovetag="0" tag="10001"/>
+        </scene>
+        <scene id="yard11">
+            <image x="529" y="331" w="103" h="201" abovetag="1" tag="10001" duration="1.5" repeat="1">
+                <animation>accessory_shirt_white_21.png</animation>
+                <animation>accessory_shirt_white_22.png</animation>
+                <animation>accessory_shirt_white_23.png</animation>
+                <animation>accessory_shirt_white_24.png</animation>
+            </image>
+        </scene>
+        <scene id="yard12">
+            <image path="accessory_shirt_white_25.png" x="427" y="633" w="212" h="59" abovetag="0" tag="10001"/>
         </scene>
     </scenes>
 </accessory>

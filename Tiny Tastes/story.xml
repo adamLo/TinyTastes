@@ -177,7 +177,7 @@
 <scene id="frog04">
     <image path="story_page_18_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
     <!-- animation with Tiny and Fog jumping -->
-    <image x="142" y="0" w="587" h="489" duration="3" repeat="1">
+    <image x="142" y="20" w="587" h="489" duration="3" repeat="1">
         <animation>story_tiny_frog_jump_01.png</animation>
         <animation>story_tiny_frog_jump_02.png</animation>
         <animation>story_tiny_frog_jump_03.png</animation>
@@ -235,15 +235,15 @@
 <scene id="yard11">
     <image path="story_page_29_plain.jpg" x="0" y="20" w="1024" h="748" />
     <!-- Tiny climbing up the tree -->
-    <image x="504" y="235" w="152" h="339" duration="1.5" repeat="1">
+    <image x="504" y="255" w="152" h="339" duration="1.5" repeat="1">
         <animation>story_tiny_climbing_up_01.png</animation>
         <animation>story_tiny_climbing_up_02.png</animation>
         <animation>story_tiny_climbing_up_03.png</animation>
         <animation>story_tiny_climbing_up_04.png</animation>
     </image>
-    <image x="549" y="46" w="257" h="564" path="story_tiny_climbing_up_tree1.png" />
-    <image x="321" y="133" w="231" h="557" path="story_tiny_climbing_up_tree2.png" />
-    <image x="486" y="65" w="176" h="258" path="story_tiny_climbing_up_tree3.png" />
+    <image x="549" y="66" w="257" h="564" path="story_tiny_climbing_up_tree1.png" />
+    <image x="321" y="153" w="231" h="557" path="story_tiny_climbing_up_tree2.png" />
+    <image x="486" y="85" w="176" h="258" path="story_tiny_climbing_up_tree3.png" />
     <!-- Squirrel on the tree -->
     <image x="512" y="100" w="96" h="73" duration="1.5" repeat="1">
         <animation>story_tiny_climbing_up_squirrel_01.png</animation>
