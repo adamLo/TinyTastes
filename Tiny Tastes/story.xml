@@ -105,27 +105,27 @@
 <!-- Fish fork -->
 <scene id="fish01">
     <image path="story_page_14_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="story_sound_p14" type="m4a" />
+    <sound path="story_sound_p14-fish" type="m4a" />
     <next id="fish02" />
 </scene>
 <scene id="fish02">
     <image path="story_page_15_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="story_sound_p15" type="m4a" />
+    <sound path="story_sound_p15-fish" type="m4a" />
     <next id="fish03" />
 </scene>
 <scene id="fish03">
     <image path="story_page_16_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="story_sound_p16" type="m4a" />
+    <sound path="story_sound_p16-fish" type="m4a" />
     <next id="fish04" />
 </scene>
 <scene id="fish04">
     <image path="story_page_17_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="story_sound_p17" type="m4a" />
+    <sound path="story_sound_p17-fish" type="m4a" />
     <next id="fish05" />
 </scene>
 <scene id="fish05">
     <image path="story_page_18_fish.jpg" x="0" y="20" w="1024" h="748" />
-    <sound path="story_sound_p18" type="m4a" />
+    <sound path="story_sound_p18-fish" type="m4a" />
     <next id="fish06" />
 </scene>
 <scene id="fish06">
@@ -141,12 +141,14 @@
     </image>
     <image path="story_tiny_fish_plant.png" x="676" y="103" w="128" h="405" />
     <next id="fish07" />
+    <sound path="story_sound_p19-fish" type="m4a" />
 </scene>
 <scene id="fish07">
     <image path="story_page_19_fish_plain.jpg" x="0" y="20" w="1024" h="748" />
     <image path="story_tiny_fish_02.png" x="106" y="75" w="634" h="492"/>
     <image path="story_tiny_fish_plant.png" x="676" y="103" w="128" h="405" />
     <next id="yard04" />
+    <sound path="story_sound_p20-fish" type="m4a" />
 </scene>
 <!-- Fish fork end -->
 
@@ -154,10 +156,12 @@
 <scene id="frog01">
     <image path="story_page_14_frog.jpg" x="0" y="20" w="1024" h="748" />
     <next id="frog02" />
+    <sound path="story_sound_p14-frog" type="m4a" />
 </scene>
 <scene id="frog02">
     <image path="story_page_15_frog.jpg" x="0" y="20" w="1024" h="748" />
     <next id="frog03" />
+    <sound path="story_sound_p15-frog" type="m4a" />
 </scene>
 <scene id="frog03">
     <image path="story_page_16_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
@@ -173,6 +177,7 @@
         <animation>story_tiny_frog_fish_03.png</animation>
     </image>
     <next id="frog04" />
+    <sound path="story_sound_p16-17-frog" type="m4a" />
 </scene>
 <scene id="frog04">
     <image path="story_page_18_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
@@ -186,6 +191,7 @@
         <animation>story_tiny_frog_jump_06.png</animation>
     </image>
     <next id="frog05" />
+    <sound path="story_sound_p18-frog" type="m4a" />
 </scene>
 <scene id="frog05">
     <image path="story_page_19_frog_plain.jpg" x="0" y="20" w="1024" h="748" />
@@ -195,10 +201,12 @@
         <animation>story_tiny_frog_jump_2_02.png</animation>
     </image>
     <next id="frog06" />
+    <sound path="story_sound_p19-frog" type="m4a" />
 </scene>
 <scene id="frog06">
     <image path="story_page_20_frog.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard04" />
+    <sound path="story_sound_p20-frog" type="m4a" />
 </scene>
 <!-- Froggy fork end -->
 
@@ -207,30 +215,37 @@
     <image path="story_page_22.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard05" />
     <prev id="yard03" />
+    <sound path="story_sound_p22" type="m4a" />
 </scene>
 <scene id="yard05">
     <image path="story_page_23.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard06" />
+    <sound path="story_sound_p23" type="m4a" />
 </scene>
 <scene id="yard06">
     <image path="story_page_24.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard07" />
+    <sound path="story_sound_p24" type="m4a" />
 </scene>
 <scene id="yard07">
     <image path="story_page_25.jpg" x="0" y="20" w="1024" h="748" />
+    <sound path="story_sound_p25" type="m4a" />
     <next id="yard08" />
 </scene>
 <scene id="yard08">
     <image path="story_page_26.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard09" />
+    <sound path="story_sound_p26" type="m4a" />
 </scene>
 <scene id="yard09">
     <image path="story_page_27.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard10" />
+    <sound path="story_sound_p27" type="m4a" />
 </scene>
 <scene id="yard10">
     <image path="story_page_28.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard11" />
+    <sound path="story_sound_p28" type="m4a" />
 </scene>
 <scene id="yard11">
     <image path="story_page_29_plain.jpg" x="0" y="20" w="1024" h="748" />
@@ -252,28 +267,34 @@
         <animation>story_tiny_climbing_up_squirrel_04.png</animation>
     </image>
     <next id="yard12" />
+    <sound path="story_sound_p29" type="m4a" />
 </scene>
 <scene id="yard12">
     <image path="story_page_29e.jpg" x="0" y="20" w="1024" h="748" />
     <next id="tree01" />
+    <sound path="story_sound_p29e" type="m4a" />
 </scene>
 
 <!-- Tiny in the treehouse -->
 <scene id="tree01">
     <image path="story_page_30.jpg" x="0" y="20" w="1024" h="748" />
     <next id="tree02" />
+    <sound path="story_sound_p30" type="m4a" />
 </scene>
 <scene id="tree02">
     <image path="story_page_31.jpg" x="0" y="20" w="1024" h="748" />
     <next id="tree03" />
+    <sound path="story_sound_p31" type="m4a" />
 </scene>
 <scene id="tree03">
     <image path="story_page_32.jpg" x="0" y="20" w="1024" h="748" />
     <next id="tree04" />
+    <sound path="story_sound_p32" type="m4a" />
 </scene>
 <scene id="tree04">
     <image path="story_page_33.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard13" />
+    <sound path="story_sound_p33" type="m4a" />
 </scene>
 <!-- End treehouse scenes -->
 
@@ -289,10 +310,12 @@
     </image>
     <image x="549" y="66" w="257" h="348" path="story_tiny_climbing_down_tree.png" />
     <next id="yard14" />
+    <sound path="story_sound_p34" type="m4a" />
 </scene>
 <scene id="yard14">
     <image path="story_page_34e.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard15" />
+    <sound path="story_sound_p34e" type="m4a" />
 </scene>
 <scene id="yard15">
     <image path="story_page_35_plain.jpg" x="0" y="20" w="1024" h="748" />
@@ -301,13 +324,15 @@
         <animation>story_bunny_reaching_00.png</animation>
         <animation>story_bunny_reaching_01.png</animation>
     </image>
-<next id="yard16" />
+    <next id="yard16" />
+    <sound path="story_sound_p35" type="m4a" />
 </scene>
 <!-- Selection scene to go into Bunny's house or skip -->
 <scene id="yard16">
     <image path="story_page_35c.jpg" x="0" y="20" w="1024" h="748" />
     <link id="bunny01" x="588" y="269" w="159" h="128" />
     <link id="yard17" x="336" y="392" w="137" h="107" />
+    <sound path="story_sound_p35c" type="m4a" />
 </scene>
 <!-- Yard scene end -->
 
@@ -315,26 +340,32 @@
 <scene id="bunny01">
     <image path="story_page_36_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="bunny02" />
+    <sound path="story_sound_p36" type="m4a" />
 </scene>
 <scene id="bunny02">
     <image path="story_page_37_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="bunny03" />
+    <sound path="story_sound_p37" type="m4a" />
 </scene>
 <scene id="bunny03">
     <image path="story_page_38_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="bunny04" />
+    <sound path="story_sound_p38" type="m4a" />
 </scene>
 <scene id="bunny04">
     <image path="story_page_39_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="bunny05" />
+    <sound path="story_sound_p39" type="m4a" />
 </scene>
 <scene id="bunny05">
     <image path="story_page_40_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="bunny06" />
+    <sound path="story_sound_p40" type="m4a" />
 </scene>
 <scene id="bunny06">
     <image path="story_page_41_bunny.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard17" />
+    <sound path="story_sound_p41" type="m4a" />
 </scene>
 <!-- Bunny house end -->
 
@@ -343,10 +374,12 @@
     <image path="story_page_42.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard18" />
     <prev id="yard16" />
+    <sound path="story_sound_p42" type="m4a" />
 </scene>
 <scene id="yard18">
     <image path="story_page_43.jpg" x="0" y="20" w="1024" h="748" />
     <next id="yard19" />
+    <sound path="story_sound_p43" type="m4a" />
 </scene>
 <scene id="yard19" hideskip="true">
     <image path="story_page_44.jpg" x="0" y="20" w="1024" h="748" />
@@ -362,6 +395,7 @@
     </image>
     <!-- Tapping the bowl takes directly to photo screen. Mind the attribute "segue" replacing "id" -->
     <link segue="toPhotoView" x="130" y="355" w="265" h="105" />
+    <sound path="story_sound_p44" type="m4a" />
 </scene>
 
 </scenes>
