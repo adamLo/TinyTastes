@@ -22,6 +22,8 @@
 #import "UIFont+TinyTastes.h"
 #import "Crittercism.h"
 
+#define IMAGEPICKERINSTEADOFOVERLAY 1 //Use image picker instead of camera overlay. This is a tmeporary workaround because capture crashes on Emily's iPad mini
+
 @interface PhotoViewController () {
     UIImageView *cameraOverlay; //Empty bowl that will hold image of food
     UIImageView *foodImage; //Imageview displaying masked food in the bowl
@@ -126,6 +128,16 @@
 - (IBAction)takePhoto:(UIButton *)sender {
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+#ifdef IMAGEPICKERINSTEADOFOVERLAY
+        //Device has camera, so let's open it up for taking a picture
+        
+        UIImagePickerController* controller = [[UIImagePickerController alloc] init];
+        controller.sourceType = UIImagePickerControllerSourceTypeCamera;
+        controller.delegate = self;
+        [self presentViewController:controller animated:YES completion:nil];
+
+#else
 
         AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
         
@@ -171,6 +183,7 @@
                 [previewLayerConnection setVideoOrientation:(AVCaptureVideoOrientation)[[UIApplication sharedApplication] statusBarOrientation]];
             }
         }
+#endif
         
     } else {
 #ifdef DEBUG
@@ -257,8 +270,22 @@
     
 }
 
-- (IBAction)homeButtonPressed:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:^{
+        //
+    }];
+}
+
+- (void)imagePickerController:(UIImagePickerController*)picker didFinishPickingMediaWithInfo:(NSDictionary*)info {
+    
+    //Original image
+    chosenImage = [info objectForKey: UIImagePickerControllerOriginalImage];
+    
+    //Dismiss picker
+    [picker dismissViewControllerAnimated:YES completion:^{
+        [self processImage];
+    }];
+    
 }
 
 - (void)processImage {
@@ -304,12 +331,6 @@
     foodImage.image = chosenImage;
     foodImage.frame = self.view.frame;
     [self.view addSubview:foodImage];
-    
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
 
@@ -380,5 +401,8 @@
     }
 }
 
+- (IBAction)homeButtonPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 @end

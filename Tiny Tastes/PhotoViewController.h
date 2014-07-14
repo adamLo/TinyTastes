@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
+@interface PhotoViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
 }
 
 @property (weak, nonatomic) IBOutlet UIView *cameraOverlayView; /** Overlay that displays camera center outline image to help user focusing on target image */
